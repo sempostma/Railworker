@@ -30,7 +30,7 @@ namespace RWLib
             }
             catch (XmlException)
             {
-                rWLib.options.logger.Log(RWLogType.Error, $"Malformed XML in \"{filename}\"");
+                rWLib.options.Logger.Log(RWLogType.Error, $"Malformed XML in \"{filename}\"");
             }
 
             string xml = File.ReadAllText(filename, Encoding.UTF8);

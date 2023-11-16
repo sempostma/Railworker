@@ -51,7 +51,7 @@ namespace RWLib
                 {
                     ZipArchive zip = ZipFile.OpenRead(apFile);
 
-                    var entry = zip.GetEntry(path);
+                    var entry = zip.GetEntry(path.Replace('\\', '/'));
 
                     if (entry != null)
                     {

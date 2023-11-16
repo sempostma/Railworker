@@ -66,7 +66,7 @@ namespace RWLib
             processInfo.RedirectStandardOutput = true;
             processInfo.UseShellExecute = false;
 
-            processInfo.FileName = Path.Combine(rWLib.options.TSPath, "serz.exe");
+            processInfo.FileName = rWLib.options.SerzExePath;
             processInfo.Arguments = '"' + filename + '"';
 
             var process = new Process();

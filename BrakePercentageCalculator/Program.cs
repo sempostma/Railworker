@@ -29,13 +29,14 @@ class Program {
 
             if (line == null) break;
 
-            var sections = line.Split('\\', '/').Where(x => String.IsNullOrWhiteSpace(x) == false).ToArray();
+            var sections = line.TrimEnd('\\', '/').Split('\\', '/').ToArray();
 
             string scenarioGuid = sections[sections.Length - 1];
             string routeGuid = sections[sections.Length - 3];
-            string tsPath = String.Join('\\', sections.Take(sections.Length - 5));
+            string tsPath = "\\\\EsstudioNAS\\SecureBackups\\Railworks 2";
+            string serzPath = "C:\\Users\\sempo\\Documents\\RWTest\\serz.exe";
 
-            RWLibrary rwLib = new RWLibrary(new RWLibOptions(new Logger()) { TSPath = tsPath });
+            RWLibrary rwLib = new RWLibrary(new RWLibOptions(new Logger(), tsPath, serzPath));
 
             var serializer = rwLib.CreateSerializer();
             var routeLoader = rwLib.CreateRouteLoader(serializer);
