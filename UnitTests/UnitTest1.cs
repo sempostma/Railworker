@@ -15,10 +15,10 @@ namespace UnitTests
         [SetUp]
         public void Setup()
         {
-            this.rwLib = new RWLibrary(new RWLibOptions(new UnitTestLogger())
-            {
-                TSPath = "E:\\SteamLibrary\\steamapps\\common\\RailWorks"
-            });
+            this.rwLib = new RWLibrary(new RWLibOptions( 
+                new UnitTestLogger(),
+                "E:\\SteamLibrary\\steamapps\\common\\RailWorks"
+            ));
             this.serializer = rwLib.CreateSerializer();
         }
 

@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RWLib", "RWLib\RWLib.csproj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTests", "UnitTests\UnitTests.csproj", "{182CDADB-B58F-4959-B19F-D874C2AE007A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrakePercentageCalculator", "BrakePercentageCalculator\BrakePercentageCalculator.csproj", "{5B05F6BB-BB64-4C7C-8008-3DD95FB52101}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BrakePercentageCalculator", "BrakePercentageCalculator\BrakePercentageCalculator.csproj", "{5B05F6BB-BB64-4C7C-8008-3DD95FB52101}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComprehensiveRailworksArchiveNetwork", "ComprehensiveRailworksArchiveNetwork\ComprehensiveRailworksArchiveNetwork.csproj", "{F9E6CB4F-02F6-4C6E-A129-FE43F2F10CEB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{5B05F6BB-BB64-4C7C-8008-3DD95FB52101}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B05F6BB-BB64-4C7C-8008-3DD95FB52101}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B05F6BB-BB64-4C7C-8008-3DD95FB52101}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9E6CB4F-02F6-4C6E-A129-FE43F2F10CEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9E6CB4F-02F6-4C6E-A129-FE43F2F10CEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9E6CB4F-02F6-4C6E-A129-FE43F2F10CEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9E6CB4F-02F6-4C6E-A129-FE43F2F10CEB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
