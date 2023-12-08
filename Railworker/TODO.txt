@@ -1,0 +1,11 @@
+﻿
+TODO
+====
+
+- Create consist generator
+- Replacement rule reverse
+- Replacement rule ONLY AI (or ONLY PLAYER)
+- Default container replacer
+- Static consist collision error: Find the wagon id quickly on a map
+
+

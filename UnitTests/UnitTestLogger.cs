@@ -1,4 +1,4 @@
-﻿using RWLib;
+﻿using RWLib.Interfaces;
 using System.Diagnostics;
 
 namespace UnitTests

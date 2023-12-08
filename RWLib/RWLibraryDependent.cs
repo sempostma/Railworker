@@ -6,16 +6,63 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Xml;
 using System.Xml.Linq;
+using RWLib.Interfaces;
 
 namespace RWLib
 {
     public abstract class RWLibraryDependent
     {
         protected RWLibrary rWLib;
+        public LogShortcut Log { get; protected set; }
+
+        public class LogShortcut
+        {
+            private IRWLogger logger;
+
+            public LogShortcut(IRWLogger logger)
+            {
+                this.logger = logger;
+            }
+
+            private void Log(RWLogType logType, params string[] args)
+            {
+                if (args.Length == 0) return;
+                else if (args.Length == 1) logger?.Log(logType, args[0]);
+                else if (args.Length == 2) logger?.Log(logType, String.Format(args[0], args[1]));
+                else if (args.Length == 3) logger?.Log(logType, String.Format(args[0], args[1], args[2]));
+                else if (args.Length == 4) logger?.Log(logType, String.Format(args[0], args[1], args[2], args[3]));
+                else if (args.Length == 5) logger?.Log(logType, String.Format(args[0], args[1], args[2], args[3], args[4]));
+                else if (args.Length == 6) logger?.Log(logType, String.Format(args[0], args[1], args[2], args[3], args[4], args[5]));
+                else if (args.Length == 7) logger?.Log(logType, String.Format(args[0], args[1], args[2], args[3], args[4], args[5], args[6]));
+                else if (args.Length == 8) logger?.Log(logType, String.Format(args[0], args[1], args[2], args[3], args[4], args[5], args[6], args[7]));
+                else if (args.Length == 9) logger?.Log(logType, String.Format(args[0], args[1], args[2], args[3], args[4], args[5], args[6], args[7], args[8]));
+            }
+
+            public void Debug(params string[] args)
+            {
+                Log(RWLogType.Debug, args);
+            }
+
+            internal void Verbose(params string[] args)
+            {
+                Log(RWLogType.Verbose, args);
+            }
+
+            internal void Warning(params string[] args)
+            {
+                Log(RWLogType.Verbose, args);
+            }
+            internal void Error(params string[] args)
+            {
+                Log(RWLogType.Verbose, args);
+            }
+        }
+
 
         internal RWLibraryDependent(RWLibrary rWLib)
         {
             this.rWLib = rWLib;
+            Log = new LogShortcut(rWLib.options.Logger);
         }
 
         public async Task<XDocument> LoadXMLSafe(String filename)
@@ -30,7 +77,7 @@ namespace RWLib
             }
             catch (XmlException)
             {
-                rWLib.options.Logger.Log(RWLogType.Error, $"Malformed XML in \"{filename}\"");
+                rWLib.options.Logger?.Log(RWLogType.Error, $"Malformed XML in \"{filename}\"");
             }
 
             string xml = File.ReadAllText(filename, Encoding.UTF8);

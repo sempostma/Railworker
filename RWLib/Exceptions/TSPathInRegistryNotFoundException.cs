@@ -3,22 +3,21 @@
 namespace RWLib.Exceptions
 {
     [Serializable]
-    internal class TSPathInRegistryNotFoundException : Exception
+    public class TSPathInRegistryNotFoundException : Exception
     {
+        private static string extraMessage = "Consider using the JustTrains RailWorks Registry Tool";
+
         public TSPathInRegistryNotFoundException()
         {
         }
 
-        public TSPathInRegistryNotFoundException(string? message) : base(message)
+        public TSPathInRegistryNotFoundException(string? message): base(message + " " + extraMessage)
         {
         }
 
-        public TSPathInRegistryNotFoundException(string? message, Exception? innerException) : base(message, innerException)
+        public TSPathInRegistryNotFoundException(string? message, Exception? innerException) : base(message + " " + extraMessage, innerException)
         {
         }
 
-        protected TSPathInRegistryNotFoundException(SerializationInfo info, StreamingContext context) : base(info, context)
-        {
-        }
     }
 }

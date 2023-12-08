@@ -1,5 +1,7 @@
-﻿using System;
+﻿using RWLib.RWBlueprints.Components;
+using System;
 using System.Collections.Generic;
+using System.IO.Compression;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -7,17 +9,38 @@ using System.Xml.Linq;
 
 namespace RWLib
 {
-    public abstract class RWBlueprint
+    public abstract class RWBlueprint : RWXml
     {
-        public XElement xml;
-
-        public RWBlueprint(XElement blueprint)
+        public class RWBlueprintContext
         {
-            this.xml = blueprint;
+            public enum IsInApFile { Unknown, Yes, No }
+
+            public IsInApFile InApFile { get; set; } = IsInApFile.Unknown;
+            public string ApPath { get; internal set; } = "";
         }
 
-        public string XMLElementName { get => xml.Name.ToString(); }
+        protected RWBlueprint(RWBlueprintID blueprintId, XElement blueprint, RWLibrary lib, RWBlueprintContext? context = null) : base(blueprint, lib)
+        {
+            this.BlueprintId = blueprintId;
+            this.Context = context ?? new RWBlueprintContext();
+        }
 
-        public string Name => xml.Element("Name")!.Value.ToString();
+        public string XmlPath
+        {
+            get
+            {
+                return String.Format("{0}\\{1}\\{2}", Provider, Product, BlueprintId);
+            }
+        }
+
+        public RWBlueprintID BlueprintId { get; protected set; }
+        public RWBlueprintContext Context { get; }
+        public string Provider => BlueprintId.Provider;
+        public string Product => BlueprintId.Product;
+        public string BlueprintIDPath => BlueprintId.Path;
+
+        public RWRenderComponent RenderComponent { get => new RWRenderComponent(xml.Element("RenderComponent")!.Element("cAnimObjectRenderBlueprint")!, lib); }
+        public bool HasRenderComponent => xml.Element("RenderComponent")?.Element("cAnimObjectRenderBlueprint") != null;
+
     }
 }

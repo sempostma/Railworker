@@ -9,14 +9,14 @@ using System.Xml.Linq;
 
 namespace RWLib
 {
-    public class RWEngineBlueprint : RWBlueprint, IRailVehicle
+    public class RWEngineBlueprint : RWBlueprint, IRWRailVehicleBlueprint
     {
         public EngineRailVehicleComponent RailVehicleComponent { get => new EngineRailVehicleComponent(this.xml.Element("RailVehicleComponent")!.Element("cEngineComponentBlueprint")!); }
-        IRailVehicleComponent IRailVehicle.RailVehicleComponent => RailVehicleComponent;
+        IRailVehicleComponent IRWRailVehicleBlueprint.RailVehicleComponent => RailVehicleComponent;
 
         public RWBlueprintID EngineSimulationBlueprint => GetEngineSimulationBlueprint();
 
-        public RWEngineBlueprint(XElement xElement) : base(xElement)
+        public RWEngineBlueprint(RWBlueprintID blueprintId, XElement blueprint, RWLibrary lib, RWBlueprintContext? context = null) : base(blueprintId, blueprint, lib, context)
         {
         }
 
@@ -25,6 +25,18 @@ namespace RWLib
             var blueprintXML = this.xml.Element("EngineSimulationContainer")!.Element("cEngineSimContainerBlueprint")!.Element("EngineSimFile")!.Element("iBlueprintLibrary-cAbsoluteBlueprintID")!;
 
             return RWBlueprintID.FromXML(blueprintXML);
+        }
+
+        public string Name => xml.Element("Name")!.Value.ToString();
+
+        public RWDisplayName DisplayName
+        {
+            get
+            {
+                var element = xml.Descendants("DisplayName").FirstOrDefault();
+                if (element == null) return null;
+                else return new RWDisplayName(element!);
+            }
         }
     }
 }

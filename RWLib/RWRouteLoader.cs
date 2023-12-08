@@ -1,5 +1,8 @@
-﻿using System;
+﻿using RWLib.Scenario;
+using RWLib.Tracks;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.IO.Compression;
 using System.Linq;
 using System.Text;
@@ -17,12 +20,12 @@ namespace RWLib
             this.serializer = rwSerializer;
         }
 
-        private class OpenFileResult {
-            public string? FileName { get; set; }
+        public class OpenFileResult {
+            public string? FileName { get; set; } 
             public Stream? Stream { get; set; }
         }
 
-        private OpenFileResult OpenFile(string filename, bool returnFilename)
+        public OpenFileResult OpenFile(string filename, bool returnFilename)
         {
             var sections = filename.Replace(rWLib.options.TSPath, "")
                 .Split(Path.DirectorySeparatorChar)
@@ -64,6 +67,57 @@ namespace RWLib
             throw new FileNotFoundException($"Could not find file '{filename}' as file or in an .ap file");
         }
 
+        public struct ListDirectoryEntryResult
+        {
+            public required string Name { get; set; }
+            public ZipArchiveEntry? ZipArchiveEntry { get; set; }
+        }
+
+        public enum OpenFiles { OnlyInAp, Never }
+
+        public IEnumerable<ListDirectoryEntryResult> ListFiles(string directory, bool recursive = false)
+        {
+            if (Directory.Exists(directory))
+            {
+                foreach (var name in Directory.GetFiles(directory))
+                {
+                    yield return new ListDirectoryEntryResult { Name = name };
+                }
+            } else
+            {
+                string routesDir = Path.Combine(rWLib.options.TSPath, "Content", "Routes");
+                string subPath = Path.GetRelativePath(routesDir, directory);
+                var sections = subPath.Split('\\');
+                var routeGuid = sections[0];
+                var routeDir = Path.Combine(routesDir, routeGuid);
+
+                if (Directory.Exists(routeDir))
+                {
+                    var apFiles = Directory.GetFiles(routeDir, "*.ap", SearchOption.TopDirectoryOnly);
+                    var relativePath = Path.GetRelativePath(routeDir, directory).Replace('\\', '/').Trim('/');
+                    var dirNestingLevel = relativePath.Split('/').Length;
+
+                    foreach (var apFile in apFiles)
+                    {
+                        ZipArchive zip = ZipFile.OpenRead(apFile);
+
+                        var entries = zip.Entries.Where(x =>
+                        {
+                            var isDirectory = x.FullName.EndsWith('/');
+                            if (isDirectory) return false;
+                            if (recursive) return x.FullName.StartsWith(relativePath);
+                            else return x.FullName.StartsWith(relativePath) && x.FullName.Trim('/').Split('/').Length - 1 == dirNestingLevel;
+                        });
+
+                        foreach (var entry in entries)
+                        {
+                            yield return new ListDirectoryEntryResult { Name = entry.Name, ZipArchiveEntry = entry };
+                        }
+                    }
+                }
+            }
+        }
+
         public IAsyncEnumerable<RWConsist> LoadConsists(RWScenario scenario)
         {
             return LoadConsists(scenario.routeGuid, scenario.guid);
@@ -75,11 +129,11 @@ namespace RWLib
             var scenarioBinPath = Path.Combine(scenarioDir, "Scenario.bin");
 
             var scenarioBinFile = OpenFile(scenarioBinPath, true).FileName!;
-            var scenarioDocument = await serializer.Deserialize(scenarioBinFile);
+            var scenarioDocument = await serializer.DeserializeWithSerzExe(scenarioBinFile);
 
             foreach (var consistElement in scenarioDocument.Root!.Element("Record")!.Elements())
             {
-                yield return new RWConsist(routeGuid, scenarioGuid, consistElement);
+                yield return new RWConsist(routeGuid, scenarioGuid, consistElement, rWLib);
             }
         }
 
@@ -102,16 +156,17 @@ namespace RWLib
                 {
                     var guid = new DirectoryInfo(scenarioDir).Name;
 
+                    var scenarioPropertiesFilename = Path.Combine(scenarioDir, "ScenarioProperties.xml");
+                    if (File.Exists(scenarioPropertiesFilename) == false) continue;
+
                     if (listOfFoundGuid.Contains(guid)) continue;
                     listOfFoundGuid.Add(guid);
 
                     XDocument document;
 
-                    var scenarioPropertiesFilename = Path.Combine(scenarioDir, "ScenarioProperties.xml");
-
                     document = await LoadXMLSafe(scenarioPropertiesFilename);
 
-                    yield return new RWScenario(document, guid, routeGuid);
+                    yield return new RWScenario(document, guid, routeGuid, rWLib);
                 }
             }
 
@@ -144,9 +199,59 @@ namespace RWLib
                         }
                     }
 
-                    yield return new RWScenario(document, guid, routeGuid);
+                    yield return new RWScenario(document, guid, routeGuid, rWLib);
                 }
             }
+        }
+
+        public async Task<RWRoute?> LoadSingleRoute(string routeGuid)
+        {
+            var routeDir = Path.Combine(rWLib.options.TSPath, "Content", "Routes", routeGuid);
+
+            XDocument? document = null;
+
+            var routePropertiesFilename = Path.Combine(routeDir, "RouteProperties.xml");
+
+            if (File.Exists(routePropertiesFilename))
+            {
+                document = await LoadXMLSafe(routePropertiesFilename);
+            }
+            else
+            {
+                var apFiles = Directory.GetFiles(routeDir, "*.ap", SearchOption.TopDirectoryOnly);
+
+                foreach (var apFile in apFiles)
+                {
+                    ZipArchive zip = ZipFile.OpenRead(apFile);
+                    var entry = zip.GetEntry("RouteProperties.xml");
+                    if (entry != null)
+                    {
+                        try
+                        {
+                            document = await XDocument.LoadAsync(entry.Open(), LoadOptions.None, CancellationToken.None);
+                            break;
+                        }
+                        catch (XmlException)
+                        {
+                            using (StreamReader reader = new StreamReader(entry.Open()))
+                            {
+                                document = ParseXMLSafe(reader.ReadToEnd());
+                                break;
+                            }
+                        }
+                    }
+                }
+            }
+
+            if (document == null)
+            {
+                // route does not have a RouteProperties.xml file so it's not valid.
+                // skip it
+
+                return null;
+            }
+
+            return new RWRoute(document, routeGuid, rWLib);
         }
 
         public async IAsyncEnumerable<RWRoute> LoadRoutes()
@@ -159,50 +264,18 @@ namespace RWLib
             {
                 var guid = new DirectoryInfo(routeDir).Name;
 
-                XDocument document;
+                var route = await LoadSingleRoute(guid);
 
-                var routePropertiesFilename = Path.Combine(routeDir, "RouteProperties.xml");
+                if (route == null)
+                {
+                    // route does not have a RouteProperties.xml file so it's not valid.
+                    // skip it
 
-                if (File.Exists(routePropertiesFilename)) {
-                    document = await LoadXMLSafe(routePropertiesFilename);
-                } 
+                    continue;
+                }
                 else
                 {
-                    var apFiles = Directory.GetFiles(routeDir, "*.ap", SearchOption.TopDirectoryOnly);
-
-                    XDocument? routeProperties = null;
-
-                    foreach (var apFile in apFiles)
-                    {
-                        ZipArchive zip = ZipFile.OpenRead(apFile);
-                        var entry = zip.GetEntry("RouteProperties.xml");
-                        if (entry != null)
-                        {
-                            try
-                            {
-                                routeProperties = await XDocument.LoadAsync(entry.Open(), LoadOptions.None, CancellationToken.None);
-                                break;
-                            }
-                            catch (XmlException)
-                            {
-                                using (StreamReader reader = new StreamReader(entry.Open()))
-                                {
-                                    routeProperties = ParseXMLSafe(reader.ReadToEnd());
-                                    break;
-                                }
-                            }
-                        }
-                    }
-
-                    if (routeProperties == null)
-                    {
-                        // route does not have a RouteProperties.xml file so it's not valid.
-                        // skip it
-
-                        continue;
-                    }
-
-                    yield return new RWRoute(routeProperties, guid);
+                    yield return route;
                 }
             }
         }

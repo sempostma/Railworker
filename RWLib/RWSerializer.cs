@@ -4,40 +4,47 @@ using System.Text.RegularExpressions;
 using System.Xml;
 using System.Xml.Linq;
 using System.IO.Compression;
+using RWLib.SerzClone;
+using System.IO;
 
 namespace RWLib
 {
     public class RWSerializer : RWLibraryDependent
     {
-        internal RWSerializer(RWLibrary rWLib) : base(rWLib)
+        public RWSerializer(RWLibrary rWLib) : base(rWLib)
         {
         }
 
-        private String RandomFileName()
+        public async Task<XDocument> Deserialize(Stream stream)
         {
-            var tempPath = Path.GetTempPath();
-            var serzTempDir = Path.Combine(tempPath, "RWLib", "SerzTemp");
-            Directory.CreateDirectory(serzTempDir); // ensure directory
-            return Path.Combine(serzTempDir, Convert.ToString(Random.Shared.Next(), 16) + ".bin");
+            var binToObj = new BinToObj(stream);
+            var objToXml = new ObjToXml();
+            await foreach (var node in binToObj.Run())
+            {
+                objToXml.Push(node);
+            }
+            return objToXml.Finish();
         }
 
-        public String ExtractToTemporaryFile(ZipArchiveEntry entry)
+        public Task<XDocument> Deserialize(string filename)
         {
-            var randomFilename = RandomFileName();
-            entry.ExtractToFile(randomFilename);
-            return randomFilename;
+            using (var stream = File.OpenRead(filename))
+            {
+                return Deserialize(stream);
+            }
         }
 
-        public async Task<XDocument> Deserialize(string filename)
+        public async Task<XDocument> DeserializeWithSerzExe(string filename)
         {
             var tempPath = Path.GetTempPath();
             var serzTempDir = Path.Combine(tempPath, "RWLib", "SerzTemp");
             Directory.CreateDirectory(serzTempDir); // ensure directory
             String tempFile;
 
-            if (filename.StartsWith(tempPath)) {
+            if (filename.StartsWith(tempPath))
+            {
                 tempFile = filename;
-            } 
+            }
             else
             {
                 tempFile = Path.Combine(serzTempDir, Convert.ToString(Random.Shared.Next(), 16) + ".bin");
@@ -59,7 +66,7 @@ namespace RWLib
         private Task<int> RunProcess(string filename)
         {
             var processInfo = new ProcessStartInfo();
-            processInfo.CreateNoWindow = false;
+            processInfo.CreateNoWindow = true;
             processInfo.UseShellExecute = false;
             processInfo.WindowStyle = ProcessWindowStyle.Hidden;
             processInfo.RedirectStandardError = true;
@@ -83,5 +90,21 @@ namespace RWLib
             process.Start();
             return tcs.Task;
         }
+
+        private String RandomFileName()
+        {
+            var tempPath = Path.GetTempPath();
+            var serzTempDir = Path.Combine(tempPath, "RWLib", "SerzTemp");
+            Directory.CreateDirectory(serzTempDir); // ensure directory
+            return Path.Combine(serzTempDir, Convert.ToString(Random.Shared.Next(), 16) + ".bin");
+        }
+
+        public String ExtractToTemporaryFile(ZipArchiveEntry entry)
+        {
+            var randomFilename = RandomFileName();
+            entry.ExtractToFile(randomFilename);
+            return randomFilename;
+        }
     }
 }
+

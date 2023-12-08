@@ -3,10 +3,29 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:lang="clr-namespace:Railworker.Language;assembly=Railworker.Language"
         xmlns:local="clr-namespace:Railworker"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="{Binding WindowTitle}" Height="450" Width="800">
 
+    <Grid>
+        <DockPanel>
+            <Menu Width="Auto" Height="20" DockPanel.Dock="Top">
+                <MenuItem Header="{x:Static lang:Resources.file}">
+                    <MenuItem Header="{x:Static lang:Resources.open_file}" Click="MenuItem_File_Open_File_Click" />
+                </MenuItem>
+                <MenuItem Header="{x:Static lang:Resources.edit}">
+                    <MenuItem Header="{x:Static lang:Resources.settings}" Click="MenuItem_Edit_Settings_Click" />
+                    <MenuItem Header="{x:Static lang:Resources.create_vehicle_variation}" Visibility="{Binding CreateVehicleVariationVisibility}" Click="MenuItem_Edit_Create_Vehicle_Variation" />
+                </MenuItem>
+                <MenuItem Header="{x:Static lang:Resources.scenarios}">
+                    <MenuItem Header="{x:Static lang:Resources.scenarios_show_list}" Click="MenuItem_Scenarios_Show_List_Click" />
+                </MenuItem>
+                <MenuItem Header="{x:Static lang:Resources.routes}">
+                    <MenuItem Header="{x:Static lang:Resources.route_visualizer}" Click="MenuItem_Routes_Route_Visualizer_Click" />
+                </MenuItem>
+            </Menu>
+            <Frame NavigationUIVisibility="Hidden"  x:Name="Frame" Content="{Binding FrameContent}" />
+        </DockPanel>
     </Grid>
 </Window>

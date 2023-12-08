@@ -13,7 +13,7 @@ namespace RWLib
     {
         public IBrakeAssembly TrainBrakeAssembly { get => GetTrainBrakeAssembly(); }
 
-        public RWElectricEngineSimulationBlueprint(XElement xElement) : base(xElement)
+        public RWElectricEngineSimulationBlueprint(RWBlueprintID blueprintId, XElement blueprint, RWLibrary lib, RWBlueprintContext? context = null) : base(blueprintId, blueprint, lib, context)
         {
         }
 

@@ -132,9 +132,9 @@ namespace UnitTests
                         {
                             var blueprint = await blueprintLoader.FromBlueprintID(consistVehicle.BlueprintID);
 
-                            if (blueprint is IRailVehicle)
+                            if (blueprint is IRWRailVehicleBlueprint)
                             {
-                                //var railVehicleBlueprint = blueprint as IRailVehicle;
+                                //var railVehicleBlueprint = blueprint as IRWRailVehicleBlueprint;
                                 //var brake = railVehicleBlueprint!.RailVehicleComponent.TrainBrakeAssembly.First();
 
                                 //if (brake is AirBrakeSimulation)
