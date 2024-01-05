@@ -20,7 +20,7 @@ namespace RWLib
         {
             get
             {
-                var element = xml.Descendants("DisplayName").FirstOrDefault();
+                var element = Xml.Descendants("DisplayName").FirstOrDefault();
                 if (element == null) return null;
                 else return new RWDisplayName(element!);
             }

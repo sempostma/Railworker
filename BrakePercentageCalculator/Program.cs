@@ -28,7 +28,32 @@ class Program {
     public static void Main(string[] args)
     {
         //ParseBinWithCustomFunction().Wait();
-        ScanAssetDirectory().Wait();
+        //ScanAssetDirectory().Wait();
+        ControlValueWatcher();
+    }
+
+    public static void ControlValueWatcher()
+    {
+        var _continue = true;
+        RWLibrary rwLib = new RWLibrary(new RWLibOptions { UseCustomSerz = true, Logger = new Logger() });
+
+        var monitor = new RWRailDriverMonitor(rwLib.RailDriver, 1000);
+
+        monitor.OnPropertiesChange += arg =>
+        {
+            var list = arg.MonitorState.ChangedControls.ToList();
+            foreach (var item in list)
+            {
+                Console.WriteLine(item.Key + ": " + item.Value);
+            }
+        };
+
+        monitor.Start();
+
+        while (_continue)
+        {
+            Thread.Sleep(1);
+        }
     }
 
     public static async Task ParseBinWithCustomFunction()
@@ -101,7 +126,7 @@ class Program {
                             || item.XMLElementName == "cTenderBlueprint"
                             || item.XMLElementName == "cConsistFragmentBlueprint";
 
-                        var displayName = item.xml.Descendants("DisplayName").FirstOrDefault();
+                        var displayName = item.Xml.Descendants("DisplayName").FirstOrDefault();
 
                         if (filter && displayName != null)
                         {

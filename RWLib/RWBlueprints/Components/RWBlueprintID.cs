@@ -25,7 +25,7 @@ namespace RWLib.RWBlueprints.Components
 
         public string GetRelativeFilePathFromAssetsFolder()
         {
-            return System.IO.Path.Combine(Provider, Product, Path);
+            return System.IO.Path.Combine(Provider, Product, Path.Replace("/",  "\\"));
         }
 
         public static RWBlueprintID FromXML(XElement blueprintXML)

@@ -42,7 +42,7 @@ namespace RWLib
                 tracksBinFile = rwRouteLoader.serializer.ExtractToTemporaryFile(tile.ZipArchiveEntry);
             }
             
-            var tracksBin = await rwRouteLoader.serializer.DeserializeWithSerzExe(tracksBinFile);
+            var tracksBin = await rwRouteLoader.serializer.Deserialize(tracksBinFile);
 
             var recordSet = tracksBin.Element("cRecordSet")?.Element("Record")!;
 
@@ -74,7 +74,7 @@ namespace RWLib
                     if (length == null) throw new TrackCurveLengthIsNull("Track curve length is null");
 
                     (double tangentX, double tangentY) = GetStartTangent(curve);
-                    int? id = (int?)curve.Attribute(RWUtils.KujuNamspace + "id");
+                    uint? id = (uint?)curve.Attribute(RWUtils.KujuNamspace + "id");
                     if (id == null) throw new TrackCurveIdDoesNotExist("Track curve id is null");
 
                     RWRouteCoord routeCoord = GetPosition(curve.Element("StartPos")?.Element("cFarVector2"));
@@ -230,7 +230,8 @@ namespace RWLib
                 {
                     return ((double)tang_e1!, (double)tang_e2!);
                 }
-            } else
+            } 
+            else
             {
                 var split = startTangent.Value.Split(' ');
                 return (double.Parse(split[0], CultureInfo.InvariantCulture), double.Parse(split[1], CultureInfo.InvariantCulture));
@@ -243,7 +244,7 @@ namespace RWLib
             var tracksBinFile = Path.Combine(routeDir, "Networks", "Tracks.bin");
 
             var tracksBinFilePath = rwRouteLoader.OpenFile(tracksBinFile, true);
-            var tracksBin = await rwRouteLoader.serializer.DeserializeWithSerzExe(tracksBinFilePath.FileName!);
+            var tracksBin = await rwRouteLoader.serializer.Deserialize(tracksBinFilePath.FileName!);
 
             var ribbonsWithEx = tracksBin.Element("cRecordSet")?.Element("Record")?.Element("Network-cTrackNetwork")?.Element("RibbonContainer")?.Element("Network-cRibbonContainerUnstreamed")?.Element("Ribbon");
 

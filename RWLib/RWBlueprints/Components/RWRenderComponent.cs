@@ -20,7 +20,7 @@ namespace RWLib.RWBlueprints.Components
 
         public RWBlueprintID PrimaryNamedTextureSet { get
             {
-                var element = xml.Element("PrimaryNamedTextureSet")!.Element("iBlueprintLibrary-cAbsoluteBlueprintID")!;
+                var element = Xml.Element("PrimaryNamedTextureSet")!.Element("iBlueprintLibrary-cAbsoluteBlueprintID")!;
                 return RWBlueprintID.FromXML(element);
          } }
 
@@ -28,33 +28,33 @@ namespace RWLib.RWBlueprints.Components
         {
             get
             {
-                var element = xml.Element("SecondaryNamedTextureSet")!.Element("iBlueprintLibrary-cAbsoluteBlueprintID")!;
+                var element = Xml.Element("SecondaryNamedTextureSet")!.Element("iBlueprintLibrary-cAbsoluteBlueprintID")!;
                 return RWBlueprintID.FromXML(element);
             }
         }
 
-        public string GeometryID => xml.Element("GeometryID")?.Value ?? "";
+        public string GeometryID => Xml.Element("GeometryID")?.Value ?? "";
         public string GeometryFilename => FormatGeoFilename(GeometryID);
-        public string CollisionGeometryID => xml.Element("GeometryID")?.Value ?? "";
+        public string CollisionGeometryID => Xml.Element("GeometryID")?.Value ?? "";
         public string CollisionGeometryFilename => FormatGeoFilename(CollisionGeometryID);
-        public bool Pickable => xml.Element("GeometryID")?.Value == "eTrue";
-        public bool CastsShadows => xml.Element("GeometryID")?.Value == "eTrue";
-        public RenderShadowType ShadowType => Enum.Parse<RenderShadowType>(xml.Element("ShadowType")!.Value);
-        public RenderViewType ViewType => Enum.Parse<RenderViewType>(xml.Element("ViewType")!.Value);
-        public bool Palettised => xml.Element("Palettised")?.Value == "eTrue";
-        public int Palette0Index => (int)xml.Element("Palette0Index")!;
-        public int Palette1Index => (int)xml.Element("Palette1Index")!;
-        public int Palette2Index => (int)xml.Element("Palette2Index")!;
-        //public int HeatHaze => (int)xml.Element("HeatHaze")!;
-        //public int TexText => (int)xml.Element("TexText")!;
-        //public int ProjectedLightElement => (int)xml.Element("ProjectedLightElement")!;
-        //public int HeatHaze => (int)xml.Element("HeatHaze")!;
-        public bool Instancable => (bool)xml.Element("Instancable")!;
+        public bool Pickable => Xml.Element("GeometryID")?.Value == "eTrue";
+        public bool CastsShadows => Xml.Element("GeometryID")?.Value == "eTrue";
+        public RenderShadowType ShadowType => Enum.Parse<RenderShadowType>(Xml.Element("ShadowType")!.Value);
+        public RenderViewType ViewType => Enum.Parse<RenderViewType>(Xml.Element("ViewType")!.Value);
+        public bool Palettised => Xml.Element("Palettised")?.Value == "eTrue";
+        public int Palette0Index => (int)Xml.Element("Palette0Index")!;
+        public int Palette1Index => (int)Xml.Element("Palette1Index")!;
+        public int Palette2Index => (int)Xml.Element("Palette2Index")!;
+        //public int HeatHaze => (int)Xml.Element("HeatHaze")!;
+        //public int TexText => (int)Xml.Element("TexText")!;
+        //public int ProjectedLightElement => (int)Xml.Element("ProjectedLightElement")!;
+        //public int HeatHaze => (int)Xml.Element("HeatHaze")!;
+        public bool Instancable => (bool)Xml.Element("Instancable")!;
         public RWDetailLevelGEnerationRange DetailLevelGenerationRange => new RWDetailLevelGEnerationRange(
-            xml.Element("DetailLevelGenerationRange")!,
+            Xml.Element("DetailLevelGenerationRange")!,
             lib
         );
-        //public int AnimSet => (int)xml.Element("AnimSet")!;
+        //public int AnimSet => (int)Xml.Element("AnimSet")!;
 
         public bool DoesGeometryGeoPcdxExist => lib.BlueprintLoader.DoesFileExist(GeometryFilename);
         public bool DoesCollisionGeometryGeoPcdxExist => lib.BlueprintLoader.DoesFileExist(CollisionGeometryFilename);

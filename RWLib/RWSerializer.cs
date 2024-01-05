@@ -15,22 +15,85 @@ namespace RWLib
         {
         }
 
+        public async Task<string> SerializeWithSerzExe(XDocument xml)
+        {
+            var tempPath = Path.GetTempPath();
+            var serzTempDir = Path.Combine(tempPath, "RWLib", "SerzTemp");
+            Directory.CreateDirectory(serzTempDir); // ensure directory
+            String tempFile;
+
+            var cancellationToken = new CancellationToken();
+
+            var settings = new XmlWriterSettings();
+            settings.Indent = true;
+            settings.IndentChars = "\t";
+            settings.OmitXmlDeclaration = false;
+            settings.Encoding = new UTF8Encoding(false);
+            settings.NewLineHandling = NewLineHandling.None;
+            settings.Async = true;
+
+            tempFile = Path.Combine(serzTempDir, Convert.ToString(Random.Shared.Next(), 16) + ".xml");
+            using (var writeStream = File.OpenWrite(tempFile))
+            {
+                using (XmlWriter writer = XmlWriter.Create(writeStream, settings))
+                {
+                    await xml.WriteToAsync(writer, cancellationToken);
+                }
+            }
+
+            var exitCode = await RunProcess(tempFile);
+
+            if (exitCode != 0)
+            {
+                throw new InvalidOperationException($"Failed to run serz.exe for file '{tempFile}'");
+            }
+
+            var binFile = Path.ChangeExtension(tempFile, "bin");
+
+            var bytes = File.ReadAllBytes(binFile);
+
+            var emptyFileBytes = new byte[] { 0x53, 0x45, 0x52, 0x5A, 0x00, 0x00, 0x01, 0x00 };
+
+            if (bytes.Length == emptyFileBytes.Length)
+            {
+                bool matches = true;
+                for (int i = 0; i < emptyFileBytes.Length; i++)
+                {
+                    matches = matches && emptyFileBytes[i] == bytes[i];
+                }
+                if (matches)
+                {
+                    throw new InvalidDataException("This is not a valid Railworks XML file because serz.exe failed to produce any output. Make sure the format of the file is correct and you did not change the structure of the file. You can find the xml output here: " + tempFile);
+                }
+            }
+
+
+            return binFile;
+        }
+
         public async Task<XDocument> Deserialize(Stream stream)
         {
             var binToObj = new BinToObj(stream);
             var objToXml = new ObjToXml();
-            await foreach (var node in binToObj.Run())
+            try
             {
-                objToXml.Push(node);
+                await foreach (var node in binToObj.Run())
+                {
+                    objToXml.Push(node);
+                }
+            } catch(Exception ex)
+            {
+                rWLib.options.Logger.Log(Interfaces.RWLogType.Error, "Partial Xml result: " + objToXml.Finish().ToString());
+                throw ex;
             }
             return objToXml.Finish();
         }
 
-        public Task<XDocument> Deserialize(string filename)
+        public async Task<XDocument> Deserialize(string filename)
         {
             using (var stream = File.OpenRead(filename))
             {
-                return Deserialize(stream);
+                return await Deserialize(stream);
             }
         }
 
@@ -58,7 +121,7 @@ namespace RWLib
                 throw new InvalidOperationException($"Failed to run serz.exe for file '{tempFile}'");
             }
 
-            var xmlFile = Path.ChangeExtension(tempFile, "xml");
+            var xmlFile = Path.ChangeExtension(tempFile, "Xml");
 
             return await LoadXMLSafe(xmlFile);
         }

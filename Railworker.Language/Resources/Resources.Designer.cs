@@ -61,6 +61,15 @@ namespace Railworker.Language {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Protected.
+        /// </summary>
+        public static string _protected {
+            get {
+                return ResourceManager.GetString("protected", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Add to rules.
         /// </summary>
         public static string add_to_rules {
@@ -70,11 +79,29 @@ namespace Railworker.Language {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Always.
+        /// </summary>
+        public static string always {
+            get {
+                return ResourceManager.GetString("always", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to .
         /// </summary>
         public static string asfdsdfads {
             get {
                 return ResourceManager.GetString("asfdsdfads", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Author.
+        /// </summary>
+        public static string author {
+            get {
+                return ResourceManager.GetString("author", resourceCulture);
             }
         }
         
@@ -223,6 +250,33 @@ namespace Railworker.Language {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Do for all.
+        /// </summary>
+        public static string do_for_all {
+            get {
+                return ResourceManager.GetString("do_for_all", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Download.
+        /// </summary>
+        public static string download {
+            get {
+                return ResourceManager.GetString("download", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to We found different driving charactersitics for &quot;{0}&quot;. Do you wish to keep the custom &quot;{0}&quot;? from the repaint?.
+        /// </summary>
+        public static string driving_characteristics_mismatch {
+            get {
+                return ResourceManager.GetString("driving_characteristics_mismatch", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to .
         /// </summary>
         public static string dsfa {
@@ -295,6 +349,15 @@ namespace Railworker.Language {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string fdafdsafa {
+            get {
+                return ResourceManager.GetString("fdafdsafa", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to File.
         /// </summary>
         public static string file {
@@ -313,11 +376,38 @@ namespace Railworker.Language {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to File extensions to ignore.
+        /// </summary>
+        public static string file_extensions_to_ignore {
+            get {
+                return ResourceManager.GetString("file_extensions_to_ignore", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Filename.
         /// </summary>
         public static string filename {
             get {
                 return ResourceManager.GetString("filename", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Find.
+        /// </summary>
+        public static string find {
+            get {
+                return ResourceManager.GetString("find", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Find repaints.
+        /// </summary>
+        public static string find_repaints {
+            get {
+                return ResourceManager.GetString("find_repaints", resourceCulture);
             }
         }
         
@@ -358,6 +448,15 @@ namespace Railworker.Language {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Install.
+        /// </summary>
+        public static string install {
+            get {
+                return ResourceManager.GetString("install", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Inverted.
         /// </summary>
         public static string inverted {
@@ -367,11 +466,56 @@ namespace Railworker.Language {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Keep.
+        /// </summary>
+        public static string keep {
+            get {
+                return ResourceManager.GetString("keep", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to We found a different driver position in the repaint. Do you want to keep the custom driver position?.
+        /// </summary>
+        public static string keep_driver_position {
+            get {
+                return ResourceManager.GetString("keep_driver_position", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Keep maximum speed.
+        /// </summary>
+        public static string keep_max_speed {
+            get {
+                return ResourceManager.GetString("keep_max_speed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Do you wish to keep the custom numbering list from the repaint?.
+        /// </summary>
+        public static string keep_numbering_list {
+            get {
+                return ResourceManager.GetString("keep_numbering_list", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Language.
         /// </summary>
         public static string language {
             get {
                 return ResourceManager.GetString("language", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to License.
+        /// </summary>
+        public static string license {
+            get {
+                return ResourceManager.GetString("license", resourceCulture);
             }
         }
         
@@ -592,6 +736,24 @@ namespace Railworker.Language {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Repaint search directory.
+        /// </summary>
+        public static string repaint_search_dir {
+            get {
+                return ResourceManager.GetString("repaint_search_dir", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Repaint updater.
+        /// </summary>
+        public static string repaint_updater {
+            get {
+                return ResourceManager.GetString("repaint_updater", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Replace.
         /// </summary>
         public static string replace {
@@ -682,6 +844,24 @@ namespace Railworker.Language {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to RWP Packager.
+        /// </summary>
+        public static string rwp_packager {
+            get {
+                return ResourceManager.GetString("rwp_packager", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Unlike some other programs that may try to generate an RWP file. This program actually creates a 1 to 1 .rwp file to that of Railworks. The RWP file format is actually just a normal .zip file, only with some bytes prefixed to beginning of the file. If you remove those bytes you can open it using any program. The reason you can open it using 7zip is that 7zip is very smart and treats it like an SFX but thats getting way to complicated. Those extra bytes at the beginning of the file are just the author&apos;s name [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string rwppackager_disclaimer {
+            get {
+                return ResourceManager.GetString("rwppackager_disclaimer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Save.
         /// </summary>
         public static string save {
@@ -732,6 +912,15 @@ namespace Railworker.Language {
         public static string scenario {
             get {
                 return ResourceManager.GetString("scenario", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Scenario downloader.
+        /// </summary>
+        public static string scenario_downloader {
+            get {
+                return ResourceManager.GetString("scenario_downloader", resourceCulture);
             }
         }
         
@@ -817,6 +1006,15 @@ namespace Railworker.Language {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Success.
+        /// </summary>
+        public static string success {
+            get {
+                return ResourceManager.GetString("success", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Suggested display name:.
         /// </summary>
         public static string suggested_display_name {
@@ -831,6 +1029,24 @@ namespace Railworker.Language {
         public static string suggested_filename {
             get {
                 return ResourceManager.GetString("suggested_filename", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Template .bin.
+        /// </summary>
+        public static string template_bin {
+            get {
+                return ResourceManager.GetString("template_bin", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The file which should be used as the default file for repaints. Its values will be used to update the repaint .bin files..
+        /// </summary>
+        public static string template_bin_explanation {
+            get {
+                return ResourceManager.GetString("template_bin_explanation", resourceCulture);
             }
         }
         
@@ -885,6 +1101,33 @@ namespace Railworker.Language {
         public static string unknown_name {
             get {
                 return ResourceManager.GetString("unknown_name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Unlicensed.
+        /// </summary>
+        public static string unlicensed {
+            get {
+                return ResourceManager.GetString("unlicensed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Unprotected.
+        /// </summary>
+        public static string unprotected {
+            get {
+                return ResourceManager.GetString("unprotected", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Update.
+        /// </summary>
+        public static string update {
+            get {
+                return ResourceManager.GetString("update", resourceCulture);
             }
         }
         

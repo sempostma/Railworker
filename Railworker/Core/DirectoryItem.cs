@@ -5,8 +5,8 @@ namespace Railworker.Core
 {
     public class DirectoryItem : ViewModel
     {
-        private string _name;
-        private string _path;
+        private string _name = "";
+        private string _path = "";
         private bool _populated;
         private bool _isSelected;
         public string Name

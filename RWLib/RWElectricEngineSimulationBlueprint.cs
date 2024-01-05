@@ -19,7 +19,7 @@ namespace RWLib
 
         private IBrakeAssembly GetTrainBrakeAssembly()
         {
-            var trainBrakes = this.xml
+            var trainBrakes = this.Xml
                 .Element("EngineSimComponent")!
                 .Element("cEngineSimComponentBlueprint")!
                 .Element("SubSystem")!

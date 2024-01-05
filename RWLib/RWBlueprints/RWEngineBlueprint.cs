@@ -11,7 +11,7 @@ namespace RWLib
 {
     public class RWEngineBlueprint : RWBlueprint, IRWRailVehicleBlueprint
     {
-        public EngineRailVehicleComponent RailVehicleComponent { get => new EngineRailVehicleComponent(this.xml.Element("RailVehicleComponent")!.Element("cEngineComponentBlueprint")!); }
+        public EngineRailVehicleComponent RailVehicleComponent { get => new EngineRailVehicleComponent(this.Xml.Element("RailVehicleComponent")!.Element("cEngineComponentBlueprint")!); }
         IRailVehicleComponent IRWRailVehicleBlueprint.RailVehicleComponent => RailVehicleComponent;
 
         public RWBlueprintID EngineSimulationBlueprint => GetEngineSimulationBlueprint();
@@ -22,18 +22,18 @@ namespace RWLib
 
         private RWBlueprintID GetEngineSimulationBlueprint()
         {
-            var blueprintXML = this.xml.Element("EngineSimulationContainer")!.Element("cEngineSimContainerBlueprint")!.Element("EngineSimFile")!.Element("iBlueprintLibrary-cAbsoluteBlueprintID")!;
+            var blueprintXML = this.Xml.Element("EngineSimulationContainer")!.Element("cEngineSimContainerBlueprint")!.Element("EngineSimFile")!.Element("iBlueprintLibrary-cAbsoluteBlueprintID")!;
 
             return RWBlueprintID.FromXML(blueprintXML);
         }
 
-        public string Name => xml.Element("Name")!.Value.ToString();
+        public string Name => Xml.Element("Name")!.Value.ToString();
 
         public RWDisplayName DisplayName
         {
             get
             {
-                var element = xml.Descendants("DisplayName").FirstOrDefault();
+                var element = Xml.Descendants("DisplayName").FirstOrDefault();
                 if (element == null) return null;
                 else return new RWDisplayName(element!);
             }

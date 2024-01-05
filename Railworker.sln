@@ -13,6 +13,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BrakePercentageCalculator",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Railworker.Language", "Railworker.Language\Railworker.Language.csproj", "{964F6892-06D4-4477-A9D1-5171B276221B}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ComprehensiveRailworksArchiveNetwork", "ComprehensiveRailworksArchiveNetwork\ComprehensiveRailworksArchiveNetwork.csproj", "{F9E6CB4F-02F6-4C6E-A129-FE43F2F10CEB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRANCloudDriver", "CRANMongoDBDriver\CRANCloudDriver.csproj", "{0116E31E-2F16-4CE8-97E4-92EF57E18168}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -61,6 +65,22 @@ Global
 		{964F6892-06D4-4477-A9D1-5171B276221B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{964F6892-06D4-4477-A9D1-5171B276221B}.Release|x86.ActiveCfg = Release|Any CPU
 		{964F6892-06D4-4477-A9D1-5171B276221B}.Release|x86.Build.0 = Release|Any CPU
+		{F9E6CB4F-02F6-4C6E-A129-FE43F2F10CEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9E6CB4F-02F6-4C6E-A129-FE43F2F10CEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9E6CB4F-02F6-4C6E-A129-FE43F2F10CEB}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F9E6CB4F-02F6-4C6E-A129-FE43F2F10CEB}.Debug|x86.Build.0 = Debug|Any CPU
+		{F9E6CB4F-02F6-4C6E-A129-FE43F2F10CEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9E6CB4F-02F6-4C6E-A129-FE43F2F10CEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9E6CB4F-02F6-4C6E-A129-FE43F2F10CEB}.Release|x86.ActiveCfg = Release|Any CPU
+		{F9E6CB4F-02F6-4C6E-A129-FE43F2F10CEB}.Release|x86.Build.0 = Release|Any CPU
+		{0116E31E-2F16-4CE8-97E4-92EF57E18168}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0116E31E-2F16-4CE8-97E4-92EF57E18168}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0116E31E-2F16-4CE8-97E4-92EF57E18168}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{0116E31E-2F16-4CE8-97E4-92EF57E18168}.Debug|x86.Build.0 = Debug|Any CPU
+		{0116E31E-2F16-4CE8-97E4-92EF57E18168}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0116E31E-2F16-4CE8-97E4-92EF57E18168}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0116E31E-2F16-4CE8-97E4-92EF57E18168}.Release|x86.ActiveCfg = Release|Any CPU
+		{0116E31E-2F16-4CE8-97E4-92EF57E18168}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

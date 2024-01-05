@@ -11,7 +11,7 @@ namespace RWLib
 {
     public class RWWagonBlueprint : RWBlueprint, IRWRailVehicleBlueprint
     {
-        public WagonRailVehicleComponent RailVehicleComponent { get => new WagonRailVehicleComponent(this.xml.Element("RailVehicleComponent")!.Element("cWagonComponentBlueprint")!); }
+        public WagonRailVehicleComponent RailVehicleComponent { get => new WagonRailVehicleComponent(this.Xml.Element("RailVehicleComponent")!.Element("cWagonComponentBlueprint")!); }
         IRailVehicleComponent IRWRailVehicleBlueprint.RailVehicleComponent => RailVehicleComponent;
 
         public RWWagonBlueprint(RWBlueprintID blueprintId, XElement blueprint, RWLibrary lib, RWBlueprintContext? context = null) : base(blueprintId, blueprint, lib, context)
@@ -19,13 +19,13 @@ namespace RWLib
             
         }
 
-        public string Name => xml.Element("Name")!.Value.ToString();
+        public string Name => Xml.Element("Name")!.Value.ToString();
 
         public RWDisplayName DisplayName
         {
             get
             {
-                var element = xml.Descendants("DisplayName").FirstOrDefault();
+                var element = Xml.Descendants("DisplayName").FirstOrDefault();
                 if (element == null) return null;
                 else return new RWDisplayName(element!);
             }

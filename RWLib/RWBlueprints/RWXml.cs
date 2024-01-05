@@ -11,15 +11,17 @@ namespace RWLib
 {
     public abstract class RWXml
     {
-        public XElement xml;
+        [JsonIgnore]
+        public XElement Xml { get; set; }
+        [JsonIgnore]
         public RWLibrary lib;
 
         public RWXml(XElement blueprint, RWLibrary lib)
         {
             this.lib = lib;
-            xml = blueprint;
+            Xml = blueprint;
         }
 
-        public string XMLElementName { get => xml.Name.ToString(); }
+        public string XMLElementName { get => Xml.Name.ToString(); }
     }
 }

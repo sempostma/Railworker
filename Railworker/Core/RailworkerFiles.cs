@@ -29,7 +29,7 @@ namespace Railworker.Core
 
         public static readonly Dictionary<string, FileFormat> FileExtensionToFileFormat = new Dictionary<string, FileFormat>
         {
-            { "xml", FileFormat.Xml },
+            { "Xml", FileFormat.Xml },
             { "GeoPcDx", FileFormat.GeoPcDx },
             { "bin", FileFormat.Bin },
             { "dcsv", FileFormat.Dcsv },
@@ -97,7 +97,7 @@ namespace Railworker.Core
 
         public static async Task<string> BinToXml(RWLibrary rWLib, string filename)
         {
-            var xml = await rWLib.Serializer.DeserializeWithSerzExe(filename);
+            var xml = await rWLib.Serializer.Deserialize(filename);
             using (var ms = new MemoryStream())
             {
                 using (XmlTextWriter writer = new XmlTextWriter(ms, new UTF8Encoding(false)) { Formatting = Formatting.Indented })

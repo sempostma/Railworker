@@ -25,6 +25,7 @@ using RWLib.RWBlueprints.Components;
 using RWLib.RWBlueprints.Interfaces;
 using Microsoft.Web.WebView2.Core;
 using Railworker.Windows;
+using System.Collections.ObjectModel;
 
 namespace Railworker
 {
@@ -37,12 +38,19 @@ namespace Railworker
         internal App App { get => (App)Application.Current; }
         internal Logger Logger { get => App.Logger; }
 
+
         public class MainWindowViewModel : ViewModel
         {
+            public class Tab
+            {
+                public required string Header { get; set; }
+                public required Page FrameContent { get; set; }
+            }
+
+            public ObservableCollection<Tab> Tabs { get; set; } = new ObservableCollection<Tab>();
+
             private string _windowTitle = "Railworker";
             public string WindowTitle { get => _windowTitle; set => SetProperty(ref _windowTitle, value); }
-            private Page? _frameContent;
-            public Page? FrameContent { get => _frameContent; set => SetProperty(ref _frameContent, value); }
             public string _fileContents = "";
             public string FileContents { get => _fileContents; set => SetProperty(ref _fileContents, value); }
             private bool _fileIsTSBin = false;
@@ -83,7 +91,11 @@ namespace Railworker
 
         private void MenuItem_Scenarios_Show_List_Click(object sender, RoutedEventArgs e)
         {
-            new RoutesAndScenariosWindow().Show();
+            OpenTab(new MainWindowViewModel.Tab
+            {
+                FrameContent = new RoutesAndScenariosWindow(),
+                Header = Railworker.Language.Resources.routes_and_scenarios
+            });
         }
 
         private void MenuItem_Routes_Route_Visualizer_Click(object sender, RoutedEventArgs e)
@@ -149,13 +161,75 @@ namespace Railworker
                     throw ex;
                 }
 
-                ViewModel.FrameContent = new FileEditor(ViewModel.FileContents, path);
+                OpenTab(new MainWindowViewModel.Tab
+                {
+                    FrameContent = new FileEditor(ViewModel.FileContents, path),
+                    Header = System.IO.Path.GetFileName(path)
+                });
             }
         }
 
         private void MenuItem_Edit_Create_Vehicle_Variation(object sender, RoutedEventArgs e)
         {
-            new VehicleVariationCreator((IRWRailVehicleBlueprint)ViewModel.FileBlueprint!).Show();
+            OpenTab(new MainWindowViewModel.Tab
+            {
+                FrameContent = new VehicleVariationGenerator((IRWRailVehicleBlueprint)ViewModel.FileBlueprint!),
+                Header = Railworker.Language.Resources.scenario_downloader
+            });
+        }
+
+        private void MenuItem_Scenarios_Downloader_Click(object sender, RoutedEventArgs e)
+        {
+            OpenTab(new MainWindowViewModel.Tab
+            {
+                FrameContent = new ScenarioDownloader(),
+                Header = Railworker.Language.Resources.scenario_downloader
+            });
+        }
+
+        private void MenuItem_RollingStock_RepaintUpdater(object sender, RoutedEventArgs e)
+        {
+            OpenTab(new MainWindowViewModel.Tab
+            {
+                FrameContent = new RepaintUpdater(),
+                Header = Railworker.Language.Resources.repaint_updater
+            });
+        }
+
+        public void OpenTab(MainWindowViewModel.Tab tab)
+        {
+            ViewModel.Tabs.Add(tab);
+            TabCtrl.SelectedItem = tab;
+        }
+
+        private void MenuItem_File_RWP_Packager_Click(object sender, RoutedEventArgs e)
+        {
+            OpenTab(new MainWindowViewModel.Tab
+            {
+                FrameContent = new RWPPackager(),
+                Header = Railworker.Language.Resources.rwp_packager
+            });
+        }
+
+        private void Tab_Close(object sender, RoutedEventArgs e)
+        {
+            var button = (Button)sender;
+            var tab = (MainWindowViewModel.Tab)button.DataContext;
+            ViewModel.Tabs.Remove(tab);
+        }
+
+        private void MenuItem_File_Save_Click(object sender, RoutedEventArgs e)
+        {
+            var tab = TabCtrl.SelectedItem as MainWindowViewModel.Tab;
+            if (tab == null) return;
+            switch(tab.FrameContent)
+            {
+                case FileEditor fileEditor:
+                    {
+                        fileEditor.SaveFile();
+                    }
+                    break;
+            }
         }
     }
 }

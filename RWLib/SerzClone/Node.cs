@@ -31,11 +31,12 @@ namespace RWLib.SerzClone
         public enum NodeType
         {
             FF41,
+            FF42,
             FF4E,
             FF50,
             FF52,
             FF56,
-            FF70
+            FF70,
         }
 
         public struct CDeltaString
@@ -66,6 +67,12 @@ namespace RWLib.SerzClone
             public byte numElements;
             public DataType dType;
             public DataUnion[] values;
+        }
+
+        public struct FF42Node
+        {
+            public uint size;
+            public byte[] data;
         }
 
         public struct FF4ENode

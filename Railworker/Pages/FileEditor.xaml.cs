@@ -6,6 +6,7 @@ using Railworker.Core;
 using RWLib;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Reflection;
@@ -22,6 +23,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Xml;
+using System.Xml.Linq;
 using static Railworker.Core.RailworkerFiles;
 
 namespace Railworker.Pages
@@ -107,6 +109,22 @@ namespace Railworker.Pages
                     TextEditor.Text = text;
                 }
             }
+        }
+
+        public Task SaveFile()
+        {
+            return Task.Run(async () =>
+            {
+                var xml = XDocument.Parse(ViewModel.FileContents);
+                var temporaryFile = await App.RWLib!.Serializer.SerializeWithSerzExe(xml);
+
+                string args = string.Format("/e, /select, \"{0}\"", temporaryFile);
+
+                ProcessStartInfo info = new ProcessStartInfo();
+                info.FileName = "explorer";
+                info.Arguments = args;
+                Process.Start(info);
+            });
         }
     }
 }

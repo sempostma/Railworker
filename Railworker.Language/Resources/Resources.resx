@@ -120,8 +120,14 @@
   <data name="add_to_rules" xml:space="preserve">
     <value>Add to rules</value>
   </data>
+  <data name="always" xml:space="preserve">
+    <value>Always</value>
+  </data>
   <data name="asfdsdfads" xml:space="preserve">
     <value />
+  </data>
+  <data name="author" xml:space="preserve">
+    <value>Author</value>
   </data>
   <data name="basic_information" xml:space="preserve">
     <value>Basic information</value>
@@ -171,6 +177,15 @@
   <data name="directory" xml:space="preserve">
     <value>Directory</value>
   </data>
+  <data name="download" xml:space="preserve">
+    <value>Download</value>
+  </data>
+  <data name="do_for_all" xml:space="preserve">
+    <value>Do for all</value>
+  </data>
+  <data name="driving_characteristics_mismatch" xml:space="preserve">
+    <value>We found different driving charactersitics for "{0}". Do you wish to keep the custom "{0}"? from the repaint?</value>
+  </data>
   <data name="dsfa" xml:space="preserve">
     <value />
   </data>
@@ -195,6 +210,9 @@
   <data name="failed_to_read_file" xml:space="preserve">
     <value>Failed to read file</value>
   </data>
+  <data name="fdafdsafa" xml:space="preserve">
+    <value />
+  </data>
   <data name="file" xml:space="preserve">
     <value>File</value>
   </data>
@@ -203,6 +221,15 @@
   </data>
   <data name="file_does_not_exist" xml:space="preserve">
     <value>File does not exist</value>
+  </data>
+  <data name="file_extensions_to_ignore" xml:space="preserve">
+    <value>File extensions to ignore</value>
+  </data>
+  <data name="find" xml:space="preserve">
+    <value>Find</value>
+  </data>
+  <data name="find_repaints" xml:space="preserve">
+    <value>Find repaints</value>
   </data>
   <data name="guid" xml:space="preserve">
     <value>Guid</value>
@@ -216,11 +243,29 @@
   <data name="insert_below" xml:space="preserve">
     <value>Insert below</value>
   </data>
+  <data name="install" xml:space="preserve">
+    <value>Install</value>
+  </data>
   <data name="inverted" xml:space="preserve">
     <value>Inverted</value>
   </data>
+  <data name="keep" xml:space="preserve">
+    <value>Keep</value>
+  </data>
+  <data name="keep_driver_position" xml:space="preserve">
+    <value>We found a different driver position in the repaint. Do you want to keep the custom driver position?</value>
+  </data>
+  <data name="keep_max_speed" xml:space="preserve">
+    <value>Keep maximum speed</value>
+  </data>
+  <data name="keep_numbering_list" xml:space="preserve">
+    <value>Do you wish to keep the custom numbering list from the repaint?</value>
+  </data>
   <data name="language" xml:space="preserve">
     <value>Language</value>
+  </data>
+  <data name="license" xml:space="preserve">
+    <value>License</value>
   </data>
   <data name="loading_routes" xml:space="preserve">
     <value>Loading routes</value>
@@ -288,11 +333,20 @@
   <data name="process_track_bin" xml:space="preserve">
     <value>Process Tracks.bin</value>
   </data>
+  <data name="protected" xml:space="preserve">
+    <value>Protected</value>
+  </data>
   <data name="reading_scenario_files" xml:space="preserve">
     <value>Reading scenario files</value>
   </data>
   <data name="remove" xml:space="preserve">
     <value>Remove</value>
+  </data>
+  <data name="repaint_search_dir" xml:space="preserve">
+    <value>Repaint search directory</value>
+  </data>
+  <data name="repaint_updater" xml:space="preserve">
+    <value>Repaint updater</value>
   </data>
   <data name="replace" xml:space="preserve">
     <value>Replace</value>
@@ -324,6 +378,12 @@
   <data name="route_visualizer" xml:space="preserve">
     <value>Route Visualizer</value>
   </data>
+  <data name="rwppackager_disclaimer" xml:space="preserve">
+    <value>Unlike some other programs that may try to generate an RWP file. This program actually creates a 1 to 1 .rwp file to that of Railworks. The RWP file format is actually just a normal .zip file, only with some bytes prefixed to beginning of the file. If you remove those bytes you can open it using any program. The reason you can open it using 7zip is that 7zip is very smart and treats it like an SFX but thats getting way to complicated. Those extra bytes at the beginning of the file are just the author's name and a 1 (unprotected) or 2 (licensed).</value>
+  </data>
+  <data name="rwp_packager" xml:space="preserve">
+    <value>RWP Packager</value>
+  </data>
   <data name="save" xml:space="preserve">
     <value>Save</value>
   </data>
@@ -348,6 +408,9 @@
   <data name="scenarios_show_list" xml:space="preserve">
     <value>View scenario list</value>
   </data>
+  <data name="scenario_downloader" xml:space="preserve">
+    <value>Scenario downloader</value>
+  </data>
   <data name="script" xml:space="preserve">
     <value>Script</value>
   </data>
@@ -369,11 +432,20 @@
   <data name="settings" xml:space="preserve">
     <value>Settings</value>
   </data>
+  <data name="success" xml:space="preserve">
+    <value>Success</value>
+  </data>
   <data name="suggested_display_name" xml:space="preserve">
     <value>Suggested display name:</value>
   </data>
   <data name="suggested_filename" xml:space="preserve">
     <value>Suggested filename:</value>
+  </data>
+  <data name="template_bin" xml:space="preserve">
+    <value>Template .bin</value>
+  </data>
+  <data name="template_bin_explanation" xml:space="preserve">
+    <value>The file which should be used as the default file for repaints. Its values will be used to update the repaint .bin files.</value>
   </data>
   <data name="test" xml:space="preserve">
     <value />
@@ -392,6 +464,15 @@
   </data>
   <data name="unknown_name" xml:space="preserve">
     <value>Unknown name</value>
+  </data>
+  <data name="unlicensed" xml:space="preserve">
+    <value>Unlicensed</value>
+  </data>
+  <data name="unprotected" xml:space="preserve">
+    <value>Unprotected</value>
+  </data>
+  <data name="update" xml:space="preserve">
+    <value>Update</value>
   </data>
   <data name="use_system_language" xml:space="preserve">
     <value>Use system language</value>

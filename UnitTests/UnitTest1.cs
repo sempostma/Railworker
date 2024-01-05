@@ -7,27 +7,20 @@ using System.Threading.Tasks;
 
 namespace UnitTests
 {
-    public class Tests
+    public class UnitTest1
     {
         private RWLibrary rwLib;
-        private RWSerializer serializer;
 
         [SetUp]
         public void Setup()
         {
-            this.rwLib = new RWLibrary(new RWLibOptions(new UnitTestLogger())
-            {
-                TSPath = "E:\\SteamLibrary\\steamapps\\common\\RailWorks"
-            });
-            this.serializer = rwLib.CreateSerializer();
+            this.rwLib = new RWLibrary(new RWLibOptions { Logger = new UnitTestLogger() });
         }
 
         [Test]
         public async Task TestSerializer()
         {
-            var serializer = rwLib.CreateSerializer();
-
-            var result = await serializer.Deserialize("E:\\SteamLibrary\\steamapps\\common\\RailWorks\\Assets\\ChrisTrains\\RailSimulator\\RailVehicles\\Locomotives\\Diesel\\NS Class 6400\\Engine\\Version DB Cargo\\NS Class 6400 DB Cargo.bin");
+            var result = await rwLib.Serializer.Deserialize("E:\\SteamLibrary\\steamapps\\common\\RailWorks\\Assets\\ChrisTrains\\RailSimulator\\RailVehicles\\Locomotives\\Diesel\\NS Class 6400\\Engine\\Version DB Cargo\\NS Class 6400 DB Cargo.bin");
 
             Assert.NotNull(result.Root);
         }
@@ -35,9 +28,7 @@ namespace UnitTests
         [Test]
         public async Task TestBlueprintLoader()
         {
-            var blueprintLoader = rwLib.CreateBlueprintLoader(serializer);
-
-            var result = await blueprintLoader.FromFilename("E:\\SteamLibrary\\steamapps\\common\\RailWorks\\Assets\\ChrisTrains\\RailSimulator\\RailVehicles\\Locomotives\\Diesel\\NS Class 6400\\Engine\\Version DB Cargo\\NS Class 6400 DB Cargo.bin");
+            var result = await rwLib.BlueprintLoader.FromFilename("E:\\SteamLibrary\\steamapps\\common\\RailWorks\\Assets\\ChrisTrains\\RailSimulator\\RailVehicles\\Locomotives\\Diesel\\NS Class 6400\\Engine\\Version DB Cargo\\NS Class 6400 DB Cargo.bin");
 
             Assert.AreEqual(result.XMLElementName, "cEngineBlueprint");
         }
@@ -45,7 +36,7 @@ namespace UnitTests
         [Test]
         public async Task TestRouteLoader()
         {
-            var routeLoader = rwLib.CreateRouteLoader(serializer);
+            var routeLoader = rwLib.RouteLoader;
 
             var result = routeLoader.LoadRoutes();
 
@@ -60,7 +51,7 @@ namespace UnitTests
         [Test]
         public async Task TestRouteLoaderScenarioLoading()
         {
-            var routeLoader = rwLib.CreateRouteLoader(serializer);
+            var routeLoader = rwLib.RouteLoader;
 
             var routes = routeLoader.LoadRoutes();
 
@@ -82,8 +73,7 @@ namespace UnitTests
         [Test]
         public async Task TestRoutLoaderConsistLoading()
         {
-            var routeLoader = rwLib.CreateRouteLoader(serializer);
-            var blueprintLoader = rwLib.CreateBlueprintLoader(serializer);
+            var routeLoader = rwLib.RouteLoader;
 
             var routes = routeLoader.LoadRoutes();
 
@@ -113,8 +103,8 @@ namespace UnitTests
         [Test]
         public async Task TestRoutLoaderConsistVehicleLoading()
         {
-            var routeLoader = rwLib.CreateRouteLoader(serializer);
-            var blueprintLoader = rwLib.CreateBlueprintLoader(serializer);
+            var routeLoader = rwLib.RouteLoader;
+            var blueprintLoader = rwLib.BlueprintLoader;
 
             var routes = routeLoader.LoadRoutes();
 
@@ -146,7 +136,7 @@ namespace UnitTests
                                 //}
 
                                 Assert.Pass();
-                            } 
+                            }
                             else
                             {
                                 Assert.Fail("Blueprint is not a RailVehicle");

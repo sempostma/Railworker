@@ -11,6 +11,7 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml;
+using System.Xml.Linq;
 using static RWLib.SerzClone.Node;
 
 namespace RWLib.SerzClone
@@ -32,7 +33,7 @@ namespace RWLib.SerzClone
         }
         public class TooManyChildrenException : Exception { }
 
-        private const string prolog = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n";
+        private const string prolog = "<?Xml version=\"1.0\" encoding=\"utf-8\"?>\n";
         private const string binPrelude = "SERZ";
 
         private BinaryStreamReader StreamReader { get; set; }
@@ -41,6 +42,7 @@ namespace RWLib.SerzClone
         private NodeUnion[] savedTokenList = new NodeUnion[255];
         private int savedTokenListIdx = 0;
         private NodeUnion? lastNode = null;
+        private StringBuilder sb = new StringBuilder();
 
         public BinToObj(Stream stream, IRWLogger? logger = null)
         {
@@ -64,19 +66,31 @@ namespace RWLib.SerzClone
                     {
                         case 0x41:
                             {
-                                logger?.Log(RWLogType.Verbose, "Processing 0x41");
+                                logger?.Log(RWLogType.Verbose, "Processing 0x41 (" + StreamReader.CurrentIndex + ")");
                                 await StreamReader.IncrementCurrentIndex();
                                 var token = await ProcessFF41();
                                 var node = new NodeUnion { type = NodeType.FF41, value = token };
                                 savedTokenList[savedTokenListIdx] = node;
                                 if (lastNode.HasValue) yield return lastNode.Value;
                                 lastNode = node;
-                                logger?.Log(RWLogType.Verbose, "Done processing 0x41");
+                                logger?.Log(RWLogType.Verbose, "Done processing 0x41 (" + StreamReader.CurrentIndex + ")");
+                                break;
+                            }
+                        case 0x42: // <blob>
+                            {
+                                logger?.Log(RWLogType.Verbose, "Processing 0x42 (" + StreamReader.CurrentIndex + ")");
+                                await StreamReader.IncrementCurrentIndex();
+                                var token = await ProcessFF42();
+                                var node = new NodeUnion { type = NodeType.FF42, value = token };
+                                savedTokenList[savedTokenListIdx] = node;
+                                if (lastNode.HasValue) yield return lastNode.Value;
+                                lastNode = node;
+                                logger?.Log(RWLogType.Verbose, "Done processing 0x42 (" + StreamReader.CurrentIndex + ")");
                                 break;
                             }
                         case 0x43:
                             {
-                                logger?.Log(RWLogType.Verbose, "Processing 0x43");
+                                logger?.Log(RWLogType.Verbose, "Processing 0x43 (" + StreamReader.CurrentIndex + ")");
                                 await StreamReader.MoveCurrentIndex(6);
                                 if (lastNode.HasValue)
                                 {
@@ -90,67 +104,67 @@ namespace RWLib.SerzClone
                                     t.value = r;
                                     lastNode = t;
                                 }
-                                logger?.Log(RWLogType.Verbose, "Done processing 0x43");
+                                logger?.Log(RWLogType.Verbose, "Done processing 0x43 (" + StreamReader.CurrentIndex + ")");
                                 break;
                             }
                         case 0x4e: 
                             {
-                                logger?.Log(RWLogType.Verbose, "Processing 0x4e");
+                                logger?.Log(RWLogType.Verbose, "Processing 0x4e (" + StreamReader.CurrentIndex + ")");
                                 await StreamReader.IncrementCurrentIndex();
                                 var n = new FF4ENode();
                                 var node = new NodeUnion { type = NodeType.FF4E, value = n };
                                 if (lastNode.HasValue) yield return lastNode.Value;
                                 lastNode = node;
                                 savedTokenList[savedTokenListIdx] = node;
-                                logger?.Log(RWLogType.Verbose, "Done processing 0x4e");
+                                logger?.Log(RWLogType.Verbose, "Done processing 0x4e (" + StreamReader.CurrentIndex + ")");
                                 break;
                             }
                         case 0x50:
                             {
-                                logger?.Log(RWLogType.Verbose, "Processing 0x50");
+                                logger?.Log(RWLogType.Verbose, "Processing 0x50 (" + StreamReader.CurrentIndex + ")");
                                 await StreamReader.IncrementCurrentIndex();
                                 var token = await ProcessFF50();
                                 var node = new NodeUnion { type = NodeType.FF50, value = token };
                                 if (lastNode.HasValue) yield return lastNode.Value;
                                 lastNode = node;
                                 savedTokenList[savedTokenListIdx] = node;
-                                logger?.Log(RWLogType.Verbose, "Done processing 0x50");
+                                logger?.Log(RWLogType.Verbose, "Done processing 0x50 (" + StreamReader.CurrentIndex + ")");
                                 break;
                             }
                         case 0x52:
                             {
-                                logger?.Log(RWLogType.Verbose, "Processing 0x52");
+                                logger?.Log(RWLogType.Verbose, "Processing 0x52 (" + StreamReader.CurrentIndex + ")");
                                 await StreamReader.IncrementCurrentIndex();
                                 var token = await ProcessFF52();
                                 var node = new NodeUnion { type = NodeType.FF52, value = token };
                                 if (lastNode.HasValue) yield return lastNode.Value;
                                 lastNode = node;
                                 savedTokenList[savedTokenListIdx] = node;
-                                logger?.Log(RWLogType.Verbose, "Done processing 0x52");
+                                logger?.Log(RWLogType.Verbose, "Done processing 0x52 (" + StreamReader.CurrentIndex + ")");
                                 break;
                             }
                         case 0x56:
                             {
-                                logger?.Log(RWLogType.Verbose, "Processing 0x56");
+                                logger?.Log(RWLogType.Verbose, "Processing 0x56 (" + StreamReader.CurrentIndex + ")");
                                 await StreamReader.IncrementCurrentIndex();
                                 var token = await ProcessFF56();
                                 var node = new NodeUnion { type = NodeType.FF56, value = token };
                                 if (lastNode.HasValue) yield return lastNode.Value;
                                 lastNode = node;
                                 savedTokenList[savedTokenListIdx] = node;
-                                logger?.Log(RWLogType.Verbose, "Done processing 0x56");
+                                logger?.Log(RWLogType.Verbose, "Done processing 0x56 (" + StreamReader.CurrentIndex + ")");
                                 break;
                             }
                         case 0x70:
                             {
-                                logger?.Log(RWLogType.Verbose, "Processing 0x70");
+                                logger?.Log(RWLogType.Verbose, "Processing 0x70 (" + StreamReader.CurrentIndex + ")");
                                 await StreamReader.IncrementCurrentIndex();
                                 var token = await ProcessFF70();
                                 var node = new NodeUnion { type = NodeType.FF70, value = token };
                                 if (lastNode.HasValue) yield return lastNode.Value;
                                 lastNode = node;
                                 savedTokenList[savedTokenListIdx] = node;
-                                logger?.Log(RWLogType.Verbose, "Done processing 0x70");
+                                logger?.Log(RWLogType.Verbose, "Done processing 0x70 (" + StreamReader.CurrentIndex + ")");
                                 break;
                             }
                         default:
@@ -176,6 +190,7 @@ namespace RWLib.SerzClone
             {
                 if (StreamReader.Current != binPrelude[StreamReader.CurrentIndex]) throw new RWLib.Exceptions.IncorrectPreludeException("Bad prelude character at the start of .bin file.");
                 await StreamReader.IncrementCurrentIndex();
+
             }
         }
 
@@ -190,41 +205,72 @@ namespace RWLib.SerzClone
 
             if (first == 0xFF && second == 0xFF) // New string
             {
-                var strLen = await StreamReader.ReadUint32();
-                byte[] str = await StreamReader.ReadBytes((int)strLen);
+                var utf8StrLen = await StreamReader.ReadUint32();
 
-                if (stringContext == StringContext.Name) // Replace '-' with '::' in names only
+                for (int i = 0; i < utf8StrLen; i++)
                 {
-                    for (int i = 0; i < str.Length; i++)
+                    int utf8CharSize = GetUtf8CharSize(StreamReader.Current);
+                    var bytes = await StreamReader.ReadBytes(utf8CharSize);
+                    if (stringContext == StringContext.Name && retArray.Count > 0 && utf8CharSize == 1 && bytes[0] == ':' && retArray.Last() == ':')
+                    { // Replace '::' with '-' in names only
+                        retArray.RemoveAt(retArray.Count - 1);
+                        retArray.AddRange(Encoding.UTF8.GetBytes("-"));
+
+                        continue;
+                    }
+                    for (int j = 0; j < bytes.Length; j++)
                     {
-                        if (str[i] == ':' && str[i + 1] == ':')
-                        {
-                            retArray.AddRange(Encoding.ASCII.GetBytes("-"));
-                            i += 1;
-                        }
-                        else
-                        {
-                            retArray.Add(str[i]);
-                        }
+                        retArray.Add(bytes[j]);
                     }
                 }
-                else
-                {
-                    retArray.AddRange(str);
-                }
 
-                var retStr = Encoding.ASCII.GetString(retArray.ToArray());
+                var retStr = Encoding.UTF8.GetString(retArray.ToArray());
 
                 stringMap.Add(retStr);
 
+                logger?.Log(RWLogType.Verbose, "Found new string: " + retStr);
+
+                if (retArray.Count > utf8StrLen)
+                {
+                    // we encountered some UTF8 characters
+                    logger?.Log(RWLogType.Verbose, "Processed UTF8 string");
+                }
+
                 return (stringContext == StringContext.Name && retArray.Count == 0) ? "e" : retStr;
+            } 
+            else
+            {
+                var littleEndian = new byte[2] { first, second };
+                UInt16 strIdx = BitConverter.ToUInt16(littleEndian);
+                try
+                {
+                    string savedName = stringMap[strIdx];
+
+                    logger?.Log(RWLogType.Verbose, "Found reused string: " + savedName + " at string map index: " + strIdx);
+
+                    return (stringContext == StringContext.Name && savedName.Length == 0) ? "e" : savedName;
+                } catch(Exception ex)
+                {
+                    throw ex;
+                }
             }
+        }
 
-            var littleEndian = new byte[2] { first, second };
-            UInt16 strIdx = BitConverter.ToUInt16(littleEndian);
-            string savedName = stringMap[strIdx];
+        static int GetUtf8CharSize(byte firstByte)
+        {
+            if ((firstByte & 0b1000_0000) == 0b0000_0000)
+                return 1; // Single-byte character
 
-            return (stringContext == StringContext.Name && savedName.Length == 0) ? "e" : savedName;
+            if ((firstByte & 0b1110_0000) == 0b1100_0000)
+                return 2; // Two-byte character
+
+            if ((firstByte & 0b1111_0000) == 0b1110_0000)
+                return 3; // Three-byte character
+
+            if ((firstByte & 0b1111_1000) == 0b1111_0000)
+                return 4; // Four-byte character
+
+            throw new InvalidOperationException("Invalid UTF-8 character");
         }
 
         private async Task<CDeltaString> ProcessCDeltaString()
@@ -283,7 +329,7 @@ namespace RWLib.SerzClone
             {
                 case NodeType.FF56:
                     {
-                        logger?.Log(RWLogType.Verbose, "Processing saved line FF56");
+                        logger?.Log(RWLogType.Verbose, "Processing saved line FF56 (" + StreamReader.CurrentIndex + ")");
                         var n = (FF56Node)savedLine.value;
                         var data = await ProcessData(n.dType);
                         var node = new FF56Node
@@ -292,19 +338,20 @@ namespace RWLib.SerzClone
                             dType = n.dType,
                             value = data
                         };
-                        logger?.Log(RWLogType.Verbose, "Done processing saved line FF56");
+                        logger?.Log(RWLogType.Verbose, "Done processing saved line FF56 (" + StreamReader.CurrentIndex + ")");
                         return new NodeUnion
                         {
                             type = NodeType.FF56,
                             value = node
                         };
                     }
-                case NodeType.FF41:
+                case NodeType.FF41: 
                     { 
-                        logger?.Log(RWLogType.Verbose, "Processing saved line FF41");
+                        logger?.Log(RWLogType.Verbose, "Processing saved line FF41 (" + StreamReader.CurrentIndex + ")");
                         var n = (FF41Node)savedLine.value;
                         var dataUnionList = new List<DataUnion>();
                         var numElements = StreamReader.Current;
+                        await StreamReader.IncrementCurrentIndex();
 
                         var values = new List<DataUnion>();
                         int i = 0;
@@ -321,7 +368,7 @@ namespace RWLib.SerzClone
                             values = values.ToArray(),
                             numElements = numElements
                         };
-                        logger?.Log(RWLogType.Verbose, "Done processing saved line FF41");
+                        logger?.Log(RWLogType.Verbose, "Done processing saved line FF41 (" + StreamReader.CurrentIndex + ")");
 
                         return new NodeUnion
                         {
@@ -329,11 +376,33 @@ namespace RWLib.SerzClone
                             value = node
                         };
                     }
+                case NodeType.FF42:
+                    {
+                        logger?.Log(RWLogType.Verbose, "Processing saved line FF42 (" + StreamReader.CurrentIndex + ")");
+                        var n = (FF42Node)savedLine.value;
+
+                        var size = await StreamReader.ReadUint32();
+                        var data = await StreamReader.ReadBytes((int)size);
+
+                        var node = new FF42Node
+                        {
+                            size = size,
+                            data = data
+                        };
+                        logger?.Log(RWLogType.Verbose, "Done processing saved line FF42 (" + StreamReader.CurrentIndex + ")");
+
+                        return new NodeUnion
+                        {
+                            type = NodeType.FF42,
+                            value = node
+                        };
+                    }
+
 
                 case NodeType.FF50:
                     {
-                        logger?.Log(RWLogType.Verbose, "Processing saved line FF50");
                         var n = (FF50Node)savedLine.value;
+                        logger?.Log(RWLogType.Verbose, "Processing saved line FF50: " + n.name + "  (" + StreamReader.CurrentIndex + ")");
                         var id = await StreamReader.ReadUint32();
                         var children = await StreamReader.ReadUint32();
 
@@ -348,7 +417,7 @@ namespace RWLib.SerzClone
                             id = id,
                             children = children
                         };
-                        logger?.Log(RWLogType.Verbose, "Done processing saved line FF50");
+                        logger?.Log(RWLogType.Verbose, "Done processing saved line FF50 (" + StreamReader.CurrentIndex + ")");
 
                         return new NodeUnion
                         {
@@ -358,7 +427,7 @@ namespace RWLib.SerzClone
                     }
                 case NodeType.FF52:
                     {
-                        logger?.Log(RWLogType.Verbose, "Processing saved line FF52");
+                        logger?.Log(RWLogType.Verbose, "Processing saved line FF52 (" + StreamReader.CurrentIndex + ")");
                         var value = await StreamReader.ReadUint32();
                         var n = (FF52Node)savedLine.value;
 
@@ -367,13 +436,13 @@ namespace RWLib.SerzClone
                             name = n.name,
                             value = value
                         };
-                        logger?.Log(RWLogType.Verbose, "Done processing saved line FF52");
+                        logger?.Log(RWLogType.Verbose, "Done processing saved line FF52 (" + StreamReader.CurrentIndex + ")");
 
                         return new NodeUnion { type = NodeType.FF52, value = node };
                     }
                 case NodeType.FF70:
                     {
-                        logger?.Log(RWLogType.Verbose, "Processing saved line FF70");
+                        logger?.Log(RWLogType.Verbose, "Processing saved line FF70 (" + StreamReader.CurrentIndex + ")");
                         var n = (FF70Node)savedLine.value;
 
                         var node = new FF70Node
@@ -381,7 +450,7 @@ namespace RWLib.SerzClone
                             name = n.name
                         };
 
-                        logger?.Log(RWLogType.Verbose, "Done processing saved line FF70");
+                        logger?.Log(RWLogType.Verbose, "Done processing saved line FF70 (" + StreamReader.CurrentIndex + ")");
                         return new NodeUnion
                         {
                             type = NodeType.FF70,
@@ -390,10 +459,10 @@ namespace RWLib.SerzClone
                     }
                 case NodeType.FF4E:
                     {
-                        logger?.Log(RWLogType.Verbose, "Processing saved line FF4E");
+                        logger?.Log(RWLogType.Verbose, "Processing saved line FF4E (" + StreamReader.CurrentIndex + ")");
                         var node = new FF4ENode { };
 
-                        logger?.Log(RWLogType.Verbose, "Done processing saved line FF4E");
+                        logger?.Log(RWLogType.Verbose, "Done processing saved line FF4E (" + StreamReader.CurrentIndex + ")");
                         return new NodeUnion
                         {
                             type = NodeType.FF4E,
@@ -405,7 +474,7 @@ namespace RWLib.SerzClone
             }
         }
 
-        private async Task<FF41Node> ProcessFF41()
+        private async Task<FF41Node> ProcessFF41() // element with a fixed series of values with a specified datatype e.g: <Value d:numElements="4" d:elementType="sFloat32" d:precision="string">0.0000000 0.0000000 0.0000000 0.0000000</Value>
         {
             var nodeName = await Identifier(StringContext.Name);
             var dataType = await Identifier(StringContext.DType);
@@ -428,7 +497,19 @@ namespace RWLib.SerzClone
             };
         }
 
-        private async Task<FF50Node> ProcessFF50()
+        private async Task<FF42Node> ProcessFF42()
+        {
+            var size = await StreamReader.ReadUint32();
+            var data = await StreamReader.ReadBytes((int)size);
+
+            return new FF42Node
+            {
+                size = size,
+                data = data
+            };
+        }
+
+        private async Task<FF50Node> ProcessFF50() // container element with id e.g: <cHcEffectMaterialDx-cVectorParam d:id="203212680">
         {
             var nodeName = await Identifier(StringContext.Name);
             var id = await StreamReader.ReadUint32();
@@ -442,7 +523,7 @@ namespace RWLib.SerzClone
             };
         }
 
-        private async Task<FF52Node> ProcessFF52()
+        private async Task<FF52Node> ProcessFF52() // element with Uint32 value e.g: <VertexType d:type="ref">216717792</VertexType>
         {
             var nodeName = await Identifier(StringContext.Name);
             var value = await StreamReader.ReadUint32();
@@ -454,7 +535,7 @@ namespace RWLib.SerzClone
             };
         }
 
-        private async Task<FF56Node> ProcessFF56()
+        private async Task<FF56Node> ProcessFF56() // element with data type and simple value, e.g: <Name d:type="cDeltaString">AMBIENT</Name>
         {
             var nodeName = await Identifier(StringContext.Name);
             var dataTypeStr = await Identifier(StringContext.DType);
@@ -469,7 +550,7 @@ namespace RWLib.SerzClone
             };
         }
 
-        private async Task<FF70Node> ProcessFF70()
+        private async Task<FF70Node> ProcessFF70() // closing of 0x50 node
         {
             var nodeName = await Identifier(StringContext.Name);
 

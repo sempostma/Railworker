@@ -153,7 +153,7 @@ namespace RWLib
                 stream = isCustomSerz ? archive.Open() : null;
             }
             if (isCustomSerz) document = await ((RWSerializer)serializer).Deserialize(stream!);
-            else document = await serializer.DeserializeWithSerzExe(filename);
+            else document = await serializer.Deserialize(filename);
             return FromXDocument(blueprintId, document, context);
         }
 

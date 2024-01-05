@@ -50,6 +50,62 @@ namespace Railworker.Core
             };
         }
 
+        public static IEnumerable<TSource> RecursiveSelect<TSource>(
+            this IEnumerable<TSource> source, Func<TSource, IEnumerable<TSource>> childSelector)
+        {
+            var stack = new Stack<IEnumerator<TSource>>();
+            var enumerator = source.GetEnumerator();
+
+            try
+            {
+                while (true)
+                {
+                    if (enumerator.MoveNext())
+                    {
+                        TSource element = enumerator.Current;
+                        yield return element;
+
+                        stack.Push(enumerator);
+                        enumerator = childSelector(element).GetEnumerator();
+                    }
+                    else if (stack.Count > 0)
+                    {
+                        enumerator.Dispose();
+                        enumerator = stack.Pop();
+                    }
+                    else
+                    {
+                        yield break;
+                    }
+                }
+            }
+            finally
+            {
+                enumerator.Dispose();
+
+                while (stack.Count > 0) // Clean up in case of an exception.
+                {
+                    enumerator = stack.Pop();
+                    enumerator.Dispose();
+                }
+            }
+        }
+
+        internal static void CopyFilesRecursively(string sourcePath, string targetPath)
+        {
+            //Now Create all of the directories
+            foreach (string dirPath in Directory.GetDirectories(sourcePath, "*", SearchOption.AllDirectories))
+            {
+                Directory.CreateDirectory(dirPath.Replace(sourcePath, targetPath));
+            }
+
+            //Copy all the files & Replaces any files with the same name
+            foreach (string newPath in Directory.GetFiles(sourcePath, "*.*", SearchOption.AllDirectories))
+            {
+                File.Copy(newPath, newPath.Replace(sourcePath, targetPath), true);
+            }
+        }
+
         internal static bool ChangeTsPath()
         {
             var valid = false;

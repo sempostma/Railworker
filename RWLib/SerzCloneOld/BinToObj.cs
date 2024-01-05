@@ -30,7 +30,7 @@ namespace RWLib.SerzCloneOld
         }
         public class TooManyChildrenException : Exception { }
 
-        private const string prolog = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n";
+        private const string prolog = "<?Xml version=\"1.0\" encoding=\"utf-8\"?>\n";
         private const string binPrelude = "SERZ";
 
         private BinaryStreamReader StreamReader { get; set; }

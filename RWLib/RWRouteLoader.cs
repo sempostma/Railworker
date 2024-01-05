@@ -156,7 +156,7 @@ namespace RWLib
                 {
                     var guid = new DirectoryInfo(scenarioDir).Name;
 
-                    var scenarioPropertiesFilename = Path.Combine(scenarioDir, "ScenarioProperties.xml");
+                    var scenarioPropertiesFilename = Path.Combine(scenarioDir, "ScenarioProperties.Xml");
                     if (File.Exists(scenarioPropertiesFilename) == false) continue;
 
                     if (listOfFoundGuid.Contains(guid)) continue;
@@ -176,7 +176,7 @@ namespace RWLib
             {
                 ZipArchive zip = ZipFile.OpenRead(apFile);
 
-                var scenarioPropertyEntries = zip.Entries.Where(e => e.FullName.StartsWith("Scenarios\\") && e.Name == "ScenarioProperties.xml");
+                var scenarioPropertyEntries = zip.Entries.Where(e => e.FullName.StartsWith("Scenarios\\") && e.Name == "ScenarioProperties.Xml");
 
                 foreach (var entry in scenarioPropertyEntries)
                 {
@@ -210,7 +210,7 @@ namespace RWLib
 
             XDocument? document = null;
 
-            var routePropertiesFilename = Path.Combine(routeDir, "RouteProperties.xml");
+            var routePropertiesFilename = Path.Combine(routeDir, "RouteProperties.Xml");
 
             if (File.Exists(routePropertiesFilename))
             {
@@ -223,7 +223,7 @@ namespace RWLib
                 foreach (var apFile in apFiles)
                 {
                     ZipArchive zip = ZipFile.OpenRead(apFile);
-                    var entry = zip.GetEntry("RouteProperties.xml");
+                    var entry = zip.GetEntry("RouteProperties.Xml");
                     if (entry != null)
                     {
                         try
@@ -245,7 +245,7 @@ namespace RWLib
 
             if (document == null)
             {
-                // route does not have a RouteProperties.xml file so it's not valid.
+                // route does not have a RouteProperties.Xml file so it's not valid.
                 // skip it
 
                 return null;
@@ -268,7 +268,7 @@ namespace RWLib
 
                 if (route == null)
                 {
-                    // route does not have a RouteProperties.xml file so it's not valid.
+                    // route does not have a RouteProperties.Xml file so it's not valid.
                     // skip it
 
                     continue;

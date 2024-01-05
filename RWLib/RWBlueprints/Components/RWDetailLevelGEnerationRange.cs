@@ -13,7 +13,7 @@ namespace RWLib.RWBlueprints.Components
         {
         }
 
-        public int HighestLevel => (int)xml.Element("cSceneryRenderBlueprint-sDetailLevelGenerationRange")!.Element("HighestLevel_1isHighest")!;
-        public int LowestLevel => (int)xml.Element("cSceneryRenderBlueprint-sDetailLevelGenerationRange")!.Element("LowestLevel_10isLowest")!;
+        public int HighestLevel => (int)Xml.Element("cSceneryRenderBlueprint-sDetailLevelGenerationRange")!.Element("HighestLevel_1isHighest")!;
+        public int LowestLevel => (int)Xml.Element("cSceneryRenderBlueprint-sDetailLevelGenerationRange")!.Element("LowestLevel_10isLowest")!;
     }
 }

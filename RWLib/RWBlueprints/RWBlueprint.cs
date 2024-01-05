@@ -39,8 +39,8 @@ namespace RWLib
         public string Product => BlueprintId.Product;
         public string BlueprintIDPath => BlueprintId.Path;
 
-        public RWRenderComponent RenderComponent { get => new RWRenderComponent(xml.Element("RenderComponent")!.Element("cAnimObjectRenderBlueprint")!, lib); }
-        public bool HasRenderComponent => xml.Element("RenderComponent")?.Element("cAnimObjectRenderBlueprint") != null;
+        public RWRenderComponent RenderComponent { get => new RWRenderComponent(Xml.Element("RenderComponent")!.Element("cAnimObjectRenderBlueprint")!, lib); }
+        public bool HasRenderComponent => Xml.Element("RenderComponent")?.Element("cAnimObjectRenderBlueprint") != null;
 
     }
 }

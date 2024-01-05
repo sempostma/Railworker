@@ -52,6 +52,7 @@
   <ItemGroup>
     <PackageReference Include="AvalonEdit" Version="6.3.0.90" />
     <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.2151.40" />
+    <PackageReference Include="System.Linq.Async" Version="6.0.1" />
     <PackageReference Include="WindowsAPICodePack" Version="7.0.4" />
   </ItemGroup>
 
@@ -69,7 +70,7 @@
     <Compile Update="RouteTracksBinVisualizer.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="RoutesAndScenarios.xaml.cs">
+    <Compile Update="Pages\RoutesAndScenarios.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>

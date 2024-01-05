@@ -10,7 +10,7 @@ namespace RWLib
 
         public double Lat
         {
-            get => ((double?)xml
+            get => ((double?)Xml
                 ?.Element("Origin")
                 ?.Element("sGeoPosition")
                 ?.Element("Lat")) ?? 0.0;
@@ -18,7 +18,7 @@ namespace RWLib
 
         public double Long
         {
-            get => ((double?)xml
+            get => ((double?)Xml
                 ?.Element("Origin")
                 ?.Element("sGeoPosition")
                 ?.Element("Long")) ?? 0.0;
@@ -26,7 +26,7 @@ namespace RWLib
 
         public double Easting
         {
-            get => ((double?)xml
+            get => ((double?)Xml
                 ?.Element("MapOffset")
                 ?.Element("sMapCoords")
                 ?.Element("Easting")) ?? 0.0;
@@ -34,7 +34,7 @@ namespace RWLib
 
         public double Northing
         {
-            get => ((double?)xml
+            get => ((double?)Xml
                 ?.Element("MapOffset")
                 ?.Element("sMapCoords")
                 ?.Element("Northing")) ?? 0.0;
@@ -42,13 +42,13 @@ namespace RWLib
 
         public string ZoneLetter
         {
-            get => ((string?)xml
+            get => ((string?)Xml
                 ?.Element("ZoneLetter")) ?? "";
         }
 
         public int ZoneNumber
         {
-            get => ((int?)xml
+            get => ((int?)Xml
                 ?.Element("ZoneNumber")) ?? 0;
         }
     }

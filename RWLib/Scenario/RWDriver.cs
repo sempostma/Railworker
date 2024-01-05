@@ -23,25 +23,25 @@ namespace RWLib.Scenario
         {
         }
 
-        public bool PlayerDriver => (bool?)xml.Element("PlayerDriver") ?? false;
-        public RWDisplayName ServiceName => new RWDisplayName(xml.Element("ServiceName")!);
-        public double StartTime => (double?)xml.Element("StartTime") ?? 0;
-        public double StartSpeed => (double?)xml.Element("StartSpeed") ?? 0;
-        public double EndSpeed => (double?)xml.Element("EndSpeed") ?? 0;
-        public double ExpectedPerformance => (double?)xml.Element("ExpectedPerformance") ?? 0;
-        public ServiceClassType ServiceClass => (ServiceClassType)((int?)xml.Element("ServiceClass") ?? 0);
-        public bool PlayerControlled => (bool?)xml.Element("PlayerControlled") ?? false;
-        public string PriorPathingStatus => xml.Element("PriorPathingStatus")?.Value ?? "";
-        public string PathingStatus => xml.Element("PathingStatus")?.Value ?? "";
-        public double RepathIn => (double?)xml.Element("RepathIn") ?? 0;
-        public double ForcedRepath => (double?)xml.Element("ForcedRepath") ?? 0;
-        public bool OffPath => (bool?)xml.Element("OffPath") ?? false;
-        public double StartTriggerDistanceFromPlayerSquared => (double?)xml.Element("StartTriggerDistanceFromPlayerSquared") ?? 0;
-        public bool UnloadedAtStart => (bool?)xml.Element("UnloadedAtStart") ?? false;
+        public bool PlayerDriver => (bool?)Xml.Element("PlayerDriver") ?? false;
+        public RWDisplayName ServiceName => new RWDisplayName(Xml.Element("ServiceName")!);
+        public double StartTime => (double?)Xml.Element("StartTime") ?? 0;
+        public double StartSpeed => (double?)Xml.Element("StartSpeed") ?? 0;
+        public double EndSpeed => (double?)Xml.Element("EndSpeed") ?? 0;
+        public double ExpectedPerformance => (double?)Xml.Element("ExpectedPerformance") ?? 0;
+        public ServiceClassType ServiceClass => (ServiceClassType)((int?)Xml.Element("ServiceClass") ?? 0);
+        public bool PlayerControlled => (bool?)Xml.Element("PlayerControlled") ?? false;
+        public string PriorPathingStatus => Xml.Element("PriorPathingStatus")?.Value ?? "";
+        public string PathingStatus => Xml.Element("PathingStatus")?.Value ?? "";
+        public double RepathIn => (double?)Xml.Element("RepathIn") ?? 0;
+        public double ForcedRepath => (double?)Xml.Element("ForcedRepath") ?? 0;
+        public bool OffPath => (bool?)Xml.Element("OffPath") ?? false;
+        public double StartTriggerDistanceFromPlayerSquared => (double?)Xml.Element("StartTriggerDistanceFromPlayerSquared") ?? 0;
+        public bool UnloadedAtStart => (bool?)Xml.Element("UnloadedAtStart") ?? false;
 
         private IEnumerable<RWDriverInstruction> GetDriverInstructions()
         {
-            var element = xml.Element("DriverInstructionContainer")!.Element("cDriverInstructionContainer")!.Element("DriverInstruction")!;
+            var element = Xml.Element("DriverInstructionContainer")!.Element("cDriverInstructionContainer")!.Element("DriverInstruction")!;
 
             foreach (var instruction in element.Elements())
             {

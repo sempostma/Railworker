@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 
@@ -9,6 +10,7 @@ namespace RWLib.RWBlueprints.Components
 {
     public class RWDisplayName
     {
+        [JsonIgnore]
         public XElement displayNameElement;
 
         public string? En { get => GetDisplayName("English"); set => SetDisplayName("English", value); }
