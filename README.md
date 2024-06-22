@@ -15,7 +15,7 @@ Features:
 
 The Build<xyz> projects are projects containing build scripts for programatically generating repaints
 
-The RailworkerMegaFreightPack1 also includes various containers, 45ft, 40ft and 20ft containers. Including blueprint XML and blender files. You may use these examples freely. There is also an Sggmrss folder under "Source". This includes only a single textured bogie.
+The RailworkerMegaFreightPack1 project/folder also includes various containers, 45ft, 40ft and 20ft containers. Including blueprint XML and blender files. You may use these examples freely. There is also an Sggmrss folder under "Source". This includes only a single textured bogie.
 
 License:
 
