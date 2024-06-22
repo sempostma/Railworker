@@ -1,6 +1,8 @@
 Railworker
 ===
 
+A program/library for Train Simulator (RailWorks)
+
 This project is not being actively worked on, it will probably never reach production and should be for personal use only. Feel free to copy any code from my project to your own project.
 
 Features:
