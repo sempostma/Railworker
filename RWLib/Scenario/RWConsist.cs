@@ -1,4 +1,5 @@
-﻿using System.Xml.Linq;
+﻿using RWLib.RWBlueprints.Components;
+using System.Xml.Linq;
 
 namespace RWLib.Scenario
 {
@@ -8,10 +9,23 @@ namespace RWLib.Scenario
         public string scenarioGuid;
         public XElement consistElement;
         private RWLibrary lib;
+        public RWDisplayName? ServiceName
+        {
+            get
+            {
+                var xml = consistElement.Element("Driver")?.Element("cDriver")?.Element("ServiceName");
+                return xml != null ? new RWDisplayName(xml) : null;
+            }
+        }
 
         public bool IsPlayer => consistElement.Element("Driver")?.Element("cDriver")?.Element("PlayerDriver")?.Value == "1";
         public bool IsLooseConsist => consistElement.Element("Driver")?.Element("cDriver") == null;
-        public RWDriver Driver => new Lazy<RWDriver>(() => new RWDriver(consistElement.Element("Driver")?.Element("cDriver")!, lib)).Value;
+        public RWDriver? Driver {
+            get {
+                var driver = consistElement.Element("Driver")?.Element("cDriver");
+                return driver != null ? new RWDriver(driver, lib) : null;
+            }
+        }
 
         public RWConsist(string routeGuid, string scenarioGuid, XElement consistElement, RWLibrary lib)
         {

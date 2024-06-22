@@ -29,7 +29,15 @@ namespace RWLib
         {
             get
             {
-                return String.Format("{0}\\{1}\\{2}", Provider, Product, BlueprintId);
+                return String.Format("{0}/{1}/{2}", Provider, Product, BlueprintIDPath);
+            }
+        }
+
+        public string BinPath
+        {
+            get
+            {
+                return Path.ChangeExtension(XmlPath, "bin");
             }
         }
 
@@ -38,9 +46,5 @@ namespace RWLib
         public string Provider => BlueprintId.Provider;
         public string Product => BlueprintId.Product;
         public string BlueprintIDPath => BlueprintId.Path;
-
-        public RWRenderComponent RenderComponent { get => new RWRenderComponent(Xml.Element("RenderComponent")!.Element("cAnimObjectRenderBlueprint")!, lib); }
-        public bool HasRenderComponent => Xml.Element("RenderComponent")?.Element("cAnimObjectRenderBlueprint") != null;
-
     }
 }

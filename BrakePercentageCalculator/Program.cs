@@ -29,7 +29,22 @@ class Program {
     {
         //ParseBinWithCustomFunction().Wait();
         //ScanAssetDirectory().Wait();
-        ControlValueWatcher();
+        //ControlValueWatcher();
+        CreateUICWagonTypeNumbers();
+    }
+
+    public static void CreateUICWagonTypeNumbers()
+    {
+        RWLibrary rwLib = new RWLibrary(new RWLibOptions { UseCustomSerz = true, Logger = new Logger() });
+
+        var test = RWUICWagonNumber.FromDigits("33", "84", "4962", "488");
+        var testS = test.ToString();
+
+        for (int i = 0; i < 1000; i += (i + 10) % 30)
+        {
+            var v = RWUICWagonNumber.FromDigits("33", "84", i.ToString("D4"), "488");
+            Console.WriteLine(v.ToString(RWUICWagonNumber.Format.Plain));
+        }
     }
 
     public static void ControlValueWatcher()
@@ -72,7 +87,7 @@ class Program {
 
     public static string DetermineDisplayName(RWDisplayName? displayName)
     {
-        if (displayName == null) return "Uknown name";
+        if (displayName == null) return "Uknown Name";
         var listInOrderOfPriority = new string[] {
                 displayName.En,
                 displayName.Fr,
@@ -84,7 +99,7 @@ class Program {
                 displayName.Ru,
                 displayName.Other,
                 displayName.Key,
-                "Uknown name"
+                "Uknown Name"
             };
 
         return listInOrderOfPriority.Where(x => String.IsNullOrWhiteSpace(x) == false).First();
@@ -111,13 +126,13 @@ class Program {
                 {
                     await foreach (var item in rwLib.BlueprintLoader.ScanDirectory(directory, progressBar, cancellationToken))
                     {
-                        if (item.HasRenderComponent && item.RenderComponent.DoesGeometryGeoPcdxExist == false)
-                        {
-                            // has missing gepocdx
-                            progressBar.Pause();
-                            Console.WriteLine("missing geopcdx for: " + item.RenderComponent.GeometryFilename.ToString());
-                            progressBar.Resume();
-                        }
+                        //if (item.HasRenderComponent && item.RenderComponent.DoesGeometryGeoPcdxExist == false)
+                        //{
+                        //    // has missing gepocdx
+                        //    progressBar.Pause();
+                        //    Console.WriteLine("missing geopcdx for: " + item.RenderComponent.GeometryFilename.ToString());
+                        //    progressBar.Resume();
+                        //}
 
                         var filter = item.XMLElementName == "cConsistBlueprint"
                             || item.XMLElementName == "cEngineBlueprint"
@@ -349,7 +364,7 @@ class Program {
 
         //                IBrakeAssembly airBrake;
 
-        //                double mass = consistVehicle.Component.TotalMass;
+        //                double Mass = consistVehicle.Component.TotalMass;
 
         //                if (vehicle is RWEngineBlueprint)
         //                {
@@ -374,12 +389,12 @@ class Program {
         //                }
 
         //                var airBrakePercentage = airBrake == null ? 0 : (airBrake as AirBrakeSimulation)!.MaxForcePercentOfVehicleWeight;
-        //                var brakingWeight = mass * (airBrakePercentage / 100);
+        //                var brakingWeight = Mass * (airBrakePercentage / 100);
 
-        //                Console.WriteLine($"{Math.Round(mass, 1)}t {Math.Round(airBrakePercentage)}% BRH {vehicle.Name}");
+        //                Console.WriteLine($"{Math.Round(Mass, 1)}t {Math.Round(airBrakePercentage)}% BRH {vehicle.Name}");
 
         //                count++;
-        //                totalMass += mass;
+        //                totalMass += Mass;
         //                totalBrakingWeight += brakingWeight;
         //            }
 

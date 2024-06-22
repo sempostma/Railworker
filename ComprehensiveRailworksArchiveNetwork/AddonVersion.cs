@@ -16,6 +16,8 @@ namespace ComprehensiveRailworksArchiveNetwork
         /// </summary>
         public required List<RWPFile> RWPFiles { get; set; }
         public required List<ExeFile> InstallerFiles { get; set; }
+        public required List<string> FileList { get; set; }
+        public required string Url { get; set; }
 
         [XmlArrayItem(typeof(CopyDirectory))]
         [XmlArrayItem(typeof(CopyFile))]

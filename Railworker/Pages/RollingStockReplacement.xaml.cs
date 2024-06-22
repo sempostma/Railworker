@@ -130,6 +130,16 @@ namespace Railworker.Pages
                 AvailableVehicles.CollectionChanged += AvailableVehicles_CollectionChanged;
             }
 
+            public Consist? _selectedConsist = null;
+            public Consist? SelectedConsist
+            {
+                get => _selectedConsist;
+                set
+                {
+                    SetProperty(ref _selectedConsist, value);
+                }
+            }
+
             private void AvailableVehicles_CollectionChanged(object? sender, NotifyCollectionChangedEventArgs e)
             {
                 OnPropertyChanged(new PropertyChangedEventArgs(nameof(ClearButtonVisibility)));
@@ -411,6 +421,19 @@ namespace Railworker.Pages
                 }
             }
             tvi.BringIntoView();
+        }
+
+        private void ConsistsListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            ViewModel.ConsistVehicles.Clear();
+            ViewModel.SelectedConsist = ConsistsListView.SelectedItem as Consist;
+            foreach (var vehicle in (ConsistsListView.SelectedItem as Consist)?.RWConsist.Vehicles ?? [])
+            {
+                ViewModel.ConsistVehicles.Add(new ConsistVehicle
+                {
+                    RWConsistVehicle = vehicle
+                });
+            }
         }
     }
 }

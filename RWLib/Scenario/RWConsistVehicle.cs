@@ -12,6 +12,8 @@ namespace RWLib.Scenario
         public string consistId;
         public XElement railVehicle;
 
+        public string Name => railVehicle.Element("Name")!.Value;
+
         public RWBlueprintID BlueprintID { get => GetBlueprintID(); }
         public IConsistVehicleComponent Component { get => GetConsistVehicleComponent(); }
 

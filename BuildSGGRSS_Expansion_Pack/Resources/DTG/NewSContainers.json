@@ -1,0 +1,527 @@
+[
+  {
+    "filename": "Container_twin_20ft.bin",
+    "name": "C-2X20-Green+Blue",
+    "scaleX": 0.03
+  },
+  //{
+  //  "filename": "Container_twin_60ft.bin",
+  //  "name": "C-2X20-Red+Green+Blue"
+  //},
+  {
+    "filename": "Conti_1x_20ft_001.bin",
+    "name": "C-20-CMA",
+    "moveZ": 3.055,
+    "scaleX": 0.03
+  },
+  {
+    "filename": "Conti_1x_20ft_002.bin",
+    "name": "C-20-Nedlloyd",
+    "moveZ": -3.055,
+    "scaleX": 0.03
+  },
+  {
+    "filename": "Conti_1x_20ft_003.bin",
+    "name": "C-20-Hapag-Lloyd",
+    "moveZ": 3.055,
+    "scaleX": 0.03
+  },
+  {
+    "filename": "Conti_1x_20ft_004.bin",
+    "name": "C-20-NileDutch",
+    "moveZ": -3.055,
+    "scaleX": 0.03
+  },
+  {
+    "filename": "Conti_1x_20ft_005.bin",
+    "name": "C-20-Tasman Asia",
+    "moveZ": 3.055,
+    "scaleX": 0.03
+  },
+  {
+    "filename": "Conti_1x_20ft_006.bin",
+    "name": "C-20-Seaco",
+    "moveZ": -3.055,
+    "scaleX": 0.03
+  },
+  {
+    "filename": "Conti_1x_20ft_007.bin",
+    "name": "C-20-Manchester Liners",
+    "moveZ": 3.055,
+    "scaleX": 0.03
+  },
+  {
+    "filename": "Conti_1x_20ft_008.bin",
+    "name": "C-20-Xtra",
+    "moveZ": -3.055,
+    "scaleX": 0.03
+  },
+  {
+    "filename": "Conti_1x_20ft_009.bin",
+    "name": "C-20-Tasman Orient",
+    "moveZ": 3.055,
+    "scaleX": 0.03
+  },
+  {
+    "filename": "Conti_1x_20ft_010.bin",
+    "name": "C-20-UES",
+    "moveZ": -3.055
+  },
+  {
+    "filename": "Conti_1x_20ft_011.bin",
+    "name": "C-20-Evergreen",
+    "moveZ": 3.055,
+    "scaleX": 0.03
+  },
+  {
+    "filename": "Conti_1x_20ft_012.bin",
+    "name": "C-20-Evergreen 2",
+    "moveZ": -3.055,
+    "scaleX": 0.03
+  },
+  {
+    "filename": "Conti_1x_20ft_013.bin",
+    "name": "C-20-MSC",
+    "moveZ": 3.055,
+    "scaleX": 0.03
+  },
+  {
+    "filename": "Conti_1x_20ft_014.bin",
+    "name": "C-20-GVC",
+    "moveZ": -3.055,
+    "scaleX": 0.03
+  },
+  {
+    "filename": "Conti_1x_20ft_015.bin",
+    "name": "C-20-NYK",
+    "moveZ": 3.055,
+    "scaleX": 0.03
+  },
+  {
+    "filename": "Conti_1x_20ft_016.bin",
+    "name": "C-20-Safmarine",
+    "moveZ": -3.055,
+    "scaleX": 0.03
+  },
+  {
+    "filename": "Conti_1x_20ft_017.bin",
+    "name": "C-20-KMTC",
+    "moveZ": 3.055,
+    "scaleX": 0.03
+  },
+  {
+    "filename": "Conti_1x_20ft_018.bin",
+    "name": "C-20-Royal Arctic",
+    "moveZ": -3.055,
+    "scaleX": 0.03
+  },
+  {
+    "filename": "Conti_1x_20ft_019.bin",
+    "name": "C-20-China Shipping",
+    "moveZ": 3.055,
+    "scaleX": 0.03
+  },
+  {
+    "filename": "Conti_1x_20ft_020.bin",
+    "name": "C-20-China Shipping",
+    "moveZ": -3.055,
+    "scaleX": 0.03
+  },
+  {
+    "filename": "Conti_1x_20ft_021.bin",
+    "name": "C-20-Xtra 2",
+    "moveZ": 3.055,
+    "scaleX": 0.03
+  },
+  {
+    "filename": "Conti_1x_20ft_022.bin",
+    "name": "C-20-CKLine",
+    "moveZ": -3.055,
+    "scaleX": 0.03
+  },
+  {
+    "filename": "Conti_1x_20ft_023.bin",
+    "name": "C-20-Oiy Zim",
+    "moveZ": 3.055,
+    "scaleX": 0.03
+  },
+  {
+    "filename": "Conti_1x_20ft_024.bin",
+    "name": "C-20-Austrialia-New Zealand Direct Line",
+    "moveZ": -3.055,
+    "scaleX": 0.03
+  },
+  {
+    "filename": "Conti_1x_20ft_025.bin",
+    "name": "C-20-Northland",
+    "moveZ": 3.055,
+    "scaleX": 0.03
+  },
+  {
+    "filename": "Conti_1x_40ft_001.bin",
+    "name": "C-40-K-line",
+    "scaleX": 0.03
+  },
+  {
+    "filename": "Conti_1x_40ft_002.bin",
+    "name": "C-40-Oiy Zim",
+    "scaleX": 0.03
+  },
+  {
+    "filename": "Conti_1x_40ft_003.bin",
+    "name": "C-40-NYK",
+    "scaleX": 0.03
+  },
+  //{
+  //  "filename": "Conti_1x_48ft_001.bin"
+  //},
+  //{
+  //  "filename": "Conti_1x_48ft_002.bin"
+  //},
+  //{
+  //  "filename": "Conti_1x_48ft_003.bin"
+  //},
+  //{
+  //  "filename": "Conti_1x_48ft_004.bin"
+  //},
+  //{
+  //  "filename": "Conti_1x_48ft_005.bin"
+  //},
+  //{
+  //  "filename": "Conti_1x_53ft_001.bin"
+  //},
+  //{
+  //  "filename": "Conti_1x_53ft_002.bin"
+  //},
+  //{
+  //  "filename": "Conti_1x_53ft_003.bin"
+  //},
+  //{
+  //  "filename": "Conti_1x_53ft_004.bin"
+  //},
+  //{
+  //  "filename": "Conti_1x_53ft_005.bin"
+  //},
+  //{
+  //  "filename": "Conti_1x_53ft_006.bin"
+  //},
+  //{
+  //  "filename": "Conti_1x_53ft_007.bin"
+  //},
+  //{
+  //  "filename": "Conti_1x_53ft_008.bin"
+  //},
+  //{
+  //  "filename": "Conti_20ft_20ft-Tank-40ft_001.bin"
+  //},
+  //{
+  //  "filename": "Conti_20ft_20ft-Tank-48ft_001.bin"
+  //},
+  //{
+  //  "filename": "Conti_20ft_20ft-Tank-53ft_001.bin"
+  //},
+  //{
+  //  "filename": "Conti_2x20ft-Tank-40ft_001.bin"
+  //},
+  //{
+  //  "filename": "Conti_2x20ft-Tank-53ft_001.bin"
+  //},
+  {
+    "filename": "Conti_2x20ft-Tank_001.bin",
+    "name": "TT-2X20-Akzo Nobel+Bulkhaul",
+    "scaleX": 0.03
+  },
+  {
+    "filename": "Conti_2x20ft-Tank_002.bin",
+    "name": "TT-2X20-Akzo Nobel",
+    "scaleX": 0.03
+  },
+  {
+    "filename": "Conti_2x20ft-Tank_003.bin",
+    "name": "TT-2X20-Bulkhaul",
+    "scaleX": 0.03
+  },
+  {
+    "filename": "Conti_2x20ft-Tank_004.bin",
+    "name": "TT-2X20-Cronos+Kyoei",
+    "scaleX": 0.03
+  },
+  {
+    "filename": "Conti_2x20ft-Tank_005.bin",
+    "name": "TT-2X20-Bulkhaul",
+    "scaleX": 0.03
+  },
+  //{
+  //  "filename": "Conti_2x_20ft-48ft_001.bin"
+  //},
+  //{
+  //  "filename": "Conti_2x_20ft-53ft_001.bin"
+  //},
+  //{
+  //  "filename": "Conti_2x_40ft_001.bin"
+  //},
+  //{
+  //  "filename": "Conti_2x_48ft_001.bin"
+  //},
+  //{
+  //  "filename": "Conti_3x_20ft-cont-tank-cont_001.bin"
+  //},
+  //{
+  //  "filename": "Conti_3x_20ft-cont-tank-cont_002.bin"
+  //},
+  //{
+  //  "filename": "Conti_3x_20ft-container_001.bin"
+  //},
+  //{
+  //  "filename": "Conti_3x_20ft-container_002.bin"
+  //},
+  //{
+  //  "filename": "Conti_3x_20ft-container_003.bin"
+  //},
+  //{
+  //  "filename": "Conti_3x_20ft-container_004.bin"
+  //},
+  //{
+  //  "filename": "Conti_3x_20ft-container_005.bin"
+  //},
+  //{
+  //  "filename": "Conti_3x_20ft-container_006.bin"
+  //},
+  //{
+  //  "filename": "Conti_3x_20ft-container_007.bin"
+  //},
+  //{
+  //  "filename": "Conti_3x_20ft-container_008.bin"
+  //},
+  //{
+  //  "filename": "Conti_3x_20ft-container_009.bin"
+  //},
+  //{
+  //  "filename": "Conti_3x_20ft-container_010.bin"
+  //},
+  //{
+  //  "filename": "Conti_3x_20ft-container_011.bin"
+  //},
+  //{
+  //  "filename": "Conti_3x_20ft-tank-cont-cont_001.bin"
+  //},
+  //{
+  //  "filename": "Conti_3x_20ft-tank-cont-cont_002.bin"
+  //},
+  //{
+  //  "filename": "Conti_3x_20ft-tank-cont-tank_001.bin"
+  //},
+  //{
+  //  "filename": "Conti_3x_20ft-tank-cont-tank_002.bin"
+  //},
+  //{
+  //  "filename": "Conti_3x_20ft-tank-tank-cont_001.bin"
+  //},
+  //{
+  //  "filename": "Conti_3x_20ft-tank-tank-cont_002.bin"
+  //},
+  //{
+  //  "filename": "Conti_3x_20ft-tank_001.bin"
+  //},
+  //{
+  //  "filename": "Conti_3x_20ft-tank_002.bin"
+  //},
+  //{
+  //  "filename": "Conti_3x_20ft-tank_003.bin"
+  //},
+  //{
+  //  "filename": "Conti_3x_20ft-tank_004.bin"
+  //},
+  //{
+  //  "filename": "Conti_3x_20ft-tank_005.bin"
+  //},
+  //{
+  //  "filename": "Conti_40ft-48ft_001.bin"
+  //},
+  //{
+  //  "filename": "Conti_40ft-53ft_001.bin"
+  //},
+  //{
+  //  "filename": "Conti_48ft-53ft_001.bin"
+  //},
+  {
+    "filename": "Conti_twin_20ft_001.bin",
+    "name": "C-2X20-CMA+Nedlloyd",
+    "scaleX": 0.03
+  },
+  {
+    "filename": "Conti_twin_20ft_002.bin",
+    "name": "C-2X20-NileDutch+HapagLloyd",
+    "scaleX": 0.03
+  },
+  {
+    "filename": "Conti_twin_20ft_003.bin",
+    "name": "C-2X20-Seaco+Tasman Asia",
+    "scaleX": 0.03
+  },
+  {
+    "filename": "Conti_twin_20ft_004.bin",
+    "name": "C-2X20-Xtra+Manchester Liners",
+    "scaleX": 0.03
+  },
+  {
+    "filename": "Conti_twin_20ft_005.bin",
+    "name": "C-2X20-UES+Tasman Orient",
+    "scaleX": 0.03
+  },
+  {
+    "filename": "Conti_twin_20ft_006.bin",
+    "name": "C-2X20-MSC+Overgreen",
+    "scaleX": 0.03
+  },
+  {
+    "filename": "Conti_twin_20ft_007.bin",
+    "name": "C-2X20-GVC+Seaco",
+    "scaleX": 0.03
+  },
+  {
+    "filename": "Conti_twin_20ft_008.bin",
+    "name": "C-2X20-Safmarine+NYK",
+    "scaleX": 0.03
+  },
+  {
+    "filename": "Conti_twin_20ft_009.bin",
+    "name": "C-2X20-Royal Arctic+KMTC",
+    "scaleX": 0.03
+  },
+  {
+    "filename": "Conti_twin_20ft_010.bin",
+    "name": "C-2X20-NZL+China Shipping",
+    "scaleX": 0.03
+  },
+  {
+    "filename": "Conti_twin_20ft_011.bin",
+    "name": "C-2X20-CKLine+Xtra",
+    "scaleX": 0.03
+  },
+  {
+    "filename": "Conti_twin_20ft_012.bin",
+    "name": "C-2X20-Austrialia-New Zealand Direct Line+Oiy Zim",
+    "scaleX": 0.03
+  },
+  {
+    "filename": "Conti_twin_20ft_013.bin",
+    "name": "C-2X20-Northland+Red",
+    "scaleX": 0.03
+  },
+  {
+    "filename": "Conti_twin_20ft_014.bin",
+    "name": "TTC-2X20-Manchester Liners+H&S Beer Tank",
+    "scaleX": 0.03
+  },
+  {
+    "filename": "Conti_twin_20ft_015.bin",
+    "name": "TTC-2X20-Seaco+Cronos",
+    "scaleX": 0.03
+  },
+  {
+    "filename": "Conti_twin_20ft_016.bin",
+    "name": "TTC-2X20-Oiy Zim+Kyoei",
+    "scaleX": 0.03
+  },
+  {
+    "filename": "Conti_twin_20ft_017.bin",
+    "name": "TTC-2X20-NYK+Bulkhaul",
+    "scaleX": 0.03
+  },
+  {
+    "filename": "Conti_twin_20ft_018.bin",
+    "name": "TTC-2X20-China Shipping+Akzo Nobel",
+    "scaleX": 0.03
+  },
+  //{
+  //  "filename": "Conti_twin_20ft_101.bin"
+  //},
+  //{
+  //  "filename": "Conti_twin_20ft_102.bin"
+  //},
+  //{
+  //  "filename": "Conti_twin_20ft_103.bin"
+  //},
+  //{
+  //  "filename": "Conti_twin_20ft_104.bin"
+  //},
+  //{
+  //  "filename": "Conti_twin_20ft_105.bin"
+  //},
+  //{
+  //  "filename": "Conti_twin_20ft_106.bin"
+  //},
+  //{
+  //  "filename": "Conti_twin_20ft_107.bin"
+  //},
+  //{
+  //  "filename": "Conti_twin_20ft_108.bin"
+  //},
+  //{
+  //  "filename": "Conti_twin_20ft_109.bin"
+  //},
+  //{
+  //  "filename": "Conti_twin_20ft_110.bin"
+  //},
+  //{
+  //  "filename": "Conti_twin_20ft_111.bin"
+  //},
+  //{
+  //  "filename": "Conti_twin_20ft_112.bin"
+  //},
+  //{
+  //  "filename": "Conti_twin_20ft_113.bin"
+  //},
+  {
+    "filename": "WP26_01_Cont20ftBlue.bin",
+    "name": "C-40-Blue",
+    "moveZ": 3.055,
+    "scaleX": 0.03
+  },
+  {
+    "filename": "WP26_01_Cont20ftGreen.bin",
+    "name": "C-20-Blue",
+    "moveZ": -3.055,
+    "scaleX": 0.03
+  },
+  {
+    "filename": "WP26_01_Cont20ftRed.bin",
+    "name": "C-20-Red",
+    "moveZ": 3.055,
+    "scaleX": 0.03
+  },
+  {
+    "filename": "WP26_01_Cont40ftBlue.bin",
+    "name": "C-40-Blue",
+    "scaleX": 0.03
+  },
+  {
+    "filename": "WP26_01_Cont40ftGreen.bin",
+    "name": "C-40-Green",
+    "scaleX": 0.03
+  },
+  {
+    "filename": "WP26_01_Cont40ftOrange.bin",
+    "name": "C-40-Orange",
+    "scaleX": 0.03
+  },
+  //{
+  //  "filename": "WP26_01_Cont60ft-001.bin"
+  //},
+  //{
+  //  "filename": "WP26_01_Cont60ft-002.bin"
+  //},
+  //{
+  //  "filename": "WP26_01_Cont60ft-003.bin"
+  //},
+  //{
+  //  "filename": "WP26_01_Cont60ft-004.bin"
+  //},
+  //{
+  //  "filename": "WP26_01_Cont60ft-005.bin"
+  //},
+  //{
+  //  "filename": "WP26_01_Cont60ft-006.bin"
+  //}
+]

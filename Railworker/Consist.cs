@@ -1,4 +1,7 @@
-﻿using RWLib.Scenario;
+﻿using Railworker.Core;
+using Railworker.Language;
+using RWLib.RWBlueprints.Components;
+using RWLib.Scenario;
 
 namespace Railworker
 {
@@ -6,6 +9,7 @@ namespace Railworker
     {
         public required RWConsist RWConsist { get; set; }
 
+        public string Name => RWConsist.Driver != null ? Utilities.DetermineDisplayName(RWConsist.ServiceName) : Language.Resources.loose_consist;
         public bool IsPlayer { get => RWConsist.IsPlayer; }
     }
 }

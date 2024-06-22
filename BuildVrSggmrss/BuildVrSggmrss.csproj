@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0-windows8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\AfirusCargoBlueprint.xml" />
+    <None Remove="Resources\Afirus_Containers.json" />
+    <None Remove="Resources\Afirus_Containers_20ftx2.json" />
+    <None Remove="Resources\Sggmrss_Back.xml" />
+    <None Remove="Resources\Sggmrss_Front.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\AfirusCargoBlueprint.xml" />
+    <EmbeddedResource Include="Resources\Afirus_Containers_20ftx2.json" />
+    <EmbeddedResource Include="Resources\Sggmrss_Back.xml" />
+    <EmbeddedResource Include="Resources\Sggmrss_Front.xml" />
+    <EmbeddedResource Include="Resources\Afirus_Containers.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Railworker\Railworker.csproj" />
+  </ItemGroup>
+
+</Project>

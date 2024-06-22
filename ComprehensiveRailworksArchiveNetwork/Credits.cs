@@ -3,7 +3,7 @@
 namespace ComprehensiveRailworksArchiveNetwork
 {
     
-    public class Collaborators
+    public class Collaborator
     {
         public required string CreditsText { get; set; }
         public required Author Author { get;set; }

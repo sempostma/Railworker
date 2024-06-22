@@ -1,0 +1,20 @@
+[
+  {
+    //Afirus\ContainerPack\RailNetwork\Cargo\sggrss_tt_20ft_x2_hoyer.bin
+    "cargo": [
+      {
+        "filename": "Afirus/20ft_iso_tt/20ft_iso_tt_hoyer_1",
+        "name": "TT-20-Hoyer",
+        "moveZ": -3.15,
+      },
+      {
+        "filename": "Afirus/20ft_iso_tt/20ft_iso_tt_hoyer_1",
+        "name": "TT-20-Hoyer",
+        "moveY": 3.15,
+      }
+    ],
+    "filename": "tt_20ft_x2_hoyer",
+    "name": "TT-2X20-Hoyer",
+    "mass": 53121
+  }
+]

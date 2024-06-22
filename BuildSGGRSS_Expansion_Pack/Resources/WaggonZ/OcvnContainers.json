@@ -1,0 +1,149 @@
+[
+  {
+    "filename": "Container_AGA.bin",
+    "name": "C-20-AGA",
+    "moveZ": 3.055,
+    "scaleZ": -0.01,
+    "mass":  14232
+  },
+  {
+    "filename": "Container_bama.bin",
+    "name": "C-20-Bama",
+    "moveZ": -3.055,
+    "scaleZ": -0.01,
+    "mass": 13212
+  },
+  {
+    "filename": "Container_Bring.bin",
+    "name": "C-20-Bring",
+    "moveZ": 3.055,
+    "scaleZ": -0.01,
+    "mass": 12932
+  },
+  {
+    "filename": "Container_Cargo_Partner.bin",
+    "name": "C-20-Cargo Partner",
+    "moveZ": -3.055,
+    "scaleZ": -0.01,
+    "mass": 6932
+  },
+  {
+    "filename": "Container_Coca_Cola.bin",
+    "name": "C-20-Coca Cola",
+    "moveZ": 3.055,
+    "scaleZ": -0.01,
+    "mass": 8943
+  },
+  {
+    "filename": "Container_DFDS.bin",
+    "name": "C-20-DFDS",
+    "moveZ": -3.055,
+    "scaleZ": -0.01,
+    "mass": 9832
+  },
+  {
+    "filename": "Container_DFDS_Tollpost.bin",
+    "name": "C-20-Tollpost",
+    "moveZ": 3.055,
+    "scaleZ": -0.01,
+    "mass": 11298
+  },
+  {
+    "filename": "Container_DHL.bin",
+    "name": "C-20-DHL",
+    "moveZ": -3.055,
+    "scaleZ": -0.01,
+    "mass": 12843
+  },
+  {
+    "filename": "Container_DSV.bin",
+    "name": "C-20-DSV",
+    "moveZ": 3.055,
+    "scaleZ": -0.01,
+    "mass": 13349
+  },
+  {
+    "filename": "Container_Evergreen.bin",
+    "name": "C-20-Evergreen 4",
+    "moveZ": -3.055,
+    "scaleZ": -0.01,
+    "mass": 14732
+  },
+  {
+    "filename": "Container_Glava.bin",
+    "name": "C-20-Glava",
+    "moveZ": 3.055,
+    "scaleZ": -0.01,
+    "mass": 13832
+  },
+  {
+    "filename": "Container_Green_Cargo_Green.bin",
+    "name": "C-20-Green Cargo (Green)",
+    "moveZ": -3.055,
+    "scaleZ": -0.01,
+    "mass": 12932
+  },
+  {
+    "filename": "Container_Green_Cargo_White.bin",
+    "name": "C-20-Green Cargo (White)",
+    "moveZ": 3.055,
+    "scaleZ": -0.01,
+    "mass": 11183
+  },
+  {
+    "filename": "Container_Hangartner.bin",
+    "name": "C-20-Hangartner",
+    "moveZ": -3.055,
+    "scaleZ": -0.01,
+    "mass": 11083
+  },
+  {
+    "filename": "Container_Linjegods_Blue.bin",
+    "name": "C-20-Linjegods Blue",
+    "moveZ": 3.055,
+    "scaleZ": -0.01,
+    "mass": 10093
+  },
+  {
+    "filename": "Container_Linjegods_White.bin",
+    "name": "C-20-Linjegods White",
+    "moveZ": -3.055,
+    "scaleZ": -0.01,
+    "mass": 9982
+  },
+  {
+    "filename": "Container_Norcargo.bin",
+    "name": "C-20-Norcargo",
+    "moveZ": 3.055,
+    "scaleZ": -0.01,
+    "mass": 8292
+  },
+  {
+    "filename": "Container_Norlines.bin",
+    "name": "C-20-Norlines",
+    "moveZ": -3.055,
+    "scaleZ": -0.01,
+    "mass": 7273
+  },
+  {
+    "filename": "Container_Posten.bin",
+    "name": "C-20-Posten",
+    "moveZ": 3.055,
+    "scaleZ": -0.01,
+    "mass": 11943
+  },
+  {
+    "filename": "Container_Tollpost_New.bin",
+    "name": "C-20-Tollpost (New)",
+    "moveZ": -3.055,
+    "scaleZ": -0.01,
+    "mass": 12784
+  },
+  {
+    "filename": "Container_Tollpost_Old.bin",
+    "name": "C-20-Tollpost (Old)",
+    "moveZ": 3.055,
+    "scaleZ": -0.01,
+    "mass": 13223
+  }
+]

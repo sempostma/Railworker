@@ -67,7 +67,6 @@ namespace RWLib
                 }
             }
 
-
             return binFile;
         }
 
@@ -134,7 +133,6 @@ namespace RWLib
             processInfo.WindowStyle = ProcessWindowStyle.Hidden;
             processInfo.RedirectStandardError = true;
             processInfo.RedirectStandardOutput = true;
-            processInfo.UseShellExecute = false;
 
             processInfo.FileName = rWLib.options.SerzExePath;
             processInfo.Arguments = '"' + filename + '"';

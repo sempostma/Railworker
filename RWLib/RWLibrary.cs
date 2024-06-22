@@ -1,4 +1,5 @@
 ﻿using RWLib.Exceptions;
+using RWLib.Packaging;
 using System.IO.Compression;
 using System.Text;
 
@@ -16,6 +17,7 @@ namespace RWLib
         public RWRouteLoader RouteLoader { get; }
         public RWTracksBinParser TracksBinParser { get; }
         public RWRailDriver RailDriver { get; }
+        public RWVariantGenerator RWVariantGenerator { get; }
 
         public RWLibrary(RWLibOptions? options = null)
         {
@@ -26,6 +28,7 @@ namespace RWLib
             RouteLoader = CreateRouteLoader(Serializer);
             TracksBinParser = CreateTracksBinParser(RouteLoader);
             RailDriver = CreatRailDriver();
+            RWVariantGenerator = CreateVariantGenerator(Serializer);
         }
 
         private RWSerializer CreateSerializer(bool useCustomSerz = false)
@@ -48,6 +51,11 @@ namespace RWLib
         private RWTracksBinParser CreateTracksBinParser(RWRouteLoader rwRouteLoader)
         {
             return new RWTracksBinParser(this, rwRouteLoader);
+        }
+
+        private RWVariantGenerator CreateVariantGenerator(RWSerializer rwSerializer)
+        {
+            return new RWVariantGenerator(this, rwSerializer);
         }
 
         private RWRailDriver CreatRailDriver()

@@ -1,0 +1,57 @@
+﻿<Page x:Class="Railworker.Pages.CRANNewAddon"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Railworker.Pages"
+      mc:Ignorable="d" 
+      xmlns:Converters="clr-namespace:Railworker.Converters"
+      d:DesignHeight="450" d:DesignWidth="800"
+      xmlns:lang="clr-namespace:Railworker.Language;assembly=Railworker.Language"
+      Title="CRANNewAddon">
+
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="100*" />
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Row="0" Content="Name:" VerticalAlignment="Center" />
+            <TextBox Grid.Row="0" Grid.Column="1" Margin="5" x:Name="txtName"/>
+
+            <Label Grid.Row="1" Content="Description:" VerticalAlignment="Center" />
+            <TextBox Grid.Row="1" Grid.Column="1" Margin="5" x:Name="txtDescription" AcceptsReturn="True" TextWrapping="Wrap"/>
+
+            <Label Grid.Row="2" Content="URL:" VerticalAlignment="Center" />
+            <TextBox Grid.Row="2" Grid.Column="1" Margin="5" x:Name="txtUrl" AcceptsReturn="True" TextWrapping="Wrap"/>
+
+            <Label Grid.Row="3" Content="Author:" VerticalAlignment="Center" />
+            <ComboBox Grid.Row="3" Grid.Column="1" Margin="5" x:Name="cmbAuthor" ItemsSource="{Binding Authors}"  DisplayMemberPath="Name" SelectedValuePath="Guid"/>
+
+            <Label Grid.Row="4" Content="Files:" VerticalAlignment="Center" />
+            <TextBox Height="200" Grid.Row="4" Grid.Column="1" Margin="5" x:Name="txtFiles" AcceptsReturn="True" TextWrapping="Wrap"/>
+
+            <Label Grid.Row="5" Content="Optional:" VerticalAlignment="Center" />
+            <CheckBox Grid.Row="5" Grid.Column="1" Margin="5" x:Name="chkOptional"/>
+        </Grid>
+        
+        <StackPanel Grid.Row="4" Orientation="Horizontal" HorizontalAlignment="Right" Margin="5">
+            <Button Content="Save" Margin="5" Click="BtnSave_Click" />
+            <Button Content="Cancel" Margin="5" Click="BtnCancel_Click" />
+        </StackPanel>
+    </Grid>
+</Page>

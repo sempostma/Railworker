@@ -57,6 +57,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\ComprehensiveRailworksArchiveNetwork\ComprehensiveRailworksArchiveNetwork.csproj" />
     <ProjectReference Include="..\Railworker.Language\Railworker.Language.csproj" />
     <ProjectReference Include="..\RWLib\RWLib.csproj" />
   </ItemGroup>

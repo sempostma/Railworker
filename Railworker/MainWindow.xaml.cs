@@ -26,6 +26,7 @@ using RWLib.RWBlueprints.Interfaces;
 using Microsoft.Web.WebView2.Core;
 using Railworker.Windows;
 using System.Collections.ObjectModel;
+using System.Diagnostics;
 
 namespace Railworker
 {
@@ -71,6 +72,18 @@ namespace Railworker
             }
 
             public Visibility CreateVehicleVariationVisibility => FileBlueprintIsRailVehicle ? Visibility.Visible : Visibility.Collapsed;
+
+            public Visibility AddAsConsistButton => ActiveConsist != null ? Visibility.Visible : Visibility.Collapsed;
+
+            public Consist? _activeConsist = null;
+            public Consist? ActiveConsist { 
+                get => _activeConsist;
+                set
+                {
+                    SetProperty(ref _activeConsist, value);
+                    OnPropertyChanged(new System.ComponentModel.PropertyChangedEventArgs("AddAsConsistButton"));
+                }
+            }
         }
 
         public MainWindowViewModel ViewModel { get; }
@@ -202,6 +215,15 @@ namespace Railworker
             TabCtrl.SelectedItem = tab;
         }
 
+        public void CloseTab(Page page)
+        {
+            var tabs = ViewModel.Tabs.Where(t => t.FrameContent == page).ToArray();
+            foreach (var t in tabs)
+            {
+                ViewModel.Tabs.Remove(t);
+            }
+        } 
+
         private void MenuItem_File_RWP_Packager_Click(object sender, RoutedEventArgs e)
         {
             OpenTab(new MainWindowViewModel.Tab
@@ -230,6 +252,50 @@ namespace Railworker
                     }
                     break;
             }
+        }
+
+        private void MenuItem_Edit_Create_Preload(object sender, RoutedEventArgs e)
+        {
+            OpenTab(new MainWindowViewModel.Tab
+            {
+                FrameContent = new ConsistCreator(ViewModel.ActiveConsist!),
+                Header = Railworker.Language.Resources.add_as_preload_consist
+            });
+        }
+
+        private void TabCtrl_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            var tabContent = TabCtrl.SelectedContent as MainWindowViewModel.Tab;
+            if (tabContent == null) return;
+            var page = tabContent.FrameContent;
+
+            if (page is RollingStockReplacement)
+            {
+                var rsr = (RollingStockReplacement)page;
+                ViewModel.ActiveConsist = rsr.ViewModel.SelectedConsist;
+            } else
+            {
+                ViewModel.ActiveConsist = null;
+            }
+            Debug.WriteLine(tabContent);
+        }
+
+        private void MenuItem_Management(object sender, RoutedEventArgs e)
+        {
+            OpenTab(new MainWindowViewModel.Tab
+            {
+                FrameContent = new CRANAdmin(),
+                Header = Railworker.Language.Resources.cran_admin
+            });
+        }
+
+        private void MenuItem_Preloads(object sender, RoutedEventArgs e)
+        {
+            OpenTab(new MainWindowViewModel.Tab
+            {
+                FrameContent = new PreloadsPage(),
+                Header = Railworker.Language.Resources.preloads
+            });
         }
     }
 }

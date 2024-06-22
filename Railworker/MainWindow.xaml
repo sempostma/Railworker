@@ -21,6 +21,7 @@
                 <MenuItem Header="{x:Static lang:Resources.edit}">
                     <MenuItem Header="{x:Static lang:Resources.settings}" Click="MenuItem_Edit_Settings_Click" />
                     <MenuItem Header="{x:Static lang:Resources.create_vehicle_variation}" Visibility="{Binding CreateVehicleVariationVisibility}" Click="MenuItem_Edit_Create_Vehicle_Variation" />
+                    <MenuItem Header="{x:Static lang:Resources.add_as_preload_consist}" Visibility="{Binding AddAsConsistButton}" Click="MenuItem_Edit_Create_Preload" />
                 </MenuItem>
                 <MenuItem Header="{x:Static lang:Resources.scenarios}">
                     <MenuItem Header="{x:Static lang:Resources.scenarios_show_list}" Click="MenuItem_Scenarios_Show_List_Click" />
@@ -32,8 +33,14 @@
                 <MenuItem Header="{x:Static lang:Resources.rolling_stock}">
                     <MenuItem Header="{x:Static lang:Resources.repaint_updater}" Click="MenuItem_RollingStock_RepaintUpdater" />
                 </MenuItem>
+                <MenuItem Header="{x:Static lang:Resources.cran}">
+                    <MenuItem Header="{x:Static lang:Resources.management}" Click="MenuItem_Management" />
+                </MenuItem>
+                <MenuItem Header="{x:Static lang:Resources.preloads}">
+                    <MenuItem Header="{x:Static lang:Resources.inspector}" Click="MenuItem_Preloads" />
+                </MenuItem>
             </Menu>
-            <TabControl x:Name="TabCtrl" ItemsSource="{Binding Source={StaticResource TabsSource}}" Width="Auto">
+            <TabControl x:Name="TabCtrl" ItemsSource="{Binding Source={StaticResource TabsSource}}" SelectionChanged="TabCtrl_SelectionChanged" Width="Auto">
                 <TabControl.ItemTemplate>
                     <DataTemplate DataType="local:MainWindow+MainWindowViewModel+Tab">
                         <StackPanel Orientation="Horizontal">

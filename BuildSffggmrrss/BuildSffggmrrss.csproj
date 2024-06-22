@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\AfirusCargoBlueprint20ftx2.xml" />
+    <None Remove="Resources\Afirus_Containers20ftx2.json" />
+    <None Remove="Resources\Afirus_Containers45ft.json" />
+    <None Remove="Resources\Sffggmrrss.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\AfirusCargoBlueprint20ftx2.xml" />
+    <EmbeddedResource Include="Resources\Afirus_Containers20ftx2.json" />
+    <EmbeddedResource Include="Resources\Afirus_Containers45ft.json" />
+    <EmbeddedResource Include="Resources\Sffggmrrss.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RWLib\RWLib.csproj" />
+  </ItemGroup>
+
+</Project>

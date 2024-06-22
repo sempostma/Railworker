@@ -234,7 +234,7 @@ namespace RWLib.SerzClone
 
                         // close node
                         //var node = (FF70Node)nodeUnion.value;
-                        //var element = new XElement(node.name);
+                        //var element = new XElement(node.Name);
                         //parent.element.Add(element);
                         //parent.counter++;
                         break;

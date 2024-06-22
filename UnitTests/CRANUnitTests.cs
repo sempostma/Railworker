@@ -32,6 +32,7 @@ namespace UnitTests
 
             var addonVersion = new AddonVersion
             {
+                FileList = new List<string>(),
                 PendingApproval = false,
                 Changes = new List<string> { "awesome new change #1", "awesome new change #2" },
                 Dependencies = new List<Dependency>(),
@@ -70,8 +71,11 @@ namespace UnitTests
 
             var addon = new Addon
             {
+                Era = AddonEra.IV,
+                Type = AddonType.Repaint,
+                IsOptional = false,
                 Author = author,
-                Credits = new List<Collaborators>(),
+                Credits = new List<Collaborator>(),
                 Description = "Test",
                 Guid = Guid.NewGuid(),
                 Name = "Faccs repaint",

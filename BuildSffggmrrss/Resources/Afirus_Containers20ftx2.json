@@ -1,0 +1,236 @@
+[
+  {
+    //Afirus\ContainerPack\RailNetwork\Cargo\sggrss_tt_20ft_x2_hoyer.bin
+    "cargo": [
+      {
+        "filename": "Afirus/20ft_iso_tt/20ft_iso_tt_hoyer_1",
+        "name": "TT-20-Hoyer",
+        "moveX": 0,
+        "moveZ": -4.811,
+        "moveY": 1.22,
+        "scaleZ": 0.005,
+        "scaleX": 0.01,
+        "scaleY": 0.01
+      },
+      {
+        "filename": "Afirus/20ft_iso_tt/20ft_iso_tt_hoyer_1",
+        "name": "TT-20-Hoyer",
+        "moveX": 0,
+        "moveY": 1.22,
+        "moveZ": 1.367,
+        "scaleZ": 0.005,
+        "scaleX": 0.01,
+        "scaleY": 0.01
+      }
+    ],
+    "filename": "sdggmrss_tt_20ft_x2_hoyer",
+    "name": "TT-2X20-Hoyer",
+    "mass": 53121
+  },
+  {
+    "cargo": [
+      {
+        "filename": "Afirus/20ft_iso_tt/20ft_iso_tt_peacock_1",
+        "name": "TT-20-Hoyer",
+        "moveX": 0,
+        "moveZ": -4.811,
+        "moveY": 1.22,
+        "scaleZ": 0.005,
+        "scaleX": 0.01,
+        "scaleY": 0.01
+      },
+      {
+        "filename": "Afirus/20ft_iso_tt/20ft_iso_tt_hoyer_1",
+        "name": "TT-20-Hoyer",
+        "moveX": 0,
+        "moveY": 1.22,
+        "moveZ": 1.367,
+        "scaleZ": 0.005,
+        "scaleX": 0.01,
+        "scaleY": 0.01
+      }
+    ],
+    "filename": "sdggmrss_tt_20ft_x2_peacock_hoyer",
+    "name": "TT-2X20-Peacock-Hoyer",
+    "mass": 53121
+  },
+  {
+    "cargo": [
+      {
+        "filename": "Afirus/20ft_iso_tt/20ft_iso_tt_bertschi_1",
+        "name": "TT-20-Hoyer",
+        "moveX": 0,
+        "moveZ": -4.811,
+        "moveY": 1.22,
+        "scaleZ": 0.005,
+        "scaleX": 0.01,
+        "scaleY": 0.01
+      },
+      {
+        "filename": "Afirus/20ft_iso_tt/20ft_iso_tt_den_hartogh_1",
+        "name": "TT-20-Hoyer",
+        "moveX": 0,
+        "moveY": 1.22,
+        "moveZ": 1.367,
+        "scaleZ": 0.005,
+        "scaleX": 0.01,
+        "scaleY": 0.01
+      }
+    ],
+    "filename": "sdggmrss_tt_20ft_x2_bertschi_den_hartogh",
+    "name": "TT-2X20-Bertschi-Den Hartogh",
+    "mass": 53121
+  },
+  {
+    "cargo": [
+      {
+        "filename": "Afirus/20ft_iso_tt/20ft_iso_tt_gcatainer_1",
+        "name": "TT-20-GCATainer",
+        "moveX": 0,
+        "moveZ": -4.811,
+        "moveY": 1.22,
+        "scaleZ": 0.005,
+        "scaleX": 0.01,
+        "scaleY": 0.01
+      },
+      {
+        "filename": "Afirus/20ft_iso_tt/20ft_iso_tt_gcatainer_1",
+        "name": "TT-20-GCATainer",
+        "moveX": 0,
+        "moveY": 1.22,
+        "moveZ": 1.367,
+        "scaleZ": 0.005,
+        "scaleX": 0.01,
+        "scaleY": 0.01
+      }
+    ],
+    "filename": "sdggmrss_tt_20ft_x2_gcatainer",
+    "name": "TT-2X20-GCATainer",
+    "mass": 53121
+  },
+  {
+    "cargo": [
+      {
+        "filename": "Afirus/20ft_iso_tt/20ft_iso_tt_eurotainer_1",
+        "name": "TT-20-Eurotainer",
+        "moveX": 0,
+        "moveZ": -4.811,
+        "moveY": 1.22,
+        "scaleZ": 0.005,
+        "scaleX": 0.01,
+        "scaleY": 0.01
+      },
+      {
+        "filename": "Afirus/20ft_iso_tt/20ft_iso_tt_den_hartogh_2",
+        "name": "TT-20-Den Hartogh",
+        "moveX": 0,
+        "moveY": 1.22,
+        "moveZ": 1.367,
+        "scaleZ": 0.005,
+        "scaleX": 0.01,
+        "scaleY": 0.01
+      }
+    ],
+    "filename": "sdggmrss_tt_20ft_x2_eurotainer_den_hartogh",
+    "name": "TT-2X20-Eurotainer-Den Hartogh",
+    "mass": 53121
+  },
+  {
+    "cargo": [
+      {
+        "filename": "Afirus/20ft_iso_tt/20ft_iso_tt_eurotainer_1",
+        "name": "TT-20-Eurotainer",
+        "moveZ": -4.811
+      },
+      {
+        "filename": "Afirus/20ft_iso_tt/20ft_iso_tt_peacock_1",
+        "name": "TT-20-Den Peacock",
+        "moveZ": 1.367
+      }
+    ],
+    "filename": "sdggmrss_tt_20ft_x2_eurotainer_peacock",
+    "name": "TT-2X20-Eurotainer-Peacock",
+    "mass": 53121
+  },
+  {
+    "cargo": [
+      {
+        "filename": "Afirus/20ft_iso_tt/20ft_iso_tt_den_hartogh_2",
+        "name": "TT-20-Den Hartogh",
+        "moveX": 0,
+        "moveZ": -4.811,
+        "moveY": 1.22,
+        "scaleZ": 0.005,
+        "scaleX": 0.01,
+        "scaleY": 0.01
+      },
+      {
+        "filename": "Afirus/20ft_iso_tt/20ft_iso_tt_den_hartogh_1",
+        "name": "TT-20-Den Hartogh (Black)",
+        "moveX": 0,
+        "moveY": 1.22,
+        "moveZ": 1.367,
+        "scaleZ": 0.005,
+        "scaleX": 0.01,
+        "scaleY": 0.01
+      }
+    ],
+    "filename": "sdggmrss_tt_20ft_x2_den_hartogh",
+    "name": "TT-2X20-Den Hartogh",
+    "mass": 53121
+  },
+  {
+    "cargo": [
+      {
+        "filename": "Afirus/20ft_iso_tt/20ft_iso_tt_gcatainer_1",
+        "name": "TT-20-GCATainer",
+        "moveX": 0,
+        "moveZ": -4.811,
+        "moveY": 1.22,
+        "scaleZ": 0.005,
+        "scaleX": 0.01,
+        "scaleY": 0.01
+      },
+      {
+        "filename": "Afirus/20ft_iso_tt/20ft_iso_tt_eurotainer_1",
+        "name": "TT-20-Eurotainer",
+        "moveX": 0,
+        "moveY": 1.22,
+        "moveZ": 1.367,
+        "scaleZ": 0.005,
+        "scaleX": 0.01,
+        "scaleY": 0.01
+      }
+    ],
+    "filename": "sdggmrss_tt_20ft_x2_gcatainer_eurotainer",
+    "name": "TT-2X20-GCATainer-Eurotainer",
+    "mass": 53121
+  },
+  {
+    "cargo": [
+      {
+        "filename": "Afirus/20ft_iso_tt/20ft_iso_tt_katoen_natie_1",
+        "name": "TT-20-Katoen Natie",
+        "moveX": 0,
+        "moveZ": -4.811,
+        "moveY": 1.22,
+        "scaleZ": 0.005,
+        "scaleX": 0.01,
+        "scaleY": 0.01
+      },
+      {
+        "filename": "Afirus/20ft_iso_tt/20ft_iso_tt_vtg_1",
+        "name": "TT-20-VTG",
+        "moveX": 0,
+        "moveY": 1.22,
+        "moveZ": 1.367,
+        "scaleZ": 0.005,
+        "scaleX": 0.01,
+        "scaleY": 0.01
+      }
+    ],
+    "filename": "sdggmrss_tt_20ft_x2_katoen_natie_vtg",
+    "name": "TT-2X20-Katoen Natie-VTG",
+    "mass": 53121
+  }
+]

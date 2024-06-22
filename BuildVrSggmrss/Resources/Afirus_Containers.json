@@ -1,0 +1,146 @@
+[
+  {
+    "filename": "45ft_hc_pw\\45ft_hc_pw_unit45_1.bin",
+    "name": "Unit 45",
+    "moveZ": -1.2,
+    "moveY": 1.22,
+    "scaleZ": 0.004,
+    "scaleX": 0.004,
+    "scaleY": 0.004
+  },
+  {
+    "filename": "45ft_hc_pw\\45ft_hc_pw_ecs_1.bin",
+    "name": "ECS (Old)",
+    "moveZ": -1.2,
+    "moveY": 1.22,
+    "scaleZ": 0.004,
+    "scaleX": 0.004,
+    "scaleY": 0.004
+  },
+  {
+    "filename": "45ft_hc_pw\\45ft_hc_pw_ecs_2.bin",
+    "name": "ECS (New)",
+    "moveZ": -1.2,
+    "moveY": 1.22,
+    "scaleZ": 0.004,
+    "scaleX": 0.004,
+    "scaleY": 0.004
+  },
+  {
+    "filename": "45ft_hc_pw\\45ft_hc_pw_gts_1.bin",
+    "name": "GTS (New)",
+    "moveZ": -1.2,
+    "moveY": 1.22,
+    "scaleZ": 0.004,
+    "scaleX": 0.004,
+    "scaleY": 0.004
+  },
+  {
+    "filename": "45ft_hc_pw\\45ft_hc_pw_gts_2.bin",
+    "name": "GTS (Old)",
+    "moveZ": -1.2,
+    "moveY": 1.22,
+    "scaleZ": 0.004,
+    "scaleX": 0.004,
+    "scaleY": 0.004
+  },
+  {
+    "filename": "45ft_hc_pw\\45ft_hc_pw_cldnc_1.bin",
+    "name": "CLdN Cargo",
+    "moveZ": -1.2,
+    "moveY": 1.22,
+    "scaleZ": 0.004,
+    "scaleX": 0.004,
+    "scaleY": 0.004
+  },
+  {
+    "filename": "45ft_hc_pw\\45ft_hc_pw_cldnc_2.bin",
+    "name": "CLdN Cargo (Big Logo)",
+    "moveZ": -1.2,
+    "moveY": 1.22,
+    "scaleZ": 0.004,
+    "scaleX": 0.004,
+    "scaleY": 0.004
+  },
+  {
+    "filename": "45ft_hc_pw\\45ft_hc_pw_cldnc_cobelfret_1.bin",
+    "name": "CLdN Cobelfret",
+    "moveZ": -1.2,
+    "moveY": 1.22,
+    "scaleZ": 0.004,
+    "scaleX": 0.004,
+    "scaleY": 0.004
+  },
+  {
+    "filename": "45ft_hc_pw\\45ft_hc_pw_p&o_1.bin",
+    "name": "P&O",
+    "moveZ": -1.2,
+    "moveY": 1.22,
+    "scaleZ": 0.004,
+    "scaleX": 0.004,
+    "scaleY": 0.004
+  },
+  {
+    "filename": "45ft_hc_pw\\45ft_hc_pw_a2b_1.bin",
+    "name": "A2B",
+    "moveZ": -1.2,
+    "moveY": 1.22,
+    "scaleZ": 0.004,
+    "scaleX": 0.004,
+    "scaleY": 0.004
+  },
+  {
+    "filename": "45ft_hc_pw\\45ft_hc_pw_eucon_1.bin",
+    "name": "Eucon",
+    "moveZ": -1.2,
+    "moveY": 1.22,
+    "scaleZ": 0.004,
+    "scaleX": 0.004,
+    "scaleY": 0.004
+  },
+  {
+    "filename": "45ft_hc_pw\\45ft_hc_pw_move_1.bin",
+    "name": "MOVE",
+    "moveZ": -1.2,
+    "moveY": 1.22,
+    "scaleZ": 0.004,
+    "scaleX": 0.004,
+    "scaleY": 0.004
+  },
+  {
+    "filename": "45ft_hc_pw\\45ft_hc_pw_move_2.bin",
+    "name": "MOVE (ECS)",
+    "moveZ": -1.2,
+    "moveY": 1.22,
+    "scaleZ": 0.004,
+    "scaleX": 0.004,
+    "scaleY": 0.004
+  },
+  {
+    "filename": "45ft_hc_pw\\45ft_hc_pw_p&o_2.bin",
+    "name": "P&O (Yellow)",
+    "moveZ": -1.2,
+    "moveY": 1.22,
+    "scaleZ": 0.004,
+    "scaleX": 0.004,
+    "scaleY": 0.004
+  },
+  {
+    "filename": "45ft_hc_pw\\45ft_hc_pw_samskip_1.bin",
+    "name": "Samskip",
+    "moveZ": -1.2,
+    "moveY": 1.22,
+    "scaleZ": 0.004,
+    "scaleX": 0.004,
+    "scaleY": 0.004
+  },
+  {
+    "filename": "45ft_hc_pw\\45ft_hc_pw_cai_1.bin",
+    "name": "CAI",
+    "moveZ": -1.2,
+    "moveY": 1.22,
+    "scaleZ": 0.004,
+    "scaleX": 0.004,
+    "scaleY": 0.004
+  }
+]

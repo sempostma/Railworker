@@ -1,0 +1,499 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cBlueprintLoader xmlns:d="http://www.kuju.com/TnT/2003/Delta" d:version="1.0">
+  <Blueprint>
+    <cWagonBlueprint xmlns:d="http://www.kuju.com/TnT/2003/Delta" d:version="1.0">
+      <Name d:type="cDeltaString"></Name>
+      <BrowseInformation>
+        <iRailVehicleBlueprint-cBrowseRVInformation>
+          <DisplayName>
+            <Localisation-cUserLocalisedString>
+              <English d:type="cDeltaString"></English>
+              <French d:type="cDeltaString"></French>
+              <Italian d:type="cDeltaString"></Italian>
+              <German d:type="cDeltaString"></German>
+              <Spanish d:type="cDeltaString"></Spanish>
+              <Dutch d:type="cDeltaString"></Dutch>
+              <Polish d:type="cDeltaString"></Polish>
+              <Russian d:type="cDeltaString"></Russian>
+              <Other />
+              <Key d:type="cDeltaString"></Key>
+            </Localisation-cUserLocalisedString>
+          </DisplayName>
+        </iRailVehicleBlueprint-cBrowseRVInformation>
+      </BrowseInformation>
+      <RailVehicleComponent>
+        <cWagonComponentBlueprint>
+          <NumberingList>
+            <cCSVContainer>
+              <CsvFile d:type="cDeltaString">virtualRailroads\vR_Sggmrss\Frachtw\Nummer</CsvFile>
+            </cCSVContainer>
+          </NumberingList>
+          <NumberingFormat d:type="cDeltaString"></NumberingFormat>
+          <Numberings d:type="sUInt32">0</Numberings>
+          <FrontCouplingBlueprintID>
+            <iBlueprintLibrary-cAbsoluteBlueprintID>
+              <BlueprintSetID>
+                <iBlueprintLibrary-cBlueprintSetID>
+                  <Provider d:type="cDeltaString">virtualRailroads</Provider>
+                  <Product d:type="cDeltaString">vR_Sggmrss</Product>
+                </iBlueprintLibrary-cBlueprintSetID>
+              </BlueprintSetID>
+              <BlueprintID d:type="cDeltaString">Kupplung\Midpoint.xml</BlueprintID>
+            </iBlueprintLibrary-cAbsoluteBlueprintID>
+          </FrontCouplingBlueprintID>
+          <RearCouplingBlueprintID>
+            <iBlueprintLibrary-cAbsoluteBlueprintID>
+              <BlueprintSetID>
+                <iBlueprintLibrary-cBlueprintSetID>
+                  <Provider d:type="cDeltaString">virtualRailroads</Provider>
+                  <Product d:type="cDeltaString">vR_Sggmrss</Product>
+                </iBlueprintLibrary-cBlueprintSetID>
+              </BlueprintSetID>
+              <BlueprintID d:type="cDeltaString">Kupplung\Kupp-coupled.xml</BlueprintID>
+            </iBlueprintLibrary-cAbsoluteBlueprintID>
+          </RearCouplingBlueprintID>
+          <FrontCouplingPivot>
+            <cHcRMatrix4x4>
+              <Element>
+                <e d:type="sFloat32">1</e>
+                <e d:type="sFloat32">0</e>
+                <e d:type="sFloat32">0</e>
+                <e d:type="sFloat32">0</e>
+                <e d:type="sFloat32">0</e>
+                <e d:type="sFloat32">1</e>
+                <e d:type="sFloat32">0</e>
+                <e d:type="sFloat32">0</e>
+                <e d:type="sFloat32">0</e>
+                <e d:type="sFloat32">0</e>
+                <e d:type="sFloat32">1</e>
+                <e d:type="sFloat32">0</e>
+                <e d:type="sFloat32">0</e>
+                <e d:type="sFloat32">1.055</e>
+                <e d:type="sFloat32">8.304</e>
+                <e d:type="sFloat32">1</e>
+              </Element>
+            </cHcRMatrix4x4>
+          </FrontCouplingPivot>
+          <RearCouplingPivot>
+            <cHcRMatrix4x4>
+              <Element>
+                <e d:type="sFloat32">-1</e>
+                <e d:type="sFloat32">0</e>
+                <e d:type="sFloat32">0</e>
+                <e d:type="sFloat32">0</e>
+                <e d:type="sFloat32">0</e>
+                <e d:type="sFloat32">1</e>
+                <e d:type="sFloat32">0</e>
+                <e d:type="sFloat32">0</e>
+                <e d:type="sFloat32">0</e>
+                <e d:type="sFloat32">0</e>
+                <e d:type="sFloat32">-1</e>
+                <e d:type="sFloat32">0</e>
+                <e d:type="sFloat32">0</e>
+                <e d:type="sFloat32">1.055</e>
+                <e d:type="sFloat32">-8.304</e>
+                <e d:type="sFloat32">1</e>
+              </Element>
+            </cHcRMatrix4x4>
+          </RearCouplingPivot>
+          <FrontCouplingReceivingPoint>
+            <cHcRMatrix4x4>
+              <Element>
+                <e d:type="sFloat32">1</e>
+                <e d:type="sFloat32">0</e>
+                <e d:type="sFloat32">0</e>
+                <e d:type="sFloat32">0</e>
+                <e d:type="sFloat32">0</e>
+                <e d:type="sFloat32">1</e>
+                <e d:type="sFloat32">0</e>
+                <e d:type="sFloat32">0</e>
+                <e d:type="sFloat32">0</e>
+                <e d:type="sFloat32">0</e>
+                <e d:type="sFloat32">1</e>
+                <e d:type="sFloat32">0</e>
+                <e d:type="sFloat32">0</e>
+                <e d:type="sFloat32">1.117</e>
+                <e d:type="sFloat32">8.427</e>
+                <e d:type="sFloat32">1</e>
+              </Element>
+            </cHcRMatrix4x4>
+          </FrontCouplingReceivingPoint>
+          <RearCouplingReceivingPoint>
+            <cHcRMatrix4x4>
+              <Element>
+                <e d:type="sFloat32">-1</e>
+                <e d:type="sFloat32">0</e>
+                <e d:type="sFloat32">0</e>
+                <e d:type="sFloat32">0</e>
+                <e d:type="sFloat32">0</e>
+                <e d:type="sFloat32">1</e>
+                <e d:type="sFloat32">0</e>
+                <e d:type="sFloat32">0</e>
+                <e d:type="sFloat32">0</e>
+                <e d:type="sFloat32">0</e>
+                <e d:type="sFloat32">1</e>
+                <e d:type="sFloat32">0</e>
+                <e d:type="sFloat32">0</e>
+                <e d:type="sFloat32">1.117</e>
+                <e d:type="sFloat32">-8.427</e>
+                <e d:type="sFloat32">1</e>
+              </Element>
+            </cHcRMatrix4x4>
+          </RearCouplingReceivingPoint>
+          <Mass d:type="sFloat32">13.5</Mass>
+          <EaseOfDerailment d:type="sFloat32">0.4</EaseOfDerailment>
+          <FrontPivotX d:type="sFloat32">6</FrontPivotX>
+          <FrontPivotY d:type="sFloat32">1</FrontPivotY>
+          <BackPivotX d:type="sFloat32">-8.8</BackPivotX>
+          <BackPivotY d:type="sFloat32">1</BackPivotY>
+          <CollisionCentreX d:type="sFloat32">-1.38</CollisionCentreX>
+          <CollisionCentreY d:type="sFloat32">2.1</CollisionCentreY>
+          <CollisionWidth d:type="sFloat32">3</CollisionWidth>
+          <CollisionHeight d:type="sFloat32">2.2</CollisionHeight>
+          <CollisionLength d:type="sFloat32">14.2</CollisionLength>
+          <DragCoefficient d:type="sFloat32">4</DragCoefficient>
+          <RollingFrictionCoefficient d:type="sFloat32">0.0006</RollingFrictionCoefficient>
+          <DryFriction d:type="sFloat32">2</DryFriction>
+          <WetFriction d:type="sFloat32">1</WetFriction>
+          <SnowFriction d:type="sFloat32">0.5</SnowFriction>
+          <SandFrictionMultiplier d:type="sFloat32">2</SandFrictionMultiplier>
+          <Bogey>
+            <cRailVehicleComponentBlueprint-tag_sBogey d:id="14485">
+              <BogeyPivotX d:type="sFloat32">4.61</BogeyPivotX>
+              <BogeyPivotY d:type="sFloat32">0</BogeyPivotY>
+              <BogeyBlueprint>
+                <iBlueprintLibrary-cAbsoluteBlueprintID>
+                  <BlueprintSetID>
+                    <iBlueprintLibrary-cBlueprintSetID>
+                      <Provider d:type="cDeltaString">virtualRailroads</Provider>
+                      <Product d:type="cDeltaString">vR_Sggmrss</Product>
+                    </iBlueprintLibrary-cBlueprintSetID>
+                  </BlueprintSetID>
+                  <BlueprintID d:type="cDeltaString">Frachtw\Bogie-01.xml</BlueprintID>
+                </iBlueprintLibrary-cAbsoluteBlueprintID>
+              </BogeyBlueprint>
+            </cRailVehicleComponentBlueprint-tag_sBogey>
+            <cRailVehicleComponentBlueprint-tag_sBogey d:id="14493">
+              <BogeyPivotX d:type="sFloat32">-6.01</BogeyPivotX>
+              <BogeyPivotY d:type="sFloat32">0</BogeyPivotY>
+              <BogeyBlueprint>
+                <iBlueprintLibrary-cAbsoluteBlueprintID>
+                  <BlueprintSetID>
+                    <iBlueprintLibrary-cBlueprintSetID>
+                      <Provider d:type="cDeltaString">virtualRailroads</Provider>
+                      <Product d:type="cDeltaString">vR_Sggmrss</Product>
+                    </iBlueprintLibrary-cBlueprintSetID>
+                  </BlueprintSetID>
+                  <BlueprintID d:type="cDeltaString">Frachtw\Bogie-02.xml</BlueprintID>
+                </iBlueprintLibrary-cAbsoluteBlueprintID>
+              </BogeyBlueprint>
+            </cRailVehicleComponentBlueprint-tag_sBogey>
+          </Bogey>
+          <StopgoRemapper d:type="cDeltaString"></StopgoRemapper>
+          <IntermediateRemapper d:type="cDeltaString"></IntermediateRemapper>
+          <ExpertRemapper d:type="cDeltaString"></ExpertRemapper>
+          <BogieAudioControlName d:type="cDeltaString">virtualRailroads\vR_Sggmrss\Audio\Drehgestelle\gueterwagen\4_achsen</BogieAudioControlName>
+          <CouplingAudioControlName d:type="cDeltaString">virtualRailroads\vR_Sggmrss\Audio\Kupplungen\gueterwagen</CouplingAudioControlName>
+          <AnimatedBodyNodeName d:type="cDeltaString"></AnimatedBodyNodeName>
+          <MaxComfortableAcceleration d:type="sFloat32">2</MaxComfortableAcceleration>
+          <TrainBrakeAssembly>
+            <EngineSimulation-cTrainAirBrakeBlueprint d:id="14509">
+              <BrakeType>
+                <EngineSimulation-cTrainAirBrakeDataBlueprint d:id="14511">
+                  <EquipmentType d:type="cDeltaString">eAirTwinPipe</EquipmentType>
+                  <MaxForcePercentOfVehicleWeight d:type="sFloat32">160</MaxForcePercentOfVehicleWeight>
+                  <Control />
+                  <Handbrake>
+                    <EngineSimulation-cHandbrake d:id="14516">
+                      <MaxForce d:type="sFloat32">15000</MaxForce>
+                    </EngineSimulation-cHandbrake>
+                  </Handbrake>
+                  <GraduatedRelease d:type="cDeltaString">eTrue</GraduatedRelease>
+                  <ProportionalBrake d:type="cDeltaString">eTrue</ProportionalBrake>
+                  <MaxReleaseRate d:type="sFloat32">0.7</MaxReleaseRate>
+                  <MaxApplicationRate d:type="sFloat32">2</MaxApplicationRate>
+                  <MaxCylinderPressure d:type="sFloat32">72.5</MaxCylinderPressure>
+                  <PressureForMaxForce d:type="sFloat32">72.5</PressureForMaxForce>
+                  <MaxSystemPressure d:type="sFloat32">72.5</MaxSystemPressure>
+                  <MinSystemPressure d:type="sFloat32">48.6</MinSystemPressure>
+                  <Distributor>
+                    <EngineSimulation-cBrakeDistributorBlueprint d:id="14527">
+                      <NormalFullReleasePressure d:type="sFloat32">72.5</NormalFullReleasePressure>
+                      <FullServicePressure d:type="sFloat32">48.6</FullServicePressure>
+                      <TrainPipeControlRatio d:type="sFloat32">3</TrainPipeControlRatio>
+                      <MaxEmergencyResPressure d:type="sFloat32">101.5</MaxEmergencyResPressure>
+                      <MaxAuxResPressure d:type="sFloat32">100</MaxAuxResPressure>
+                      <EmergencyApplicationPressure d:type="sFloat32">72.6</EmergencyApplicationPressure>
+                    </EngineSimulation-cBrakeDistributorBlueprint>
+                  </Distributor>
+                  <EmergencyBraking />
+                  <AuxiliaryBraking>
+                    <EngineSimulation-cBaseAirBrakeBlueprint-cAuxiliaryBraking d:id="14536">
+                      <MaxChargingRate d:type="sFloat32">5</MaxChargingRate>
+                      <MaxReservoirPressure d:type="sFloat32">100</MaxReservoirPressure>
+                    </EngineSimulation-cBaseAirBrakeBlueprint-cAuxiliaryBraking>
+                  </AuxiliaryBraking>
+                  <PressureUsedFromPipePerPoundGained d:type="sFloat32">0.3</PressureUsedFromPipePerPoundGained>
+                  <PressureGainedFromOnePipePounds d:type="sFloat32">100</PressureGainedFromOnePipePounds>
+                  <RetainerType d:type="cDeltaString">eNoRetainer</RetainerType>
+                  <TripleValve d:type="cDeltaString">eTrue</TripleValve>
+                  <TripleValveRatio d:type="sFloat32">2.5</TripleValveRatio>
+                  <RetainerSlowReleaseRate d:type="sFloat32">15</RetainerSlowReleaseRate>
+                </EngineSimulation-cTrainAirBrakeDataBlueprint>
+              </BrakeType>
+            </EngineSimulation-cTrainAirBrakeBlueprint>
+          </TrainBrakeAssembly>
+        </cWagonComponentBlueprint>
+      </RailVehicleComponent>
+      <RenderComponent>
+        <cAnimObjectRenderBlueprint>
+          <PrimaryNamedTextureSet>
+            <iBlueprintLibrary-cAbsoluteBlueprintID>
+              <BlueprintSetID>
+                <iBlueprintLibrary-cBlueprintSetID>
+                  <Provider d:type="cDeltaString">virtualRailroads</Provider>
+                  <Product d:type="cDeltaString">vR_Sggmrss</Product>
+                </iBlueprintLibrary-cBlueprintSetID>
+              </BlueprintSetID>
+              <BlueprintID d:type="cDeltaString">Frachtw\Textures\Numbers\Nummern.xml</BlueprintID>
+            </iBlueprintLibrary-cAbsoluteBlueprintID>
+          </PrimaryNamedTextureSet>
+          <SecondaryNamedTextureSet>
+            <iBlueprintLibrary-cAbsoluteBlueprintID>
+              <BlueprintSetID>
+                <iBlueprintLibrary-cBlueprintSetID>
+                  <Provider d:type="cDeltaString"></Provider>
+                  <Product d:type="cDeltaString"></Product>
+                </iBlueprintLibrary-cBlueprintSetID>
+              </BlueprintSetID>
+              <BlueprintID d:type="cDeltaString"></BlueprintID>
+            </iBlueprintLibrary-cAbsoluteBlueprintID>
+          </SecondaryNamedTextureSet>
+          <GeometryID d:type="cDeltaString">virtualRailroads\vR_Sggmrss\Frachtw\[00]Sggmrss_Back_Beige</GeometryID>
+          <CollisionGeometryID d:type="cDeltaString">virtualRailroads\vR_Sggmrss\Frachtw\[00]Sggmrss_Back_Beige</CollisionGeometryID>
+          <Pickable d:type="cDeltaString">eTrue</Pickable>
+          <CastsShadows d:type="cDeltaString">eTrue</CastsShadows>
+          <ShadowType d:type="cDeltaString">eShadowType_None</ShadowType>
+          <ViewType d:type="cDeltaString">ExternalView</ViewType>
+          <Palettised d:type="cDeltaString">eFalse</Palettised>
+          <Palette0Index d:type="sInt32">-1</Palette0Index>
+          <Palette1Index d:type="sInt32">-1</Palette1Index>
+          <Palette2Index d:type="sInt32">-1</Palette2Index>
+          <HeatHaze />
+          <TexText />
+          <ProjectedLightElement />
+          <Instancable d:type="bool">0</Instancable>
+          <DetailLevelGenerationRange>
+            <cSceneryRenderBlueprint-sDetailLevelGenerationRange>
+              <HighestLevel_1isHighest d:type="sInt32">10</HighestLevel_1isHighest>
+              <LowestLevel_10isLowest d:type="sInt32">10</LowestLevel_10isLowest>
+            </cSceneryRenderBlueprint-sDetailLevelGenerationRange>
+          </DetailLevelGenerationRange>
+          <AnimSet />
+        </cAnimObjectRenderBlueprint>
+      </RenderComponent>
+      <PosOriComponent>
+        <cPosOriBlueprint />
+      </PosOriComponent>
+      <ControlContainerComponent>
+        <cControlContainerBlueprint>
+          <InteriorInterface>
+            <cControlContainerBlueprint-cInteriorInterface>
+              <InteriorGeometryID d:type="cDeltaString"></InteriorGeometryID>
+              <NumberOfCabs d:type="cDeltaString">eSingleCab</NumberOfCabs>
+              <InteriorCamera>
+                <iBlueprintLibrary-cAbsoluteBlueprintID>
+                  <BlueprintSetID>
+                    <iBlueprintLibrary-cBlueprintSetID>
+                      <Provider d:type="cDeltaString"></Provider>
+                      <Product d:type="cDeltaString"></Product>
+                    </iBlueprintLibrary-cBlueprintSetID>
+                  </BlueprintSetID>
+                  <BlueprintID d:type="cDeltaString"></BlueprintID>
+                </iBlueprintLibrary-cAbsoluteBlueprintID>
+              </InteriorCamera>
+              <CabOcclusion>
+                <iBlueprintLibrary-cAbsoluteBlueprintID>
+                  <BlueprintSetID>
+                    <iBlueprintLibrary-cBlueprintSetID>
+                      <Provider d:type="cDeltaString"></Provider>
+                      <Product d:type="cDeltaString"></Product>
+                    </iBlueprintLibrary-cBlueprintSetID>
+                  </BlueprintSetID>
+                  <BlueprintID d:type="cDeltaString"></BlueprintID>
+                </iBlueprintLibrary-cAbsoluteBlueprintID>
+              </CabOcclusion>
+            </cControlContainerBlueprint-cInteriorInterface>
+          </InteriorInterface>
+          <CarriageInteriorInterface>
+            <cControlContainerBlueprint-cInteriorInterface>
+              <InteriorGeometryID d:type="cDeltaString"></InteriorGeometryID>
+              <NumberOfCabs d:type="cDeltaString">eSingleCab</NumberOfCabs>
+              <InteriorCamera>
+                <iBlueprintLibrary-cAbsoluteBlueprintID>
+                  <BlueprintSetID>
+                    <iBlueprintLibrary-cBlueprintSetID>
+                      <Provider d:type="cDeltaString"></Provider>
+                      <Product d:type="cDeltaString"></Product>
+                    </iBlueprintLibrary-cBlueprintSetID>
+                  </BlueprintSetID>
+                  <BlueprintID d:type="cDeltaString"></BlueprintID>
+                </iBlueprintLibrary-cAbsoluteBlueprintID>
+              </InteriorCamera>
+              <CabOcclusion>
+                <iBlueprintLibrary-cAbsoluteBlueprintID>
+                  <BlueprintSetID>
+                    <iBlueprintLibrary-cBlueprintSetID>
+                      <Provider d:type="cDeltaString"></Provider>
+                      <Product d:type="cDeltaString"></Product>
+                    </iBlueprintLibrary-cBlueprintSetID>
+                  </BlueprintSetID>
+                  <BlueprintID d:type="cDeltaString"></BlueprintID>
+                </iBlueprintLibrary-cAbsoluteBlueprintID>
+              </CabOcclusion>
+            </cControlContainerBlueprint-cInteriorInterface>
+          </CarriageInteriorInterface>
+          <HUDControlsPath d:type="cDeltaString"></HUDControlsPath>
+          <MinimalHUDControlsPath d:type="cDeltaString"></MinimalHUDControlsPath>
+          <HUDControlsTexturePath d:type="cDeltaString"></HUDControlsTexturePath>
+          <ControlValues />
+          <WiperPairs />
+        </cControlContainerBlueprint>
+      </ControlContainerComponent>
+      <CargoComponent>
+        <cCargoComponentBlueprint>
+          <CargoDef>
+            <cBulkCargoDef d:id="14609">
+              <Name d:type="cDeltaString"></Name>
+              <TriggerBox>
+                <cHcR3dBox>
+                  <Width d:type="sFloat32">0</Width>
+                  <Height d:type="sFloat32">0</Height>
+                  <Depth d:type="sFloat32">0</Depth>
+                  <Element>
+                    <e d:type="sFloat32">1</e>
+                    <e d:type="sFloat32">0</e>
+                    <e d:type="sFloat32">0</e>
+                    <e d:type="sFloat32">0</e>
+                    <e d:type="sFloat32">0</e>
+                    <e d:type="sFloat32">1</e>
+                    <e d:type="sFloat32">0</e>
+                    <e d:type="sFloat32">0</e>
+                    <e d:type="sFloat32">0</e>
+                    <e d:type="sFloat32">0</e>
+                    <e d:type="sFloat32">1</e>
+                    <e d:type="sFloat32">0</e>
+                    <e d:type="sFloat32">0</e>
+                    <e d:type="sFloat32">0</e>
+                    <e d:type="sFloat32">0</e>
+                    <e d:type="sFloat32">1</e>
+                  </Element>
+                </cHcR3dBox>
+              </TriggerBox>
+              <Capacity d:type="sFloat32">50</Capacity>
+              <BulkFreightType d:type="cDeltaString">BulkFreight</BulkFreightType>
+              <AnimationId d:type="cDeltaString"></AnimationId>
+            </cBulkCargoDef>
+          </CargoDef>
+          <CargoBlueprintID>
+            <iBlueprintLibrary-cAbsoluteBlueprintID>
+              <BlueprintSetID>
+                <iBlueprintLibrary-cBlueprintSetID>
+                  <Provider d:type="cDeltaString"></Provider>
+                  <Product d:type="cDeltaString"></Product>
+                </iBlueprintLibrary-cBlueprintSetID>
+              </BlueprintSetID>
+              <BlueprintID d:type="cDeltaString"></BlueprintID>
+            </iBlueprintLibrary-cAbsoluteBlueprintID>
+          </CargoBlueprintID>
+        </cCargoComponentBlueprint>
+      </CargoComponent>
+      <ContainerComponent>
+        <cEntityContainerBlueprint>
+          <TrackTerrainInEditor d:type="bool">0</TrackTerrainInEditor>
+          <Children>
+            <cEntityContainerBlueprint-sChild d:id="14643">
+              <ChildName d:type="cDeltaString">WagSound</ChildName>
+              <BlueprintID>
+                <iBlueprintLibrary-cAbsoluteBlueprintID>
+                  <BlueprintSetID>
+                    <iBlueprintLibrary-cBlueprintSetID>
+                      <Provider d:type="cDeltaString">virtualRailroads</Provider>
+                      <Product d:type="cDeltaString">vR_Sggmrss</Product>
+                    </iBlueprintLibrary-cBlueprintSetID>
+                  </BlueprintSetID>
+                  <BlueprintID d:type="cDeltaString">Audio\gueterwagen_neu.xml</BlueprintID>
+                </iBlueprintLibrary-cAbsoluteBlueprintID>
+              </BlueprintID>
+              <Matrix>
+                <cHcRMatrix4x4>
+                  <Element>
+                    <e d:type="sFloat32">1</e>
+                    <e d:type="sFloat32">0</e>
+                    <e d:type="sFloat32">0</e>
+                    <e d:type="sFloat32">0</e>
+                    <e d:type="sFloat32">0</e>
+                    <e d:type="sFloat32">1</e>
+                    <e d:type="sFloat32">0</e>
+                    <e d:type="sFloat32">0</e>
+                    <e d:type="sFloat32">0</e>
+                    <e d:type="sFloat32">0</e>
+                    <e d:type="sFloat32">1</e>
+                    <e d:type="sFloat32">0</e>
+                    <e d:type="sFloat32">0</e>
+                    <e d:type="sFloat32">0</e>
+                    <e d:type="sFloat32">0</e>
+                    <e d:type="sFloat32">1</e>
+                  </Element>
+                </cHcRMatrix4x4>
+              </Matrix>
+              <ParentNodeName d:type="cDeltaString"></ParentNodeName>
+            </cEntityContainerBlueprint-sChild>
+            <cEntityContainerBlueprint-sChild d:id="14669">
+              <ChildName d:type="cDeltaString">Main</ChildName>
+              <BlueprintID>
+                <iBlueprintLibrary-cAbsoluteBlueprintID>
+                  <BlueprintSetID>
+                    <iBlueprintLibrary-cBlueprintSetID>
+                      <Provider d:type="cDeltaString">virtualRailroads</Provider>
+                      <Product d:type="cDeltaString">vR_Sggmrss</Product>
+                    </iBlueprintLibrary-cBlueprintSetID>
+                  </BlueprintSetID>
+                  <BlueprintID d:type="cDeltaString">Frachtw\Sggmrss_B_A.xml</BlueprintID>
+                </iBlueprintLibrary-cAbsoluteBlueprintID>
+              </BlueprintID>
+              <Matrix>
+                <cHcRMatrix4x4>
+                  <Element>
+                    <e d:type="sFloat32">1</e>
+                    <e d:type="sFloat32">0</e>
+                    <e d:type="sFloat32">0</e>
+                    <e d:type="sFloat32">0</e>
+                    <e d:type="sFloat32">0</e>
+                    <e d:type="sFloat32">1</e>
+                    <e d:type="sFloat32">0</e>
+                    <e d:type="sFloat32">0</e>
+                    <e d:type="sFloat32">0</e>
+                    <e d:type="sFloat32">0</e>
+                    <e d:type="sFloat32">1</e>
+                    <e d:type="sFloat32">0</e>
+                    <e d:type="sFloat32">0</e>
+                    <e d:type="sFloat32">0</e>
+                    <e d:type="sFloat32">0</e>
+                    <e d:type="sFloat32">1</e>
+                  </Element>
+                </cHcRMatrix4x4>
+              </Matrix>
+              <ParentNodeName d:type="cDeltaString"></ParentNodeName>
+            </cEntityContainerBlueprint-sChild>
+          </Children>
+        </cEntityContainerBlueprint>
+      </ContainerComponent>
+      <ScriptComponent>
+        <cScriptComponentBlueprint>
+          <Name d:type="cDeltaString">virtualRailroads\vR_Sggmrss\Frachtw\Script_A</Name>
+        </cScriptComponentBlueprint>
+      </ScriptComponent>
+    </cWagonBlueprint>
+  </Blueprint>
+</cBlueprintLoader>

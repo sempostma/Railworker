@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\Afirus_Containers.json" />
+    <None Remove="Resources\CT_Sgns\Afirus_Containers3x20ft.json" />
+    <None Remove="Resources\CT_Sgns\CT_Tanktainers3x20ft.json" />
+    <None Remove="Resources\CT_Sgns\Sgns20ftx3.xml" />
+    <None Remove="Resources\Sffggmrrss_Trailers.json" />
+    <None Remove="Resources\Sggmrss_Back.xml" />
+    <None Remove="Resources\Sggmrss_Front.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\CT_Sgns\CT_Tanktainers3x20ft.json" />
+    <EmbeddedResource Include="Resources\CT_Sgns\Afirus_Containers3x20ft.json" />
+    <EmbeddedResource Include="Resources\CT_Sgns\Afirus_Containers1x45ft.json" />
+    <EmbeddedResource Include="Resources\CT_Sgns\Sgns20ftx3.xml" />
+    <EmbeddedResource Include="Resources\CT_Sgns\Sgns45ft.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RWLib\RWLib.csproj" />
+  </ItemGroup>
+
+</Project>

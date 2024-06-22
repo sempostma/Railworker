@@ -70,6 +70,24 @@ namespace Railworker.Language {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Add as preload consist.
+        /// </summary>
+        public static string add_as_preload_consist {
+            get {
+                return ResourceManager.GetString("add_as_preload_consist", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Add new.
+        /// </summary>
+        public static string add_new {
+            get {
+                return ResourceManager.GetString("add_new", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Add to rules.
         /// </summary>
         public static string add_to_rules {
@@ -169,6 +187,24 @@ namespace Railworker.Language {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Clear.
+        /// </summary>
+        public static string clear {
+            get {
+                return ResourceManager.GetString("clear", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Clear assets.
+        /// </summary>
+        public static string clear_assets {
+            get {
+                return ResourceManager.GetString("clear_assets", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Close.
         /// </summary>
         public static string close {
@@ -214,6 +250,51 @@ namespace Railworker.Language {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to CRAN.
+        /// </summary>
+        public static string cran {
+            get {
+                return ResourceManager.GetString("cran", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CRAN addon edit.
+        /// </summary>
+        public static string cran_addon_edit {
+            get {
+                return ResourceManager.GetString("cran_addon_edit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CRAN addons.
+        /// </summary>
+        public static string cran_addons_page {
+            get {
+                return ResourceManager.GetString("cran_addons_page", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CRAN admin.
+        /// </summary>
+        public static string cran_admin {
+            get {
+                return ResourceManager.GetString("cran_admin", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CRAN new addon.
+        /// </summary>
+        public static string cran_new_addon {
+            get {
+                return ResourceManager.GetString("cran_new_addon", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Create vehicle variation.
         /// </summary>
         public static string create_vehicle_variation {
@@ -237,6 +318,24 @@ namespace Railworker.Language {
         public static string default_value {
             get {
                 return ResourceManager.GetString("default_value", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Delete Selected.
+        /// </summary>
+        public static string delete_selected {
+            get {
+                return ResourceManager.GetString("delete_selected", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Description.
+        /// </summary>
+        public static string description {
+            get {
+                return ResourceManager.GetString("description", resourceCulture);
             }
         }
         
@@ -304,6 +403,15 @@ namespace Railworker.Language {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Edit selected.
+        /// </summary>
+        public static string edit_selected {
+            get {
+                return ResourceManager.GetString("edit_selected", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Enable.
         /// </summary>
         public static string enable {
@@ -363,6 +471,15 @@ namespace Railworker.Language {
         public static string file {
             get {
                 return ResourceManager.GetString("file", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to File already exists.
+        /// </summary>
+        public static string file_already_exists {
+            get {
+                return ResourceManager.GetString("file_already_exists", resourceCulture);
             }
         }
         
@@ -448,6 +565,15 @@ namespace Railworker.Language {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Inspector.
+        /// </summary>
+        public static string inspector {
+            get {
+                return ResourceManager.GetString("inspector", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Install.
         /// </summary>
         public static string install {
@@ -520,6 +646,24 @@ namespace Railworker.Language {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Loading.
+        /// </summary>
+        public static string loading {
+            get {
+                return ResourceManager.GetString("loading", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Loading authors.
+        /// </summary>
+        public static string loading_authors {
+            get {
+                return ResourceManager.GetString("loading_authors", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Loading routes.
         /// </summary>
         public static string loading_routes {
@@ -534,6 +678,60 @@ namespace Railworker.Language {
         public static string loading_scenarios {
             get {
                 return ResourceManager.GetString("loading_scenarios", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Search.
+        /// </summary>
+        public static string look_up {
+            get {
+                return ResourceManager.GetString("look_up", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Loose consist.
+        /// </summary>
+        public static string loose_consist {
+            get {
+                return ResourceManager.GetString("loose_consist", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Manage addons.
+        /// </summary>
+        public static string manage_addons {
+            get {
+                return ResourceManager.GetString("manage_addons", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Manage authors.
+        /// </summary>
+        public static string manage_authors {
+            get {
+                return ResourceManager.GetString("manage_authors", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Manage files.
+        /// </summary>
+        public static string manage_files {
+            get {
+                return ResourceManager.GetString("manage_files", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Management.
+        /// </summary>
+        public static string management {
+            get {
+                return ResourceManager.GetString("management", resourceCulture);
             }
         }
         
@@ -579,6 +777,15 @@ namespace Railworker.Language {
         public static string msg_message {
             get {
                 return ResourceManager.GetString("msg_message", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to No directory selected.
+        /// </summary>
+        public static string msg_no_directory_selected {
+            get {
+                return ResourceManager.GetString("msg_no_directory_selected", resourceCulture);
             }
         }
         
@@ -691,6 +898,15 @@ namespace Railworker.Language {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Preloads.
+        /// </summary>
+        public static string preloads {
+            get {
+                return ResourceManager.GetString("preloads", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Process Tracks.bin.
         /// </summary>
         public static string process_track_bin {
@@ -718,11 +934,38 @@ namespace Railworker.Language {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Product.
+        /// </summary>
+        public static string product {
+            get {
+                return ResourceManager.GetString("product", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Provider.
+        /// </summary>
+        public static string provider {
+            get {
+                return ResourceManager.GetString("provider", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Reading scenario files.
         /// </summary>
         public static string reading_scenario_files {
             get {
                 return ResourceManager.GetString("reading_scenario_files", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refresh.
+        /// </summary>
+        public static string refresh {
+            get {
+                return ResourceManager.GetString("refresh", resourceCulture);
             }
         }
         
@@ -777,6 +1020,15 @@ namespace Railworker.Language {
         public static string replace_with {
             get {
                 return ResourceManager.GetString("replace_with", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Reversed.
+        /// </summary>
+        public static string reversed {
+            get {
+                return ResourceManager.GetString("reversed", resourceCulture);
             }
         }
         
@@ -975,6 +1227,15 @@ namespace Railworker.Language {
         public static string search_vehicles {
             get {
                 return ResourceManager.GetString("search_vehicles", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Searching for addons.
+        /// </summary>
+        public static string searching_for_addons {
+            get {
+                return ResourceManager.GetString("searching_for_addons", resourceCulture);
             }
         }
         

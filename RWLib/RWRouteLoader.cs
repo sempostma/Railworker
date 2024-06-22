@@ -32,7 +32,7 @@ namespace RWLib
                 .Where(x => !String.IsNullOrWhiteSpace(x))
                 .ToList();
 
-            if (sections[0] != "Content" || sections[1] != "Routes") throw new FileNotFoundException($"Invalid filename. Filename '{filename}' should start with Content\\Routes");
+            if (sections[0] != "Content" || sections[1] != "Routes") throw new FileNotFoundException($"Invalid Filename. Filename '{filename}' should start with Content\\Routes");
 
             string guid = sections[2];
             string path = String.Join(Path.DirectorySeparatorChar, sections.Skip(3));

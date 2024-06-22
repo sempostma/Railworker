@@ -50,7 +50,7 @@ namespace RWLib.Tracks
         {
             [JsonPropertyName("id")]
             public string? Id { get; set; }
-            [JsonPropertyName("name")]
+            [JsonPropertyName("Name")]
             public string? Name { get; set; }
         }
 

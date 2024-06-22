@@ -99,7 +99,7 @@ namespace Railworker.Core
                 Directory.CreateDirectory(dirPath.Replace(sourcePath, targetPath));
             }
 
-            //Copy all the files & Replaces any files with the same name
+            //Copy all the files & Replaces any files with the same Name
             foreach (string newPath in Directory.GetFiles(sourcePath, "*.*", SearchOption.AllDirectories))
             {
                 File.Copy(newPath, newPath.Replace(sourcePath, targetPath), true);
@@ -148,7 +148,7 @@ namespace Railworker.Core
             return true;
         }
 
-        public static string DetermineDisplayName(RWDisplayName displayName)
+        public static string DetermineDisplayName(RWDisplayName? displayName)
         {
             var lang = Settings.Default.Language;
             if (lang == "") lang = Thread.CurrentThread.CurrentCulture.TwoLetterISOLanguageName;
@@ -168,20 +168,21 @@ namespace Railworker.Core
             {
                 convertedLang = langConversionTable[lang];
             }
+            if (displayName == null) return Language.Resources.unknown_name;
             string? name = displayName.GetDisplayName(convertedLang);
             if (string.IsNullOrWhiteSpace(name) == false) return name;
 
             var listInOrderOfPriority = new string[] {
-                displayName.En,
-                displayName.Fr,
-                displayName.It,
-                displayName.De,
-                displayName.Es,
-                displayName.Nl,
-                displayName.Pl,
-                displayName.Ru,
-                displayName.Other,
-                displayName.Key,
+                displayName.En ?? "",
+                displayName.Fr ?? "",
+                displayName.It ?? "",
+                displayName.De ?? "",
+                displayName.Es ?? "",
+                displayName.Nl ?? "",
+                displayName.Pl ?? "",
+                displayName.Ru ?? "",
+                displayName.Other ?? "",
+                displayName.Key ?? "",
                 Language.Resources.unknown_name
             };
 

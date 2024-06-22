@@ -125,7 +125,7 @@ namespace Railworker.Core
             if (IsScenariosDir())
             {
                 var routeGuid = System.IO.Path.GetDirectoryName(Path);
-                if (routeGuid == null) throw new DirectoryNotFoundException("Could not find directory name of: " + Path);
+                if (routeGuid == null) throw new DirectoryNotFoundException("Could not find directory Name of: " + Path);
                 // this is a scenario
                 foreach (var scenario in lib.RouteLoader.LoadScenarios(routeGuid).ToBlockingEnumerable())
                 {

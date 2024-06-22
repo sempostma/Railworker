@@ -1,6 +1,9 @@
-﻿using RWLib.Interfaces;
+﻿using RWLib.Exceptions;
+using RWLib.Interfaces;
 using RWLib.RWBlueprints;
 using RWLib.RWBlueprints.Components;
+using RWLib.RWBlueprints.Interfaces;
+using RWLib.Scenario;
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
@@ -9,10 +12,12 @@ using System.IO;
 using System.IO.Compression;
 using System.Linq;
 using System.Reflection.Metadata.Ecma335;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Threading.Tasks.Dataflow;
 using System.Xml.Linq;
+using System.Xml.XPath;
 
 namespace RWLib
 {
@@ -44,7 +49,7 @@ namespace RWLib
                     return new RWTenderBlueprint(blueprintID, blueprint, rWLib, context);
 
                 case "cConsistBlueprint":
-                    return new RWConsistFragmentBlueprint(blueprintID, blueprint, rWLib, context);
+                    return new RWConsistBlueprint(blueprintID, blueprint, rWLib, context);
 
                 case "cConsistFragmentBlueprint":
                     return new RWConsistFragmentBlueprint(blueprintID,
@@ -78,7 +83,7 @@ namespace RWLib
         private ZipArchiveEntry? LookupFileInAp(string filename)
         {
             var path = Path.GetRelativePath(rWLib.options.TSPath, filename);
-            if (path == null) throw new ArgumentException($"Invalid filename relative to TS direcotry \"{rWLib.options.TSPath}\": {filename}");
+            if (path == null) throw new ArgumentException($"Invalid Filename relative to TS direcotry \"{rWLib.options.TSPath}\": {filename}");
             var sections = path.Split(Path.DirectorySeparatorChar);
             if (sections.Length < 3)
             {
@@ -88,6 +93,7 @@ namespace RWLib
             var product = sections[2];
             var blueprintIdPath = String.Join('/', sections.Skip(3));
             var productDir = Path.Combine(rWLib.options.TSPath, "Assets", provider, product);
+            if (Directory.Exists(productDir) == false) return null;
             List<string> apFiles = Directory.GetFiles(productDir, "*.ap", SearchOption.TopDirectoryOnly).ToList();
 
             foreach (var apFile in apFiles)
@@ -122,6 +128,52 @@ namespace RWLib
             return result == null ? false : true;
         }
 
+        public async IAsyncEnumerable<RWPreloadEntry> FromPreload(RWConsistBlueprintAbstract preload, bool flipped = false)
+        {
+            var entries = preload.Entries;
+            if (flipped) entries = entries.Reverse();
+
+            foreach (var entry in entries)
+            {
+                RWBlueprint? entryBlueprint = null;
+                bool fnf = false;
+                try
+                {
+                    entryBlueprint = await FromBlueprintID(entry.BlueprintName);
+                } 
+                catch (FileNotFoundException)
+                {
+                    fnf = true;
+                }
+                if (fnf)
+                {
+                    yield return new RWPreloadEntryNotFound { 
+                        Flipped = flipped ^ entry.Flipped, 
+                        BlueprintName = entry.BlueprintName 
+                    };
+                }
+                if (entryBlueprint == null) continue;
+
+                if (entryBlueprint is RWConsistFragmentBlueprint)
+                {
+                    var fragment = (RWConsistFragmentBlueprint)entryBlueprint;
+
+                    await foreach (var fragmentEntry in FromPreload(fragment, flipped ^ entry.Flipped))
+                    {
+                        yield return fragmentEntry;
+                    }
+                }
+                else
+                {
+                    yield return new RWPreloadEntryFound { 
+                        Blueprint = entryBlueprint, 
+                        Flipped = flipped ^ entry.Flipped, 
+                        BlueprintName = entry.BlueprintName 
+                    };
+                }
+            }
+        }
+
         public async Task<RWBlueprint> FromFilename(string filename)
         {
             var path = Path.GetRelativePath(rWLib.options.TSPath, filename);
@@ -131,7 +183,7 @@ namespace RWLib
             var blueprintIdPath = String.Join('/', sections.Skip(3));
             XDocument document;
             RWBlueprint.RWBlueprintContext context;
-            var blueprintId = new RWBlueprintID(product, provider, blueprintIdPath);
+            var blueprintId = new RWBlueprintID(provider, product, blueprintIdPath);
 
             var isCustomSerz = serializer is RWSerializer;
             Stream? stream;
@@ -159,7 +211,7 @@ namespace RWLib
 
         public async Task<RWBlueprint> FromBlueprintID(RWBlueprintID blueprintID)
         {
-            string blueprintPath = blueprintID.GetRelativeFilePathFromAssetsFolder();
+            string blueprintPath = blueprintID.GetRelativeFilePathFromAssetsFolder().Replace('/', System.IO.Path.DirectorySeparatorChar);
             blueprintPath = Path.ChangeExtension(blueprintPath, "bin");
             string filename = Path.Combine(rWLib.options.TSPath, "Assets", blueprintPath);
             return await FromFilename(filename);
@@ -382,6 +434,134 @@ namespace RWLib
             await indexingOfApFiles; // this should always be finished at this point but include anyway
             await binBlock.Completion;
             await apBlock.Completion;
+        }
+
+        public async Task<RWConsistBlueprint> CreateConsistBlueprint(string provider, string product, string path, RWConsist consist, bool reversed)
+        {
+            var name = Path.GetFileNameWithoutExtension(path);
+            var blueprintId = new RWBlueprintID(provider, product, path);
+
+            var combinedPath = blueprintId.CombinedPath;
+            combinedPath = Path.ChangeExtension(combinedPath, ".bin");
+            var absolutePath = Path.Combine(rWLib.TSPath, "Assets", combinedPath);
+
+            if (File.Exists(absolutePath))
+            {
+                throw new FileAlreadyExistsException(combinedPath);
+            }
+
+            var decleration = new XDeclaration("1.0", "utf-8", null);
+            var newConsistBlueprintXDocument = new XDocument(decleration);
+            var newConsistBlueprintXDocumentRoot = new XElement("cBlueprintLoader");
+            var blueprintElement = new XElement("Blueprint");
+            newConsistBlueprintXDocumentRoot.Add(blueprintElement);
+            newConsistBlueprintXDocument.Add(newConsistBlueprintXDocumentRoot);
+            newConsistBlueprintXDocumentRoot.Add(new XAttribute(XNamespace.Xmlns + "d", RWUtils.KujuNamspace));
+            newConsistBlueprintXDocumentRoot.Add(new XAttribute(RWUtils.KujuNamspace + "version", "1.0"));
+            var consistBlueprint = new XElement("cConsistBlueprint");
+            blueprintElement.Add(consistBlueprint);
+            var consistBlueprintEntry = new XElement("ConsistEntry");
+            consistBlueprint.Add(consistBlueprintEntry);
+
+            var id = 1;
+            var idx = 0;
+
+            RWDisplayName locoName = RWDisplayName.FromString(product);
+            int locoIdx = 0;
+
+            foreach (var vehicle in consist.Vehicles)
+            {
+                var consistEntry = new XElement("cConsistEntry");
+                consistEntry.Add(new XAttribute(RWUtils.KujuNamspace + "id", "" + id++));
+
+                var blueprintName = new XElement("BlueprintName");
+                consistEntry.Add(blueprintName);
+
+                var vehBlueprintId = vehicle.BlueprintID.ToXml();
+                blueprintName.Add(vehBlueprintId);
+
+                var flipped = new XElement("Flipped");
+                flipped.Add(new XAttribute(RWUtils.KujuNamspace + "type", "cDeltaString"));
+
+                var isFlipped = reversed ^ vehicle.railVehicle.Descendants("Flipped").FirstOrDefault()?.Value == "1";
+
+                flipped.Value = isFlipped ? "eTrue" : "eFalse";
+
+                consistEntry.Add(flipped);
+                consistBlueprintEntry.Add(consistEntry);
+
+                var blueprint = await rWLib.BlueprintLoader.FromBlueprintID(vehicle.BlueprintID);
+                var blueprintRailvehicle = blueprint as IRWRailVehicleBlueprint;
+
+                //if (blueprintRailvehicle != null) {
+                //    if (vehicle.railVehicle.Descendants("cEngine").FirstOrDefault() != null)
+                //    {
+                //        locoName = blueprintRailvehicle.DisplayName;
+                //        locoIdx = idx;
+                //    }
+                //}
+
+                idx++;
+            }
+
+            var locoNameX = new XElement("LocoName");
+            locoNameX.Add(locoName.ToXml());
+            consistBlueprint.Add(locoNameX);
+
+            var displayName = new XElement("DisplayName");
+            var displayNameX = RWDisplayName.FromString(name).ToXml();
+            displayName.Add(displayNameX);
+            consistBlueprint.Add(displayName);
+
+            var engineType = new XElement("EngineType");
+            engineType.Add(new XAttribute(RWUtils.KujuNamspace + "type", "cDeltaString"));
+            engineType.Value = "Electric";
+            consistBlueprint.Add(engineType);
+
+            var eraStartYear = new XElement("EraStartYear");
+            eraStartYear.Add(new XAttribute(RWUtils.KujuNamspace + "type", "sUInt32"));
+            eraStartYear.Value = "1850";
+            consistBlueprint.Add(eraStartYear);
+
+            var eraEndYear = new XElement("EraEndYear");
+            eraEndYear.Add(new XAttribute(RWUtils.KujuNamspace + "type", "sUInt32"));
+            eraEndYear.Value = "2050";
+            consistBlueprint.Add(eraEndYear);
+
+            var drivingEngineIndex = new XElement("DrivingEngineIndex");
+            drivingEngineIndex.Add(new XAttribute(RWUtils.KujuNamspace + "type", "sUInt32"));
+            drivingEngineIndex.Value = "" + locoIdx;
+            consistBlueprint.Add(drivingEngineIndex);
+
+            var validBuildAndDriveRoutes = new XElement("ValidBuildAndDriveRoutes");
+            consistBlueprint.Add(validBuildAndDriveRoutes);
+
+            var drivableConsist = new XElement("DrivableConsist");
+            drivableConsist.Add(new XAttribute(RWUtils.KujuNamspace + "type", "cDeltaString"));
+            drivableConsist.Value = locoName == null ? "eFalse" : "eTrue";
+            consistBlueprint.Add(drivableConsist);
+
+            var consistType = new XElement("ConsistType");
+            consistType.Add(new XAttribute(RWUtils.KujuNamspace + "type", "cDeltaString"));
+            consistType.Value = "eConsistTypePassengerCommuter";
+            consistBlueprint.Add(consistType);
+
+            var hasPantograph = new XElement("HasPantograph");
+            hasPantograph.Add(new XAttribute(RWUtils.KujuNamspace + "type", "cDeltaString"));
+            hasPantograph.Value = "eTrue";
+            consistBlueprint.Add(hasPantograph);
+
+            var has3rdRailShoe = new XElement("Has3rdRailShoe");
+            has3rdRailShoe.Add(new XAttribute(RWUtils.KujuNamspace + "type", "cDeltaString"));
+            has3rdRailShoe.Value = "eFalse";
+            consistBlueprint.Add(has3rdRailShoe);
+
+            var requires4thRail = new XElement("Requires4thRail");
+            requires4thRail.Add(new XAttribute(RWUtils.KujuNamspace + "type", "cDeltaString"));
+            requires4thRail.Value = "eFalse";
+            consistBlueprint.Add(requires4thRail);
+
+            return new RWConsistBlueprint(blueprintId, newConsistBlueprintXDocumentRoot, rWLib);
         }
     }
 }

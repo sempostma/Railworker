@@ -1,0 +1,227 @@
+[
+  {
+    "filename": "ITA_Container20ft_01.bin",
+    "name": "C-20-Red (Rusty)",
+    "moveZ": -3.055,
+    "scaleX": 0.03
+  },
+  {
+    "filename": "ITA_Container20ft_01.bin",
+    "name": "C-2X20-Red (Rusty)",
+    "moveZ": 3.055,
+    "scaleX": 0.03
+  },
+  {
+    "filename": "ITA_Container20ft_02.bin",
+    "name": "C-20-Maersk (Rusty)",
+    "moveZ": -3.055,
+    "scaleX": 0.03
+  },
+  {
+    "filename": "ITA_Container20ft_03.bin",
+    "name": "C-20-Maersk (Rusty)",
+    "moveZ": 3.055,
+    "scaleX": 0.03
+  },
+  {
+    "filename": "ITA_Container20ft_04.bin",
+    "name": "C-20-P&O Nedlloyd (Rusty)",
+    "moveZ": -3.055,
+    "scaleX": 0.03
+  },
+  {
+    "filename": "ITA_Container20ft_05.bin",
+    "name": "C-20-Triton",
+    "moveZ": 3.055,
+    "scaleX": 0.03
+  },
+  {
+    "filename": "ITA_Container20ft_06.bin",
+    "name": "C-20-Genstar",
+    "moveZ": -3.055,
+    "scaleX": 0.03
+  },
+  {
+    "filename": "ITA_Container20ft_07.bin",
+    "name": "C-20-Cosco",
+    "moveZ": 3.055,
+    "scaleX": 0.03
+  },
+  {
+    "filename": "ITA_Container20ft_08.bin",
+    "name": "C-20-CMA 2",
+    "moveZ": -3.055,
+    "scaleX": 0.03
+  },
+  {
+    "filename": "ITA_Container20ft_09.bin",
+    "name": "C-20-Maersk 2",
+    "moveZ": 3.055,
+    "scaleX": 0.03
+  },
+  {
+    "filename": "ita_container20ft_10.bin",
+    "name": "C-20-Triton 2",
+    "moveZ": -3.055,
+    "scaleX": 0.03
+  },
+  {
+    "filename": "ITA_Container20ft_11.bin",
+    "name": "C-20-Ewals Cargo Care",
+    "moveZ": 3.055,
+    "scaleX": 0.03
+  },
+  {
+    "filename": "ITA_Container20ft_12.bin",
+    "name": "C-20-UBC",
+    "moveZ": -3.055,
+    "scaleX": 0.03
+  },
+  {
+    "filename": "ITA_Container20ft_13.bin",
+    "name": "C-20-Cotunav",
+    "moveZ": 3.055,
+    "scaleX": 0.03
+  },
+  {
+    "filename": "ITA_Container20ft_14.bin",
+    "name": "C-20-Tael",
+    "moveZ": -3.055,
+    "scaleX": 0.03
+  },
+  {
+    "filename": "ITA_Container20ft_15.bin",
+    "name": "C-20-Red (Rusty) 2",
+    "moveZ": 3.055,
+    "scaleX": 0.03
+  },
+  {
+    "filename": "ITA_Container20ft_16.bin",
+    "name": "C-20-Florens",
+    "moveZ": -3.055,
+    "scaleX": 0.03
+  },
+  {
+    "filename": "ITA_Container20ft_17.bin",
+    "name": "C-20-Genstar 2",
+    "moveZ": 3.055,
+    "scaleX": 0.03
+  },
+  {
+    "filename": "ITA_Container20ft_18.bin",
+    "name": "C-20-WFCL",
+    "moveZ": -3.055,
+    "scaleX": 0.03
+  },
+  {
+    "filename": "ITA_Container40ft_01.bin",
+    "name": "C-40-Orange",
+    "scaleX": 0.03
+  },
+  {
+    "filename": "ITA_Container40ft_02.bin",
+    "name": "C-40-White (Rusty)",
+    "scaleX": 0.03
+  },
+  {
+    "filename": "ITA_Container40ft_03.bin",
+    "name": "C-40-K-Line 2",
+    "scaleX": 0.03
+  },
+  {
+    "filename": "ITA_Container40ft_04.bin",
+    "name": "C-40-Teal",
+    "scaleX": 0.03
+  },
+  {
+    "filename": "ITA_Container40ft_05.bin",
+    "name": "C-40-Yellow (Rusty)",
+    "scaleX": 0.03
+  },
+  {
+    "filename": "ITA_Container40ft_06.bin",
+    "name": "C-40-Geest",
+    "scaleX": 0.03
+  },
+  {
+    "filename": "ITA_Container40ft_07.bin",
+    "name": "C-40-Frutteroagricola",
+    "scaleX": 0.03
+  },
+  {
+    "filename": "ITA_Container40ft_08.bin",
+    "name": "C-40-Triton",
+    "scaleX": 0.03
+  },
+  {
+    "filename": "ITA_Container40ft_09.bin",
+    "name": "C-40-Cosco",
+    "scaleX": 0.03
+  },
+  {
+    "filename": "ITA_Container40ft_10.bin",
+    "name": "C-40-Maritime",
+    "scaleX": 0.03
+  },
+  {
+    "filename": "ITA_Container40ft_11.bin",
+    "name": "C-40-Evergreen 3",
+    "scaleX": 0.03
+  },
+  {
+    "filename": "ITA_Container40ft_12.bin",
+    "name": "C-40-CAF",
+    "scaleX": 0.03
+  },
+  {
+    "filename": "ITA_Container40ft_13.bin",
+    "name": "C-40-Consent Leasing",
+    "scaleX": 0.03
+  },
+  {
+    "filename": "ITA_Container40ft_14.bin",
+    "name": "C-40-Container Leasing 45",
+    "scaleX": 0.03
+  },
+  {
+    "filename": "ITA_Container40ft_15.bin",
+    "name": "C-40-UES 2",
+    "scaleX": 0.03
+  },
+  {
+    "filename": "ITA_Container40ft_16.bin",
+    "name": "C-40-White (Rusty) 2",
+    "scaleX": 0.03
+  },
+  {
+    "filename": "ITA_Container40ft_17.bin",
+    "name": "C-40-Bertschi AG",
+    "scaleX": 0.03
+  },
+  {
+    "filename": "ITA_Container40ft_18.bin",
+    "name": "T-40-Norfolkline",
+    "scaleX": 0.03
+  },
+  {
+    "filename": "ITA_Container40ft_19.bin",
+    "name": "T-40-Paneuropa",
+    "scaleX": 0.03
+  },
+  {
+    "filename": "ITA_Tanktainer20ft_01.bin",
+    "name": "TT-20-Bertschi AG",
+    "moveZ": 3.055,
+    "scaleX": 0.03
+  },
+  {
+    "filename": "ITA_Tanktainer40ft_01.bin",
+    "name": "TT-40-R.M.I",
+    "scaleX": 0.03
+  },
+  {
+    "filename": "ITA_Tanktainer40ft_02.bin",
+    "name": "TT-40-Bertschi AG",
+    "scaleX": 0.03
+  }
+]

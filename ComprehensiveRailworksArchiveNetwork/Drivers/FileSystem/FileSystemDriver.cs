@@ -1,5 +1,6 @@
 ﻿using ComprehensiveRailworksArchiveNetwork.Tasks;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
@@ -27,7 +28,8 @@ namespace ComprehensiveRailworksArchiveNetwork.Drivers.FileSystem
         {
             var collection = new AddonCollection
             {
-                Addons = new List<Addon>()
+                Addons = new List<Addon>(),
+                Authors = new List<Author>()
             };
             return collection;
         }
@@ -63,8 +65,6 @@ namespace ComprehensiveRailworksArchiveNetwork.Drivers.FileSystem
                     yield return addon;
                 }
             }
-
-            StoreCollection(collection);
         }
 
         public async Task<CreateAddonResult> CreateAddon(Addon addon)
@@ -75,6 +75,35 @@ namespace ComprehensiveRailworksArchiveNetwork.Drivers.FileSystem
             StoreCollection(collection);
 
             return new CreateAddonResult { Success = true };
+        }
+
+        public async Task<Addon> SaveAddon(Addon newAddon)
+        {
+            var collection = ReadCollection();
+            collection.Addons.Add(newAddon);
+            StoreCollection(collection);
+            return newAddon;
+        }
+
+        public async Task<Author> SaveAuthor(Author newAuthor)
+        {
+            var collection = ReadCollection();
+            collection.Authors.Add(newAuthor);
+            StoreCollection(collection);
+            return newAuthor;
+        }
+
+        public async IAsyncEnumerable<Author> SearchForAuthors(string query, SearchOptions searchOptions)
+        {
+            var collection = ReadCollection();
+
+            foreach (var author in collection.Authors)
+            {
+                if (author.Name.ToLower().Contains(query.ToLower()))
+                {
+                    yield return author;
+                }
+            }
         }
     }
 }

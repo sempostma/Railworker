@@ -7,6 +7,7 @@
         xmlns:lang="clr-namespace:Railworker.Language;assembly=Railworker.Language"
         xmlns:props="clr-namespace:Railworker.Properties"
         mc:Ignorable="d"
+      xmlns:Converters="clr-namespace:Railworker.Converters"
         Title="{Binding Title}" Height="781" Width="1204">
     <DockPanel Margin="10">
         <Grid DockPanel.Dock="Bottom">
@@ -36,10 +37,22 @@
             <GridSplitter Grid.Column="6" Width="Auto" VerticalAlignment="Stretch" />
 
             <ListView 
-        x:Name="ConsistsListView"
-        Grid.Column="0" 
-        SelectionMode="Single"
->
+                x:Name="ConsistsListView"
+                Grid.Column="0" 
+                SelectionMode="Single"
+                SelectionChanged="ConsistsListView_SelectionChanged"
+                ItemsSource="{Binding Consists}">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="{x:Static lang:Resources.name}" DisplayMemberBinding="{Binding Name}" />
+                    </GridView>
+                </ListView.View>
+            </ListView>
+            <ListView 
+                x:Name="ConsistVehiclesListView"
+                Grid.Column="2" 
+                SelectionMode="Single"
+                ItemsSource="{Binding ConsistVehicles}">
                 <ListView.View>
                     <GridView>
                         <GridViewColumn Header="{x:Static lang:Resources.name}" DisplayMemberBinding="{Binding Name}" />

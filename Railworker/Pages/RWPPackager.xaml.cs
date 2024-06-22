@@ -33,7 +33,7 @@ namespace Railworker.Pages
         public class RWPPackagerViewModel : ViewModel
         {
             public ObservableCollection<FileSystemEntry> FileSystemEntries { get; set; } = new ObservableCollection<FileSystemEntry>();
-            public String FileExtensionsToIgnore { get; set; } = "dds,psd,bak,pak";
+            public String FileExtensionsToIgnore { get; set; } = "dds,psd,bak,pak,tgt,cost";
 
             private int _downloadingProgress = 0;
             public int DownloadingProgress
@@ -360,7 +360,7 @@ namespace Railworker.Pages
 
         private async Task Save()
         {
-            var fileExtensionsToIgnore = ViewModel.FileExtensionsToIgnore.Split("/\\s+,\\s+/").Select(x => x.TrimStart('.')).ToHashSet();
+            var fileExtensionsToIgnore = ViewModel.FileExtensionsToIgnore.Split(',').Select(x => x.TrimStart('.').Trim()).ToHashSet();
             if (rootNode == null) return;
 
             CommonSaveFileDialog dialog = new CommonSaveFileDialog();
@@ -375,13 +375,14 @@ namespace Railworker.Pages
                 var path = dialog.FileName;
                 if (path != null)
                 {
+                    var filenames = rootNode.EnumerateFiles()
+                                .Where(x => !fileExtensionsToIgnore.Contains(System.IO.Path.GetExtension(x).TrimStart('.')))
+                                .Select(x => System.IO.Path.GetRelativePath(App.RWLib!.TSPath, x))
+                                .ToArray();
                     var packageInfo = new RWPackageInfo
                     {
                         Author = ViewModel.Author,
-                        FileNames = rootNode.EnumerateFiles()
-                                .Where(x => !fileExtensionsToIgnore.Contains(System.IO.Path.GetExtension(x)))
-                                .Select(x => System.IO.Path.GetRelativePath(App.RWLib!.TSPath, x))
-                                .ToArray(),
+                        FileNames = filenames,
                         License = ViewModel.License,
                         Name = System.IO.Path.GetFileNameWithoutExtension(path).Replace("_", " ")
                     };

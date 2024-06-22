@@ -117,6 +117,12 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="add_as_preload_consist" xml:space="preserve">
+    <value>Add as preload consist</value>
+  </data>
+  <data name="add_new" xml:space="preserve">
+    <value>Add new</value>
+  </data>
   <data name="add_to_rules" xml:space="preserve">
     <value>Add to rules</value>
   </data>
@@ -150,6 +156,12 @@
   <data name="choose_directory" xml:space="preserve">
     <value>Choose directory</value>
   </data>
+  <data name="clear" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="clear_assets" xml:space="preserve">
+    <value>Clear assets</value>
+  </data>
   <data name="close" xml:space="preserve">
     <value>Close</value>
   </data>
@@ -165,6 +177,21 @@
   <data name="control_value_name" xml:space="preserve">
     <value>Control value name</value>
   </data>
+  <data name="cran" xml:space="preserve">
+    <value>CRAN</value>
+  </data>
+  <data name="cran_addons_page" xml:space="preserve">
+    <value>CRAN addons</value>
+  </data>
+  <data name="cran_addon_edit" xml:space="preserve">
+    <value>CRAN addon edit</value>
+  </data>
+  <data name="cran_admin" xml:space="preserve">
+    <value>CRAN admin</value>
+  </data>
+  <data name="cran_new_addon" xml:space="preserve">
+    <value>CRAN new addon</value>
+  </data>
   <data name="create_vehicle_variation" xml:space="preserve">
     <value>Create vehicle variation</value>
   </data>
@@ -173,6 +200,12 @@
   </data>
   <data name="default_value" xml:space="preserve">
     <value>Default value</value>
+  </data>
+  <data name="delete_selected" xml:space="preserve">
+    <value>Delete Selected</value>
+  </data>
+  <data name="description" xml:space="preserve">
+    <value>Description</value>
   </data>
   <data name="directory" xml:space="preserve">
     <value>Directory</value>
@@ -194,6 +227,9 @@
   </data>
   <data name="edit_scenario" xml:space="preserve">
     <value>Edit scenario</value>
+  </data>
+  <data name="edit_selected" xml:space="preserve">
+    <value>Edit selected</value>
   </data>
   <data name="enable" xml:space="preserve">
     <value>Enable</value>
@@ -219,6 +255,9 @@
   <data name="filename" xml:space="preserve">
     <value>Filename</value>
   </data>
+  <data name="file_already_exists" xml:space="preserve">
+    <value>File already exists</value>
+  </data>
   <data name="file_does_not_exist" xml:space="preserve">
     <value>File does not exist</value>
   </data>
@@ -242,6 +281,9 @@
   </data>
   <data name="insert_below" xml:space="preserve">
     <value>Insert below</value>
+  </data>
+  <data name="inspector" xml:space="preserve">
+    <value>Inspector</value>
   </data>
   <data name="install" xml:space="preserve">
     <value>Install</value>
@@ -267,11 +309,35 @@
   <data name="license" xml:space="preserve">
     <value>License</value>
   </data>
+  <data name="loading" xml:space="preserve">
+    <value>Loading</value>
+  </data>
+  <data name="loading_authors" xml:space="preserve">
+    <value>Loading authors</value>
+  </data>
   <data name="loading_routes" xml:space="preserve">
     <value>Loading routes</value>
   </data>
   <data name="loading_scenarios" xml:space="preserve">
     <value>Loading scenarios</value>
+  </data>
+  <data name="look_up" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="loose_consist" xml:space="preserve">
+    <value>Loose consist</value>
+  </data>
+  <data name="management" xml:space="preserve">
+    <value>Management</value>
+  </data>
+  <data name="manage_addons" xml:space="preserve">
+    <value>Manage addons</value>
+  </data>
+  <data name="manage_authors" xml:space="preserve">
+    <value>Manage authors</value>
+  </data>
+  <data name="manage_files" xml:space="preserve">
+    <value>Manage files</value>
   </data>
   <data name="maximum_value" xml:space="preserve">
     <value>Maximum value</value>
@@ -287,6 +353,9 @@
   </data>
   <data name="msg_message" xml:space="preserve">
     <value>Message</value>
+  </data>
+  <data name="msg_no_directory_selected" xml:space="preserve">
+    <value>No directory selected</value>
   </data>
   <data name="msg_ts_path_invalid" xml:space="preserve">
     <value>Selected path is invalid! (Check if it contains RailWorks.exe)</value>
@@ -324,6 +393,9 @@
   <data name="path" xml:space="preserve">
     <value>Path</value>
   </data>
+  <data name="preloads" xml:space="preserve">
+    <value>Preloads</value>
+  </data>
   <data name="processing_tracks_bin" xml:space="preserve">
     <value>Processing Tracks.bin</value>
   </data>
@@ -333,11 +405,20 @@
   <data name="process_track_bin" xml:space="preserve">
     <value>Process Tracks.bin</value>
   </data>
+  <data name="product" xml:space="preserve">
+    <value>Product</value>
+  </data>
   <data name="protected" xml:space="preserve">
     <value>Protected</value>
   </data>
+  <data name="provider" xml:space="preserve">
+    <value>Provider</value>
+  </data>
   <data name="reading_scenario_files" xml:space="preserve">
     <value>Reading scenario files</value>
+  </data>
+  <data name="refresh" xml:space="preserve">
+    <value>Refresh</value>
   </data>
   <data name="remove" xml:space="preserve">
     <value>Remove</value>
@@ -356,6 +437,9 @@
   </data>
   <data name="replace_with" xml:space="preserve">
     <value>Replace with</value>
+  </data>
+  <data name="reversed" xml:space="preserve">
+    <value>Reversed</value>
   </data>
   <data name="rolling_stock" xml:space="preserve">
     <value>Rolling stock</value>
@@ -419,6 +503,9 @@
   </data>
   <data name="search" xml:space="preserve">
     <value>Search</value>
+  </data>
+  <data name="searching_for_addons" xml:space="preserve">
+    <value>Searching for addons</value>
   </data>
   <data name="search_vehicles" xml:space="preserve">
     <value>Search vehicles</value>

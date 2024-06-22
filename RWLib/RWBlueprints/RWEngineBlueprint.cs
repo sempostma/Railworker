@@ -38,5 +38,8 @@ namespace RWLib
                 else return new RWDisplayName(element!);
             }
         }
+
+        public RWRenderComponent RenderComponent { get => new RWRenderComponent(Xml.Element("RenderComponent")!.Element("cAnimObjectRenderBlueprint")!, lib); }
+        public bool HasRenderComponent => Xml.Element("RenderComponent")?.Element("cAnimObjectRenderBlueprint") != null;
     }
 }
