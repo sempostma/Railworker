@@ -76,13 +76,13 @@ class Program
     public static async Task GenerateWaggonZVariants()
     {
         bool includeRSitalia = false;
-        bool includeNewSContainers = false;
+        bool includeNewSContainers = true;
         bool includeRailStudioRgsVariants = false;
         bool includeExtraWaggonzContainers = false;
         bool includeEmptyVariant = false;
         bool includeWaggonzDefaultContainers = false;
         bool includeScandanavian = false;
-        bool includeAfirusContainers = true;
+        bool includeAfirusContainers = false;
 
         try
         {

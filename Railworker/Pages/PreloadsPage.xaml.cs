@@ -141,6 +141,7 @@ namespace Railworker.Pages
 
         public void AddDependency(Dependency dep, List<Dependency> depsCache)
         {
+            if (dep.Product == "" || dep.Provider == "") return;
             var func = new Func<Dependency, bool>(x => x.Provider.ToLower() == dep.Provider.ToLower() && x.Product.ToLower() == dep.Product.ToLower());
             if (!ViewModel.Dependencies.Any(func)) ViewModel.Dependencies.Add(dep);
             if (!depsCache.Any(func)) depsCache.Add(dep);

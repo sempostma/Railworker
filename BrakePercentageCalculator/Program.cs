@@ -30,7 +30,18 @@ class Program {
         //ParseBinWithCustomFunction().Wait();
         //ScanAssetDirectory().Wait();
         //ControlValueWatcher();
-        CreateUICWagonTypeNumbers();
+        //CreateUICWagonTypeNumbers();
+
+        ConvertBlueprintEditorXML().Wait();
+    }
+
+    public async static Task ConvertBlueprintEditorXML()
+    {
+        RWLibrary rwLib = new RWLibrary(new RWLibOptions { UseCustomSerz = true, Logger = new Logger() });
+
+        var xml = new RWBlueprintEditor2(await rwLib.BlueprintLoader.FromFilename("E:\\SteamLibrary\\steamapps\\common\\RailWorks\\Assets\\Waggonz\\WZ-80\\Audio\\New\\Wagen\\3dz_Shmmns_Wagen_Audio.bin"));
+
+        xml.Parse();
     }
 
     public static void CreateUICWagonTypeNumbers()
@@ -40,7 +51,7 @@ class Program {
         var test = RWUICWagonNumber.FromDigits("33", "84", "4962", "488");
         var testS = test.ToString();
 
-        for (int i = 0; i < 1000; i += (i + 10) % 30)
+        for (int i = 0; i < 1000; i ++)
         {
             var v = RWUICWagonNumber.FromDigits("33", "84", i.ToString("D4"), "488");
             Console.WriteLine(v.ToString(RWUICWagonNumber.Format.Plain));
