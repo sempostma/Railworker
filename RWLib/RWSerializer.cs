@@ -6,6 +6,8 @@ using System.Xml.Linq;
 using System.IO.Compression;
 using RWLib.SerzClone;
 using System.IO;
+using System;
+using RWLib.Extensions;
 
 namespace RWLib
 {
@@ -17,13 +19,27 @@ namespace RWLib
 
         public async Task<string> SerializeWithSerzExe(XDocument xml)
         {
+            var hashCode = rWLib.options.Cache != null ? xml.GetFastDeepConsistentHash() : 0;
+            var cacheKey = $"RWSerializer/SerializeWithSerzExe/{hashCode}";
+            var cacheEntry = rWLib.options.Cache?.GetEntry(cacheKey);
+            if (cacheEntry?.IsStillRelevant(1) == true)
+            {
+                if (File.Exists(cacheEntry.PersistentValue))
+                {
+                    return cacheEntry.PersistentValue;
+                } else
+                {
+                    rWLib.options.Cache?.PurgeEntry(cacheKey);
+                }
+            }
+
             var tempPath = Path.GetTempPath();
             var serzTempDir = Path.Combine(tempPath, "RWLib", "SerzTemp");
             Directory.CreateDirectory(serzTempDir); // ensure directory
             String tempFile;
 
             var cancellationToken = new CancellationToken();
-
+            
             var settings = new XmlWriterSettings();
             settings.Indent = true;
             settings.IndentChars = "\t";
@@ -65,6 +81,11 @@ namespace RWLib
                 {
                     throw new InvalidDataException("This is not a valid Railworks XML file because serz.exe failed to produce any output. Make sure the format of the file is correct and you did not change the structure of the file. You can find the xml output here: " + tempFile);
                 }
+            }
+
+            if (rWLib.options.Cache != null)
+            {
+                rWLib.options.Cache.StoreCacheEntry(cacheKey, 1, binFile);
             }
 
             return binFile;
@@ -165,6 +186,37 @@ namespace RWLib
             var randomFilename = RandomFileName();
             entry.ExtractToFile(randomFilename);
             return randomFilename;
+        }
+
+        private static void ComputeHash(XElement element, ref int hash)
+        {
+            if (element == null)
+            {
+                return;
+            }
+
+            // Combine hash with element name
+            hash = hash * 31 + element.Name.GetHashCode();
+
+            // Combine hash with attributes
+            foreach (var attr in element.Attributes().OrderBy(a => a.Name.ToString()))
+            {
+                hash = hash * 31 + attr.Name.GetHashCode();
+                hash = hash * 31 + attr.Value.GetHashCode();
+            }
+
+            // Recursively combine hash with child elements
+            foreach (var node in element.Nodes())
+            {
+                if (node is XElement e)
+                {
+                    ComputeHash(e, ref hash);
+                }
+                else if (node is XText t)
+                {
+                    hash = hash * 31 + t.Value.GetHashCode();
+                }
+            }
         }
     }
 }

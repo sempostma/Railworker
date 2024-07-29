@@ -1,0 +1,324 @@
+[
+  {
+    "filename": "RailNetwork\\Interactive\\7_82_TANK\\Childs\\FA_7_82\\ADDU.bin",
+    "name": "ADDU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\7_82_TANK\\Childs\\FA_7_82\\BIDU.bin",
+    "name": "BIDU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\7_82_TANK\\Childs\\FA_7_82\\BIDU2.bin",
+    "name": "BIDU 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\7_82_TANK\\Childs\\FA_7_82\\BIDU3.bin",
+    "name": "BIDU 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\7_82_TANK\\Childs\\FA_7_82\\BIDU4.bin",
+    "name": "BIDU 4",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\7_82_TANK\\Childs\\FA_7_82\\BIDU5.bin",
+    "name": "BIDU 5",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\7_82_TANK\\Childs\\FA_7_82\\CEXU.bin",
+    "name": "CEXU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\7_82_TANK\\Childs\\FA_7_82\\CEXU2.bin",
+    "name": "CEXU 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\7_82_TANK\\Childs\\FA_7_82\\CEXU3.bin",
+    "name": "CEXU 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\7_82_TANK\\Childs\\FA_7_82\\CEXU4.bin",
+    "name": "CEXU 4",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\7_82_TANK\\Childs\\FA_7_82\\CEXU5.bin",
+    "name": "CEXU 5",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\7_82_TANK\\Childs\\FA_7_82\\EKCU.bin",
+    "name": "EKCU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\7_82_TANK\\Childs\\FA_7_82\\EKCU2.bin",
+    "name": "EKCU 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\7_82_TANK\\Childs\\FA_7_82\\EKCU3.bin",
+    "name": "EKCU 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\7_82_TANK\\Childs\\FA_7_82\\EXFU.bin",
+    "name": "EXFU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\7_82_TANK\\Childs\\FA_7_82\\FCNU.bin",
+    "name": "FCNU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\7_82_TANK\\Childs\\FA_7_82\\FCNU_2.bin",
+    "name": "FCNU 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\7_82_TANK\\Childs\\FA_7_82\\FFLU.bin",
+    "name": "FFLU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\7_82_TANK\\Childs\\FA_7_82\\FGTU.bin",
+    "name": "FGTU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\7_82_TANK\\Childs\\FA_7_82\\FOTU.bin",
+    "name": "FOTU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\7_82_TANK\\Childs\\FA_7_82\\FOTU_2.bin",
+    "name": "FOTU 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\7_82_TANK\\Childs\\FA_7_82\\FOTU_3.bin",
+    "name": "FOTU 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\7_82_TANK\\Childs\\FA_7_82\\FWUU.bin",
+    "name": "FWUU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\7_82_TANK\\Childs\\FA_7_82\\IHTU.bin",
+    "name": "IHTU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\7_82_TANK\\Childs\\FA_7_82\\KUBU.bin",
+    "name": "KUBU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\7_82_TANK\\Childs\\FA_7_82\\MCMU.bin",
+    "name": "MCMU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\7_82_TANK\\Childs\\FA_7_82\\NWBU.bin",
+    "name": "NWBU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\7_82_TANK\\Childs\\FA_7_82\\NWNU.bin",
+    "name": "NWNU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\7_82_TANK\\Childs\\FA_7_82\\RCLU.bin",
+    "name": "RCLU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\7_82_TANK\\Childs\\FA_7_82\\RCLU_2.bin",
+    "name": "RCLU 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\7_82_TANK\\Childs\\FA_7_82\\RDLU.bin",
+    "name": "RCLU 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\7_82_TANK\\Childs\\FA_7_82\\RICU.bin",
+    "name": "RICU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\7_82_TANK\\Childs\\FA_7_82\\RICU_2.bin",
+    "name": "RICU 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\7_82_TANK\\Childs\\FA_7_82\\SAIU1.bin",
+    "name": "SAIU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\7_82_TANK\\Childs\\FA_7_82\\SAIU2.bin",
+    "name": "SAIU 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\7_82_TANK\\Childs\\FA_7_82\\TCTU.bin",
+    "name": "TCTU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\7_82_TANK\\Childs\\FA_7_82\\TICU.bin",
+    "name": "TICU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\7_82_TANK\\Childs\\FA_7_82\\TWSU.bin",
+    "name": "TWSU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\7_82_TANK\\Childs\\FA_7_82\\UTTU.bin",
+    "name": "UTTU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\7_82_TANK\\Childs\\FA_7_82\\VODU.bin",
+    "name": "VODU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\7_82_TANK\\Childs\\FA_7_82\\VTGU.bin",
+    "name": "VTGU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\7_82_TANK\\Childs\\FA_7_82\\VTGU_2.bin",
+    "name": "VTGU 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\7_82_TANK\\Childs\\FA_7_82\\VTGU_3.bin",
+    "name": "VTGU 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\7_82_TANK\\Childs\\FA_7_82\\WABU.bin",
+    "name": "WABU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\7_82_TANK\\Childs\\FA_7_82\\WAUU.bin",
+    "name": "WAUU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\7_82_TANK\\Childs\\FA_7_82\\WAUU2.bin",
+    "name": "WAUU 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  }
+]

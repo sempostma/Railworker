@@ -1,0 +1,128 @@
+[
+  {
+    "filename": "RailNetwork\\Interactive\\20_FT\\APUL_01.bin",
+    "name": "APUL 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\20_FT\\BEAC_01.bin",
+    "name": "BEAC 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\20_FT\\BLSB_01.bin",
+    "name": "BLSB 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\20_FT\\CAIU_01.bin",
+    "name": "CAIU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\20_FT\\CRXU_01.bin",
+    "name": "CRXU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\20_FT\\CRXU_02.bin",
+    "name": "CRXU 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\20_FT\\DSFU_01.bin",
+    "name": "DSFU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\20_FT\\DSLU_01.bin",
+    "name": "DSLU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\20_FT\\EIMU_01.bin",
+    "name": "EIMU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\20_FT\\FESU_01.bin",
+    "name": "FESU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\20_FT\\FLOR_01.bin",
+    "name": "FLOR 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\20_FT\\HAPA_01.bin",
+    "name": "HAPA 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\20_FT\\HAPA_02.bin",
+    "name": "HAPA 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\20_FT\\HDMU_01.bin",
+    "name": "HDMU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\20_FT\\TPSU.bin",
+    "name": "TPSU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\20_FT\\VTIU 02.bin",
+    "name": "VTIU 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\20_FT\\VTIU 03.bin",
+    "name": "VTIU 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\20_FT\\VTIU.bin",
+    "name": "VTIU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  }
+]

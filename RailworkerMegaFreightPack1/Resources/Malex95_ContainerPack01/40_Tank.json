@@ -1,0 +1,135 @@
+[
+  {
+    "filename": "RailNetwork\\Interactive\\Tank\\40FT\\T_40FT_ABEU_1.bin",
+    "name": "40 ABEU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\Tank\\40FT\\T_40FT_ABEU_2.bin",
+    "name": "40 ABEU 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\Tank\\40FT\\T_40FT_BCCU_1.bin",
+    "name": "40 BCCU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\Tank\\40FT\\T_40FT_BKBU_1.bin",
+    "name": "40 BKBU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\Tank\\40FT\\T_40FT_BKBU_2.bin",
+    "name": "40 BKBU 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\Tank\\40FT\\T_40FT_BUKU_1.bin",
+    "name": "40 BUKU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\Tank\\40FT\\T_40FT_BUKU_2.bin",
+    "name": "40 BUKU 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\Tank\\40FT\\T_40FT_BUKU_3.bin",
+    "name": "40 BUKU 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\Tank\\40FT\\T_40FT_EKCU.bin",
+    "name": "40 EKCU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\Tank\\40FT\\T_40FT_EKCU_2.bin",
+    "name": "40 EKCU 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\Tank\\40FT\\T_40FT_PLNU_01.bin",
+    "name": "40 PLNU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\Tank\\40FT\\T_40FT_PLNU_02.bin",
+    "name": "40 PLNU 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\Tank\\40FT\\T_40FT_PLNU_03.bin",
+    "name": "40 PLNU 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\Tank\\40FT\\T_40FT_PLNU_04.bin",
+    "name": "50 PLNU 4",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\Tank\\40FT\\T_40FT_PLNU_05.bin",
+    "name": "40 PLNU 5",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\Tank\\40FT\\T_40FT_RSTU.bin",
+    "name": "40 RSTU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\Tank\\40FT\\T_40FT_RYCU.bin",
+    "name": "40 RYCU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\Tank\\40FT\\T_40FT_SIBU_1.bin",
+    "name": "40 SIBU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\Tank\\40FT\\T_40FT_SIBU_2.bin",
+    "name": "40 SIBU 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  }
+]

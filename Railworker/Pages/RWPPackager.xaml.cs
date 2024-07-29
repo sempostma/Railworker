@@ -33,7 +33,7 @@ namespace Railworker.Pages
         public class RWPPackagerViewModel : ViewModel
         {
             public ObservableCollection<FileSystemEntry> FileSystemEntries { get; set; } = new ObservableCollection<FileSystemEntry>();
-            public String FileExtensionsToIgnore { get; set; } = "dds,psd,bak,pak,tgt,cost";
+            public String FileExtensionsToIgnore { get; set; } = "dds,psd,bak,pak,tgt,cost,pak";
 
             private int _downloadingProgress = 0;
             public int DownloadingProgress

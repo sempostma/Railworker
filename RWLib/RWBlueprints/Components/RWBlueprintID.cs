@@ -72,7 +72,7 @@ namespace RWLib.RWBlueprints.Components
             var provider = sections.Length >= 1 ? sections[0] : "";
             var product = sections.Length >= 2 ? sections[1] : "";
             var hasProductPath = sections.Length >= 2;
-            var productPath = string.Join('\\', sections.Skip(2));
+            var productPath = System.IO.Path.ChangeExtension(String.Join('\\', sections.Skip(2)), ".xml");
             return new RWBlueprintID(provider, product, productPath);
         }
 

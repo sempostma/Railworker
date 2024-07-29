@@ -126,7 +126,6 @@ namespace RailworkerMegaFreightPack1
                     "ChrisTrains\\RailSimulator\\RailVehicles\\Freight\\NS Sgns\\[Afirus]GW\\NS Sgns {0} {1}"
                 );
 
-
             Console.WriteLine("Done!");
         }
 
@@ -149,7 +148,6 @@ namespace RailworkerMegaFreightPack1
                     "CT NS Sgns {0} 20ftx3 {1}",
                     "ChrisTrains\\RailSimulator\\RailVehicles\\Freight\\NS Sgns\\[Afirus]GW\\NS Sgns {0} {1}"
                 );
-
 
             Console.WriteLine("Done!");
         }

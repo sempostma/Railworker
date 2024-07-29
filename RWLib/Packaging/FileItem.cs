@@ -8,24 +8,13 @@ using System.Threading.Tasks;
 
 namespace RWLib.Packaging
 {
-    public class FileItem
+    public class FileItem : MatrixTransformable
     {
         [JsonPropertyName("filename")]
         public string Filename { get; set; } = "";
         [JsonPropertyName("name")]
         public string Name { get; set; } = "";
-        [JsonPropertyName("moveX")]
-        public float MoveX { get; set; } = 0;
-        [JsonPropertyName("moveY")]
-        public float MoveY { get; set; } = 0;
-        [JsonPropertyName("mozeZ")]
-        public float MoveZ { get; set; } = 0;
-        [JsonPropertyName("scaleX")]
-        public float ScaleX { get; set; } = 0;
-        [JsonPropertyName("scaleY")]
-        public float ScaleY { get; set; } = 0;
-        [JsonPropertyName("scaleZ")]
-        public float ScaleZ { get; set; } = 0;
+
         [JsonPropertyName("mass")]
         public int Mass { get; set; } = 15000;
         [JsonPropertyName("cargo")]
@@ -33,6 +22,8 @@ namespace RWLib.Packaging
 
         [JsonPropertyName("filterWagonType")]
         public List<string> FilterWagonType { get; set; } = new List<string>();
+        [JsonPropertyName("cargoAsChild")]
+        public bool CargoAsChild { get; set; } = false;
 
         public static List<FileItem> FromJson(string jsonString)
         {

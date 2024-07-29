@@ -1,0 +1,2941 @@
+[
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_2XL\\Childs\\45FT_1.bin",
+    "name": "2XL 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "2XL_1.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_2XL\\Childs\\45FT_2.bin",
+    "name": "2XL 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "2XL_2.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_2XL\\Childs\\45FT_3.bin",
+    "name": "2XL 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "2XL_3.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_2XL\\Childs\\45FT_4.bin",
+    "name": "2XL 4",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "2XL_4.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_A2B\\Childs\\45FT_1.bin",
+    "name": "A2B 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "A2B_1.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_A2B\\Childs\\45FT_2.bin",
+    "name": "A2B 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "A2B_2.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_A2B\\Childs\\45FT_3.bin",
+    "name": "A2B 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "A2B_3.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_A2B\\Childs\\45FT_4.bin",
+    "name": "A2B 4",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "A2B_4.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_AESA\\Childs\\45FT_1.bin",
+    "name": "AESA 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "AESA_1.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_AESA\\Childs\\45FT_10.bin",
+    "name": "AESA 10",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "AESA_10.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_AESA\\Childs\\45FT_2.bin",
+    "name": "AESA 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "AESA_2.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_AESA\\Childs\\45FT_3.bin",
+    "name": "AESA 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "AESA_3.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_AESA\\Childs\\45FT_4.bin",
+    "name": "AESA 4",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "AESA_4.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_AESA\\Childs\\45FT_5.bin",
+    "name": "AESA 5",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "AESA_5.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_AESA\\Childs\\45FT_6.bin",
+    "name": "AESA 6",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "AESA_6.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_AESA\\Childs\\45FT_7.bin",
+    "name": "AESA 7",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "AESA_7.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_AESA\\Childs\\45FT_8.bin",
+    "name": "AESA 8",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "AESA_8.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_AESA\\Childs\\45FT_9.bin",
+    "name": "AESA 9",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "AESA_9.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_AMBE\\Childs\\45FT_1.bin",
+    "name": "AMBE 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "AMBE_1.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_AMBE\\Childs\\45FT_10.bin",
+    "name": "AMBE 10",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "AMBE_10.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_AMBE\\Childs\\45FT_11.bin",
+    "name": "AMBE 11",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "AMBE_11.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_AMBE\\Childs\\45FT_2.bin",
+    "name": "AMBE 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "AMBE_2.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_AMBE\\Childs\\45FT_3.bin",
+    "name": "AMBE 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "AMBE_3.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_AMBE\\Childs\\45FT_4.bin",
+    "name": "AMBE 4",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "AMBE_4.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_AMBE\\Childs\\45FT_5.bin",
+    "name": "AMBE 5",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "AMBE_5.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_AMBE\\Childs\\45FT_6.bin",
+    "name": "AMBE 6",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "AMBE_6.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_AMBE\\Childs\\45FT_7.bin",
+    "name": "AMBE 7",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "AMBE_7.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_AMBE\\Childs\\45FT_8.bin",
+    "name": "AMBE 8",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "AMBE_8.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_AMBE\\Childs\\45FT_9.bin",
+    "name": "AMBE 9",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "AMBE_9.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_ARCE\\Childs\\45FT_1.bin",
+    "name": "ARCE 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "ARCE_1.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_ARCE\\Childs\\45FT_2.bin",
+    "name": "ARCE 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "ARCE_2.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_ARCE\\Childs\\45FT_3.bin",
+    "name": "ARCE 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "ARCE_3.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_ARCE\\Childs\\45FT_4.bin",
+    "name": "ARCE 4",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "ARCE_4.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_AUGU\\Childs\\45FT_1.bin",
+    "name": "AUGU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "AUGU_1.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_AUGU\\Childs\\45FT_2.bin",
+    "name": "AUGU 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "AUGU_2.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_BAS\\Childs\\45FT_1.bin",
+    "name": "BAS 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "BAS_1.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_BAS\\Childs\\45FT_2.bin",
+    "name": "BAS 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "BAS_2.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_BAS\\Childs\\45FT_3.bin",
+    "name": "BAS 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "BAS_3.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_BAS\\Childs\\45FT_4.bin",
+    "name": "BAS 4",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "BAS_4.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_BAS\\Childs\\45FT_5.bin",
+    "name": "BAS 5",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "BAS_5.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_BAS\\Childs\\45FT_6.bin",
+    "name": "BAS 6",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "BAS_6.bin",
+    "moveZ": 0.915
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_BFGU\\Childs\\45FT_1.bin",
+    "name": "BFGU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "BFGU_1.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_BFGU\\Childs\\45FT_2.bin",
+    "name": "BFGU 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "BFGU_2.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_BFGU\\Childs\\45FT_3.bin",
+    "name": "BFGU 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "BFGU_3.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_BFGU\\Childs\\45FT_4.bin",
+    "name": "BFGU 4",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "BFGU_4.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_BFGU\\Childs\\45FT_5.bin",
+    "name": "BFGU 5",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "BFGU_5.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_BODU\\Childs\\45FT_1.bin",
+    "name": "BODU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "BODU_1.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_BODU\\Childs\\45FT_2.bin",
+    "name": "BODU 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "BODU_2.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_BODU\\Childs\\45FT_3.bin",
+    "name": "BODU 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "BODU_3.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_BODU\\Childs\\45FT_4.bin",
+    "name": "BODU 4",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "BODU_4.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_BODU\\Childs\\45FT_5.bin",
+    "name": "BODU 5",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "BODU_5.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_BODU\\Childs\\45FT_6.bin",
+    "name": "BODU 6",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "BODU_6.bin",
+    "moveZ": 0.915
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_CAI\\Childs\\45FT_1.bin",
+    "name": "CAI 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "CAI_1.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_CAI\\Childs\\45FT_2.bin",
+    "name": "CAI 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "CAI_2.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_CLDU\\Childs\\45FT_1.bin",
+    "name": "CLDU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "CLDU_1.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_CLDU\\Childs\\45FT_2.bin",
+    "name": "CLDU 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "CLDU_2.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_CLDU\\Childs\\45FT_3.bin",
+    "name": "CLDU 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "CLDU_3.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_CLDU\\Childs\\45FT_4.bin",
+    "name": "CLDU 4",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "CLDU_4.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_CLXU\\Childs\\45FT_1.bin",
+    "name": "CLXU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "CLXU_1.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_CLXU\\Childs\\45FT_2.bin",
+    "name": "CLXU 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "CLXU_2.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_CLXU\\Childs\\45FT_3.bin",
+    "name": "CLXU 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "CLXU_3.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_CLXU\\Childs\\45FT_4.bin",
+    "name": "CLXU 4",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "CLXU_4.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_CLXU\\Childs\\45FT_5.bin",
+    "name": "CLXU 5",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "CLXU_5.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_CNC\\Childs\\45FT_1.bin",
+    "name": "CNC 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "CNC_1.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_CNC\\Childs\\45FT_2.bin",
+    "name": "CNC 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "CNC_2.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_CNC\\Childs\\45FT_3.bin",
+    "name": "CNC 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "CNC_3.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_COBA\\Childs\\45FT_1.bin",
+    "name": "COBA 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "COBA_1.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_COBA\\Childs\\45FT_2.bin",
+    "name": "COBA 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "COBA_2.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_COBA\\Childs\\45FT_3.bin",
+    "name": "COBA 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "COBA_3.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_COBA\\Childs\\45FT_4.bin",
+    "name": "COBA 4",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "COBA_4.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_COBA\\Childs\\45FT_5.bin",
+    "name": "COBA 5",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "COBA_5.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_COBA\\Childs\\45FT_6.bin",
+    "name": "COBA 6",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "COBA_6.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_COBA\\Childs\\45FT_7.bin",
+    "name": "COBA 7",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "COBA_7.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_COBA\\Childs\\45FT_8.bin",
+    "name": "COBA 8",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "COBA_8.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_CODA\\Childs\\45FT_1.bin",
+    "name": "CODA 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "CODA_1.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_CODA\\Childs\\45FT_2.bin",
+    "name": "CODA 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "CODA_2.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_CODA\\Childs\\45FT_3.bin",
+    "name": "CODA 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "CODA_3.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_CODA\\Childs\\45FT_4.bin",
+    "name": "CODA 4",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "CODA_4.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_CODA\\Childs\\45FT_5.bin",
+    "name": "CODA 5",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "CODA_5.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_CSFU\\Childs\\45FT_1.bin",
+    "name": "CSFU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "CSFU_1.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_CSFU\\Childs\\45FT_2.bin",
+    "name": "CSFU 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "CSFU_2.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_CSFU\\Childs\\45FT_3.bin",
+    "name": "CSFU 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "CSFU_3.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_CSFU\\Childs\\45FT_4.bin",
+    "name": "CSFU 4",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "CSFU_4.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_CTRU\\Childs\\45FT_1.bin",
+    "name": "CTRU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "CTRU_1.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_CTRU\\Childs\\45FT_2.bin",
+    "name": "CTRU 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "CTRU_2.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_CTRU\\Childs\\45FT_3.bin",
+    "name": "CTRU 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "CTRU_3.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_CTRU\\Childs\\45FT_4.bin",
+    "name": "CTRU 4",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "CTRU_4.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_CTRU\\Childs\\45FT_5.bin",
+    "name": "CTRU 5",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "CTRU_5.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_CTRU\\Childs\\45FT_6.bin",
+    "name": "CTRU 6",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "CTRU_6.bin",
+    "moveZ": 0.915
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_DFDA\\Childs\\45FT_1.bin",
+    "name": "DFDA 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "DFDA_1.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_DFDA\\Childs\\45FT_2.bin",
+    "name": "DFDA 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "DFDA_2.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_DFDA\\Childs\\45FT_3.bin",
+    "name": "DFDA 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "DFDA_3.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_DFDA\\Childs\\45FT_4.bin",
+    "name": "DFDA 4",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "DFDA_4.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_DHL\\Childs\\45FT_1.bin",
+    "name": "DHL 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "DHL_1.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_DHL\\Childs\\45FT_2.bin",
+    "name": "DHL 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "DHL_2.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_DHL\\Childs\\45FT_3.bin",
+    "name": "DHL 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "DHL_3.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_DHL\\Childs\\45FT_4.bin",
+    "name": "DHL 4",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "DHL_4.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_DHL\\Childs\\45FT_5.bin",
+    "name": "DHL 5",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "DHL_5.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_DHL\\Childs\\45FT_6.bin",
+    "name": "DHL 6",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "DHL_6.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_DMTD\\Childs\\45FT_1.bin",
+    "name": "DMTD 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "DMTD_1.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_DMTD\\Childs\\45FT_2.bin",
+    "name": "DMTD 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "DMTD_2.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_DMTD\\Childs\\45FT_3.bin",
+    "name": "DMTD 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "DMTD_3.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_DMTD\\Childs\\45FT_4.bin",
+    "name": "DMTD 4",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "DMTD_4.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_DSLU\\Childs\\45FT_1.bin",
+    "name": "DSLU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "DSLU_1.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_DSLU\\Childs\\45FT_2.bin",
+    "name": "DSLU 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "DSLU_2.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_ECBU\\Childs\\45FT_1.bin",
+    "name": "ECBU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "ECBU_1.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_ECBU\\Childs\\45FT_2.bin",
+    "name": "ECBU 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "ECBU_2.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_ECBU\\Childs\\45FT_3.bin",
+    "name": "ECBU 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "ECBU_3.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_ECBU\\Childs\\45FT_4.bin",
+    "name": "ECBU 4",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "ECBU_4.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_ECBU\\Childs\\45FT_5.bin",
+    "name": "ECBU 5",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "ECBU_5.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_ECBU\\Childs\\45FT_6.bin",
+    "name": "ECBU 6",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "ECBU_6.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_ECBU\\Childs\\45FT_7.bin",
+    "name": "ECBU 7",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "ECBU_7.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_EIBB\\Childs\\45FT_1.bin",
+    "name": "EIBB 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "EIBB_1.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_EIBB\\Childs\\45FT_2.bin",
+    "name": "EIBB 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "EIBB_2.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_EIBB\\Childs\\45FT_3.bin",
+    "name": "EIBB 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "EIBB_3.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_EIBB\\Childs\\45FT_4.bin",
+    "name": "EIBB 4",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "EIBB_4.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_EIBB\\Childs\\45FT_5.bin",
+    "name": "EIBB 5",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "EIBB_5.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_EIBB\\Childs\\45FT_6.bin",
+    "name": "EIBB 6",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "EIBB_6.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_EKOL\\Childs\\45FT_1.bin",
+    "name": "EKOL 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "EKOL_1.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_EKOL\\Childs\\45FT_2.bin",
+    "name": "EKOL 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "EKOL_2.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_EKOL\\Childs\\45FT_3.bin",
+    "name": "EKOL 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "EKOL_3.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_EKOL\\Childs\\45FT_4.bin",
+    "name": "EKOL 4",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "EKOL_4.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_EKOL\\Childs\\45FT_5.bin",
+    "name": "EKOL 5",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "EKOL_5.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_EKOL\\Childs\\45FT_6.bin",
+    "name": "EKOL 6",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "EKOL_6.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_EUCU\\Childs\\45FT_1.bin",
+    "name": "EUCU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "EUCU_1.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_EUCU\\Childs\\45FT_2.bin",
+    "name": "EUCU 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "EUCU_2.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_EUCU\\Childs\\45FT_3.bin",
+    "name": "EUCU 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "EUCU_3.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_EUCU\\Childs\\45FT_4.bin",
+    "name": "EUCU 4",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "EUCU_4.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_EUCU\\Childs\\45FT_5.bin",
+    "name": "EUCU 5",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "EUCU_5.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_EUCU\\Childs\\45FT_6.bin",
+    "name": "EUCU 6",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "EUCU_6.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_EXPR\\Childs\\45FT_1.bin",
+    "name": "EXPR 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "EXPR_1.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_EXPR\\Childs\\45FT_2.bin",
+    "name": "EXPR 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "EXPR_2.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_EXPR\\Childs\\45FT_3.bin",
+    "name": "EXPR 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "EXPR_3.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_EXPR\\Childs\\45FT_4.bin",
+    "name": "EXPR 4",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "EXPR_4.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_FERE\\Childs\\45FT_1.bin",
+    "name": "FERE 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "FERE_1.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_FERE\\Childs\\45FT_2.bin",
+    "name": "FERE 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "FERE_2.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_FERE\\Childs\\45FT_3.bin",
+    "name": "FERE 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "FERE_3.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_FERE\\Childs\\45FT_4.bin",
+    "name": "FERE 4",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "FERE_4.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_FERE\\Childs\\45FT_5.bin",
+    "name": "FERE 5",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "FERE_5.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_FERE\\Childs\\45FT_6.bin",
+    "name": "FERE 6",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "FERE_6.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_FMBU\\Childs\\45FT_1.bin",
+    "name": "FMBU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "FMBU_1.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_FMBU\\Childs\\45FT_2.bin",
+    "name": "FMBU 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "FMBU_2.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_FMBU\\Childs\\45FT_3.bin",
+    "name": "FMBU 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "FMBU_3.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_FMBU\\Childs\\45FT_4.bin",
+    "name": "FMBU 4",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "FMBU_4.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_FMBU\\Childs\\45FT_5.bin",
+    "name": "FMBU 5",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "FMBU_5.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_FMBU\\Childs\\45FT_6.bin",
+    "name": "FMBU 6",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "FMBU_6.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_FMBU\\Childs\\45FT_7.bin",
+    "name": "FMBU 7",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "FMBU_7.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_FMBU\\Childs\\45FT_8.bin",
+    "name": "FMBU 8",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "FMBU_8.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_FRIA\\Childs\\45FT_1.bin",
+    "name": "FRIA 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "FRIA_1.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_FRIA\\Childs\\45FT_2.bin",
+    "name": "FRIA 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "FRIA_2.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_FRIA\\Childs\\45FT_3.bin",
+    "name": "FRIA 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "FRIA_3.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_FRIA\\Childs\\45FT_4.bin",
+    "name": "FRIA 4",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "FRIA_4.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_GARU\\Childs\\45FT_1.bin",
+    "name": "GARU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "GARU_1.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_GARU\\Childs\\45FT_2.bin",
+    "name": "GARU 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "GARU_2.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_GARU\\Childs\\45FT_3.bin",
+    "name": "GARU 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "GARU_3.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_GARU\\Childs\\45FT_4.bin",
+    "name": "GARU 4",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "GARU_4.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_GARU\\Childs\\45FT_5.bin",
+    "name": "GARU 5",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "GARU_5.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_GARU\\Childs\\45FT_6.bin",
+    "name": "GARU 6",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "GARU_6.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_GNSU\\Childs\\45FT_1.bin",
+    "name": "GNSU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "GNSU_1.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_GNSU\\Childs\\45FT_2.bin",
+    "name": "GNSU 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "GNSU_2.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_GNSU\\Childs\\45FT_3.bin",
+    "name": "GNSU 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "GNSU_3.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_GNSU\\Childs\\45FT_4.bin",
+    "name": "GNSU 4",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "GNSU_4.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_GNSU\\Childs\\45FT_5.bin",
+    "name": "GNSU 5",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "GNSU_5.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_GOKB\\Childs\\45FT_1.bin",
+    "name": "GOKB 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "GOKB_1.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_GTIB\\Childs\\45FT_1.bin",
+    "name": "GTIB 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "GTIB_1.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_GTIB\\Childs\\45FT_2.bin",
+    "name": "GTIB 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "GTIB_2.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_GTIB\\Childs\\45FT_3.bin",
+    "name": "GTIB 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "GTIB_3.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_GTIB\\Childs\\45FT_4.bin",
+    "name": "GTIB 4",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "GTIB_4.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_GTIB\\Childs\\45FT_5.bin",
+    "name": "GTIB 5",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "GTIB_5.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_GTIB\\Childs\\45FT_6.bin",
+    "name": "GTIB 6",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "GTIB_6.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_GTS\\Childs\\45FT_1.bin",
+    "name": "GTS 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "GTS_1.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_GTS\\Childs\\45FT_10.bin",
+    "name": "GTS 10",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "GTS_10.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_GTS\\Childs\\45FT_11.bin",
+    "name": "GTS 11",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "GTS_11.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_GTS\\Childs\\45FT_12.bin",
+    "name": "GTS 12",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "GTS_12.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_GTS\\Childs\\45FT_13.bin",
+    "name": "GTS 13",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "GTS_13.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_GTS\\Childs\\45FT_14.bin",
+    "name": "GTS 14",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "GTS_14.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_GTS\\Childs\\45FT_15.bin",
+    "name": "GTS 15",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "GTS_15.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_GTS\\Childs\\45FT_16.bin",
+    "name": "GTS 16",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "GTS_16.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_GTS\\Childs\\45FT_2.bin",
+    "name": "GTS 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "GTS_2.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_GTS\\Childs\\45FT_3.bin",
+    "name": "GTS 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "GTS_3.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_GTS\\Childs\\45FT_4.bin",
+    "name": "GTS 4",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "GTS_4.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_GTS\\Childs\\45FT_5.bin",
+    "name": "GTS 5",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "GTS_5.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_GTS\\Childs\\45FT_6.bin",
+    "name": "GTS 6",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "GTS_6.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_GTS\\Childs\\45FT_7.bin",
+    "name": "GTS 7",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "GTS_7.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_GTS\\Childs\\45FT_8.bin",
+    "name": "GTS 8",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "GTS_8.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_GTS\\Childs\\45FT_9.bin",
+    "name": "GTS 9",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "GTS_9.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_GXLU\\Childs\\45FT_1.bin",
+    "name": "GXLU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "GXLU_1.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_GXLU\\Childs\\45FT_2.bin",
+    "name": "GXLU 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "GXLU_2.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_GXLU\\Childs\\45FT_3.bin",
+    "name": "GXLU 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "GXLU_3.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_HZDU\\Childs\\45FT_1.bin",
+    "name": "HZDU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "HZDU_1.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_HZDU\\Childs\\45FT_2.bin",
+    "name": "HZDU 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "HZDU_2.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_HZDU\\Childs\\45FT_3.bin",
+    "name": "HZDU 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "HZDU_3.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_JDRA\\Childs\\45FT_1.bin",
+    "name": "JDRA 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "JDRA_1.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_JDRA\\Childs\\45FT_2.bin",
+    "name": "JDRA 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "JDRA_2.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_JDRA\\Childs\\45FT_3.bin",
+    "name": "JDRA 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "JDRA_3.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_JDRA\\Childs\\45FT_4.bin",
+    "name": "JDRA 4",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "JDRA_4.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_JDRA\\Childs\\45FT_5.bin",
+    "name": "JDRA 5",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "JDRA_5.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_JDRA\\Childs\\45FT_6.bin",
+    "name": "JDRA 6",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "JDRA_6.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_JDRA\\Childs\\45FT_7.bin",
+    "name": "JDRA 7",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "JDRA_7.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_JDRA\\Childs\\45FT_8.bin",
+    "name": "JDRA 8",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "JDRA_8.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_KCCA\\Childs\\45FT_1.bin",
+    "name": "KCCA 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "KCCA_1.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_KCCA\\Childs\\45FT_2.bin",
+    "name": "KCCA 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "KCCA_2.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_KCCA\\Childs\\45FT_3.bin",
+    "name": "KCCA 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "KCCA_3.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_KCCA\\Childs\\45FT_4.bin",
+    "name": "KCCA 4",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "KCCA_4.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_KTNU\\Childs\\45FT_1.bin",
+    "name": "KTNU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "KTNU_1.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_KTNU\\Childs\\45FT_2.bin",
+    "name": "KTNU 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "KTNU_2.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_KTNU\\Childs\\45FT_3.bin",
+    "name": "KTNU 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "KTNU_3.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_KTNU\\Childs\\45FT_4.bin",
+    "name": "KTNU 4",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "KTNU_4.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_MAGE\\Childs\\45FT_1.bin",
+    "name": "MAGE 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "MAGE_1.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_MAGE\\Childs\\45FT_2.bin",
+    "name": "MAGE 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "MAGE_2.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_MAGE\\Childs\\45FT_3.bin",
+    "name": "MAGE 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "MAGE_3.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_MAGE\\Childs\\45FT_4.bin",
+    "name": "MAGE 4",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "MAGE_4.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_MAGE\\Childs\\45FT_5.bin",
+    "name": "MAGE 5",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "MAGE_5.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_MAGE\\Childs\\45FT_6.bin",
+    "name": "MAGE 6",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "MAGE_6.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_MARS\\Childs\\45FT_1.bin",
+    "name": "MARS 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "MARS_1.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_MARS\\Childs\\45FT_2.bin",
+    "name": "MARS 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "MARS_2.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_MARS\\Childs\\45FT_3.bin",
+    "name": "MARS 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "MARS_3.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_MARS\\Childs\\45FT_4.bin",
+    "name": "MARS 4",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "MARS_4.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_MARS\\Childs\\45FT_5.bin",
+    "name": "MARS 5",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "MARS_5.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_MARS\\Childs\\45FT_6.bin",
+    "name": "MARS 6",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "MARS_6.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_MARS\\Childs\\45FT_7.bin",
+    "name": "MARS 7",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "MARS_7.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_MARS\\Childs\\45FT_8.bin",
+    "name": "MARS 8",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "MARS_8.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_MOVE\\Childs\\45FT_1.bin",
+    "name": "MOVE 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "MOVE_1.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_MOVE\\Childs\\45FT_10.bin",
+    "name": "MOVE 10",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "MOVE_10.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_MOVE\\Childs\\45FT_11.bin",
+    "name": "MOVE 11",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "MOVE_11.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_MOVE\\Childs\\45FT_12.bin",
+    "name": "MOVE 12",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "MOVE_12.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_MOVE\\Childs\\45FT_13.bin",
+    "name": "MOVE 13",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "MOVE_13.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_MOVE\\Childs\\45FT_14.bin",
+    "name": "MOVE 14",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "MOVE_14.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_MOVE\\Childs\\45FT_15.bin",
+    "name": "MOVE 15",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "MOVE_15.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_MOVE\\Childs\\45FT_16.bin",
+    "name": "MOVE 16",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "MOVE_16.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_MOVE\\Childs\\45FT_2.bin",
+    "name": "MOVE 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "MOVE_2.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_MOVE\\Childs\\45FT_3.bin",
+    "name": "MOVE 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "MOVE_3.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_MOVE\\Childs\\45FT_4.bin",
+    "name": "MOVE 4",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "MOVE_4.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_MOVE\\Childs\\45FT_5.bin",
+    "name": "MOVE 5",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "MOVE_5.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_MOVE\\Childs\\45FT_6.bin",
+    "name": "MOVE 6",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "MOVE_6.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_MOVE\\Childs\\45FT_7.bin",
+    "name": "MOVE 7",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "MOVE_7.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_MOVE\\Childs\\45FT_8.bin",
+    "name": "MOVE 8",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "MOVE_8.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_MOVE\\Childs\\45FT_9.bin",
+    "name": "MOVE 9",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "MOVE_9.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_MRKU\\Childs\\45FT_1.bin",
+    "name": "MRKU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "MRKU_1.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_NEVU\\Childs\\45FT_1.bin",
+    "name": "NEVU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "NEVU_1.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_NEVU\\Childs\\45FT_2.bin",
+    "name": "NEVU 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "NEVU_2.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_NEVU\\Childs\\45FT_3.bin",
+    "name": "NEVU 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "NEVU_3.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_NEVU\\Childs\\45FT_4.bin",
+    "name": "NEVU 4",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "NEVU_4.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_NFLU\\Childs\\45FT_1.bin",
+    "name": "NFLU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "NFLU_1.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_NFLU\\Childs\\45FT_2.bin",
+    "name": "NFLU 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "NFLU_2.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_NORL\\Childs\\45FT_1.bin",
+    "name": "NORL 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "NORL_1.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_NORL\\Childs\\45FT_2.bin",
+    "name": "NORL 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "NORL_2.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_NOTA\\Childs\\45FT_1.bin",
+    "name": "NOTA 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "NOTA_1.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_NOTA\\Childs\\45FT_2.bin",
+    "name": "NOTA 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "NOTA_2.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_NOTA\\Childs\\45FT_3.bin",
+    "name": "NOTA 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "NOTA_3.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_NOTA\\Childs\\45FT_4.bin",
+    "name": "NOTA 4",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "NOTA_4.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_NOTA\\Childs\\45FT_5.bin",
+    "name": "NOTA 5",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "NOTA_5.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_NOTA\\Childs\\45FT_6.bin",
+    "name": "NOTA 6",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "NOTA_6.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_NOTA\\Childs\\45FT_7.bin",
+    "name": "NOTA 7",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "NOTA_7.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_PVDU\\Childs\\45FT_1.bin",
+    "name": "PVDU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "PVDU_1.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_PVDU\\Childs\\45FT_2.bin",
+    "name": "PVDU 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "PVDU_2.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_PVDU\\Childs\\45FT_3.bin",
+    "name": "PVDU 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "PVDU_3.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_PVDU\\Childs\\45FT_4.bin",
+    "name": "PVDU 4",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "PVDU_4.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_PVDU\\Childs\\45FT_5.bin",
+    "name": "PVDU 5",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "PVDU_5.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_PVDU\\Childs\\45FT_6.bin",
+    "name": "PVDU 6",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "PVDU_6.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_RCDU\\Childs\\45FT_1.bin",
+    "name": "RCDU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "RCDU_1.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_ROUT\\Childs\\45FT_1.bin",
+    "name": "ROUT 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "ROUT_1.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_ROUT\\Childs\\45FT_2.bin",
+    "name": "ROUT 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "ROUT_2.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_ROUT\\Childs\\45FT_3.bin",
+    "name": "ROUT 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "ROUT_3.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_ROUT\\Childs\\45FT_4.bin",
+    "name": "ROUT 4",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "ROUT_4.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_ROUT\\Childs\\45FT_5.bin",
+    "name": "ROUT 5",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "ROUT_5.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_ROUT\\Childs\\45FT_6.bin",
+    "name": "ROUT 6",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "ROUT_6.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_ROUU\\Childs\\45FT_1.bin",
+    "name": "ROUU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "ROUU_1.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_ROUU\\Childs\\45FT_2.bin",
+    "name": "ROUU 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "ROUU_2.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_SANU\\Childs\\45FT_1.bin",
+    "name": "SANU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "SANU_1.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_SANU\\Childs\\45FT_2.bin",
+    "name": "SANU 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "SANU_2.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_SANU\\Childs\\45FT_3.bin",
+    "name": "SANU 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "SANU_3.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_SANU\\Childs\\45FT_4.bin",
+    "name": "SANU 4",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "SANU_4.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_SANU\\Childs\\45FT_5.bin",
+    "name": "SANU 5",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "SANU_5.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_SANU\\Childs\\45FT_6.bin",
+    "name": "SANU 6",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "SANU_6.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_SARP\\Childs\\45FT_1.bin",
+    "name": "SARP 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "SARP_1.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_SARP\\Childs\\45FT_2.bin",
+    "name": "SARP 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "SARP_2.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_SARP\\Childs\\45FT_3.bin",
+    "name": "SARP 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "SARP_3.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_SARP\\Childs\\45FT_4.bin",
+    "name": "SARP 4",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "SARP_4.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_SARP\\Childs\\45FT_5.bin",
+    "name": "SARP 5",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "SARP_5.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_SARP\\Childs\\45FT_6.bin",
+    "name": "SARP 6",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "SARP_6.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_SCBD\\Childs\\45FT_1.bin",
+    "name": "SCBD 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "SCBD_1.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_SCBD\\Childs\\45FT_2.bin",
+    "name": "SCBD 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "SCBD_2.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_SLIA\\Childs\\45FT_1.bin",
+    "name": "SLIA 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "SLIA_1.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_SLIA\\Childs\\45FT_10.bin",
+    "name": "SLIA 10",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "SLIA_10.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_SLIA\\Childs\\45FT_11.bin",
+    "name": "SLIA 11",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "SLIA_11.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_SLIA\\Childs\\45FT_2.bin",
+    "name": "SLIA 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "SLIA_2.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_SLIA\\Childs\\45FT_3.bin",
+    "name": "SLIA 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "SLIA_3.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_SLIA\\Childs\\45FT_4.bin",
+    "name": "SLIA 4",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "SLIA_4.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_SLIA\\Childs\\45FT_5.bin",
+    "name": "SLIA 5",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "SLIA_5.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_SLIA\\Childs\\45FT_6.bin",
+    "name": "SLIA 6",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "SLIA_6.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_SLIA\\Childs\\45FT_7.bin",
+    "name": "SLIA 7",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "SLIA_7.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_SLIA\\Childs\\45FT_8.bin",
+    "name": "SLIA 8",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "SLIA_8.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_SLIA\\Childs\\45FT_9.bin",
+    "name": "SLIA 9",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "SLIA_9.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_SPED\\Childs\\45FT_1.bin",
+    "name": "SPED 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "SPED_1.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_SPED\\Childs\\45FT_10.bin",
+    "name": "SPED 10",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "SPED_10.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_SPED\\Childs\\45FT_11.bin",
+    "name": "SPED 11",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "SPED_11.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_SPED\\Childs\\45FT_12.bin",
+    "name": "SPED 12",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "SPED_12.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_SPED\\Childs\\45FT_2.bin",
+    "name": "SPED 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "SPED_2.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_SPED\\Childs\\45FT_3.bin",
+    "name": "SPED 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "SPED_3.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_SPED\\Childs\\45FT_4.bin",
+    "name": "SPED 4",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "SPED_4.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_SPED\\Childs\\45FT_5.bin",
+    "name": "SPED 5",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "SPED_5.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_SPED\\Childs\\45FT_6.bin",
+    "name": "SPED 6",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "SPED_6.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_SPED\\Childs\\45FT_7.bin",
+    "name": "SPED 7",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "SPED_7.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_SPED\\Childs\\45FT_8.bin",
+    "name": "SPED 8",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "SPED_8.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_SPED\\Childs\\45FT_9.bin",
+    "name": "SPED 9",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "SPED_9.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_SWLU\\Childs\\45FT_1.bin",
+    "name": "SWLU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "SWLU_1.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_SWLU\\Childs\\45FT_2.bin",
+    "name": "SWLU 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "SWLU_2.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_TLDU\\Childs\\45FT_1.bin",
+    "name": "TLDU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "TLDU_1.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_TLDU\\Childs\\45FT_2.bin",
+    "name": "TLDU 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "TLDU_2.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_TLDU\\Childs\\45FT_3.bin",
+    "name": "TLDU 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "TLDU_3.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_TLDU\\Childs\\45FT_4.bin",
+    "name": "TLDU 4",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "TLDU_4.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_TLDU\\Childs\\45FT_5.bin",
+    "name": "TLDU 5",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "TLDU_5.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_TLDU\\Childs\\45FT_6.bin",
+    "name": "TLDU 6",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "TLDU_6.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_TLDU\\Childs\\45FT_7.bin",
+    "name": "TLDU 7",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "TLDU_7.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_TMLA\\Childs\\45FT_1.bin",
+    "name": "TMLA 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "TMLA_1.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_TMLA\\Childs\\45FT_2.bin",
+    "name": "TMLA 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "TMLA_2.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_TRLU\\Childs\\45FT_1.bin",
+    "name": "TRLU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "TRLU_1.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_TRLU\\Childs\\45FT_2.bin",
+    "name": "TRLU 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "TRLU_2.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_TROA\\Childs\\45FT_1.bin",
+    "name": "TROA 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "TROA_1.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_TROA\\Childs\\45FT_2.bin",
+    "name": "TROA 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "TROA_2.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_TROA\\Childs\\45FT_3.bin",
+    "name": "TROA 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "TROA_3.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_TROA\\Childs\\45FT_4.bin",
+    "name": "TROA 4",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "TROA_4.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_TTS\\Childs\\45FT_1.bin",
+    "name": "TTS 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "TTS_1.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_TTS\\Childs\\45FT_2.bin",
+    "name": "TTS 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "TTS_2.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_TTS\\Childs\\45FT_3.bin",
+    "name": "TTS 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "TTS_3.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_TTS\\Childs\\45FT_4.bin",
+    "name": "TTS 4",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "TTS_4.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_TTS\\Childs\\45FT_5.bin",
+    "name": "TTS 5",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "TTS_5.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_TTS\\Childs\\45FT_6.bin",
+    "name": "TTS 6",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "TTS_6.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_UESU\\Childs\\45FT_1.bin",
+    "name": "UESU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "UESU_1.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_UESU\\Childs\\45FT_2.bin",
+    "name": "UESU 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "UESU_2.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_UESU\\Childs\\45FT_3.bin",
+    "name": "UESU 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "UESU_3.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_VAEU\\Childs\\45FT_1.bin",
+    "name": "VAEU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "VAEU_1.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_VAEU\\Childs\\45FT_2.bin",
+    "name": "VAEU 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "VAEU_2.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_VAEU\\Childs\\45FT_3.bin",
+    "name": "VAEU 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "VAEU_3.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_VDL\\Childs\\45FT_1.bin",
+    "name": "VDL 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "VDL_1.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_VDL\\Childs\\45FT_10.bin",
+    "name": "VDL 10",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "VDL_10.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_VDL\\Childs\\45FT_11.bin",
+    "name": "VDL 11",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "VDL_11.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_VDL\\Childs\\45FT_2.bin",
+    "name": "VDL 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "VDL_2.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_VDL\\Childs\\45FT_3.bin",
+    "name": "VDL 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "VDL_3.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_VDL\\Childs\\45FT_4.bin",
+    "name": "VDL 4",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "VDL_4.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_VDL\\Childs\\45FT_5.bin",
+    "name": "VDL 5",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "VDL_5.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_VDL\\Childs\\45FT_6.bin",
+    "name": "VDL 6",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "VDL_6.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_VDL\\Childs\\45FT_7.bin",
+    "name": "VDL 7",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "VDL_7.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_VDL\\Childs\\45FT_8.bin",
+    "name": "VDL 8",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "VDL_8.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_VDL\\Childs\\45FT_9.bin",
+    "name": "VDL 9",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "VDL_9.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_VDMU\\Childs\\45FT_1.bin",
+    "name": "VDMU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "VDMU_1.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_VDMU\\Childs\\45FT_2.bin",
+    "name": "VDMU 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "VDMU_2.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_VDMU\\Childs\\45FT_3.bin",
+    "name": "VDMU 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "VDMU_3.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_VERB\\Childs\\45FT_1.bin",
+    "name": "VERB 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "VERB_1.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_VERB\\Childs\\45FT_2.bin",
+    "name": "VERB 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "VERB_2.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_VERB\\Childs\\45FT_3.bin",
+    "name": "VERB 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "VERB_3.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_WARS\\Childs\\45FT_1.bin",
+    "name": "WARS 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "WARS_1.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_WARS\\Childs\\45FT_2.bin",
+    "name": "WARS 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "WARS_2.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_WARS\\Childs\\45FT_3.bin",
+    "name": "WARS 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "WARS_3.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_WENA\\Childs\\45FT_1.bin",
+    "name": "WENA 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "WENA_1.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_WENA\\Childs\\45FT_2.bin",
+    "name": "WENA 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "WENA_2.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_WENA\\Childs\\45FT_3.bin",
+    "name": "WENA 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "WENA_3.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_WENA\\Childs\\45FT_4.bin",
+    "name": "WENA 4",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "WENA_4.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_WENA\\Childs\\45FT_5.bin",
+    "name": "WENA 5",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "WENA_5.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_WENA\\Childs\\45FT_6.bin",
+    "name": "WENA 6",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "WENA_6.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_WEWE\\Childs\\45FT_1.bin",
+    "name": "WEWE 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "WEWE_1.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_WEWE\\Childs\\45FT_2.bin",
+    "name": "WEWE 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "WEWE_2.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_WEWE\\Childs\\45FT_3.bin",
+    "name": "WEWE 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "WEWE_3.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_WEWE\\Childs\\45FT_4.bin",
+    "name": "WEWE 4",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "WEWE_4.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_WEWE\\Childs\\45FT_5.bin",
+    "name": "WEWE 5",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "WEWE_5.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\45_FT\\GW_45FT_WEWE\\Childs\\45FT_6.bin",
+    "name": "WEWE 6",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "WEWE_6.bin"
+  }
+]

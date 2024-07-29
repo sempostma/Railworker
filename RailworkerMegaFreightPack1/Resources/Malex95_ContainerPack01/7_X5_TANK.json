@@ -1,0 +1,93 @@
+[
+  {
+    "filename": "RailNetwork\\Interactive\\7_X5_TANK\\Childs\\715 ADAA.bin",
+    "name": "715 TT ADAA 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\7_X5_TANK\\Childs\\715 AMKD.bin",
+    "name": "715 TT AMKD 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\7_X5_TANK\\Childs\\715 BIDU.bin",
+    "name": "715 TT BIDU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\7_X5_TANK\\Childs\\715 GAVU.bin",
+    "name": "715 TT GAVU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\7_X5_TANK\\Childs\\715 GCAU.bin",
+    "name": "715 TT GCAU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\7_X5_TANK\\Childs\\715 HUKU.bin",
+    "name": "715 TT HUKU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\7_X5_TANK\\Childs\\715 TICU.bin",
+    "name": "715 TT TICU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\7_X5_TANK\\Childs\\715 TKCU.bin",
+    "name": "715 TT TKCU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\7_X5_TANK\\Childs\\715 VTGU.bin",
+    "name": "715 TT VTGU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\7_X5_TANK\\Childs\\7_45tt_BIDU.bin",
+    "name": "745 TT BIDU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\7_X5_TANK\\Childs\\7_45tt_BIDU_2.bin",
+    "name": "745 TT BIDU 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\7_X5_TANK\\Childs\\7_45tt_BIDU_3.bin",
+    "name": "745 TT BIDU 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\7_X5_TANK\\Childs\\7_45tt_BIDU_4.bin",
+    "name": "745 TT BIDU 4",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  }
+]

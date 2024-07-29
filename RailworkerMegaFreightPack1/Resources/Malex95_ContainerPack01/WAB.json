@@ -1,0 +1,499 @@
+[
+  {
+    "filename": "RailNetwork\\Interactive\\2X_WAB\\Childs\\7_45\\C24_REXU.bin",
+    "name": "745 C24 REXU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_WAB\\Childs\\7_45\\C27_EMONS_1.bin",
+    "name": "745 C27 EMONS 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_WAB\\Childs\\7_45\\C27_EMONS_2.bin",
+    "name": "745 C27 EMONS 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_WAB\\Childs\\7_45\\C27_TERRA.bin",
+    "name": "745 C27 TERRA 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_WAB\\Childs\\7_45\\C27_TERRA_2.bin",
+    "name": "745 C27 TERRA 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_WAB\\Childs\\7_45\\C27_TERRA_3.bin",
+    "name": "745 C27 TERRA 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_WAB\\Childs\\7_45\\C30_EMONS_1.bin",
+    "name": "745 C30 EMONS 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_WAB\\Childs\\7_45\\C30_EMONS_2.bin",
+    "name": "745 C30 EMONS 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_WAB\\Childs\\7_45\\C30_EMONS_3.bin",
+    "name": "745 C30 EMONS 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_WAB\\Childs\\7_45\\C30_NOTA_1.bin",
+    "name": "745 C30 NOTA 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_WAB\\Childs\\7_45\\C33_VATA_1.bin",
+    "name": "745 C33 VATA 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_WAB\\Childs\\7_45\\C33_VATA_2.bin",
+    "name": "745 C33 VATA 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_WAB\\Childs\\7_45\\C33_VATA_3.bin",
+    "name": "745 C33 VATA 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_WAB\\Childs\\7_45\\C33_VATA_4.bin",
+    "name": "745 C33 VATA 4",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_WAB\\Childs\\7_45\\C33_VATA_5.bin",
+    "name": "745 C33 VATA 5",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_WAB\\Childs\\7_45\\C34_FERE.bin",
+    "name": "745 C34 FERE 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_WAB\\Childs\\7_45\\C34_FERE_2.bin",
+    "name": "745 C34 FERE 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_WAB\\Childs\\7_45\\C34_FERE_3.bin",
+    "name": "745 C34 FERE 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_WAB\\Childs\\7_45\\C34_FERE_4.bin",
+    "name": "745 C34 FERE 4",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_WAB\\Childs\\7_45\\C34_SAED.bin",
+    "name": "745 C34 SAED 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_WAB\\Childs\\7_45\\C34_SAED_2.bin",
+    "name": "745 C34 SAED 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_WAB\\Childs\\7_45\\C34_SAED_3.bin",
+    "name": "745 C34 SAED 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_WAB\\Childs\\7_45\\C34_SAED_4.bin",
+    "name": "745 C45 SAED 4",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_WAB\\Childs\\7_45\\C35_ANSU.bin",
+    "name": "745 C45 ANSU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_WAB\\Childs\\7_45\\C35_ANSU_2.bin",
+    "name": "745 C35 ANSU 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_WAB\\Childs\\7_45\\C50_DEWA.bin",
+    "name": "745 C50 DEWA 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_WAB\\Childs\\7_45\\C50_EMONS_1.bin",
+    "name": "745 C50 EMONS 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_WAB\\Childs\\7_45\\C50_EMONS_2.bin",
+    "name": "745 C50 EMONS 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_WAB\\Childs\\7_45\\C50_FERE.bin",
+    "name": "745 C50 FERE 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_WAB\\Childs\\7_45\\WAB_23_C27.bin",
+    "name": "745 C27 WAB",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_WAB\\Childs\\7_45\\WAB_23_C35.bin",
+    "name": "745 C35 WAB",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_WAB\\Childs\\7_45\\WAB_23_C50.bin",
+    "name": "745 C50 WAB",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_WAB\\Childs\\7_82\\C70_BASA_1.bin",
+    "name": "782 C70 BASA 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_WAB\\Childs\\7_82\\C70_BASA_2.bin",
+    "name": "782 C70 BASA 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_WAB\\Childs\\7_82\\C70_BASA_3.bin",
+    "name": "782 C70 BASA 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_WAB\\Childs\\7_82\\C70_BASA_4.bin",
+    "name": "782 C70 BASA 4",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_WAB\\Childs\\7_82\\C70_CESU_1.bin",
+    "name": "782 C70 CESU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_WAB\\Childs\\7_82\\C70_CESU_2.bin",
+    "name": "782 C70 CESU 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_WAB\\Childs\\7_82\\C70_CESU_3.bin",
+    "name": "782 C70 CESU 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_WAB\\Childs\\7_82\\C70_CESU_4.bin",
+    "name": "782 C70 CESU 4",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_WAB\\Childs\\7_82\\C70_DEWA.bin",
+    "name": "782 C70 DEWA 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_WAB\\Childs\\7_82\\C70_FERB_1.bin",
+    "name": "782 C70 FERB 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_WAB\\Childs\\7_82\\C70_PANE.bin",
+    "name": "782 C70 PANE 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_WAB\\Childs\\7_82\\C70_PANE_2.bin",
+    "name": "782 C70 PANE 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_WAB\\Childs\\7_82\\C70_PANE_3.bin",
+    "name": "782 C70 PANE 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_WAB\\Childs\\7_82\\C70_PANE_6.bin",
+    "name": "782 C70 PANE 6",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_WAB\\Childs\\7_82\\C70_RATE_1.bin",
+    "name": "782 C70 RATE 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_WAB\\Childs\\7_82\\C70_RATE_2.bin",
+    "name": "782 C70 RATE 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_WAB\\Childs\\7_82\\C70_SPLD_1.bin",
+    "name": "782 C70 SPLD 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_WAB\\Childs\\7_82\\C70_SPLD_2.bin",
+    "name": "782 C70 SPLD 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_WAB\\Childs\\7_82\\C70_SPLD_3.bin",
+    "name": "782 C70 SPLD 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_WAB\\Childs\\7_82\\C70_VERA.bin",
+    "name": "782 C70 VERA 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_WAB\\Childs\\7_82\\C70_VERA_2.bin",
+    "name": "782 C70 VERA 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_WAB\\Childs\\7_82\\C70_VERA_3.bin",
+    "name": "782 C70 VERA 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_WAB\\Childs\\7_82\\C70_WEWE.bin",
+    "name": "782 C70 WEWE 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_WAB\\Childs\\7_82\\C70_WEWE_10.bin",
+    "name": "782 C70 WEWE 10",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_WAB\\Childs\\7_82\\C70_WEWE_11.bin",
+    "name": "782 C70 WEWE 11",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_WAB\\Childs\\7_82\\C70_WEWE_12.bin",
+    "name": "782 C70 WEWE 12",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_WAB\\Childs\\7_82\\C70_WEWE_13.bin",
+    "name": "782 C70 WEWE 13",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_WAB\\Childs\\7_82\\C70_WEWE_14.bin",
+    "name": "782 C70 WEWE 14",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_WAB\\Childs\\7_82\\C70_WEWE_2.bin",
+    "name": "782 C70 WEWE 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_WAB\\Childs\\7_82\\C70_WEWE_3.bin",
+    "name": "782 C70 WEWE 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_WAB\\Childs\\7_82\\C70_WEWE_4.bin",
+    "name": "782 C70 WEWE 4",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_WAB\\Childs\\7_82\\C70_WEWE_5.bin",
+    "name": "782 C70 WEWE 5",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_WAB\\Childs\\7_82\\C70_WEWE_6.bin",
+    "name": "782 C70 WEWE 6",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_WAB\\Childs\\7_82\\C70_WEWE_7.bin",
+    "name": "782 C70 WEWE 7",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_WAB\\Childs\\7_82\\C70_WEWE_8.bin",
+    "name": "782 C70 WEWE 8",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_WAB\\Childs\\7_82\\C70_WEWE_9.bin",
+    "name": "782 C70 WEWE 9",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_WAB\\Childs\\7_82\\WAB_24_C58.bin",
+    "name": "782 C58 WAB 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_WAB\\Childs\\7_82\\WAB_26_C50.bin",
+    "name": "782 C50 WAB 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_WAB\\Childs\\FA_7_82\\7_82tt_BIDU.bin",
+    "name": "782 FA BIDU",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  }
+]

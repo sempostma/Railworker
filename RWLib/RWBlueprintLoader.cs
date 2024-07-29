@@ -436,6 +436,127 @@ namespace RWLib
             await apBlock.Completion;
         }
 
+        public async Task<RWConsistBlueprint> CreateConsistBlueprint(string provider, string product, string path, List<RWBlueprintID> vehicles, bool reversed)
+        {
+            var name = Path.GetFileNameWithoutExtension(path);
+            var blueprintId = new RWBlueprintID(provider, product, path);
+
+            var combinedPath = blueprintId.CombinedPath;
+            combinedPath = Path.ChangeExtension(combinedPath, ".bin");
+            var absolutePath = Path.Combine(rWLib.TSPath, "Assets", combinedPath);
+
+            var decleration = new XDeclaration("1.0", "utf-8", null);
+            var newConsistBlueprintXDocument = new XDocument(decleration);
+            var newConsistBlueprintXDocumentRoot = new XElement("cBlueprintLoader");
+            var blueprintElement = new XElement("Blueprint");
+            newConsistBlueprintXDocumentRoot.Add(blueprintElement);
+            newConsistBlueprintXDocument.Add(newConsistBlueprintXDocumentRoot);
+            newConsistBlueprintXDocumentRoot.Add(new XAttribute(XNamespace.Xmlns + "d", RWUtils.KujuNamspace));
+            newConsistBlueprintXDocumentRoot.Add(new XAttribute(RWUtils.KujuNamspace + "version", "1.0"));
+            var consistBlueprint = new XElement("cConsistBlueprint");
+            blueprintElement.Add(consistBlueprint);
+            var consistBlueprintEntry = new XElement("ConsistEntry");
+            consistBlueprint.Add(consistBlueprintEntry);
+
+            var id = 1;
+            var idx = 0;
+
+            RWDisplayName locoName = RWDisplayName.FromString(product);
+            int locoIdx = 0;
+
+            foreach (var vehicle in vehicles)
+            {
+                var consistEntry = new XElement("cConsistEntry");
+                consistEntry.Add(new XAttribute(RWUtils.KujuNamspace + "id", "" + id++));
+
+                var blueprintName = new XElement("BlueprintName");
+                consistEntry.Add(blueprintName);
+
+                var vehBlueprintId = vehicle.ToXml();
+                blueprintName.Add(vehBlueprintId);
+
+                var flipped = new XElement("Flipped");
+                flipped.Add(new XAttribute(RWUtils.KujuNamspace + "type", "cDeltaString"));
+
+                flipped.Value = reversed ? "eTrue" : "eFalse";
+
+                consistEntry.Add(flipped);
+                consistBlueprintEntry.Add(consistEntry);
+
+                var blueprint = await rWLib.BlueprintLoader.FromBlueprintID(vehicle);
+                var blueprintRailvehicle = blueprint as IRWRailVehicleBlueprint;
+
+                //if (blueprintRailvehicle != null) {
+                //    if (vehicle.railVehicle.Descendants("cEngine").FirstOrDefault() != null)
+                //    {
+                //        locoName = blueprintRailvehicle.DisplayName;
+                //        locoIdx = idx;
+                //    }
+                //}
+
+                idx++;
+            }
+
+            var locoNameX = new XElement("LocoName");
+            locoNameX.Add(locoName.ToXml());
+            consistBlueprint.Add(locoNameX);
+
+            var displayName = new XElement("DisplayName");
+            var displayNameX = RWDisplayName.FromString(name).ToXml();
+            displayName.Add(displayNameX);
+            consistBlueprint.Add(displayName);
+
+            var engineType = new XElement("EngineType");
+            engineType.Add(new XAttribute(RWUtils.KujuNamspace + "type", "cDeltaString"));
+            engineType.Value = "Electric";
+            consistBlueprint.Add(engineType);
+
+            var eraStartYear = new XElement("EraStartYear");
+            eraStartYear.Add(new XAttribute(RWUtils.KujuNamspace + "type", "sUInt32"));
+            eraStartYear.Value = "1850";
+            consistBlueprint.Add(eraStartYear);
+
+            var eraEndYear = new XElement("EraEndYear");
+            eraEndYear.Add(new XAttribute(RWUtils.KujuNamspace + "type", "sUInt32"));
+            eraEndYear.Value = "2050";
+            consistBlueprint.Add(eraEndYear);
+
+            var drivingEngineIndex = new XElement("DrivingEngineIndex");
+            drivingEngineIndex.Add(new XAttribute(RWUtils.KujuNamspace + "type", "sUInt32"));
+            drivingEngineIndex.Value = "" + locoIdx;
+            consistBlueprint.Add(drivingEngineIndex);
+
+            var validBuildAndDriveRoutes = new XElement("ValidBuildAndDriveRoutes");
+            consistBlueprint.Add(validBuildAndDriveRoutes);
+
+            var drivableConsist = new XElement("DrivableConsist");
+            drivableConsist.Add(new XAttribute(RWUtils.KujuNamspace + "type", "cDeltaString"));
+            drivableConsist.Value = locoName == null ? "eFalse" : "eTrue";
+            consistBlueprint.Add(drivableConsist);
+
+            var consistType = new XElement("ConsistType");
+            consistType.Add(new XAttribute(RWUtils.KujuNamspace + "type", "cDeltaString"));
+            consistType.Value = "eConsistTypePassengerCommuter";
+            consistBlueprint.Add(consistType);
+
+            var hasPantograph = new XElement("HasPantograph");
+            hasPantograph.Add(new XAttribute(RWUtils.KujuNamspace + "type", "cDeltaString"));
+            hasPantograph.Value = "eTrue";
+            consistBlueprint.Add(hasPantograph);
+
+            var has3rdRailShoe = new XElement("Has3rdRailShoe");
+            has3rdRailShoe.Add(new XAttribute(RWUtils.KujuNamspace + "type", "cDeltaString"));
+            has3rdRailShoe.Value = "eFalse";
+            consistBlueprint.Add(has3rdRailShoe);
+
+            var requires4thRail = new XElement("Requires4thRail");
+            requires4thRail.Add(new XAttribute(RWUtils.KujuNamspace + "type", "cDeltaString"));
+            requires4thRail.Value = "eFalse";
+            consistBlueprint.Add(requires4thRail);
+
+            return new RWConsistBlueprint(blueprintId, newConsistBlueprintXDocumentRoot, rWLib);
+        }
+
         public async Task<RWConsistBlueprint> CreateConsistBlueprint(string provider, string product, string path, RWConsist consist, bool reversed)
         {
             var name = Path.GetFileNameWithoutExtension(path);

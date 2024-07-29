@@ -1,0 +1,134 @@
+[
+  {
+    "filename": "RailNetwork\\Interactive\\2X_COIL\\Childs\\Coil_20_Z_BRND.bin",
+    "name": "2X20 BRND+DANI 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    
+    "cargo": [
+      {
+        "filename": "RailNetwork\\Interactive\\2X_COIL\\Childs\\Coil_20_Z_BRND.bin",
+        "name": "BRND 1 I",
+        "moveX": 0,
+        "moveY": 0,
+        "moveZ": 6.096,
+        "mass": 20000
+      },
+      {
+        "filename": "RailNetwork\\Interactive\\2X_COIL\\Childs\\Coil_20_Z_DANI.bin",
+        "name": "DANI 1 II",
+        "moveX": 0,
+        "moveY": 0,
+        "moveZ": 0,
+        "mass": 15000
+      }
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_COIL\\Childs\\Coil_20_Z_BRND.bin",
+    "name": "BRND 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "cargoAsChild": true
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_COIL\\Childs\\Coil_20_Z_DANI.bin",
+    "name": "DANI 1",
+    
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "DANI_1.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_COIL\\Childs\\Coil_20_Z_FRIA.bin",
+    "name": "FRIA 1",
+    
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "FRIA_1.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_COIL\\Childs\\Coil_20_Z_FRIA_2.bin",
+    "name": "FRIA 2",
+    
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "FRIA_2.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_COIL\\Childs\\Coil_20_Z_FRIA_3.bin",
+    "name": "FRIA 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "FRIA_3.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_COIL\\Childs\\Coil_20_Z_MAGE_1.bin",
+    "name": "MAGE 1",
+    
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "MAGE_1.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_COIL\\Childs\\Coil_20_Z_MAGE_2.bin",
+    "name": "MAGE 2",
+    
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "MAGE_2.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_COIL\\Childs\\Coil_20_Z_MAGE_3.bin",
+    "name": "MAGE 3",
+    
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "MAGE_3.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_COIL\\Childs\\Coil_20_Z_SPED_1.bin",
+    "name": "SPED 1",
+    
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "SPED_1.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_COIL\\Childs\\Coil_20_Z_SPED_2.bin",
+    "name": "SPED 2",
+    
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "SPED_2.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_COIL\\Childs\\Coil_20_Z_SPED_3.bin",
+    "name": "SPED 3",
+    
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "SPED_3.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_COIL\\Childs\\Coil_20_Z_TIPES.bin",
+    "name": "TIPES 1",
+    
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "TIPES_1.bin"
+  }
+]

@@ -1,0 +1,149 @@
+[
+  {
+    "filename": "RailNetwork\\Interactive\\20_OT\\AISU 01.bin",
+    "name": "AISU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\20_OT\\AISU 02.bin",
+    "name": "AISU 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\20_OT\\AISU 03.bin",
+    "name": "AISU 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\20_OT\\AISU 04.bin",
+    "name": "AISU 4",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\20_OT\\GTM 02.bin",
+    "name": "GTM 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\20_OT\\GTM 03.bin",
+    "name": "GTM 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\20_OT\\GTM.bin",
+    "name": "GTM 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\20_OT\\MEUB 02.bin",
+    "name": "MEUB 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\20_OT\\MEUB 03.bin",
+    "name": "MEUB 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\20_OT\\MEUB.bin",
+    "name": "MEUB 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\20_OT\\MISA 02.bin",
+    "name": "MISA 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\20_OT\\MISA 03.bin",
+    "name": "MISA 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\20_OT\\MISA 04.bin",
+    "name": "MISA 4",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\20_OT\\PITU.bin",
+    "name": "PITU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\20_OT\\TPSU.bin",
+    "name": "TPSU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\20_OT\\VRZU 02.bin",
+    "name": "VRZU 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\20_OT\\VRZU 03.bin",
+    "name": "VRZU 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\20_OT\\VRZU.bin",
+    "name": "VRZU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\20_OT\\VTIU 02.bin",
+    "name": "VTIU 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\20_OT\\VTIU 03.bin",
+    "name": "VTIU 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\20_OT\\VTIU.bin",
+    "name": "VTIU",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  }
+]

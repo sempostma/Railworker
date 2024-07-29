@@ -14,11 +14,12 @@ namespace RWLib.Packaging
         public bool KeepAutoNumbering { get; set; } = false;
         public List<BlueprintTemplate> BlueprintTemplates= new List<BlueprintTemplate>();
 
-        public class BlueprintTemplate
+        public class BlueprintTemplate : MatrixTransformable
         {
             public XDocument XDocument { get; set; } = new XDocument();
             public string Label { get; set; } = "";
             public string GeoFileName { get; set; } = "";
+            public bool InvertZ { get; set; }
         }
     }
 }

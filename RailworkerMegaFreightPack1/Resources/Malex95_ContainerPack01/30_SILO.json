@@ -1,0 +1,191 @@
+[
+  //{
+  //  "filename": "RailNetwork\\Interactive\\30_SILO\\Childs\\S_BIDU.bin",
+  //  "name": "S BIDU 1",
+  //  "filterWagonType": [
+  //    "CH-WASCO"
+  //  ]
+  //},
+  {
+    "filename": "RailNetwork\\Interactive\\30_SILO\\Childs\\S_BIDU_2.bin",
+    "name": "S BIDU 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_SILO\\Childs\\S_BIDU_3.bin",
+    "name": "S BIDU 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_SILO\\Childs\\S_BOEBS.bin",
+    "name": "S BOEB 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_SILO\\Childs\\S_BUCBS.bin",
+    "name": "S BUCB 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_SILO\\Childs\\S_BUZU.bin",
+    "name": "S BUZU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_SILO\\Childs\\S_COMB.bin",
+    "name": "S COMB 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_SILO\\Childs\\S_CPAU.bin",
+    "name": "S CPAU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_SILO\\Childs\\S_GROBS.bin",
+    "name": "S GROB 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_SILO\\Childs\\S_HOYT.bin",
+    "name": "S HOYT 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_SILO\\Childs\\S_NIJT.bin",
+    "name": "S NIJT 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_SILO\\Childs\\S_NWMBS.bin",
+    "name": "S NMBS 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_SILO\\Childs\\S_SITRA.bin",
+    "name": "S SITRA 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_SILO\\Childs\\S_SITRA_2.bin",
+    "name": "S SITRA 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_SILO\\Childs\\S_SITRA_3.bin",
+    "name": "S SITRA 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_SILO\\Childs\\S_VREBS.bin",
+    "name": "S VREBS 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_SILO\\Childs\\T_ABEU_A.bin",
+    "name": "S ABEU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_SILO\\Childs\\T_BIDU.bin",
+    "name": "S BIDU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_SILO\\Childs\\T_EVAU_A.bin",
+    "name": "S EVAU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  //{
+  //  "filename": "RailNetwork\\Interactive\\30_SILO\\Childs\\T_HESSERS.bin",
+  //  "name": "S HESSERS 1",
+  //  "filterWagonType": [
+  //    "CH-WASCO"
+  //  ]
+  //},
+  {
+    "filename": "RailNetwork\\Interactive\\30_SILO\\Childs\\T_HESSERS_A.bin",
+    "name": "T HESSERS 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_SILO\\Childs\\T_HUKU.bin",
+    "name": "T HUKU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_SILO\\Childs\\T_HUKU_2.bin",
+    "name": "T HUKU 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_SILO\\Childs\\T_HUKU_A.bin",
+    "name": "T HUKU 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_SILO\\Childs\\T_HUKU_A_2.bin",
+    "name": "T HUKU 4",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_SILO\\Childs\\T_KUBU.bin",
+    "name": "T KUBU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_SILO\\Childs\\T_KUBU_2.bin",
+    "name": "T KUBU 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  }
+]

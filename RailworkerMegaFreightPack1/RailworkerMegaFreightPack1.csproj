@@ -8,20 +8,56 @@
 
   <ItemGroup>
     <None Remove="Resources\Afirus_Containers.json" />
+    <None Remove="Resources\Malex95_ContainerPack01\20_COIL.json" />
+    <None Remove="Resources\Malex95_ContainerPack01\20_FT.json" />
+    <None Remove="Resources\Malex95_ContainerPack01\20_OT.json" />
     <None Remove="Resources\CT_Sgns\Afirus_Containers3x20ft.json" />
     <None Remove="Resources\CT_Sgns\CT_Tanktainers3x20ft.json" />
     <None Remove="Resources\CT_Sgns\Sgns20ftx3.xml" />
+    <None Remove="Resources\Malex95_ContainerPack01\20_Tank.json" />
+    <None Remove="Resources\Malex95_ContainerPack01\24_COIL.json" />
+    <None Remove="Resources\Malex95_ContainerPack01\24_WAB.json" />
+    <None Remove="Resources\Malex95_ContainerPack01\30_SILO.json" />
+    <None Remove="Resources\Malex95_ContainerPack01\30_WAB.json" />
+    <None Remove="Resources\Malex95_ContainerPack01\40_FT.json" />
+    <None Remove="Resources\Malex95_ContainerPack01\40_Tank.json" />
+    <None Remove="Resources\Malex95_ContainerPack01\45_FT.json" />
+    <None Remove="Resources\Malex95_ContainerPack01\7_82_Tank.json" />
+    <None Remove="Resources\Malex95_ContainerPack01\7_X5_TANK.json" />
+    <None Remove="Resources\Malex95_ContainerPack01\Flat.json" />
+    <None Remove="Resources\Malex95_ContainerPack01\WAB.json" />
+    <None Remove="Resources\Malex95_ContainerPack01\WAB_45.json" />
     <None Remove="Resources\Sffggmrrss_Trailers.json" />
+    <None Remove="Resources\Sggmrss\A.xml" />
+    <None Remove="Resources\Sggmrss\B.xml" />
     <None Remove="Resources\Sggmrss_Back.xml" />
     <None Remove="Resources\Sggmrss_Front.xml" />
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="Resources\Malex95_ContainerPack01\20_COIL.json" />
+    <EmbeddedResource Include="Resources\Malex95_ContainerPack01\24_WAB.json" />
+    <EmbeddedResource Include="Resources\Malex95_ContainerPack01\40_Tank.json" />
+    <EmbeddedResource Include="Resources\Malex95_ContainerPack01\20_Tank.json" />
+    <EmbeddedResource Include="Resources\Malex95_ContainerPack01\Flat.json" />
+    <EmbeddedResource Include="Resources\Malex95_ContainerPack01\45_FT.json" />
+    <EmbeddedResource Include="Resources\Malex95_ContainerPack01\40_FT.json" />
+    <EmbeddedResource Include="Resources\Malex95_ContainerPack01\30_WAB.json" />
+    <EmbeddedResource Include="Resources\Malex95_ContainerPack01\30_SILO.json" />
+    <EmbeddedResource Include="Resources\Malex95_ContainerPack01\20_OT.json" />
+    <EmbeddedResource Include="Resources\Malex95_ContainerPack01\20_FT.json" />
+    <EmbeddedResource Include="Resources\Malex95_ContainerPack01\7_X5_TANK.json" />
+    <EmbeddedResource Include="Resources\Malex95_ContainerPack01\7_82_TANK.json" />
+    <EmbeddedResource Include="Resources\Malex95_ContainerPack01\WAB_45.json" />
+    <EmbeddedResource Include="Resources\Malex95_ContainerPack01\WAB.json" />
+    <EmbeddedResource Include="Resources\Malex95_ContainerPack01\24_COIL.json" />
     <EmbeddedResource Include="Resources\CT_Sgns\CT_Tanktainers3x20ft.json" />
     <EmbeddedResource Include="Resources\CT_Sgns\Afirus_Containers3x20ft.json" />
     <EmbeddedResource Include="Resources\CT_Sgns\Afirus_Containers1x45ft.json" />
     <EmbeddedResource Include="Resources\CT_Sgns\Sgns20ftx3.xml" />
     <EmbeddedResource Include="Resources\CT_Sgns\Sgns45ft.xml" />
+    <EmbeddedResource Include="Resources\Sggmrss\A.xml" />
+    <EmbeddedResource Include="Resources\Sggmrss\B.xml" />
   </ItemGroup>
 
   <ItemGroup>

@@ -1,0 +1,152 @@
+[
+  {
+    "filename": "RailNetwork\\Interactive\\2X_COIL\\Childs\\Coil_24_Z_BRLE_1.bin",
+    "name": "BRLE 1",
+    
+    "moveZ": 0.93122,
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "BRLE_1.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_COIL\\Childs\\Coil_24_Z_BRND_1.bin",
+    "name": "BRND 1",
+    
+    "moveZ": 0.93122,
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "BRND_1.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_COIL\\Childs\\Coil_24_Z_BRND_2.bin",
+    "name": "BRND 2",
+    
+    "moveZ": 0.93122,
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "BRND_2.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_COIL\\Childs\\Coil_24_Z_Dani.bin",
+    "name": "DANI 1",
+    
+    "moveZ": 0.93122,
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "Dani_1.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_COIL\\Childs\\Coil_24_Z_FRIA.bin",
+    "name": "FRIA 1",
+    
+    "moveZ": 0.93122,
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "FRIA_1.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_COIL\\Childs\\Coil_24_Z_FRIA_2.bin",
+    "name": "FRIA 2",
+    
+    "moveZ": 0.93122,
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "FRIA_2.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_COIL\\Childs\\Coil_24_Z_Jost.bin",
+    "name": "JOST 1",
+    
+    "moveZ": 0.93122,
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "Jost_1.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_COIL\\Childs\\Coil_24_Z_Jost_2.bin",
+    "name": "JOST 2",
+    
+    "moveZ": 0.93122,
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "Jost_2.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_COIL\\Childs\\Coil_24_Z_MOVE.bin",
+    "name": "MOVE 1",
+    
+    "moveZ": 0.93122,
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "MOVE_1.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_COIL\\Childs\\Coil_24_Z_MOVE_2.bin",
+    "name": "MOVE 2",
+    
+    "moveZ": 0.93122,
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "MOVE_2.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_COIL\\Childs\\Coil_24_Z_TIPES.bin",
+    "name": "TIPES 1",
+    
+    "moveZ": 0.93122,
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "TIPES_1.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_COIL\\Childs\\Coil_24_Z_TIPES_2.bin",
+    "name": "TIPES 2",
+    
+    "moveZ": 0.93122,
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "TIPES_2.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_COIL\\Childs\\Coil_24_Z_TIPES_3.bin",
+    "name": "TIPES 3",
+    
+    "moveZ": 0.93122,
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "TIPES_3.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_COIL\\Childs\\Coil_24_Z_TTS.bin",
+    "name": "TTS 1",
+    
+    "moveZ": 0.93122,
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "TTS_1.bin"
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_COIL\\Childs\\Coil_24_Z_TTS_2.bin",
+    "name": "TTS 2",
+    
+    "moveZ": 0.93122,
+    "filterWagonType": [
+      "CH-WASCO"
+    ],
+    "destinationFilename": "TTS_2.bin"
+  }
+]

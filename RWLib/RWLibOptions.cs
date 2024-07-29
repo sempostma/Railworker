@@ -9,6 +9,7 @@ namespace RWLib
         public string SerzExePath { set; get; }
         public IRWLogger Logger { set; get; } = new DefaultLogger();
         public bool UseCustomSerz { set; get; } = false;
+        public RWCachingSystem? Cache { set;get; } = null;
 
         public RWLibOptions()
         {
