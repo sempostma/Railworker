@@ -1,0 +1,69 @@
+[
+  {
+    "id": "45ft_hc_1",
+    "name": "Maps 45FT HC container",
+    "projections": [
+      {
+        "name": "side",
+        "sourceBbox": {
+          "x": 0,
+          "y": 403,
+          "width": 512,
+          "height": 109
+        },
+        "destBbox": {
+          "x": 0,
+          "y": 118,
+          "width": 512,
+          "height": 109
+        }
+      },
+      {
+        "name": "roof",
+        "sourceBbox": {
+          "x": 0,
+          "y": 110,
+          "width": 112,
+          "height": 293
+        },
+        "destBbox": {
+          "rotate": "Rotate90",
+          "x": 0,
+          "y": 0,
+          "width": 272,
+          "height": 118
+        }
+      },
+      {
+        "name": "back",
+        "sourceBbox": {
+          "x": 118,
+          "y": 262,
+          "width": 132,
+          "height": 132
+        },
+        "destBbox": {
+          "x": 273,
+          "y": 0,
+          "width": 117,
+          "height": 117
+        }
+      },
+      {
+        "name": "front",
+        "sourceBbox": {
+          "x": 252,
+          "y": 262,
+          "width": 132,
+          "height": 132
+        },
+        "destBbox": {
+          "x": 392,
+          "y": 0,
+          "width": 117,
+          "height": 117
+        }
+      }
+    ]
+  }
+]

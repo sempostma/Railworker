@@ -1,4 +1,5 @@
 ﻿using RWLib.Exceptions;
+using RWLib.Graphics;
 using RWLib.Packaging;
 using System.IO.Compression;
 using System.Text;
@@ -17,7 +18,8 @@ namespace RWLib
         public RWRouteLoader RouteLoader { get; }
         public RWTracksBinParser TracksBinParser { get; }
         public RWRailDriver RailDriver { get; }
-        public RWVariantGenerator RWVariantGenerator { get; }
+        public RWVariantGenerator VariantGenerator { get; }
+        public RWTgPcDxLoader TgPcDxLoader { get; }
 
         public RWLibrary(RWLibOptions? options = null)
         {
@@ -28,7 +30,8 @@ namespace RWLib
             RouteLoader = CreateRouteLoader(Serializer);
             TracksBinParser = CreateTracksBinParser(RouteLoader);
             RailDriver = CreatRailDriver();
-            RWVariantGenerator = CreateVariantGenerator(Serializer);
+            VariantGenerator = CreateVariantGenerator(Serializer);
+            TgPcDxLoader = CreateTgPcDxLoader(Serializer);
         }
 
         private RWSerializer CreateSerializer(bool useCustomSerz = false)
@@ -46,6 +49,11 @@ namespace RWLib
         private RWRouteLoader CreateRouteLoader(RWSerializer serializer)
         {
             return new RWRouteLoader(this, serializer);
+        }
+
+        private RWTgPcDxLoader CreateTgPcDxLoader(RWSerializer serializer)
+        {
+            return new RWTgPcDxLoader(this, serializer);
         }
 
         private RWTracksBinParser CreateTracksBinParser(RWRouteLoader rwRouteLoader)

@@ -185,7 +185,7 @@ namespace RWLib.Packaging
                             var xml = new XDocument(t.XDocument);
                             var label = t.Label;
 
-                            string wagonName = String.Format(wagonNameFormat, wagonType.Type, containerNiceName, label);
+                            string wagonName = String.Format(wagonNameFormat, wagonType.InGameType, containerNiceName, label);
                             string filenamePart = String.IsNullOrWhiteSpace(containerFilename) ? "LEER" : containerFilename;
                             xml.Descendants("Name").First().Value = wagonName;
                             xml.Descendants("English").First().Value = wagonName;

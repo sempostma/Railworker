@@ -75,7 +75,7 @@
 										<Attribute name="TargetDistance">
 											<sFloat32>
 												<Element>
-													<Value>0</Value>
+													<Value>0.05</Value>
 												</Element>
 											</sFloat32>
 										</Attribute>

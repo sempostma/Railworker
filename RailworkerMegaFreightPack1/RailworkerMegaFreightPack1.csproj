@@ -8,6 +8,8 @@
 
   <ItemGroup>
     <None Remove="Resources\Afirus_Containers.json" />
+    <None Remove="Resources\ContainerCombination\Compositions.json" />
+    <None Remove="Resources\ContainerCombination\RandomSkins.json" />
     <None Remove="Resources\Malex95_ContainerPack01\20_COIL.json" />
     <None Remove="Resources\Malex95_ContainerPack01\20_FT.json" />
     <None Remove="Resources\Malex95_ContainerPack01\20_OT.json" />
@@ -19,12 +21,12 @@
     <None Remove="Resources\Malex95_ContainerPack01\24_WAB.json" />
     <None Remove="Resources\Malex95_ContainerPack01\30_SILO.json" />
     <None Remove="Resources\Malex95_ContainerPack01\30_WAB.json" />
-    <None Remove="Resources\Malex95_ContainerPack01\40_FT.json" />
+    <None Remove="Resources\Malex95_ContainerPack01\40_HC.json" />
+    <None Remove="Resources\Malex95_ContainerPack01\40_N.json" />
     <None Remove="Resources\Malex95_ContainerPack01\40_Tank.json" />
-    <None Remove="Resources\Malex95_ContainerPack01\45_FT.json" />
+    <None Remove="Resources\Malex95_ContainerPack01\45_HC.json" />
     <None Remove="Resources\Malex95_ContainerPack01\7_82_Tank.json" />
     <None Remove="Resources\Malex95_ContainerPack01\7_X5_TANK.json" />
-    <None Remove="Resources\Malex95_ContainerPack01\Flat.json" />
     <None Remove="Resources\Malex95_ContainerPack01\WAB.json" />
     <None Remove="Resources\Malex95_ContainerPack01\WAB_45.json" />
     <None Remove="Resources\Sffggmrrss_Trailers.json" />
@@ -35,13 +37,15 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="Resources\ContainerCombination\Compositions.json" />
+    <EmbeddedResource Include="Resources\ContainerCombination\RandomSkins.json" />
     <EmbeddedResource Include="Resources\Malex95_ContainerPack01\20_COIL.json" />
     <EmbeddedResource Include="Resources\Malex95_ContainerPack01\24_WAB.json" />
+    <EmbeddedResource Include="Resources\Malex95_ContainerPack01\40_N.json" />
     <EmbeddedResource Include="Resources\Malex95_ContainerPack01\40_Tank.json" />
     <EmbeddedResource Include="Resources\Malex95_ContainerPack01\20_Tank.json" />
-    <EmbeddedResource Include="Resources\Malex95_ContainerPack01\Flat.json" />
-    <EmbeddedResource Include="Resources\Malex95_ContainerPack01\45_FT.json" />
-    <EmbeddedResource Include="Resources\Malex95_ContainerPack01\40_FT.json" />
+    <EmbeddedResource Include="Resources\Malex95_ContainerPack01\45_HC.json" />
+    <EmbeddedResource Include="Resources\Malex95_ContainerPack01\40_HC.json" />
     <EmbeddedResource Include="Resources\Malex95_ContainerPack01\30_WAB.json" />
     <EmbeddedResource Include="Resources\Malex95_ContainerPack01\30_SILO.json" />
     <EmbeddedResource Include="Resources\Malex95_ContainerPack01\20_OT.json" />
@@ -58,6 +62,11 @@
     <EmbeddedResource Include="Resources\CT_Sgns\Sgns45ft.xml" />
     <EmbeddedResource Include="Resources\Sggmrss\A.xml" />
     <EmbeddedResource Include="Resources\Sggmrss\B.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Emgu.CV" Version="4.9.0.5494" />
+    <PackageReference Include="PDFsharp" Version="6.1.1" />
   </ItemGroup>
 
   <ItemGroup>

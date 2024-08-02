@@ -94,6 +94,7 @@ namespace RWLib
                         var archiveEntry = z.CreateEntry(entry.Key);
                         using (var stream = archiveEntry.Open())
                         {
+                            stream.Seek(0, SeekOrigin.Begin);
                             JsonSerializer.Serialize(stream, entry);
                         }
                     }

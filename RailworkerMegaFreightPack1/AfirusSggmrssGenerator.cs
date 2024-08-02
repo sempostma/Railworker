@@ -27,30 +27,37 @@ namespace RailworkerMegaFreightPack1
         }
 
         private RWLibrary rwLib;
+        private XDocument aTemplate;
+        private XDocument bTemplate;
         private readonly List<string> companies = new() { "CH-WASCO", "NL-EUWAG", "D-AAEC", "CZ-GTS" };
+
 
         public AfirusSggmrssGenerator()
         {
             this.rwLib = new RWLibrary(new RWLibOptions { Logger = new Logger() });
+            this.aTemplate = rwLib.Serializer.ParseXMLSafe(ReadFile("Sggmrss.A.xml"));
+            this.bTemplate = rwLib.Serializer.ParseXMLSafe(ReadFile("Sggmrss.B.xml"));
         }
 
         public async Task GenerateVariants()
         {
             try
             {
-                //await Generate45ftVariants();
+                //await Generate45HCVariants();
+                //await Generate40HCVariants();
+                //await Generate40NVariants();
                 //await Generate20COILVariants();
                 //await Generate24COILVariants();
                 //await Generate20_FTVariants();
                 //await Generate20_FT_OTVariants();
                 //await GenerateWABVariants();
                 //await Generate30_WABVariants();
-                //await Generate24WABVariants();
-                await Generate30_SILOVariants();
-                await Generate20TANKVariants();
-                await Generate40TANKVariants();
-                await Generate782TANKVariants();
-                await Generate7X5TANKVariants();
+                await Generate24WABVariants();
+                //await Generate30_SILOVariants();
+                //await Generate20TANKVariants();
+                //await Generate40TANKVariants();
+                //await Generate782TANKVariants();
+                //await Generate7X5TANKVariants();
                 await GenerateFlatVariants();
                 //await GenerateWAB45Variants(); // This has duplicate containers which are already present in the 45ft variant
             }
@@ -176,13 +183,11 @@ namespace RailworkerMegaFreightPack1
                 }).ToList();
         }
 
-        private async Task Generate45ftVariants()
+        private async Task Generate45HCVariants()
         {
-            Console.WriteLine("Generating 45ft Variants!");
+            Console.WriteLine("Generating 45 HC Variants!");
 
-            var container45 = FileItem.FromJson(ReadFile("Malex95_ContainerPack01.45_FT.json"));
-            var aTemplate = rwLib.Serializer.ParseXMLSafe(ReadFile("Sggmrss.A.xml"));
-            var bTemplate = rwLib.Serializer.ParseXMLSafe(ReadFile("Sggmrss.B.xml"));
+            var container45 = FileItem.FromJson(ReadFile("Malex95_ContainerPack01.45_HC.json"));
 
             List<WagonType> sggmrssWagons = CreateWagonTypes(aTemplate, bTemplate, companies, "45", new MatrixTransformable
             {
@@ -195,26 +200,85 @@ namespace RailworkerMegaFreightPack1
                 x.CargoAsChild = true;
             });
 
-            await rwLib.RWVariantGenerator.CreateVariants(
+            await rwLib.VariantGenerator.CreateVariants(
                 container45,
                 sggmrssWagons,
                 "Alex95",
                 "ContainerPack01",
                 "{0}.xml",
-                "90' KI {0} C45 {1} {2}",
+                "90' KI {0} 45 HC {1} {2}",
                 "Afirus\\Sggmrss\\RailVehicles\\Freight\\Default\\{0}\\Alex95\\45_FT\\sggmrss_{3}_{2}"
             );
 
             Console.WriteLine("Done!");
         }
 
+        private async Task Generate40HCVariants()
+        {
+            Console.WriteLine("Generating 40 HC Variants!");
+
+            var container40HC = FileItem.FromJson(ReadFile("Malex95_ContainerPack01.40_HC.json"));
+
+            var offset = -1.25f;
+
+            List<WagonType> sggmrssWagons = CreateWagonTypes(aTemplate, bTemplate, companies, "40", new MatrixTransformable
+            {
+                MoveZ = -0.385f + offset,
+                MoveY = 0.32f
+            }, bSideZOffset: -0.965f - offset);
+
+            container40HC.ForEach(x => {
+                x.CargoAsChild = true;
+            });
+
+            await rwLib.VariantGenerator.CreateVariants(
+                container40HC,
+                sggmrssWagons,
+                "Alex95",
+                "ContainerPack01",
+                "{0}.xml",
+                "90' KI {0} 40 HC {1} {2}",
+                "Afirus\\Sggmrss\\RailVehicles\\Freight\\Default\\{0}\\Alex95\\40_HC\\sggmrss_{3}_{2}"
+            );
+
+            Console.WriteLine("Done!");
+        }
+
+        private async Task Generate40NVariants()
+        {
+            Console.WriteLine("Generating 40 N Variants!");
+
+            var container40N = FileItem.FromJson(ReadFile("Malex95_ContainerPack01.40_N.json"));
+
+            List<WagonType> sggmrssWagons = CreateWagonTypes(aTemplate, bTemplate, companies, "40", new MatrixTransformable
+            {
+                MoveZ = -0.755f,
+                MoveY = 0.02f,
+            }, bSideZOffset: -1.965f);
+
+            container40N.ForEach(x => {
+                x.CargoAsChild = true;
+            });
+
+            await rwLib.VariantGenerator.CreateVariants(
+                container40N,
+                sggmrssWagons,
+                "Alex95",
+                "ContainerPack01",
+                "{0}.xml",
+                "90' KI {0} 40 C {1} {2}",
+                "Afirus\\Sggmrss\\RailVehicles\\Freight\\Default\\{0}\\Alex95\\40_N\\sggmrss_{3}_{2}"
+            );
+
+            Console.WriteLine("Done!");
+        }
+
+
         private async Task Generate20COILVariants()
         {
             Console.WriteLine("Generating 20_COIL Variants!");
 
             var container2coil = FileItem.FromJson(ReadFile("Malex95_ContainerPack01.20_COIL.json"));
-            var aTemplate = rwLib.Serializer.ParseXMLSafe(ReadFile("Sggmrss.A.xml"));
-            var bTemplate = rwLib.Serializer.ParseXMLSafe(ReadFile("Sggmrss.B.xml"));
 
             List<WagonType> sggmrssWagons = CreateWagonTypes(aTemplate, bTemplate, companies, "20", new MatrixTransformable
             {
@@ -227,7 +291,7 @@ namespace RailworkerMegaFreightPack1
                 x.CargoAsChild = true;
             });
 
-            await rwLib.RWVariantGenerator.CreateVariants(
+            await rwLib.VariantGenerator.CreateVariants(
                 container2coil,
                 sggmrssWagons,
                 "Alex95",
@@ -245,8 +309,6 @@ namespace RailworkerMegaFreightPack1
             Console.WriteLine("Generating 24_COIL Variants!");
 
             var container2coil = FileItem.FromJson(ReadFile("Malex95_ContainerPack01.24_COIL.json"));
-            var aTemplate = rwLib.Serializer.ParseXMLSafe(ReadFile("Sggmrss.A.xml"));
-            var bTemplate = rwLib.Serializer.ParseXMLSafe(ReadFile("Sggmrss.B.xml"));
 
             List<WagonType> sggmrssWagons = CreateWagonTypes(aTemplate, bTemplate, companies, "21", new MatrixTransformable
             {
@@ -259,7 +321,7 @@ namespace RailworkerMegaFreightPack1
                 x.CargoAsChild = true;
             });
 
-            await rwLib.RWVariantGenerator.CreateVariants(
+            await rwLib.VariantGenerator.CreateVariants(
                 container2coil,
                 sggmrssWagons,
                 "Alex95",
@@ -277,27 +339,24 @@ namespace RailworkerMegaFreightPack1
             Console.WriteLine("Generating 24 WAB Variants!");
 
             var container2coil = FileItem.FromJson(ReadFile("Malex95_ContainerPack01.24_WAB.json"));
-            var aTemplate = rwLib.Serializer.ParseXMLSafe(ReadFile("Sggmrss.A.xml"));
-            var bTemplate = rwLib.Serializer.ParseXMLSafe(ReadFile("Sggmrss.B.xml"));
 
-            List<WagonType> sggmrssWagons = CreateWagonTypes(aTemplate, bTemplate, companies, "20", new MatrixTransformable
+            List<WagonType> sggmrssWagons = CreateWagonTypes(aTemplate, bTemplate, companies, "21", new MatrixTransformable
             {
-                MoveZ = -1.73192f + -3.048f,
-                MoveY = 1.4f + 0.065f,
-                RotateY = 90f
+                MoveZ = -3.848f,
+                MoveY = 1.169f + 1.169f + 0.1f,
             });
 
             container2coil.ForEach(x => {
                 x.CargoAsChild = true;
             });
 
-            await rwLib.RWVariantGenerator.CreateVariants(
+            await rwLib.VariantGenerator.CreateVariants(
                 container2coil,
                 sggmrssWagons,
                 "Alex95",
                 "ContainerPack01",
                 "{0}.xml",
-                "90' KI {0} 24 COIL {1} {2}",
+                "90' KI {0} 24 WAB {1} {2}",
                 "Afirus\\Sggmrss\\RailVehicles\\Freight\\Default\\{0}\\Alex95\\24_WAB\\sggmrss_{3}_{2}"
             );
 
@@ -309,8 +368,6 @@ namespace RailworkerMegaFreightPack1
             Console.WriteLine("Generating WAB Variants!");
 
             var container2coil = FileItem.FromJson(ReadFile("Malex95_ContainerPack01.WAB.json"));
-            var aTemplate = rwLib.Serializer.ParseXMLSafe(ReadFile("Sggmrss.A.xml"));
-            var bTemplate = rwLib.Serializer.ParseXMLSafe(ReadFile("Sggmrss.B.xml"));
 
             List<WagonType> sggmrssWagons = CreateWagonTypes(aTemplate, bTemplate, companies, "45", new MatrixTransformable
             {
@@ -324,7 +381,7 @@ namespace RailworkerMegaFreightPack1
                 x.CargoAsChild = true;
             });
 
-            await rwLib.RWVariantGenerator.CreateVariants(
+            await rwLib.VariantGenerator.CreateVariants(
                 container2coil,
                 sggmrssWagons,
                 "Alex95",
@@ -342,8 +399,6 @@ namespace RailworkerMegaFreightPack1
             Console.WriteLine("Generating 20 FT Variants!");
 
             var container20 = FileItem.FromJson(ReadFile("Malex95_ContainerPack01.20_FT.json"));
-            var aTemplate = rwLib.Serializer.ParseXMLSafe(ReadFile("Sggmrss.A.xml"));
-            var bTemplate = rwLib.Serializer.ParseXMLSafe(ReadFile("Sggmrss.B.xml"));
 
             List<WagonType> sggmrssWagons = CreateWagonTypes(aTemplate, bTemplate, companies, "20", new MatrixTransformable
             {
@@ -355,7 +410,7 @@ namespace RailworkerMegaFreightPack1
                 x.CargoAsChild = true;
             });
 
-            await rwLib.RWVariantGenerator.CreateVariants(
+            await rwLib.VariantGenerator.CreateVariants(
                 container20,
                 sggmrssWagons,
                 "Alex95",
@@ -373,8 +428,6 @@ namespace RailworkerMegaFreightPack1
             Console.WriteLine("Generating 20 FT OT Variants!");
 
             var container20 = FileItem.FromJson(ReadFile("Malex95_ContainerPack01.20_OT.json"));
-            var aTemplate = rwLib.Serializer.ParseXMLSafe(ReadFile("Sggmrss.A.xml"));
-            var bTemplate = rwLib.Serializer.ParseXMLSafe(ReadFile("Sggmrss.B.xml"));
 
             List<WagonType> sggmrssWagons = CreateWagonTypes(aTemplate, bTemplate, companies, "20", new MatrixTransformable
             {
@@ -386,7 +439,7 @@ namespace RailworkerMegaFreightPack1
                 x.CargoAsChild = true;
             });
 
-            await rwLib.RWVariantGenerator.CreateVariants(
+            await rwLib.VariantGenerator.CreateVariants(
                 container20,
                 sggmrssWagons,
                 "Alex95",
@@ -404,8 +457,6 @@ namespace RailworkerMegaFreightPack1
             Console.WriteLine("Generating 30 WAB Variants!");
 
             var container20 = FileItem.FromJson(ReadFile("Malex95_ContainerPack01.30_WAB.json"));
-            var aTemplate = rwLib.Serializer.ParseXMLSafe(ReadFile("Sggmrss.A.xml"));
-            var bTemplate = rwLib.Serializer.ParseXMLSafe(ReadFile("Sggmrss.B.xml"));
 
             List<WagonType> sggmrssWagons = CreateWagonTypes(aTemplate, bTemplate, companies, "30", new MatrixTransformable
             {
@@ -417,7 +468,7 @@ namespace RailworkerMegaFreightPack1
                 x.CargoAsChild = true;
             });
 
-            await rwLib.RWVariantGenerator.CreateVariants(
+            await rwLib.VariantGenerator.CreateVariants(
                 container20,
                 sggmrssWagons,
                 "Alex95",
@@ -435,8 +486,6 @@ namespace RailworkerMegaFreightPack1
             Console.WriteLine("Generating 30 SILO Variants!");
 
             var container20 = FileItem.FromJson(ReadFile("Malex95_ContainerPack01.30_SILO.json"));
-            var aTemplate = rwLib.Serializer.ParseXMLSafe(ReadFile("Sggmrss.A.xml"));
-            var bTemplate = rwLib.Serializer.ParseXMLSafe(ReadFile("Sggmrss.B.xml"));
 
             List<WagonType> sggmrssWagons = CreateWagonTypes(aTemplate, bTemplate, companies, "30", new MatrixTransformable
             {
@@ -448,7 +497,7 @@ namespace RailworkerMegaFreightPack1
                 x.CargoAsChild = true;
             });
 
-            await rwLib.RWVariantGenerator.CreateVariants(
+            await rwLib.VariantGenerator.CreateVariants(
                 container20,
                 sggmrssWagons,
                 "Alex95",
@@ -466,10 +515,8 @@ namespace RailworkerMegaFreightPack1
             Console.WriteLine("Generating 782 TT Variants!");
 
             var container20 = FileItem.FromJson(ReadFile("Malex95_ContainerPack01.7_82_TANK.json"));
-            var aTemplate = rwLib.Serializer.ParseXMLSafe(ReadFile("Sggmrss.A.xml"));
-            var bTemplate = rwLib.Serializer.ParseXMLSafe(ReadFile("Sggmrss.B.xml"));
 
-            List<WagonType> sggmrssWagons = CreateWagonTypes(aTemplate, bTemplate, companies, "20", new MatrixTransformable
+            List<WagonType> sggmrssWagons = CreateWagonTypes(aTemplate, bTemplate, companies, "21", new MatrixTransformable
             {
                 MoveZ = -1.73192f + -3.048f,
                 MoveY = 1.4f + 0.065f,
@@ -480,7 +527,7 @@ namespace RailworkerMegaFreightPack1
                 x.CargoAsChild = true;
             });
 
-            await rwLib.RWVariantGenerator.CreateVariants(
+            await rwLib.VariantGenerator.CreateVariants(
                 container20,
                 sggmrssWagons,
                 "Alex95",
@@ -498,21 +545,18 @@ namespace RailworkerMegaFreightPack1
             Console.WriteLine("Generating 715 TT Variants!");
 
             var container20 = FileItem.FromJson(ReadFile("Malex95_ContainerPack01.7_X5_TANK.json"));
-            var aTemplate = rwLib.Serializer.ParseXMLSafe(ReadFile("Sggmrss.A.xml"));
-            var bTemplate = rwLib.Serializer.ParseXMLSafe(ReadFile("Sggmrss.B.xml"));
 
-            List<WagonType> sggmrssWagons = CreateWagonTypes(aTemplate, bTemplate, companies, "20", new MatrixTransformable
+            List<WagonType> sggmrssWagons = CreateWagonTypes(aTemplate, bTemplate, companies, "21", new MatrixTransformable
             {
-                MoveZ = -1.73192f + -3.048f,
-                MoveY = 1.4f + 0.065f,
-                RotateY = 90f
+                MoveZ = -1.73192f + -3.048f + 0.93035f,
+                MoveY = 1.169f,
             });
 
             container20.ForEach(x => {
                 x.CargoAsChild = true;
             });
 
-            await rwLib.RWVariantGenerator.CreateVariants(
+            await rwLib.VariantGenerator.CreateVariants(
                 container20,
                 sggmrssWagons,
                 "Alex95",
@@ -530,21 +574,18 @@ namespace RailworkerMegaFreightPack1
             Console.WriteLine("Generating 20 TT Variants!");
 
             var container20 = FileItem.FromJson(ReadFile("Malex95_ContainerPack01.20_Tank.json"));
-            var aTemplate = rwLib.Serializer.ParseXMLSafe(ReadFile("Sggmrss.A.xml"));
-            var bTemplate = rwLib.Serializer.ParseXMLSafe(ReadFile("Sggmrss.B.xml"));
 
             List<WagonType> sggmrssWagons = CreateWagonTypes(aTemplate, bTemplate, companies, "20", new MatrixTransformable
             {
                 MoveZ = -1.73192f + -3.048f,
-                MoveY = 1.4f + 0.065f,
-                RotateY = 90f
+                MoveY = 1.169f,
             });
 
             container20.ForEach(x => {
                 x.CargoAsChild = true;
             });
 
-            await rwLib.RWVariantGenerator.CreateVariants(
+            await rwLib.VariantGenerator.CreateVariants(
                 container20,
                 sggmrssWagons,
                 "Alex95",
@@ -562,21 +603,18 @@ namespace RailworkerMegaFreightPack1
             Console.WriteLine("Generating 40 TT Variants!");
 
             var container20 = FileItem.FromJson(ReadFile("Malex95_ContainerPack01.40_Tank.json"));
-            var aTemplate = rwLib.Serializer.ParseXMLSafe(ReadFile("Sggmrss.A.xml"));
-            var bTemplate = rwLib.Serializer.ParseXMLSafe(ReadFile("Sggmrss.B.xml"));
 
             List<WagonType> sggmrssWagons = CreateWagonTypes(aTemplate, bTemplate, companies, "40", new MatrixTransformable
             {
-                MoveZ = -1.73192f + -3.048f,
-                MoveY = 1.4f + 0.065f,
-                RotateY = 90f
+                MoveZ = -1.73192f,
+                MoveY = 1.169f,
             });
 
             container20.ForEach(x => {
                 x.CargoAsChild = true;
             });
 
-            await rwLib.RWVariantGenerator.CreateVariants(
+            await rwLib.VariantGenerator.CreateVariants(
                 container20,
                 sggmrssWagons,
                 "Alex95",
@@ -593,17 +631,13 @@ namespace RailworkerMegaFreightPack1
         {
             Console.WriteLine("Generating Flat Variants!");
 
-            var aTemplate = rwLib.Serializer.ParseXMLSafe(ReadFile("Sggmrss.A.xml"));
-            var bTemplate = rwLib.Serializer.ParseXMLSafe(ReadFile("Sggmrss.B.xml"));
-
             List<WagonType> sggmrssWagons20 = CreateWagonTypes(aTemplate, bTemplate, companies, "20", new MatrixTransformable
             {
                 MoveZ = -1.73192f + -3.048f,
-                MoveY = 1.4f + 0.065f,
-                RotateY = 90f
+                MoveY = 1.169f,
             });
 
-            await rwLib.RWVariantGenerator.CreateVariants(
+            await rwLib.VariantGenerator.CreateVariants(
                 new List<FileItem>
                 {
                     new FileItem
@@ -648,12 +682,11 @@ namespace RailworkerMegaFreightPack1
 
             List<WagonType> sggmrssWagons40 = CreateWagonTypes(aTemplate, bTemplate, companies, "40", new MatrixTransformable
             {
-                MoveZ = -1.73192f + -3.048f,
-                MoveY = 1.4f + 0.065f,
-                RotateY = 90f
-            });
+                MoveZ = -2.23192f,
+                MoveY = 0.34f,
+            }, bSideZOffset: 0.95f);
 
-            await rwLib.RWVariantGenerator.CreateVariants(
+            await rwLib.VariantGenerator.CreateVariants(
                 flats,              
                 sggmrssWagons40,
                 "Alex95",
@@ -665,31 +698,32 @@ namespace RailworkerMegaFreightPack1
 
             List<WagonType> sggmrssWagon7150 = CreateWagonTypes(aTemplate, bTemplate, companies, "21", new MatrixTransformable
             {
-                MoveZ = -1.73192f + -3.048f,
-                MoveY = 1.4f + 0.065f,
-                RotateY = 90f
+                MoveZ = -1.73192f + -3.048f + 0.93035f,
+                MoveY = 1.169f,
             });
 
-            await rwLib.RWVariantGenerator.CreateVariants(
-                new List<FileItem>
-                {
-                new FileItem
-                {
-                    Filename = "RailNetwork\\Interactive\\Flat\\7_15FT_NIZZ.bin",
-                    Name = "NIZZ 1",
-                    FilterWagonType = [
-                        "CH-WASCO"
-                    ],
-                    CargoAsChild = true
-                }
-                },
-                sggmrssWagons20,
-                "Alex95",
-                "ContainerPack01",
-                "{0}.xml",
-                "90' KI {0} 715 F {1} {2}",
-                "Afirus\\Sggmrss\\RailVehicles\\Freight\\Default\\{0}\\Alex95\\715_Flat\\sggmrss_{3}_{2}"
-            );
+            // Causing crashing:
+
+            //await rwLib.VariantGenerator.CreateVariants(
+            //    new List<FileItem>
+            //    {
+            //    new FileItem
+            //    {
+            //        Filename = "RailNetwork\\Interactive\\Flat\\7_15FT_NIZZ.bin",
+            //        Name = "NIZZ 1",
+            //        FilterWagonType = [
+            //            "CH-WASCO"
+            //        ],
+            //        CargoAsChild = true
+            //    }
+            //    },
+            //    sggmrssWagons20,
+            //    "Alex95",
+            //    "ContainerPack01",
+            //    "{0}.xml",
+            //    "90' KI {0} 715 F {1} {2}",
+            //    "Afirus\\Sggmrss\\RailVehicles\\Freight\\Default\\{0}\\Alex95\\715_Flat\\sggmrss_{3}_{2}"
+            //);
 
             Console.WriteLine("Done!");
         }

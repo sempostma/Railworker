@@ -1,0 +1,231 @@
+[
+  {
+    "name": "ECS Move 2XL GTS TTS",
+    "skins": [
+      {
+        "id": "N_4",
+        "name": "",
+        "rarity": 100,
+        "group": "ECBU",
+        "texture": "45_HC/GW_45FT_ECBU/Childs/textures/45_N_4.TgPcDx"
+      },
+      {
+        "id": "N_2",
+        "name": "",
+        "rarity": 100,
+        "group": "ECBU",
+        "texture": "45_HC/GW_45FT_ECBU/Childs/textures/45_N_2.TgPcDx"
+      },
+      {
+        "id": "N_3",
+        "name": "",
+        "rarity": 100,
+        "group": "ECBU",
+        "texture": "45_HC/GW_45FT_ECBU/Childs/textures/45_N_3.TgPcDx"
+      },
+      {
+        "id": "N_6",
+        "name": "",
+        "rarity": 20,
+        "group": "ECBU",
+        "texture": "45_HC/GW_45FT_ECBU/Childs/textures/45_N_6.TgPcDx"
+      },
+      {
+        "id": "RF",
+        "name": "",
+        "rarity": 20,
+        "group": "ECBU",
+        "texture": "45_HC/GW_45FT_ECBU/Childs/textures/45_RF.TgPcDx"
+      },
+      {
+        "id": "N_1",
+        "name": "",
+        "rarity": 20,
+        "group": "2XL",
+        "texture": "45_HC/GW_45FT_2XL/Childs/textures/45_N_1.TgPcDx"
+      },
+      {
+        "id": "N_2",
+        "name": "",
+        "rarity": 20,
+        "group": "2XL",
+        "texture": "45_HC/GW_45FT_2XL/Childs/textures/45_N_2.TgPcDx"
+      },
+      {
+        "id": "N_3",
+        "name": "",
+        "rarity": 20,
+        "group": "2XL",
+        "texture": "45_HC/GW_45FT_2XL/Childs/textures/45_N_3.TgPcDx"
+      },
+      {
+        "id": "N_4",
+        "name": "",
+        "rarity": 20,
+        "group": "2XL",
+        "texture": "45_HC/GW_45FT_2XL/Childs/textures/45_N_4.TgPcDx"
+      },
+      {
+        "id": "N_1",
+        "name": "",
+        "rarity": 20,
+        "group": "MOVE",
+        "texture": "45_HC/GW_45FT_MOVE/Childs/textures/45_N_1.TgPcDx"
+      },
+      {
+        "id": "N_10",
+        "name": "",
+        "rarity": 20,
+        "group": "MOVE",
+        "texture": "45_HC/GW_45FT_MOVE/Childs/textures/45_N_10.TgPcDx"
+      },
+      {
+        "id": "N_11",
+        "name": "",
+        "rarity": 20,
+        "group": "MOVE",
+        "texture": "45_HC/GW_45FT_MOVE/Childs/textures/45_N_11.TgPcDx"
+      },
+      {
+        "id": "N_12",
+        "name": "",
+        "rarity": 20,
+        "group": "MOVE",
+        "texture": "45_HC/GW_45FT_MOVE/Childs/textures/45_N_12.TgPcDx"
+      },
+      {
+        "id": "N_13",
+        "name": "",
+        "rarity": 20,
+        "group": "MOVE",
+        "texture": "45_HC/GW_45FT_MOVE/Childs/textures/45_N_13.TgPcDx"
+      },
+      {
+        "id": "N_14",
+        "name": "",
+        "rarity": 20,
+        "group": "MOVE",
+        "texture": "45_HC/GW_45FT_MOVE/Childs/textures/45_N_14.TgPcDx"
+      },
+      {
+        "id": "N_15",
+        "name": "",
+        "rarity": 20,
+        "group": "MOVE",
+        "texture": "45_HC/GW_45FT_MOVE/Childs/textures/45_N_15.TgPcDx"
+      },
+      {
+        "id": "N_16",
+        "name": "",
+        "rarity": 20,
+        "group": "MOVE",
+        "texture": "45_HC/GW_45FT_MOVE/Childs/textures/45_N_16.TgPcDx"
+      },
+      {
+        "id": "N_2",
+        "name": "",
+        "rarity": 20,
+        "group": "MOVE",
+        "texture": "45_HC/GW_45FT_MOVE/Childs/textures/45_N_2.TgPcDx"
+      },
+      {
+        "id": "N_3",
+        "name": "",
+        "rarity": 20,
+        "group": "MOVE",
+        "texture": "45_HC/GW_45FT_MOVE/Childs/textures/45_N_3.TgPcDx"
+      },
+      {
+        "id": "N_4",
+        "name": "",
+        "rarity": 20,
+        "group": "MOVE",
+        "texture": "45_HC/GW_45FT_MOVE/Childs/textures/45_N_4.TgPcDx"
+      },
+      {
+        "id": "N_5",
+        "name": "",
+        "rarity": 20,
+        "group": "MOVE",
+        "texture": "45_HC/GW_45FT_MOVE/Childs/textures/45_N_5.TgPcDx"
+      },
+      {
+        "id": "N_6",
+        "name": "",
+        "rarity": 20,
+        "group": "MOVE",
+        "texture": "45_HC/GW_45FT_MOVE/Childs/textures/45_N_6.TgPcDx"
+      },
+      {
+        "id": "N_7",
+        "name": "",
+        "rarity": 20,
+        "group": "MOVE",
+        "texture": "45_HC/GW_45FT_MOVE/Childs/textures/45_N_7.TgPcDx"
+      },
+      {
+        "id": "N_8",
+        "name": "",
+        "rarity": 20,
+        "group": "MOVE",
+        "texture": "45_HC/GW_45FT_MOVE/Childs/textures/45_N_8.TgPcDx"
+      },
+      {
+        "id": "N_9",
+        "name": "",
+        "rarity": 20,
+        "group": "MOVE",
+        "texture": "45_HC/GW_45FT_MOVE/Childs/textures/45_N_9.TgPcDx"
+      },
+      {
+        "id": "N_1",
+        "name": "",
+        "rarity": 20,
+        "group": "GTS",
+        "texture": "45_HC/GW_45FT_GTS/Childs/textures/45_N_1.TgPcDx"
+      },
+      {
+        "id": "N_10",
+        "name": "",
+        "rarity": 20,
+        "group": "GTS",
+        "texture": "45_HC/GW_45FT_GTS/Childs/textures/45_N_10.TgPcDx"
+      },
+      {
+        "id": "N_11",
+        "name": "",
+        "rarity": 20,
+        "group": "GTS",
+        "texture": "45_HC/GW_45FT_GTS/Childs/textures/45_N_11.TgPcDx"
+      },
+      {
+        "id": "N_12",
+        "name": "",
+        "rarity": 20,
+        "group": "GTS",
+        "texture": "45_HC/GW_45FT_GTS/Childs/textures/45_N_12.TgPcDx"
+      },
+      {
+        "id": "N_13",
+        "name": "",
+        "rarity": 20,
+        "group": "GTS",
+        "texture": "45_HC/GW_45FT_GTS/Childs/textures/45_N_13.TgPcDx"
+      },
+      {
+        "id": "N_14",
+        "name": "",
+        "rarity": 20,
+        "group": "GTS",
+        "texture": "45_HC/GW_45FT_GTS/Childs/textures/45_N_14.TgPcDx"
+      },
+      {
+        "id": "N_2",
+        "name": "",
+        "rarity": 20,
+        "group": "GTS",
+        "texture": "45_HC/GW_45FT_GTS/Childs/textures/45_N_2.TgPcDx"
+      }
+    ]
+  }
+]

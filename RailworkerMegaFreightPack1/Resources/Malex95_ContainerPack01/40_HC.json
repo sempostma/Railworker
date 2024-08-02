@@ -1,0 +1,814 @@
+[
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40F_HC_APRU.bin",
+    "name": "APRU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40F_HC_CAIU.bin",
+    "name": "CAIU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40F_HC_CBHU.bin",
+    "name": "CBHU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40F_HC_CMAU.bin",
+    "name": "CMAU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40F_HC_CRSU.bin",
+    "name": "CRSU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40F_HC_EMCU.bin",
+    "name": "EMCU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40F_HC_GESU.bin",
+    "name": "GESU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40F_HC_HJCU.bin",
+    "name": "HJCU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40F_HC_HLXU.bin",
+    "name": "HLXU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40F_HC_HSUD.bin",
+    "name": "HSUD 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40F_HC_HSUD_2.bin",
+    "name": "HSUD 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40F_HC_MNBU.bin",
+    "name": "MNBU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40F_HC_MORU.bin",
+    "name": "MORU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40F_HC_MSCU.bin",
+    "name": "MSCU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40F_HC_MSWU.bin",
+    "name": "MSWU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40F_HC_MWCU.bin",
+    "name": "MWCU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40F_HC_MWCU_2.bin",
+    "name": "MWCU 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40F_HC_MWMU.bin",
+    "name": "MWMU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40F_HC_ONEU.bin",
+    "name": "ONEU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40F_HC_TRLU.bin",
+    "name": "TRLU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_APMU.bin",
+    "name": "APMU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_APMU_2.bin",
+    "name": "APMU 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_CAIU.bin",
+    "name": "CAIU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_CAIU_2.bin",
+    "name": "CAIU 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_CBHU.bin",
+    "name": "CBHU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_CBHU_2.bin",
+    "name": "CBHU 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_CICU.bin",
+    "name": "CICU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_CICU_2.bin",
+    "name": "CICU 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_CICU_3.bin",
+    "name": "CICU 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_CICU_4.bin",
+    "name": "CICU 4",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_CICU_5.bin",
+    "name": "CICU 5",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_CMAU.bin",
+    "name": "CMAU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_CMAU_2.bin",
+    "name": "CMAU 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_CMAU_3.bin",
+    "name": "CMAU 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_CMAU_4.bin",
+    "name": "CMAU 4",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_CMAU_5.bin",
+    "name": "CMAU 5",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_CRXU.bin",
+    "name": "CRXU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_CRXU_2.bin",
+    "name": "CRXU 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_CSNU.bin",
+    "name": "CSNU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_CSNU_2.bin",
+    "name": "CSNU 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_EITU.bin",
+    "name": "EITU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_EITU_2.bin",
+    "name": "EITU 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_FESU.bin",
+    "name": "FESU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_FESU_2.bin",
+    "name": "FESU 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_FESU_3.bin",
+    "name": "FESU 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_FLOR.bin",
+    "name": "FLOR 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_FLOR_2.bin",
+    "name": "FLOR 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_GESU.bin",
+    "name": "GESU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_HHMU.bin",
+    "name": "HHMU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_HHMU_2.bin",
+    "name": "HHMU 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_HHMU_3.bin",
+    "name": "HHMU 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_HHMU_4.bin",
+    "name": "HHMU 4",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_HHMU_5.bin",
+    "name": "HHMU 5",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_HLXU.bin",
+    "name": "HLXU",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_HLXU_2.bin",
+    "name": "HLXU 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_HLXU_3.bin",
+    "name": "HLXU 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_HNKU.bin",
+    "name": "HNKU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_HNKU_2.bin",
+    "name": "HNKU 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_HNKU_3.bin",
+    "name": "HNKU 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_HNKU_4.bin",
+    "name": "HNKU 4",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_HNKU_5.bin",
+    "name": "HNKU 5",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_HNKU_6.bin",
+    "name": "HNKU 6",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_HNKU_7.bin",
+    "name": "HNKU 7",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_HSUD.bin",
+    "name": "HSUD 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_HSUD_2.bin",
+    "name": "HSUD 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_HSUD_3.bin",
+    "name": "HSUD 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_ICLU.bin",
+    "name": "ICLU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_ICLU_2.bin",
+    "name": "ICLU 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_KKTU.bin",
+    "name": "KKTU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_KOCU.bin",
+    "name": "KOCU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_KOCU_2.bin",
+    "name": "KOCU 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_MEDU.bin",
+    "name": "MEDU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_MEDU_2.bin",
+    "name": "MEDU 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_MEDU_3.bin",
+    "name": "MEDU 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_MEDU_4.bin",
+    "name": "MEDU 4",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_MEDU_5.bin",
+    "name": "MEDU 5",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_MEDU_6.bin",
+    "name": "MEDU 6",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_MRKU.bin",
+    "name": "MRKU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_MRKU_2.bin",
+    "name": "MRKU 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_MSCU.bin",
+    "name": "MSCU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_MSCU_2.bin",
+    "name": "MSCU 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_MSCU_3.bin",
+    "name": "MSCU 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_MSCU_4.bin",
+    "name": "MSCU 4",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_MSKU.bin",
+    "name": "MSKU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_MSKU_2.bin",
+    "name": "MSKU 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_MSKU_3.bin",
+    "name": "MSKU 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_MSKU_4.bin",
+    "name": "MSKU 4",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_MSKU_5.bin",
+    "name": "MSKU 5",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_MSMU.bin",
+    "name": "MSMU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_MSMU_2.bin",
+    "name": "MSMU 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_MSMU_3.bin",
+    "name": "MSMU 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_MSMU_4.bin",
+    "name": "MSMU 4",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_ONEU.bin",
+    "name": "ONEU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_ONEU_2.bin",
+    "name": "ONEU 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_PONU.bin",
+    "name": "PONU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_PONU_2.bin",
+    "name": "PONU 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_PONU_3.bin",
+    "name": "PONU 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_SEGU.bin",
+    "name": "SEGU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_TBJU.bin",
+    "name": "TBJU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_TBJU_2.bin",
+    "name": "TBJU 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_TBJU_3.bin",
+    "name": "TBJU 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_TBJU_4.bin",
+    "name": "TBJU 4",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_TBJU_5.bin",
+    "name": "TBJU 5",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_TCNU.bin",
+    "name": "TCNU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_TCNU_2.bin",
+    "name": "TCNU 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_TEMU.bin",
+    "name": "TEMU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_TEMU_2.bin",
+    "name": "TEMU 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_TKRU.bin",
+    "name": "TKRU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_UACU.bin",
+    "name": "UACU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_UESU.bin",
+    "name": "UESU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_XAGU.bin",
+    "name": "XAGU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_XAGU_2.bin",
+    "name": "XAGU 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_ZIH.bin",
+    "name": "ZIH 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_ZIHU.bin",
+    "name": "ZIHU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_ZIHU_2.bin",
+    "name": "ZIHU 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\40_HC\\40HC_ZIHU_3.bin",
+    "name": "ZIHU 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  }
+]

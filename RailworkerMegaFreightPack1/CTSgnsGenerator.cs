@@ -92,7 +92,7 @@ namespace RailworkerMegaFreightPack1
 
             List<WagonType> sgnsWagons = CreateWagonTypes(template45, "45ft");
 
-            await rwLib.RWVariantGenerator.CreateVariants(
+            await rwLib.VariantGenerator.CreateVariants(
                 container45,
                 sgnsWagons,
                 "Afirus",
@@ -116,7 +116,7 @@ namespace RailworkerMegaFreightPack1
             List<WagonType> sgnsWagons = CreateWagonTypes(template20, "20ft");
 
 
-            await rwLib.RWVariantGenerator.CreateVariants(
+            await rwLib.VariantGenerator.CreateVariants(
                     container20,
                     sgnsWagons,
                     "Afirus",
@@ -139,7 +139,7 @@ namespace RailworkerMegaFreightPack1
             List<WagonType> sgnsWagons = CreateWagonTypes(template20, "20ft");
 
 
-            await rwLib.RWVariantGenerator.CreateVariants(
+            await rwLib.VariantGenerator.CreateVariants(
                     container20,
                     sgnsWagons,
                     "ChrisTrains",

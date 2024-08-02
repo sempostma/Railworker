@@ -16,10 +16,10 @@ namespace RWLib
         [JsonIgnore]
         public RWLibrary lib;
 
-        public RWXml(XElement blueprint, RWLibrary lib)
+        public RWXml(XElement xml, RWLibrary lib)
         {
             this.lib = lib;
-            Xml = blueprint;
+            Xml = xml;
         }
 
         public string XMLElementName { get => Xml.Name.ToString(); }
