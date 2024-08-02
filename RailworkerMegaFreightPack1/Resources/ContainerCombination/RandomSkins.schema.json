@@ -1,0 +1,995 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "array",
+  "items": [
+    {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "skins": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "rarity": {
+                  "type": "integer"
+                },
+                "group": {
+                  "type": "string"
+                },
+                "texture": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "name",
+                "rarity",
+                "group",
+                "texture"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "rarity": {
+                  "type": "integer"
+                },
+                "group": {
+                  "type": "string"
+                },
+                "texture": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "name",
+                "rarity",
+                "group",
+                "texture"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "rarity": {
+                  "type": "integer"
+                },
+                "group": {
+                  "type": "string"
+                },
+                "texture": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "name",
+                "rarity",
+                "group",
+                "texture"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "rarity": {
+                  "type": "integer"
+                },
+                "group": {
+                  "type": "string"
+                },
+                "texture": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "name",
+                "rarity",
+                "group",
+                "texture"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "rarity": {
+                  "type": "integer"
+                },
+                "group": {
+                  "type": "string"
+                },
+                "texture": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "name",
+                "rarity",
+                "group",
+                "texture"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "rarity": {
+                  "type": "integer"
+                },
+                "group": {
+                  "type": "string"
+                },
+                "texture": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "name",
+                "rarity",
+                "group",
+                "texture"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "rarity": {
+                  "type": "integer"
+                },
+                "group": {
+                  "type": "string"
+                },
+                "texture": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "name",
+                "rarity",
+                "group",
+                "texture"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "rarity": {
+                  "type": "integer"
+                },
+                "group": {
+                  "type": "string"
+                },
+                "texture": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "name",
+                "rarity",
+                "group",
+                "texture"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "rarity": {
+                  "type": "integer"
+                },
+                "group": {
+                  "type": "string"
+                },
+                "texture": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "name",
+                "rarity",
+                "group",
+                "texture"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "rarity": {
+                  "type": "integer"
+                },
+                "group": {
+                  "type": "string"
+                },
+                "texture": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "name",
+                "rarity",
+                "group",
+                "texture"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "rarity": {
+                  "type": "integer"
+                },
+                "group": {
+                  "type": "string"
+                },
+                "texture": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "name",
+                "rarity",
+                "group",
+                "texture"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "rarity": {
+                  "type": "integer"
+                },
+                "group": {
+                  "type": "string"
+                },
+                "texture": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "name",
+                "rarity",
+                "group",
+                "texture"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "rarity": {
+                  "type": "integer"
+                },
+                "group": {
+                  "type": "string"
+                },
+                "texture": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "name",
+                "rarity",
+                "group",
+                "texture"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "rarity": {
+                  "type": "integer"
+                },
+                "group": {
+                  "type": "string"
+                },
+                "texture": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "name",
+                "rarity",
+                "group",
+                "texture"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "rarity": {
+                  "type": "integer"
+                },
+                "group": {
+                  "type": "string"
+                },
+                "texture": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "name",
+                "rarity",
+                "group",
+                "texture"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "rarity": {
+                  "type": "integer"
+                },
+                "group": {
+                  "type": "string"
+                },
+                "texture": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "name",
+                "rarity",
+                "group",
+                "texture"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "rarity": {
+                  "type": "integer"
+                },
+                "group": {
+                  "type": "string"
+                },
+                "texture": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "name",
+                "rarity",
+                "group",
+                "texture"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "rarity": {
+                  "type": "integer"
+                },
+                "group": {
+                  "type": "string"
+                },
+                "texture": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "name",
+                "rarity",
+                "group",
+                "texture"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "rarity": {
+                  "type": "integer"
+                },
+                "group": {
+                  "type": "string"
+                },
+                "texture": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "name",
+                "rarity",
+                "group",
+                "texture"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "rarity": {
+                  "type": "integer"
+                },
+                "group": {
+                  "type": "string"
+                },
+                "texture": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "name",
+                "rarity",
+                "group",
+                "texture"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "rarity": {
+                  "type": "integer"
+                },
+                "group": {
+                  "type": "string"
+                },
+                "texture": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "name",
+                "rarity",
+                "group",
+                "texture"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "rarity": {
+                  "type": "integer"
+                },
+                "group": {
+                  "type": "string"
+                },
+                "texture": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "name",
+                "rarity",
+                "group",
+                "texture"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "rarity": {
+                  "type": "integer"
+                },
+                "group": {
+                  "type": "string"
+                },
+                "texture": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "name",
+                "rarity",
+                "group",
+                "texture"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "rarity": {
+                  "type": "integer"
+                },
+                "group": {
+                  "type": "string"
+                },
+                "texture": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "name",
+                "rarity",
+                "group",
+                "texture"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "rarity": {
+                  "type": "integer"
+                },
+                "group": {
+                  "type": "string"
+                },
+                "texture": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "name",
+                "rarity",
+                "group",
+                "texture"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "rarity": {
+                  "type": "integer"
+                },
+                "group": {
+                  "type": "string"
+                },
+                "texture": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "name",
+                "rarity",
+                "group",
+                "texture"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "rarity": {
+                  "type": "integer"
+                },
+                "group": {
+                  "type": "string"
+                },
+                "texture": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "name",
+                "rarity",
+                "group",
+                "texture"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "rarity": {
+                  "type": "integer"
+                },
+                "group": {
+                  "type": "string"
+                },
+                "texture": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "name",
+                "rarity",
+                "group",
+                "texture"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "rarity": {
+                  "type": "integer"
+                },
+                "group": {
+                  "type": "string"
+                },
+                "texture": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "name",
+                "rarity",
+                "group",
+                "texture"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "rarity": {
+                  "type": "integer"
+                },
+                "group": {
+                  "type": "string"
+                },
+                "texture": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "name",
+                "rarity",
+                "group",
+                "texture"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "rarity": {
+                  "type": "integer"
+                },
+                "group": {
+                  "type": "string"
+                },
+                "texture": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "name",
+                "rarity",
+                "group",
+                "texture"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "rarity": {
+                  "type": "integer"
+                },
+                "group": {
+                  "type": "string"
+                },
+                "texture": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "name",
+                "rarity",
+                "group",
+                "texture"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "rarity": {
+                  "type": "integer"
+                },
+                "group": {
+                  "type": "string"
+                },
+                "texture": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "name",
+                "rarity",
+                "group",
+                "texture"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "rarity": {
+                  "type": "integer"
+                },
+                "group": {
+                  "type": "string"
+                },
+                "texture": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "name",
+                "rarity",
+                "group",
+                "texture"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "rarity": {
+                  "type": "integer"
+                },
+                "group": {
+                  "type": "string"
+                },
+                "texture": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "name",
+                "rarity",
+                "group",
+                "texture"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "rarity": {
+                  "type": "integer"
+                },
+                "group": {
+                  "type": "string"
+                },
+                "texture": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "name",
+                "rarity",
+                "group",
+                "texture"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "name",
+        "skins"
+      ]
+    }
+  ]
+}

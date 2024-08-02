@@ -225,6 +225,34 @@
         "rarity": 20,
         "group": "GTS",
         "texture": "45_HC/GW_45FT_GTS/Childs/textures/45_N_2.TgPcDx"
+      },
+      {
+        "id": "N_3",
+        "name": "",
+        "rarity": 20,
+        "group": "GTS",
+        "texture": "45_HC/GW_45FT_GTS/Childs/textures/45_N_12.TgPcDx"
+      },
+      {
+        "id": "N_4",
+        "name": "",
+        "rarity": 20,
+        "group": "GTS",
+        "texture": "45_HC/GW_45FT_GTS/Childs/textures/45_N_13.TgPcDx"
+      },
+      {
+        "id": "N_5",
+        "name": "",
+        "rarity": 20,
+        "group": "GTS",
+        "texture": "45_HC/GW_45FT_GTS/Childs/textures/45_N_14.TgPcDx"
+      },
+      {
+        "id": "N_6",
+        "name": "",
+        "rarity": 20,
+        "group": "GTS",
+        "texture": "45_HC/GW_45FT_GTS/Childs/textures/45_N_2.TgPcDx"
       }
     ]
   }
