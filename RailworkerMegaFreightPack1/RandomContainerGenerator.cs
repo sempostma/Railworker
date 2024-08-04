@@ -142,8 +142,29 @@ namespace RailworkerMegaFreightPack1
             Console.WriteLine("Saving metadata...");
             File.WriteAllText(outputMetadataFilename, JsonSerializer.Serialize(skins));
 
+            Console.WriteLine("Saving LUA config...");
+            var outputLuaConfig = Path.ChangeExtension(outputFilename, "lua");
+            WriteLuaConfig(outputLuaConfig, firstSkin);
+
             Console.WriteLine("Done");
             Console.WriteLine();
+        }
+
+        private void WriteLuaConfig(String destinationFile, RandomSkin rSkin)
+        {
+            var lua = new StringBuilder();
+            lua.AppendLine("--- config name: " + rSkin.Name);
+            lua.AppendLine("return {");
+
+            var map = rSkin.Skins.Select(skin =>
+            {
+                return "    {name = \"" + skin.Name + "\", group = \"" + skin.Group + "\", rarity = " + skin.Rarity.ToString() + "}";
+            });
+
+            lua.AppendLine(String.Join(",\n", map));
+            lua.AppendLine("}");
+
+            File.WriteAllText(destinationFile, lua.ToString());
         }
 
         private Task<int> RunWaifu2XCommand(string inputFilename, string outputFilename)
@@ -192,7 +213,7 @@ namespace RailworkerMegaFreightPack1
             using (Image<Rgba32> blurredImage = image.Clone())
             {
                 // Apply a Gaussian blur to the copied image
-                blurredImage.Mutate(ctx => ctx.GaussianBlur(2)); // Adjust blur radius as needed
+                blurredImage.Mutate(ctx => ctx.GaussianBlur(1)); // Adjust blur radius as needed
 
                 // Use the original image as a mask, and composite the blurred image over it
                 image.Mutate(ctx => ctx.DrawImage(blurredImage, new GraphicsOptions

@@ -29,10 +29,10 @@ class Program {
     {
         //ParseBinWithCustomFunction().Wait();
         //ScanAssetDirectory().Wait();
-        //ControlValueWatcher();
+        ControlValueWatcher();
         //CreateUICWagonTypeNumbers();
 
-        ConvertBlueprintEditorXML().Wait();
+        //ConvertBlueprintEditorXML().Wait();
     }
 
     public async static Task ConvertBlueprintEditorXML()

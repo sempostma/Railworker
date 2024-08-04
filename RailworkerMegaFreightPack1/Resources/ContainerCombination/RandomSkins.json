@@ -1,5 +1,6 @@
 [
   {
+    "id": "45ft_hc_1",
     "name": "ECS Move 2XL GTS TTS",
     "skins": [
       {
@@ -231,28 +232,28 @@
         "name": "",
         "rarity": 20,
         "group": "GTS",
-        "texture": "45_HC/GW_45FT_GTS/Childs/textures/45_N_12.TgPcDx"
+        "texture": "45_HC/GW_45FT_GTS/Childs/textures/45_N_3.TgPcDx"
       },
       {
         "id": "N_4",
         "name": "",
         "rarity": 20,
         "group": "GTS",
-        "texture": "45_HC/GW_45FT_GTS/Childs/textures/45_N_13.TgPcDx"
+        "texture": "45_HC/GW_45FT_GTS/Childs/textures/45_N_4.TgPcDx"
       },
       {
         "id": "N_5",
         "name": "",
         "rarity": 20,
         "group": "GTS",
-        "texture": "45_HC/GW_45FT_GTS/Childs/textures/45_N_14.TgPcDx"
+        "texture": "45_HC/GW_45FT_GTS/Childs/textures/45_N_5.TgPcDx"
       },
       {
         "id": "N_6",
         "name": "",
         "rarity": 20,
         "group": "GTS",
-        "texture": "45_HC/GW_45FT_GTS/Childs/textures/45_N_2.TgPcDx"
+        "texture": "45_HC/GW_45FT_GTS/Childs/textures/45_N_6.TgPcDx"
       }
     ]
   }
