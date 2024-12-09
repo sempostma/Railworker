@@ -16,8 +16,8 @@ namespace MegaFreightPack1Runner
             //RandomContainerGenerator generator = new RandomContainerGenerator();
             //await generator.Build();
 
-            //await Scripts.CreateRandomSkins();
-            await Scripts.ConvertToPNGsForPreview();
+            await Scripts.CreateRandomSkins();
+            //await Scripts.ConvertToPNGsForPreview();
 
             //CTSgnsGenerator gen = new CTSgnsGenerator();
             //await gen.GenerateVariants();
