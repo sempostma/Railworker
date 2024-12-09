@@ -25,9 +25,34 @@ using SixLabors.ImageSharp.Formats.Png;
 
 namespace RailworkerMegaFreightPack1
 {
+    public class UICCodeGenerator()
+    {
+        private Dictionary<string, int> rvCounter = new Dictionary<string, int>();
+
+        public string Next(string typeIndicator, string countryCode, string vehicleType)
+        {
+            string key = CreateKey(typeIndicator, countryCode, vehicleType);
+
+            int count = rvCounter.GetValueOrDefault(key, 0);
+            count++;
+            rvCounter[key] = count;
+
+            return RWUICWagonNumber.FromDigits(typeIndicator, countryCode, vehicleType, count.ToString())
+                .ToString(RWUICWagonNumber.Format.Plain);
+        }
+
+        private static string CreateKey(string typeIndicator, string countryCode, string vehicleId)
+        {
+            return String.Join(":", new { typeIndicator, countryCode, vehicleId });
+        }
+    }
+
     public class RandomContainerGenerator
     {
         private RWLibrary rwLib;
+        private UICCodeGenerator codeGenerator = new UICCodeGenerator();
+        static SemaphoreSlim semaphoreSlim = new SemaphoreSlim(1, 1);
+
         private class Logger : IRWLogger
         {
             public void Log(RWLogType type, string message)
@@ -41,23 +66,30 @@ namespace RailworkerMegaFreightPack1
             rwLib = new RWLibrary(new RWLibOptions { Logger = new Logger() });
         }
 
-        public async Task Test()
+        public async Task Build()
+        {
+            var compositions = Composition.FromJson(ReadFile("ContainerCombination.Compositions.json"));
+            var randomSkins = RandomSkin.FromJson(ReadFile("ContainerCombination.RandomSkins.json"));
+            var containers45 = FileItem.FromJson(ReadFile("Malex95_ContainerPack01.45_HC.json"));
+
+            foreach(var randomskin in randomSkins)
+            {
+                var composition = compositions.FirstOrDefault(x => x.Id == randomskin.Composition);
+                if (composition == null) throw new InvalidDataException("Could not find composition: " + randomskin.Composition);
+
+                await BuildRandomSkin(randomskin, composition);
+            }
+        }
+
+        public async Task BuildRandomSkin(RandomSkin randomSkin, Composition composition)
         {
             var basePath = Path.Combine(rwLib.TSPath, "Assets\\Alex95\\ContainerPack01\\RailNetwork\\Interactive");
 
-            var compositions = Composition.FromJson(ReadFile("ContainerCombination.Compositions.json"));
-            var skins = RandomSkin.FromJson(ReadFile("ContainerCombination.RandomSkins.json"));
-            var containers45 = FileItem.FromJson(ReadFile("Malex95_ContainerPack01.45_HC.json"));
-
-            var comp45 = compositions.First(c => c.Id == "45ft_hc_1")!;
-
-            Console.WriteLine("Creating composition: " + comp45.Name);
-
-            var firstSkin = skins.First()!;
+            Console.WriteLine("Creating composition: " + composition.Name);
 
             var composedImage = new Image<Rgba32>(2048, 2048);
 
-            var count = Math.Min(firstSkin.Skins.Count, 36);
+            var count = Math.Min(randomSkin.Skins.Count, 36);
 
             var cancel = new CancellationTokenSource();
 
@@ -67,41 +99,43 @@ namespace RailworkerMegaFreightPack1
                 CancellationToken = cancel.Token
             };
 
-            var container45NameFromTexture = new Regex(@"GW_45FT_(.+?)[\\/]Childs[\\/]textures[\\/]45_([^\.]+)");
+            //var container45NameFromTexture = new Regex(@"GW_45FT_(.+?)[\\/]Childs[\\/]textures[\\/]45_([^\.]+)");
 
-            List<Image<Rgba32>> imagesForChatGPT = new List<Image<Rgba32>>();
-
-            imagesForChatGPT.AddRange(Enumerable.Repeat<Image<Rgba32>>(null, count));
-            
             await Parallel.ForEachAsync(Enumerable.Range(0, count), parallelOptions, async (i, cToken) =>
             {
                 int baseX = i % 4 * 512;
                 int baseY = (i / 4) * 227;
 
-                var texture = firstSkin.Skins[i].Texture;
+                var texture = randomSkin.Skins[i].Texture;
                 var inputFile = Path.Combine(basePath, texture);
 
                 Console.WriteLine("projecting: " + texture + $" ({i + 1}/{count})");
 
                 var image = await rwLib.TgPcDxLoader.LoadTgPcDx(inputFile);
                 var tempPath = Path.GetTempPath();
-                var tempFilename = Path.Combine(tempPath, "RWLib", "Tgpcdx", Path.ChangeExtension(texture, null) + "-input.png");
-                var outputFilename = Path.Combine(tempPath, "RWLib", "Tgpcdx", Path.ChangeExtension(texture, null) + "-output.png");
+                var tempFilename = Path.Join(tempPath, "RWLib", "Tgpcdx", Path.ChangeExtension(texture, null) + "-input.png");
+                var outputFilename = Path.Join(tempPath, "RWLib", "Tgpcdx", Path.ChangeExtension(texture, null) + "-output.png");
                 Directory.CreateDirectory(Path.GetDirectoryName(tempFilename)!);
-
-                image.Mutate(x => x.Resize(512, 512));
 
                 image.SaveAsPng(tempFilename);
 
-                File.Copy(tempFilename, outputFilename, true);
-                //if (File.Exists(outputFilename) == false)
-                //{
-                //    await RunWaifu2XCommand(tempFilename, outputFilename);
-                //}
+                bool useWaifu = false;
+
+                if (useWaifu)
+                {
+                    if (File.Exists(outputFilename) == false)
+                    {
+                        await RunWaifu2XCommand(tempFilename, outputFilename);
+                    }
+                } else
+                {
+                    File.Copy(tempFilename, outputFilename, true);
+                }
 
                 image = Image.Load<Rgba32>(outputFilename);
+                image.Mutate(x => x.Resize(512, 512));
 
-                foreach (var projection in comp45.Projections)
+                foreach (var projection in composition.Projections)
                 {
                     Console.WriteLine("Projecting " + projection.Name);
 
@@ -111,11 +145,6 @@ namespace RailworkerMegaFreightPack1
                         projection.SourceBbox.Width,
                         projection.SourceBbox.Height
                     )));
-
-                    if (projection.Name == "side")
-                    {
-                        imagesForChatGPT[i] = cutOutRegion;
-                    }
 
                     var rotation = (RotateMode)Enum.Parse(typeof(RotateMode), projection.DestBbox.Rotate);
 
@@ -136,15 +165,37 @@ namespace RailworkerMegaFreightPack1
 
             Console.WriteLine("Saving result...");
 
-            var outputFilename = "result.png";
+            var outputFilename = randomSkin.Id + ".png";
             var outputMetadataFilename = Path.ChangeExtension(outputFilename, "metadata.json");
+            composedImage.SaveAsPng(outputFilename);
 
             Console.WriteLine("Saving metadata...");
-            File.WriteAllText(outputMetadataFilename, JsonSerializer.Serialize(skins));
+            File.WriteAllText(outputMetadataFilename, JsonSerializer.Serialize(randomSkin));
+
+            Console.WriteLine("Creating autonumbering...");
+
+            var autoNumbering = new List<string>();
+
+            var smallestRarity = randomSkin.Skins.Min(x => x.Rarity);
+            if (smallestRarity < 1) throw new InvalidDataException("Rarity is less then 1");
+
+            var rarities = randomSkin.Skins.Select(x => x.Rarity / smallestRarity).ToArray();
+
+            for (int i = 0; i < randomSkin.Skins.Count; i++)
+            {
+                var rarity = rarities[i];
+                for (int j = 0; j < rarity; j++)
+                {
+                    autoNumbering.Add("0,0," + codeGenerator.Next("33", "84", "4962"));
+                }
+            }
+
+            var autonumberingFilename = Path.ChangeExtension(outputFilename, ".csv");
+            File.WriteAllLines(autonumberingFilename, autoNumbering);
 
             Console.WriteLine("Saving LUA config...");
             var outputLuaConfig = Path.ChangeExtension(outputFilename, "lua");
-            WriteLuaConfig(outputLuaConfig, firstSkin);
+            WriteLuaConfig(outputLuaConfig, randomSkin);
 
             Console.WriteLine("Done");
             Console.WriteLine();
@@ -167,44 +218,52 @@ namespace RailworkerMegaFreightPack1
             File.WriteAllText(destinationFile, lua.ToString());
         }
 
-        private Task<int> RunWaifu2XCommand(string inputFilename, string outputFilename)
+        private async Task<int> RunWaifu2XCommand(string inputFilename, string outputFilename)
         {
-            var processInfo = new ProcessStartInfo();
-            processInfo.CreateNoWindow = true;
-            processInfo.UseShellExecute = false;
-            processInfo.WindowStyle = ProcessWindowStyle.Hidden;
-            processInfo.RedirectStandardError = true;
-            processInfo.RedirectStandardOutput = true;
+            await semaphoreSlim.WaitAsync();
+            try {
+                var processInfo = new ProcessStartInfo();
+                processInfo.CreateNoWindow = true;
+                processInfo.UseShellExecute = false;
+                processInfo.WindowStyle = ProcessWindowStyle.Hidden;
+                processInfo.RedirectStandardError = true;
+                processInfo.RedirectStandardOutput = true;
 
-            processInfo.FileName = "C:\\Users\\Gebruiker\\Downloads\\waifu2x-caffe\\waifu2x-caffe\\waifu2x-caffe-cui.exe";
+                processInfo.FileName = "C:\\Users\\Gebruiker\\Downloads\\waifu2x-caffe\\waifu2x-caffe\\waifu2x-caffe-cui.exe";
 
-            var scaleRatio = "0.5";
-            var noiseLevel = "2";
+                var scaleRatio = "1";
+                var noiseLevel = "2";
 
-            processInfo.Arguments = $"-i \"{inputFilename}\" -o \"{outputFilename}\" --scale_ratio {scaleRatio} --noise_level {noiseLevel}";
+                processInfo.Arguments = $"-i \"{inputFilename}\" -o \"{outputFilename}\" --scale_ratio {scaleRatio} --noise_level {noiseLevel}";
 
-            var process = new Process();
-            process.StartInfo = processInfo;
-            process.EnableRaisingEvents = true;
+                var process = new Process();
+                process.StartInfo = processInfo;
+                process.EnableRaisingEvents = true;
 
-            var tcs = new TaskCompletionSource<int>();
-            process.Exited += (sender, args) =>
+                var tcs = new TaskCompletionSource<int>();
+                process.Exited += (sender, args) =>
+                {
+                    Console.WriteLine("[waifu2x] info: " + process.StandardOutput.ReadToEnd());
+                    if (process.ExitCode == 0)
+                    {
+                    }
+                    else
+                    {
+                        Console.WriteLine("[waifu2x] error: " + process.StandardOutput.ReadToEnd());
+                    }
+
+                    tcs.SetResult(process.ExitCode);
+                    process.Dispose();
+                };
+
+                process.Start();
+
+                var result = await tcs.Task;
+                return result;
+            } finally
             {
-                Console.WriteLine("[waifu2x] info: " + process.StandardOutput.ToString());
-                if (process.ExitCode == 0)
-                {
-                }
-                else
-                {
-                    Console.WriteLine("[waifu2x] error: " + process.StandardOutput.ToString());
-                }
-
-                tcs.SetResult(process.ExitCode);
-                process.Dispose();
-            };
-
-            process.Start();
-            return tcs.Task;
+                semaphoreSlim.Release();
+            }
         }
 
         static void AddPixelmarginsWherePossible(Image<Rgba32> image)

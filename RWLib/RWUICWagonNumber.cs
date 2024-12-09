@@ -98,6 +98,11 @@ namespace RWLib
             vehicleType = RemoveWhiteSpace(vehicleType);
             serialNumber = RemoveWhiteSpace(serialNumber);
 
+            typeOfVehicle = typeOfVehicle.PadLeft(2, '0');
+            countryCode = countryCode.PadLeft(2, '0');
+            vehicleType = vehicleType.PadLeft(4, '0');
+            serialNumber = serialNumber.PadLeft(3, '0');
+
             if (typeOfVehicle.Length != 2) throw new FormatException("Vehicle type should be 2 digits");
             if (countryCode.Length != 2) throw new FormatException("Vehicle type should be 2 digits");
             if (vehicleType.Length != 4) throw new FormatException("Vehicle type should be 3 digits");

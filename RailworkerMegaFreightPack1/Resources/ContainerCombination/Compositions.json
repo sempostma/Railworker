@@ -65,5 +65,72 @@
         }
       }
     ]
+  },
+  {
+    "id": "40ft_1",
+    "name": "Maps 40FT N container",
+    "projections": [
+      {
+        "name": "side",
+        "sourceBbox": {
+          "x": 0,
+          "y": 403,
+          "width": 512,
+          "height": 109
+        },
+        "destBbox": {
+          "x": 0,
+          "y": 118,
+          "width": 512,
+          "height": 109
+        }
+      },
+      {
+        "name": "roof",
+        "sourceBbox": {
+          "x": 0,
+          "y": 0,
+          "width": 108,
+          "height": 278
+        },
+        "destBbox": {
+          "rotate": "Rotate90",
+          "x": 0,
+          "y": 0,
+          "width": 272,
+          "height": 118
+        }
+      },
+      {
+        "name": "back",
+        "sourceBbox": {
+          "x": 184,
+          "y": 147,
+          "width": 128,
+          "height": 127
+        },
+        "destBbox": {
+          "x": 273,
+          "y": 0,
+          "width": 117,
+          "height": 117
+        }
+      },
+      {
+        "name": "front",
+        "sourceBbox": {
+          "x": 315,
+          "y": 147,
+          "width": 128,
+          "height": 127
+        },
+        "destBbox": {
+          "x": 392,
+          "y": 0,
+          "width": 117,
+          "height": 117
+        }
+      }
+    ]
   }
 ]

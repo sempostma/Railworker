@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RWLib.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
@@ -9,6 +10,16 @@ namespace RailworkerMegaFreightPack1
 {
     public static class Utilities
     {
+        public class Logger : IRWLogger
+        {
+            public void Log(RWLogType type, string message)
+            {
+                Console.WriteLine($"[{type}] {message}");
+            }
+        }
+
+        public static Logger ConsoleLogger = new Logger();
+
         public static String ReadFile(String embeddedResource)
         {
             var assembly = Assembly.GetAssembly(typeof(RailworkerMegaFreightPack1.Utilities))!;

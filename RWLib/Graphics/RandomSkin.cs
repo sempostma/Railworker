@@ -10,8 +10,14 @@ namespace RWLib.Graphics
 {
     public class RandomSkin
     {
+        [JsonPropertyName("id")]
+        public string Id { get; set; } = "";
+
         [JsonPropertyName("name")]
         public string Name { get; set; } = "";
+
+        [JsonPropertyName("composition")]
+        public string Composition { get; set; } = "";
         [JsonPropertyName("skins")]
         public List<SkinTexture> Skins { get; set; } = new List<SkinTexture>();
 
