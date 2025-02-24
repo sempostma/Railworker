@@ -439,7 +439,7 @@
 																						<Attribute name="Product">
 																							<cDeltaString>
 																								<Element>
-																									<Value>ContainerPack</Value>
+																									<Value>ContainerPack01</Value>
 																								</Element>
 																							</cDeltaString>
 																						</Attribute>
@@ -592,7 +592,7 @@
 																						<Attribute name="Product">
 																							<cDeltaString>
 																								<Element>
-																									<Value>ContainerPack</Value>
+																									<Value>ContainerPack01</Value>
 																								</Element>
 																							</cDeltaString>
 																						</Attribute>

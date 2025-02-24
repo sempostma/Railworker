@@ -8,6 +8,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Resources\Academy\AfirusContainerPack.json" />
+    <None Remove="Resources\Academy\EmptyVariant.json" />
+    <None Remove="Resources\Academy\RailStudioRgsContainers.json" />
+    <None Remove="Resources\Academy\SGGRSS_A.xml" />
+    <None Remove="Resources\Academy\SGGRSS_B.xml" />
     <None Remove="Resources\DTG_SGGRSS_A.xml" />
     <None Remove="Resources\DTG_SGGRSS_B.xml" />
     <None Remove="Resources\EmptyVariant.json" />
@@ -30,6 +35,13 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="Resources\Academy\AfirusContainerPack.json">
+      <CustomToolNamespace></CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Academy\EmptyVariant.json" />
+    <EmbeddedResource Include="Resources\Academy\RailStudioRgsContainers.json" />
+    <EmbeddedResource Include="Resources\Academy\SGGRSS_A.xml" />
+    <EmbeddedResource Include="Resources\Academy\SGGRSS_B.xml" />
     <EmbeddedResource Include="Resources\DTG\SGGRSS_B.xml" />
     <EmbeddedResource Include="Resources\DTG\Waggonz_SGGRSS_A.xml" />
     <EmbeddedResource Include="Resources\DTG\EmptyVariant.json" />

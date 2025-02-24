@@ -53,6 +53,10 @@ class Program
         //("Orange", "Orange", "SGGRSS_A_orange", "SGGRSS_B_orange"),
     };
 
+    static (string, string, string, string)[] academyWagonTypes = {
+        ("Orange", "Orange", "SGGRSS_A_orange", "SGGRSS_B_orange"),
+    };
+
     static (string, string, string, string, bool)[] wzWagonTypes = {
         ("Blue", "CBRail", "SGGRSS_A", "SGGRSS_B", true),
         ("GATX", "GATX", "SGGRSS_A", "SGGRSS_B", true),
@@ -70,7 +74,7 @@ class Program
 
     public static async Task Run()
     {
-        await GenerateWaggonZVariants();
+        await GenerateAcademyVariants();
     }
 
     public static async Task GenerateWaggonZVariants()
@@ -82,7 +86,7 @@ class Program
         bool includeEmptyVariant = false;
         bool includeWaggonzDefaultContainers = false;
         bool includeScandanavian = false;
-        bool includeAfirusContainers = false;
+        bool includeAfirusContainers = true;
 
         try
         {
@@ -140,7 +144,7 @@ class Program
             {
                 Console.WriteLine("Generating Afirus variants");
                 await CreateAfirusContainerCargos();
-                await CreateWaggonZVariants("WaggonZ.AfirusContainerPack.json", "Afirus", "ContainerPack", "RailNetwork\\Cargo\\sggrss\\{0}.xml");
+                await CreateWaggonZVariants("WaggonZ.AfirusContainerPack.json", "Afirus", "ContainerPack01", "RailNetwork\\Cargo\\sggrss\\{0}.xml");
             }
 
             Console.WriteLine("Done!");
@@ -204,6 +208,45 @@ class Program
         }
     }
 
+    public static async Task GenerateAcademyVariants()
+    {
+        bool includeEmptyVariant = true;
+        bool includeAfirusContainers = true;
+        bool includeRailStudioRgsVariants = true;
+
+        try
+        {
+            Console.WriteLine("Hello, World!");
+
+            // SGGRSS Railstudio Rgs containers
+            if (includeRailStudioRgsVariants)
+            {
+                Console.WriteLine("Generating RailStudio Rgs variants");
+                await CreateAcademyVariants("Academy.RailStudioRgsContainers.json", "RailStudio", "RailVehicles", "Freight\\Cargo\\Containere\\{0}.xml");
+            }
+
+            if (includeEmptyVariant)
+            {
+                Console.WriteLine("Generating Empty variants");
+                await CreateAcademyVariants("Academy.EmptyVariant.json", "", "", "");
+            }
+
+            if (includeAfirusContainers)
+            {
+                Console.WriteLine("Generating Afirus variants");
+                await CreateAfirusContainerCargos();
+                await CreateAcademyVariants("Academy.AfirusContainerPack.json", "Afirus", "ContainerPack01", "RailNetwork\\Cargo\\sggrss\\{0}.xml");
+            }
+
+            Console.WriteLine("Done!");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine(ex);
+        }
+    }
+
+
     public static String ReadFile(String embeddedResource)
     {
         var assembly = Assembly.GetExecutingAssembly();
@@ -265,7 +308,7 @@ class Program
                 {
                     case "Afirus":
                         provider = "Afirus";
-                        product = "ContainerPack";
+                        product = "ContainerPack01";
                         pathFormat = "RailNetwork\\Interactive\\{0}.xml";
                         break;
                     case "NewS":
@@ -311,10 +354,10 @@ class Program
                 children.Add(child);
             }
 
-            var destinationPath = Path.Combine(rwLib.TSPath, "Assets", "Afirus", "ContainerPack", "RailNetwork", "Cargo", "sggrss", variant.filename + ".bin");
+            var destinationPath = Path.Combine(rwLib.TSPath, "Assets", "Afirus", "ContainerPack01", "RailNetwork", "Cargo", "sggrss", variant.filename + ".bin");
             var tempPath = await rwLib.Serializer.SerializeWithSerzExe(template);
 
-            Directory.CreateDirectory(Path.GetDirectoryName(destinationPath));
+            Directory.CreateDirectory(Path.GetDirectoryName(destinationPath)!);
             File.Move(tempPath, destinationPath, true);
         }
     }
@@ -387,6 +430,7 @@ class Program
 
                     var destinationPath = Path.Combine(rwLib.TSPath, "Assets", "Waggonz", "Addon", "RailVehicles", "Freight", "sggrss", wagonType, wagonFilename + ".bin");
                     var tempPath = await rwLib.Serializer.SerializeWithSerzExe(t.Item2);
+                    Directory.CreateDirectory(Path.GetDirectoryName(destinationPath)!);
 
                     File.Move(tempPath, destinationPath, true);
                 }
@@ -452,6 +496,71 @@ class Program
                     var destinationPath = Path.Combine(rwLib.TSPath, "Assets", "DTG", "CologneKoblenz", "RailVehicles", "Freight", "SGGRSS", wagonFilename + ".bin");
                     var tempPath = await rwLib.Serializer.SerializeWithSerzExe(t.Item2);
 
+                    File.Move(tempPath, destinationPath, true);
+                }
+            });
+        }
+    }
+
+    public static async Task CreateAcademyVariants(string jsonFile, string provider, string product, string containerPathFormat)
+    {
+        var options = new JsonSerializerOptions
+        {
+            ReadCommentHandling = JsonCommentHandling.Skip,
+            AllowTrailingCommas = true
+        };
+        var containers = JsonSerializer.Deserialize<List<FileItem>>(ReadFile(jsonFile), options);
+        var templateAOrig = rwLib.Serializer.ParseXMLSafe(ReadFile("Academy.SGGRSS_A.xml"));
+        var templateBOrig = rwLib.Serializer.ParseXMLSafe(ReadFile("Academy.SGGRSS_B.xml"));
+
+        foreach (var (wagonType, inGameType, a, b) in academyWagonTypes)
+        {
+            ParallelOptions parallelOptions = new()
+            {
+                MaxDegreeOfParallelism = 10
+            };
+            await Parallel.ForEachAsync(containers, parallelOptions, async (container, _) =>
+            {
+                string containerName = Path.GetFileNameWithoutExtension(container.filename);
+                string containerNiceName = container.name;
+
+                var templateA = new XDocument(templateAOrig);
+                var templateB = new XDocument(templateBOrig);
+
+                foreach (var t in new[] { ("A", templateA), ("B", templateB) })
+                {
+                    string wagonName = $"SGGRSS {containerNiceName} {t.Item1}";
+                    string wagonFilename = $"[Afirus] {wagonName}";
+                    t.Item2.Descendants("Name").First().Value = wagonName;
+                    t.Item2.Descendants("English").First().Value = wagonName;
+
+                    var geo = "DTG\\Academy\\RailVehicles\\Freight\\SGGRSS\\[00]" + (t.Item1 == "A" ? a : b);
+                    t.Item2.Descendants("GeometryID").First().Value = geo;
+                    t.Item2.Descendants("CollisionGeometryID").First().Value = geo;
+
+                    t.Item2.Descendants("CargoBlueprintID").First().Descendants("Provider").First().Value = provider;
+                    t.Item2.Descendants("CargoBlueprintID").First().Descendants("Product").First().Value = product;
+                    t.Item2.Descendants("CargoBlueprintID").First().Descendants("BlueprintID").First().Value = String.Format(containerPathFormat, containerName);
+
+                    var yAxisIdx = 14;
+                    var oldYValue = float.Parse(t.Item2.Descendants("cContainerCargoDef").First().Descendants("Element").First().Elements().ToArray()[yAxisIdx].Value, CultureInfo.InvariantCulture);
+                    var newYValue = (oldYValue + container.moveZ).ToString(CultureInfo.InvariantCulture);
+                    t.Item2.Descendants("cContainerCargoDef").First().Descendants("Element").First().Elements().ToArray()[yAxisIdx].Value = newYValue;
+
+                    var xAxisIdx = 12;
+                    var oldXValue = float.Parse(t.Item2.Descendants("cContainerCargoDef").First().Descendants("Element").First().Elements().ToArray()[xAxisIdx].Value, CultureInfo.InvariantCulture);
+                    var newXValue = (oldXValue + container.moveX).ToString(CultureInfo.InvariantCulture);
+                    t.Item2.Descendants("cContainerCargoDef").First().Descendants("Element").First().Elements().ToArray()[xAxisIdx].Value = newXValue;
+
+                    var xScaleAxisIdx = 0;
+                    var oldXScaleValue = float.Parse(t.Item2.Descendants("cContainerCargoDef").First().Descendants("Element").First().Elements().ToArray()[xScaleAxisIdx].Value, CultureInfo.InvariantCulture);
+                    var newXScaleValue = (oldXScaleValue + container.scaleX).ToString(CultureInfo.InvariantCulture);
+                    t.Item2.Descendants("cContainerCargoDef").First().Descendants("Element").First().Elements().ToArray()[xScaleAxisIdx].Value = newXScaleValue;
+
+                    var destinationPath = Path.Combine(rwLib.TSPath, "Assets", "DTG", "Academy", "RailVehicles", "Freight", "SGGRSS", "[Afirus]", wagonFilename + ".bin");
+                    var tempPath = await rwLib.Serializer.SerializeWithSerzExe(t.Item2);
+
+                    Directory.CreateDirectory(Path.GetDirectoryName(destinationPath)!);
                     File.Move(tempPath, destinationPath, true);
                 }
             });

@@ -96,7 +96,7 @@ namespace RailworkerMegaFreightPack1
                 container45,
                 sgnsWagons,
                 "Afirus",
-                "ContainerPack",
+                "ContainerPack01",
                 "RailNetwork\\Interactive\\{0}.xml",
                 "CT NS Sgns {0} 45ft {1} by Afirus",
                 "ChrisTrains\\RailSimulator\\RailVehicles\\Freight\\NS Sgns\\[Afirus]GW\\NS Sgns {0} {1}"
@@ -120,7 +120,7 @@ namespace RailworkerMegaFreightPack1
                     container20,
                     sgnsWagons,
                     "Afirus",
-                    "ContainerPack",
+                    "ContainerPack01",
                     "RailNetwork\\Interactive\\{0}.xml",
                     "CT NS Sgns {0} 20ftx3 {1} by Afirus",
                     "ChrisTrains\\RailSimulator\\RailVehicles\\Freight\\NS Sgns\\[Afirus]GW\\NS Sgns {0} {1}"

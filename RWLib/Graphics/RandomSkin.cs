@@ -8,6 +8,25 @@ using System.Threading.Tasks;
 
 namespace RWLib.Graphics
 {
+    public class RandomSkinGroup
+    {
+        [JsonPropertyName("id")]
+        public string Id { get; set; } = "";
+
+        [JsonPropertyName("randomSkins")]
+        public List<RandomSkin> RandomSkins { get; set; } = new List<RandomSkin>();
+
+        public static List<RandomSkinGroup> FromJson(string jsonString)
+        {
+            var options = new JsonSerializerOptions
+            {
+                ReadCommentHandling = JsonCommentHandling.Skip,
+                AllowTrailingCommas = true
+            };
+            return JsonSerializer.Deserialize<List<RandomSkinGroup>>(jsonString, options)!;
+        }
+    }
+
     public class RandomSkin
     {
         [JsonPropertyName("id")]
@@ -20,16 +39,8 @@ namespace RWLib.Graphics
         public string Composition { get; set; } = "";
         [JsonPropertyName("skins")]
         public List<SkinTexture> Skins { get; set; } = new List<SkinTexture>();
-
-        public static List<RandomSkin> FromJson(string jsonString)
-        {
-            var options = new JsonSerializerOptions
-            {
-                ReadCommentHandling = JsonCommentHandling.Skip,
-                AllowTrailingCommas = true
-            };
-            return JsonSerializer.Deserialize<List<RandomSkin>>(jsonString, options)!;
-        }
+        [JsonPropertyName("fullSkinsAmount")]
+        public int FullSkinsAmount { get; set; } = 0;
 
         public class SkinTexture
         {
@@ -38,7 +49,7 @@ namespace RWLib.Graphics
             [JsonPropertyName("name")]
             public string Name { get; set; } = ""; // From Chat GPT or manually
             [JsonPropertyName("rarity")]
-            public int Rarity { get; set; } = 0; // A value from 0 to 100
+            public int Rarity { get; set; } = 1; // A value from 0 to 100
             [JsonPropertyName("group")]
             public string Group { get; set; } = "";
             [JsonPropertyName("texture")]

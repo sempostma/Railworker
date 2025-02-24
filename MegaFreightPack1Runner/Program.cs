@@ -13,10 +13,10 @@ namespace MegaFreightPack1Runner
 
         static async Task Run()
         {
-            //RandomContainerGenerator generator = new RandomContainerGenerator();
-            //await generator.Build();
+            RandomContainerGenerator generator = new RandomContainerGenerator();
+             await generator.Build(new CancellationTokenSource().Token);
 
-            await Scripts.CreateRandomSkins();
+            //await Scripts.CreateRandomSkins();
             //await Scripts.ConvertToPNGsForPreview();
 
             //CTSgnsGenerator gen = new CTSgnsGenerator();

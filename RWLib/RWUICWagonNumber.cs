@@ -103,10 +103,10 @@ namespace RWLib
             vehicleType = vehicleType.PadLeft(4, '0');
             serialNumber = serialNumber.PadLeft(3, '0');
 
-            if (typeOfVehicle.Length != 2) throw new FormatException("Vehicle type should be 2 digits");
-            if (countryCode.Length != 2) throw new FormatException("Vehicle type should be 2 digits");
-            if (vehicleType.Length != 4) throw new FormatException("Vehicle type should be 3 digits");
-            if (serialNumber.Length != 3) throw new FormatException("Vehicle type should be 3 digits");
+            if (typeOfVehicle.Length != 2) throw new FormatException("Type of Vehicle should be 2 digits");
+            if (countryCode.Length != 2) throw new FormatException("Country code should be 2 digits");
+            if (vehicleType.Length != 4) throw new FormatException("Vehicle type should be 4 digits");
+            if (serialNumber.Length != 3) throw new FormatException("Serial number should be 3 digits");
 
             string wagonNumber = typeOfVehicle + countryCode + vehicleType + serialNumber;
 

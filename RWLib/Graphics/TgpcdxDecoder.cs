@@ -59,12 +59,13 @@ namespace RWLib.Graphics
             switch (format)
             {
                 case DxFormat.HC_IMAGE_FORMAT_COMPRESSED_EXPL_ALPHA:
-                    return CompressionFormat.Bc1WithAlpha;
+                    return CompressionFormat.Bc2;
 
                 case DxFormat.HC_IMAGE_FORMAT_COMPRESSED:
                     return CompressionFormat.Bc1;
 
-                default: return CompressionFormat.Unknown;
+                default: 
+                    return CompressionFormat.Unknown;
 
             }
         }

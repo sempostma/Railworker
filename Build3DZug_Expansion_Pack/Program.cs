@@ -72,7 +72,7 @@ class Program
             {
                 Console.WriteLine("Generating Afirus variants");
                 await CreateAfirusContainerCargos();
-                await Create3DZugKIVariants("AfirusContainerPack.json", "Afirus", "ContainerPack", "RailNetwork\\Cargo\\sggnss\\{0}.xml");
+                await Create3DZugKIVariants("AfirusContainerPack.json", "Afirus", "ContainerPack01", "RailNetwork\\Cargo\\sggnss\\{0}.xml");
             }
 
             Console.WriteLine("Done!");
@@ -144,7 +144,7 @@ class Program
                 {
                     case "Afirus":
                         provider = "Afirus";
-                        product = "ContainerPack";
+                        product = "ContainerPack01";
                         pathFormat = "RailNetwork\\Interactive\\{0}.xml";
                         break;
                     case "NewS":
@@ -195,7 +195,7 @@ class Program
                 children.Add(child);
             }
 
-            var destinationPath = Path.Combine(rwLib.TSPath, "Assets", "Afirus", "ContainerPack", "RailNetwork", "Cargo", "sggnss", variant.filename + ".bin");
+            var destinationPath = Path.Combine(rwLib.TSPath, "Assets", "Afirus", "ContainerPack01", "RailNetwork", "Cargo", "sggnss", variant.filename + ".bin");
             var tempPath = await rwLib.Serializer.SerializeWithSerzExe(template);
 
             Directory.CreateDirectory(Path.GetDirectoryName(destinationPath));

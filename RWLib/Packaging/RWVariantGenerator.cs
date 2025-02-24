@@ -117,7 +117,7 @@ namespace RWLib.Packaging
                     {
                         case "Afirus":
                             provider = "Afirus";
-                            product = "ContainerPack";
+                            product = "ContainerPack01";
                             pathFormat = "RailNetwork\\Interactive\\{0}.xml";
                             break;
                         case "NewS":

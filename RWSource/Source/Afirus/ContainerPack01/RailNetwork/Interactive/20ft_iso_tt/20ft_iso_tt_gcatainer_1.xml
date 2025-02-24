@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<cReskinBlueprint>
+<cSceneryBlueprint>
 	<Element>
 		<Value>
 			<Attribute name="Name">
@@ -20,7 +20,7 @@
 											<Attribute name="English">
 												<cDeltaString>
 													<Element>
-														<Value>[Afirus] 20ft ISO TT Den Hartogh</Value>
+														<Value>[Afirus] 20ft ISO TT GCATainer</Value>
 													</Element>
 												</cDeltaString>
 											</Attribute>
@@ -98,56 +98,56 @@
 											<Attribute name="English">
 												<cDeltaString>
 													<Element>
-														<Value />
+														<Value>20ft ISO Tanktainer</Value>
 													</Element>
 												</cDeltaString>
 											</Attribute>
 											<Attribute name="French">
 												<cDeltaString>
 													<Element>
-														<Value />
+														<Value>20ft ISO Tanktainer</Value>
 													</Element>
 												</cDeltaString>
 											</Attribute>
 											<Attribute name="Italian">
 												<cDeltaString>
 													<Element>
-														<Value />
+														<Value>20ft ISO Tanktainer</Value>
 													</Element>
 												</cDeltaString>
 											</Attribute>
 											<Attribute name="German">
 												<cDeltaString>
 													<Element>
-														<Value />
+														<Value>20ft ISO Tanktainer</Value>
 													</Element>
 												</cDeltaString>
 											</Attribute>
 											<Attribute name="Spanish">
 												<cDeltaString>
 													<Element>
-														<Value />
+														<Value>20ft ISO Tanktainer</Value>
 													</Element>
 												</cDeltaString>
 											</Attribute>
 											<Attribute name="Dutch">
 												<cDeltaString>
 													<Element>
-														<Value />
+														<Value>20ft ISO Tanktainer</Value>
 													</Element>
 												</cDeltaString>
 											</Attribute>
 											<Attribute name="Polish">
 												<cDeltaString>
 													<Element>
-														<Value />
+														<Value>20ft ISO Tanktainer</Value>
 													</Element>
 												</cDeltaString>
 											</Attribute>
 											<Attribute name="Russian">
 												<cDeltaString>
 													<Element>
-														<Value />
+														<Value>20ft ISO Tanktainer</Value>
 													</Element>
 												</cDeltaString>
 											</Attribute>
@@ -172,7 +172,7 @@
 							<Attribute name="Category">
 								<iBrowseableBlueprint-eBrowseableCategory>
 									<Element>
-										<Value>eUncategorised</Value>
+										<Value>eClutter</Value>
 									</Element>
 								</iBrowseableBlueprint-eBrowseableCategory>
 							</Attribute>
@@ -187,71 +187,259 @@
 					</Element>
 				</iBrowseableBlueprint-cBrowseInformation>
 			</Attribute>
-			<Attribute name="ReskinAssetBpId">
-				<iBlueprintLibrary-cAbsoluteBlueprintID>
+			<Attribute name="RenderComponent">
+				<cSceneryRenderBlueprint>
 					<Element>
 						<Value>
-							<Attribute name="BlueprintSetID">
-								<iBlueprintLibrary-cBlueprintSetID>
+							<Attribute name="PrimaryNamedTextureSet">
+								<iBlueprintLibrary-cAbsoluteBlueprintID>
 									<Element>
 										<Value>
-											<Attribute name="Provider">
-												<cDeltaString>
+											<Attribute name="BlueprintSetID">
+												<iBlueprintLibrary-cBlueprintSetID>
 													<Element>
-														<Value>Afirus</Value>
+														<Value>
+															<Attribute name="Provider">
+																<cDeltaString>
+																	<Element>
+																		<Value />
+																	</Element>
+																</cDeltaString>
+															</Attribute>
+															<Attribute name="Product">
+																<cDeltaString>
+																	<Element>
+																		<Value />
+																	</Element>
+																</cDeltaString>
+															</Attribute>
+														</Value>
 													</Element>
-												</cDeltaString>
+												</iBlueprintLibrary-cBlueprintSetID>
 											</Attribute>
-											<Attribute name="Product">
+											<Attribute name="BlueprintID">
 												<cDeltaString>
 													<Element>
-														<Value>ContainerPack</Value>
+														<Value />
 													</Element>
 												</cDeltaString>
 											</Attribute>
 										</Value>
 									</Element>
-								</iBlueprintLibrary-cBlueprintSetID>
+								</iBlueprintLibrary-cAbsoluteBlueprintID>
 							</Attribute>
-							<Attribute name="BlueprintID">
+							<Attribute name="SecondaryNamedTextureSet">
+								<iBlueprintLibrary-cAbsoluteBlueprintID>
+									<Element>
+										<Value>
+											<Attribute name="BlueprintSetID">
+												<iBlueprintLibrary-cBlueprintSetID>
+													<Element>
+														<Value>
+															<Attribute name="Provider">
+																<cDeltaString>
+																	<Element>
+																		<Value />
+																	</Element>
+																</cDeltaString>
+															</Attribute>
+															<Attribute name="Product">
+																<cDeltaString>
+																	<Element>
+																		<Value />
+																	</Element>
+																</cDeltaString>
+															</Attribute>
+														</Value>
+													</Element>
+												</iBlueprintLibrary-cBlueprintSetID>
+											</Attribute>
+											<Attribute name="BlueprintID">
+												<cDeltaString>
+													<Element>
+														<Value />
+													</Element>
+												</cDeltaString>
+											</Attribute>
+										</Value>
+									</Element>
+								</iBlueprintLibrary-cAbsoluteBlueprintID>
+							</Attribute>
+							<Attribute name="GeometryID">
 								<cDeltaString>
 									<Element>
-										<Value>RailNetwork\Interactive\20ft_iso_tt\20ft_iso_tt_hoyer_1.xml</Value>
+										<Value>RailNetwork\Interactive\20ft_iso_tt\20ft_iso_tt_gcatainer_1.igs</Value>
 									</Element>
 								</cDeltaString>
 							</Attribute>
+							<Attribute name="CollisionGeometryID">
+								<cDeltaString>
+									<Element>
+										<Value />
+									</Element>
+								</cDeltaString>
+							</Attribute>
+							<Attribute name="Pickable">
+								<eBoolean>
+									<Element>
+										<Value>eTrue</Value>
+									</Element>
+								</eBoolean>
+							</Attribute>
+							<Attribute name="CastsShadows">
+								<eBoolean>
+									<Element>
+										<Value>eTrue</Value>
+									</Element>
+								</eBoolean>
+							</Attribute>
+							<Attribute name="ShadowType">
+								<eShadowType>
+									<Element>
+										<Value>eShadowType_None</Value>
+									</Element>
+								</eShadowType>
+							</Attribute>
+							<Attribute name="ViewType">
+								<cSceneryRenderBlueprint-eViewType>
+									<Element>
+										<Value>ExternalView</Value>
+									</Element>
+								</cSceneryRenderBlueprint-eViewType>
+							</Attribute>
+							<Attribute name="Palettised">
+								<eBoolean>
+									<Element>
+										<Value>eFalse</Value>
+									</Element>
+								</eBoolean>
+							</Attribute>
+							<Attribute name="Palette0Index">
+								<sInt32>
+									<Element>
+										<Value>-1</Value>
+									</Element>
+								</sInt32>
+							</Attribute>
+							<Attribute name="Palette1Index">
+								<sInt32>
+									<Element>
+										<Value>-1</Value>
+									</Element>
+								</sInt32>
+							</Attribute>
+							<Attribute name="Palette2Index">
+								<sInt32>
+									<Element>
+										<Value>-1</Value>
+									</Element>
+								</sInt32>
+							</Attribute>
+							<Attribute name="HeatHaze">
+								<__Indexed__cSceneryRenderBlueprint-sHeatHaze>
+									<Element>
+										<Value />
+									</Element>
+								</__Indexed__cSceneryRenderBlueprint-sHeatHaze>
+							</Attribute>
+							<Attribute name="TexText">
+								<__Indexed__cSceneryRenderBlueprint-sTexText>
+									<Element>
+										<Value />
+									</Element>
+								</__Indexed__cSceneryRenderBlueprint-sTexText>
+							</Attribute>
+							<Attribute name="ProjectedLightElement">
+								<__Indexed__cSceneryRenderBlueprint-sProjectedLight>
+									<Element>
+										<Value />
+									</Element>
+								</__Indexed__cSceneryRenderBlueprint-sProjectedLight>
+							</Attribute>
+							<Attribute name="Instancable">
+								<bool>
+									<Element>
+										<Value>0</Value>
+									</Element>
+								</bool>
+							</Attribute>
+							<Attribute name="DetailLevelGenerationRange">
+								<cSceneryRenderBlueprint-sDetailLevelGenerationRange>
+									<Element>
+										<Value>
+											<Attribute name="HighestLevel_1isHighest">
+												<sInt32>
+													<Element>
+														<Value>1</Value>
+													</Element>
+												</sInt32>
+											</Attribute>
+											<Attribute name="LowestLevel_10isLowest">
+												<sInt32>
+													<Element>
+														<Value>10</Value>
+													</Element>
+												</sInt32>
+											</Attribute>
+										</Value>
+									</Element>
+								</cSceneryRenderBlueprint-sDetailLevelGenerationRange>
+							</Attribute>
 						</Value>
 					</Element>
-				</iBlueprintLibrary-cAbsoluteBlueprintID>
+				</cSceneryRenderBlueprint>
 			</Attribute>
-			<Attribute name="TextureEntry">
-				<__Indexed__cReskinBlueprint-sTextureEntry>
+			<Attribute name="PosOriComponent">
+				<cPosOriBlueprint>
+					<Element>
+						<Value />
+					</Element>
+				</cPosOriBlueprint>
+			</Attribute>
+			<Attribute name="ContainerComponent">
+				<cEntityContainerBlueprint>
 					<Element>
 						<Value>
-							<cReskinBlueprint-sTextureEntry>
-								<Element>
-									<Value>
-										<Attribute name="TextureName">
-											<cDeltaString>
-												<Element>
-													<Value>20ft_iso_tt_hoyer_1</Value>
-												</Element>
-											</cDeltaString>
-										</Attribute>
-										<Attribute name="TextureID">
-											<cDeltaString>
-												<Element>
-													<Value>RailNetwork\Interactive\20ft_iso_tt\Textures\20ft_iso_tt_gcatainer_1</Value>
-												</Element>
-											</cDeltaString>
-										</Attribute>
-									</Value>
-								</Element>
-							</cReskinBlueprint-sTextureEntry>
+							<Attribute name="TrackTerrainInEditor">
+								<bool>
+									<Element>
+										<Value>0</Value>
+									</Element>
+								</bool>
+							</Attribute>
+							<Attribute name="Children">
+								<__Indexed__cEntityContainerBlueprint-sChild>
+									<Element>
+										<Value />
+									</Element>
+								</__Indexed__cEntityContainerBlueprint-sChild>
+							</Attribute>
 						</Value>
 					</Element>
-				</__Indexed__cReskinBlueprint-sTextureEntry>
+				</cEntityContainerBlueprint>
+			</Attribute>
+			<Attribute name="CollisionComponent">
+				<cCollisionComponentBlueprint>
+					<Element>
+						<Value>
+							<Attribute name="Boxes">
+								<__Indexed__cHcR3dBox>
+									<Element>
+										<Value />
+									</Element>
+								</__Indexed__cHcR3dBox>
+							</Attribute>
+							<Attribute name="RequiredAtEndOfTrack">
+								<bool>
+									<Element>
+										<Value>0</Value>
+									</Element>
+								</bool>
+							</Attribute>
+						</Value>
+					</Element>
+				</cCollisionComponentBlueprint>
 			</Attribute>
 		</Value>
 	</Element>
-</cReskinBlueprint>
+</cSceneryBlueprint>

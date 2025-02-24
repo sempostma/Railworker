@@ -417,7 +417,7 @@
               <BlueprintSetID>
                 <iBlueprintLibrary-cBlueprintSetID>
                   <Provider d:type="cDeltaString">Afirus</Provider>
-                  <Product d:type="cDeltaString">ContainerPack</Product>
+                  <Product d:type="cDeltaString">ContainerPack01</Product>
                 </iBlueprintLibrary-cBlueprintSetID>
               </BlueprintSetID>
               <BlueprintID d:type="cDeltaString">RailNetwork\Interactive\ki_45ft_hc_pw\ki_45ft_hc_pw_unit45_1.xml</BlueprintID>

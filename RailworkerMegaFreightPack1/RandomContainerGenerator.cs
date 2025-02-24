@@ -22,6 +22,11 @@ using PdfSharp.Drawing;
 using PdfSharp.Pdf;
 using System.Collections.Concurrent;
 using SixLabors.ImageSharp.Formats.Png;
+using BCnEncoder.Decoder;
+using BCnEncoder.ImageSharp;
+using System.Buffers.Text;
+using System.Threading.Channels;
+using System.Threading;
 
 namespace RailworkerMegaFreightPack1
 {
@@ -50,6 +55,9 @@ namespace RailworkerMegaFreightPack1
     public class RandomContainerGenerator
     {
         private RWLibrary rwLib;
+        private List<Composition> compositions;
+        private List<RandomSkinGroup> randomSkinGroups;
+        private List<FileItem> containers45;
         private UICCodeGenerator codeGenerator = new UICCodeGenerator();
         static SemaphoreSlim semaphoreSlim = new SemaphoreSlim(1, 1);
 
@@ -64,54 +72,117 @@ namespace RailworkerMegaFreightPack1
         public RandomContainerGenerator()
         {
             rwLib = new RWLibrary(new RWLibOptions { Logger = new Logger() });
+            randomSkinGroups = RandomSkinGroup.FromJson(ReadFile("ContainerCombination.RandomSkins.json"));
+            containers45 = FileItem.FromJson(ReadFile("Malex95_ContainerPack01.45_HC.json"));
+            compositions = Composition.FromJson(ReadFile("ContainerCombination.Compositions.json"));
         }
 
-        public async Task Build()
+        public async Task Build(CancellationToken cToken)
         {
-            var compositions = Composition.FromJson(ReadFile("ContainerCombination.Compositions.json"));
-            var randomSkins = RandomSkin.FromJson(ReadFile("ContainerCombination.RandomSkins.json"));
-            var containers45 = FileItem.FromJson(ReadFile("Malex95_ContainerPack01.45_HC.json"));
-
-            foreach(var randomskin in randomSkins)
+            foreach(var randomskinGroup in randomSkinGroups)
             {
-                var composition = compositions.FirstOrDefault(x => x.Id == randomskin.Composition);
-                if (composition == null) throw new InvalidDataException("Could not find composition: " + randomskin.Composition);
+                // TODO Remove
+                if (randomskinGroup.Id.StartsWith("782tt") == false) continue;
 
-                await BuildRandomSkin(randomskin, composition);
+                var compositions = this.compositions.Where(x => randomskinGroup.RandomSkins.Select(y => y.Composition).Contains(x.Id)).ToList()!;
+
+                if (compositions.GroupBy(x => x.ComposedImageHeight).Count() > 1)
+                    throw new InvalidDataException("Compositions have different heights: " + String.Join(", ", compositions.Select(x => x.ComposedImageHeight)));
+                if (compositions.GroupBy(x => x.ComposedImageWidth).Count() > 1)
+                    throw new InvalidDataException("Compositions have different widths: " + String.Join(", ", compositions.Select(x => x.ComposedImageWidth)));
+
+                var composedImageWidth = compositions.First().ComposedImageWidth;
+                var composedImageHeight = compositions.First().ComposedImageHeight;
+
+                var composedImage = new Image<Rgba32>(composedImageWidth, composedImageHeight);
+
+                var tasks = CreateTasks(randomskinGroup, composedImage, cToken);
+
+                ParallelOptions parallelOptions = new()
+                {
+                    MaxDegreeOfParallelism = 10, // prevent accessing the same file at once
+                    CancellationToken = cToken
+                };
+
+                //var container45NameFromTexture = new Regex(@"GW_45FT_(.+?)[\\/]Childs[\\/]textures[\\/]45_([^\.]+)");
+
+                await Parallel.ForEachAsync(tasks, parallelOptions, async (generatotor, cToken) => await generatotor.Build(cToken));
+
+                Console.WriteLine("Adding island margins...");
+
+                AddPixelmarginsWherePossible(composedImage);
+
+                Console.WriteLine("Saving result...");
+
+                var outputFilename = randomskinGroup.Id + ".png";
+                composedImage.SaveAsPng(outputFilename);
+
+                Console.WriteLine("Creating autonumbering...");
+
+                var autoNumbering = new List<string>();
+
+                var skins = randomskinGroup.RandomSkins.SelectMany(x => x.Skins).ToList();
+                var smallestRarity = skins.Min(x => x.Rarity);
+                if (smallestRarity < 1) throw new InvalidDataException("Rarity is less then 1");
+
+                var rarities = skins.Select(x => x.Rarity / smallestRarity).ToArray();
+
+                // We used to use rarity as a multiplier but now we use it order it so we can reuse the autonumbering accross different skins
+                for (int i = 0; i < skins.Count(); i++)
+                {
+                    var amountOfSkins = (((float)skins.Count() - i) / skins.Count()) * 4.0;
+                    for (int j = 0; j < amountOfSkins; j++)
+                    {
+                        var uid = codeGenerator.Next("33", "84", "4962");
+                        autoNumbering.Add("0,0," + uid + "_" + ((i + 1).ToString("D2")));
+                    }
+                }
+
+                var autonumberingFilename = Path.ChangeExtension(outputFilename, ".csv");
+                File.WriteAllLines(autonumberingFilename, autoNumbering);
+
+                Console.WriteLine("Done");
+                Console.WriteLine();
             }
         }
 
-        public async Task BuildRandomSkin(RandomSkin randomSkin, Composition composition)
+        class ComposedTextureGenerator
         {
-            var basePath = Path.Combine(rwLib.TSPath, "Assets\\Alex95\\ContainerPack01\\RailNetwork\\Interactive");
+            public required RWLibrary RWLib { get; set; }
+            public required RandomSkin.SkinTexture Texture { get; set; }
+            public required Composition Composition { get; set; }
+            public required Image<Rgba32> ComposedImage { get; set; }
 
-            Console.WriteLine("Creating composition: " + composition.Name);
+            public required int BaseX { get; set; }
+            public required int BaseY { get; set; }
 
-            var composedImage = new Image<Rgba32>(2048, 2048);
-
-            var count = Math.Min(randomSkin.Skins.Count, 36);
-
-            var cancel = new CancellationTokenSource();
-
-            ParallelOptions parallelOptions = new()
+            public async Task Build(CancellationToken cancellationToken)
             {
-                MaxDegreeOfParallelism = 10,
-                CancellationToken = cancel.Token
-            };
+                var basePath = Path.Combine(RWLib.TSPath, "Assets\\Alex95\\ContainerPack01\\RailNetwork\\Interactive");
+                basePath = String.IsNullOrEmpty(Composition.BasePath) ? basePath : Path.Combine(RWLib.TSPath, "Assets", Composition.BasePath);
 
-            //var container45NameFromTexture = new Regex(@"GW_45FT_(.+?)[\\/]Childs[\\/]textures[\\/]45_([^\.]+)");
-
-            await Parallel.ForEachAsync(Enumerable.Range(0, count), parallelOptions, async (i, cToken) =>
-            {
-                int baseX = i % 4 * 512;
-                int baseY = (i / 4) * 227;
-
-                var texture = randomSkin.Skins[i].Texture;
+                var texture = Texture.Texture;
+                if (String.IsNullOrEmpty(texture)) return;
                 var inputFile = Path.Combine(basePath, texture);
 
-                Console.WriteLine("projecting: " + texture + $" ({i + 1}/{count})");
+                Image<Rgba32> image;
+                if (texture.EndsWith(".TgPcDx"))
+                {
+                    image = await RWLib.TgPcDxLoader.LoadTgPcDx(inputFile);
+                }
+                else if (texture.EndsWith(".dds"))
+                {
+                    var ddsDecoder = new BcDecoder();
+                    using (var stream = File.OpenRead(inputFile))
+                    {
+                        image = await ddsDecoder.DecodeToImageRgba32Async(stream);
+                    }
+                }
+                else
+                {
+                    image = await Image.LoadAsync<Rgba32>(inputFile);
+                }
 
-                var image = await rwLib.TgPcDxLoader.LoadTgPcDx(inputFile);
                 var tempPath = Path.GetTempPath();
                 var tempFilename = Path.Join(tempPath, "RWLib", "Tgpcdx", Path.ChangeExtension(texture, null) + "-input.png");
                 var outputFilename = Path.Join(tempPath, "RWLib", "Tgpcdx", Path.ChangeExtension(texture, null) + "-output.png");
@@ -119,86 +190,201 @@ namespace RailworkerMegaFreightPack1
 
                 image.SaveAsPng(tempFilename);
 
-                bool useWaifu = false;
+                cancellationToken.ThrowIfCancellationRequested();
+
+                bool useWaifu = Composition.Waifu2xEnabled;
 
                 if (useWaifu)
                 {
                     if (File.Exists(outputFilename) == false)
                     {
-                        await RunWaifu2XCommand(tempFilename, outputFilename);
+                        try
+                        {
+                            await RunWaifu2XCommand(tempFilename, outputFilename, cancellationToken, Composition.Waifu2xScaleRatio, Composition.Waifu2xNoiseLevel);
+                            cancellationToken.ThrowIfCancellationRequested();
+                        }
+                        catch (Exception ex)
+                        {
+                            Console.WriteLine("error happened while processing: " + outputFilename);
+                            throw ex;
+                        }
                     }
-                } else
+                }
+                else
                 {
                     File.Copy(tempFilename, outputFilename, true);
+                    cancellationToken.ThrowIfCancellationRequested();
                 }
 
                 image = Image.Load<Rgba32>(outputFilename);
-                image.Mutate(x => x.Resize(512, 512));
+                float inputRatioX = (float)image.Width / Composition.InputImageResizeWidth;
+                float inputRatioY = (float)image.Height / Composition.InputImageResizeHeight;
 
-                foreach (var projection in composition.Projections)
+                cancellationToken.ThrowIfCancellationRequested();
+
+                foreach (var projection in Composition.Projections)
                 {
-                    Console.WriteLine("Projecting " + projection.Name);
-
-                    Image<Rgba32> cutOutRegion = image.Clone(ctx => ctx.Crop(new Rectangle(
+                    var cropRect = new Rectangle(
                         projection.SourceBbox.X,
                         image.Height - (projection.SourceBbox.Y + projection.SourceBbox.Height),
                         projection.SourceBbox.Width,
                         projection.SourceBbox.Height
-                    )));
+                    );
+
+                    cropRect = new Rectangle(
+                        (int)(cropRect.X * inputRatioX),
+                        (int)(cropRect.Y * inputRatioY),
+                        (int)(cropRect.Width * inputRatioX),
+                        (int)(cropRect.Height * inputRatioY)
+                    );
+
+                    Console.WriteLine($"Projecting {projection.Name}");
+
+                    Image<Rgba32> cutOutRegion = image.Clone(ctx => ctx.Crop(cropRect));
+
+                    cancellationToken.ThrowIfCancellationRequested();
 
                     var rotation = (RotateMode)Enum.Parse(typeof(RotateMode), projection.DestBbox.Rotate);
 
                     if (rotation != RotateMode.None) cutOutRegion.Mutate(ctx => ctx.Rotate(rotation));
 
-                    cutOutRegion.Mutate(ctx => ctx.Resize(projection.DestBbox.Width, projection.DestBbox.Height));
+                    cancellationToken.ThrowIfCancellationRequested();
 
-                    var destX = projection.DestBbox.X + baseX;
-                    var destY = 2048 - (projection.DestBbox.Y + baseY + projection.DestBbox.Height);
+                    var destWidth = (int)(projection.DestBbox.Width * Composition.OutputScaleX);
+                    var destHeight = (int)(projection.DestBbox.Height * Composition.OutputScaleX);
 
-                    composedImage.Mutate(ctx => ctx.DrawImage(cutOutRegion, new Point(destX, destY), 1f));
+                    cutOutRegion.Mutate(ctx => ctx.Resize(destWidth, destHeight, KnownResamplers.NearestNeighbor));
+
+                    cancellationToken.ThrowIfCancellationRequested();
+
+                    var destX = (int)(projection.DestBbox.X * Composition.OutputScaleX) + BaseX;
+                    var destY = Composition.ComposedImageHeight - (int)((projection.DestBbox.Y + projection.DestBbox.Height) * Composition.OutputScaleY + BaseY);
+
+                    ComposedImage.Mutate(ctx => ctx.DrawImage(cutOutRegion, new Point(destX, destY), 1f));
+
+                    cancellationToken.ThrowIfCancellationRequested();
                 }
-            });
 
-            Console.WriteLine("Adding island margins...");
-
-            AddPixelmarginsWherePossible(composedImage);
-
-            Console.WriteLine("Saving result...");
-
-            var outputFilename = randomSkin.Id + ".png";
-            var outputMetadataFilename = Path.ChangeExtension(outputFilename, "metadata.json");
-            composedImage.SaveAsPng(outputFilename);
-
-            Console.WriteLine("Saving metadata...");
-            File.WriteAllText(outputMetadataFilename, JsonSerializer.Serialize(randomSkin));
-
-            Console.WriteLine("Creating autonumbering...");
-
-            var autoNumbering = new List<string>();
-
-            var smallestRarity = randomSkin.Skins.Min(x => x.Rarity);
-            if (smallestRarity < 1) throw new InvalidDataException("Rarity is less then 1");
-
-            var rarities = randomSkin.Skins.Select(x => x.Rarity / smallestRarity).ToArray();
-
-            for (int i = 0; i < randomSkin.Skins.Count; i++)
-            {
-                var rarity = rarities[i];
-                for (int j = 0; j < rarity; j++)
-                {
-                    autoNumbering.Add("0,0," + codeGenerator.Next("33", "84", "4962"));
-                }
+                image.Dispose();
             }
 
-            var autonumberingFilename = Path.ChangeExtension(outputFilename, ".csv");
-            File.WriteAllLines(autonumberingFilename, autoNumbering);
+            private async Task<int> RunWaifu2XCommand(string inputFilename, string outputFilename, CancellationToken cancellationToken, string scaleRatio = "0.5", string noiseLevel = "2.0")
+            {
+                await semaphoreSlim.WaitAsync();
+                cancellationToken.ThrowIfCancellationRequested();
 
-            Console.WriteLine("Saving LUA config...");
-            var outputLuaConfig = Path.ChangeExtension(outputFilename, "lua");
-            WriteLuaConfig(outputLuaConfig, randomSkin);
+                try
+                {
+                    var processInfo = new ProcessStartInfo();
+                    processInfo.CreateNoWindow = true;
+                    processInfo.UseShellExecute = false;
+                    processInfo.WindowStyle = ProcessWindowStyle.Hidden;
+                    processInfo.RedirectStandardError = true;
+                    processInfo.RedirectStandardOutput = true;
 
-            Console.WriteLine("Done");
-            Console.WriteLine();
+                    processInfo.FileName = "C:\\Users\\Gebruiker\\Downloads\\waifu2x-caffe\\waifu2x-caffe\\waifu2x-caffe-cui.exe";
+
+                    processInfo.Arguments = $"-i \"{inputFilename}\" -o \"{outputFilename}\" --scale_ratio {scaleRatio} --noise_level {noiseLevel}";
+
+                    var process = new Process();
+                    process.StartInfo = processInfo;
+                    process.EnableRaisingEvents = true;
+
+                    var registration = cancellationToken.Register(() =>
+                    {
+                        if (!process.HasExited)
+                        {
+                            process.Kill();
+                        }
+                    });
+
+                    var tcs = new TaskCompletionSource<int>();
+                    process.Exited += (sender, args) =>
+                    {
+                        Console.WriteLine("[waifu2x] info: " + process.StandardOutput.ReadToEnd());
+                        if (process.ExitCode == 0)
+                        {
+                        }
+                        else
+                        {
+                            Console.WriteLine("[waifu2x] error: " + process.StandardOutput.ReadToEnd());
+                        }
+
+                        tcs.SetResult(process.ExitCode);
+                        process.Dispose();
+                    };
+
+                    process.Start();
+
+                    var result = await tcs.Task;
+
+                    registration.Dispose();
+                    return result;
+                }
+                finally
+                {
+                    semaphoreSlim.Release();
+                }
+            }
+        }
+
+        private IEnumerable<ComposedTextureGenerator> CreateTasks(RandomSkinGroup randomSkinGroup, Image<Rgba32> ComposedImage, CancellationToken cancellationToken)
+        {
+            var x = 0;
+            var y = 0;
+
+            foreach (var randomSkin in randomSkinGroup.RandomSkins)
+            {
+                var composition = compositions.FirstOrDefault(x => x.Id == randomSkin.Composition);
+                if (composition == null) throw new InvalidDataException("Could not find composition: " + randomSkin.Composition);
+
+                var skins = randomSkin.Skins.OrderByDescending(x => x.Rarity).ToList();
+
+                var duplicates = skins.GroupBy(x => x.Texture)
+                    .Where(g => !String.IsNullOrEmpty(g.First().Texture) && g.Count() > 1);
+
+                foreach (var duplicate in duplicates)
+                {
+                    Console.WriteLine("Found a duplicate in " + randomSkin.Id + ": " + duplicate.Key);
+                    throw new InvalidDataException("Duplicate found in " + randomSkin.Id + ": " + duplicate.Key);
+                }
+
+                while (skins.Count < randomSkin.FullSkinsAmount)
+                {
+                    Console.WriteLine("Composition is not fully filled. The remaining space will be filled with duplicates.");
+                    skins.AddRange(skins.ToArray());
+                    if (skins.Count > randomSkin.FullSkinsAmount)
+                    {
+                        skins.RemoveRange(randomSkin.FullSkinsAmount, skins.Count - randomSkin.FullSkinsAmount);
+                    }
+                }
+
+                if (skins.Count > randomSkin.FullSkinsAmount)
+                {
+                    Console.WriteLine("More skins: " + skins.Count + " found than the maximum allowed: " + randomSkin.FullSkinsAmount);
+                    throw new InvalidDataException("More skins found than the maximum allowed");
+                }
+
+                foreach (var skin in skins)
+                {
+                    yield return new ComposedTextureGenerator
+                    {
+                        RWLib = rwLib,
+                        Texture = skin,
+                        Composition = composition,
+                        ComposedImage = ComposedImage,
+                        BaseX = x,
+                        BaseY = y,
+                    };
+
+                    x += composition.StylusXInterval;
+                    if (x >= composition.StylusXInterval * composition.ComposedImageColumns)
+                    {
+                        x = 0;
+                        y += composition.StylusYInterval;
+                    }
+                }
+            }
         }
 
         private void WriteLuaConfig(String destinationFile, RandomSkin rSkin)
@@ -216,54 +402,6 @@ namespace RailworkerMegaFreightPack1
             lua.AppendLine("}");
 
             File.WriteAllText(destinationFile, lua.ToString());
-        }
-
-        private async Task<int> RunWaifu2XCommand(string inputFilename, string outputFilename)
-        {
-            await semaphoreSlim.WaitAsync();
-            try {
-                var processInfo = new ProcessStartInfo();
-                processInfo.CreateNoWindow = true;
-                processInfo.UseShellExecute = false;
-                processInfo.WindowStyle = ProcessWindowStyle.Hidden;
-                processInfo.RedirectStandardError = true;
-                processInfo.RedirectStandardOutput = true;
-
-                processInfo.FileName = "C:\\Users\\Gebruiker\\Downloads\\waifu2x-caffe\\waifu2x-caffe\\waifu2x-caffe-cui.exe";
-
-                var scaleRatio = "1";
-                var noiseLevel = "2";
-
-                processInfo.Arguments = $"-i \"{inputFilename}\" -o \"{outputFilename}\" --scale_ratio {scaleRatio} --noise_level {noiseLevel}";
-
-                var process = new Process();
-                process.StartInfo = processInfo;
-                process.EnableRaisingEvents = true;
-
-                var tcs = new TaskCompletionSource<int>();
-                process.Exited += (sender, args) =>
-                {
-                    Console.WriteLine("[waifu2x] info: " + process.StandardOutput.ReadToEnd());
-                    if (process.ExitCode == 0)
-                    {
-                    }
-                    else
-                    {
-                        Console.WriteLine("[waifu2x] error: " + process.StandardOutput.ReadToEnd());
-                    }
-
-                    tcs.SetResult(process.ExitCode);
-                    process.Dispose();
-                };
-
-                process.Start();
-
-                var result = await tcs.Task;
-                return result;
-            } finally
-            {
-                semaphoreSlim.Release();
-            }
         }
 
         static void AddPixelmarginsWherePossible(Image<Rgba32> image)

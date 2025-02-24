@@ -59,7 +59,7 @@ class Program
         {
             Console.WriteLine("Generating Afirus 45ft HC PW Variants");
 
-            await CreateVariants("Afirus_Containers.json", "Afirus", "ContainerPack", "RailNetwork\\Interactive\\45ft_hc_pw\\{0}.xml", "Assets\\VirtualRailroads\\vR_Sggmrss\\Frachtw\\[Afirus]GW\\{0}", "45ft C");
+            await CreateVariants("Afirus_Containers.json", "Afirus", "ContainerPack01", "RailNetwork\\Interactive\\45ft_hc_pw\\{0}.xml", "Assets\\VirtualRailroads\\vR_Sggmrss\\Frachtw\\[Afirus]GW\\{0}", "45ft C");
 
             Console.WriteLine("Generating Cargo Blueprints");
 
@@ -67,7 +67,7 @@ class Program
 
             Console.WriteLine("Generating 20ftx2 variants");
 
-            await CreateVariants("Afirus_Containers_20ftx2.json", "Afirus", "ContainerPack", "RailNetwork\\Cargo\\sggmrss\\{0}.xml", "Assets\\VirtualRailroads\\vR_Sggmrss\\Frachtw\\[Afirus]GW\\{0}", "20ft x2");
+            await CreateVariants("Afirus_Containers_20ftx2.json", "Afirus", "ContainerPack01", "RailNetwork\\Cargo\\sggmrss\\{0}.xml", "Assets\\VirtualRailroads\\vR_Sggmrss\\Frachtw\\[Afirus]GW\\{0}", "20ft x2");
 
             Console.WriteLine("Done!");
         }
@@ -139,7 +139,7 @@ class Program
                 {
                     case "Afirus":
                         provider = "Afirus";
-                        product = "ContainerPack";
+                        product = "ContainerPack01";
                         pathFormat = "RailNetwork\\Interactive\\{0}.xml";
                         break;
                     case "NewS":
@@ -185,7 +185,7 @@ class Program
                 children.Add(child);
             }
 
-            var destinationPath = Path.Combine(rwLib.TSPath, "Assets", "Afirus", "ContainerPack", "RailNetwork", "Cargo", "sggmrss", variant.filename + ".bin");
+            var destinationPath = Path.Combine(rwLib.TSPath, "Assets", "Afirus", "ContainerPack01", "RailNetwork", "Cargo", "sggmrss", variant.filename + ".bin");
             var tempPath = await rwLib.Serializer.SerializeWithSerzExe(template);
 
             Directory.CreateDirectory(Path.GetDirectoryName(destinationPath));

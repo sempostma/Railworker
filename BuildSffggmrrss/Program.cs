@@ -57,7 +57,7 @@ class Program
         {
             Console.WriteLine("Generating Afirus Variants");
 
-            await CreateVariants("Afirus_Containers45ft.json", "Afirus", "ContainerPack", "RailNetwork\\Interactive\\45ft_hc_pw\\{0}.xml", "45ft");
+            await CreateVariants("Afirus_Containers45ft.json", "Afirus", "ContainerPack01", "RailNetwork\\Interactive\\45ft_hc_pw\\{0}.xml", "45ft");
 
             Console.WriteLine("Generating Cargo Blueprints");
 
@@ -65,7 +65,7 @@ class Program
 
             Console.WriteLine("Generating 20ft Variants");
 
-            await CreateVariants("Afirus_Containers20ftx2.json", "Afirus", "ContainerPack", "RailNetwork\\Cargo\\sffggmrrss\\{0}.xml", "20ftx2");
+            await CreateVariants("Afirus_Containers20ftx2.json", "Afirus", "ContainerPack01", "RailNetwork\\Cargo\\sffggmrrss\\{0}.xml", "20ftx2");
 
             Console.WriteLine("Done!");
         }
@@ -136,7 +136,7 @@ class Program
                 {
                     case "Afirus":
                         provider = "Afirus";
-                        product = "ContainerPack";
+                        product = "ContainerPack01";
                         pathFormat = "RailNetwork\\Interactive\\{0}.xml";
                         break;
                     case "NewS":
@@ -182,7 +182,7 @@ class Program
                 children.Add(child);
             }
 
-            var destinationPath = Path.Combine(rwLib.TSPath, "Assets", "Afirus", "ContainerPack", "RailNetwork", "Cargo", "sffggmrrss", variant.filename + ".bin");
+            var destinationPath = Path.Combine(rwLib.TSPath, "Assets", "Afirus", "ContainerPack01", "RailNetwork", "Cargo", "sffggmrrss", variant.filename + ".bin");
             var tempPath = await rwLib.Serializer.SerializeWithSerzExe(template);
 
             Directory.CreateDirectory(Path.GetDirectoryName(destinationPath));

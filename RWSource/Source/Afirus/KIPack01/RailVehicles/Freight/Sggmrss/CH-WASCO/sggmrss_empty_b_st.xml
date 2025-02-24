@@ -106,7 +106,7 @@
 											<Attribute name="CsvFile">
 												<cDeltaString>
 													<Element>
-														<Value>RailVehicles\Freight\Sggmrss\AutoNumber\numbers.csv</Value>
+														<Value>RailVehicles\Freight\Sggmrss\AutoNumber\40ft_silo.csv</Value>
 													</Element>
 												</cDeltaString>
 											</Attribute>
@@ -1206,7 +1206,7 @@
 							<Attribute name="GeometryID">
 								<cDeltaString>
 									<Element>
-										<Value>RailVehicles\Freight\Sggmrss\CH-WASCO\sggmrss_45_rnd_b</Value>
+										<Value>RailVehicles\Freight\Sggmrss\CH-WASCO\sggmrss_40_silo_rnd_b</Value>
 									</Element>
 								</cDeltaString>
 							</Attribute>

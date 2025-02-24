@@ -172,14 +172,14 @@
 							<Attribute name="Category">
 								<iBrowseableBlueprint-eBrowseableCategory>
 									<Element>
-										<Value>eUncategorised</Value>
+										<Value>eClutter</Value>
 									</Element>
 								</iBrowseableBlueprint-eBrowseableCategory>
 							</Attribute>
 							<Attribute name="ValidInScenarios">
 								<eBoolean>
 									<Element>
-										<Value>eFalse</Value>
+										<Value>eTrue</Value>
 									</Element>
 								</eBoolean>
 							</Attribute>
@@ -205,7 +205,7 @@
 											<Attribute name="Product">
 												<cDeltaString>
 													<Element>
-														<Value>ContainerPack</Value>
+														<Value>ContainerPack01</Value>
 													</Element>
 												</cDeltaString>
 											</Attribute>
