@@ -1,0 +1,6645 @@
+[
+    {
+        "key": "AAAB",
+        "company": "COMBITRANSPORT SRL",
+        "country": "Italy",
+        "city": "Castel Di Lama",
+        "createdAt": "2015 / 06 / 01"
+    },
+    {
+        "key": "AABA",
+        "company": "Amsel Logistik GmbH & Co. KG",
+        "country": "Germany",
+        "city": "Dülmen",
+        "createdAt": "2018 / 10 / 25"
+    },
+    {
+        "key": "AADD",
+        "company": "AAD ALLO ART DEMENAGEMENT",
+        "country": "France",
+        "city": "Paris",
+        "createdAt": "2017 / 10 / 24"
+    },
+    {
+        "key": "ABAA",
+        "company": "Przedsiębiorstwo Handlowo - Usługowe \"Correct\" Janusz Kolanicki, Magdalena Kwiecień",
+        "country": "Poland",
+        "city": "Lublin",
+        "createdAt": "2021 / 04 / 20"
+    },
+    {
+        "key": "ABCB",
+        "company": "ABC Uluslararası Transport Ticaret ve Sanayi Anonim Şirketi",
+        "country": "Turkey",
+        "city": "Kayseri",
+        "createdAt": "2015 / 02 / 09"
+    },
+    {
+        "key": "ABDD",
+        "company": "A BERCY DEMENAGEMENTS",
+        "country": "France",
+        "city": "Paris",
+        "createdAt": "2017 / 10 / 24"
+    },
+    {
+        "key": "ABFD",
+        "company": "ABF Spedition GmbH",
+        "country": "Germany",
+        "city": "Achim",
+        "createdAt": "2022 / 12 / 13"
+    },
+    {
+        "key": "ABSA",
+        "company": "Transports et déménagement Porre",
+        "country": "France",
+        "city": "Le Cannet",
+        "createdAt": "2014 / 02 / 24"
+    },
+    {
+        "key": "ABSD",
+        "company": "ABS INTERNATIONAL REMOVALS KARGO TICARET LIMITED SIRKETI",
+        "country": "Turkey",
+        "city": "Istanbul",
+        "createdAt": "2020 / 11 / 17"
+    },
+    {
+        "key": "ACIA",
+        "company": "A&C INTERNATIONAL ROAD CARGO SRL",
+        "country": "Romania",
+        "city": "Pitesti",
+        "createdAt": "2023 / 05 / 08"
+    },
+    {
+        "key": "ACOB",
+        "company": "Auto- Coop KFT",
+        "country": "Hungary",
+        "city": "Kazincbarcika",
+        "createdAt": "2022 / 11 / 15"
+    },
+    {
+        "key": "ACTB",
+        "company": "Acta Flytt och Logistik Syd AB",
+        "country": "Sweden",
+        "city": "Malmö",
+        "createdAt": "2013 / 07 / 10"
+    },
+    {
+        "key": "ACTD",
+        "company": "AUTOTRASPORTI C.T. S.R.L.",
+        "country": "Italy",
+        "city": "AVEZZANO",
+        "createdAt": "2013 / 09 / 04"
+    },
+    {
+        "key": "ADPA",
+        "company": "AUX DEMENAGEURS PYRENEES",
+        "country": "France",
+        "city": "Toulouse",
+        "createdAt": "2019 / 09 / 11"
+    },
+    {
+        "key": "AESA",
+        "company": "Alberti Germano e Santi Romano Srl",
+        "country": "Italy",
+        "city": "CORTEMAGGIORE",
+        "createdAt": "2013 / 05 / 23"
+    },
+    {
+        "key": "AFCE",
+        "company": "AFC RECYCLING",
+        "country": "France",
+        "city": "Rubelles",
+        "createdAt": "2020 / 03 / 11"
+    },
+    {
+        "key": "AG1A",
+        "company": "AG Trailer AB",
+        "country": "Sweden",
+        "city": "Hisings Backa",
+        "createdAt": "2017 / 06 / 22"
+    },
+    {
+        "key": "AGPE",
+        "company": "PHUS FAST ALDONA GAIK",
+        "country": "Poland",
+        "city": "Slaboszow",
+        "createdAt": "2023 / 10 / 25"
+    },
+    {
+        "key": "AGRE",
+        "company": "Agromex Wojciech i Jacek Fraszka spółka jawna",
+        "country": "Poland",
+        "city": "Marzenin",
+        "createdAt": "2013 / 07 / 08"
+    },
+    {
+        "key": "AHNE",
+        "company": "Ahnefeld Fahrzeug- und Container-Pool GmbH",
+        "country": "Germany",
+        "city": "Minden",
+        "createdAt": "2015 / 03 / 11"
+    },
+    {
+        "key": "AITA",
+        "company": "Alders Internationaal Transport",
+        "country": "Belgium",
+        "city": "Pelt",
+        "createdAt": "2019 / 04 / 09"
+    },
+    {
+        "key": "ALAE",
+        "company": "ALAINE FORWARDING",
+        "country": "France",
+        "city": "Macon Cedex 9",
+        "createdAt": "2019 / 03 / 20"
+    },
+    {
+        "key": "ALLB",
+        "company": "AL LOGISTICA SRL",
+        "country": "Italy",
+        "city": "Olbia",
+        "createdAt": "2017 / 05 / 10"
+    },
+    {
+        "key": "ALMB",
+        "company": "Almonte Schweiz Ag",
+        "country": "Switzerland",
+        "city": "Zurich",
+        "createdAt": "2024 / 09 / 11"
+    },
+    {
+        "key": "ALPD",
+        "company": "Alpina Italiana S.p.A.",
+        "country": "Italy",
+        "city": "Carrè",
+        "createdAt": "2022 / 11 / 15"
+    },
+    {
+        "key": "AMAA",
+        "company": "COMETA SRL",
+        "country": "Italy",
+        "city": "Nettuno (Rm)",
+        "createdAt": "2017 / 08 / 28"
+    },
+    {
+        "key": "AMBE",
+        "company": "AMBROGIO TRASPORTI SPA",
+        "country": "Italy",
+        "city": "Vinovo",
+        "createdAt": "2012 / 10 / 08"
+    },
+    {
+        "key": "AMEA",
+        "company": "AMENDOLA SRL TRASPORTI E LOGISTICA",
+        "country": "Italy",
+        "city": "ROCCAPIEMONTE",
+        "createdAt": "2013 / 09 / 23"
+    },
+    {
+        "key": "AMTA",
+        "company": "Meijndert Holding B.V.",
+        "country": "Netherlands",
+        "city": "Bergen op Zoom",
+        "createdAt": "2022 / 03 / 23"
+    },
+    {
+        "key": "AMXA",
+        "company": "Auta Marocchi S.p.a.",
+        "country": "Italy",
+        "city": "Trieste",
+        "createdAt": "2017 / 08 / 29"
+    },
+    {
+        "key": "ANAA",
+        "company": "Anton Neuhaus GmbH & Co.",
+        "country": "Germany",
+        "city": "Ahlen",
+        "createdAt": "2012 / 01 / 13"
+    },
+    {
+        "key": "ANBA",
+        "company": "SC ANABUS TRANS SRL",
+        "country": "Romania",
+        "city": "ORADEA",
+        "createdAt": "2024 / 04 / 18"
+    },
+    {
+        "key": "ANNA",
+        "company": "TRANS ISOLE SRL",
+        "country": "Italy",
+        "city": "Angri",
+        "createdAt": "2013 / 05 / 21"
+    },
+    {
+        "key": "ANNB",
+        "company": "TRASPORTI ANNONI SRL",
+        "country": "Italy",
+        "city": "Lipomo",
+        "createdAt": "2013 / 05 / 22"
+    },
+    {
+        "key": "ANSB",
+        "company": "Spedition Ansorge GmbH & Co.KG",
+        "country": "Germany",
+        "city": "Biessenhofen",
+        "createdAt": "2011 / 08 / 30"
+    },
+    {
+        "key": "ARCE",
+        "company": "ARCESE TRASPORTI SPA",
+        "country": "Italy",
+        "city": "ARCO",
+        "createdAt": "2012 / 09 / 11"
+    },
+    {
+        "key": "ARCK",
+        "company": "ARCOTRANS SRL",
+        "country": "Italy",
+        "city": "Bari Z.i. Modugno",
+        "createdAt": "2017 / 04 / 11"
+    },
+    {
+        "key": "ARDA",
+        "company": "FULLSPED TASIMACILIK VE GUMRUKLEME TIC LTD STI",
+        "country": "Turkey",
+        "city": "Istanbul",
+        "createdAt": "2018 / 08 / 01"
+    },
+    {
+        "key": "ARMA",
+        "company": "armoridem",
+        "country": "France",
+        "city": "Derval",
+        "createdAt": "2023 / 07 / 12"
+    },
+    {
+        "key": "AROE",
+        "company": "Anton Röhr GmbH & Co. KG",
+        "country": "Germany",
+        "city": "Rietberg",
+        "createdAt": "2013 / 04 / 22"
+    },
+    {
+        "key": "ARSE",
+        "company": "ARES ULUSLARARASI NAKLİYAT VE DIŞ TİCARET LTD. ŞTİ.",
+        "country": "Turkey",
+        "city": "İSTANBUL",
+        "createdAt": "2014 / 06 / 04"
+    },
+    {
+        "key": "ARTA",
+        "company": "Anton Röhr Sp. z o.o. Transport Międzynarodowy Poznań",
+        "country": "Poland",
+        "city": "Poznań",
+        "createdAt": "2015 / 08 / 18"
+    },
+    {
+        "key": "ARTE",
+        "company": "DEME-SPEED",
+        "country": "France",
+        "city": "Boulogne-Sur-Mer",
+        "createdAt": "2020 / 11 / 25"
+    },
+    {
+        "key": "ASAA",
+        "company": "ASAAA LOJİSTİK GÜMRÜKLEME HİZMETLERİ LTD.ŞTİ.",
+        "country": "Turkey",
+        "city": "İstanbul",
+        "createdAt": "2022 / 07 / 07"
+    },
+    {
+        "key": "ASAB",
+        "company": "ASA Logistics GmbH",
+        "country": "Germany",
+        "city": "Sankt Augustin",
+        "createdAt": "2025 / 03 / 13"
+    },
+    {
+        "key": "ASCE",
+        "company": "Alois Scherrer AG",
+        "country": "Switzerland",
+        "city": "St. Margrethen Sg",
+        "createdAt": "2020 / 06 / 26"
+    },
+    {
+        "key": "ASFD",
+        "company": "ALPI SERVICE SRL",
+        "country": "Italy",
+        "city": "Borgo San Dalmazzo",
+        "createdAt": "2017 / 09 / 05"
+    },
+    {
+        "key": "ASKA",
+        "company": "ASKO Transport AS",
+        "country": "Norway",
+        "city": "Vestby",
+        "createdAt": "2014 / 06 / 04"
+    },
+    {
+        "key": "ASLD",
+        "company": "ASL DEPOLAMA LOJISTIK SANAYI VE TICARET A.S.",
+        "country": "Turkey",
+        "city": "İzmir",
+        "createdAt": "2017 / 06 / 05"
+    },
+    {
+        "key": "ASRA",
+        "company": "AS Rate Sp. z o.o.",
+        "country": "Poland",
+        "city": "Sędziejowice",
+        "createdAt": "2024 / 03 / 21"
+    },
+    {
+        "key": "ASTE",
+        "company": "ASTRIN",
+        "country": "France",
+        "city": "Saint Vulbas",
+        "createdAt": "2023 / 12 / 06"
+    },
+    {
+        "key": "ATBE",
+        "company": "A2B-online Container B.V.",
+        "country": "Netherlands",
+        "city": "Hazerswoude-Dorp",
+        "createdAt": "2013 / 11 / 14"
+    },
+    {
+        "key": "ATOE",
+        "company": "ATO TRANS, s.r.o.",
+        "country": "Slovakia",
+        "city": "Nové Zámky",
+        "createdAt": "2016 / 03 / 22"
+    },
+    {
+        "key": "ATTA",
+        "company": "AT TROTA",
+        "country": "Spain",
+        "city": "Lleida",
+        "createdAt": "2022 / 03 / 29"
+    },
+    {
+        "key": "AUPE",
+        "company": "AUTOTRASPORTI PEDOT",
+        "country": "Italy",
+        "city": "Lavis",
+        "createdAt": "2014 / 03 / 04"
+    },
+    {
+        "key": "AUTA",
+        "company": "Austrian Fruits S.L.",
+        "country": "Spain",
+        "city": "Lleida",
+        "createdAt": "2022 / 04 / 11"
+    },
+    {
+        "key": "AVAA",
+        "company": "Avanzini Srl",
+        "country": "Italy",
+        "city": "Nogarole Rocca",
+        "createdAt": "2014 / 03 / 31"
+    },
+    {
+        "key": "AXBE",
+        "company": "AXBENET, s.r.o.",
+        "country": "Slovakia",
+        "city": "Trnava",
+        "createdAt": "2017 / 05 / 30"
+    },
+    {
+        "key": "AXGE",
+        "company": "AXIS GROUP DOOEL",
+        "country": "Macedonia",
+        "city": "Skopje",
+        "createdAt": "2023 / 07 / 04"
+    },
+    {
+        "key": "AXIB",
+        "company": "Axis Intermodal Deutschland GmbH",
+        "country": "Germany",
+        "city": "Köln",
+        "createdAt": "2013 / 07 / 02"
+    },
+    {
+        "key": "BAKB",
+        "company": "Spedition Bäumle GmbH",
+        "country": "Germany",
+        "city": "Murg",
+        "createdAt": "2011 / 11 / 09"
+    },
+    {
+        "key": "BALB",
+        "company": "MORANO GROUP SRL",
+        "country": "Italy",
+        "city": "Matera",
+        "createdAt": "2023 / 09 / 20"
+    },
+    {
+        "key": "BAMA",
+        "company": "Bama Logistikk AS",
+        "country": "Norway",
+        "city": "Oslo",
+        "createdAt": "2013 / 03 / 04"
+    },
+    {
+        "key": "BAMB",
+        "company": "Bama Logistics Sp. z o.o.",
+        "country": "Poland",
+        "city": "Dębica",
+        "createdAt": "2024 / 07 / 01"
+    },
+    {
+        "key": "BARA",
+        "company": "BARLAS TRANS SER. HIZ. TAMIR BAKIM TEKSTIL ULUSLARARASI NAKLIYAT SAN VE TIC. LTD.ŞTİ.",
+        "country": "Turkey",
+        "city": "Kayseri",
+        "createdAt": "2023 / 08 / 10"
+    },
+    {
+        "key": "BARD",
+        "company": "BARTOLI SPA",
+        "country": "Italy",
+        "city": "FIRENZE",
+        "createdAt": "2013 / 07 / 29"
+    },
+    {
+        "key": "BASA",
+        "company": "Raben Trucking Netherlands B.V.",
+        "country": "Netherlands",
+        "city": "Etten-Leur",
+        "createdAt": "2013 / 03 / 04"
+    },
+    {
+        "key": "BASD",
+        "company": "BASF SE",
+        "country": "Germany",
+        "city": "Ludwigshafen",
+        "createdAt": "2015 / 03 / 19"
+    },
+    {
+        "key": "BASE",
+        "company": "BASE INTERNATIONAL FREIGHT SRL",
+        "country": "Italy",
+        "city": "CONCOREZZO",
+        "createdAt": "2014 / 06 / 19"
+    },
+    {
+        "key": "BATB",
+        "company": "BATEMAN TRANSPORT",
+        "country": "France",
+        "city": "chateaurenard",
+        "createdAt": "2024 / 12 / 06"
+    },
+    {
+        "key": "BAWB",
+        "company": "Niederösterreichische Beteiligungsgesellschaft für Abfallwirtschaft und Umweltschutz Ges.m.b.H.",
+        "country": "Austria",
+        "city": "St. Pölten",
+        "createdAt": "2024 / 10 / 28"
+    },
+    {
+        "key": "BBCD",
+        "company": "AUX DEMENAGEMENTS MONET",
+        "country": "France",
+        "city": "Lyon",
+        "createdAt": "2019 / 12 / 05"
+    },
+    {
+        "key": "BBTE",
+        "company": "B&B TEAM HUNGARY Kft.",
+        "country": "Hungary",
+        "city": "Esztergom",
+        "createdAt": "2023 / 12 / 21"
+    },
+    {
+        "key": "BCHA",
+        "company": "\"BEST-CHEM\" Przedsiębiorstwo Produkcyjno-Handlowe Jerzy Jacek Apka w spadku",
+        "country": "Poland",
+        "city": "Sochaczew",
+        "createdAt": "2024 / 03 / 05"
+    },
+    {
+        "key": "BCLE",
+        "company": "SIA BCL SERVICES",
+        "country": "Latvia",
+        "city": "Rīga",
+        "createdAt": "2025 / 01 / 09"
+    },
+    {
+        "key": "BEDE",
+        "company": "BEDNAREK Group Sp. z o.o.",
+        "country": "Poland",
+        "city": "Turek",
+        "createdAt": "2023 / 04 / 18"
+    },
+    {
+        "key": "BEGE",
+        "company": "Bernegger GmbH",
+        "country": "Austria",
+        "city": "Molln",
+        "createdAt": "2024 / 09 / 18"
+    },
+    {
+        "key": "BENA",
+        "company": "BEATRANS ENTERPRISES GROUP",
+        "country": "Italy",
+        "city": "San Donato Milanese (Mi)",
+        "createdAt": "2018 / 11 / 22"
+    },
+    {
+        "key": "BENB",
+        "company": "Rolf Benzinger Spedition - Transporte GmbH",
+        "country": "Germany",
+        "city": "Friolzheim",
+        "createdAt": "2019 / 10 / 07"
+    },
+    {
+        "key": "BEPA",
+        "company": "BERTHAUD PARIS",
+        "country": "France",
+        "city": "Goussainville",
+        "createdAt": "2012 / 07 / 27"
+    },
+    {
+        "key": "BERD",
+        "company": "ROBERT BERTON",
+        "country": "France",
+        "city": "INGRE",
+        "createdAt": "2015 / 07 / 06"
+    },
+    {
+        "key": "BEUA",
+        "company": "Bring Equipment AS",
+        "country": "Norway",
+        "city": "Oslo",
+        "createdAt": "2020 / 09 / 14"
+    },
+    {
+        "key": "BEXE",
+        "company": "Bayern Express Spedition",
+        "country": "Germany",
+        "city": "Garching",
+        "createdAt": "2013 / 04 / 22"
+    },
+    {
+        "key": "BIAB",
+        "company": "BIANCHI EUROSERVICE S.R.L",
+        "country": "Italy",
+        "city": "CASNATE CON BERNATE (CO)",
+        "createdAt": "2014 / 03 / 25"
+    },
+    {
+        "key": "BIAE",
+        "company": "Bianchi & Co .SA",
+        "country": "Switzerland",
+        "city": "Novazzano",
+        "createdAt": "2013 / 07 / 08"
+    },
+    {
+        "key": "BIGB",
+        "company": "Betz International GmbH",
+        "country": "Germany",
+        "city": "Sonnenbühl-Undingen",
+        "createdAt": "2024 / 07 / 15"
+    },
+    {
+        "key": "BILD",
+        "company": "SOLUTIONS TRANSPORTS INDUSTRIELS ET LOGISTIQUE-INTERNATIONAL",
+        "country": "France",
+        "city": "Waziers",
+        "createdAt": "2019 / 12 / 16"
+    },
+    {
+        "key": "BIZB",
+        "company": "Turbo's Hoët - Bizien.fr",
+        "country": "France",
+        "city": "Saint-Pol de Léon",
+        "createdAt": "2013 / 09 / 11"
+    },
+    {
+        "key": "BJSE",
+        "company": "Börje Jönsson Åkeri AB",
+        "country": "Sweden",
+        "city": "Helsingborg",
+        "createdAt": "2014 / 06 / 30"
+    },
+    {
+        "key": "BKWE",
+        "company": "Fahrzeugwerk Bernard KRONE GmbH & Co.KG",
+        "country": "Germany",
+        "city": "Werlte",
+        "createdAt": "2012 / 06 / 18"
+    },
+    {
+        "key": "BLAA",
+        "company": "ETS R.BLANCHET",
+        "country": "France",
+        "city": "Connantre",
+        "createdAt": "2015 / 05 / 11"
+    },
+    {
+        "key": "BLAE",
+        "company": "BLANQUART TRANSPORT",
+        "country": "France",
+        "city": "Blendecques",
+        "createdAt": "2019 / 07 / 19"
+    },
+    {
+        "key": "BLBA",
+        "company": "Barth Spedition GmbH",
+        "country": "Germany",
+        "city": "Hechingen",
+        "createdAt": "2014 / 05 / 09"
+    },
+    {
+        "key": "BLEE",
+        "company": "BLEU MODAL",
+        "country": "France",
+        "city": "Mouguerre",
+        "createdAt": "2021 / 07 / 22"
+    },
+    {
+        "key": "BLUE",
+        "company": "autotrasporti piscopo & c.snc",
+        "country": "Italy",
+        "city": "Arzano",
+        "createdAt": "2015 / 06 / 23"
+    },
+    {
+        "key": "BMLA",
+        "company": "BGO Montage und Logistik GmbH",
+        "country": "Austria",
+        "city": "Waidhofen/ybbs",
+        "createdAt": "2020 / 12 / 01"
+    },
+    {
+        "key": "BNZB",
+        "company": "BNZ Cargo Kft",
+        "country": "Hungary",
+        "city": "Újlengyel",
+        "createdAt": "2022 / 09 / 07"
+    },
+    {
+        "key": "BODE",
+        "company": "Spedition Bode GmbH & Co.KG",
+        "country": "Germany",
+        "city": "Reinfeld / Holstein",
+        "createdAt": "2011 / 11 / 10"
+    },
+    {
+        "key": "BOID",
+        "company": "BORIANI NAVIGAZIONE SRL",
+        "country": "Italy",
+        "city": "VENICE",
+        "createdAt": "2024 / 09 / 26"
+    },
+    {
+        "key": "BORA",
+        "company": "BORUSAN LOJİSTİK DAĞITIM DEPOLAMA TAŞIMACILIK VE TİC. A.Ş.",
+        "country": "Turkey",
+        "city": "İç Kapı No: 45 Üsküdar/İstanbul",
+        "createdAt": "2017 / 06 / 14"
+    },
+    {
+        "key": "BORB",
+        "company": "Spedition Bork GmbH & Co. KG",
+        "country": "Germany",
+        "city": "Langgöns",
+        "createdAt": "2013 / 07 / 26"
+    },
+    {
+        "key": "BORE",
+        "company": "Borter Transport AG",
+        "country": "Switzerland",
+        "city": "Gamsen",
+        "createdAt": "2016 / 08 / 31"
+    },
+    {
+        "key": "BOXA",
+        "company": "BOXmover GmbH",
+        "country": "Austria",
+        "city": "Naarn im Machland",
+        "createdAt": "2024 / 04 / 11"
+    },
+    {
+        "key": "BPSD",
+        "company": "BP Sped Marcus Scheller",
+        "country": "Germany",
+        "city": "Kirchdorf An Der Amper",
+        "createdAt": "2023 / 08 / 02"
+    },
+    {
+        "key": "BRAB",
+        "company": "Braniste Servizi SRLS",
+        "country": "Italy",
+        "city": "Verona",
+        "createdAt": "2024 / 05 / 25"
+    },
+    {
+        "key": "BREE",
+        "company": "Aux Déménageurs Brestois",
+        "country": "France",
+        "city": "Plouedern",
+        "createdAt": "2014 / 05 / 05"
+    },
+    {
+        "key": "BRIA",
+        "company": "Brigl Ag",
+        "country": "Italy",
+        "city": "Bozen",
+        "createdAt": "2016 / 06 / 09"
+    },
+    {
+        "key": "BRND",
+        "company": "Bernardini Srl",
+        "country": "Italy",
+        "city": "Terni",
+        "createdAt": "2014 / 04 / 07"
+    },
+    {
+        "key": "BRSA",
+        "company": "BARSAN GLOBAL LOJISTIK A.S.",
+        "country": "Turkey",
+        "city": "Istanbul",
+        "createdAt": "2019 / 12 / 12"
+    },
+    {
+        "key": "BRWE",
+        "company": "Brohl Wellpappe GmbH & Co. KG",
+        "country": "Germany",
+        "city": "Mayen",
+        "createdAt": "2019 / 04 / 18"
+    },
+    {
+        "key": "BSRA",
+        "company": "Artem Bolgert, Roman Bolgert Spezialtransporte GbR",
+        "country": "Germany",
+        "city": "Roding",
+        "createdAt": "2021 / 01 / 29"
+    },
+    {
+        "key": "BSTD",
+        "company": "Bridge Europe Sardinia Transports",
+        "country": "Italy",
+        "city": "Sassari",
+        "createdAt": "2016 / 05 / 09"
+    },
+    {
+        "key": "BTEB",
+        "company": "Bruhn Transport Equipment GmbH & Co. KG",
+        "country": "Germany",
+        "city": "Lübeck",
+        "createdAt": "2011 / 08 / 25"
+    },
+    {
+        "key": "BTGD",
+        "company": "Biolo Trasporti SRL",
+        "country": "Italy",
+        "city": "Buttapietra",
+        "createdAt": "2024 / 12 / 06"
+    },
+    {
+        "key": "BTKB",
+        "company": "Bachmann AG, Transporte Schweiz",
+        "country": "Switzerland",
+        "city": "Kölliken",
+        "createdAt": "2011 / 07 / 13"
+    },
+    {
+        "key": "BTRA",
+        "company": "Baltic Trailer Rental UAB",
+        "country": "Lithuania",
+        "city": "Vilnius",
+        "createdAt": "2014 / 07 / 15"
+    },
+    {
+        "key": "BTSA",
+        "company": "BTS Logistik GmbH",
+        "country": "Germany",
+        "city": "Owen",
+        "createdAt": "2014 / 05 / 23"
+    },
+    {
+        "key": "BTVE",
+        "company": "Bos Trailerverhuur BV",
+        "country": "Netherlands",
+        "city": "Barneveld",
+        "createdAt": "2022 / 06 / 28"
+    },
+    {
+        "key": "BUFA",
+        "company": "BUFFO TRASPORTI SRL",
+        "country": "Italy",
+        "city": "Vazzola",
+        "createdAt": "2023 / 04 / 27"
+    },
+    {
+        "key": "BUIA",
+        "company": "LUCIANO TRASPORTI SRL",
+        "country": "Italy",
+        "city": "Triggiano (Ba)",
+        "createdAt": "2020 / 04 / 14"
+    },
+    {
+        "key": "BULA",
+        "company": "Bulung Logistics GmbH",
+        "country": "Austria",
+        "city": "Schwechat",
+        "createdAt": "2017 / 11 / 06"
+    },
+    {
+        "key": "BUPA",
+        "company": "BUNEL EXPRESS",
+        "country": "France",
+        "city": "Alizay",
+        "createdAt": "2018 / 02 / 16"
+    },
+    {
+        "key": "BURD",
+        "company": "KG Bursped Speditions- GmbH & Co.",
+        "country": "Germany",
+        "city": "Hamburg",
+        "createdAt": "2012 / 02 / 06"
+    },
+    {
+        "key": "BUSD",
+        "company": "BUSCAN TASIMACILIK GIDA SAN.TIC.LTD.STI.",
+        "country": "Turkey",
+        "city": "Gaziantep",
+        "createdAt": "2020 / 09 / 29"
+    },
+    {
+        "key": "BVDD",
+        "company": "BVD Logistik GmbH & Co KG",
+        "country": "Germany",
+        "city": "Steinfeld",
+        "createdAt": "2023 / 12 / 15"
+    },
+    {
+        "key": "BWTA",
+        "company": "Bergwerff Transport Service B.V.",
+        "country": "Netherlands",
+        "city": "Breda",
+        "createdAt": "2015 / 11 / 30"
+    },
+    {
+        "key": "CABA",
+        "company": "S.CABRERA, SL.",
+        "country": "Spain",
+        "city": "HUERCAL.-OVERA",
+        "createdAt": "2024 / 11 / 05"
+    },
+    {
+        "key": "CABE",
+        "company": "DEMENAGEMENTS CABRIE CAROL",
+        "country": "France",
+        "city": "LIMOUX",
+        "createdAt": "2014 / 05 / 22"
+    },
+    {
+        "key": "CADB",
+        "company": "SAS DEMENAGEMENTS CABRIE",
+        "country": "France",
+        "city": "Carcassonne",
+        "createdAt": "2017 / 03 / 28"
+    },
+    {
+        "key": "CAFE",
+        "company": "CA.FRI SRL",
+        "country": "Italy",
+        "city": "Canale D’alba",
+        "createdAt": "2017 / 09 / 21"
+    },
+    {
+        "key": "CANB",
+        "company": "CANPOLAT TAŞIMACILIK GIDA VE SANAYİ ÜRÜNLERİ TİCARET LİMİTED ŞİRKETİ",
+        "country": "Turkey",
+        "city": "HATAY",
+        "createdAt": "2025 / 01 / 06"
+    },
+    {
+        "key": "CAPA",
+        "company": "CAMPILLO PALMERA SL",
+        "country": "Spain",
+        "city": "molina de segura",
+        "createdAt": "2024 / 10 / 03"
+    },
+    {
+        "key": "CAPD",
+        "company": "Cappio Trasporti e Logistica srl",
+        "country": "Italy",
+        "city": "San Giorgio Canavese (Torino)",
+        "createdAt": "2017 / 11 / 16"
+    },
+    {
+        "key": "CARB",
+        "company": "Schmitz Cargobull Schweiz AG",
+        "country": "Switzerland",
+        "city": "Kappel",
+        "createdAt": "2014 / 06 / 26"
+    },
+    {
+        "key": "CASB",
+        "company": "CASCIONE AUTOTRASPORTI SRL",
+        "country": "Italy",
+        "city": "miglionico",
+        "createdAt": "2015 / 01 / 19"
+    },
+    {
+        "key": "CASD",
+        "company": "Castelein Logistics",
+        "country": "Belgium",
+        "city": "Rekkem",
+        "createdAt": "2022 / 03 / 22"
+    },
+    {
+        "key": "CATA",
+        "company": "CA.T.LOG CATALDI TRASPORTI LOGISTICA SRL",
+        "country": "Italy",
+        "city": "Gravina In Puglia",
+        "createdAt": "2021 / 06 / 11"
+    },
+    {
+        "key": "CAVE",
+        "company": "Cabooter Equipment B.V.",
+        "country": "Netherlands",
+        "city": "Venlo",
+        "createdAt": "2023 / 08 / 28"
+    },
+    {
+        "key": "CAWA",
+        "company": "CAWA-TRANS Internationale Transporte AG",
+        "country": "Switzerland",
+        "city": "Münchenstein",
+        "createdAt": "2014 / 06 / 27"
+    },
+    {
+        "key": "CBLE",
+        "company": "CargoBeamer AG",
+        "country": "Germany",
+        "city": "Leipzig",
+        "createdAt": "2013 / 04 / 24"
+    },
+    {
+        "key": "CBTA",
+        "company": "COBANTUR TURIZM TICARET VE NAKLIYAT LTD STI",
+        "country": "Turkey",
+        "city": "ISTANBUL",
+        "createdAt": "2014 / 08 / 25"
+    },
+    {
+        "key": "CCCB",
+        "company": "Przedsiębiorstwo Handlowo - Usługowe \"Correct\" Janusz Kolanicki, Magdalena Kwiecień",
+        "country": "Poland",
+        "city": "Lublin",
+        "createdAt": "2022 / 07 / 20"
+    },
+    {
+        "key": "CCEE",
+        "company": "Przedsiębiorstwo Handlowo - Usługowe \"Correct\" Janusz Kolanicki, Magdalena Kwiecień",
+        "country": "Poland",
+        "city": "Lublin",
+        "createdAt": "2023 / 06 / 19"
+    },
+    {
+        "key": "CCHA",
+        "company": "Chr. Carstensen GmbH & Co. KG Spedition und Fuhrunternehmen",
+        "country": "Germany",
+        "city": "Handewitt",
+        "createdAt": "2020 / 02 / 10"
+    },
+    {
+        "key": "CCPD",
+        "company": "conFern-Containerpool AG",
+        "country": "Germany",
+        "city": "Frankenthal",
+        "createdAt": "2011 / 08 / 03"
+    },
+    {
+        "key": "CCVE",
+        "company": "Przedsiębiorstwo Handlowo - Usługowe \"Correct\" Janusz Kolanicki, Magdalena Kwiecień",
+        "country": "Poland",
+        "city": "Lublin",
+        "createdAt": "2023 / 06 / 05"
+    },
+    {
+        "key": "CDAK",
+        "company": "CDA LOJISTIK",
+        "country": "Turkey",
+        "city": "İstanbul",
+        "createdAt": "2017 / 06 / 29"
+    },
+    {
+        "key": "CDHB",
+        "company": "Containerdienst Hans Hämmerle GmbH",
+        "country": "Austria",
+        "city": "Bludenz",
+        "createdAt": "2013 / 01 / 24"
+    },
+    {
+        "key": "CDKA",
+        "company": "Carlsberg Supply Company Danmark A/S",
+        "country": "Denmark",
+        "city": "København V",
+        "createdAt": "2013 / 06 / 10"
+    },
+    {
+        "key": "CDSA",
+        "company": "S.M.S. S.A.S. di Chicu Stela",
+        "country": "Italy",
+        "city": "Scandiano",
+        "createdAt": "2025 / 01 / 24"
+    },
+    {
+        "key": "CFAD",
+        "company": "Cf Ambiente S.r.l.",
+        "country": "Italy",
+        "city": "Frazione: Castiglione D’otranto - Andrano (Le)",
+        "createdAt": "2023 / 07 / 25"
+    },
+    {
+        "key": "CFSE",
+        "company": "CF&S Estonia AS",
+        "country": "Estonia",
+        "city": "Tallinn",
+        "createdAt": "2022 / 05 / 10"
+    },
+    {
+        "key": "CGDB",
+        "company": "Genossenschaft Migros Ostschweiz",
+        "country": "Switzerland",
+        "city": "Gossau",
+        "createdAt": "2020 / 08 / 07"
+    },
+    {
+        "key": "CGLE",
+        "company": "CARRERAS GRUPO LOGISTICO S.A.",
+        "country": "Spain",
+        "city": "Zaragoza",
+        "createdAt": "2022 / 10 / 10"
+    },
+    {
+        "key": "CHIA",
+        "company": "Autotrasporti Chiarcosso srl",
+        "country": "Italy",
+        "city": "Udine",
+        "createdAt": "2022 / 03 / 21"
+    },
+    {
+        "key": "CHTA",
+        "company": "Chaigneau Transport",
+        "country": "Netherlands",
+        "city": "Lexmond",
+        "createdAt": "2024 / 11 / 18"
+    },
+    {
+        "key": "CIRA",
+        "company": "CIRIGLIANO TRASPORTI S.R.L.",
+        "country": "Italy",
+        "city": "TITO",
+        "createdAt": "2014 / 10 / 24"
+    },
+    {
+        "key": "CLDA",
+        "company": "CLdN Cargo BV",
+        "country": "Netherlands",
+        "city": "Rotterdam-Botlek",
+        "createdAt": "2014 / 01 / 03"
+    },
+    {
+        "key": "CLID",
+        "company": "CLIO SRL",
+        "country": "Romania",
+        "city": "ZALAU",
+        "createdAt": "2024 / 03 / 07"
+    },
+    {
+        "key": "CLSA",
+        "company": "CLIP INTERMODAL SP. Z O. O.",
+        "country": "Poland",
+        "city": "Swarzędz",
+        "createdAt": "2020 / 02 / 25"
+    },
+    {
+        "key": "CLSB",
+        "company": "STS Logistic Sp. z o.o.",
+        "country": "Poland",
+        "city": "Swarzędz",
+        "createdAt": "2024 / 09 / 30"
+    },
+    {
+        "key": "CLUB",
+        "company": "Casilli Enterprise",
+        "country": "Italy",
+        "city": "Nola",
+        "createdAt": "2023 / 05 / 16"
+    },
+    {
+        "key": "CLXA",
+        "company": "CargoLine GmbH & Co. KG",
+        "country": "Germany",
+        "city": "Frankfurt",
+        "createdAt": "2014 / 03 / 11"
+    },
+    {
+        "key": "CMAA",
+        "company": "CMA INTERNATIONAL",
+        "country": "France",
+        "city": "Saint Quentin Fallavier",
+        "createdAt": "2021 / 11 / 16"
+    },
+    {
+        "key": "CMRA",
+        "company": "CMR Location",
+        "country": "France",
+        "city": "Corbas",
+        "createdAt": "2020 / 11 / 12"
+    },
+    {
+        "key": "CNSA",
+        "company": "CONSERVA SPA",
+        "country": "Italy",
+        "city": "Bitonto",
+        "createdAt": "2017 / 09 / 28"
+    },
+    {
+        "key": "CODE",
+        "company": "Codice S.r.l.",
+        "country": "Italy",
+        "city": "Pontedera",
+        "createdAt": "2022 / 09 / 23"
+    },
+    {
+        "key": "COGE",
+        "company": "Cogefra SAGL",
+        "country": "Switzerland",
+        "city": "Contone",
+        "createdAt": "2023 / 07 / 07"
+    },
+    {
+        "key": "COHA",
+        "company": "Cosi Stahllogistik GmbH & Co. KG",
+        "country": "Germany",
+        "city": "Hagen",
+        "createdAt": "2015 / 07 / 09"
+    },
+    {
+        "key": "COLA",
+        "company": "Collicare Logistics bv",
+        "country": "Netherlands",
+        "city": "Groningen",
+        "createdAt": "2014 / 04 / 17"
+    },
+    {
+        "key": "COLB",
+        "company": "Autotrasporti Colturi Srl",
+        "country": "Italy",
+        "city": "Moena",
+        "createdAt": "2024 / 07 / 27"
+    },
+    {
+        "key": "COMB",
+        "company": "Combipass S.A.S",
+        "country": "France",
+        "city": "Avignon Cedex 9",
+        "createdAt": "2011 / 09 / 27"
+    },
+    {
+        "key": "CORD",
+        "company": "CORSI SPA",
+        "country": "Italy",
+        "city": "Verona",
+        "createdAt": "2019 / 12 / 17"
+    },
+    {
+        "key": "CORE",
+        "company": "Core Logistics srl",
+        "country": "Italy",
+        "city": "Cascinazza Di Robecco Sul Naviglio",
+        "createdAt": "2018 / 05 / 28"
+    },
+    {
+        "key": "COTA",
+        "company": "Thermomax Trondheim AS",
+        "country": "Norway",
+        "city": "Trondheim",
+        "createdAt": "2021 / 02 / 02"
+    },
+    {
+        "key": "CPIE",
+        "company": "Intracon AS",
+        "country": "Norway",
+        "city": "Oslo",
+        "createdAt": "2017 / 04 / 07"
+    },
+    {
+        "key": "CPLA",
+        "company": "Capaldo srl",
+        "country": "Italy",
+        "city": "Nocera Inferiore",
+        "createdAt": "2019 / 02 / 26"
+    },
+    {
+        "key": "CRAE",
+        "company": "Autotrasporti Cram srl",
+        "country": "Italy",
+        "city": "Lograto",
+        "createdAt": "2014 / 03 / 26"
+    },
+    {
+        "key": "CRMA",
+        "company": "CORM GROUP LOJİSTİK VE DIŞ TİCARET LİMİTED ŞİRKETİ",
+        "country": "Turkey",
+        "city": "İSTANBUL",
+        "createdAt": "2025 / 03 / 21"
+    },
+    {
+        "key": "CRPA",
+        "company": "Cerealpuglia Società A Responsabilità Limitata",
+        "country": "Italy",
+        "city": "Altamura (Ba)",
+        "createdAt": "2022 / 06 / 16"
+    },
+    {
+        "key": "CSAD",
+        "company": "CSAD Logistik Ostrava a.s.",
+        "country": "Czechia",
+        "city": "Ostrava",
+        "createdAt": "2012 / 05 / 09"
+    },
+    {
+        "key": "CSPA",
+        "company": "Casilli Enterprise",
+        "country": "Italy",
+        "city": "Nola",
+        "createdAt": "2023 / 05 / 19"
+    },
+    {
+        "key": "CTMA",
+        "company": "PK CargoTrans GmbH",
+        "country": "Germany",
+        "city": "Emskirchen",
+        "createdAt": "2018 / 10 / 31"
+    },
+    {
+        "key": "CTOB",
+        "company": "H.ESSERS SRL",
+        "country": "Romania",
+        "city": "ORADEA",
+        "createdAt": "2013 / 09 / 13"
+    },
+    {
+        "key": "CTRA",
+        "company": "Cargotrans GmbH & Co. KG",
+        "country": "Germany",
+        "city": "Recklinghausen",
+        "createdAt": "2020 / 12 / 09"
+    },
+    {
+        "key": "CTRE",
+        "company": "Claessen Transport B.V.",
+        "country": "Netherlands",
+        "city": "Roggel",
+        "createdAt": "2021 / 08 / 10"
+    },
+    {
+        "key": "CTRK",
+        "company": "H.ESSERS TRANSPORT COMPANY NEDERLAND",
+        "country": "Netherlands",
+        "city": "Bergen op Zoom",
+        "createdAt": "2013 / 06 / 24"
+    },
+    {
+        "key": "CTSA",
+        "company": "Cargobull Trailer Store GmbH",
+        "country": "Germany",
+        "city": "Altenberge",
+        "createdAt": "2015 / 06 / 03"
+    },
+    {
+        "key": "CTXA",
+        "company": "Abroll-Container-Transport-Service AG",
+        "country": "Switzerland",
+        "city": "Bern",
+        "createdAt": "2017 / 03 / 06"
+    },
+    {
+        "key": "CTZD",
+        "company": "Christina Timp Transporte e.K.",
+        "country": "Germany",
+        "city": "Krefeld",
+        "createdAt": "2018 / 07 / 23"
+    },
+    {
+        "key": "CUTE",
+        "company": "Autika, UAB",
+        "country": "Lithuania",
+        "city": "Panevėžys",
+        "createdAt": "2025 / 01 / 09"
+    },
+    {
+        "key": "CXDE",
+        "company": "CARGOFLEX GmbH",
+        "country": "Germany",
+        "city": "Lübeck",
+        "createdAt": "2015 / 03 / 31"
+    },
+    {
+        "key": "CZRE",
+        "company": "CİZRE CİHAN TİCARET NAKLİYAT PETROL ÜRÜNLERİ VE DIŞ TİCARET LİMİTED ŞİRKETİ",
+        "country": "Turkey",
+        "city": "MERSİN",
+        "createdAt": "2024 / 02 / 12"
+    },
+    {
+        "key": "DAAK",
+        "company": "Forsvarsministeriets Materiel- og Indkøbsstyrelse",
+        "country": "Denmark",
+        "city": "Ballerup",
+        "createdAt": "2023 / 06 / 15"
+    },
+    {
+        "key": "DAGB",
+        "company": "SC D’AGOSTINO AUTOTRASPORTI S.R.L.",
+        "country": "Romania",
+        "city": "Floresti",
+        "createdAt": "2018 / 04 / 17"
+    },
+    {
+        "key": "DAGD",
+        "company": "D’AGOSTINO S.R.L.",
+        "country": "Italy",
+        "city": "Castilenti",
+        "createdAt": "2017 / 04 / 11"
+    },
+    {
+        "key": "DAKB",
+        "company": "Debrunner Acifer AG",
+        "country": "Switzerland",
+        "city": "St. Gallen",
+        "createdAt": "2024 / 09 / 10"
+    },
+    {
+        "key": "DASB",
+        "company": "DACHSER SE",
+        "country": "Germany",
+        "city": "Kempten",
+        "createdAt": "2012 / 01 / 27"
+    },
+    {
+        "key": "DATA",
+        "company": "DACHSER SE",
+        "country": "Germany",
+        "city": "Kempten",
+        "createdAt": "2012 / 01 / 27"
+    },
+    {
+        "key": "DBCD",
+        "company": "DB Cargo AG",
+        "country": "Germany",
+        "city": "Mainz",
+        "createdAt": "2021 / 08 / 26"
+    },
+    {
+        "key": "DCIA",
+        "company": "Doktor Cargo GmbH",
+        "country": "Germany",
+        "city": "Nürnberg",
+        "createdAt": "2023 / 08 / 08"
+    },
+    {
+        "key": "DCTA",
+        "company": "DE CHIRICO TRANSPORT SRL",
+        "country": "Italy",
+        "city": "TERLIZZI",
+        "createdAt": "2024 / 04 / 08"
+    },
+    {
+        "key": "DCTE",
+        "company": "SARL SNGM",
+        "country": "France",
+        "city": "CROUY",
+        "createdAt": "2024 / 04 / 09"
+    },
+    {
+        "key": "DECA",
+        "company": "decker&co Internatonale Spedition",
+        "country": "Germany",
+        "city": "Achern",
+        "createdAt": "2017 / 06 / 19"
+    },
+    {
+        "key": "DECD",
+        "company": "DE CHIRICO SRL",
+        "country": "Italy",
+        "city": "Verona",
+        "createdAt": "2017 / 05 / 16"
+    },
+    {
+        "key": "DELD",
+        "company": "S.A. TRANSPORTS DELQUIGNIES",
+        "country": "France",
+        "city": "Rouvignies",
+        "createdAt": "2013 / 10 / 17"
+    },
+    {
+        "key": "DEMB",
+        "company": "AUX DEMENAGEURS BASQUES",
+        "country": "France",
+        "city": "CHANTELOUP LES VIGNES",
+        "createdAt": "2013 / 07 / 31"
+    },
+    {
+        "key": "DEME",
+        "company": "LES GENTLEMEN DU DEMENAGEMENT",
+        "country": "France",
+        "city": "Montelimar",
+        "createdAt": "2016 / 03 / 03"
+    },
+    {
+        "key": "DENB",
+        "company": "Denninghaus GmbH & Co. KG",
+        "country": "Germany",
+        "city": "Hamm",
+        "createdAt": "2018 / 04 / 26"
+    },
+    {
+        "key": "DETB",
+        "company": "Dettendorfer Spedition GmbH",
+        "country": "Germany",
+        "city": "Geesthacht",
+        "createdAt": "2017 / 05 / 19"
+    },
+    {
+        "key": "DEWA",
+        "company": "De Waard Transport BV",
+        "country": "Netherlands",
+        "city": "Noord Scharwoude",
+        "createdAt": "2011 / 12 / 01"
+    },
+    {
+        "key": "DFDB",
+        "company": "DFDS A/S",
+        "country": "Denmark",
+        "city": "Copenhagen",
+        "createdAt": "2023 / 12 / 15"
+    },
+    {
+        "key": "DFDE",
+        "company": "EKOL Logistik GmbH",
+        "country": "Germany",
+        "city": "Mannheim",
+        "createdAt": "2025 / 03 / 21"
+    },
+    {
+        "key": "DHLA",
+        "company": "DHL Freight (Finland) Oy",
+        "country": "Finland",
+        "city": "Vantaa",
+        "createdAt": "2013 / 06 / 20"
+    },
+    {
+        "key": "DHLB",
+        "company": "DHL Freight GmbH",
+        "country": "Germany",
+        "city": "Bonn",
+        "createdAt": "2013 / 03 / 10"
+    },
+    {
+        "key": "DHLD",
+        "company": "Deutsche Post Fleet GmbH",
+        "country": "Germany",
+        "city": "Bonn",
+        "createdAt": "2013 / 06 / 10"
+    },
+    {
+        "key": "DIEB",
+        "company": "Diebel Speditions GmbH",
+        "country": "Germany",
+        "city": "Kassel",
+        "createdAt": "2023 / 06 / 09"
+    },
+    {
+        "key": "DIMA",
+        "company": "Di Martino Sweden AB",
+        "country": "Sweden",
+        "city": "Norrköping",
+        "createdAt": "2024 / 11 / 18"
+    },
+    {
+        "key": "DIME",
+        "company": "Dimetra-Holding BV",
+        "country": "Netherlands",
+        "city": "Scherpenzeel",
+        "createdAt": "2017 / 04 / 10"
+    },
+    {
+        "key": "DISA",
+        "company": "DISTRIBUTION DE PRODUITS AGRICOLES MAGALLON",
+        "country": "France",
+        "city": "VEDENE Cedex",
+        "createdAt": "2016 / 01 / 14"
+    },
+    {
+        "key": "DISE",
+        "company": "F.lli Dissegna srl",
+        "country": "Italy",
+        "city": "Rossano Veneto",
+        "createdAt": "2013 / 07 / 09"
+    },
+    {
+        "key": "DKSA",
+        "company": "DKS ULUSLARARASI NAKLIYAT LOJISTIK TICARET LIMITED STİ",
+        "country": "Turkey",
+        "city": "İzmir",
+        "createdAt": "2018 / 04 / 25"
+    },
+    {
+        "key": "DLAA",
+        "company": "DLA srl",
+        "country": "Italy",
+        "city": "Trecase",
+        "createdAt": "2022 / 11 / 07"
+    },
+    {
+        "key": "DLEA",
+        "company": "Dalena Ecologia S.r.l.",
+        "country": "Italy",
+        "city": "Putignano (Ba)",
+        "createdAt": "2022 / 06 / 23"
+    },
+    {
+        "key": "DLMD",
+        "company": "Delamode Baltics UAB",
+        "country": "Lithuania",
+        "city": "Vilnius",
+        "createdAt": "2023 / 05 / 22"
+    },
+    {
+        "key": "DLRA",
+        "company": "Deutsches Zentrum für Luft- und Raumfahrt e.V",
+        "country": "Germany",
+        "city": "Köln",
+        "createdAt": "2021 / 07 / 21"
+    },
+    {
+        "key": "DLSE",
+        "company": "dls Land und See Spedition GmbH",
+        "country": "Germany",
+        "city": "Siek",
+        "createdAt": "2013 / 08 / 07"
+    },
+    {
+        "key": "DLTA",
+        "company": "DELTA STOCKS LOGISTICS GLOBAL SL",
+        "country": "Spain",
+        "city": "Amposta",
+        "createdAt": "2021 / 03 / 23"
+    },
+    {
+        "key": "DLTD",
+        "company": "UAB Delta Trucks",
+        "country": "Lithuania",
+        "city": "Vilnius",
+        "createdAt": "2024 / 06 / 06"
+    },
+    {
+        "key": "DMDD",
+        "company": "DMD Déménagements",
+        "country": "France",
+        "city": "Quincy Sous Senart",
+        "createdAt": "2017 / 06 / 06"
+    },
+    {
+        "key": "DMKD",
+        "company": "Spedizioni Marchese Srl",
+        "country": "Italy",
+        "city": "GORGO AL MONTICANO",
+        "createdAt": "2024 / 10 / 04"
+    },
+    {
+        "key": "DMRA",
+        "company": "Demiral Uluslararası Nakliyat Anonim Şirketi",
+        "country": "Turkey",
+        "city": "Istanbul",
+        "createdAt": "2022 / 04 / 19"
+    },
+    {
+        "key": "DMTD",
+        "company": "Fratelli Di Martino s.p.a.",
+        "country": "Italy",
+        "city": "Catania",
+        "createdAt": "2014 / 04 / 04"
+    },
+    {
+        "key": "DNCA",
+        "company": "SC DUNCA EXPEDITII SA",
+        "country": "Romania",
+        "city": "Dumbravita",
+        "createdAt": "2016 / 10 / 26"
+    },
+    {
+        "key": "DNLB",
+        "company": "DN LOGISTICA SRL",
+        "country": "Italy",
+        "city": "Catania",
+        "createdAt": "2020 / 03 / 02"
+    },
+    {
+        "key": "DOMA",
+        "company": "Dominó Trans Nemzetközi-Belföldi Fuvarozó és Szállítmányozó Külkereskedelmi Korlátolt Felelőségű Társaság",
+        "country": "Hungary",
+        "city": "Viszák",
+        "createdAt": "2023 / 02 / 16"
+    },
+    {
+        "key": "DORB",
+        "company": "TRANSPORTS DORCHIES SAS",
+        "country": "France",
+        "city": "FLERS EN ESCREBIEUX",
+        "createdAt": "2014 / 05 / 30"
+    },
+    {
+        "key": "DPDA",
+        "company": "APS Austria Paket System GmbH",
+        "country": "Austria",
+        "city": "Hörsching",
+        "createdAt": "2015 / 06 / 03"
+    },
+    {
+        "key": "DPDD",
+        "company": "DPD Deutschland GmbH",
+        "country": "Germany",
+        "city": "Aschaffenburg",
+        "createdAt": "2023 / 11 / 30"
+    },
+    {
+        "key": "DPLD",
+        "company": "D&P LOG S.r.l.",
+        "country": "Italy",
+        "city": "AVEZZANO",
+        "createdAt": "2024 / 05 / 02"
+    },
+    {
+        "key": "DPRE",
+        "company": "DINAZZANO PO S.P.A.",
+        "country": "Italy",
+        "city": "REGGIO NELL'EMILIA",
+        "createdAt": "2013 / 01 / 14"
+    },
+    {
+        "key": "DROD",
+        "company": "Drosg Transport GmbH",
+        "country": "Austria",
+        "city": "Wettmannstätten",
+        "createdAt": "2023 / 10 / 05"
+    },
+    {
+        "key": "DSDA",
+        "company": "dsd srl",
+        "country": "Italy",
+        "city": "Capena",
+        "createdAt": "2023 / 09 / 19"
+    },
+    {
+        "key": "DSFA",
+        "company": "Dreier AG",
+        "country": "Switzerland",
+        "city": "Suhr",
+        "createdAt": "2011 / 07 / 26"
+    },
+    {
+        "key": "DSFB",
+        "company": "DEMENAGEMENTS SERGE FONTAINE",
+        "country": "France",
+        "city": "LE PLESSIS PATE",
+        "createdAt": "2014 / 10 / 08"
+    },
+    {
+        "key": "DSSB",
+        "company": "DISSEGNA GROUP SRL",
+        "country": "Italy",
+        "city": "Rossano Veneto",
+        "createdAt": "2021 / 09 / 30"
+    },
+    {
+        "key": "DSVA",
+        "company": "DSV Road Holding",
+        "country": "Belgium",
+        "city": "Puurs-Sint-Amands",
+        "createdAt": "2011 / 07 / 07"
+    },
+    {
+        "key": "DSVB",
+        "company": "DSV Road Holding",
+        "country": "Belgium",
+        "city": "Puurs-Sint-Amands",
+        "createdAt": "2025 / 03 / 19"
+    },
+    {
+        "key": "DSVE",
+        "company": "DSV ROAD AS",
+        "country": "Norway",
+        "city": "Vestby",
+        "createdAt": "2015 / 07 / 06"
+    },
+    {
+        "key": "DTTA",
+        "company": "DENJEAN TRANSPORTS",
+        "country": "France",
+        "city": "TOULOUSE",
+        "createdAt": "2024 / 10 / 22"
+    },
+    {
+        "key": "DTTB",
+        "company": "DENJEAN TRANSPORTS",
+        "country": "France",
+        "city": "TOULOUSE",
+        "createdAt": "2024 / 10 / 22"
+    },
+    {
+        "key": "DTTD",
+        "company": "DENJEAN TRANSPORTS",
+        "country": "France",
+        "city": "TOULOUSE",
+        "createdAt": "2024 / 10 / 22"
+    },
+    {
+        "key": "DUKD",
+        "company": "Dörpener Umschlaggessellschaft für den kombinierten Verkehr",
+        "country": "Germany",
+        "city": "Dörpen",
+        "createdAt": "2024 / 01 / 17"
+    },
+    {
+        "key": "DURB",
+        "company": "ARCADIA LOJISTIK LIMITED SIRKETI",
+        "country": "Turkey",
+        "city": "ISTANBUL",
+        "createdAt": "2024 / 12 / 03"
+    },
+    {
+        "key": "DURE",
+        "company": "Durebur Group Srl",
+        "country": "Italy",
+        "city": "Monfalcone",
+        "createdAt": "2023 / 03 / 15"
+    },
+    {
+        "key": "DUVD",
+        "company": "Duvenbeck Kraftverkehr",
+        "country": "Germany",
+        "city": "Bocholt",
+        "createdAt": "2013 / 07 / 02"
+    },
+    {
+        "key": "DVGA",
+        "company": "DEVEGA S.R.L.",
+        "country": "Romania",
+        "city": "Oradea",
+        "createdAt": "2022 / 05 / 19"
+    },
+    {
+        "key": "DVNE",
+        "company": "Devnak Nakliyat Turizm Iç ve Dış Tic. A.Ş",
+        "country": "Turkey",
+        "city": "Catalca Istanbul",
+        "createdAt": "2016 / 05 / 24"
+    },
+    {
+        "key": "DVTE",
+        "company": "DeVooght-Veleye BV",
+        "country": "Belgium",
+        "city": "ZEDELGEM",
+        "createdAt": "2025 / 03 / 24"
+    },
+    {
+        "key": "DWBK",
+        "company": "Warsteiner Brauerei - Haus Cramer KG",
+        "country": "Germany",
+        "city": "Warstein",
+        "createdAt": "2013 / 03 / 06"
+    },
+    {
+        "key": "DYLD",
+        "company": "DAYLOG LOJİSTİK VE DIŞ TİC LTD ŞTİ",
+        "country": "Turkey",
+        "city": "İSTANBUL",
+        "createdAt": "2025 / 01 / 15"
+    },
+    {
+        "key": "EBAA",
+        "company": "EBAM ULUSLARARASI NAKLIYAT VE TICARET LIMITED ŞİRKETİ",
+        "country": "Turkey",
+        "city": "Izmir",
+        "createdAt": "2017 / 05 / 29"
+    },
+    {
+        "key": "EBIE",
+        "company": "Eberhard Bau AG",
+        "country": "Switzerland",
+        "city": "Kloten",
+        "createdAt": "2018 / 10 / 25"
+    },
+    {
+        "key": "ECDA",
+        "company": "Ecoeridania S.p.a.",
+        "country": "Italy",
+        "city": "Arenzano (GE)",
+        "createdAt": "2024 / 06 / 17"
+    },
+    {
+        "key": "ECLB",
+        "company": "Ecologica Sud Servizi S.r.l.",
+        "country": "Italy",
+        "city": "Castrovillari (Cs)",
+        "createdAt": "2023 / 06 / 20"
+    },
+    {
+        "key": "ECOB",
+        "company": "Berger Fahrzeugtechnik Ges.m.b.H.",
+        "country": "Austria",
+        "city": "Radfeld",
+        "createdAt": "2020 / 12 / 04"
+    },
+    {
+        "key": "ECOE",
+        "company": "ECOSERVICE S.R.L.",
+        "country": "Italy",
+        "city": "Carrara",
+        "createdAt": "2020 / 08 / 26"
+    },
+    {
+        "key": "ECSE",
+        "company": "Ter Wind Invest BV",
+        "country": "Belgium",
+        "city": "Zeebrugge",
+        "createdAt": "2021 / 09 / 21"
+    },
+    {
+        "key": "EDEE",
+        "company": "EDERLOG MULTIMODAL",
+        "country": "France",
+        "city": "Hendaye",
+        "createdAt": "2023 / 06 / 07"
+    },
+    {
+        "key": "EFFD",
+        "company": "EFFIMODAL SIA",
+        "country": "Latvia",
+        "city": "Riga",
+        "createdAt": "2023 / 09 / 29"
+    },
+    {
+        "key": "EGEA",
+        "company": "Europe Group sp z o.o.",
+        "country": "Poland",
+        "city": "Prusice",
+        "createdAt": "2025 / 02 / 03"
+    },
+    {
+        "key": "EGEE",
+        "company": "EGE EKSPRES ULUSLARARASI TASIMACILIK HIZMETLERI TICARET LIMITED SİRKETI",
+        "country": "Turkey",
+        "city": "Izmir",
+        "createdAt": "2019 / 05 / 08"
+    },
+    {
+        "key": "EGMD",
+        "company": "EGM TRANS",
+        "country": "Bulgaria",
+        "city": "RUSE",
+        "createdAt": "2024 / 12 / 19"
+    },
+    {
+        "key": "EIBB",
+        "company": "Move Intermodal",
+        "country": "Belgium",
+        "city": "Genk",
+        "createdAt": "2012 / 07 / 13"
+    },
+    {
+        "key": "EISA",
+        "company": "Ekdahl International AB",
+        "country": "Sweden",
+        "city": "Skurup",
+        "createdAt": "2017 / 11 / 07"
+    },
+    {
+        "key": "EKOA",
+        "company": "Eko Cem Ltd.",
+        "country": "Bulgaria",
+        "city": "Sofia",
+        "createdAt": "2024 / 12 / 13"
+    },
+    {
+        "key": "EKOE",
+        "company": "EKOL Logistik GmbH",
+        "country": "Germany",
+        "city": "Mannheim",
+        "createdAt": "2011 / 07 / 12"
+    },
+    {
+        "key": "EKTA",
+        "company": "Eko-Trans Sp. z o.o.",
+        "country": "Poland",
+        "city": "Jastrzebie Zdrój",
+        "createdAt": "2018 / 06 / 26"
+    },
+    {
+        "key": "ELFE",
+        "company": "11er Nahrungsmittel GmbH",
+        "country": "Austria",
+        "city": "Frastanz",
+        "createdAt": "2024 / 01 / 23"
+    },
+    {
+        "key": "ELSB",
+        "company": "ELS ULUSLARARASI TASIMACILIK HIZMETLERI TICARET ANONIM SIRKETI",
+        "country": "Turkey",
+        "city": "ISTANBUL",
+        "createdAt": "2025 / 01 / 06"
+    },
+    {
+        "key": "ELTA",
+        "company": "Eletta Transport AB",
+        "country": "Sweden",
+        "city": "Brämhult",
+        "createdAt": "2022 / 12 / 08"
+    },
+    {
+        "key": "ELTE",
+        "company": "SC ELITON TRANS SRL",
+        "country": "Romania",
+        "city": "Bascov",
+        "createdAt": "2023 / 05 / 05"
+    },
+    {
+        "key": "EMRE",
+        "company": "EMRE AYTAS ULUSLARARASI NAKLIYAT AKARYAKIT ITHALAT IHRACAT SANAYI VE TICARET LIMITED SIRKETI",
+        "country": "Turkey",
+        "city": "MERSIN",
+        "createdAt": "2024 / 08 / 14"
+    },
+    {
+        "key": "ENGE",
+        "company": "ENGEMANN u. CO. Internationale Spedition GmbH",
+        "country": "Germany",
+        "city": "Hilden",
+        "createdAt": "2011 / 07 / 01"
+    },
+    {
+        "key": "ENTE",
+        "company": "Enterprise Logistics Sp. z o.o.",
+        "country": "Poland",
+        "city": "Stargard",
+        "createdAt": "2016 / 02 / 18"
+    },
+    {
+        "key": "EPTA",
+        "company": "EURO-PEGAZ SP.zo.o. TRANSPORT SP.k.",
+        "country": "Poland",
+        "city": "Warsaw",
+        "createdAt": "2014 / 12 / 10"
+    },
+    {
+        "key": "EQCD",
+        "company": "DHL Freight Denmark A/S",
+        "country": "Denmark",
+        "city": "Brøndby",
+        "createdAt": "2021 / 03 / 09"
+    },
+    {
+        "key": "EQMA",
+        "company": "Equimodal s.l.",
+        "country": "Spain",
+        "city": "Zaragoza",
+        "createdAt": "2014 / 02 / 03"
+    },
+    {
+        "key": "ERGA",
+        "company": "ERGÜN PETROL SANAYİ VE OTOMOTİV TİCARET LİMİTED ŞİRKETİ",
+        "country": "Turkey",
+        "city": "EDİRNE",
+        "createdAt": "2025 / 02 / 17"
+    },
+    {
+        "key": "ERKA",
+        "company": "Erka Internationale Spedition GmbH",
+        "country": "Germany",
+        "city": "Stuttgart",
+        "createdAt": "2017 / 11 / 13"
+    },
+    {
+        "key": "ESCA",
+        "company": "GONAVAS LOGISTICS S.L",
+        "country": "Spain",
+        "city": "Miguelturra",
+        "createdAt": "2022 / 01 / 25"
+    },
+    {
+        "key": "ESRA",
+        "company": "piano ithalat ihracat ve lojistik hiz. ltd. şti",
+        "country": "Turkey",
+        "city": "ıstanbul",
+        "createdAt": "2025 / 01 / 22"
+    },
+    {
+        "key": "ETCA",
+        "company": "H.ESSERS TRANSPORT COMPANY",
+        "country": "Belgium",
+        "city": "Genk",
+        "createdAt": "2013 / 06 / 20"
+    },
+    {
+        "key": "ETLA",
+        "company": "Erontrans sp z o.o.",
+        "country": "Poland",
+        "city": "Pruszcz Gdanski",
+        "createdAt": "2013 / 01 / 15"
+    },
+    {
+        "key": "ETMA",
+        "company": "Eschtec AG",
+        "country": "Switzerland",
+        "city": "Müllheim- Dorf",
+        "createdAt": "2015 / 11 / 16"
+    },
+    {
+        "key": "ETRA",
+        "company": "Emons Transporte GmbH",
+        "country": "Germany",
+        "city": "Köln",
+        "createdAt": "2012 / 01 / 05"
+    },
+    {
+        "key": "ETRB",
+        "company": "EUROTRAFFIC S.R.L.",
+        "country": "Italy",
+        "city": "Modugno (Ba)",
+        "createdAt": "2021 / 06 / 08"
+    },
+    {
+        "key": "ETSE",
+        "company": "Euro Team Gb Spedition S.R.L.",
+        "country": "Romania",
+        "city": "Sebes",
+        "createdAt": "2023 / 01 / 10"
+    },
+    {
+        "key": "EUDE",
+        "company": "EUROSPEDA SK S.R.O.",
+        "country": "Slovakia",
+        "city": "Humenné",
+        "createdAt": "2024 / 12 / 03"
+    },
+    {
+        "key": "EUGE",
+        "company": "Spedition Hirsch GmbH",
+        "country": "Germany",
+        "city": "Ellwangen",
+        "createdAt": "2014 / 06 / 17"
+    },
+    {
+        "key": "EURA",
+        "company": "EUROLOGISTIC SRL",
+        "country": "Italy",
+        "city": "MILANO",
+        "createdAt": "2012 / 12 / 14"
+    },
+    {
+        "key": "EVKA",
+        "company": "Evonik Peroxid GmbH",
+        "country": "Austria",
+        "city": "Weißenstein",
+        "createdAt": "2024 / 02 / 07"
+    },
+    {
+        "key": "EVME",
+        "company": "SLO SERVICES, s.r.o.",
+        "country": "Slovakia",
+        "city": "Senec",
+        "createdAt": "2024 / 02 / 29"
+    },
+    {
+        "key": "EVNA",
+        "company": "EVN Wärmekraftwerke GmbH",
+        "country": "Austria",
+        "city": "Maria Enzersdorf",
+        "createdAt": "2024 / 09 / 05"
+    },
+    {
+        "key": "EVOE",
+        "company": "EVOLOG NAKLİYAT VE LOJİSTİK HİZ. TİC. LTD. ŞTİ.",
+        "country": "Turkey",
+        "city": "İstanbul",
+        "createdAt": "2018 / 02 / 06"
+    },
+    {
+        "key": "EWAK",
+        "company": "Ewals Cargo Care BV",
+        "country": "Netherlands",
+        "city": "Tegelen",
+        "createdAt": "2012 / 07 / 11"
+    },
+    {
+        "key": "EYCE",
+        "company": "TRANSPORTS EYCHENNE ET FILS",
+        "country": "France",
+        "city": "PLAISANCE-DU-TOUCH",
+        "createdAt": "2014 / 05 / 14"
+    },
+    {
+        "key": "EYUE",
+        "company": "EYÜP LOJİSTİK ULUSLARARASI KARA VE DENİZ NAKLİYATI TİCARET A.Ş.",
+        "country": "Turkey",
+        "city": "Gaziantep",
+        "createdAt": "2017 / 07 / 26"
+    },
+    {
+        "key": "FABD",
+        "company": "SARL FAB’S DEMENAGEMENTS",
+        "country": "France",
+        "city": "Saint Avit",
+        "createdAt": "2015 / 06 / 09"
+    },
+    {
+        "key": "FARE",
+        "company": "FARELLA TRASPORTI S.R.L.",
+        "country": "Italy",
+        "city": "Altamura",
+        "createdAt": "2022 / 05 / 12"
+    },
+    {
+        "key": "FASB",
+        "company": "Fas S.r.l. a socio unico",
+        "country": "Italy",
+        "city": "Pescara",
+        "createdAt": "2013 / 11 / 26"
+    },
+    {
+        "key": "FASD",
+        "company": "AS Logistic Intermodal S.r.l.",
+        "country": "Italy",
+        "city": "Pagani",
+        "createdAt": "2018 / 01 / 10"
+    },
+    {
+        "key": "FATE",
+        "company": "FATTORINI AUTOTRASPORTI SAGL",
+        "country": "Switzerland",
+        "city": "NOVAZZANO",
+        "createdAt": "2014 / 03 / 25"
+    },
+    {
+        "key": "FCIE",
+        "company": "Futura Cargo Italia",
+        "country": "Italy",
+        "city": "Pescara",
+        "createdAt": "2024 / 11 / 04"
+    },
+    {
+        "key": "FCSA",
+        "company": "Fiore Trasporti Srls",
+        "country": "Italy",
+        "city": "Cassano Magnago",
+        "createdAt": "2020 / 11 / 19"
+    },
+    {
+        "key": "FDMD",
+        "company": "FRANCEDEM",
+        "country": "France",
+        "city": "RUMAUCOURT",
+        "createdAt": "2025 / 01 / 20"
+    },
+    {
+        "key": "FEAA",
+        "company": "TRANSPORTS COMBRONDE",
+        "country": "France",
+        "city": "Thiers",
+        "createdAt": "2025 / 01 / 29"
+    },
+    {
+        "key": "FEAD",
+        "company": "FESTA TRASPORTI & LOGISTICA SRL",
+        "country": "Italy",
+        "city": "MONTICHIARI",
+        "createdAt": "2014 / 03 / 04"
+    },
+    {
+        "key": "FERB",
+        "company": "Autotrasporti Ferrario srl",
+        "country": "Italy",
+        "city": "Inveruno",
+        "createdAt": "2016 / 07 / 11"
+    },
+    {
+        "key": "FERD",
+        "company": "FERCAM TRANSPORTES SA",
+        "country": "Spain",
+        "city": "Castellbisbal",
+        "createdAt": "2019 / 04 / 17"
+    },
+    {
+        "key": "FERE",
+        "company": "FERCAM S.p.a",
+        "country": "Italy",
+        "city": "Bolzano",
+        "createdAt": "2012 / 01 / 09"
+    },
+    {
+        "key": "FFBB",
+        "company": "F.LLI FIORE S.R.L.",
+        "country": "Italy",
+        "city": "BITONTO",
+        "createdAt": "2014 / 06 / 25"
+    },
+    {
+        "key": "FFKE",
+        "company": "FUCHS SCHMIERSTOFFE GMBH",
+        "country": "Germany",
+        "city": "Kiel",
+        "createdAt": "2014 / 04 / 24"
+    },
+    {
+        "key": "FFLA",
+        "company": "COMETRANS SAS",
+        "country": "France",
+        "city": "Neuville En Ferrain",
+        "createdAt": "2014 / 03 / 07"
+    },
+    {
+        "key": "FGEE",
+        "company": "Ferroline Grupp OÜ",
+        "country": "Estonia",
+        "city": "Lehmja",
+        "createdAt": "2021 / 10 / 14"
+    },
+    {
+        "key": "FGTA",
+        "company": "Gebr. Thomaidis GmbH",
+        "country": "Germany",
+        "city": "Hanau",
+        "createdAt": "2014 / 01 / 15"
+    },
+    {
+        "key": "FICD",
+        "company": "Froneri Ice Cream Deutschland GmbH",
+        "country": "Germany",
+        "city": "Osnabrück",
+        "createdAt": "2024 / 06 / 18"
+    },
+    {
+        "key": "FIGA",
+        "company": "F.T.I. AUTOTRASPORTI S.A.S.",
+        "country": "Italy",
+        "city": "BRIVIO",
+        "createdAt": "2013 / 08 / 31"
+    },
+    {
+        "key": "FILA",
+        "company": "SC FILIP SRL",
+        "country": "Romania",
+        "city": "Arad",
+        "createdAt": "2020 / 10 / 12"
+    },
+    {
+        "key": "FINA",
+        "company": "ANGELO FINESSO SPA",
+        "country": "Italy",
+        "city": "PADOVA",
+        "createdAt": "2013 / 08 / 05"
+    },
+    {
+        "key": "FIOD",
+        "company": "Finsterwalder Transport GmbH",
+        "country": "Germany",
+        "city": "Merseburg",
+        "createdAt": "2018 / 06 / 25"
+    },
+    {
+        "key": "FIVE",
+        "company": "FIVE LOGISTICS SRL",
+        "country": "Italy",
+        "city": "Bari",
+        "createdAt": "2016 / 10 / 03"
+    },
+    {
+        "key": "FIXE",
+        "company": "Fixemer Logistics GmbH",
+        "country": "Germany",
+        "city": "Perl-Borg",
+        "createdAt": "2011 / 09 / 26"
+    },
+    {
+        "key": "FKAB",
+        "company": "Int. Spedition KERN - Inh. Friedrich Kern e.K.",
+        "country": "Germany",
+        "city": "Steinach",
+        "createdAt": "2014 / 03 / 31"
+    },
+    {
+        "key": "FLEE",
+        "company": "Krone Scanbalt OÜ",
+        "country": "Estonia",
+        "city": "Pildiküla, Harjumaa",
+        "createdAt": "2023 / 05 / 18"
+    },
+    {
+        "key": "FLKA",
+        "company": "FLASHLINK LTD",
+        "country": "United Kingdom",
+        "city": "LONDON",
+        "createdAt": "2014 / 05 / 09"
+    },
+    {
+        "key": "FLLA",
+        "company": "FECCIA F.LLI SRL",
+        "country": "Italy",
+        "city": "MILANO",
+        "createdAt": "2014 / 05 / 19"
+    },
+    {
+        "key": "FLNE",
+        "company": "FRIGO LINEAS NORDICAS, S.L.",
+        "country": "Spain",
+        "city": "Huercal.-Overa",
+        "createdAt": "2019 / 10 / 01"
+    },
+    {
+        "key": "FMCE",
+        "company": "P&O Ferrymasters Ltd",
+        "country": "United Kingdom",
+        "city": "Larne",
+        "createdAt": "2015 / 05 / 06"
+    },
+    {
+        "key": "FMNA",
+        "company": "MORLEO AUTOTRASPORTI SRL",
+        "country": "Italy",
+        "city": "Erchie",
+        "createdAt": "2024 / 06 / 27"
+    },
+    {
+        "key": "FNMA",
+        "company": "Fröde GmbH Möbelspedition",
+        "country": "Germany",
+        "city": "Weil am Rhein",
+        "createdAt": "2013 / 04 / 22"
+    },
+    {
+        "key": "FONE",
+        "company": "DEMEFFICACE LE DEMENAGEMENT",
+        "country": "France",
+        "city": "VAUX LE PENIL",
+        "createdAt": "2020 / 06 / 10"
+    },
+    {
+        "key": "FORA",
+        "company": "FOR Freight GmbH & Co. KG",
+        "country": "Germany",
+        "city": "Greven",
+        "createdAt": "2020 / 04 / 02"
+    },
+    {
+        "key": "FORB",
+        "company": "FORTUNATO VITO",
+        "country": "Italy",
+        "city": "ANDRIA",
+        "createdAt": "2024 / 04 / 17"
+    },
+    {
+        "key": "FORD",
+        "company": "FORWARDIS",
+        "country": "France",
+        "city": "Levallois-Perret",
+        "createdAt": "2017 / 01 / 31"
+    },
+    {
+        "key": "FORE",
+        "company": "Forstlogistik CH AG",
+        "country": "Switzerland",
+        "city": "Biberist",
+        "createdAt": "2016 / 10 / 20"
+    },
+    {
+        "key": "FRCA",
+        "company": "FRATELLI CAVAGLIA' SRL",
+        "country": "Italy",
+        "city": "CARMAGNOLA",
+        "createdAt": "2025 / 01 / 15"
+    },
+    {
+        "key": "FRCB",
+        "company": "FROIDCOMBI",
+        "country": "France",
+        "city": "Chateaurenard",
+        "createdAt": "2014 / 05 / 27"
+    },
+    {
+        "key": "FRGE",
+        "company": "GERMANETTI SRL",
+        "country": "Italy",
+        "city": "ALBA",
+        "createdAt": "2014 / 11 / 03"
+    },
+    {
+        "key": "FRIA",
+        "company": "Transports Frisaye S.A.",
+        "country": "Belgium",
+        "city": "Flémalle",
+        "createdAt": "2011 / 09 / 13"
+    },
+    {
+        "key": "FRMA",
+        "company": "Formaro Spedizioni S.r.l.",
+        "country": "Italy",
+        "city": "Pordenone",
+        "createdAt": "2022 / 01 / 20"
+    },
+    {
+        "key": "FROE",
+        "company": "Frölich Internationale Transport GmbH & Co. KG",
+        "country": "Germany",
+        "city": "Hessisch Lichtenau",
+        "createdAt": "2013 / 02 / 25"
+    },
+    {
+        "key": "FUKD",
+        "company": "Frey & Klein internationale Spedition GmbH",
+        "country": "Germany",
+        "city": "Simmern",
+        "createdAt": "2023 / 02 / 08"
+    },
+    {
+        "key": "FUMA",
+        "company": "Fröde GmbH Möbelspedition",
+        "country": "Germany",
+        "city": "Weil am Rhein",
+        "createdAt": "2013 / 04 / 23"
+    },
+    {
+        "key": "FWDA",
+        "company": "DB Fahrwegdienste GmbH",
+        "country": "Germany",
+        "city": "Berlin",
+        "createdAt": "2013 / 08 / 12"
+    },
+    {
+        "key": "GABE",
+        "company": "Zakład Chemiczny Paweł Paprocki Sp. Komandytowa",
+        "country": "Poland",
+        "city": "Święciechowa",
+        "createdAt": "2022 / 06 / 02"
+    },
+    {
+        "key": "GARK",
+        "company": "GARTNER KG",
+        "country": "Austria",
+        "city": "Lambach",
+        "createdAt": "2014 / 06 / 05"
+    },
+    {
+        "key": "GAUD",
+        "company": "SARL GD GAUTHIER DEMENAGEMENTS",
+        "country": "France",
+        "city": "Montceau Les Mines",
+        "createdAt": "2018 / 01 / 29"
+    },
+    {
+        "key": "GAWE",
+        "company": "Spedition Garthe GmbH",
+        "country": "Germany",
+        "city": "Wetter",
+        "createdAt": "2015 / 01 / 19"
+    },
+    {
+        "key": "GBDA",
+        "company": "Datrans Nederland B.V.",
+        "country": "Netherlands",
+        "city": "Wanssum",
+        "createdAt": "2024 / 03 / 26"
+    },
+    {
+        "key": "GBRA",
+        "company": "GÖKBORA ULUSLARARASI NAKLİYAT VE TİCARET A.Ş.",
+        "country": "Turkey",
+        "city": "Istanbul",
+        "createdAt": "2016 / 03 / 29"
+    },
+    {
+        "key": "GCAA",
+        "company": "CURCIO TRASPORTI E SERVIZI srl",
+        "country": "Italy",
+        "city": "POLLA",
+        "createdAt": "2014 / 03 / 25"
+    },
+    {
+        "key": "GELE",
+        "company": "GELİŞİM ULUSLARARASI LOJİSTİK HİZMET VE DIŞ TİCARET LTD. ŞTİ",
+        "country": "Turkey",
+        "city": "İstanbul",
+        "createdAt": "2018 / 05 / 23"
+    },
+    {
+        "key": "GEND",
+        "company": "ABC DEMEFRANCE",
+        "country": "France",
+        "city": "Genas",
+        "createdAt": "2017 / 01 / 10"
+    },
+    {
+        "key": "GERB",
+        "company": "GERMAN TRANSPORT EOOD",
+        "country": "Bulgaria",
+        "city": "Karnobat",
+        "createdAt": "2019 / 11 / 18"
+    },
+    {
+        "key": "GHPD",
+        "company": "Frey & Klein internationale Spedition GmbH",
+        "country": "Germany",
+        "city": "Simmern",
+        "createdAt": "2017 / 05 / 02"
+    },
+    {
+        "key": "GITA",
+        "company": "Giezendanner Transport AG",
+        "country": "Switzerland",
+        "city": "Rothrist",
+        "createdAt": "2012 / 01 / 06"
+    },
+    {
+        "key": "GJTD",
+        "company": "GJ TRANSFERTS",
+        "country": "France",
+        "city": "L’isle Sur La Sorgue",
+        "createdAt": "2020 / 01 / 24"
+    },
+    {
+        "key": "GKSE",
+        "company": "Gunnar Karlsson Spedition AB",
+        "country": "Sweden",
+        "city": "Växjö",
+        "createdAt": "2013 / 10 / 03"
+    },
+    {
+        "key": "GLGB",
+        "company": "GIRELLI LOGISTICS GROUP SRL",
+        "country": "Italy",
+        "city": "Verona",
+        "createdAt": "2021 / 10 / 06"
+    },
+    {
+        "key": "GLOA",
+        "company": "Geiger Logistik GmbH & Co. KG",
+        "country": "Germany",
+        "city": "Waltenhofen",
+        "createdAt": "2022 / 07 / 25"
+    },
+    {
+        "key": "GLSE",
+        "company": "GLS IT Services GmbH",
+        "country": "Germany",
+        "city": "Neuenstein",
+        "createdAt": "2015 / 06 / 30"
+    },
+    {
+        "key": "GLTA",
+        "company": "GLT TRANSPORT d.o.o.",
+        "country": "Slovenia",
+        "city": "Žabnica",
+        "createdAt": "2021 / 08 / 09"
+    },
+    {
+        "key": "GNTA",
+        "company": "GN TRANSPORT",
+        "country": "Sweden",
+        "city": "Halmstad",
+        "createdAt": "2013 / 08 / 28"
+    },
+    {
+        "key": "GOED",
+        "company": "Gödecke Eurotrans GmbH",
+        "country": "Germany",
+        "city": "Lübeck",
+        "createdAt": "2014 / 10 / 07"
+    },
+    {
+        "key": "GOMA",
+        "company": "GOMMA SRL",
+        "country": "Italy",
+        "city": "MONTORIO AL VOMANO",
+        "createdAt": "2013 / 12 / 13"
+    },
+    {
+        "key": "GOSB",
+        "company": "Gosselin Support Services NV",
+        "country": "Belgium",
+        "city": "Deurne",
+        "createdAt": "2024 / 04 / 10"
+    },
+    {
+        "key": "GOTA",
+        "company": "Gottardi Michele Autotrasporti Srl",
+        "country": "Italy",
+        "city": "Ala",
+        "createdAt": "2024 / 09 / 05"
+    },
+    {
+        "key": "GOTB",
+        "company": "Z.P.U Gotix W.H Gotowicz Waldemar Gotowicz",
+        "country": "Poland",
+        "city": "Zamość",
+        "createdAt": "2025 / 03 / 10"
+    },
+    {
+        "key": "GPAA",
+        "company": "GPA LOGISTIKA SOLUTIONS SPAIN, S.L.",
+        "country": "Spain",
+        "city": "Leon",
+        "createdAt": "2021 / 03 / 16"
+    },
+    {
+        "key": "GRAE",
+        "company": "GIERRE TRASPORTI E LOGISTICA SRL.",
+        "country": "Italy",
+        "city": "Altamura (Ba)",
+        "createdAt": "2020 / 10 / 06"
+    },
+    {
+        "key": "GREE",
+        "company": "GREEN LINE ADVANCED SYSTEMS & SERVICES SRL",
+        "country": "Italy",
+        "city": "CUNEO",
+        "createdAt": "2013 / 03 / 18"
+    },
+    {
+        "key": "GRID",
+        "company": "GOPET ROMANIA SRL",
+        "country": "Romania",
+        "city": "Bucharest",
+        "createdAt": "2021 / 04 / 08"
+    },
+    {
+        "key": "GROD",
+        "company": "DEMENAGEMENTS GILBERT GROSPIRON",
+        "country": "France",
+        "city": "Paris",
+        "createdAt": "2015 / 04 / 23"
+    },
+    {
+        "key": "GRTB",
+        "company": "GIERRE TRASPORTI E LOGISTICA SRL.",
+        "country": "Italy",
+        "city": "Altamura (Ba)",
+        "createdAt": "2021 / 04 / 20"
+    },
+    {
+        "key": "GRTE",
+        "company": "GEODIS RT SPAIN, S.A.",
+        "country": "Spain",
+        "city": "Óriz",
+        "createdAt": "2023 / 05 / 30"
+    },
+    {
+        "key": "GRUB",
+        "company": "TKL GmbH Gesellschaft für Transporte, kombinierten Verkehr & Logistik",
+        "country": "Germany",
+        "city": "Hamburg",
+        "createdAt": "2012 / 07 / 31"
+    },
+    {
+        "key": "GRUE",
+        "company": "Gruber Logistics spa",
+        "country": "Italy",
+        "city": "Ora",
+        "createdAt": "2013 / 09 / 11"
+    },
+    {
+        "key": "GSLE",
+        "company": "GESTION DE SERVICIOS LOGISTICOS SILLA SL",
+        "country": "Spain",
+        "city": "Silla",
+        "createdAt": "2017 / 02 / 01"
+    },
+    {
+        "key": "GTAK",
+        "company": "Galliker Transport AG",
+        "country": "Switzerland",
+        "city": "Altishofen",
+        "createdAt": "2014 / 07 / 07"
+    },
+    {
+        "key": "GTIB",
+        "company": "GOPET TRANS",
+        "country": "Bulgaria",
+        "city": "Sofia",
+        "createdAt": "2013 / 09 / 03"
+    },
+    {
+        "key": "GTLA",
+        "company": "Gatt Transport & Logistik GmbH",
+        "country": "Austria",
+        "city": "Kufstein",
+        "createdAt": "2021 / 03 / 19"
+    },
+    {
+        "key": "GTRA",
+        "company": "Garbe Transport GmbH",
+        "country": "Germany",
+        "city": "Hamburg",
+        "createdAt": "2011 / 11 / 23"
+    },
+    {
+        "key": "GTSA",
+        "company": "GENERAL TRANSPORTS SERVICES",
+        "country": "France",
+        "city": "Marseille",
+        "createdAt": "2023 / 04 / 18"
+    },
+    {
+        "key": "GVRA",
+        "company": "G&G Removals SRL",
+        "country": "Italy",
+        "city": "Roma",
+        "createdAt": "2015 / 04 / 21"
+    },
+    {
+        "key": "GVSD",
+        "company": "Große Vehne Speditions GmbH",
+        "country": "Germany",
+        "city": "Kornwestheim",
+        "createdAt": "2014 / 04 / 11"
+    },
+    {
+        "key": "GWME",
+        "company": "GWEMER S.R.L.",
+        "country": "Italy",
+        "city": "NONANTOLA",
+        "createdAt": "2024 / 08 / 06"
+    },
+    {
+        "key": "GWSA",
+        "company": "Gebrüder Weiss Transport und Logistik",
+        "country": "Austria",
+        "city": "Lauterach",
+        "createdAt": "2017 / 06 / 01"
+    },
+    {
+        "key": "GWWA",
+        "company": "Gebrüder Weiss Transport und Logistik",
+        "country": "Austria",
+        "city": "Lauterach",
+        "createdAt": "2011 / 07 / 11"
+    },
+    {
+        "key": "HAMA",
+        "company": "MG HANDEL GmbH",
+        "country": "Austria",
+        "city": "Hörsching",
+        "createdAt": "2022 / 11 / 15"
+    },
+    {
+        "key": "HATB",
+        "company": "HATIM TRASPORTI SAGL",
+        "country": "Switzerland",
+        "city": "CADENAZZO",
+        "createdAt": "2024 / 05 / 08"
+    },
+    {
+        "key": "HBJA",
+        "company": "Safe Green Logistics A/S",
+        "country": "Denmark",
+        "city": "Vodskov",
+        "createdAt": "2021 / 05 / 11"
+    },
+    {
+        "key": "HELA",
+        "company": "Hellmann Worldwide Logistics Germany GmbH & Co. KG",
+        "country": "Germany",
+        "city": "Osnabrück",
+        "createdAt": "2014 / 07 / 11"
+    },
+    {
+        "key": "HEXA",
+        "company": "HEXATRANS",
+        "country": "France",
+        "city": "Mions",
+        "createdAt": "2014 / 07 / 04"
+    },
+    {
+        "key": "HGUD",
+        "company": "Haugas Transport OÜ",
+        "country": "Estonia",
+        "city": "Võrumaa",
+        "createdAt": "2024 / 03 / 20"
+    },
+    {
+        "key": "HINA",
+        "company": "Hinterberger GmbH&Co kg Spedition u Logistik",
+        "country": "Germany",
+        "city": "Altötting",
+        "createdAt": "2014 / 06 / 30"
+    },
+    {
+        "key": "HISB",
+        "company": "Hofmann International Spedition GmbH",
+        "country": "Germany",
+        "city": "Biebesheim",
+        "createdAt": "2019 / 09 / 10"
+    },
+    {
+        "key": "HKDE",
+        "company": "Häcker Küchen GmbH & Co.KG",
+        "country": "Germany",
+        "city": "Rödinghausen",
+        "createdAt": "2020 / 11 / 26"
+    },
+    {
+        "key": "HKPB",
+        "company": "Heisterkamp Trailerverhuur BV",
+        "country": "Netherlands",
+        "city": "Oldenzaal",
+        "createdAt": "2011 / 08 / 10"
+    },
+    {
+        "key": "HKSE",
+        "company": "HK SEYTAŞ ULUSLARARASI TAŞIMACILIK AĞIR NAKLİYAT VE TİCARET LİMİTED ŞİRKETİ",
+        "country": "Turkey",
+        "city": "HATAY",
+        "createdAt": "2025 / 03 / 17"
+    },
+    {
+        "key": "HLGA",
+        "company": "Himolla Transporte",
+        "country": "Germany",
+        "city": "Taufkirchen",
+        "createdAt": "2014 / 12 / 15"
+    },
+    {
+        "key": "HMLD",
+        "company": "HENKS & MIBRA Logistics Deutschland GmbH",
+        "country": "Germany",
+        "city": "Rangsdorf",
+        "createdAt": "2021 / 08 / 09"
+    },
+    {
+        "key": "HMTE",
+        "company": "Henrik Müller Transport & Logistik",
+        "country": "Germany",
+        "city": "Schwetzingen",
+        "createdAt": "2022 / 11 / 16"
+    },
+    {
+        "key": "HPME",
+        "company": "HISPAMAROC, S.L.",
+        "country": "Spain",
+        "city": "Malaga",
+        "createdAt": "2022 / 02 / 03"
+    },
+    {
+        "key": "HPRE",
+        "company": "HOUSE PROJECT S.R.L.",
+        "country": "Italy",
+        "city": "Parma",
+        "createdAt": "2019 / 11 / 12"
+    },
+    {
+        "key": "HTLB",
+        "company": "Hanse Trailer UAB",
+        "country": "Lithuania",
+        "city": "Vilnius",
+        "createdAt": "2024 / 08 / 27"
+    },
+    {
+        "key": "HTRA",
+        "company": "Hoptransa UAB",
+        "country": "Lithuania",
+        "city": "Ramuciai",
+        "createdAt": "2020 / 02 / 14"
+    },
+    {
+        "key": "HTTE",
+        "company": "STRIEBIG TRANSPORT",
+        "country": "France",
+        "city": "Hatten",
+        "createdAt": "2021 / 03 / 25"
+    },
+    {
+        "key": "HUGA",
+        "company": "Hugelshofer Logistik AG",
+        "country": "Switzerland",
+        "city": "Frauenfeld",
+        "createdAt": "2014 / 07 / 30"
+    },
+    {
+        "key": "HUHA",
+        "company": "Kuljetusliike Kalevi Huhtala Oy",
+        "country": "Finland",
+        "city": "Pori",
+        "createdAt": "2014 / 05 / 14"
+    },
+    {
+        "key": "HULA",
+        "company": "Hussar Logistics Sp. z o.o.",
+        "country": "Poland",
+        "city": "Wysocko Małe",
+        "createdAt": "2023 / 07 / 24"
+    },
+    {
+        "key": "HUPD",
+        "company": "Hupac SA",
+        "country": "Switzerland",
+        "city": "Chiasso",
+        "createdAt": "2015 / 06 / 08"
+    },
+    {
+        "key": "HUSA",
+        "company": "Hüsing Transport GmbH",
+        "country": "Germany",
+        "city": "Garthe",
+        "createdAt": "2022 / 01 / 28"
+    },
+    {
+        "key": "HWLD",
+        "company": "Hellmann Worldwide Logistics Germany GmbH & Co. KG",
+        "country": "Germany",
+        "city": "Osnabrück",
+        "createdAt": "2019 / 09 / 23"
+    },
+    {
+        "key": "HZLA",
+        "company": "H.Z. Logistics b.v.",
+        "country": "Netherlands",
+        "city": "De Lier",
+        "createdAt": "2016 / 12 / 13"
+    },
+    {
+        "key": "IAAA",
+        "company": "SC International Alexander SRL",
+        "country": "Romania",
+        "city": "Arad",
+        "createdAt": "2017 / 12 / 14"
+    },
+    {
+        "key": "IBTA",
+        "company": "IORIO TRASPORTI E LOGISTICA S.p.A",
+        "country": "Italy",
+        "city": "Napoli",
+        "createdAt": "2013 / 04 / 24"
+    },
+    {
+        "key": "ICTE",
+        "company": "International Container & Trailer Services B.V.",
+        "country": "Netherlands",
+        "city": "Uithoorn",
+        "createdAt": "2015 / 06 / 03"
+    },
+    {
+        "key": "IDID",
+        "company": "IDIS SRL",
+        "country": "Italy",
+        "city": "Guastalla (RE)",
+        "createdAt": "2014 / 03 / 27"
+    },
+    {
+        "key": "IDSD",
+        "company": "IDS Logistik GmbH",
+        "country": "Germany",
+        "city": "Kleinostheim",
+        "createdAt": "2014 / 06 / 11"
+    },
+    {
+        "key": "IEMA",
+        "company": "IEMOLI TRASPORTI S.n.c.",
+        "country": "Italy",
+        "city": "Cadorago",
+        "createdAt": "2013 / 05 / 27"
+    },
+    {
+        "key": "IEME",
+        "company": "IEMOLI TRASPORTI SA",
+        "country": "Switzerland",
+        "city": "6830",
+        "createdAt": "2013 / 05 / 30"
+    },
+    {
+        "key": "IGLA",
+        "company": "IGL GLOBAL LOJİSTİK A.Ş",
+        "country": "Turkey",
+        "city": "İstanbul",
+        "createdAt": "2023 / 01 / 04"
+    },
+    {
+        "key": "IGSD",
+        "company": "J.G.Schreiner, Handels- und Transport GmbH",
+        "country": "Germany",
+        "city": "Quickborn",
+        "createdAt": "2014 / 06 / 18"
+    },
+    {
+        "key": "IHRD",
+        "company": "IGS Ihro Großraumspedition GmbH",
+        "country": "Germany",
+        "city": "Neuenstein",
+        "createdAt": "2015 / 08 / 28"
+    },
+    {
+        "key": "IKGB",
+        "company": "IKG-Speditions GmbH",
+        "country": "Germany",
+        "city": "Baden-Baden",
+        "createdAt": "2014 / 03 / 07"
+    },
+    {
+        "key": "IKRA",
+        "company": "İKRA LOJİSTİK ULUSLARARASI TAŞIMACILIK VE TİCARET A.Ş.",
+        "country": "Turkey",
+        "city": "Adana",
+        "createdAt": "2020 / 02 / 10"
+    },
+    {
+        "key": "INTA",
+        "company": "Internorm Bauelemente GmbH",
+        "country": "Austria",
+        "city": "Traun",
+        "createdAt": "2013 / 04 / 24"
+    },
+    {
+        "key": "INTE",
+        "company": "Intracon AS",
+        "country": "Norway",
+        "city": "Oslo",
+        "createdAt": "2012 / 04 / 18"
+    },
+    {
+        "key": "IPCB",
+        "company": "IPC Business GmbH",
+        "country": "Germany",
+        "city": "Leipzig",
+        "createdAt": "2023 / 05 / 22"
+    },
+    {
+        "key": "ISND",
+        "company": "Nikoloudis gbr",
+        "country": "Germany",
+        "city": "Langerringen",
+        "createdAt": "2024 / 09 / 26"
+    },
+    {
+        "key": "ITAA",
+        "company": "Assisped Spa",
+        "country": "Italy",
+        "city": "Roveredo In Piano",
+        "createdAt": "2015 / 06 / 26"
+    },
+    {
+        "key": "ITAB",
+        "company": "Assisped Spa",
+        "country": "Italy",
+        "city": "Roveredo In Piano",
+        "createdAt": "2015 / 06 / 26"
+    },
+    {
+        "key": "ITBE",
+        "company": "LANNUTTI SA",
+        "country": "Belgium",
+        "city": "MORNIMONT",
+        "createdAt": "2025 / 02 / 27"
+    },
+    {
+        "key": "ITCB",
+        "company": "Italcombi AG",
+        "country": "Italy",
+        "city": "Bozen",
+        "createdAt": "2013 / 10 / 31"
+    },
+    {
+        "key": "ITFB",
+        "company": "ITF",
+        "country": "France",
+        "city": "Montelimar Cedex",
+        "createdAt": "2023 / 09 / 15"
+    },
+    {
+        "key": "ITGE",
+        "company": "Integre trans, UAB",
+        "country": "Lithuania",
+        "city": "Vilnius",
+        "createdAt": "2023 / 05 / 13"
+    },
+    {
+        "key": "JACA",
+        "company": "Jacobs Verhuizingen BV",
+        "country": "Netherlands",
+        "city": "Velp",
+        "createdAt": "2021 / 04 / 15"
+    },
+    {
+        "key": "JASA",
+        "company": "Greencarrier Freight Services (UK) Limited",
+        "country": "United Kingdom",
+        "city": "Ipswich",
+        "createdAt": "2024 / 04 / 18"
+    },
+    {
+        "key": "JCLA",
+        "company": "JCL Overland GmbH",
+        "country": "Austria",
+        "city": "Kalsdorf bei Graz",
+        "createdAt": "2024 / 03 / 12"
+    },
+    {
+        "key": "JITB",
+        "company": "REICHHART Logistik GmbH",
+        "country": "Germany",
+        "city": "Gilching",
+        "createdAt": "2015 / 07 / 03"
+    },
+    {
+        "key": "JJDA",
+        "company": "J.J. Darboven GmbH & Co. KG",
+        "country": "Germany",
+        "city": "Hamburg",
+        "createdAt": "2019 / 05 / 20"
+    },
+    {
+        "key": "JKYA",
+        "company": "TRASPORTI ITALIA SARDEGNA SRL",
+        "country": "Italy",
+        "city": "SESTU",
+        "createdAt": "2015 / 02 / 02"
+    },
+    {
+        "key": "JMED",
+        "company": "MAURAND ET FILS DEMENAGEMENTS",
+        "country": "France",
+        "city": "69440 Saint-Laurent-d'Agny",
+        "createdAt": "2024 / 12 / 17"
+    },
+    {
+        "key": "JOAA",
+        "company": "JOANCA LOGISTICA Y TRANSPORTES S.L.",
+        "country": "Spain",
+        "city": "Burgos",
+        "createdAt": "2023 / 03 / 28"
+    },
+    {
+        "key": "JPIA",
+        "company": "J. Pichler Gesellschaft m.b.H.",
+        "country": "Austria",
+        "city": "Klagenfurt Am Wörthersee",
+        "createdAt": "2018 / 01 / 24"
+    },
+    {
+        "key": "JRTA",
+        "company": "Chaigneau Transport",
+        "country": "Netherlands",
+        "city": "Lexmond",
+        "createdAt": "2012 / 07 / 13"
+    },
+    {
+        "key": "JSBD",
+        "company": "Schmidt Spedition GmbH",
+        "country": "Germany",
+        "city": "Beilngries",
+        "createdAt": "2015 / 03 / 27"
+    },
+    {
+        "key": "JTRA",
+        "company": "Jotrans GmbH",
+        "country": "Germany",
+        "city": "Schkeuditz",
+        "createdAt": "2017 / 09 / 18"
+    },
+    {
+        "key": "JUJB",
+        "company": "Junker & Jung Nachfolger GmbH & Co.KG",
+        "country": "Germany",
+        "city": "Mittenaar",
+        "createdAt": "2019 / 09 / 19"
+    },
+    {
+        "key": "JUSA",
+        "company": "DJN GmbH GB Logistik",
+        "country": "Germany",
+        "city": "Hartha",
+        "createdAt": "2014 / 04 / 07"
+    },
+    {
+        "key": "JYLA",
+        "company": "KULJETUS JA MUUTTO O. JYLHÄ",
+        "country": "Finland",
+        "city": "Jyväskylä",
+        "createdAt": "2023 / 08 / 09"
+    },
+    {
+        "key": "KALE",
+        "company": "Kalteis GmbH",
+        "country": "Germany",
+        "city": "Gebelkofen",
+        "createdAt": "2012 / 10 / 17"
+    },
+    {
+        "key": "KAPE",
+        "company": "Kapeller Int. Spedition GmbH",
+        "country": "Austria",
+        "city": "Innsbruck",
+        "createdAt": "2014 / 10 / 08"
+    },
+    {
+        "key": "KAWB",
+        "company": "KAREKA, spol.s r.o.",
+        "country": "Czechia",
+        "city": "Ústí nad Labem",
+        "createdAt": "2013 / 08 / 20"
+    },
+    {
+        "key": "KCCA",
+        "company": "Richard Kempers SA",
+        "country": "Switzerland",
+        "city": "Balerna",
+        "createdAt": "2011 / 07 / 13"
+    },
+    {
+        "key": "KCLA",
+        "company": "KCL LOJISTIK OTOMOTIV SANAYI TICARET LIMITED SIRKETI",
+        "country": "Turkey",
+        "city": "BURSA",
+        "createdAt": "2024 / 09 / 17"
+    },
+    {
+        "key": "KDDE",
+        "company": "KADİR DEMİR ULUSLARARASI TAŞIMACILIK VE TİC.LTD.ŞTİ.",
+        "country": "Turkey",
+        "city": "İzmir",
+        "createdAt": "2020 / 08 / 31"
+    },
+    {
+        "key": "KEID",
+        "company": "Keitel Spedition GmbH & Co. KG",
+        "country": "Germany",
+        "city": "Geslau",
+        "createdAt": "2012 / 11 / 06"
+    },
+    {
+        "key": "KERA",
+        "company": "Kersten Transporte & Logistik GmbH",
+        "country": "Germany",
+        "city": "Kreis Ostholstein - Bad Schwartau",
+        "createdAt": "2019 / 01 / 07"
+    },
+    {
+        "key": "KERE",
+        "company": "Kerex s.r.o.",
+        "country": "Slovakia",
+        "city": "Michalovce",
+        "createdAt": "2011 / 07 / 06"
+    },
+    {
+        "key": "KFSA",
+        "company": "Kässbohrer Fahrzeugwerke GmbH",
+        "country": "Germany",
+        "city": "Goch",
+        "createdAt": "2014 / 05 / 06"
+    },
+    {
+        "key": "KINE",
+        "company": "Kinnarps AB",
+        "country": "Sweden",
+        "city": "Kinnarp",
+        "createdAt": "2019 / 06 / 25"
+    },
+    {
+        "key": "KISA",
+        "company": "Kiss Nutzfahrzeug Vermietung GmbH",
+        "country": "Germany",
+        "city": "Wahrsow",
+        "createdAt": "2023 / 04 / 17"
+    },
+    {
+        "key": "KLAA",
+        "company": "Klartext Grafik Messe Event GmbH",
+        "country": "Germany",
+        "city": "Willich",
+        "createdAt": "2012 / 03 / 28"
+    },
+    {
+        "key": "KLGA",
+        "company": "Klog Logística, S.A.",
+        "country": "Portugal",
+        "city": "Maia",
+        "createdAt": "2022 / 03 / 15"
+    },
+    {
+        "key": "KLSA",
+        "company": "Klippen Lydsystemer AS",
+        "country": "Norway",
+        "city": "Sandnes",
+        "createdAt": "2023 / 07 / 30"
+    },
+    {
+        "key": "KLSB",
+        "company": "Klippen Lydsystemer AS",
+        "country": "Norway",
+        "city": "Sandnes",
+        "createdAt": "2023 / 07 / 31"
+    },
+    {
+        "key": "KLSD",
+        "company": "Klippen Lydsystemer AS",
+        "country": "Norway",
+        "city": "Sandnes",
+        "createdAt": "2023 / 07 / 31"
+    },
+    {
+        "key": "KNDB",
+        "company": "Kuehne + Nagel Logistics B.V.",
+        "country": "Netherlands",
+        "city": "Doesburg",
+        "createdAt": "2023 / 04 / 12"
+    },
+    {
+        "key": "KNDE",
+        "company": "Kühne+Nagel (AG & Co.) KG",
+        "country": "Germany",
+        "city": "Bremen",
+        "createdAt": "2014 / 05 / 09"
+    },
+    {
+        "key": "KNUE",
+        "company": "Kuehne+Nagel Ltd",
+        "country": "United Kingdom",
+        "city": "derbyshire",
+        "createdAt": "2024 / 10 / 01"
+    },
+    {
+        "key": "KOCA",
+        "company": "Koçtur Nakliyat Tarım Ürünleri İç ve Dış Ticaret Limited Şirketi",
+        "country": "Turkey",
+        "city": "Ordu",
+        "createdAt": "2024 / 12 / 03"
+    },
+    {
+        "key": "KOHA",
+        "company": "Carl Köster & Louis Hapke GmbH & Co.KG",
+        "country": "Germany",
+        "city": "Sehnde",
+        "createdAt": "2014 / 03 / 26"
+    },
+    {
+        "key": "KOTA",
+        "company": "Kotrans Kołodziejak Sp.J",
+        "country": "Poland",
+        "city": "Teresin",
+        "createdAt": "2024 / 11 / 04"
+    },
+    {
+        "key": "KTAB",
+        "company": "Kingsrød Transport AS",
+        "country": "Norway",
+        "city": "Sarpsborg",
+        "createdAt": "2025 / 01 / 29"
+    },
+    {
+        "key": "KTKA",
+        "company": "Krug Transporte Kiel GmbH & Co. KG",
+        "country": "Germany",
+        "city": "Wasbek",
+        "createdAt": "2019 / 09 / 19"
+    },
+    {
+        "key": "KTRA",
+        "company": "KOUBA Trans, s.r.o.",
+        "country": "Czechia",
+        "city": "Jinočany",
+        "createdAt": "2023 / 01 / 10"
+    },
+    {
+        "key": "KUIA",
+        "company": "Kuipers Transport BV",
+        "country": "Netherlands",
+        "city": "Oldenzaal",
+        "createdAt": "2014 / 01 / 31"
+    },
+    {
+        "key": "KULA",
+        "company": "KULTON TRANSPORT SP. Z O.O. SP.K.",
+        "country": "Poland",
+        "city": "Czekanów",
+        "createdAt": "2013 / 07 / 25"
+    },
+    {
+        "key": "KVSB",
+        "company": "Walter Schmitt GmbH",
+        "country": "Germany",
+        "city": "Bietigheim",
+        "createdAt": "2023 / 10 / 09"
+    },
+    {
+        "key": "LABE",
+        "company": "TRANSPORTS LABOURIAUX",
+        "country": "France",
+        "city": "OUROUX SUR SAONE",
+        "createdAt": "2014 / 05 / 23"
+    },
+    {
+        "key": "LAGB",
+        "company": "LAGO Logistics Sp. z o.o.",
+        "country": "Poland",
+        "city": "Gdynia",
+        "createdAt": "2021 / 03 / 11"
+    },
+    {
+        "key": "LAMA",
+        "company": "Lama Group Transport Sp.z.o.o.",
+        "country": "Poland",
+        "city": "Komorow",
+        "createdAt": "2025 / 02 / 06"
+    },
+    {
+        "key": "LAME",
+        "company": "Largo Trans Speditions- und Handels GmbH",
+        "country": "Germany",
+        "city": "Melle",
+        "createdAt": "2013 / 05 / 16"
+    },
+    {
+        "key": "LAND",
+        "company": "Lannutti SPA",
+        "country": "Italy",
+        "city": "Cuneo",
+        "createdAt": "2013 / 11 / 22"
+    },
+    {
+        "key": "LANE",
+        "company": "Lannutti Czech, s.r.o",
+        "country": "Czechia",
+        "city": "Louka u Litvinov",
+        "createdAt": "2013 / 11 / 29"
+    },
+    {
+        "key": "LAZA",
+        "company": "Lazimeks EOOD",
+        "country": "Bulgaria",
+        "city": "Razgrad",
+        "createdAt": "2017 / 09 / 27"
+    },
+    {
+        "key": "LCNA",
+        "company": "Nuova Logistica Lucianu Srl",
+        "country": "Italy",
+        "city": "OLBIA",
+        "createdAt": "2013 / 12 / 05"
+    },
+    {
+        "key": "LDPA",
+        "company": "Lucky Dream Plus sp Z o.o.",
+        "country": "Poland",
+        "city": "63-021",
+        "createdAt": "2024 / 12 / 02"
+    },
+    {
+        "key": "LEAD",
+        "company": "LEANDER - Gregor Schreier",
+        "country": "Germany",
+        "city": "Frankenthal",
+        "createdAt": "2017 / 09 / 11"
+    },
+    {
+        "key": "LEOD",
+        "company": "Leo Prünster, Int. Transporte GmbH",
+        "country": "Germany",
+        "city": "Hohenlinden",
+        "createdAt": "2013 / 01 / 16"
+    },
+    {
+        "key": "LFCA",
+        "company": "LA FLECHE",
+        "country": "France",
+        "city": "CAVAILLON",
+        "createdAt": "2014 / 06 / 03"
+    },
+    {
+        "key": "LGAA",
+        "company": "Litra Gass AS",
+        "country": "Norway",
+        "city": "Voss",
+        "createdAt": "2021 / 05 / 28"
+    },
+    {
+        "key": "LGID",
+        "company": "LGI Deutschland GmbH",
+        "country": "Germany",
+        "city": "Böblingen",
+        "createdAt": "2018 / 01 / 30"
+    },
+    {
+        "key": "LGWA",
+        "company": "LOGIKWAY SRL",
+        "country": "Italy",
+        "city": "Torino",
+        "createdAt": "2014 / 05 / 09"
+    },
+    {
+        "key": "LIBD",
+        "company": "Intime Express Logistik GmbH",
+        "country": "Germany",
+        "city": "Isernhagen",
+        "createdAt": "2024 / 02 / 12"
+    },
+    {
+        "key": "LIBE",
+        "company": "LIBERTIA SOLUCIONES LOGISTICAS SLU",
+        "country": "Spain",
+        "city": "Cordoba",
+        "createdAt": "2021 / 07 / 22"
+    },
+    {
+        "key": "LIND",
+        "company": "Spedition Lindenmeyer GmbH & Co KG",
+        "country": "Germany",
+        "city": "Crailsheim",
+        "createdAt": "2014 / 05 / 27"
+    },
+    {
+        "key": "LITB",
+        "company": "L.I.T. Cargo GmbH",
+        "country": "Germany",
+        "city": "Brake",
+        "createdAt": "2011 / 07 / 05"
+    },
+    {
+        "key": "LKTD",
+        "company": "Tim Hampel Transporte",
+        "country": "Germany",
+        "city": "Emmerich Am Rhein",
+        "createdAt": "2016 / 11 / 09"
+    },
+    {
+        "key": "LKWA",
+        "company": "LKW Walter Internationale Transportorganisation AG",
+        "country": "Austria",
+        "city": "Wiener Neudorf",
+        "createdAt": "2011 / 07 / 25"
+    },
+    {
+        "key": "LLSA",
+        "company": "Loeber-Lehnhof GmbH",
+        "country": "Germany",
+        "city": "Siegen",
+        "createdAt": "2015 / 08 / 03"
+    },
+    {
+        "key": "LNOA",
+        "company": "Litra Gass AS",
+        "country": "Norway",
+        "city": "Voss",
+        "createdAt": "2024 / 07 / 30"
+    },
+    {
+        "key": "LOEB",
+        "company": "Löblein Transport GmbH",
+        "country": "Germany",
+        "city": "Schillingsfürst",
+        "createdAt": "2011 / 10 / 17"
+    },
+    {
+        "key": "LOGD",
+        "company": "LOGESTA GESTIÓN DE TRANSPORTE. S.A.U.",
+        "country": "Spain",
+        "city": "Leganés",
+        "createdAt": "2022 / 03 / 02"
+    },
+    {
+        "key": "LOLA",
+        "company": "TRANSPORTS LASSALLE",
+        "country": "France",
+        "city": "Varennes Sur Allier",
+        "createdAt": "2020 / 08 / 11"
+    },
+    {
+        "key": "LOTB",
+        "company": "LOTRANS PORTES SL",
+        "country": "Spain",
+        "city": "Sant Boi De Llobregat (Barcelona)",
+        "createdAt": "2022 / 06 / 13"
+    },
+    {
+        "key": "LOWE",
+        "company": "Umzüge Braun GmbH",
+        "country": "Germany",
+        "city": "Unterhaching",
+        "createdAt": "2015 / 06 / 02"
+    },
+    {
+        "key": "LPTA",
+        "company": "LAPORTA",
+        "country": "Italy",
+        "city": "Bari",
+        "createdAt": "2019 / 03 / 16"
+    },
+    {
+        "key": "LRIA",
+        "company": "L.R.I srl",
+        "country": "Italy",
+        "city": "Milano",
+        "createdAt": "2018 / 11 / 19"
+    },
+    {
+        "key": "LTCA",
+        "company": "LINK Sp. z o.o.",
+        "country": "Poland",
+        "city": "Wiazowna",
+        "createdAt": "2012 / 11 / 29"
+    },
+    {
+        "key": "LTLA",
+        "company": "LOGITRANS LOJISTIK A.S.",
+        "country": "Turkey",
+        "city": "Istanbul",
+        "createdAt": "2021 / 06 / 01"
+    },
+    {
+        "key": "LTPE",
+        "company": "L. Transport Logistica srl",
+        "country": "Italy",
+        "city": "Pescara",
+        "createdAt": "2023 / 05 / 12"
+    },
+    {
+        "key": "LTRA",
+        "company": "KRONE FLEET Danmark A/S",
+        "country": "Denmark",
+        "city": "Padborg",
+        "createdAt": "2012 / 08 / 20"
+    },
+    {
+        "key": "LTRB",
+        "company": "SAS TRANSPORTS LTR-VIALON",
+        "country": "France",
+        "city": "La Fouillouse",
+        "createdAt": "2020 / 11 / 26"
+    },
+    {
+        "key": "LTRD",
+        "company": "KRONE FLEET Deutschland GmbH",
+        "country": "Germany",
+        "city": "Seevetal",
+        "createdAt": "2012 / 08 / 23"
+    },
+    {
+        "key": "LTSB",
+        "company": "LECITRAILER, S.A.",
+        "country": "Spain",
+        "city": "Zaragoza",
+        "createdAt": "2020 / 09 / 07"
+    },
+    {
+        "key": "LTSK",
+        "company": "Lotras srl",
+        "country": "Italy",
+        "city": "Foggia",
+        "createdAt": "2013 / 09 / 20"
+    },
+    {
+        "key": "LTTE",
+        "company": "Laurens Tullemans Transporten B.V.",
+        "country": "Netherlands",
+        "city": "Weert",
+        "createdAt": "2017 / 06 / 28"
+    },
+    {
+        "key": "LUBB",
+        "company": "Lubtrans Edyta Godzwon Czechowska",
+        "country": "Poland",
+        "city": "Lublin",
+        "createdAt": "2022 / 06 / 30"
+    },
+    {
+        "key": "LUCE",
+        "company": "LUCIANO TRASPORTI SRL",
+        "country": "Italy",
+        "city": "Triggiano (Ba)",
+        "createdAt": "2020 / 03 / 10"
+    },
+    {
+        "key": "LUEA",
+        "company": "Logistica Uno Europe srl",
+        "country": "Italy",
+        "city": "Abano Terme",
+        "createdAt": "2021 / 05 / 29"
+    },
+    {
+        "key": "LUMA",
+        "company": "Lumcat rail & road logistic GmbH",
+        "country": "Germany",
+        "city": "Markranstädt",
+        "createdAt": "2014 / 06 / 12"
+    },
+    {
+        "key": "LUNA",
+        "company": "Fiore Group srl",
+        "country": "Italy",
+        "city": "Scafati",
+        "createdAt": "2024 / 12 / 19"
+    },
+    {
+        "key": "LVCA",
+        "company": "LV Caspian Limited",
+        "country": "United Kingdom",
+        "city": "Middlesbrough",
+        "createdAt": "2023 / 09 / 20"
+    },
+    {
+        "key": "MAGE",
+        "company": "MAGETRA INTERNATIONAL SA",
+        "country": "Belgium",
+        "city": "Eupen",
+        "createdAt": "2014 / 01 / 24"
+    },
+    {
+        "key": "MAIA",
+        "company": "ETABLISSEMENTS MAINGRET",
+        "country": "France",
+        "city": "Bressuire",
+        "createdAt": "2015 / 12 / 22"
+    },
+    {
+        "key": "MAKA",
+        "company": "METIN AKDURAK BEYNELMILEL NAKLIYAT VE MUMESILLIK LTD.STI.",
+        "country": "Turkey",
+        "city": "IZMIR",
+        "createdAt": "2014 / 11 / 07"
+    },
+    {
+        "key": "MARA",
+        "company": "Marty et Fils",
+        "country": "France",
+        "city": "Lacrouzette",
+        "createdAt": "2012 / 07 / 12"
+    },
+    {
+        "key": "MARE",
+        "company": "Mars Lojistik Uluslararasi Tasimacilik Depolama Dagitim Ticaret AS",
+        "country": "Turkey",
+        "city": "Istanbul",
+        "createdAt": "2012 / 05 / 24"
+    },
+    {
+        "key": "MASA",
+        "company": "MASOTTI SRL",
+        "country": "Italy",
+        "city": "Tavagnacco",
+        "createdAt": "2023 / 07 / 13"
+    },
+    {
+        "key": "MASB",
+        "company": "SAS TRANSPORT MASSON",
+        "country": "France",
+        "city": "Pleugueneuc",
+        "createdAt": "2015 / 06 / 01"
+    },
+    {
+        "key": "MATB",
+        "company": "TRASPORTI GIOVANNI FILOMENA SRL",
+        "country": "Italy",
+        "city": "LOCOROTONDO",
+        "createdAt": "2024 / 12 / 09"
+    },
+    {
+        "key": "MAYE",
+        "company": "Fritz Mayer Internationale Spedition & Transport GmbH",
+        "country": "Austria",
+        "city": "Zeltweg",
+        "createdAt": "2014 / 04 / 28"
+    },
+    {
+        "key": "MCGE",
+        "company": "MCG SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+        "country": "Poland",
+        "city": "Sulęcin",
+        "createdAt": "2023 / 07 / 17"
+    },
+    {
+        "key": "MCIA",
+        "company": "METROCARGO ITALIA",
+        "country": "Italy",
+        "city": "Genova",
+        "createdAt": "2014 / 04 / 23"
+    },
+    {
+        "key": "MCSB",
+        "company": "MGE-PV",
+        "country": "France",
+        "city": "CHAVELOT",
+        "createdAt": "2012 / 04 / 17"
+    },
+    {
+        "key": "MDMA",
+        "company": "Mudinmar Mobility SL",
+        "country": "Spain",
+        "city": "Picassent",
+        "createdAt": "2024 / 07 / 02"
+    },
+    {
+        "key": "MDSB",
+        "company": "MDS Messebau und Service Gesellschaft für Planung Gestaltung Ausführung GmbH",
+        "country": "Germany",
+        "city": "Buchholz i.d.N.",
+        "createdAt": "2012 / 05 / 16"
+    },
+    {
+        "key": "MDTA",
+        "company": "Meditrans s.r.l. unico socio",
+        "country": "Italy",
+        "city": "Corato",
+        "createdAt": "2018 / 03 / 22"
+    },
+    {
+        "key": "MEDE",
+        "company": "MEDWAY ASSETS - GESTÃO DE ATIVOS S.A.",
+        "country": "Portugal",
+        "city": "Lisboa",
+        "createdAt": "2019 / 02 / 11"
+    },
+    {
+        "key": "MENA",
+        "company": "SILCO Logistik GmbH",
+        "country": "Germany",
+        "city": "Deißlingen",
+        "createdAt": "2013 / 11 / 27"
+    },
+    {
+        "key": "MESA",
+        "company": "MESAROLI LOGISTICA S.P.A.",
+        "country": "Italy",
+        "city": "Trevenzuolo",
+        "createdAt": "2016 / 06 / 20"
+    },
+    {
+        "key": "METE",
+        "company": "ME.TRAG.",
+        "country": "Italy",
+        "city": "Loc Boschetti - FOSSANO (CN)",
+        "createdAt": "2014 / 03 / 31"
+    },
+    {
+        "key": "MEYD",
+        "company": "Meyer logistics GmbH",
+        "country": "Germany",
+        "city": "Willich",
+        "createdAt": "2016 / 12 / 05"
+    },
+    {
+        "key": "MFSE",
+        "company": "M.Franz Güterfernverkehr e.K.",
+        "country": "Germany",
+        "city": "Wahlstedt",
+        "createdAt": "2019 / 05 / 10"
+    },
+    {
+        "key": "MFTA",
+        "company": "Mammoet Ferry Transport B.V.",
+        "country": "Netherlands",
+        "city": "Europoort",
+        "createdAt": "2013 / 08 / 19"
+    },
+    {
+        "key": "MFWE",
+        "company": "Mondo Forwarding B.V.",
+        "country": "Netherlands",
+        "city": "Westbroek",
+        "createdAt": "2023 / 04 / 26"
+    },
+    {
+        "key": "MGMA",
+        "company": "M.G.M. S.R.L.",
+        "country": "Italy",
+        "city": "Albanella (Sa)",
+        "createdAt": "2022 / 11 / 25"
+    },
+    {
+        "key": "MGMB",
+        "company": "MGM Transport",
+        "country": "Latvia",
+        "city": "Rumbula",
+        "createdAt": "2023 / 06 / 08"
+    },
+    {
+        "key": "MGPA",
+        "company": "MULTILOG SPA",
+        "country": "Italy",
+        "city": "Orbassano",
+        "createdAt": "2021 / 11 / 25"
+    },
+    {
+        "key": "MILA",
+        "company": "GTS NEXT SRL",
+        "country": "Italy",
+        "city": "Bari",
+        "createdAt": "2018 / 07 / 19"
+    },
+    {
+        "key": "MILE",
+        "company": "Milsped d.o.o",
+        "country": "Serbia",
+        "city": "Belgrade",
+        "createdAt": "2022 / 08 / 19"
+    },
+    {
+        "key": "MIRA",
+        "company": "MIRATRANS TRANSPORT SP. Z O.O",
+        "country": "Poland",
+        "city": "OZORKÓW",
+        "createdAt": "2014 / 08 / 06"
+    },
+    {
+        "key": "MIRB",
+        "company": "Mercitalia Rail s.r.l.",
+        "country": "Italy",
+        "city": "Roma",
+        "createdAt": "2019 / 09 / 25"
+    },
+    {
+        "key": "MIRE",
+        "company": "PHU MIRCO-TRANS MIROSŁAW KUŁTON",
+        "country": "Poland",
+        "city": "Ostrów Wielkopolski",
+        "createdAt": "2016 / 09 / 19"
+    },
+    {
+        "key": "MKTB",
+        "company": "MK TRANS LOJISTIK LTD.ŞTİ.",
+        "country": "Turkey",
+        "city": "Istanbul",
+        "createdAt": "2024 / 09 / 23"
+    },
+    {
+        "key": "MLSA",
+        "company": "MLS Mobil Logistik Service",
+        "country": "Germany",
+        "city": "Heidesee",
+        "createdAt": "2015 / 12 / 03"
+    },
+    {
+        "key": "MLTA",
+        "company": "MTRAX S.B. S.r.l",
+        "country": "Italy",
+        "city": "Cremona",
+        "createdAt": "2024 / 08 / 07"
+    },
+    {
+        "key": "MMMA",
+        "company": "MILITZER ET MUNCH FRANCE",
+        "country": "France",
+        "city": "Halluin",
+        "createdAt": "2018 / 05 / 23"
+    },
+    {
+        "key": "MOCA",
+        "company": "Move Intermodal",
+        "country": "Belgium",
+        "city": "Genk",
+        "createdAt": "2016 / 01 / 18"
+    },
+    {
+        "key": "MOCD",
+        "company": "Montan Speditions GmbH",
+        "country": "Austria",
+        "city": "8605 Kapfenberg",
+        "createdAt": "2012 / 10 / 03"
+    },
+    {
+        "key": "MODA",
+        "company": "SAS MODALIS",
+        "country": "France",
+        "city": "Aix-en-Provence",
+        "createdAt": "2011 / 07 / 05"
+    },
+    {
+        "key": "MOLE",
+        "company": "MOLE S.C.P.A.",
+        "country": "Italy",
+        "city": "ORBASSANO",
+        "createdAt": "2024 / 12 / 05"
+    },
+    {
+        "key": "MONA",
+        "company": "MONSIGNORI AUTOTRASPORTI SRL",
+        "country": "Italy",
+        "city": "Cermenate",
+        "createdAt": "2019 / 07 / 30"
+    },
+    {
+        "key": "MOND",
+        "company": "MONDUCCI SILVIO SAS DI NOCENTINI T.",
+        "country": "Italy",
+        "city": "Prato",
+        "createdAt": "2016 / 09 / 15"
+    },
+    {
+        "key": "MORA",
+        "company": "CONVOY SPED ITALIA SRL",
+        "country": "Italy",
+        "city": "CIRIE’ - TORINO",
+        "createdAt": "2014 / 08 / 01"
+    },
+    {
+        "key": "MOVD",
+        "company": "MOUV&LOG",
+        "country": "France",
+        "city": "TOULOUSE CEDEX 1",
+        "createdAt": "2023 / 12 / 05"
+    },
+    {
+        "key": "MOVE",
+        "company": "Van Dijk Beheer Vanray BV",
+        "country": "Netherlands",
+        "city": "Venray",
+        "createdAt": "2012 / 08 / 27"
+    },
+    {
+        "key": "MSCE",
+        "company": "MSC European Truck & Trailer Care B.V.",
+        "country": "Netherlands",
+        "city": "Coevorden",
+        "createdAt": "2022 / 08 / 18"
+    },
+    {
+        "key": "MSIE",
+        "company": "MIŚ Transport Sp. z o.o.",
+        "country": "Poland",
+        "city": "Wierzchosławice",
+        "createdAt": "2022 / 06 / 07"
+    },
+    {
+        "key": "MSPD",
+        "company": "Transco GmbH",
+        "country": "Germany",
+        "city": "Singen",
+        "createdAt": "2012 / 06 / 11"
+    },
+    {
+        "key": "MSTD",
+        "company": "Maritime Service & Transport",
+        "country": "Germany",
+        "city": "Leer / Ostfriesland",
+        "createdAt": "2018 / 10 / 09"
+    },
+    {
+        "key": "MTAA",
+        "company": "MTL SRL",
+        "country": "Italy",
+        "city": "Montichiari",
+        "createdAt": "2017 / 07 / 11"
+    },
+    {
+        "key": "MTRE",
+        "company": "METRUM posrednistvo,trgovina,prevoznistvo d.o.o.",
+        "country": "Slovenia",
+        "city": "Kranj",
+        "createdAt": "2018 / 11 / 22"
+    },
+    {
+        "key": "MTSA",
+        "company": "MARK TRANS SPED Marek Jakubowski",
+        "country": "Poland",
+        "city": "Łęczyca",
+        "createdAt": "2024 / 10 / 31"
+    },
+    {
+        "key": "MTSE",
+        "company": "MTS ULUSLARARASI TASIMACILIK VE TICARET A.S",
+        "country": "Turkey",
+        "city": "Izmir",
+        "createdAt": "2021 / 09 / 07"
+    },
+    {
+        "key": "MUBA",
+        "company": "Multi Box Logistik GmbH",
+        "country": "Austria",
+        "city": "Seekirchen",
+        "createdAt": "2017 / 10 / 23"
+    },
+    {
+        "key": "MULB",
+        "company": "Muller Fresh Food Logistics",
+        "country": "Netherlands",
+        "city": "Holten",
+        "createdAt": "2021 / 06 / 23"
+    },
+    {
+        "key": "MULD",
+        "company": "Multisped Internationale Spedition GmbH",
+        "country": "Germany",
+        "city": "Singen",
+        "createdAt": "2012 / 01 / 03"
+    },
+    {
+        "key": "MUND",
+        "company": "Munz Transport & Logistik GmbH & Co.",
+        "country": "Germany",
+        "city": "Pleidelsheim",
+        "createdAt": "2014 / 06 / 23"
+    },
+    {
+        "key": "MURA",
+        "company": "F.Murpf AG Transporte und Logistik",
+        "country": "Switzerland",
+        "city": "Hägendorf",
+        "createdAt": "2018 / 08 / 29"
+    },
+    {
+        "key": "MUSE",
+        "company": "G.T.S. - GENERAL TRANSPORT SERVICE SPA",
+        "country": "Italy",
+        "city": "Bari",
+        "createdAt": "2016 / 12 / 13"
+    },
+    {
+        "key": "MUTA",
+        "company": "MUTLULAR TRANSPORT LTD STİ",
+        "country": "Turkey",
+        "city": "Igdir",
+        "createdAt": "2022 / 12 / 05"
+    },
+    {
+        "key": "MVDE",
+        "company": "Martin Vogt Transport GmbH",
+        "country": "Germany",
+        "city": "Hattingen",
+        "createdAt": "2016 / 06 / 09"
+    },
+    {
+        "key": "MYMD",
+        "company": "Meyer & Meyer Transport Logistics GmbH & Co. KG",
+        "country": "Germany",
+        "city": "Osnabrück",
+        "createdAt": "2011 / 08 / 22"
+    },
+    {
+        "key": "NASD",
+        "company": "DEMENAGEMENTS DAVIN",
+        "country": "France",
+        "city": "84000 - Avignon",
+        "createdAt": "2019 / 02 / 05"
+    },
+    {
+        "key": "NBTA",
+        "company": "NORD BARESE TRASPORTI SRL",
+        "country": "Italy",
+        "city": "Trani",
+        "createdAt": "2021 / 04 / 15"
+    },
+    {
+        "key": "NCTB",
+        "company": "NewCold Pan European b.v.",
+        "country": "Netherlands",
+        "city": "Breda",
+        "createdAt": "2024 / 05 / 16"
+    },
+    {
+        "key": "NIIE",
+        "company": "Niinivirta Transport Spa",
+        "country": "Italy",
+        "city": "Tribiano",
+        "createdAt": "2014 / 04 / 22"
+    },
+    {
+        "key": "NIZA",
+        "company": "Nizzi S.r.l.",
+        "country": "Italy",
+        "city": "Terni",
+        "createdAt": "2013 / 08 / 27"
+    },
+    {
+        "key": "NKRA",
+        "company": "TX Logistik AG",
+        "country": "Germany",
+        "city": "Troisdorf",
+        "createdAt": "2017 / 11 / 17"
+    },
+    {
+        "key": "NLTE",
+        "company": "Nor-log Thermo AS",
+        "country": "Norway",
+        "city": "Stokke",
+        "createdAt": "2020 / 11 / 23"
+    },
+    {
+        "key": "NOBB",
+        "company": "Nobilia-Werke J. Stickling GmbH & Co.KG",
+        "country": "Germany",
+        "city": "Verl",
+        "createdAt": "2013 / 04 / 10"
+    },
+    {
+        "key": "NOCE",
+        "company": "Nord-Spedition GmbH + Co KG",
+        "country": "Germany",
+        "city": "Großenwiehe",
+        "createdAt": "2025 / 02 / 27"
+    },
+    {
+        "key": "NOKA",
+        "company": "NOKVERA UAB",
+        "country": "Lithuania",
+        "city": "Kaunas",
+        "createdAt": "2020 / 04 / 24"
+    },
+    {
+        "key": "NOLA",
+        "company": "Nordema Logistik GmbH",
+        "country": "Germany",
+        "city": "Horneburg",
+        "createdAt": "2023 / 03 / 06"
+    },
+    {
+        "key": "NONA",
+        "company": "Åkeri AB N O Nilsson",
+        "country": "Sweden",
+        "city": "Trelleborg",
+        "createdAt": "2013 / 12 / 03"
+    },
+    {
+        "key": "NORA",
+        "company": "Nortemp Transport A/S",
+        "country": "Norway",
+        "city": "Sandnes",
+        "createdAt": "2021 / 11 / 18"
+    },
+    {
+        "key": "NORD",
+        "company": "NTEX AB",
+        "country": "Sweden",
+        "city": "Göteborg",
+        "createdAt": "2011 / 08 / 31"
+    },
+    {
+        "key": "NOTA",
+        "company": "Nothegger Transport Logistik GmbH",
+        "country": "Austria",
+        "city": "St. Ulrich a. P.",
+        "createdAt": "2014 / 03 / 24"
+    },
+    {
+        "key": "NOVA",
+        "company": "NOVATRANS",
+        "country": "France",
+        "city": "Paris Cedex 13",
+        "createdAt": "2014 / 01 / 09"
+    },
+    {
+        "key": "NOVE",
+        "company": "SILOJET Transport- und Handels GmbH",
+        "country": "Austria",
+        "city": "Volders",
+        "createdAt": "2021 / 05 / 27"
+    },
+    {
+        "key": "NRDA",
+        "company": "Nordic Rentals",
+        "country": "Denmark",
+        "city": "Løsning",
+        "createdAt": "2023 / 01 / 24"
+    },
+    {
+        "key": "NSEE",
+        "company": "North Sea Express nv",
+        "country": "Belgium",
+        "city": "Zeebrugge",
+        "createdAt": "2024 / 12 / 24"
+    },
+    {
+        "key": "NSLA",
+        "company": "North Star Logistik SIA",
+        "country": "Latvia",
+        "city": "Baloži",
+        "createdAt": "2022 / 05 / 03"
+    },
+    {
+        "key": "NSNE",
+        "company": "NSN Transport Solutions BV",
+        "country": "Netherlands",
+        "city": "Nieuwleusen",
+        "createdAt": "2018 / 03 / 20"
+    },
+    {
+        "key": "NVKE",
+        "company": "FRIGO NEVNAK ULUSLARARASI NAKLIYAT VE TICARET LIMITED SIRKETI",
+        "country": "Turkey",
+        "city": "TÜRKİYE -ISTNABUL",
+        "createdAt": "2024 / 06 / 27"
+    },
+    {
+        "key": "NVOB",
+        "company": "NVO Trailer B.V.",
+        "country": "Netherlands",
+        "city": "Zuidbroek",
+        "createdAt": "2014 / 01 / 07"
+    },
+    {
+        "key": "OCIA",
+        "company": "OCİ ULUSLARARASI LOJİSTİK LİMİTED ŞİRKETİ",
+        "country": "Turkey",
+        "city": "İstanbul",
+        "createdAt": "2022 / 04 / 12"
+    },
+    {
+        "key": "OFRA",
+        "company": "SARL ZAFATI",
+        "country": "France",
+        "city": "Toulouse",
+        "createdAt": "2020 / 10 / 22"
+    },
+    {
+        "key": "OHLA",
+        "company": "OHL Logistics AB",
+        "country": "Sweden",
+        "city": "Malmö",
+        "createdAt": "2014 / 02 / 20"
+    },
+    {
+        "key": "OKBE",
+        "company": "O.K.BRUK Sp. z o. o.",
+        "country": "Poland",
+        "city": "Tarczek",
+        "createdAt": "2024 / 09 / 16"
+    },
+    {
+        "key": "OLEA",
+        "company": "Dirk Lütten Transporte",
+        "country": "Germany",
+        "city": "Hamburg",
+        "createdAt": "2024 / 06 / 29"
+    },
+    {
+        "key": "OMFE",
+        "company": "Transportes Ferroviarios Especiales, S.A.",
+        "country": "Spain",
+        "city": "Madrid",
+        "createdAt": "2014 / 04 / 07"
+    },
+    {
+        "key": "OMID",
+        "company": "Omida VLS",
+        "country": "Poland",
+        "city": "Gdynia",
+        "createdAt": "2021 / 11 / 04"
+    },
+    {
+        "key": "OMNK",
+        "company": "AIR LIQUIDE ITALIA SERVICE S.R.L.",
+        "country": "Italy",
+        "city": "MILANO",
+        "createdAt": "2014 / 08 / 28"
+    },
+    {
+        "key": "ORIA",
+        "company": "VINCI & CAMPAGNA SPA",
+        "country": "Italy",
+        "city": "Cagliari",
+        "createdAt": "2017 / 12 / 04"
+    },
+    {
+        "key": "ORTD",
+        "company": "ALPI SERVICE SRL",
+        "country": "Italy",
+        "city": "Borgo San Dalmazzo",
+        "createdAt": "2024 / 04 / 28"
+    },
+    {
+        "key": "OSAA",
+        "company": "OSA Logistik GmbH Internationale Transporte",
+        "country": "Germany",
+        "city": "Hamburg",
+        "createdAt": "2012 / 01 / 13"
+    },
+    {
+        "key": "OSBB",
+        "company": "Otto Schmidt AG",
+        "country": "Switzerland",
+        "city": "Basel",
+        "createdAt": "2011 / 08 / 22"
+    },
+    {
+        "key": "OSTB",
+        "company": "Østbø AS",
+        "country": "Norway",
+        "city": "BODØ",
+        "createdAt": "2025 / 01 / 27"
+    },
+    {
+        "key": "OSTE",
+        "company": "H. Ostendorf GmbH",
+        "country": "Germany",
+        "city": "Molbergen",
+        "createdAt": "2024 / 08 / 07"
+    },
+    {
+        "key": "OUDA",
+        "company": "Oudimmo Logistics",
+        "country": "Belgium",
+        "city": "Puurs",
+        "createdAt": "2013 / 05 / 06"
+    },
+    {
+        "key": "OVEE",
+        "company": "Overis Sp. z o.o.",
+        "country": "Poland",
+        "city": "Łuków",
+        "createdAt": "2025 / 02 / 25"
+    },
+    {
+        "key": "OVSB",
+        "company": "OVS SPA",
+        "country": "Italy",
+        "city": "Venezia Mestre",
+        "createdAt": "2020 / 06 / 23"
+    },
+    {
+        "key": "OVSE",
+        "company": "ovs logistics srl",
+        "country": "Italy",
+        "city": "BRINDISI",
+        "createdAt": "2024 / 06 / 19"
+    },
+    {
+        "key": "OZRE",
+        "company": "Oz-Er Trans Uluslararası Tasimacilik ve Ticaret A.S.",
+        "country": "Turkey",
+        "city": "Istanbul",
+        "createdAt": "2018 / 01 / 03"
+    },
+    {
+        "key": "PACE",
+        "company": "Sarp Intermodal HIZMETLERI IC VE DIS TICARET A.S",
+        "country": "Turkey",
+        "city": "Istanbul",
+        "createdAt": "2020 / 11 / 13"
+    },
+    {
+        "key": "PALB",
+        "company": "PALBOR-SERVICE SP. Z O.O. SP. K.",
+        "country": "Poland",
+        "city": "WYSZKÓW",
+        "createdAt": "2024 / 04 / 17"
+    },
+    {
+        "key": "PANA",
+        "company": "PANIGADA TRASPORTI SRL",
+        "country": "Italy",
+        "city": "SERIATE",
+        "createdAt": "2013 / 06 / 03"
+    },
+    {
+        "key": "PANE",
+        "company": "Paneuropa Transport GmbH",
+        "country": "Germany",
+        "city": "Bakum",
+        "createdAt": "2011 / 07 / 04"
+    },
+    {
+        "key": "PAOE",
+        "company": "Getras S.r.l.",
+        "country": "Italy",
+        "city": "Fiumicino",
+        "createdAt": "2013 / 03 / 20"
+    },
+    {
+        "key": "PAPA",
+        "company": "TRASPORTI E SPEDIZIONI A.BA.CO. S.R.L.",
+        "country": "Italy",
+        "city": "SAN GIUSEPPE VESUVIANO",
+        "createdAt": "2013 / 10 / 21"
+    },
+    {
+        "key": "PARA",
+        "company": "PARATORI S.P.A.",
+        "country": "Italy",
+        "city": "Novi Ligure",
+        "createdAt": "2017 / 05 / 02"
+    },
+    {
+        "key": "PARB",
+        "company": "PARATORI S.P.A.",
+        "country": "Italy",
+        "city": "Novi Ligure",
+        "createdAt": "2019 / 09 / 27"
+    },
+    {
+        "key": "PCAB",
+        "company": "SAS DEM.66",
+        "country": "France",
+        "city": "Perpignan",
+        "createdAt": "2019 / 01 / 31"
+    },
+    {
+        "key": "PCHA",
+        "company": "POST CH AG - Logistik-Services Accounts payable 950-0",
+        "country": "Switzerland",
+        "city": "Bern",
+        "createdAt": "2015 / 11 / 02"
+    },
+    {
+        "key": "PEGE",
+        "company": "P & G INTERNATIONAL",
+        "country": "Italy",
+        "city": "Settimo Torinese",
+        "createdAt": "2015 / 06 / 18"
+    },
+    {
+        "key": "PEMA",
+        "company": "TIP Trailer Services Germany GmbH",
+        "country": "Germany",
+        "city": "Hamburg",
+        "createdAt": "2011 / 12 / 06"
+    },
+    {
+        "key": "PETA",
+        "company": "Pettmann GmbH",
+        "country": "Germany",
+        "city": "Büttelborn",
+        "createdAt": "2021 / 02 / 26"
+    },
+    {
+        "key": "PETB",
+        "company": "PE.TRA S.R.L",
+        "country": "Italy",
+        "city": "BREMBATE",
+        "createdAt": "2013 / 09 / 24"
+    },
+    {
+        "key": "PEVE",
+        "company": "Pevere Trasporti e Spedizioni Srl",
+        "country": "Italy",
+        "city": "Monfalcone",
+        "createdAt": "2021 / 01 / 11"
+    },
+    {
+        "key": "PGTA",
+        "company": "PULSAR GLOBAL TRANSPORT LOJİSTİK ANONİM ŞİRKETİ",
+        "country": "Turkey",
+        "city": "İSTANBUL",
+        "createdAt": "2025 / 03 / 04"
+    },
+    {
+        "key": "PIMK",
+        "company": "PIMK LTD",
+        "country": "Bulgaria",
+        "city": "Plovdiv",
+        "createdAt": "2014 / 11 / 17"
+    },
+    {
+        "key": "PLAD",
+        "company": "Planzer Transport AG",
+        "country": "Switzerland",
+        "city": "Urdorf",
+        "createdAt": "2011 / 07 / 19"
+    },
+    {
+        "key": "PNOA",
+        "company": "PNO SVERIGE AB",
+        "country": "Sweden",
+        "city": "Helsingborg",
+        "createdAt": "2013 / 08 / 08"
+    },
+    {
+        "key": "PNOB",
+        "company": "PNO SVERIGE AB",
+        "country": "Sweden",
+        "city": "Helsingborg",
+        "createdAt": "2013 / 08 / 19"
+    },
+    {
+        "key": "PNOD",
+        "company": "PNO SVERIGE AB",
+        "country": "Sweden",
+        "city": "Helsingborg",
+        "createdAt": "2014 / 03 / 13"
+    },
+    {
+        "key": "PNOE",
+        "company": "PNO SVERIGE AB",
+        "country": "Sweden",
+        "city": "Helsingborg",
+        "createdAt": "2013 / 12 / 09"
+    },
+    {
+        "key": "POLA",
+        "company": "POLLEY RENTING",
+        "country": "France",
+        "city": "Marck",
+        "createdAt": "2023 / 05 / 25"
+    },
+    {
+        "key": "POLD",
+        "company": "PoliLogistics Prosta spółka Akcyjna",
+        "country": "Poland",
+        "city": "Wągrowiec",
+        "createdAt": "2024 / 03 / 12"
+    },
+    {
+        "key": "PORA",
+        "company": "TRANSPORTS PORTMANN",
+        "country": "France",
+        "city": "SAUSHEIM",
+        "createdAt": "2013 / 05 / 30"
+    },
+    {
+        "key": "POXE",
+        "company": "TRANSPORTS PO SCANDEX",
+        "country": "France",
+        "city": "Reventin Vaugris",
+        "createdAt": "2014 / 07 / 07"
+    },
+    {
+        "key": "PRIA",
+        "company": "Primafrio SL",
+        "country": "Spain",
+        "city": "Alhama de Murcia",
+        "createdAt": "2017 / 12 / 05"
+    },
+    {
+        "key": "PROD",
+        "company": "PROMODAL",
+        "country": "France",
+        "city": "Avignon cedex 9",
+        "createdAt": "2012 / 03 / 20"
+    },
+    {
+        "key": "PRTA",
+        "company": "Transportunternehmen Philipp Reich",
+        "country": "Germany",
+        "city": "Vimfow",
+        "createdAt": "2021 / 08 / 20"
+    },
+    {
+        "key": "PSCB",
+        "company": "PISCOPO TRASPORTI SRLS",
+        "country": "Italy",
+        "city": "Albettone",
+        "createdAt": "2022 / 06 / 15"
+    },
+    {
+        "key": "PSCD",
+        "company": "Paul Schockemöhle Logistics GmbH & Co. KG",
+        "country": "Germany",
+        "city": "Mühlen",
+        "createdAt": "2013 / 07 / 04"
+    },
+    {
+        "key": "PSME",
+        "company": "Pieter Smit Theater Rock B.V.",
+        "country": "Netherlands",
+        "city": "Nieuw - Vennep",
+        "createdAt": "2015 / 04 / 21"
+    },
+    {
+        "key": "PTNA",
+        "company": "Pentagon Transport Nordic AS",
+        "country": "Norway",
+        "city": "Kristiansand",
+        "createdAt": "2024 / 11 / 28"
+    },
+    {
+        "key": "PTSA",
+        "company": "Planzer Trasporti Srl",
+        "country": "Italy",
+        "city": "Montano Lucino",
+        "createdAt": "2014 / 04 / 01"
+    },
+    {
+        "key": "PTUE",
+        "company": "PIERRI TRASPORTI SNC di Pierri Luigi e Pierri Giovanni",
+        "country": "Italy",
+        "city": "Fisciano (SA)",
+        "createdAt": "2014 / 01 / 03"
+    },
+    {
+        "key": "RABB",
+        "company": "RABEN TRANSPORT",
+        "country": "Poland",
+        "city": "Gądki",
+        "createdAt": "2015 / 11 / 26"
+    },
+    {
+        "key": "RAID",
+        "company": "RAISA DHT GmbH",
+        "country": "Germany",
+        "city": "Stade",
+        "createdAt": "2023 / 06 / 13"
+    },
+    {
+        "key": "RAME",
+        "company": "RAMETTE TRANSPORTS SAS",
+        "country": "France",
+        "city": "Merville",
+        "createdAt": "2022 / 06 / 09"
+    },
+    {
+        "key": "RASA",
+        "company": "Rail&Sea Logistics GmbH",
+        "country": "Austria",
+        "city": "Seekirchen",
+        "createdAt": "2017 / 11 / 23"
+    },
+    {
+        "key": "RATE",
+        "company": "Autotrasporti Rattenni srl",
+        "country": "Italy",
+        "city": "Pescara",
+        "createdAt": "2013 / 10 / 15"
+    },
+    {
+        "key": "RAWA",
+        "company": "Rawski Tank Service Sp.z.o.o.",
+        "country": "Poland",
+        "city": "Karczew",
+        "createdAt": "2024 / 03 / 07"
+    },
+    {
+        "key": "RBNA",
+        "company": "RIBONI RBN SRL",
+        "country": "Italy",
+        "city": "GHEVIO DI MEINA",
+        "createdAt": "2013 / 10 / 22"
+    },
+    {
+        "key": "RBNE",
+        "company": "REBORN ULUSLARARASI NAKLİYAT VE LOJİSTİK HİZMETLERİ LİMİTED ŞİRKETİ",
+        "country": "Turkey",
+        "city": "KOCAELİ",
+        "createdAt": "2025 / 01 / 31"
+    },
+    {
+        "key": "RDLE",
+        "company": "2RDL",
+        "country": "France",
+        "city": "Roquemaure",
+        "createdAt": "2022 / 06 / 10"
+    },
+    {
+        "key": "REAA",
+        "company": "Realsten GmbH",
+        "country": "Germany",
+        "city": "Lübeck",
+        "createdAt": "2024 / 12 / 03"
+    },
+    {
+        "key": "REBE",
+        "company": "G. Peter Reber Möbel-Logistik GmbH",
+        "country": "Germany",
+        "city": "Germersheim",
+        "createdAt": "2014 / 09 / 02"
+    },
+    {
+        "key": "REID",
+        "company": "Reicheneder Transport GmbH",
+        "country": "Germany",
+        "city": "Aiterhofen",
+        "createdAt": "2011 / 08 / 16"
+    },
+    {
+        "key": "REMA",
+        "company": "REMA Distribusjon Norge AS",
+        "country": "Norway",
+        "city": "Vinterbro",
+        "createdAt": "2012 / 11 / 15"
+    },
+    {
+        "key": "RENE",
+        "company": "RENI TRASPORTI CELERI S.R.L.",
+        "country": "Italy",
+        "city": "Verona",
+        "createdAt": "2021 / 08 / 31"
+    },
+    {
+        "key": "REVA",
+        "company": "AUTOTRASPORTI VERCESI SPA",
+        "country": "Italy",
+        "city": "Pozzuolo Martesana",
+        "createdAt": "2017 / 07 / 11"
+    },
+    {
+        "key": "REXA",
+        "company": "Imerys Graphite and Carbon Ltd",
+        "country": "Switzerland",
+        "city": "Bodio",
+        "createdAt": "2014 / 06 / 30"
+    },
+    {
+        "key": "REYE",
+        "company": "REYSAŞ TAŞIMACILIK VE LOJİSTİK TİCARET ANONİM ŞİRKETİ",
+        "country": "Turkey",
+        "city": "İstanbul",
+        "createdAt": "2021 / 09 / 14"
+    },
+    {
+        "key": "RFTD",
+        "company": "Romano & C. Autotrasporti srl",
+        "country": "Italy",
+        "city": "Catania",
+        "createdAt": "2014 / 07 / 01"
+    },
+    {
+        "key": "RGPA",
+        "company": "CERICO UK LTD",
+        "country": "United Kingdom",
+        "city": "Norwich, Norfolk",
+        "createdAt": "2012 / 01 / 17"
+    },
+    {
+        "key": "RHWB",
+        "company": "Rhenus Freight Logistics GmbH & Co. KG",
+        "country": "Germany",
+        "city": "Unna",
+        "createdAt": "2013 / 03 / 12"
+    },
+    {
+        "key": "RIAE",
+        "company": "Riaz srl",
+        "country": "Italy",
+        "city": "Piacenza",
+        "createdAt": "2017 / 10 / 10"
+    },
+    {
+        "key": "RIMA",
+        "company": "H. Ristelhueber's Nachfolger Spedition GmbH",
+        "country": "Germany",
+        "city": "Waldshut",
+        "createdAt": "2013 / 04 / 16"
+    },
+    {
+        "key": "RIZA",
+        "company": "Richler Transport- und Handelgesellschaft m.b.H.",
+        "country": "Austria",
+        "city": "Zirl",
+        "createdAt": "2013 / 03 / 12"
+    },
+    {
+        "key": "RKLE",
+        "company": "Rail Kontor AG",
+        "country": "Switzerland",
+        "city": "Appenzell",
+        "createdAt": "2021 / 07 / 30"
+    },
+    {
+        "key": "RLCA",
+        "company": "railCare AG",
+        "country": "Switzerland",
+        "city": "Wangen b. Olten",
+        "createdAt": "2015 / 07 / 17"
+    },
+    {
+        "key": "RLCB",
+        "company": "railCare AG",
+        "country": "Switzerland",
+        "city": "Wangen b. Olten",
+        "createdAt": "2021 / 08 / 16"
+    },
+    {
+        "key": "RLCE",
+        "company": "RAU LOAD CARGO BARCELONA, S.L.",
+        "country": "Spain",
+        "city": "El Puig",
+        "createdAt": "2023 / 09 / 14"
+    },
+    {
+        "key": "RLSE",
+        "company": "Riva logistic & service s.r.l",
+        "country": "Italy",
+        "city": "Arosio",
+        "createdAt": "2013 / 08 / 07"
+    },
+    {
+        "key": "RMGA",
+        "company": "RMG Rohstoffmanagement GmbH",
+        "country": "Germany",
+        "city": "Eltville am Rhein",
+        "createdAt": "2014 / 03 / 17"
+    },
+    {
+        "key": "RMHA",
+        "company": "Hartman Expeditie",
+        "country": "Netherlands",
+        "city": "Nieuw Amsterdam",
+        "createdAt": "2021 / 06 / 16"
+    },
+    {
+        "key": "RMTA",
+        "company": "ROMAINTRANS",
+        "country": "France",
+        "city": "GRAINCOURT LES HAVRINCOURT",
+        "createdAt": "2025 / 02 / 28"
+    },
+    {
+        "key": "RMTE",
+        "company": "Ramitrans",
+        "country": "Lithuania",
+        "city": "Vilnius",
+        "createdAt": "2018 / 07 / 04"
+    },
+    {
+        "key": "RNOA",
+        "company": "R. Nussbaum AG",
+        "country": "Switzerland",
+        "city": "Olten",
+        "createdAt": "2011 / 09 / 09"
+    },
+    {
+        "key": "ROBK",
+        "company": "SC BLEMA TRANS SRL",
+        "country": "Romania",
+        "city": "Tarnaveni",
+        "createdAt": "2017 / 11 / 30"
+    },
+    {
+        "key": "ROEA",
+        "company": "Röhr Möbeltransport GmbH",
+        "country": "Austria",
+        "city": "Unterwölbling",
+        "createdAt": "2024 / 10 / 24"
+    },
+    {
+        "key": "RORA",
+        "company": "De Vries Road & Rail Logistics B.V.",
+        "country": "Netherlands",
+        "city": "Heerenveen",
+        "createdAt": "2019 / 07 / 10"
+    },
+    {
+        "key": "ROUE",
+        "company": "ROUTIER EUROPEAN TRANSPORT S.R.L.",
+        "country": "Romania",
+        "city": "Gilau",
+        "createdAt": "2017 / 06 / 16"
+    },
+    {
+        "key": "RRBK",
+        "company": "RRB Railroad GmbH",
+        "country": "Germany",
+        "city": "Dorfen",
+        "createdAt": "2023 / 01 / 11"
+    },
+    {
+        "key": "RRLB",
+        "company": "RailRelease BV",
+        "country": "Netherlands",
+        "city": "Rotterdam",
+        "createdAt": "2021 / 10 / 26"
+    },
+    {
+        "key": "RSLA",
+        "company": "ROHLIG SUUS Logistics S.A.",
+        "country": "Poland",
+        "city": "Warszawa",
+        "createdAt": "2023 / 12 / 22"
+    },
+    {
+        "key": "RSPE",
+        "company": "Raben Group N.V.",
+        "country": "Netherlands",
+        "city": "Oss",
+        "createdAt": "2017 / 02 / 07"
+    },
+    {
+        "key": "RSTD",
+        "company": "R.S.Transport",
+        "country": "Germany",
+        "city": "Bruckberg",
+        "createdAt": "2014 / 03 / 26"
+    },
+    {
+        "key": "RTPE",
+        "company": "Raben Group N.V.",
+        "country": "Netherlands",
+        "city": "Oss",
+        "createdAt": "2022 / 04 / 12"
+    },
+    {
+        "key": "RTRB",
+        "company": "Refrigerated Trailer Rentals B.V.",
+        "country": "Netherlands",
+        "city": "Barendrecht",
+        "createdAt": "2014 / 02 / 07"
+    },
+    {
+        "key": "RTRE",
+        "company": "Roelofs Int transport",
+        "country": "Netherlands",
+        "city": "Wijchen",
+        "createdAt": "2023 / 06 / 05"
+    },
+    {
+        "key": "RTSD",
+        "company": "RTS Transport Service GmbH",
+        "country": "Germany",
+        "city": "Dassendorf",
+        "createdAt": "2019 / 09 / 06"
+    },
+    {
+        "key": "RUBD",
+        "company": "Aux Déménageurs Stéphanois RUBIERE",
+        "country": "France",
+        "city": "Saint Priest En Jarez",
+        "createdAt": "2021 / 01 / 22"
+    },
+    {
+        "key": "RUMA",
+        "company": "Rudniccy-Magetra sp. z o.o.",
+        "country": "Poland",
+        "city": "Gdansk",
+        "createdAt": "2023 / 08 / 28"
+    },
+    {
+        "key": "RUTE",
+        "company": "AUTOTRASPORTI RUTILLI ADOLFO SRL",
+        "country": "Italy",
+        "city": "Castellucchio - Mantova",
+        "createdAt": "2015 / 03 / 19"
+    },
+    {
+        "key": "SACA",
+        "company": "SACYTRANS S.L",
+        "country": "Spain",
+        "city": "Irun",
+        "createdAt": "2017 / 06 / 12"
+    },
+    {
+        "key": "SALA",
+        "company": "Transports Salva SARL",
+        "country": "France",
+        "city": "Salses Le Château",
+        "createdAt": "2012 / 03 / 14"
+    },
+    {
+        "key": "SANA",
+        "company": "SANDRI ALESSANDRO TRASPORTI E DISTRIBUZIONI",
+        "country": "Italy",
+        "city": "CANALE CN",
+        "createdAt": "2013 / 09 / 27"
+    },
+    {
+        "key": "SAND",
+        "company": "Sandahls Logistik AB",
+        "country": "Sweden",
+        "city": "Värnamo",
+        "createdAt": "2023 / 04 / 14"
+    },
+    {
+        "key": "SAOK",
+        "company": "Eidgenössisches Departement für Verteidigung, Bevölkerungsschutz und Sport VBS, Armasuisse",
+        "country": "Switzerland",
+        "city": "Bern",
+        "createdAt": "2012 / 08 / 29"
+    },
+    {
+        "key": "SAPB",
+        "company": "Bilgram & Co. GmbH",
+        "country": "Germany",
+        "city": "Ostrach",
+        "createdAt": "2024 / 06 / 13"
+    },
+    {
+        "key": "SARB",
+        "company": "Sarp Intermodal HIZMETLERI IC VE DIS TICARET A.S",
+        "country": "Turkey",
+        "city": "Istanbul",
+        "createdAt": "2017 / 03 / 25"
+    },
+    {
+        "key": "SAWA",
+        "company": "Sawa Logistics Sp. z o.o.",
+        "country": "Poland",
+        "city": "Warszawa",
+        "createdAt": "2023 / 08 / 04"
+    },
+    {
+        "key": "SBBA",
+        "company": "Schweizerische Bundesbahnen SBB Cargo AG",
+        "country": "Switzerland",
+        "city": "Olten",
+        "createdAt": "2015 / 03 / 30"
+    },
+    {
+        "key": "SCAB",
+        "company": "SCANFOR BVBA",
+        "country": "Belgium",
+        "city": "WOMMELGEM",
+        "createdAt": "2014 / 10 / 14"
+    },
+    {
+        "key": "SCBE",
+        "company": "Schmitz Cargobull AG",
+        "country": "Germany",
+        "city": "Horstmar",
+        "createdAt": "2023 / 06 / 13"
+    },
+    {
+        "key": "SCDB",
+        "company": "Schweitzer GmbH & Co. Internationale Spedition KG",
+        "country": "Germany",
+        "city": "Ludwigsburg",
+        "createdAt": "2013 / 03 / 07"
+    },
+    {
+        "key": "SCDD",
+        "company": "LuTV Rackl Veranstaltungstechnik",
+        "country": "Germany",
+        "city": "Forstinning",
+        "createdAt": "2015 / 06 / 30"
+    },
+    {
+        "key": "SCHA",
+        "company": "Schavemaker Logistics B.V.",
+        "country": "Netherlands",
+        "city": "Beverwijk",
+        "createdAt": "2015 / 04 / 08"
+    },
+    {
+        "key": "SCHB",
+        "company": "Schmitz B.V.",
+        "country": "Netherlands",
+        "city": "Roermond",
+        "createdAt": "2013 / 05 / 14"
+    },
+    {
+        "key": "SCHD",
+        "company": "Johann Schirmbeck GmbH",
+        "country": "Germany",
+        "city": "Neutraubling",
+        "createdAt": "2011 / 10 / 21"
+    },
+    {
+        "key": "SCHE",
+        "company": "Sirio Swiss SA",
+        "country": "Switzerland",
+        "city": "Mendrisio",
+        "createdAt": "2014 / 07 / 29"
+    },
+    {
+        "key": "SCKA",
+        "company": "SCHENKER ARKAS NAKLIYAT VE TICARET ANONIM SIRKETI",
+        "country": "Turkey",
+        "city": "Istanbul",
+        "createdAt": "2022 / 12 / 06"
+    },
+    {
+        "key": "SCLE",
+        "company": "Sugar Container Logistics BV",
+        "country": "Netherlands",
+        "city": "Westdorpe",
+        "createdAt": "2017 / 07 / 28"
+    },
+    {
+        "key": "SCMD",
+        "company": "SGL Carbon GmbH",
+        "country": "Germany",
+        "city": "Meitingen",
+        "createdAt": "2022 / 07 / 28"
+    },
+    {
+        "key": "SCNA",
+        "company": "Schenker AS",
+        "country": "Norway",
+        "city": "Oslo",
+        "createdAt": "2012 / 06 / 05"
+    },
+    {
+        "key": "SCRA",
+        "company": "Sacar Plastic & Logistic S.r.l. Semplificata",
+        "country": "Italy",
+        "city": "San Valentino Torio (Sa)",
+        "createdAt": "2023 / 05 / 08"
+    },
+    {
+        "key": "SCTB",
+        "company": "Società Commerciale Trasporti srl",
+        "country": "Italy",
+        "city": "Soave Vr",
+        "createdAt": "2018 / 10 / 09"
+    },
+    {
+        "key": "SCTE",
+        "company": "Schenker Technik GmbH",
+        "country": "Germany",
+        "city": "Essen",
+        "createdAt": "2014 / 11 / 19"
+    },
+    {
+        "key": "SEBA",
+        "company": "Jeppsson Transport AS",
+        "country": "Norway",
+        "city": "Fagerstrand",
+        "createdAt": "2024 / 12 / 13"
+    },
+    {
+        "key": "SECA",
+        "company": "SECHE TRANSPORTS",
+        "country": "France",
+        "city": "Change Cedex 9",
+        "createdAt": "2021 / 11 / 22"
+    },
+    {
+        "key": "SEMD",
+        "company": "SEMDO-TRANS OOD",
+        "country": "Bulgaria",
+        "city": "Razgrad",
+        "createdAt": "2021 / 02 / 25"
+    },
+    {
+        "key": "SEQA",
+        "company": "Schenker Equipment AB",
+        "country": "Sweden",
+        "city": "Gothenburg",
+        "createdAt": "2012 / 08 / 13"
+    },
+    {
+        "key": "SERA",
+        "company": "Serapide Trans Srl",
+        "country": "Italy",
+        "city": "Napoli",
+        "createdAt": "2016 / 10 / 11"
+    },
+    {
+        "key": "SERE",
+        "company": "TRANSERVETO,S.L.",
+        "country": "Spain",
+        "city": "Lleida",
+        "createdAt": "2020 / 09 / 28"
+    },
+    {
+        "key": "SETB",
+        "company": "Salzburger EisenbahnTransportLogistik GmbH",
+        "country": "Austria",
+        "city": "Salzburg",
+        "createdAt": "2023 / 12 / 05"
+    },
+    {
+        "key": "SEVD",
+        "company": "ARSLAN NAKLİYAT SAN VE TICARET A.Ş",
+        "country": "Turkey",
+        "city": "İzmir",
+        "createdAt": "2018 / 06 / 11"
+    },
+    {
+        "key": "SGLA",
+        "company": "SAGLIK TRANSPORT NAKLIYE VE TIC. LTD. STI.",
+        "country": "Turkey",
+        "city": "ISTANBUL",
+        "createdAt": "2015 / 04 / 20"
+    },
+    {
+        "key": "SGLB",
+        "company": "Safe Green Logistics A/S",
+        "country": "Denmark",
+        "city": "Vodskov",
+        "createdAt": "2022 / 11 / 09"
+    },
+    {
+        "key": "SGLE",
+        "company": "SAGLIK TRANSPORT NAKLIYE VE TIC. LTD. STI.",
+        "country": "Turkey",
+        "city": "ISTANBUL",
+        "createdAt": "2014 / 08 / 20"
+    },
+    {
+        "key": "SGSA",
+        "company": "SAGLISOL Sp. z o. o.",
+        "country": "Poland",
+        "city": "Rzeszów",
+        "createdAt": "2024 / 12 / 17"
+    },
+    {
+        "key": "SGVB",
+        "company": "Van Bouwel Verkoop en Service BV",
+        "country": "Belgium",
+        "city": "Kapellen",
+        "createdAt": "2023 / 05 / 17"
+    },
+    {
+        "key": "SGWE",
+        "company": "Sägewerk Transporte GmbH",
+        "country": "Germany",
+        "city": "Düsseldorf",
+        "createdAt": "2019 / 09 / 19"
+    },
+    {
+        "key": "SGXA",
+        "company": "Schmidt-Gevelsberg GmbH",
+        "country": "Germany",
+        "city": "Schwelm",
+        "createdAt": "2017 / 04 / 10"
+    },
+    {
+        "key": "SHNA",
+        "company": "ŞAHİN NAKLİYAT TİC. VE SAN.A.Ş.",
+        "country": "Turkey",
+        "city": "Gaziantep",
+        "createdAt": "2015 / 03 / 23"
+    },
+    {
+        "key": "SIEA",
+        "company": "Sieber Transport AG",
+        "country": "Switzerland",
+        "city": "Berneck",
+        "createdAt": "2014 / 11 / 05"
+    },
+    {
+        "key": "SIEB",
+        "company": "Spedition Siegmann GmbH & Co. KG",
+        "country": "Germany",
+        "city": "Bopfingen",
+        "createdAt": "2013 / 04 / 22"
+    },
+    {
+        "key": "SILA",
+        "company": "silvia trasporti srl",
+        "country": "Italy",
+        "city": "Capena",
+        "createdAt": "2023 / 09 / 19"
+    },
+    {
+        "key": "SITB",
+        "company": "Simon-Trans Kft.",
+        "country": "Hungary",
+        "city": "Viszák",
+        "createdAt": "2024 / 09 / 17"
+    },
+    {
+        "key": "SITE",
+        "company": "Sirio srl",
+        "country": "Italy",
+        "city": "Cantello Loc. Gaggiolo",
+        "createdAt": "2014 / 07 / 29"
+    },
+    {
+        "key": "SIUA",
+        "company": "SIT LOGISTICS SPA",
+        "country": "Italy",
+        "city": "Salerno",
+        "createdAt": "2019 / 09 / 04"
+    },
+    {
+        "key": "SJSB",
+        "company": "Schenker Technik GmbH",
+        "country": "Germany",
+        "city": "Essen",
+        "createdAt": "2014 / 02 / 26"
+    },
+    {
+        "key": "SKFA",
+        "company": "ŠKOFIC PROMET D.O.O.",
+        "country": "Slovenia",
+        "city": "Golnik",
+        "createdAt": "2020 / 05 / 22"
+    },
+    {
+        "key": "SLLA",
+        "company": "SL-Logistics BV",
+        "country": "Belgium",
+        "city": "Puurs-Sint-Amands",
+        "createdAt": "2018 / 09 / 04"
+    },
+    {
+        "key": "SLTB",
+        "company": "SLT",
+        "country": "France",
+        "city": "Bressuire",
+        "createdAt": "2021 / 06 / 28"
+    },
+    {
+        "key": "SLTE",
+        "company": "SULTANLAR ULUS TAİ YED.PAR.OTOM.TEM.ÜRN.GIDAİNŞ TAAH TUR İTH İHR TİCLTD ŞTİ",
+        "country": "Turkey",
+        "city": "MERSİN",
+        "createdAt": "2024 / 09 / 03"
+    },
+    {
+        "key": "SLUA",
+        "company": "Sirl Air Cargo GmbH",
+        "country": "Germany",
+        "city": "Unterschleissheim",
+        "createdAt": "2021 / 10 / 28"
+    },
+    {
+        "key": "SMDD",
+        "company": "ZECH Logistics GmbH",
+        "country": "Germany",
+        "city": "Delmenhorst",
+        "createdAt": "2016 / 06 / 09"
+    },
+    {
+        "key": "SMHA",
+        "company": "Wilhelm Schwarzmüller GmbH",
+        "country": "Austria",
+        "city": "Freinberg",
+        "createdAt": "2011 / 10 / 18"
+    },
+    {
+        "key": "SMIA",
+        "company": "SMI SRL",
+        "country": "Italy",
+        "city": "Imola",
+        "createdAt": "2021 / 09 / 14"
+    },
+    {
+        "key": "SMSE",
+        "company": "Sikoservices GmbH",
+        "country": "Germany",
+        "city": "Seevetal",
+        "createdAt": "2018 / 02 / 08"
+    },
+    {
+        "key": "SMTA",
+        "company": "SMET LOGISTICS S.R.L.",
+        "country": "Italy",
+        "city": "Salerno",
+        "createdAt": "2013 / 10 / 25"
+    },
+    {
+        "key": "SMTB",
+        "company": "SMET SPA",
+        "country": "Italy",
+        "city": "Roma",
+        "createdAt": "2017 / 02 / 27"
+    },
+    {
+        "key": "SMTE",
+        "company": "Société Marseillaise de Transports Routiers & Transit",
+        "country": "France",
+        "city": "Le Rove",
+        "createdAt": "2012 / 01 / 12"
+    },
+    {
+        "key": "SNPE",
+        "company": "SİNNEP ULUSLARASI NAKLİYAT VE DIŞ TİCARET LTD.ŞTİ",
+        "country": "Turkey",
+        "city": "İstanbul",
+        "createdAt": "2015 / 10 / 19"
+    },
+    {
+        "key": "SOCA",
+        "company": "SOCIETE DE CENTRALISATION ET D'ADMINISTRATION DU DEMENAGEMENT",
+        "country": "France",
+        "city": "Beauchamp",
+        "createdAt": "2014 / 03 / 27"
+    },
+    {
+        "key": "SOLB",
+        "company": "SO Logistik GmbH",
+        "country": "Germany",
+        "city": "Emstek",
+        "createdAt": "2024 / 11 / 01"
+    },
+    {
+        "key": "SOLD",
+        "company": "Solidaris sp. z o.o.",
+        "country": "Poland",
+        "city": "Polska Cerekiew",
+        "createdAt": "2024 / 03 / 26"
+    },
+    {
+        "key": "SONE",
+        "company": "Sonnentag Transport GmbH",
+        "country": "Germany",
+        "city": "Merklingen",
+        "createdAt": "2013 / 11 / 28"
+    },
+    {
+        "key": "SPCD",
+        "company": "Bächle Logistics GmbH",
+        "country": "Germany",
+        "city": "Villingen-Schwenningen",
+        "createdAt": "2025 / 01 / 28"
+    },
+    {
+        "key": "SPCE",
+        "company": "Space Logistic Srl",
+        "country": "Italy",
+        "city": "Salgareda",
+        "createdAt": "2020 / 01 / 07"
+    },
+    {
+        "key": "SPHE",
+        "company": "Spedition Hermesmann GmbH",
+        "country": "Germany",
+        "city": "Iserlohn",
+        "createdAt": "2012 / 01 / 09"
+    },
+    {
+        "key": "SPIA",
+        "company": "GROUPAS SRL",
+        "country": "Italy",
+        "city": "San Valentino Torio",
+        "createdAt": "2023 / 06 / 27"
+    },
+    {
+        "key": "SPLA",
+        "company": "Spedition Spitznagel GmbH",
+        "country": "Germany",
+        "city": "Lauchringen",
+        "createdAt": "2012 / 01 / 11"
+    },
+    {
+        "key": "SPLD",
+        "company": "Hans K. Schmitt GmbH & Co. KG",
+        "country": "Germany",
+        "city": "Oberhonnefeld",
+        "createdAt": "2014 / 02 / 12"
+    },
+    {
+        "key": "SRTK",
+        "company": "SERVIZI TRASPORTI SPECIALI SRL",
+        "country": "Italy",
+        "city": "Narni Scalo (Tr)",
+        "createdAt": "2014 / 04 / 08"
+    },
+    {
+        "key": "SRYA",
+        "company": "SERAY ULUSLARARASI TASIMACILIK INSAAT TICARET LIMITED SIRKETI",
+        "country": "Turkey",
+        "city": "İstanbul",
+        "createdAt": "2023 / 06 / 05"
+    },
+    {
+        "key": "SSLD",
+        "company": "Schwank Spedition GmbH",
+        "country": "Germany",
+        "city": "Lorch",
+        "createdAt": "2015 / 11 / 30"
+    },
+    {
+        "key": "SSWB",
+        "company": "Spedition Schwarz GmbH",
+        "country": "Germany",
+        "city": "Herbrechtingen",
+        "createdAt": "2013 / 04 / 10"
+    },
+    {
+        "key": "STCA",
+        "company": "S.T.C. servizio trasporti combinati",
+        "country": "Italy",
+        "city": "Genova",
+        "createdAt": "2014 / 02 / 03"
+    },
+    {
+        "key": "STDB",
+        "company": "SAS TRANSPORTS DES BUTTES",
+        "country": "France",
+        "city": "Paris",
+        "createdAt": "2016 / 07 / 25"
+    },
+    {
+        "key": "STEA",
+        "company": "STEGAGNO INDUSTRIALE SPA",
+        "country": "Italy",
+        "city": "Verona",
+        "createdAt": "2013 / 11 / 27"
+    },
+    {
+        "key": "STEB",
+        "company": "Sterac Transport & Logistik GmbH",
+        "country": "Germany",
+        "city": "Braak",
+        "createdAt": "2015 / 07 / 28"
+    },
+    {
+        "key": "STED",
+        "company": "STERATRANS Internationale Spedition GmbH",
+        "country": "Germany",
+        "city": "Hamburg",
+        "createdAt": "2014 / 02 / 14"
+    },
+    {
+        "key": "STFA",
+        "company": "Stefanco Sp. z o.o.",
+        "country": "Poland",
+        "city": "Szumowo",
+        "createdAt": "2024 / 05 / 06"
+    },
+    {
+        "key": "STGB",
+        "company": "SILO-TRANS SP.J. B.KONIECZNA R.KONIECZNY",
+        "country": "Poland",
+        "city": "Gubin",
+        "createdAt": "2021 / 04 / 28"
+    },
+    {
+        "key": "STHB",
+        "company": "SOCIETE DES TRANSPORTS HELLEMMOIS",
+        "country": "France",
+        "city": "Fretin",
+        "createdAt": "2019 / 07 / 09"
+    },
+    {
+        "key": "STKA",
+        "company": "SETTENTRIONALE TRASPORTI SPA",
+        "country": "Italy",
+        "city": "POSSAGNO",
+        "createdAt": "2024 / 04 / 23"
+    },
+    {
+        "key": "STLA",
+        "company": "Scheffknecht Transporte GmbH",
+        "country": "Austria",
+        "city": "Lustenau",
+        "createdAt": "2011 / 08 / 22"
+    },
+    {
+        "key": "STMB",
+        "company": "ste.ma trasporti srl",
+        "country": "Italy",
+        "city": "Capena",
+        "createdAt": "2023 / 09 / 19"
+    },
+    {
+        "key": "STOA",
+        "company": "Stork Umweltdienste GmbH",
+        "country": "Germany",
+        "city": "Magbeburg",
+        "createdAt": "2021 / 04 / 15"
+    },
+    {
+        "key": "STOE",
+        "company": "Stone-Express BVBA",
+        "country": "Belgium",
+        "city": "Lokeren",
+        "createdAt": "2013 / 04 / 25"
+    },
+    {
+        "key": "STRA",
+        "company": "Schöni Transport AG",
+        "country": "Switzerland",
+        "city": "Rothrist",
+        "createdAt": "2012 / 09 / 27"
+    },
+    {
+        "key": "STRB",
+        "company": "SERTRANS CATALUNYA SA",
+        "country": "Spain",
+        "city": "Vilanova del Vallès",
+        "createdAt": "2018 / 09 / 25"
+    },
+    {
+        "key": "SUDE",
+        "company": "SUD TRASPORTI SRL",
+        "country": "Italy",
+        "city": "Catania",
+        "createdAt": "2018 / 04 / 17"
+    },
+    {
+        "key": "SUNA",
+        "company": "Sun Chemical",
+        "country": "Belgium",
+        "city": "Wavre",
+        "createdAt": "2021 / 06 / 01"
+    },
+    {
+        "key": "SUNB",
+        "company": "TTT Holding B.V.",
+        "country": "Netherlands",
+        "city": "Amsterdam",
+        "createdAt": "2015 / 10 / 21"
+    },
+    {
+        "key": "SUNE",
+        "company": "SUN TAŞIMACILIK ULUSLARARASI NAK LOJ HIZM LTD STI",
+        "country": "Turkey",
+        "city": "Istanbul",
+        "createdAt": "2017 / 02 / 22"
+    },
+    {
+        "key": "TABA",
+        "company": "Tabun Filip Więcek",
+        "country": "Poland",
+        "city": "Mielec",
+        "createdAt": "2024 / 04 / 23"
+    },
+    {
+        "key": "TABB",
+        "company": "TRANSPORTS AUTO BRUNIER SA",
+        "country": "France",
+        "city": "Saint Jean de Védas",
+        "createdAt": "2012 / 09 / 25"
+    },
+    {
+        "key": "TAGA",
+        "company": "TRAVECO Transporte AG",
+        "country": "Switzerland",
+        "city": "Sursee",
+        "createdAt": "2019 / 04 / 29"
+    },
+    {
+        "key": "TAMB",
+        "company": "TRANSAMBIENTAL, S.L.",
+        "country": "Spain",
+        "city": "Bell-Lloc D’urgell",
+        "createdAt": "2021 / 04 / 14"
+    },
+    {
+        "key": "TAUB",
+        "company": "TAURO AUTOTRASPORTI S.R.L.",
+        "country": "Italy",
+        "city": "Castellalto",
+        "createdAt": "2013 / 07 / 29"
+    },
+    {
+        "key": "TBCA",
+        "company": "TRANSPORTS BABIN CHEVAYE",
+        "country": "France",
+        "city": "Coueron",
+        "createdAt": "2014 / 01 / 03"
+    },
+    {
+        "key": "TBRA",
+        "company": "TRANSBATUR MILLETLERARASI NAKLIYAT SANAYI VE TICARET LIMITED SIRKETI",
+        "country": "Turkey",
+        "city": "İSTANBUL",
+        "createdAt": "2023 / 12 / 22"
+    },
+    {
+        "key": "TCHE",
+        "company": "Thommen-Furler AG",
+        "country": "Switzerland",
+        "city": "Rüti bei Büren",
+        "createdAt": "2011 / 11 / 28"
+    },
+    {
+        "key": "TCMA",
+        "company": "TransCombi Express GmbH Internationale Spedition und Lagerei",
+        "country": "Germany",
+        "city": "Mannheim",
+        "createdAt": "2014 / 03 / 24"
+    },
+    {
+        "key": "TCMB",
+        "company": "TRASPORTI COMBINATI S.R.L.",
+        "country": "Italy",
+        "city": "Milano",
+        "createdAt": "2015 / 01 / 07"
+    },
+    {
+        "key": "TCTD",
+        "company": "TCT LOJİSTİK A.Ş.",
+        "country": "Turkey",
+        "city": "İstanbul",
+        "createdAt": "2021 / 05 / 25"
+    },
+    {
+        "key": "TDHA",
+        "company": "TDH GmbH",
+        "country": "Germany",
+        "city": "Bönningstedt",
+        "createdAt": "2021 / 04 / 09"
+    },
+    {
+        "key": "TDLD",
+        "company": "ALPI SERVICE SRL",
+        "country": "Italy",
+        "city": "Borgo San Dalmazzo",
+        "createdAt": "2024 / 04 / 28"
+    },
+    {
+        "key": "TECA",
+        "company": "TECNOFER",
+        "country": "Italy",
+        "city": "Frosinone",
+        "createdAt": "2017 / 09 / 07"
+    },
+    {
+        "key": "TEPA",
+        "company": "TransExpedition Polska Sp. z o.o.",
+        "country": "Poland",
+        "city": "Bialystok",
+        "createdAt": "2021 / 02 / 26"
+    },
+    {
+        "key": "TEPD",
+        "company": "TATJANA Ervacanin",
+        "country": "Slovenia",
+        "city": "Novo Mesto",
+        "createdAt": "2024 / 09 / 30"
+    },
+    {
+        "key": "TESB",
+        "company": "TESTINO TRASPORTI E LOGISTICA S.R.L.",
+        "country": "Italy",
+        "city": "Corato",
+        "createdAt": "2023 / 02 / 16"
+    },
+    {
+        "key": "TFRE",
+        "company": "TRANS-FER",
+        "country": "France",
+        "city": "Vern-sur-Seiche",
+        "createdAt": "2011 / 11 / 22"
+    },
+    {
+        "key": "TGCA",
+        "company": "SA GUY CASSET",
+        "country": "France",
+        "city": "Les Echelles",
+        "createdAt": "2023 / 02 / 01"
+    },
+    {
+        "key": "THEA",
+        "company": "The Agency BV",
+        "country": "Belgium",
+        "city": "Antwerpen",
+        "createdAt": "2023 / 05 / 31"
+    },
+    {
+        "key": "THIE",
+        "company": "Lothar Thiedmann",
+        "country": "Germany",
+        "city": "Leutkirch",
+        "createdAt": "2014 / 07 / 10"
+    },
+    {
+        "key": "TIME",
+        "company": "Trans Intermodal s.r.l.",
+        "country": "Italy",
+        "city": "Scafati",
+        "createdAt": "2014 / 05 / 27"
+    },
+    {
+        "key": "TIPA",
+        "company": "TIP Trailer Services Netherlands BV",
+        "country": "Netherlands",
+        "city": "Rotterdam",
+        "createdAt": "2024 / 11 / 18"
+    },
+    {
+        "key": "TIPD",
+        "company": "TRANSPORTES POZO S.L.",
+        "country": "Spain",
+        "city": "TABOADELA (OURENSE)",
+        "createdAt": "2014 / 01 / 10"
+    },
+    {
+        "key": "TIPE",
+        "company": "TIP Trailer Services Germany GmbH",
+        "country": "Germany",
+        "city": "Hamburg",
+        "createdAt": "2014 / 06 / 06"
+    },
+    {
+        "key": "TIRA",
+        "company": "Trailer Spa",
+        "country": "Italy",
+        "city": "REZZATO",
+        "createdAt": "2022 / 10 / 26"
+    },
+    {
+        "key": "TISA",
+        "company": "Trans Italia srl",
+        "country": "Italy",
+        "city": "Mercato San Severino (SA)",
+        "createdAt": "2013 / 04 / 19"
+    },
+    {
+        "key": "TITA",
+        "company": "TRASPORTI INTERNAZIONALI TRANSMEC SPA",
+        "country": "Italy",
+        "city": "CAMPOGALLIANO (MODENA)",
+        "createdAt": "2014 / 06 / 30"
+    },
+    {
+        "key": "TIUB",
+        "company": "TRADELOG Srl",
+        "country": "Italy",
+        "city": "Torino",
+        "createdAt": "2015 / 02 / 23"
+    },
+    {
+        "key": "TJME",
+        "company": "TRANSPORTES LIQUIDOS JM CAÑADAS SL",
+        "country": "Spain",
+        "city": "Riudellots De La Selva",
+        "createdAt": "2021 / 09 / 06"
+    },
+    {
+        "key": "TLAA",
+        "company": "Transport Logistica Alpimar Gmbh",
+        "country": "Germany",
+        "city": "Kiefersfelden",
+        "createdAt": "2016 / 06 / 20"
+    },
+    {
+        "key": "TLHD",
+        "company": "Transport - Logistik GmbH",
+        "country": "Germany",
+        "city": "Iserlohn",
+        "createdAt": "2024 / 10 / 02"
+    },
+    {
+        "key": "TLID",
+        "company": "TransLog International GmbH & Co. KG",
+        "country": "Germany",
+        "city": "Singen",
+        "createdAt": "2012 / 05 / 04"
+    },
+    {
+        "key": "TLTE",
+        "company": "TRAVAGLINI LOGISTIC AND TRANSPORT SRL",
+        "country": "Italy",
+        "city": "Atessa",
+        "createdAt": "2024 / 10 / 25"
+    },
+    {
+        "key": "TLYE",
+        "company": "Sarp Intermodal HIZMETLERI IC VE DIS TICARET A.S",
+        "country": "Turkey",
+        "city": "Istanbul",
+        "createdAt": "2022 / 12 / 01"
+    },
+    {
+        "key": "TMTA",
+        "company": "TMT INTERANTIONAL SRL",
+        "country": "Italy",
+        "city": "San Benedetto Del Tronto",
+        "createdAt": "2020 / 07 / 31"
+    },
+    {
+        "key": "TMTB",
+        "company": "TMT INTERANTIONAL SRL",
+        "country": "Italy",
+        "city": "San Benedetto Del Tronto",
+        "createdAt": "2022 / 07 / 28"
+    },
+    {
+        "key": "TNAE",
+        "company": "T.N.A. CARGO SPA",
+        "country": "Italy",
+        "city": "Brendola",
+        "createdAt": "2020 / 11 / 30"
+    },
+    {
+        "key": "TNKA",
+        "company": "TETNAK TAŞIMACILIK TURİZM VE TİC.A.Ş",
+        "country": "Turkey",
+        "city": "Ankara",
+        "createdAt": "2022 / 11 / 15"
+    },
+    {
+        "key": "TODD",
+        "company": "Fradelloni Raffaele e Figli SpA",
+        "country": "Italy",
+        "city": "Cagliari",
+        "createdAt": "2013 / 10 / 14"
+    },
+    {
+        "key": "TPSE",
+        "company": "PARATORI S.P.A.",
+        "country": "Italy",
+        "city": "Novi Ligure",
+        "createdAt": "2014 / 02 / 25"
+    },
+    {
+        "key": "TPVA",
+        "company": "AUTOTRASPORTI PALENA VINCENZO & C. SRL",
+        "country": "Italy",
+        "city": "ATESSA",
+        "createdAt": "2013 / 06 / 27"
+    },
+    {
+        "key": "TRAD",
+        "company": "TRANSA Spedition GmbH",
+        "country": "Germany",
+        "city": "Offenbach am Main",
+        "createdAt": "2013 / 05 / 16"
+    },
+    {
+        "key": "TRAE",
+        "company": "TRAE SRL",
+        "country": "Italy",
+        "city": "CUNEO",
+        "createdAt": "2014 / 02 / 19"
+    },
+    {
+        "key": "TRDE",
+        "company": "Transco GmbH",
+        "country": "Germany",
+        "city": "Singen",
+        "createdAt": "2014 / 02 / 20"
+    },
+    {
+        "key": "TRED",
+        "company": "TRA.DE S.R.L.",
+        "country": "Italy",
+        "city": "Catania",
+        "createdAt": "2017 / 01 / 30"
+    },
+    {
+        "key": "TRFA",
+        "company": "Transportes Ferroviarios Especiales, S.A.",
+        "country": "Spain",
+        "city": "Madrid",
+        "createdAt": "2014 / 06 / 27"
+    },
+    {
+        "key": "TRID",
+        "company": "Transtar GmbH",
+        "country": "Germany",
+        "city": "Wassenberg",
+        "createdAt": "2022 / 12 / 01"
+    },
+    {
+        "key": "TRLB",
+        "company": "Tritelli S.r.l.",
+        "country": "Italy",
+        "city": "Roseto Degli Abruzzi (Te)",
+        "createdAt": "2021 / 06 / 10"
+    },
+    {
+        "key": "TRME",
+        "company": "Transmėja",
+        "country": "Lithuania",
+        "city": "Šiauliai",
+        "createdAt": "2024 / 11 / 20"
+    },
+    {
+        "key": "TRNA",
+        "company": "Transimeksa",
+        "country": "Lithuania",
+        "city": "Siauliai",
+        "createdAt": "2013 / 08 / 14"
+    },
+    {
+        "key": "TRSE",
+        "company": "TRANSPORT SERVICE ITALIA SRL",
+        "country": "Italy",
+        "city": "COGLIATE -MB",
+        "createdAt": "2013 / 12 / 06"
+    },
+    {
+        "key": "TRTA",
+        "company": "Trans Avusturya Ulus. Nak. Tic. Ve San. Ltd. Şti.",
+        "country": "Turkey",
+        "city": "Adapazarı / Sakarya",
+        "createdAt": "2018 / 10 / 01"
+    },
+    {
+        "key": "TSGA",
+        "company": "Transport Service GmbH",
+        "country": "Austria",
+        "city": "Innsbruck-Mutters",
+        "createdAt": "2011 / 10 / 25"
+    },
+    {
+        "key": "TSMD",
+        "company": "Transmodal Logistics j.d.o.o.",
+        "country": "Croatia",
+        "city": "Osijek",
+        "createdAt": "2022 / 01 / 03"
+    },
+    {
+        "key": "TSSE",
+        "company": "TERNI SERVIZI TIESSE SRL",
+        "country": "Italy",
+        "city": "Terni",
+        "createdAt": "2016 / 05 / 13"
+    },
+    {
+        "key": "TSTA",
+        "company": "TST GmbH",
+        "country": "Germany",
+        "city": "Worms",
+        "createdAt": "2018 / 12 / 07"
+    },
+    {
+        "key": "TTCA",
+        "company": "TRANSPORTES CALSINA Y CARRE, SL",
+        "country": "Spain",
+        "city": "Pont De Molins",
+        "createdAt": "2020 / 03 / 10"
+    },
+    {
+        "key": "TTHB",
+        "company": "TERRATRANS Int. Spedition GmbH",
+        "country": "Germany",
+        "city": "Bremen",
+        "createdAt": "2012 / 03 / 29"
+    },
+    {
+        "key": "TTMA",
+        "company": "Top Transport GmbH",
+        "country": "Germany",
+        "city": "Mannheim",
+        "createdAt": "2014 / 03 / 24"
+    },
+    {
+        "key": "TTNA",
+        "company": "TTN Trucking AS",
+        "country": "Norway",
+        "city": "Alta",
+        "createdAt": "2022 / 03 / 01"
+    },
+    {
+        "key": "TTRA",
+        "company": "LA TUNISIENNE DE TRANSPORT ROUTIER",
+        "country": "Tunisia",
+        "city": "Rades",
+        "createdAt": "2019 / 03 / 27"
+    },
+    {
+        "key": "TTSA",
+        "company": "TTS UUSLAR ARASI NAK VE TIC LTD STI",
+        "country": "Turkey",
+        "city": "Istanbul",
+        "createdAt": "2016 / 11 / 03"
+    },
+    {
+        "key": "TTSD",
+        "company": "TTS UUSLAR ARASI NAK VE TIC LTD STI",
+        "country": "Turkey",
+        "city": "Istanbul",
+        "createdAt": "2017 / 11 / 03"
+    },
+    {
+        "key": "TTSE",
+        "company": "TTS UUSLAR ARASI NAK VE TIC LTD STI",
+        "country": "Turkey",
+        "city": "Istanbul",
+        "createdAt": "2017 / 07 / 21"
+    },
+    {
+        "key": "TURE",
+        "company": "Tura Logistic Kft",
+        "country": "Hungary",
+        "city": "Dunaharaszti",
+        "createdAt": "2023 / 04 / 13"
+    },
+    {
+        "key": "TURK",
+        "company": "ACT International",
+        "country": "Belgium",
+        "city": "Antwerpen",
+        "createdAt": "2023 / 09 / 25"
+    },
+    {
+        "key": "TWIA",
+        "company": "Twin Italy Srl",
+        "country": "Italy",
+        "city": "Bolzano",
+        "createdAt": "2021 / 11 / 16"
+    },
+    {
+        "key": "UGAE",
+        "company": "Urbinati Gianni Srl",
+        "country": "Italy",
+        "city": "Monteprandone (AP)",
+        "createdAt": "2024 / 08 / 05"
+    },
+    {
+        "key": "UNIA",
+        "company": "Univar Solutions SAS",
+        "country": "France",
+        "city": "Montreuil Cedex",
+        "createdAt": "2011 / 11 / 02"
+    },
+    {
+        "key": "UPAE",
+        "company": "Ute Paech GmbH & Co.KG",
+        "country": "Germany",
+        "city": "Kiel",
+        "createdAt": "2013 / 09 / 23"
+    },
+    {
+        "key": "UPLE",
+        "company": "UPLINE CZ s.r.o",
+        "country": "Czechia",
+        "city": "Jinočany",
+        "createdAt": "2013 / 06 / 13"
+    },
+    {
+        "key": "UPSD",
+        "company": "UPS Deutschland S.à.r.l.& Co.OHG",
+        "country": "Germany",
+        "city": "Neuss",
+        "createdAt": "2014 / 06 / 06"
+    },
+    {
+        "key": "UZKA",
+        "company": "Uzaklar Uluslararasi Tas. ve Tic. Ltd. Sti.",
+        "country": "Turkey",
+        "city": "Istanbul",
+        "createdAt": "2025 / 02 / 13"
+    },
+    {
+        "key": "VALE",
+        "company": "Vallicelli International transport B.V",
+        "country": "Netherlands",
+        "city": "Etten-Leur",
+        "createdAt": "2019 / 01 / 09"
+    },
+    {
+        "key": "VATA",
+        "company": "Neele-Vat Transport BV",
+        "country": "Netherlands",
+        "city": "Rotterdam-Albrandswaard",
+        "createdAt": "2011 / 11 / 15"
+    },
+    {
+        "key": "VDPA",
+        "company": "Van de Poel Karel & Zonen",
+        "country": "Belgium",
+        "city": "bouwel",
+        "createdAt": "2014 / 09 / 16"
+    },
+    {
+        "key": "VDSA",
+        "company": "Samskip Van Dieren Multimodal AB",
+        "country": "Sweden",
+        "city": "Åhus",
+        "createdAt": "2013 / 01 / 17"
+    },
+    {
+        "key": "VDTA",
+        "company": "NSN Transport Solutions BV",
+        "country": "Netherlands",
+        "city": "Nieuwleusen",
+        "createdAt": "2019 / 01 / 18"
+    },
+    {
+        "key": "VDVD",
+        "company": "Van der Vlist Logistics",
+        "country": "Netherlands",
+        "city": "Groot-Ammers",
+        "createdAt": "2023 / 04 / 04"
+    },
+    {
+        "key": "VELD",
+        "company": "VE-Log GmbH",
+        "country": "Germany",
+        "city": "Erlangen",
+        "createdAt": "2023 / 03 / 08"
+    },
+    {
+        "key": "VEPD",
+        "company": "VP LOGISTIKA DOO",
+        "country": "Slovenia",
+        "city": "KOPER",
+        "createdAt": "2024 / 04 / 24"
+    },
+    {
+        "key": "VEPE",
+        "company": "van Eupen Logistik GmbH & Co. KG",
+        "country": "Germany",
+        "city": "Essen",
+        "createdAt": "2024 / 04 / 17"
+    },
+    {
+        "key": "VERA",
+        "company": "H. Verwohlt GmbH & Co.Textilspedition KG",
+        "country": "Germany",
+        "city": "Vreden",
+        "createdAt": "2013 / 01 / 03"
+    },
+    {
+        "key": "VERB",
+        "company": "MVT Michel Verscheure Transport bvba",
+        "country": "Belgium",
+        "city": "Ruddervoorde",
+        "createdAt": "2011 / 08 / 19"
+    },
+    {
+        "key": "VESE",
+        "company": "van Eupen Logistik GmbH & Co. KG",
+        "country": "Germany",
+        "city": "Essen",
+        "createdAt": "2024 / 04 / 19"
+    },
+    {
+        "key": "VIGB",
+        "company": "VIGNERON TRANSPORTS",
+        "country": "France",
+        "city": "Ludres",
+        "createdAt": "2018 / 08 / 07"
+    },
+    {
+        "key": "VIGE",
+        "company": "VIGER TRASPORTI S.r.l.",
+        "country": "Italy",
+        "city": "Padova",
+        "createdAt": "2022 / 11 / 03"
+    },
+    {
+        "key": "VLSE",
+        "company": "Omida VLS",
+        "country": "Poland",
+        "city": "Gdynia",
+        "createdAt": "2021 / 02 / 03"
+    },
+    {
+        "key": "VNVA",
+        "company": "VAN CARGO SPÓŁKA AKCYJNA",
+        "country": "Poland",
+        "city": "Warszawa",
+        "createdAt": "2023 / 12 / 20"
+    },
+    {
+        "key": "VOSA",
+        "company": "Vos Transport B.V.",
+        "country": "Netherlands",
+        "city": "Deventer",
+        "createdAt": "2014 / 09 / 11"
+    },
+    {
+        "key": "VRTA",
+        "company": "van Rijssel transporten Vlierden VOF",
+        "country": "Netherlands",
+        "city": "Vlierden",
+        "createdAt": "2014 / 06 / 27"
+    },
+    {
+        "key": "VSPD",
+        "company": "Vansped",
+        "country": "Germany",
+        "city": "Luebeck",
+        "createdAt": "2013 / 03 / 06"
+    },
+    {
+        "key": "VTRB",
+        "company": "S.C. VECTRA INTERNATIONAL S.R.L.",
+        "country": "Romania",
+        "city": "Codlea",
+        "createdAt": "2022 / 11 / 14"
+    },
+    {
+        "key": "VTTE",
+        "company": "DLG Logistics B.V",
+        "country": "Netherlands",
+        "city": "Nieuwe Tonge",
+        "createdAt": "2013 / 01 / 16"
+    },
+    {
+        "key": "VTXA",
+        "company": "Vertex GmbH",
+        "country": "Austria",
+        "city": "Kirchbichl",
+        "createdAt": "2023 / 04 / 18"
+    },
+    {
+        "key": "WABE",
+        "company": "WABERER’S INTERNATIONAL Nyrt",
+        "country": "Hungary",
+        "city": "Budapest",
+        "createdAt": "2017 / 02 / 23"
+    },
+    {
+        "key": "WALD",
+        "company": "Waldmodal Lojistik ve Dış Tic. A.Ş.",
+        "country": "Turkey",
+        "city": "ISTANBUL",
+        "createdAt": "2025 / 01 / 16"
+    },
+    {
+        "key": "WAND",
+        "company": "Wandt Spedition Transportbeartung GmbH",
+        "country": "Germany",
+        "city": "Braunschweig",
+        "createdAt": "2021 / 10 / 28"
+    },
+    {
+        "key": "WASA",
+        "company": "WASCOSA AG",
+        "country": "Switzerland",
+        "city": "Luzern",
+        "createdAt": "2015 / 08 / 25"
+    },
+    {
+        "key": "WASE",
+        "company": "Wastelog Environmental Logistics GmbH",
+        "country": "Austria",
+        "city": "Grambach",
+        "createdAt": "2022 / 08 / 30"
+    },
+    {
+        "key": "WEAB",
+        "company": "Wien Energie GmbH",
+        "country": "Austria",
+        "city": "Wien",
+        "createdAt": "2025 / 02 / 04"
+    },
+    {
+        "key": "WECA",
+        "company": "Wecon GmbH Nutzfahrzeuge - Containertechnik",
+        "country": "Germany",
+        "city": "Ascheberg",
+        "createdAt": "2015 / 02 / 03"
+    },
+    {
+        "key": "WEEA",
+        "company": "Spedition Weets GmbH",
+        "country": "Germany",
+        "city": "Emden",
+        "createdAt": "2014 / 02 / 11"
+    },
+    {
+        "key": "WENA",
+        "company": "Wenzel logistics GmbH",
+        "country": "Austria",
+        "city": "Werndorf",
+        "createdAt": "2012 / 02 / 27"
+    },
+    {
+        "key": "WEWE",
+        "company": "Wetron Beheer BV",
+        "country": "Netherlands",
+        "city": "Weert",
+        "createdAt": "2011 / 07 / 06"
+    },
+    {
+        "key": "WIFE",
+        "company": "Winkler F&S Transport GmbH",
+        "country": "Austria",
+        "city": "Hörsching",
+        "createdAt": "2012 / 01 / 30"
+    },
+    {
+        "key": "WIND",
+        "company": "Winner Spedition GmbH & Co. KG",
+        "country": "Germany",
+        "city": "Iserlohn",
+        "createdAt": "2012 / 10 / 31"
+    },
+    {
+        "key": "WLFA",
+        "company": "TRASPORTI PESANTI SRL",
+        "country": "Italy",
+        "city": "Piadena Drizzona",
+        "createdAt": "2022 / 11 / 09"
+    },
+    {
+        "key": "WLSA",
+        "company": "WLS Spedition GmbH",
+        "country": "Germany",
+        "city": "Steinhagen",
+        "createdAt": "2013 / 09 / 04"
+    },
+    {
+        "key": "WLTE",
+        "company": "WIELTON LOGISTIC SP. Z O.O.",
+        "country": "Poland",
+        "city": "Wieluń",
+        "createdAt": "2024 / 10 / 08"
+    },
+    {
+        "key": "WMLA",
+        "company": "Westerman Multimodal Logistics",
+        "country": "Netherlands",
+        "city": "Nieuwleusen",
+        "createdAt": "2017 / 12 / 11"
+    },
+    {
+        "key": "WMLB",
+        "company": "Westerman Multimodal Logistics",
+        "country": "Netherlands",
+        "city": "Nieuwleusen",
+        "createdAt": "2017 / 12 / 11"
+    },
+    {
+        "key": "WMLE",
+        "company": "Westerman Multimodal Logistics",
+        "country": "Netherlands",
+        "city": "Nieuwleusen",
+        "createdAt": "2017 / 12 / 11"
+    },
+    {
+        "key": "WSMA",
+        "company": "WISMAR SP.Z. O. O.",
+        "country": "Poland",
+        "city": "WARSZAWA",
+        "createdAt": "2024 / 04 / 24"
+    },
+    {
+        "key": "WTKD",
+        "company": "Wittener Transport-Kontor, Heinrich Stratmann",
+        "country": "Germany",
+        "city": "Witten",
+        "createdAt": "2018 / 07 / 10"
+    },
+    {
+        "key": "WTOE",
+        "company": "Winter Transport AG",
+        "country": "Switzerland",
+        "city": "Oeschgen",
+        "createdAt": "2018 / 08 / 27"
+    },
+    {
+        "key": "WWEB",
+        "company": "Dragosav Corporation GmbH",
+        "country": "Austria",
+        "city": "Graz",
+        "createdAt": "2018 / 01 / 29"
+    },
+    {
+        "key": "WWFA",
+        "company": "WWF Suisse",
+        "country": "Switzerland",
+        "city": "Lausanne",
+        "createdAt": "2018 / 02 / 26"
+    },
+    {
+        "key": "XERA",
+        "company": "ERA Internationale Spedition GmbH",
+        "country": "Germany",
+        "city": "Kornwestheim",
+        "createdAt": "2014 / 02 / 10"
+    },
+    {
+        "key": "XLOA",
+        "company": "XPO TRANSPORT LOCATION FRANCE",
+        "country": "France",
+        "city": "Saint Vallier",
+        "createdAt": "2023 / 05 / 09"
+    },
+    {
+        "key": "XPOA",
+        "company": "XPO TRANSPORT SOLUTIONS SPAIN S.L",
+        "country": "Spain",
+        "city": "Santander",
+        "createdAt": "2023 / 01 / 16"
+    },
+    {
+        "key": "XWAB",
+        "company": "MG HANDEL GmbH",
+        "country": "Austria",
+        "city": "Hörsching",
+        "createdAt": "2020 / 01 / 15"
+    },
+    {
+        "key": "XYZD",
+        "company": "Hilal Trans Uluslararasi Nakliyat ve Ticaret A.S.",
+        "country": "Turkey",
+        "city": "Istanbul",
+        "createdAt": "2013 / 04 / 30"
+    },
+    {
+        "key": "YBEE",
+        "company": "SC IUBI EXIM SRL",
+        "country": "Romania",
+        "city": "Stei",
+        "createdAt": "2022 / 12 / 15"
+    },
+    {
+        "key": "YUSE",
+        "company": "Yusen Logistics (Czech) s.r.o.",
+        "country": "Czechia",
+        "city": "Kunice",
+        "createdAt": "2024 / 01 / 02"
+    },
+    {
+        "key": "YXJA",
+        "company": "EURORECUPERI SRL",
+        "country": "Italy",
+        "city": "Nardo’",
+        "createdAt": "2023 / 01 / 10"
+    },
+    {
+        "key": "ZEEE",
+        "company": "Zeegers Expeditie v.o.f.",
+        "country": "Netherlands",
+        "city": "Heijen",
+        "createdAt": "2016 / 03 / 01"
+    },
+    {
+        "key": "ZETA",
+        "company": "ZET Transport sp. z o.o.",
+        "country": "Poland",
+        "city": "Nowy Sącz",
+        "createdAt": "2019 / 11 / 29"
+    },
+    {
+        "key": "ZGTE",
+        "company": "Ziegler Logistik GmbH",
+        "country": "Germany",
+        "city": "Plößberg",
+        "createdAt": "2018 / 10 / 19"
+    },
+    {
+        "key": "ZIME",
+        "company": "Zimmermann Entsorgung GmbH & Co.KG",
+        "country": "Germany",
+        "city": "Gommern Ot Ladeburg",
+        "createdAt": "2018 / 06 / 19"
+    },
+    {
+        "key": "ZNHE",
+        "company": "Zingg Transporte AG",
+        "country": "Switzerland",
+        "city": "Hedingen",
+        "createdAt": "2013 / 11 / 07"
+    },
+    {
+        "key": "ZUKB",
+        "company": "Zapf Umzüge AG",
+        "country": "Germany",
+        "city": "Berlin",
+        "createdAt": "2012 / 01 / 06"
+    }
+]

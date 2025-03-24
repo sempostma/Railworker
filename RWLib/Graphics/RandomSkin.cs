@@ -37,10 +37,14 @@ namespace RWLib.Graphics
 
         [JsonPropertyName("composition")]
         public string Composition { get; set; } = "";
+
         [JsonPropertyName("skins")]
         public List<SkinTexture> Skins { get; set; } = new List<SkinTexture>();
+
         [JsonPropertyName("fullSkinsAmount")]
         public int FullSkinsAmount { get; set; } = 0;
+        [JsonPropertyName("stacked")]
+        public int Stacked { get; set; } = 1;
 
         public class SkinTexture
         {

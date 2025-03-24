@@ -10,6 +10,7 @@
     <None Remove="Resources\Afirus_Containers.json" />
     <None Remove="Resources\ContainerCombination\Compositions.json" />
     <None Remove="Resources\ContainerCombination\RandomSkins.json" />
+    <None Remove="Resources\ILUKeys.json" />
     <None Remove="Resources\Malex95_ContainerPack01\20_COIL.json" />
     <None Remove="Resources\Malex95_ContainerPack01\20_FT.json" />
     <None Remove="Resources\Malex95_ContainerPack01\20_OT.json" />
@@ -39,6 +40,7 @@
   <ItemGroup>
     <EmbeddedResource Include="Resources\ContainerCombination\Compositions.json" />
     <EmbeddedResource Include="Resources\ContainerCombination\RandomSkins.json" />
+    <EmbeddedResource Include="Resources\ILUKeys.json" />
     <EmbeddedResource Include="Resources\Malex95_ContainerPack01\20_COIL.json" />
     <EmbeddedResource Include="Resources\Malex95_ContainerPack01\24_WAB.json" />
     <EmbeddedResource Include="Resources\Malex95_ContainerPack01\40_N.json" />

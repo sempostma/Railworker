@@ -1,4 +1,4 @@
-﻿using RWLib;
+﻿﻿﻿﻿﻿﻿using RWLib;
 using RWLib.Graphics;
 using RWLib.Interfaces;
 using SixLabors.ImageSharp;
@@ -27,6 +27,7 @@ using BCnEncoder.ImageSharp;
 using System.Buffers.Text;
 using System.Threading.Channels;
 using System.Threading;
+using System.Linq.Expressions;
 
 namespace RailworkerMegaFreightPack1
 {
@@ -61,6 +62,11 @@ namespace RailworkerMegaFreightPack1
         private UICCodeGenerator codeGenerator = new UICCodeGenerator();
         static SemaphoreSlim semaphoreSlim = new SemaphoreSlim(1, 1);
 
+        private bool createTextures = false;
+        private bool createRvNumbers = false;
+        private bool createThumbnails = false;
+        private int thumbnailWidth = 512;
+        
         private class Logger : IRWLogger
         {
             public void Log(RWLogType type, string message)
@@ -79,10 +85,14 @@ namespace RailworkerMegaFreightPack1
 
         public async Task Build(CancellationToken cToken)
         {
-            foreach(var randomskinGroup in randomSkinGroups)
+            var catalogGenerator = new ContainerCatalogGenerator();
+
+            foreach (var randomskinGroup in randomSkinGroups)
             {
                 // TODO Remove
-                if (randomskinGroup.Id.StartsWith("782tt") == false) continue;
+                // if (randomskinGroup.Id.StartsWith("782tt") == false) continue;
+
+                Console.WriteLine("Creating randomskin: " + randomskinGroup.Id);
 
                 var compositions = this.compositions.Where(x => randomskinGroup.RandomSkins.Select(y => y.Composition).Contains(x.Id)).ToList()!;
 
@@ -90,6 +100,10 @@ namespace RailworkerMegaFreightPack1
                     throw new InvalidDataException("Compositions have different heights: " + String.Join(", ", compositions.Select(x => x.ComposedImageHeight)));
                 if (compositions.GroupBy(x => x.ComposedImageWidth).Count() > 1)
                     throw new InvalidDataException("Compositions have different widths: " + String.Join(", ", compositions.Select(x => x.ComposedImageWidth)));
+
+                var outputFilename = randomskinGroup.Id;
+
+                catalogGenerator.GenerateHtml(randomskinGroup, compositions);
 
                 var composedImageWidth = compositions.First().ComposedImageWidth;
                 var composedImageHeight = compositions.First().ComposedImageHeight;
@@ -105,8 +119,15 @@ namespace RailworkerMegaFreightPack1
                 };
 
                 //var container45NameFromTexture = new Regex(@"GW_45FT_(.+?)[\\/]Childs[\\/]textures[\\/]45_([^\.]+)");
+                Directory.CreateDirectory(Path.Join("thumbnails", randomskinGroup.Id));
 
-                await Parallel.ForEachAsync(tasks, parallelOptions, async (generatotor, cToken) => await generatotor.Build(cToken));
+                await Parallel.ForEachAsync(tasks, parallelOptions, async (generatotor, cToken) => {
+                    await generatotor.Build(cToken);
+                    if (generatotor.Thumbnail == null) return;
+                    await generatotor.Thumbnail.SaveAsPngAsync(
+                        Path.Join("thumbnails", randomskinGroup.Id, generatotor.CargoNumber + ".png")
+                    );
+                });
 
                 Console.WriteLine("Adding island margins...");
 
@@ -114,8 +135,8 @@ namespace RailworkerMegaFreightPack1
 
                 Console.WriteLine("Saving result...");
 
-                var outputFilename = randomskinGroup.Id + ".png";
-                composedImage.SaveAsPng(outputFilename);
+                var outputTextureFilename = Path.ChangeExtension(outputFilename, ".png");
+                composedImage.SaveAsPng(outputTextureFilename);
 
                 Console.WriteLine("Creating autonumbering...");
 
@@ -127,15 +148,23 @@ namespace RailworkerMegaFreightPack1
 
                 var rarities = skins.Select(x => x.Rarity / smallestRarity).ToArray();
 
-                // We used to use rarity as a multiplier but now we use it order it so we can reuse the autonumbering accross different skins
-                for (int i = 0; i < skins.Count(); i++)
+                try
                 {
-                    var amountOfSkins = (((float)skins.Count() - i) / skins.Count()) * 4.0;
-                    for (int j = 0; j < amountOfSkins; j++)
+                    // We used to use rarity as a multiplier but now we use it order it so we can reuse the autonumbering accross different skins
+                    for (int i = 0; i < skins.Count(); i++)
                     {
-                        var uid = codeGenerator.Next("33", "84", "4962");
-                        autoNumbering.Add("0,0," + uid + "_" + ((i + 1).ToString("D2")));
+                        var amountOfSkins = (((float)skins.Count() - i) / skins.Count()) * 4.0;
+                        for (int j = 0; j < amountOfSkins; j++)
+                        {
+                            var uid = codeGenerator.Next("33", "84", "4962");
+                            autoNumbering.Add("0,0," + uid + "_" + ((i + 1).ToString("D2")));
+                        }
                     }
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("Failed to create autonumbering for: " + randomskinGroup.Id);
+                    Console.WriteLine(ex.ToString());
                 }
 
                 var autonumberingFilename = Path.ChangeExtension(outputFilename, ".csv");
@@ -144,17 +173,21 @@ namespace RailworkerMegaFreightPack1
                 Console.WriteLine("Done");
                 Console.WriteLine();
             }
+
+            File.WriteAllText("catalog.html", catalogGenerator.ToString());
+
         }
 
         class ComposedTextureGenerator
         {
             public required RWLibrary RWLib { get; set; }
+            public required int CargoNumber { get; set; }
             public required RandomSkin.SkinTexture Texture { get; set; }
             public required Composition Composition { get; set; }
             public required Image<Rgba32> ComposedImage { get; set; }
-
             public required int BaseX { get; set; }
             public required int BaseY { get; set; }
+            public Image<Rgba32>? Thumbnail { get; private set; } = null;
 
             public async Task Build(CancellationToken cancellationToken)
             {
@@ -168,7 +201,12 @@ namespace RailworkerMegaFreightPack1
                 Image<Rgba32> image;
                 if (texture.EndsWith(".TgPcDx"))
                 {
-                    image = await RWLib.TgPcDxLoader.LoadTgPcDx(inputFile);
+                    try
+                    {
+                        image = await RWLib.TgPcDxLoader.LoadTgPcDx(inputFile);
+                    } catch (Exception ex) {
+                        throw ex;
+                    }
                 }
                 else if (texture.EndsWith(".dds"))
                 {
@@ -222,11 +260,24 @@ namespace RailworkerMegaFreightPack1
 
                 cancellationToken.ThrowIfCancellationRequested();
 
+                var averageDownscale = (int)Math.Round((
+                    Composition.Projections.Average(a => (float)a.SourceBbox.Width / a.DestBbox.Width / Composition.OutputScaleX)
+                    + Composition.Projections.Average(a => (float) a.SourceBbox.Height / a.DestBbox.Height / Composition.OutputScaleY)
+                ) / 2f);
+
+                if (averageDownscale < 1) averageDownscale = 1;
+
+                Thumbnail = new Image<Rgba32>(
+                    Composition.StylusXInterval * averageDownscale,
+                    Composition.StylusYInterval * averageDownscale
+                );
+
+                // Create composed image
                 foreach (var projection in Composition.Projections)
                 {
                     var cropRect = new Rectangle(
                         projection.SourceBbox.X,
-                        image.Height - (projection.SourceBbox.Y + projection.SourceBbox.Height),
+                        (int)(image.Height / inputRatioY) - (projection.SourceBbox.Y + projection.SourceBbox.Height),
                         projection.SourceBbox.Width,
                         projection.SourceBbox.Height
                     );
@@ -239,8 +290,16 @@ namespace RailworkerMegaFreightPack1
                     );
 
                     Console.WriteLine($"Projecting {projection.Name}");
+                    Image<Rgba32> cutOutRegion;
 
-                    Image<Rgba32> cutOutRegion = image.Clone(ctx => ctx.Crop(cropRect));
+                    try
+                    {
+                        cutOutRegion = image.Clone(ctx => ctx.Crop(cropRect));
+                    }
+                    catch (Exception ex)
+                    {
+                        throw ex;
+                    }
 
                     cancellationToken.ThrowIfCancellationRequested();
 
@@ -253,18 +312,27 @@ namespace RailworkerMegaFreightPack1
                     var destWidth = (int)(projection.DestBbox.Width * Composition.OutputScaleX);
                     var destHeight = (int)(projection.DestBbox.Height * Composition.OutputScaleX);
 
+                    var scaledX = (int)(projection.DestBbox.X * Composition.OutputScaleX);
+                    var scaledY = (int)((projection.DestBbox.Y + projection.DestBbox.Height) * Composition.OutputScaleY);
+
+                    // Thumbnail
+                    var thumbnailCutout = cutOutRegion.Clone();
+                    thumbnailCutout.Mutate(ctx => ctx.Resize(destWidth * averageDownscale, destHeight * averageDownscale));
+                    Thumbnail.Mutate(ctx => ctx.DrawImage(thumbnailCutout, new Point(scaledX * averageDownscale, Thumbnail.Height - scaledY * averageDownscale), 1f));
+
                     cutOutRegion.Mutate(ctx => ctx.Resize(destWidth, destHeight, KnownResamplers.NearestNeighbor));
 
                     cancellationToken.ThrowIfCancellationRequested();
 
-                    var destX = (int)(projection.DestBbox.X * Composition.OutputScaleX) + BaseX;
-                    var destY = Composition.ComposedImageHeight - (int)((projection.DestBbox.Y + projection.DestBbox.Height) * Composition.OutputScaleY + BaseY);
+                    var destX = scaledX + BaseX;
+                    var destY = Composition.ComposedImageHeight - (scaledY + BaseY);
 
                     ComposedImage.Mutate(ctx => ctx.DrawImage(cutOutRegion, new Point(destX, destY), 1f));
 
                     cancellationToken.ThrowIfCancellationRequested();
                 }
 
+                Thumbnail.Mutate(ctx => ctx.Resize(512, 0));
                 image.Dispose();
             }
 
@@ -333,6 +401,8 @@ namespace RailworkerMegaFreightPack1
             var x = 0;
             var y = 0;
 
+            var cargoNumber = 1;
+
             foreach (var randomSkin in randomSkinGroup.RandomSkins)
             {
                 var composition = compositions.FirstOrDefault(x => x.Id == randomSkin.Composition);
@@ -365,8 +435,12 @@ namespace RailworkerMegaFreightPack1
                     throw new InvalidDataException("More skins found than the maximum allowed");
                 }
 
-                foreach (var skin in skins)
+                var stackIndex = 0;
+                for (int i = 0; i < skins.Count; i++)
                 {
+                    var skin = skins[i];
+                    var stackOffset = composition.StylusYInterval * stackIndex;
+
                     yield return new ComposedTextureGenerator
                     {
                         RWLib = rwLib,
@@ -374,14 +448,19 @@ namespace RailworkerMegaFreightPack1
                         Composition = composition,
                         ComposedImage = ComposedImage,
                         BaseX = x,
-                        BaseY = y,
+                        BaseY = y + stackOffset,
+                        CargoNumber = cargoNumber++
                     };
 
-                    x += composition.StylusXInterval;
-                    if (x >= composition.StylusXInterval * composition.ComposedImageColumns)
+                    if (++stackIndex >= randomSkin.Stacked)
                     {
-                        x = 0;
-                        y += composition.StylusYInterval;
+                        x += composition.StylusXInterval;
+                        if (x >= composition.StylusXInterval * composition.ComposedImageColumns)
+                        {
+                            x = 0;
+                            y += composition.StylusYInterval * randomSkin.Stacked;
+                        }
+                        stackIndex = 0;
                     }
                 }
             }

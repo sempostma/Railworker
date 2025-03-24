@@ -19,7 +19,7 @@ namespace RWLib.Graphics
                 HC_IMAGE_FORMAT_COMPRESSED
             }
 
-            public DxFormat Format => (DxFormat)Enum.Parse(typeof(DxFormat), Xml.Descendants("IsSwizzled").First().Value);
+            public DxFormat Format => (DxFormat)Enum.Parse(typeof(DxFormat), Xml.Descendants("Format").First().Value);
             public bool IsSwizzled => Xml.Descendants("IsSwizzled").First().Value == "1";
             public int Width => int.Parse(Xml.Descendants("Width").First().Value);
             public int Height => int.Parse(Xml.Descendants("Height").First().Value);
