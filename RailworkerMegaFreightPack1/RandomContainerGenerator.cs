@@ -28,6 +28,9 @@ using System.Buffers.Text;
 using System.Threading.Channels;
 using System.Threading;
 using System.Linq.Expressions;
+using BCnEncoder.Shared;
+using Emgu.CV;
+using SixLabors.ImageSharp.Drawing.Processing;
 
 namespace RailworkerMegaFreightPack1
 {
@@ -66,6 +69,8 @@ namespace RailworkerMegaFreightPack1
         private bool createRvNumbers = false;
         private bool createThumbnails = false;
         private int thumbnailWidth = 512;
+
+        private Dictionary<string, Dictionary<string, int>> memoryList = new Dictionary<string, Dictionary<string, int>>();
         
         private class Logger : IRWLogger
         {
@@ -87,10 +92,15 @@ namespace RailworkerMegaFreightPack1
         {
             var catalogGenerator = new ContainerCatalogGenerator();
 
+            var deferredTasks = new List<Task>();
+
             foreach (var randomskinGroup in randomSkinGroups)
             {
                 // TODO Remove
-                // if (randomskinGroup.Id.StartsWith("782tt") == false) continue;
+                //if (randomskinGroup.Id.StartsWith("40") == false) continue;
+                //if (randomskinGroup.Id.StartsWith("40ft_hc") == false) continue;
+                //if (randomskinGroup.Id.StartsWith("20ft_mixed") == false) continue;
+                if (randomskinGroup.Id.StartsWith("782") == false) continue;
 
                 Console.WriteLine("Creating randomskin: " + randomskinGroup.Id);
 
@@ -103,6 +113,11 @@ namespace RailworkerMegaFreightPack1
 
                 var outputFilename = randomskinGroup.Id;
 
+                foreach (var randomSkin in randomskinGroup.RandomSkins)
+                {
+                    randomSkin.OrderSkins();
+                }
+
                 catalogGenerator.GenerateHtml(randomskinGroup, compositions);
 
                 var composedImageWidth = compositions.First().ComposedImageWidth;
@@ -110,7 +125,7 @@ namespace RailworkerMegaFreightPack1
 
                 var composedImage = new Image<Rgba32>(composedImageWidth, composedImageHeight);
 
-                var tasks = CreateTasks(randomskinGroup, composedImage, cToken);
+                var tasks = CreateTasks(randomskinGroup, composedImage, cToken).ToList();
 
                 ParallelOptions parallelOptions = new()
                 {
@@ -120,6 +135,13 @@ namespace RailworkerMegaFreightPack1
 
                 //var container45NameFromTexture = new Regex(@"GW_45FT_(.+?)[\\/]Childs[\\/]textures[\\/]45_([^\.]+)");
                 Directory.CreateDirectory(Path.Join("thumbnails", randomskinGroup.Id));
+
+                foreach (var rndExample in tasks.GroupBy(task => task.RandomSkin.Id))
+                {
+                    var sk = rndExample.First();
+                    (await sk.DrawMapping(false, cToken)).SaveAsPng(sk.RandomSkin.Id + "-mapping.png");
+                    (await sk.DrawMapping(true, cToken)).SaveAsPng(sk.RandomSkin.Id + "-mapping-example.png");
+                }
 
                 await Parallel.ForEachAsync(tasks, parallelOptions, async (generatotor, cToken) => {
                     await generatotor.Build(cToken);
@@ -135,8 +157,24 @@ namespace RailworkerMegaFreightPack1
 
                 Console.WriteLine("Saving result...");
 
-                var outputTextureFilename = Path.ChangeExtension(outputFilename, ".png");
-                composedImage.SaveAsPng(outputTextureFilename);
+                deferredTasks.Add(Task.Run(async () =>
+                {
+                    var outputTextureFilename = Path.ChangeExtension(outputFilename, ".png");
+                    await composedImage.SaveAsPngAsync(outputTextureFilename);
+
+                    // TODO: Discover the correct output options/header by exporting with TS tools and use those settings to output and then check if the blueprint editor is able to create a valid tgpcdx file with the DDS
+                    var outputDDSTextureFilename = Path.ChangeExtension(outputFilename, ".dds");
+                    var ddsEncoder = new BcEncoder();
+                    ddsEncoder.OutputOptions.GenerateMipMaps = true;
+                    ddsEncoder.OutputOptions.Quality = CompressionQuality.Balanced;
+                    ddsEncoder.OutputOptions.Format = CompressionFormat.Bc3;
+                    ddsEncoder.OutputOptions.FileFormat = OutputFileFormat.Dds; //Change to Dds for a dds file.
+                    using (var stream = File.Open(outputDDSTextureFilename, FileMode.Create))
+                    {
+                        var file = await ddsEncoder.EncodeToDdsAsync(composedImage, cToken);
+                        file.Write(stream);
+                    }
+                }));
 
                 Console.WriteLine("Creating autonumbering...");
 
@@ -157,7 +195,7 @@ namespace RailworkerMegaFreightPack1
                         for (int j = 0; j < amountOfSkins; j++)
                         {
                             var uid = codeGenerator.Next("33", "84", "4962");
-                            autoNumbering.Add("0,0," + uid + "_" + ((i + 1).ToString("D2")));
+                            autoNumbering.Add("0,0," + uid + ":" + ((i + 1).ToString("D2")));
                         }
                     }
                 }
@@ -174,11 +212,61 @@ namespace RailworkerMegaFreightPack1
                 Console.WriteLine();
             }
 
-            File.WriteAllText("catalog.html", catalogGenerator.ToString());
+            PrintSummaryOverview();
 
+            foreach (var task in deferredTasks)
+            {
+                task.Wait();
+            }
+
+            File.WriteAllText("catalog.html", catalogGenerator.ToString());
         }
 
-        class ComposedTextureGenerator
+        private void PrintSummaryOverview()
+        {
+            Console.WriteLine("Generator result summary:");
+            Console.WriteLine();
+
+
+            foreach (var textureBaseDirectory in memoryList)
+            {
+                var basePath = Path.Combine(rwLib.TSPath, "Assets\\Alex95\\ContainerPack01\\RailNetwork\\Interactive");
+                basePath = String.IsNullOrEmpty(textureBaseDirectory.Key) ? basePath : Path.Combine(rwLib.TSPath, "Assets", textureBaseDirectory.Key);
+
+                var summaryOfMostUsed = textureBaseDirectory.Value.Where(x => x.Value > 1).OrderByDescending(x => x.Value).Take(10);
+
+                Console.WriteLine("These cargos are used more than once (first 10):");
+
+                foreach (var item in summaryOfMostUsed)
+                {
+                    Console.WriteLine($"{item.Key}: {item.Value}");
+                }
+
+                int missing = 0;
+
+                foreach (var file in Directory.EnumerateFiles(basePath, "*", SearchOption.AllDirectories))
+                {
+                    var relativeFile = Path.GetRelativePath(basePath, file);
+                    var filenameWithoutExtensions = Path.ChangeExtension(relativeFile, null);
+
+                    if (textureBaseDirectory.Value.ContainsKey(filenameWithoutExtensions) == false)
+                    {
+                        //if (missing > 10)
+                        //{
+                        //    Console.WriteLine($"More than 10 missing texture files, skipping the rest...");
+                        //    break;
+                        //}
+                        Console.WriteLine($"Unused texture file: {relativeFile}");
+                        missing++;
+                    }
+                }
+                
+            }
+
+            Console.WriteLine("End of result summary");
+        }
+
+    public class ComposedTextureGenerator
         {
             public required RWLibrary RWLib { get; set; }
             public required int CargoNumber { get; set; }
@@ -187,6 +275,8 @@ namespace RailworkerMegaFreightPack1
             public required Image<Rgba32> ComposedImage { get; set; }
             public required int BaseX { get; set; }
             public required int BaseY { get; set; }
+            public required RandomSkin RandomSkin { get; set; }
+
             public Image<Rgba32>? Thumbnail { get; private set; } = null;
 
             public async Task Build(CancellationToken cancellationToken)
@@ -211,50 +301,16 @@ namespace RailworkerMegaFreightPack1
                 else if (texture.EndsWith(".dds"))
                 {
                     var ddsDecoder = new BcDecoder();
-                    using (var stream = File.OpenRead(inputFile))
+                    using (var stream = new FileStream(inputFile, FileMode.Open, FileAccess.Read, FileShare.Read))
                     {
                         image = await ddsDecoder.DecodeToImageRgba32Async(stream);
                     }
                 }
                 else
                 {
-                    image = await Image.LoadAsync<Rgba32>(inputFile);
+                    image = await SixLabors.ImageSharp.Image.LoadAsync<Rgba32>(inputFile);
                 }
 
-                var tempPath = Path.GetTempPath();
-                var tempFilename = Path.Join(tempPath, "RWLib", "Tgpcdx", Path.ChangeExtension(texture, null) + "-input.png");
-                var outputFilename = Path.Join(tempPath, "RWLib", "Tgpcdx", Path.ChangeExtension(texture, null) + "-output.png");
-                Directory.CreateDirectory(Path.GetDirectoryName(tempFilename)!);
-
-                image.SaveAsPng(tempFilename);
-
-                cancellationToken.ThrowIfCancellationRequested();
-
-                bool useWaifu = Composition.Waifu2xEnabled;
-
-                if (useWaifu)
-                {
-                    if (File.Exists(outputFilename) == false)
-                    {
-                        try
-                        {
-                            await RunWaifu2XCommand(tempFilename, outputFilename, cancellationToken, Composition.Waifu2xScaleRatio, Composition.Waifu2xNoiseLevel);
-                            cancellationToken.ThrowIfCancellationRequested();
-                        }
-                        catch (Exception ex)
-                        {
-                            Console.WriteLine("error happened while processing: " + outputFilename);
-                            throw ex;
-                        }
-                    }
-                }
-                else
-                {
-                    File.Copy(tempFilename, outputFilename, true);
-                    cancellationToken.ThrowIfCancellationRequested();
-                }
-
-                image = Image.Load<Rgba32>(outputFilename);
                 float inputRatioX = (float)image.Width / Composition.InputImageResizeWidth;
                 float inputRatioY = (float)image.Height / Composition.InputImageResizeHeight;
 
@@ -334,6 +390,123 @@ namespace RailworkerMegaFreightPack1
 
                 Thumbnail.Mutate(ctx => ctx.Resize(512, 0));
                 image.Dispose();
+
+                
+            }
+
+            public async Task<Image<Rgba32>> DrawMapping(bool includeTexture = false, CancellationToken? cancellationToken = null)
+            {
+                var basePath = Path.Combine(RWLib.TSPath, "Assets\\Alex95\\ContainerPack01\\RailNetwork\\Interactive");
+                basePath = String.IsNullOrEmpty(Composition.BasePath) ? basePath : Path.Combine(RWLib.TSPath, "Assets", Composition.BasePath);
+
+                var texture = Texture.Texture;
+                if (String.IsNullOrEmpty(texture)) throw new Exception("Texture cannot be null when drawing a mapping");
+                var inputFile = Path.Combine(basePath, texture);
+
+                Image<Rgba32> image;
+                if (texture.EndsWith(".TgPcDx"))
+                {
+                    try
+                    {
+                        image = await RWLib.TgPcDxLoader.LoadTgPcDx(inputFile);
+                    }
+                    catch (Exception ex)
+                    {
+                        throw ex;
+                    }
+                }
+                else if (texture.EndsWith(".dds"))
+                {
+                    var ddsDecoder = new BcDecoder();
+                    using (var stream = new FileStream(inputFile, FileMode.Open, FileAccess.Read, FileShare.Read))
+                    {
+                        image = await ddsDecoder.DecodeToImageRgba32Async(stream);
+                    }
+                }
+                else
+                {
+                    image = await SixLabors.ImageSharp.Image.LoadAsync<Rgba32>(inputFile);
+                }
+
+                if (!includeTexture)
+                {
+                    image.Mutate(x => x.Clear(Color.Black));
+                }
+
+                float inputRatioX = (float)image.Width / Composition.InputImageResizeWidth;
+                float inputRatioY = (float)image.Height / Composition.InputImageResizeHeight;
+
+                cancellationToken?.ThrowIfCancellationRequested();
+
+                var averageDownscale = (int)Math.Round((
+                    Composition.Projections.Average(a => (float)a.SourceBbox.Width / a.DestBbox.Width / Composition.OutputScaleX)
+                    + Composition.Projections.Average(a => (float)a.SourceBbox.Height / a.DestBbox.Height / Composition.OutputScaleY)
+                ) / 2f);
+
+                if (averageDownscale < 1) averageDownscale = 1;
+
+                var queue = new Queue<Color>(new[] {
+                    Color.Red,
+                    Color.Green,
+                    Color.Blue,
+                    Color.Orange,
+                    Color.Orchid,
+                    Color.Pink,
+                    Color.Yellow,
+                });
+
+                // Create composed image
+                foreach (var projection in Composition.Projections)
+                {
+                    var cropRect = new Rectangle(
+                        projection.SourceBbox.X,
+                        (int)(image.Height / inputRatioY) - (projection.SourceBbox.Y + projection.SourceBbox.Height),
+                        projection.SourceBbox.Width,
+                        projection.SourceBbox.Height
+                    );
+
+                    cropRect = new Rectangle(
+                        (int)(cropRect.X * inputRatioX),
+                        (int)(cropRect.Y * inputRatioY),
+                        (int)(cropRect.Width * inputRatioX),
+                        (int)(cropRect.Height * inputRatioY)
+                    );
+
+                    Console.WriteLine($"Projecting {projection.Name}");
+                    Image<Rgba32> cutOutRegion;
+
+                    try
+                    {
+                        cutOutRegion = image.Clone(ctx => ctx.Crop(cropRect));
+                        image.Mutate(image => image.Draw(queue.Dequeue(), 3, cropRect));
+                    }
+                    catch (Exception ex)
+                    {
+                        throw ex;
+                    }
+
+                    cancellationToken?.ThrowIfCancellationRequested();
+
+                    var rotation = (RotateMode)Enum.Parse(typeof(RotateMode), projection.DestBbox.Rotate);
+
+                    if (rotation != RotateMode.None) cutOutRegion.Mutate(ctx => ctx.Rotate(rotation));
+
+                    cancellationToken?.ThrowIfCancellationRequested();
+
+                    var destWidth = (int)(projection.DestBbox.Width);
+                    var destHeight = (int)(projection.DestBbox.Height);
+
+                    var scaledX = (int)(projection.DestBbox.X);
+                    var scaledY = (int)((projection.DestBbox.Y + projection.DestBbox.Height));
+
+                    cutOutRegion.Mutate(ctx => ctx.Resize(destWidth, destHeight, KnownResamplers.NearestNeighbor));
+
+                    cancellationToken?.ThrowIfCancellationRequested();
+
+                    cancellationToken?.ThrowIfCancellationRequested();
+                }
+
+                return image;
             }
 
             private async Task<int> RunWaifu2XCommand(string inputFilename, string outputFilename, CancellationToken cancellationToken, string scaleRatio = "0.5", string noiseLevel = "2.0")
@@ -408,32 +581,12 @@ namespace RailworkerMegaFreightPack1
                 var composition = compositions.FirstOrDefault(x => x.Id == randomSkin.Composition);
                 if (composition == null) throw new InvalidDataException("Could not find composition: " + randomSkin.Composition);
 
-                var skins = randomSkin.Skins.OrderByDescending(x => x.Rarity).ToList();
-
-                var duplicates = skins.GroupBy(x => x.Texture)
-                    .Where(g => !String.IsNullOrEmpty(g.First().Texture) && g.Count() > 1);
-
-                foreach (var duplicate in duplicates)
-                {
-                    Console.WriteLine("Found a duplicate in " + randomSkin.Id + ": " + duplicate.Key);
-                    throw new InvalidDataException("Duplicate found in " + randomSkin.Id + ": " + duplicate.Key);
+                if (memoryList.ContainsKey(composition.BasePath) == false) {
+                    memoryList.Add(composition.BasePath, new Dictionary<string, int>());
                 }
+                var doneList = memoryList[composition.BasePath];
 
-                while (skins.Count < randomSkin.FullSkinsAmount)
-                {
-                    Console.WriteLine("Composition is not fully filled. The remaining space will be filled with duplicates.");
-                    skins.AddRange(skins.ToArray());
-                    if (skins.Count > randomSkin.FullSkinsAmount)
-                    {
-                        skins.RemoveRange(randomSkin.FullSkinsAmount, skins.Count - randomSkin.FullSkinsAmount);
-                    }
-                }
-
-                if (skins.Count > randomSkin.FullSkinsAmount)
-                {
-                    Console.WriteLine("More skins: " + skins.Count + " found than the maximum allowed: " + randomSkin.FullSkinsAmount);
-                    throw new InvalidDataException("More skins found than the maximum allowed");
-                }
+                var skins = randomSkin.Skins;
 
                 var stackIndex = 0;
                 for (int i = 0; i < skins.Count; i++)
@@ -441,16 +594,39 @@ namespace RailworkerMegaFreightPack1
                     var skin = skins[i];
                     var stackOffset = composition.StylusYInterval * stackIndex;
 
-                    yield return new ComposedTextureGenerator
+                    if (!String.IsNullOrEmpty(skin.Texture))
                     {
-                        RWLib = rwLib,
-                        Texture = skin,
-                        Composition = composition,
-                        ComposedImage = ComposedImage,
-                        BaseX = x,
-                        BaseY = y + stackOffset,
-                        CargoNumber = cargoNumber++
-                    };
+
+                        if (skin.Name.Contains(skin.Group) && skin.Id.Contains(skin.Group) == false)
+                        {
+                            // not really an error but helps checking for mistyped group names
+                            Console.WriteLine("The skin group name does not occur in the skin name or in the skin id.");
+                        }
+
+                        var doneKey = Path.ChangeExtension(skin.Texture, null);
+
+                        if (doneList.ContainsKey(doneKey) == false)
+                        {
+                            doneList.Add(doneKey, 0);
+                        } else
+                        {
+                            // noop
+                            doneList[doneKey] = doneList[doneKey];
+                        }
+                        doneList[doneKey]++;
+
+                        yield return new ComposedTextureGenerator
+                        {
+                            RWLib = rwLib,
+                            Texture = skin,
+                            Composition = composition,
+                            ComposedImage = ComposedImage,
+                            BaseX = x,
+                            BaseY = y + stackOffset,
+                            CargoNumber = cargoNumber++,
+                            RandomSkin = randomSkin
+                        };
+                    }
 
                     if (++stackIndex >= randomSkin.Stacked)
                     {
@@ -483,7 +659,7 @@ namespace RailworkerMegaFreightPack1
             File.WriteAllText(destinationFile, lua.ToString());
         }
 
-        static void AddPixelmarginsWherePossible(Image<Rgba32> image)
+        public static void AddPixelmarginsWherePossible(Image<Rgba32> image)
         {
             // Create a copy of the image
             using (Image<Rgba32> blurredImage = image.Clone())

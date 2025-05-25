@@ -297,5 +297,32 @@ namespace Railworker
                 Header = Railworker.Language.Resources.preloads
             });
         }
+
+        private void MenuItem_Graphics_TgPcDxViewer_Click(object sender, RoutedEventArgs e)
+        {
+            OpenTab(new MainWindowViewModel.Tab
+            {
+                FrameContent = new TgPcDxViewer(),
+                Header = Railworker.Language.Resources.tgpcdx_viewer
+            });
+        }
+
+        private void MenuItem_Graphics_CompositionEditor_Click(object sender, RoutedEventArgs e)
+        {
+            OpenTab(new MainWindowViewModel.Tab
+            {
+                FrameContent = new Compositions(),
+                Header = Railworker.Language.Resources.compositions
+            });
+        }
+        
+        private void MenuItem_Graphics_SingleCompositionEditor_Click(object sender, RoutedEventArgs e)
+        {
+            OpenTab(new MainWindowViewModel.Tab
+            {
+                FrameContent = new CompositionEditor(),
+                Header = "Composition Editor"
+            });
+        }
     }
 }

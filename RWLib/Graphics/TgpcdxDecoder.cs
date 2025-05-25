@@ -61,6 +61,15 @@ namespace RWLib.Graphics
                 case DxFormat.HC_IMAGE_FORMAT_COMPRESSED_EXPL_ALPHA:
                     return CompressionFormat.Bc2;
 
+                case DxFormat.HC_IMAGE_FORMAT_COMPRESSED_INTERP_ALPHA:
+                    return CompressionFormat.AtcInterpolatedAlpha;
+
+                case DxFormat.HC_IMAGE_FORMAT_COLA8888:
+                    return CompressionFormat.Rgba;
+
+                case DxFormat.HC_IMAGE_FORMAT_COL888:
+                    return CompressionFormat.Rgb;
+
                 case DxFormat.HC_IMAGE_FORMAT_COMPRESSED:
                     return CompressionFormat.Bc1;
 

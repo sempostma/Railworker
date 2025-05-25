@@ -5,7 +5,9 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Railworker.Pages"
         xmlns:lang="clr-namespace:Railworker.Language;assembly=Railworker.Language"
-        xmlns:props="clr-namespace:Railworker.Properties" xmlns:usercontrols="clr-namespace:Railworker.UserControls" xmlns:scm="clr-namespace:System.ComponentModel;assembly=WindowsBase"
+        xmlns:props="clr-namespace:Railworker.Properties" 
+      xmlns:usercontrols="clr-namespace:Railworker.UserControls" 
+      xmlns:scm="clr-namespace:System.ComponentModel;assembly=WindowsBase"
       mc:Ignorable="d"
         Title="{Binding Title}" Height="Auto" Width="Auto">
     <Page.Resources>

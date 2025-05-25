@@ -144,22 +144,18 @@ namespace RailworkerMegaFreightPack1
                     var composition = compositions.FirstOrDefault(x => x.Id == randomSkin.Composition);
                     if (composition == null) continue;
 
+                    sb.AppendLine($"        <small class=\"container-grid\">sub gruop: {randomSkin.Name}</small>");
+
                     foreach (var skin in randomSkin.Skins)
                     {
+                        if (String.IsNullOrEmpty(skin.Texture)) continue;
                         string thumbnailPath = Path.Combine(_thumbnailsBasePath, group.Id, $"{cargoNumber}.png");
 
                         sb.AppendLine("            <div class=\"container-card\">");
 
                         // Image section
                         sb.AppendLine("                <div class=\"container-image\">");
-                        if (File.Exists(thumbnailPath))
-                        {
-                            sb.AppendLine($"                    <img src=\"{thumbnailPath}\" alt=\"Container {cargoNumber}\">");
-                        }
-                        else
-                        {
-                            sb.AppendLine($"                    <div class=\"no-image\">Thumbnail not available</div>");
-                        }
+                        sb.AppendLine($"                    <img src=\"{thumbnailPath}\" alt=\"Container {cargoNumber}\">");
                         sb.AppendLine("                </div>");
 
                         // Info section

@@ -30,9 +30,13 @@
     <None Remove="Resources\Malex95_ContainerPack01\7_X5_TANK.json" />
     <None Remove="Resources\Malex95_ContainerPack01\WAB.json" />
     <None Remove="Resources\Malex95_ContainerPack01\WAB_45.json" />
+    <None Remove="Resources\RandomSkins\RandomSkins.json" />
     <None Remove="Resources\Sffggmrrss_Trailers.json" />
     <None Remove="Resources\Sggmrss\A.xml" />
+    <None Remove="Resources\Sggmrss\A_Reskin.xml" />
     <None Remove="Resources\Sggmrss\B.xml" />
+    <None Remove="Resources\Sggmrss\B_Reskin.xml" />
+    <None Remove="Resources\Sggmrss\Reskins.json" />
     <None Remove="Resources\Sggmrss_Back.xml" />
     <None Remove="Resources\Sggmrss_Front.xml" />
   </ItemGroup>
@@ -62,13 +66,18 @@
     <EmbeddedResource Include="Resources\CT_Sgns\Afirus_Containers1x45ft.json" />
     <EmbeddedResource Include="Resources\CT_Sgns\Sgns20ftx3.xml" />
     <EmbeddedResource Include="Resources\CT_Sgns\Sgns45ft.xml" />
+    <EmbeddedResource Include="Resources\RandomSkins\RandomSkins.json" />
     <EmbeddedResource Include="Resources\Sggmrss\A.xml" />
+    <EmbeddedResource Include="Resources\Sggmrss\A_Reskin.xml" />
     <EmbeddedResource Include="Resources\Sggmrss\B.xml" />
+    <EmbeddedResource Include="Resources\Sggmrss\B_Reskin.xml" />
+    <EmbeddedResource Include="Resources\Sggmrss\Reskins.json" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Emgu.CV" Version="4.9.0.5494" />
     <PackageReference Include="PDFsharp" Version="6.1.1" />
+    <PackageReference Include="SixLabors.ImageSharp.Drawing" Version="2.1.6" />
   </ItemGroup>
 
   <ItemGroup>

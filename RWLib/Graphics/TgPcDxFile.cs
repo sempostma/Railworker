@@ -1,22 +1,20 @@
-﻿using RWLib.SerzClone;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection.Metadata;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml.Linq;
+﻿using System.Xml.Linq;
+using RWLib.Interfaces;
 
 namespace RWLib.Graphics
 {
-    public class TgPcDxFile : RWXml
+    public class TgPcDxFile : RWXml, IRWImage
     {
         public class ImageDx : RWXml
         {
             public enum DxFormat
             {
                 HC_IMAGE_FORMAT_COMPRESSED_EXPL_ALPHA,
-                HC_IMAGE_FORMAT_COMPRESSED
+                HC_IMAGE_FORMAT_COMPRESSED,
+                HC_IMAGE_FORMAT_INTERP_ALPHA,
+                HC_IMAGE_FORMAT_COMPRESSED_INTERP_ALPHA,
+                HC_IMAGE_FORMAT_COLA8888,
+                HC_IMAGE_FORMAT_COL888
             }
 
             public DxFormat Format => (DxFormat)Enum.Parse(typeof(DxFormat), Xml.Descendants("Format").First().Value);
@@ -33,8 +31,8 @@ namespace RWLib.Graphics
 
         public int Width => int.Parse(Xml.Descendants("Width").First().Value);
         public int Height => int.Parse(Xml.Descendants("Height").First().Value);
-        public string Name => Xml.Descendants("Name").First().Value;
-        public IEnumerable<ImageDx> Mip => Xml.Descendants("Mip").First().Elements().Select(x => new ImageDx(x, lib));
+        public string Name => Xml.Descendants("Name").FirstOrDefault()?.Value ?? "";
+        public IEnumerable<ImageDx> Mip => Xml.Descendants("Mip").FirstOrDefault()?.Elements().Select(x => new ImageDx(x, lib)) ?? [];
 
         public TgPcDxFile(XDocument document, RWLibrary lib) : base(document.Root!, lib)
         {

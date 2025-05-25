@@ -301,6 +301,8 @@ namespace RWLib.SerzClone
                     return await StreamReader.ReadInt16();
                 case DataType._sInt32:
                     return await StreamReader.ReadInt32();
+                case DataType._sUInt16:
+                    return await StreamReader.ReadUint16();
                 case DataType._sUInt32:
                     return await StreamReader.ReadUint32();
                 case DataType._sUInt64:

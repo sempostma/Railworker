@@ -7,6 +7,8 @@ namespace RWLib
     {
         public string TSPath { set; get; } = RWUtils.GetTSPathFromSteamAppInRegistry();
         public string SerzExePath { set; get; }
+        public string ConvertToTGPath { get; set; }
+        public string RWAceToolPath { get; set; }
         public IRWLogger Logger { set; get; } = new DefaultLogger();
         public bool UseCustomSerz { set; get; } = false;
         public RWCachingSystem? Cache { set;get; } = null;
@@ -14,6 +16,8 @@ namespace RWLib
         public RWLibOptions()
         {
             SerzExePath = Path.Combine(TSPath, "serz.exe");
+            ConvertToTGPath = Path.Combine(TSPath, "ConvertToTG.exe");
+            RWAceToolPath = Path.Combine(TSPath, "RWAceTool.exe");
         }
 
         private class DefaultLogger : IRWLogger

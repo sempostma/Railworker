@@ -59,5 +59,37 @@ namespace RWLib.Graphics
             [JsonPropertyName("texture")]
             public string Texture { get; set; } = "";
         }
+
+        public void OrderSkins()
+        {
+            var skins = Skins.OrderByDescending(x => x.Rarity).ToList();
+
+            var duplicates = skins.GroupBy(x => x.Texture)
+                .Where(g => !String.IsNullOrEmpty(g.First().Texture) && g.Count() > 1);
+
+            foreach (var duplicate in duplicates)
+            {
+                Console.WriteLine("Found a duplicate in " + Id + ": " + duplicate.Key);
+                throw new InvalidDataException("Duplicate found in " + Id + ": " + duplicate.Key);
+            }
+
+            while (skins.Count < FullSkinsAmount)
+            {
+                Console.WriteLine(this.Id + " Composition is not fully filled. The remaining space will be filled with duplicates.");
+                skins.AddRange(skins.ToArray());
+                if (skins.Count > FullSkinsAmount)
+                {
+                    skins.RemoveRange(FullSkinsAmount, skins.Count - FullSkinsAmount);
+                }
+            }
+
+            if (skins.Count > FullSkinsAmount)
+            {
+                Console.WriteLine("More skins: " + skins.Count + " found than the maximum allowed: " + FullSkinsAmount);
+                throw new InvalidDataException("More skins found than the maximum allowed");
+            }
+
+            this.Skins = skins;
+        }
     }
 }

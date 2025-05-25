@@ -214,6 +214,24 @@ namespace Railworker.Language {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Composition editor.
+        /// </summary>
+        public static string composition_editor {
+            get {
+                return ResourceManager.GetString("composition_editor", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Compositions.
+        /// </summary>
+        public static string compositions {
+            get {
+                return ResourceManager.GetString("compositions", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Consists.
         /// </summary>
         public static string consists {
@@ -525,6 +543,15 @@ namespace Railworker.Language {
         public static string find_repaints {
             get {
                 return ResourceManager.GetString("find_repaints", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Graphics.
+        /// </summary>
+        public static string graphics {
+            get {
+                return ResourceManager.GetString("graphics", resourceCulture);
             }
         }
         
@@ -1335,6 +1362,15 @@ namespace Railworker.Language {
         public static string test3 {
             get {
                 return ResourceManager.GetString("test3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TgPcDx Viewer.
+        /// </summary>
+        public static string tgpcdx_viewer {
+            get {
+                return ResourceManager.GetString("tgpcdx_viewer", resourceCulture);
             }
         }
         

@@ -1,10 +1,11 @@
-﻿using RWLib.Graphics;
+﻿using RWLib.Abstract;
+using RWLib.Graphics;
 using SixLabors.ImageSharp;
 using SixLabors.ImageSharp.PixelFormats;
 
 namespace RWLib
 {
-    public class RWTgPcDxLoader : RWLibraryDependent
+    public class RWTgPcDxLoader : RWExe
     {
         private RWSerializer serializer;
         private TgpcdxDecoder decoder = new TgpcdxDecoder();

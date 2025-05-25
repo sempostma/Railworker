@@ -1,516 +1,489 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <cBlueprintLoader xmlns:d="http://www.kuju.com/TnT/2003/Delta" d:version="1.0">
-  <Blueprint>
-    <cWagonBlueprint>
-      <Name d:type="cDeltaString">90&apos; KI CH-WASCO C45 UNIT45 B</Name>
-      <BrowseInformation>
-        <iRailVehicleBlueprint-cBrowseRVInformation>
-          <DisplayName>
-            <Localisation-cUserLocalisedString>
-              <English d:type="cDeltaString">90&apos; KI CH-WASCO C45 UNIT45 B</English>
-              <French d:type="cDeltaString"></French>
-              <Italian d:type="cDeltaString"></Italian>
-              <German d:type="cDeltaString"></German>
-              <Spanish d:type="cDeltaString"></Spanish>
-              <Dutch d:type="cDeltaString"></Dutch>
-              <Polish d:type="cDeltaString"></Polish>
-              <Russian d:type="cDeltaString"></Russian>
-              <Other/>
-              <Key d:type="cDeltaString"></Key>
-            </Localisation-cUserLocalisedString>
-          </DisplayName>
-        </iRailVehicleBlueprint-cBrowseRVInformation>
-      </BrowseInformation>
-      <RailVehicleComponent>
-        <cWagonComponentBlueprint>
-          <NumberingList>
-            <cCSVContainer>
-              <CsvFile d:type="cDeltaString">Afirus\Sggmrss\RailVehicles\Freight\Default\AutoNumber\numbers</CsvFile>
-            </cCSVContainer>
-          </NumberingList>
-          <NumberingFormat d:type="cDeltaString"></NumberingFormat>
-          <Numberings d:type="sUInt32">0</Numberings>
-          <FrontCouplingBlueprintID>
-            <iBlueprintLibrary-cAbsoluteBlueprintID>
-              <BlueprintSetID>
-                <iBlueprintLibrary-cBlueprintSetID>
-                  <Provider d:type="cDeltaString">Afirus</Provider>
-                  <Product d:type="cDeltaString">Sggmrss</Product>
-                </iBlueprintLibrary-cBlueprintSetID>
-              </BlueprintSetID>
-              <BlueprintID d:type="cDeltaString">RailVehicles\Couplings\3Link\Screw\3link_screw_coupling.xml</BlueprintID>
-            </iBlueprintLibrary-cAbsoluteBlueprintID>
-          </FrontCouplingBlueprintID>
-          <RearCouplingBlueprintID>
-            <iBlueprintLibrary-cAbsoluteBlueprintID>
-              <BlueprintSetID>
-                <iBlueprintLibrary-cBlueprintSetID>
-                  <Provider d:type="cDeltaString">Afirus</Provider>
-                  <Product d:type="cDeltaString">Sggmrss</Product>
-                </iBlueprintLibrary-cBlueprintSetID>
-              </BlueprintSetID>
-              <BlueprintID d:type="cDeltaString">RailVehicles\Couplings\Bar\Default\bar_default_coupling.xml</BlueprintID>
-            </iBlueprintLibrary-cAbsoluteBlueprintID>
-          </RearCouplingBlueprintID>
-          <FrontCouplingPivot>
-            <cHcRMatrix4x4>
-              <Element>
-                <e d:type="sFloat32" d:alt_encoding="000000000000F03F" d:precision="string">1</e>
-                <e d:type="sFloat32" d:alt_encoding="0000000000000000" d:precision="string">0</e>
-                <e d:type="sFloat32" d:alt_encoding="0000000000000000" d:precision="string">0</e>
-                <e d:type="sFloat32" d:alt_encoding="0000000000000000" d:precision="string">0</e>
-                <e d:type="sFloat32" d:alt_encoding="0000000000000000" d:precision="string">0</e>
-                <e d:type="sFloat32" d:alt_encoding="000000000000F03F" d:precision="string">1</e>
-                <e d:type="sFloat32" d:alt_encoding="0000000000000000" d:precision="string">0</e>
-                <e d:type="sFloat32" d:alt_encoding="0000000000000000" d:precision="string">0</e>
-                <e d:type="sFloat32" d:alt_encoding="0000000000000000" d:precision="string">0</e>
-                <e d:type="sFloat32" d:alt_encoding="0000000000000000" d:precision="string">0</e>
-                <e d:type="sFloat32" d:alt_encoding="000000000000F03F" d:precision="string">1</e>
-                <e d:type="sFloat32" d:alt_encoding="0000000000000000" d:precision="string">0</e>
-                <e d:type="sFloat32" d:alt_encoding="0000000000000000" d:precision="string">0</e>
-                <e d:type="sFloat32" d:alt_encoding="00000020EEB1F03F" d:precision="string">1.04344</e>
-                <e d:type="sFloat32" d:alt_encoding="00000000F7852040" d:precision="string">8.26165</e>
-                <e d:type="sFloat32" d:alt_encoding="000000000000F03F" d:precision="string">1</e>
-              </Element>
-            </cHcRMatrix4x4>
-          </FrontCouplingPivot>
-          <RearCouplingPivot>
-            <cHcRMatrix4x4>
-              <Element>
-                <e d:type="sFloat32" d:alt_encoding="000000000000F0BF" d:precision="string">-1</e>
-                <e d:type="sFloat32" d:alt_encoding="0000000000000000" d:precision="string">0</e>
-                <e d:type="sFloat32" d:alt_encoding="0000000000000000" d:precision="string">0</e>
-                <e d:type="sFloat32" d:alt_encoding="0000000000000000" d:precision="string">0</e>
-                <e d:type="sFloat32" d:alt_encoding="0000000000000000" d:precision="string">0</e>
-                <e d:type="sFloat32" d:alt_encoding="000000000000F03F" d:precision="string">1</e>
-                <e d:type="sFloat32" d:alt_encoding="0000000000000000" d:precision="string">0</e>
-                <e d:type="sFloat32" d:alt_encoding="0000000000000000" d:precision="string">0</e>
-                <e d:type="sFloat32" d:alt_encoding="0000000000000000" d:precision="string">0</e>
-                <e d:type="sFloat32" d:alt_encoding="0000000000000000" d:precision="string">0</e>
-                <e d:type="sFloat32" d:alt_encoding="000000000000F0BF" d:precision="string">-1</e>
-                <e d:type="sFloat32" d:alt_encoding="0000000000000000" d:precision="string">0</e>
-                <e d:type="sFloat32" d:alt_encoding="0000000000000000" d:precision="string">0</e>
-                <e d:type="sFloat32" d:alt_encoding="000000400DC3F03F" d:precision="string">1.04762</e>
-                <e d:type="sFloat32" d:alt_encoding="000000C0CC0C18C0" d:precision="string">-6.0125</e>
-                <e d:type="sFloat32" d:alt_encoding="000000000000F03F" d:precision="string">1</e>
-              </Element>
-            </cHcRMatrix4x4>
-          </RearCouplingPivot>
-          <FrontCouplingReceivingPoint>
-            <cHcRMatrix4x4>
-              <Element>
-                <e d:type="sFloat32" d:alt_encoding="000000000000F03F" d:precision="string">1</e>
-                <e d:type="sFloat32" d:alt_encoding="0000000000000000" d:precision="string">0</e>
-                <e d:type="sFloat32" d:alt_encoding="0000000000000000" d:precision="string">0</e>
-                <e d:type="sFloat32" d:alt_encoding="0000000000000000" d:precision="string">0</e>
-                <e d:type="sFloat32" d:alt_encoding="0000000000000000" d:precision="string">0</e>
-                <e d:type="sFloat32" d:alt_encoding="000000000000F03F" d:precision="string">1</e>
-                <e d:type="sFloat32" d:alt_encoding="0000000000000000" d:precision="string">0</e>
-                <e d:type="sFloat32" d:alt_encoding="0000000000000000" d:precision="string">0</e>
-                <e d:type="sFloat32" d:alt_encoding="0000000000000000" d:precision="string">0</e>
-                <e d:type="sFloat32" d:alt_encoding="0000000000000000" d:precision="string">0</e>
-                <e d:type="sFloat32" d:alt_encoding="000000000000F03F" d:precision="string">1</e>
-                <e d:type="sFloat32" d:alt_encoding="0000000000000000" d:precision="string">0</e>
-                <e d:type="sFloat32" d:alt_encoding="0000000000000000" d:precision="string">0</e>
-                <e d:type="sFloat32" d:alt_encoding="000000400DC3F03F" d:precision="string">1.04762</e>
-                <e d:type="sFloat32" d:alt_encoding="000000405FB12040" d:precision="string">8.34643</e>
-                <e d:type="sFloat32" d:alt_encoding="000000000000F03F" d:precision="string">1</e>
-              </Element>
-            </cHcRMatrix4x4>
-          </FrontCouplingReceivingPoint>
-          <RearCouplingReceivingPoint>
-            <cHcRMatrix4x4>
-              <Element>
-                <e d:type="sFloat32" d:alt_encoding="000000000000F0BF" d:precision="string">-1</e>
-                <e d:type="sFloat32" d:alt_encoding="0000000000000000" d:precision="string">0</e>
-                <e d:type="sFloat32" d:alt_encoding="0000000000000000" d:precision="string">0</e>
-                <e d:type="sFloat32" d:alt_encoding="0000000000000000" d:precision="string">0</e>
-                <e d:type="sFloat32" d:alt_encoding="0000000000000000" d:precision="string">0</e>
-                <e d:type="sFloat32" d:alt_encoding="000000000000F03F" d:precision="string">1</e>
-                <e d:type="sFloat32" d:alt_encoding="0000000000000000" d:precision="string">0</e>
-                <e d:type="sFloat32" d:alt_encoding="0000000000000000" d:precision="string">0</e>
-                <e d:type="sFloat32" d:alt_encoding="0000000000000000" d:precision="string">0</e>
-                <e d:type="sFloat32" d:alt_encoding="0000000000000000" d:precision="string">0</e>
-                <e d:type="sFloat32" d:alt_encoding="000000000000F0BF" d:precision="string">-1</e>
-                <e d:type="sFloat32" d:alt_encoding="0000000000000000" d:precision="string">0</e>
-                <e d:type="sFloat32" d:alt_encoding="0000000000000000" d:precision="string">0</e>
-                <e d:type="sFloat32" d:alt_encoding="000000400DC3F03F" d:precision="string">1.04762</e>
-                <e d:type="sFloat32" d:alt_encoding="00000000A05BEDC0" d:precision="string">-60125</e>
-                <e d:type="sFloat32" d:alt_encoding="000000000000F03F" d:precision="string">1</e>
-              </Element>
-            </cHcRMatrix4x4>
-          </RearCouplingReceivingPoint>
-          <Mass d:type="sFloat32" d:alt_encoding="000000C0CCCC2B40" d:precision="string">13.9</Mass>
-          <EaseOfDerailment d:type="sFloat32" d:alt_encoding="000000000000DC3F" d:precision="string">0.4375</EaseOfDerailment>
-          <FrontPivotX d:type="sFloat32" d:alt_encoding="000000E00E922140" d:precision="string">8.78527</FrontPivotX>
-          <FrontPivotY d:type="sFloat32" d:alt_encoding="000000400DC3F03F" d:precision="string">1.04762</FrontPivotY>
-          <BackPivotX d:type="sFloat32" d:alt_encoding="000000A0991918C0" d:precision="string">-6.025</BackPivotX>
-          <BackPivotY d:type="sFloat32" d:alt_encoding="000000400DC3F03F" d:precision="string">1.04762</BackPivotY>
-          <CollisionCentreX d:type="sFloat32" d:alt_encoding="000000800815F93F" d:precision="string">1.56764</CollisionCentreX>
-          <CollisionCentreY d:type="sFloat32" d:alt_encoding="000000606666E63F" d:precision="string">0.7</CollisionCentreY>
-          <CollisionWidth d:type="sFloat32" d:alt_encoding="0000004033330340" d:precision="string">2.4</CollisionWidth>
-          <CollisionHeight d:type="sFloat32" d:alt_encoding="000000403333F33F" d:precision="string">1.2</CollisionHeight>
-          <CollisionLength d:type="sFloat32" d:alt_encoding="00000080D1C72740" d:precision="string">11.8903</CollisionLength>
-          <DragCoefficient d:type="sFloat32" d:alt_encoding="0000000000001040" d:precision="string">4</DragCoefficient>
-          <RollingFrictionCoefficient d:type="sFloat32" d:alt_encoding="000000402AA9433F" d:precision="string">0.0006</RollingFrictionCoefficient>
-          <DryFriction d:type="sFloat32" d:alt_encoding="0000000000000040" d:precision="string">2</DryFriction>
-          <WetFriction d:type="sFloat32" d:alt_encoding="000000000000F03F" d:precision="string">1</WetFriction>
-          <SnowFriction d:type="sFloat32" d:alt_encoding="000000000000E03F" d:precision="string">0.5</SnowFriction>
-          <SandFrictionMultiplier d:type="sFloat32" d:alt_encoding="0000000000000040" d:precision="string">2</SandFrictionMultiplier>
-          <Bogey>
-            <cRailVehicleComponentBlueprint-tag_sBogey d:id="10960">
-              <BogeyPivotX d:type="sFloat32" d:alt_encoding="000000C0CC0C1840" d:precision="string">6.0125</BogeyPivotX>
-              <BogeyPivotY d:type="sFloat32" d:alt_encoding="0000000000000000" d:precision="string">0</BogeyPivotY>
-              <BogeyBlueprint>
-                <iBlueprintLibrary-cAbsoluteBlueprintID>
-                  <BlueprintSetID>
-                    <iBlueprintLibrary-cBlueprintSetID>
-                      <Provider d:type="cDeltaString">Afirus</Provider>
-                      <Product d:type="cDeltaString">Sggmrss</Product>
-                    </iBlueprintLibrary-cBlueprintSetID>
-                  </BlueprintSetID>
-                  <BlueprintID d:type="cDeltaString">RailVehicles\Freight\Default\Bogie\bogie_1.xml</BlueprintID>
-                </iBlueprintLibrary-cAbsoluteBlueprintID>
-              </BogeyBlueprint>
-            </cRailVehicleComponentBlueprint-tag_sBogey>
-            <cRailVehicleComponentBlueprint-tag_sBogey d:id="10968">
-              <BogeyPivotX d:type="sFloat32" d:alt_encoding="000000E0A37012C0" d:precision="string">-4.61</BogeyPivotX>
-              <BogeyPivotY d:type="sFloat32" d:alt_encoding="0000000000000000" d:precision="string">0</BogeyPivotY>
-              <BogeyBlueprint>
-                <iBlueprintLibrary-cAbsoluteBlueprintID>
-                  <BlueprintSetID>
-                    <iBlueprintLibrary-cBlueprintSetID>
-                      <Provider d:type="cDeltaString">Afirus</Provider>
-                      <Product d:type="cDeltaString">Sggmrss</Product>
-                    </iBlueprintLibrary-cBlueprintSetID>
-                  </BlueprintSetID>
-                  <BlueprintID d:type="cDeltaString">RailVehicles\Freight\Default\Bogie\bogie_2.xml</BlueprintID>
-                </iBlueprintLibrary-cAbsoluteBlueprintID>
-              </BogeyBlueprint>
-            </cRailVehicleComponentBlueprint-tag_sBogey>
-          </Bogey>
-          <StopgoRemapper d:type="cDeltaString"></StopgoRemapper>
-          <IntermediateRemapper d:type="cDeltaString"></IntermediateRemapper>
-          <ExpertRemapper d:type="cDeltaString"></ExpertRemapper>
-          <BogieAudioControlName d:type="cDeltaString">Afirus\Sggmrss\Audio\New\Drehgestell\3dz_Shmmns_Bogie_Audio_Control</BogieAudioControlName>
-          <CouplingAudioControlName d:type="cDeltaString">Afirus\Sggmrss\Audio\New\Kupplung\3dz_Shmmns_Kupplungsound</CouplingAudioControlName>
-          <AnimatedBodyNodeName d:type="cDeltaString"></AnimatedBodyNodeName>
-          <MaxComfortableAcceleration d:type="sFloat32" d:alt_encoding="0000000000E06540" d:precision="string">175</MaxComfortableAcceleration>
-          <TrainBrakeAssembly>
-            <EngineSimulation-cTrainAirBrakeBlueprint d:id="10984">
-              <BrakeType>
-                <EngineSimulation-cTrainAirBrakeDataBlueprint d:id="10986">
-                  <EquipmentType d:type="cDeltaString">eAirTwinPipe</EquipmentType>
-                  <MaxForcePercentOfVehicleWeight d:type="sFloat32" d:alt_encoding="0000000000805140" d:precision="string">70</MaxForcePercentOfVehicleWeight>
-                  <Control/>
-                  <Handbrake/>
-                  <GraduatedRelease d:type="cDeltaString">eTrue</GraduatedRelease>
-                  <ProportionalBrake d:type="cDeltaString">eTrue</ProportionalBrake>
-                  <MaxReleaseRate d:type="sFloat32" d:alt_encoding="0000000000002440" d:precision="string">10</MaxReleaseRate>
-                  <MaxApplicationRate d:type="sFloat32" d:alt_encoding="0000000000002440" d:precision="string">10</MaxApplicationRate>
-                  <MaxCylinderPressure d:type="sFloat32" d:alt_encoding="0000000000804F40" d:precision="string">63</MaxCylinderPressure>
-                  <PressureForMaxForce d:type="sFloat32" d:alt_encoding="0000000000804F40" d:precision="string">63</PressureForMaxForce>
-                  <MaxSystemPressure d:type="sFloat32" d:alt_encoding="0000000000A88640" d:precision="string">725</MaxSystemPressure>
-                  <MinSystemPressure d:type="sFloat32" d:alt_encoding="0000000000000000" d:precision="string">0</MinSystemPressure>
-                  <Distributor>
-                    <EngineSimulation-cBrakeDistributorBlueprint d:id="11000">
-                      <NormalFullReleasePressure d:type="sFloat32" d:alt_encoding="0000000000A88640" d:precision="string">725</NormalFullReleasePressure>
-                      <FullServicePressure d:type="sFloat32" d:alt_encoding="0000000000804940" d:precision="string">51</FullServicePressure>
-                      <TrainPipeControlRatio d:type="sFloat32" d:alt_encoding="0000000000606940" d:precision="string">203</TrainPipeControlRatio>
-                      <MaxEmergencyResPressure d:type="sFloat32" d:alt_encoding="0000000000805B40" d:precision="string">110</MaxEmergencyResPressure>
-                      <MaxAuxResPressure d:type="sFloat32" d:alt_encoding="0000000000005940" d:precision="string">100</MaxAuxResPressure>
-                      <EmergencyApplicationPressure d:type="sFloat32" d:alt_encoding="0000000000804F40" d:precision="string">63</EmergencyApplicationPressure>
-                    </EngineSimulation-cBrakeDistributorBlueprint>
-                  </Distributor>
-                  <EmergencyBraking/>
-                  <AuxiliaryBraking>
-                    <EngineSimulation-cBaseAirBrakeBlueprint-cAuxiliaryBraking d:id="11009">
-                      <MaxChargingRate d:type="sFloat32" d:alt_encoding="0000000000002440" d:precision="string">10</MaxChargingRate>
-                      <MaxReservoirPressure d:type="sFloat32" d:alt_encoding="0000000000005940" d:precision="string">100</MaxReservoirPressure>
-                    </EngineSimulation-cBaseAirBrakeBlueprint-cAuxiliaryBraking>
-                  </AuxiliaryBraking>
-                  <PressureUsedFromPipePerPoundGained d:type="sFloat32" d:alt_encoding="000000403333D33F" d:precision="string">0.3</PressureUsedFromPipePerPoundGained>
-                  <PressureGainedFromOnePipePounds d:type="sFloat32" d:alt_encoding="0000000000005940" d:precision="string">100</PressureGainedFromOnePipePounds>
-                  <RetainerType d:type="cDeltaString">eNoRetainer</RetainerType>
-                  <TripleValve d:type="cDeltaString">eTrue</TripleValve>
-                  <TripleValveRatio d:type="sFloat32" d:alt_encoding="0000000000000440" d:precision="string">2.5</TripleValveRatio>
-                  <RetainerSlowReleaseRate d:type="sFloat32" d:alt_encoding="0000000000002E40" d:precision="string">15</RetainerSlowReleaseRate>
-                </EngineSimulation-cTrainAirBrakeDataBlueprint>
-              </BrakeType>
-            </EngineSimulation-cTrainAirBrakeBlueprint>
-          </TrainBrakeAssembly>
-        </cWagonComponentBlueprint>
-      </RailVehicleComponent>
-      <RenderComponent>
-        <cAnimObjectRenderBlueprint>
-          <PrimaryNamedTextureSet>
-            <iBlueprintLibrary-cAbsoluteBlueprintID>
-              <BlueprintSetID>
-                <iBlueprintLibrary-cBlueprintSetID>
-                  <Provider d:type="cDeltaString"></Provider>
-                  <Product d:type="cDeltaString"></Product>
-                </iBlueprintLibrary-cBlueprintSetID>
-              </BlueprintSetID>
-              <BlueprintID d:type="cDeltaString"></BlueprintID>
-            </iBlueprintLibrary-cAbsoluteBlueprintID>
-          </PrimaryNamedTextureSet>
-          <SecondaryNamedTextureSet>
-            <iBlueprintLibrary-cAbsoluteBlueprintID>
-              <BlueprintSetID>
-                <iBlueprintLibrary-cBlueprintSetID>
-                  <Provider d:type="cDeltaString"></Provider>
-                  <Product d:type="cDeltaString"></Product>
-                </iBlueprintLibrary-cBlueprintSetID>
-              </BlueprintSetID>
-              <BlueprintID d:type="cDeltaString"></BlueprintID>
-            </iBlueprintLibrary-cAbsoluteBlueprintID>
-          </SecondaryNamedTextureSet>
-          <GeometryID d:type="cDeltaString">Afirus\Sggmrss\RailVehicles\Freight\Default\CH-WASCO\[00]sggmrss_45_b</GeometryID>
-          <CollisionGeometryID d:type="cDeltaString"></CollisionGeometryID>
-          <Pickable d:type="cDeltaString">eTrue</Pickable>
-          <CastsShadows d:type="cDeltaString">eTrue</CastsShadows>
-          <ShadowType d:type="cDeltaString">eShadowType_None</ShadowType>
-          <ViewType d:type="cDeltaString">ExternalView</ViewType>
-          <Palettised d:type="cDeltaString">eFalse</Palettised>
-          <Palette0Index d:type="sInt32">-1</Palette0Index>
-          <Palette1Index d:type="sInt32">-1</Palette1Index>
-          <Palette2Index d:type="sInt32">-1</Palette2Index>
-          <HeatHaze/>
-          <TexText/>
-          <ProjectedLightElement/>
-          <Instancable d:type="bool">0</Instancable>
-          <DetailLevelGenerationRange>
-            <cSceneryRenderBlueprint-sDetailLevelGenerationRange>
-              <HighestLevel_1isHighest d:type="sInt32">1</HighestLevel_1isHighest>
-              <LowestLevel_10isLowest d:type="sInt32">10</LowestLevel_10isLowest>
-            </cSceneryRenderBlueprint-sDetailLevelGenerationRange>
-          </DetailLevelGenerationRange>
-          <AnimSet/>
-        </cAnimObjectRenderBlueprint>
-      </RenderComponent>
-      <PosOriComponent>
-        <cPosOriBlueprint/>
-      </PosOriComponent>
-      <ControlContainerComponent>
-        <cControlContainerBlueprint>
-          <InteriorInterface>
-            <cControlContainerBlueprint-cInteriorInterface>
-              <InteriorGeometryID d:type="cDeltaString"></InteriorGeometryID>
-              <NumberOfCabs d:type="cDeltaString">eSingleCab</NumberOfCabs>
-              <InteriorCamera>
-                <iBlueprintLibrary-cAbsoluteBlueprintID>
-                  <BlueprintSetID>
-                    <iBlueprintLibrary-cBlueprintSetID>
-                      <Provider d:type="cDeltaString"></Provider>
-                      <Product d:type="cDeltaString"></Product>
-                    </iBlueprintLibrary-cBlueprintSetID>
-                  </BlueprintSetID>
-                  <BlueprintID d:type="cDeltaString"></BlueprintID>
-                </iBlueprintLibrary-cAbsoluteBlueprintID>
-              </InteriorCamera>
-              <CabOcclusion>
-                <iBlueprintLibrary-cAbsoluteBlueprintID>
-                  <BlueprintSetID>
-                    <iBlueprintLibrary-cBlueprintSetID>
-                      <Provider d:type="cDeltaString"></Provider>
-                      <Product d:type="cDeltaString"></Product>
-                    </iBlueprintLibrary-cBlueprintSetID>
-                  </BlueprintSetID>
-                  <BlueprintID d:type="cDeltaString"></BlueprintID>
-                </iBlueprintLibrary-cAbsoluteBlueprintID>
-              </CabOcclusion>
-            </cControlContainerBlueprint-cInteriorInterface>
-          </InteriorInterface>
-          <CarriageInteriorInterface>
-            <cControlContainerBlueprint-cInteriorInterface>
-              <InteriorGeometryID d:type="cDeltaString"></InteriorGeometryID>
-              <NumberOfCabs d:type="cDeltaString">eSingleCab</NumberOfCabs>
-              <InteriorCamera>
-                <iBlueprintLibrary-cAbsoluteBlueprintID>
-                  <BlueprintSetID>
-                    <iBlueprintLibrary-cBlueprintSetID>
-                      <Provider d:type="cDeltaString"></Provider>
-                      <Product d:type="cDeltaString"></Product>
-                    </iBlueprintLibrary-cBlueprintSetID>
-                  </BlueprintSetID>
-                  <BlueprintID d:type="cDeltaString"></BlueprintID>
-                </iBlueprintLibrary-cAbsoluteBlueprintID>
-              </InteriorCamera>
-              <CabOcclusion>
-                <iBlueprintLibrary-cAbsoluteBlueprintID>
-                  <BlueprintSetID>
-                    <iBlueprintLibrary-cBlueprintSetID>
-                      <Provider d:type="cDeltaString"></Provider>
-                      <Product d:type="cDeltaString"></Product>
-                    </iBlueprintLibrary-cBlueprintSetID>
-                  </BlueprintSetID>
-                  <BlueprintID d:type="cDeltaString"></BlueprintID>
-                </iBlueprintLibrary-cAbsoluteBlueprintID>
-              </CabOcclusion>
-            </cControlContainerBlueprint-cInteriorInterface>
-          </CarriageInteriorInterface>
-          <HUDControlsPath d:type="cDeltaString"></HUDControlsPath>
-          <MinimalHUDControlsPath d:type="cDeltaString"></MinimalHUDControlsPath>
-          <HUDControlsTexturePath d:type="cDeltaString"></HUDControlsTexturePath>
-          <ControlValues>
-            <cControlContainerBlueprint-cControlValue d:id="11079">
-              <ControlName d:type="cDeltaString">Handbrake</ControlName>
-              <DefaultValue d:type="sFloat32" d:alt_encoding="0000000000000000" d:precision="string">0</DefaultValue>
-              <MinimumValue d:type="sFloat32" d:alt_encoding="0000000000000000" d:precision="string">0</MinimumValue>
-              <MaximumValue d:type="sFloat32" d:alt_encoding="000000000000F03F" d:precision="string">1</MaximumValue>
-              <BriefDescription d:type="cDeltaString"></BriefDescription>
-              <LocalisedControlName>
-                <Localisation-cUserLocalisedString>
-                  <English d:type="cDeltaString"></English>
-                  <French d:type="cDeltaString"></French>
-                  <Italian d:type="cDeltaString"></Italian>
-                  <German d:type="cDeltaString"></German>
-                  <Spanish d:type="cDeltaString"></Spanish>
-                  <Dutch d:type="cDeltaString"></Dutch>
-                  <Polish d:type="cDeltaString"></Polish>
-                  <Russian d:type="cDeltaString"></Russian>
-                  <Other/>
-                  <Key d:type="cDeltaString"></Key>
-                </Localisation-cUserLocalisedString>
-              </LocalisedControlName>
-              <DetailedDescription d:type="cDeltaString"></DetailedDescription>
-              <ApplyToConsist d:type="cDeltaString">eFalse</ApplyToConsist>
-              <HUDControlID d:type="sUInt32">0</HUDControlID>
-              <InterfaceElements/>
-            </cControlContainerBlueprint-cControlValue>
-          </ControlValues>
-          <WiperPairs/>
-        </cControlContainerBlueprint>
-      </ControlContainerComponent>
-      <CargoComponent>
-        <cCargoComponentBlueprint>
-          <CargoDef>
-            <cContainerCargoDef d:id="11103">
-              <Name d:type="cDeltaString">A</Name>
-              <MassInKg d:type="sFloat32" d:alt_encoding="00000000004CDD40" d:precision="string">30000</MassInKg>
-              <Position>
-                <cHcRMatrix4x4>
-                  <Element>
-                    <e d:type="sFloat32" d:alt_encoding="000000000000F03F" d:precision="string">1</e>
-                    <e d:type="sFloat32" d:alt_encoding="0000000000000000" d:precision="string">0</e>
-                    <e d:type="sFloat32" d:alt_encoding="0000000000000000" d:precision="string">0</e>
-                    <e d:type="sFloat32" d:alt_encoding="0000000000000000" d:precision="string">0</e>
-                    <e d:type="sFloat32" d:alt_encoding="0000000000000000" d:precision="string">0</e>
-                    <e d:type="sFloat32" d:alt_encoding="000000000000F03F" d:precision="string">1</e>
-                    <e d:type="sFloat32" d:alt_encoding="0000000000000000" d:precision="string">0</e>
-                    <e d:type="sFloat32" d:alt_encoding="0000000000000000" d:precision="string">0</e>
-                    <e d:type="sFloat32" d:alt_encoding="0000000000000000" d:precision="string">0</e>
-                    <e d:type="sFloat32" d:alt_encoding="0000000000000000" d:precision="string">0</e>
-                    <e d:type="sFloat32" d:alt_encoding="000000000000F03F" d:precision="string">1</e>
-                    <e d:type="sFloat32" d:alt_encoding="0000000000000000" d:precision="string">0</e>
-                    <e d:type="sFloat32" d:alt_encoding="0000000000000000" d:precision="string">0</e>
-                    <e d:type="sFloat32" d:alt_encoding="00000020A9B0F23F" d:precision="string">1.16813</e>
-                    <e d:type="sFloat32" d:alt_encoding="000000000000F43F" d:precision="string">1.25</e>
-                    <e d:type="sFloat32" d:alt_encoding="000000000000F03F" d:precision="string">1</e>
-                  </Element>
-                </cHcRMatrix4x4>
-              </Position>
-            </cContainerCargoDef>
-          </CargoDef>
-          <CargoBlueprintID>
-            <iBlueprintLibrary-cAbsoluteBlueprintID>
-              <BlueprintSetID>
-                <iBlueprintLibrary-cBlueprintSetID>
-                  <Provider d:type="cDeltaString">Afirus</Provider>
-                  <Product d:type="cDeltaString">ContainerPack01</Product>
-                </iBlueprintLibrary-cBlueprintSetID>
-              </BlueprintSetID>
-              <BlueprintID d:type="cDeltaString">RailNetwork\Interactive\ki_45ft_hc_pw\ki_45ft_hc_pw_unit45_1.xml</BlueprintID>
-            </iBlueprintLibrary-cAbsoluteBlueprintID>
-          </CargoBlueprintID>
-        </cCargoComponentBlueprint>
-      </CargoComponent>
-      <ContainerComponent>
-        <cEntityContainerBlueprint>
-          <TrackTerrainInEditor d:type="bool">0</TrackTerrainInEditor>
-          <Children>
-            <cEntityContainerBlueprint-sChild d:id="11132">
-              <ChildName d:type="cDeltaString">Wagen DG-Sound WE1</ChildName>
-              <BlueprintID>
-                <iBlueprintLibrary-cAbsoluteBlueprintID>
-                  <BlueprintSetID>
-                    <iBlueprintLibrary-cBlueprintSetID>
-                      <Provider d:type="cDeltaString">Afirus</Provider>
-                      <Product d:type="cDeltaString">Sggmrss</Product>
-                    </iBlueprintLibrary-cBlueprintSetID>
-                  </BlueprintSetID>
-                  <BlueprintID d:type="cDeltaString">Audio\New\Drehgestell\3dz_Shmmns_DG_Audio.xml</BlueprintID>
-                </iBlueprintLibrary-cAbsoluteBlueprintID>
-              </BlueprintID>
-              <Matrix>
-                <cHcRMatrix4x4>
-                  <Element>
-                    <e d:type="sFloat32" d:alt_encoding="000000000000F03F" d:precision="string">1</e>
-                    <e d:type="sFloat32" d:alt_encoding="0000000000000000" d:precision="string">0</e>
-                    <e d:type="sFloat32" d:alt_encoding="0000000000000000" d:precision="string">0</e>
-                    <e d:type="sFloat32" d:alt_encoding="0000000000000000" d:precision="string">0</e>
-                    <e d:type="sFloat32" d:alt_encoding="0000000000000000" d:precision="string">0</e>
-                    <e d:type="sFloat32" d:alt_encoding="000000000000F03F" d:precision="string">1</e>
-                    <e d:type="sFloat32" d:alt_encoding="0000000000000000" d:precision="string">0</e>
-                    <e d:type="sFloat32" d:alt_encoding="0000000000000000" d:precision="string">0</e>
-                    <e d:type="sFloat32" d:alt_encoding="0000000000000000" d:precision="string">0</e>
-                    <e d:type="sFloat32" d:alt_encoding="0000000000000000" d:precision="string">0</e>
-                    <e d:type="sFloat32" d:alt_encoding="000000000000F03F" d:precision="string">1</e>
-                    <e d:type="sFloat32" d:alt_encoding="0000000000000000" d:precision="string">0</e>
-                    <e d:type="sFloat32" d:alt_encoding="0000000000000000" d:precision="string">0</e>
-                    <e d:type="sFloat32" d:alt_encoding="000000000000E03F" d:precision="string">0.5</e>
-                    <e d:type="sFloat32" d:alt_encoding="000000C0CC0C18C0" d:precision="string">-6.0125</e>
-                    <e d:type="sFloat32" d:alt_encoding="000000000000F03F" d:precision="string">1</e>
-                  </Element>
-                </cHcRMatrix4x4>
-              </Matrix>
-              <ParentNodeName d:type="cDeltaString"></ParentNodeName>
-            </cEntityContainerBlueprint-sChild>
-            <cEntityContainerBlueprint-sChild d:id="11158">
-              <ChildName d:type="cDeltaString">Wagen Ambient-Sound</ChildName>
-              <BlueprintID>
-                <iBlueprintLibrary-cAbsoluteBlueprintID>
-                  <BlueprintSetID>
-                    <iBlueprintLibrary-cBlueprintSetID>
-                      <Provider d:type="cDeltaString">Afirus</Provider>
-                      <Product d:type="cDeltaString">Sggmrss</Product>
-                    </iBlueprintLibrary-cBlueprintSetID>
-                  </BlueprintSetID>
-                  <BlueprintID d:type="cDeltaString">Audio\New\Wagen\3dz_Shmmns_Wagen_Audio.xml</BlueprintID>
-                </iBlueprintLibrary-cAbsoluteBlueprintID>
-              </BlueprintID>
-              <Matrix>
-                <cHcRMatrix4x4>
-                  <Element>
-                    <e d:type="sFloat32" d:alt_encoding="000000000000F03F" d:precision="string">1</e>
-                    <e d:type="sFloat32" d:alt_encoding="0000000000000000" d:precision="string">0</e>
-                    <e d:type="sFloat32" d:alt_encoding="0000000000000000" d:precision="string">0</e>
-                    <e d:type="sFloat32" d:alt_encoding="0000000000000000" d:precision="string">0</e>
-                    <e d:type="sFloat32" d:alt_encoding="0000000000000000" d:precision="string">0</e>
-                    <e d:type="sFloat32" d:alt_encoding="000000000000F03F" d:precision="string">1</e>
-                    <e d:type="sFloat32" d:alt_encoding="0000000000000000" d:precision="string">0</e>
-                    <e d:type="sFloat32" d:alt_encoding="0000000000000000" d:precision="string">0</e>
-                    <e d:type="sFloat32" d:alt_encoding="0000000000000000" d:precision="string">0</e>
-                    <e d:type="sFloat32" d:alt_encoding="0000000000000000" d:precision="string">0</e>
-                    <e d:type="sFloat32" d:alt_encoding="000000000000F03F" d:precision="string">1</e>
-                    <e d:type="sFloat32" d:alt_encoding="0000000000000000" d:precision="string">0</e>
-                    <e d:type="sFloat32" d:alt_encoding="0000000000000000" d:precision="string">0</e>
-                    <e d:type="sFloat32" d:alt_encoding="0000000000000000" d:precision="string">0</e>
-                    <e d:type="sFloat32" d:alt_encoding="0000000000000000" d:precision="string">0</e>
-                    <e d:type="sFloat32" d:alt_encoding="000000000000F03F" d:precision="string">1</e>
-                  </Element>
-                </cHcRMatrix4x4>
-              </Matrix>
-              <ParentNodeName d:type="cDeltaString"></ParentNodeName>
-            </cEntityContainerBlueprint-sChild>
-          </Children>
-        </cEntityContainerBlueprint>
-      </ContainerComponent>
-      <ScriptComponent>
-        <cScriptComponentBlueprint>
-          <Name d:type="cDeltaString"></Name>
-        </cScriptComponentBlueprint>
-      </ScriptComponent>
-    </cWagonBlueprint>
-  </Blueprint>
+	<Blueprint>
+		<cWagonBlueprint xmlns:d="http://www.kuju.com/TnT/2003/Delta" d:version="1.0">
+			<Name d:type="cDeltaString">90' KI WAS 45 BeNeLux B</Name>
+			<BrowseInformation>
+				<iRailVehicleBlueprint-cBrowseRVInformation>
+					<DisplayName>
+						<Localisation-cUserLocalisedString>
+							<English d:type="cDeltaString">90' KI WAS 45 BeNeLux B</English>
+							<French d:type="cDeltaString"></French>
+							<Italian d:type="cDeltaString"></Italian>
+							<German d:type="cDeltaString"></German>
+							<Spanish d:type="cDeltaString"></Spanish>
+							<Dutch d:type="cDeltaString"></Dutch>
+							<Polish d:type="cDeltaString"></Polish>
+							<Russian d:type="cDeltaString"></Russian>
+							<Other />
+							<Key d:type="cDeltaString"></Key>
+						</Localisation-cUserLocalisedString>
+					</DisplayName>
+				</iRailVehicleBlueprint-cBrowseRVInformation>
+			</BrowseInformation>
+			<RailVehicleComponent>
+				<cWagonComponentBlueprint>
+					<NumberingList>
+						<cCSVContainer>
+							<CsvFile d:type="cDeltaString">AlexAfirus\KI Sggmrss90\AutoNumber\45ft_hc</CsvFile>
+						</cCSVContainer>
+					</NumberingList>
+					<NumberingFormat d:type="cDeltaString"></NumberingFormat>
+					<Numberings d:type="sUInt32">0</Numberings>
+					<FrontCouplingBlueprintID>
+						<iBlueprintLibrary-cAbsoluteBlueprintID>
+							<BlueprintSetID>
+								<iBlueprintLibrary-cBlueprintSetID>
+									<Provider d:type="cDeltaString">AlexAfirus</Provider>
+									<Product d:type="cDeltaString">KI Wagon Essentials</Product>
+								</iBlueprintLibrary-cBlueprintSetID>
+							</BlueprintSetID>
+							<BlueprintID d:type="cDeltaString">Couplings\3Link\Screw\3link_screw_coupling.xml</BlueprintID>
+						</iBlueprintLibrary-cAbsoluteBlueprintID>
+					</FrontCouplingBlueprintID>
+					<RearCouplingBlueprintID>
+						<iBlueprintLibrary-cAbsoluteBlueprintID>
+							<BlueprintSetID>
+								<iBlueprintLibrary-cBlueprintSetID>
+									<Provider d:type="cDeltaString">AlexAfirus</Provider>
+									<Product d:type="cDeltaString">KI Wagon Essentials</Product>
+								</iBlueprintLibrary-cBlueprintSetID>
+							</BlueprintSetID>
+							<BlueprintID d:type="cDeltaString">Couplings\Bar\Default\bar_default_coupling.xml</BlueprintID>
+						</iBlueprintLibrary-cAbsoluteBlueprintID>
+					</RearCouplingBlueprintID>
+					<FrontCouplingPivot>
+						<cHcRMatrix4x4>
+							<Element>
+								<e d:type="sFloat32">1</e>
+								<e d:type="sFloat32">0</e>
+								<e d:type="sFloat32">0</e>
+								<e d:type="sFloat32">0</e>
+								<e d:type="sFloat32">0</e>
+								<e d:type="sFloat32">1</e>
+								<e d:type="sFloat32">0</e>
+								<e d:type="sFloat32">0</e>
+								<e d:type="sFloat32">0</e>
+								<e d:type="sFloat32">0</e>
+								<e d:type="sFloat32">1</e>
+								<e d:type="sFloat32">0</e>
+								<e d:type="sFloat32">0</e>
+								<e d:type="sFloat32">1.04344</e>
+								<e d:type="sFloat32">8.26165</e>
+								<e d:type="sFloat32">1</e>
+							</Element>
+						</cHcRMatrix4x4>
+					</FrontCouplingPivot>
+					<RearCouplingPivot>
+						<cHcRMatrix4x4>
+							<Element>
+								<e d:type="sFloat32">-1</e>
+								<e d:type="sFloat32">0</e>
+								<e d:type="sFloat32">0</e>
+								<e d:type="sFloat32">0</e>
+								<e d:type="sFloat32">0</e>
+								<e d:type="sFloat32">1</e>
+								<e d:type="sFloat32">0</e>
+								<e d:type="sFloat32">0</e>
+								<e d:type="sFloat32">0</e>
+								<e d:type="sFloat32">0</e>
+								<e d:type="sFloat32">-1</e>
+								<e d:type="sFloat32">0</e>
+								<e d:type="sFloat32">0</e>
+								<e d:type="sFloat32">1.04762</e>
+								<e d:type="sFloat32">-6.0125</e>
+								<e d:type="sFloat32">1</e>
+							</Element>
+						</cHcRMatrix4x4>
+					</RearCouplingPivot>
+					<FrontCouplingReceivingPoint>
+						<cHcRMatrix4x4>
+							<Element>
+								<e d:type="sFloat32">1</e>
+								<e d:type="sFloat32">0</e>
+								<e d:type="sFloat32">0</e>
+								<e d:type="sFloat32">0</e>
+								<e d:type="sFloat32">0</e>
+								<e d:type="sFloat32">1</e>
+								<e d:type="sFloat32">0</e>
+								<e d:type="sFloat32">0</e>
+								<e d:type="sFloat32">0</e>
+								<e d:type="sFloat32">0</e>
+								<e d:type="sFloat32">1</e>
+								<e d:type="sFloat32">0</e>
+								<e d:type="sFloat32">0</e>
+								<e d:type="sFloat32">1.04762</e>
+								<e d:type="sFloat32">8.34643</e>
+								<e d:type="sFloat32">1</e>
+							</Element>
+						</cHcRMatrix4x4>
+					</FrontCouplingReceivingPoint>
+					<RearCouplingReceivingPoint>
+						<cHcRMatrix4x4>
+							<Element>
+								<e d:type="sFloat32">-1</e>
+								<e d:type="sFloat32">0</e>
+								<e d:type="sFloat32">0</e>
+								<e d:type="sFloat32">0</e>
+								<e d:type="sFloat32">0</e>
+								<e d:type="sFloat32">1</e>
+								<e d:type="sFloat32">0</e>
+								<e d:type="sFloat32">0</e>
+								<e d:type="sFloat32">0</e>
+								<e d:type="sFloat32">0</e>
+								<e d:type="sFloat32">-1</e>
+								<e d:type="sFloat32">0</e>
+								<e d:type="sFloat32">0</e>
+								<e d:type="sFloat32">1.04762</e>
+								<e d:type="sFloat32">-6.0125</e>
+								<e d:type="sFloat32">1</e>
+							</Element>
+						</cHcRMatrix4x4>
+					</RearCouplingReceivingPoint>
+					<Mass d:type="sFloat32">46.3</Mass>
+					<EaseOfDerailment d:type="sFloat32">0.4375</EaseOfDerailment>
+					<FrontPivotX d:type="sFloat32">8.78527</FrontPivotX>
+					<FrontPivotY d:type="sFloat32">1.04762</FrontPivotY>
+					<BackPivotX d:type="sFloat32">-6.025</BackPivotX>
+					<BackPivotY d:type="sFloat32">1.04762</BackPivotY>
+					<CollisionCentreX d:type="sFloat32">2.5</CollisionCentreX>
+					<CollisionCentreY d:type="sFloat32">0.7</CollisionCentreY>
+					<CollisionWidth d:type="sFloat32">2.4</CollisionWidth>
+					<CollisionHeight d:type="sFloat32">1.2</CollisionHeight>
+					<CollisionLength d:type="sFloat32">11.89027</CollisionLength>
+					<DragCoefficient d:type="sFloat32">4</DragCoefficient>
+					<RollingFrictionCoefficient d:type="sFloat32">0.0006</RollingFrictionCoefficient>
+					<DryFriction d:type="sFloat32">2</DryFriction>
+					<WetFriction d:type="sFloat32">1</WetFriction>
+					<SnowFriction d:type="sFloat32">0.5</SnowFriction>
+					<SandFrictionMultiplier d:type="sFloat32">2</SandFrictionMultiplier>
+					<Bogey>
+						<cRailVehicleComponentBlueprint-tag_sBogey d:id="81097">
+							<BogeyPivotX d:type="sFloat32">6.0125</BogeyPivotX>
+							<BogeyPivotY d:type="sFloat32">0</BogeyPivotY>
+							<BogeyBlueprint>
+								<iBlueprintLibrary-cAbsoluteBlueprintID>
+									<BlueprintSetID>
+										<iBlueprintLibrary-cBlueprintSetID>
+											<Provider d:type="cDeltaString">AlexAfirus</Provider>
+											<Product d:type="cDeltaString">KI Wagon Essentials</Product>
+										</iBlueprintLibrary-cBlueprintSetID>
+									</BlueprintSetID>
+									<BlueprintID d:type="cDeltaString">Bogie\bogie_1.xml</BlueprintID>
+								</iBlueprintLibrary-cAbsoluteBlueprintID>
+							</BogeyBlueprint>
+						</cRailVehicleComponentBlueprint-tag_sBogey>
+						<cRailVehicleComponentBlueprint-tag_sBogey d:id="81105">
+							<BogeyPivotX d:type="sFloat32">-4.61</BogeyPivotX>
+							<BogeyPivotY d:type="sFloat32">0</BogeyPivotY>
+							<BogeyBlueprint>
+								<iBlueprintLibrary-cAbsoluteBlueprintID>
+									<BlueprintSetID>
+										<iBlueprintLibrary-cBlueprintSetID>
+											<Provider d:type="cDeltaString">AlexAfirus</Provider>
+											<Product d:type="cDeltaString">KI Wagon Essentials</Product>
+										</iBlueprintLibrary-cBlueprintSetID>
+									</BlueprintSetID>
+									<BlueprintID d:type="cDeltaString">Bogie\bogie_2.xml</BlueprintID>
+								</iBlueprintLibrary-cAbsoluteBlueprintID>
+							</BogeyBlueprint>
+						</cRailVehicleComponentBlueprint-tag_sBogey>
+					</Bogey>
+					<StopgoRemapper d:type="cDeltaString"></StopgoRemapper>
+					<IntermediateRemapper d:type="cDeltaString"></IntermediateRemapper>
+					<ExpertRemapper d:type="cDeltaString"></ExpertRemapper>
+					<BogieAudioControlName d:type="cDeltaString">AlexAfirus\KI Wagon Essentials\Audio\New\Drehgestell\3dz_Shmmns_Bogie_Audio_Control</BogieAudioControlName>
+					<CouplingAudioControlName d:type="cDeltaString">AlexAfirus\KI Wagon Essentials\Audio\New\Kupplung\3dz_Shmmns_Kupplungsound</CouplingAudioControlName>
+					<AnimatedBodyNodeName d:type="cDeltaString"></AnimatedBodyNodeName>
+					<MaxComfortableAcceleration d:type="sFloat32">175</MaxComfortableAcceleration>
+					<TrainBrakeAssembly>
+						<EngineSimulation-cTrainAirBrakeBlueprint d:id="81121">
+							<BrakeType>
+								<EngineSimulation-cTrainAirBrakeDataBlueprint d:id="81123">
+									<EquipmentType d:type="cDeltaString">eAirTwinPipe</EquipmentType>
+									<MaxForcePercentOfVehicleWeight d:type="sFloat32">70</MaxForcePercentOfVehicleWeight>
+									<Control />
+									<Handbrake />
+									<GraduatedRelease d:type="cDeltaString">eTrue</GraduatedRelease>
+									<ProportionalBrake d:type="cDeltaString">eTrue</ProportionalBrake>
+									<MaxReleaseRate d:type="sFloat32">10</MaxReleaseRate>
+									<MaxApplicationRate d:type="sFloat32">10</MaxApplicationRate>
+									<MaxCylinderPressure d:type="sFloat32">63</MaxCylinderPressure>
+									<PressureForMaxForce d:type="sFloat32">63</PressureForMaxForce>
+									<MaxSystemPressure d:type="sFloat32">72.5</MaxSystemPressure>
+									<MinSystemPressure d:type="sFloat32">0</MinSystemPressure>
+									<Distributor>
+										<EngineSimulation-cBrakeDistributorBlueprint d:id="81137">
+											<NormalFullReleasePressure d:type="sFloat32">72.5</NormalFullReleasePressure>
+											<FullServicePressure d:type="sFloat32">51</FullServicePressure>
+											<TrainPipeControlRatio d:type="sFloat32">20.3</TrainPipeControlRatio>
+											<MaxEmergencyResPressure d:type="sFloat32">110</MaxEmergencyResPressure>
+											<MaxAuxResPressure d:type="sFloat32">100</MaxAuxResPressure>
+											<EmergencyApplicationPressure d:type="sFloat32">63</EmergencyApplicationPressure>
+										</EngineSimulation-cBrakeDistributorBlueprint>
+									</Distributor>
+									<EmergencyBraking />
+									<AuxiliaryBraking>
+										<EngineSimulation-cBaseAirBrakeBlueprint-cAuxiliaryBraking d:id="81146">
+											<MaxChargingRate d:type="sFloat32">10</MaxChargingRate>
+											<MaxReservoirPressure d:type="sFloat32">100</MaxReservoirPressure>
+										</EngineSimulation-cBaseAirBrakeBlueprint-cAuxiliaryBraking>
+									</AuxiliaryBraking>
+									<PressureUsedFromPipePerPoundGained d:type="sFloat32">0.3</PressureUsedFromPipePerPoundGained>
+									<PressureGainedFromOnePipePounds d:type="sFloat32">100</PressureGainedFromOnePipePounds>
+									<RetainerType d:type="cDeltaString">eNoRetainer</RetainerType>
+									<TripleValve d:type="cDeltaString">eTrue</TripleValve>
+									<TripleValveRatio d:type="sFloat32">2.5</TripleValveRatio>
+									<RetainerSlowReleaseRate d:type="sFloat32">15</RetainerSlowReleaseRate>
+								</EngineSimulation-cTrainAirBrakeDataBlueprint>
+							</BrakeType>
+						</EngineSimulation-cTrainAirBrakeBlueprint>
+					</TrainBrakeAssembly>
+				</cWagonComponentBlueprint>
+			</RailVehicleComponent>
+			<RenderComponent>
+				<cAnimObjectRenderBlueprint>
+					<PrimaryNamedTextureSet>
+						<iBlueprintLibrary-cAbsoluteBlueprintID>
+							<BlueprintSetID>
+								<iBlueprintLibrary-cBlueprintSetID>
+									<Provider d:type="cDeltaString"></Provider>
+									<Product d:type="cDeltaString"></Product>
+								</iBlueprintLibrary-cBlueprintSetID>
+							</BlueprintSetID>
+							<BlueprintID d:type="cDeltaString"></BlueprintID>
+						</iBlueprintLibrary-cAbsoluteBlueprintID>
+					</PrimaryNamedTextureSet>
+					<SecondaryNamedTextureSet>
+						<iBlueprintLibrary-cAbsoluteBlueprintID>
+							<BlueprintSetID>
+								<iBlueprintLibrary-cBlueprintSetID>
+									<Provider d:type="cDeltaString"></Provider>
+									<Product d:type="cDeltaString"></Product>
+								</iBlueprintLibrary-cBlueprintSetID>
+							</BlueprintSetID>
+							<BlueprintID d:type="cDeltaString"></BlueprintID>
+						</iBlueprintLibrary-cAbsoluteBlueprintID>
+					</SecondaryNamedTextureSet>
+					<GeometryID d:type="cDeltaString">AlexAfirus\KI Sggmrss90\CH-WASCO\[00]sggmrss_b</GeometryID>
+					<CollisionGeometryID d:type="cDeltaString"></CollisionGeometryID>
+					<Pickable d:type="cDeltaString">eTrue</Pickable>
+					<CastsShadows d:type="cDeltaString">eTrue</CastsShadows>
+					<ShadowType d:type="cDeltaString">eShadowType_None</ShadowType>
+					<ViewType d:type="cDeltaString">ExternalView</ViewType>
+					<Palettised d:type="cDeltaString">eFalse</Palettised>
+					<Palette0Index d:type="sInt32">-1</Palette0Index>
+					<Palette1Index d:type="sInt32">-1</Palette1Index>
+					<Palette2Index d:type="sInt32">-1</Palette2Index>
+					<HeatHaze />
+					<TexText />
+					<ProjectedLightElement />
+					<Instancable d:type="bool">0</Instancable>
+					<DetailLevelGenerationRange>
+						<cSceneryRenderBlueprint-sDetailLevelGenerationRange>
+							<HighestLevel_1isHighest d:type="sInt32">1</HighestLevel_1isHighest>
+							<LowestLevel_10isLowest d:type="sInt32">10</LowestLevel_10isLowest>
+						</cSceneryRenderBlueprint-sDetailLevelGenerationRange>
+					</DetailLevelGenerationRange>
+					<AnimSet />
+				</cAnimObjectRenderBlueprint>
+			</RenderComponent>
+			<PosOriComponent>
+				<cPosOriBlueprint />
+			</PosOriComponent>
+			<ControlContainerComponent>
+				<cControlContainerBlueprint>
+					<InteriorInterface>
+						<cControlContainerBlueprint-cInteriorInterface>
+							<InteriorGeometryID d:type="cDeltaString"></InteriorGeometryID>
+							<NumberOfCabs d:type="cDeltaString">eSingleCab</NumberOfCabs>
+							<InteriorCamera>
+								<iBlueprintLibrary-cAbsoluteBlueprintID>
+									<BlueprintSetID>
+										<iBlueprintLibrary-cBlueprintSetID>
+											<Provider d:type="cDeltaString"></Provider>
+											<Product d:type="cDeltaString"></Product>
+										</iBlueprintLibrary-cBlueprintSetID>
+									</BlueprintSetID>
+									<BlueprintID d:type="cDeltaString"></BlueprintID>
+								</iBlueprintLibrary-cAbsoluteBlueprintID>
+							</InteriorCamera>
+							<CabOcclusion>
+								<iBlueprintLibrary-cAbsoluteBlueprintID>
+									<BlueprintSetID>
+										<iBlueprintLibrary-cBlueprintSetID>
+											<Provider d:type="cDeltaString"></Provider>
+											<Product d:type="cDeltaString"></Product>
+										</iBlueprintLibrary-cBlueprintSetID>
+									</BlueprintSetID>
+									<BlueprintID d:type="cDeltaString"></BlueprintID>
+								</iBlueprintLibrary-cAbsoluteBlueprintID>
+							</CabOcclusion>
+						</cControlContainerBlueprint-cInteriorInterface>
+					</InteriorInterface>
+					<CarriageInteriorInterface>
+						<cControlContainerBlueprint-cInteriorInterface>
+							<InteriorGeometryID d:type="cDeltaString"></InteriorGeometryID>
+							<NumberOfCabs d:type="cDeltaString">eSingleCab</NumberOfCabs>
+							<InteriorCamera>
+								<iBlueprintLibrary-cAbsoluteBlueprintID>
+									<BlueprintSetID>
+										<iBlueprintLibrary-cBlueprintSetID>
+											<Provider d:type="cDeltaString"></Provider>
+											<Product d:type="cDeltaString"></Product>
+										</iBlueprintLibrary-cBlueprintSetID>
+									</BlueprintSetID>
+									<BlueprintID d:type="cDeltaString"></BlueprintID>
+								</iBlueprintLibrary-cAbsoluteBlueprintID>
+							</InteriorCamera>
+							<CabOcclusion>
+								<iBlueprintLibrary-cAbsoluteBlueprintID>
+									<BlueprintSetID>
+										<iBlueprintLibrary-cBlueprintSetID>
+											<Provider d:type="cDeltaString"></Provider>
+											<Product d:type="cDeltaString"></Product>
+										</iBlueprintLibrary-cBlueprintSetID>
+									</BlueprintSetID>
+									<BlueprintID d:type="cDeltaString"></BlueprintID>
+								</iBlueprintLibrary-cAbsoluteBlueprintID>
+							</CabOcclusion>
+						</cControlContainerBlueprint-cInteriorInterface>
+					</CarriageInteriorInterface>
+					<HUDControlsPath d:type="cDeltaString"></HUDControlsPath>
+					<MinimalHUDControlsPath d:type="cDeltaString"></MinimalHUDControlsPath>
+					<HUDControlsTexturePath d:type="cDeltaString"></HUDControlsTexturePath>
+					<ControlValues>
+						<cControlContainerBlueprint-cControlValue d:id="81216">
+							<ControlName d:type="cDeltaString">Handbrake</ControlName>
+							<DefaultValue d:type="sFloat32">0</DefaultValue>
+							<MinimumValue d:type="sFloat32">0</MinimumValue>
+							<MaximumValue d:type="sFloat32">1</MaximumValue>
+							<BriefDescription d:type="cDeltaString"></BriefDescription>
+							<LocalisedControlName>
+								<Localisation-cUserLocalisedString>
+									<English d:type="cDeltaString"></English>
+									<French d:type="cDeltaString"></French>
+									<Italian d:type="cDeltaString"></Italian>
+									<German d:type="cDeltaString"></German>
+									<Spanish d:type="cDeltaString"></Spanish>
+									<Dutch d:type="cDeltaString"></Dutch>
+									<Polish d:type="cDeltaString"></Polish>
+									<Russian d:type="cDeltaString"></Russian>
+									<Other />
+									<Key d:type="cDeltaString"></Key>
+								</Localisation-cUserLocalisedString>
+							</LocalisedControlName>
+							<DetailedDescription d:type="cDeltaString"></DetailedDescription>
+							<ApplyToConsist d:type="cDeltaString">eFalse</ApplyToConsist>
+							<HUDControlID d:type="sUInt32">0</HUDControlID>
+							<InterfaceElements />
+						</cControlContainerBlueprint-cControlValue>
+					</ControlValues>
+					<WiperPairs />
+				</cControlContainerBlueprint>
+			</ControlContainerComponent>
+			<CargoComponent>
+				<cCargoComponentBlueprint>
+					<CargoDef />
+					<CargoBlueprintID>
+						<iBlueprintLibrary-cAbsoluteBlueprintID>
+							<BlueprintSetID>
+								<iBlueprintLibrary-cBlueprintSetID>
+									<Provider d:type="cDeltaString"></Provider>
+									<Product d:type="cDeltaString"></Product>
+								</iBlueprintLibrary-cBlueprintSetID>
+							</BlueprintSetID>
+							<BlueprintID d:type="cDeltaString"></BlueprintID>
+						</iBlueprintLibrary-cAbsoluteBlueprintID>
+					</CargoBlueprintID>
+				</cCargoComponentBlueprint>
+			</CargoComponent>
+			<ContainerComponent>
+				<cEntityContainerBlueprint>
+					<TrackTerrainInEditor d:type="bool">0</TrackTerrainInEditor>
+					<Children>
+						<cEntityContainerBlueprint-sChild d:id="81248">
+							<ChildName d:type="cDeltaString">Wagen DG-Sound WE1</ChildName>
+							<BlueprintID>
+								<iBlueprintLibrary-cAbsoluteBlueprintID>
+									<BlueprintSetID>
+										<iBlueprintLibrary-cBlueprintSetID>
+											<Provider d:type="cDeltaString">AlexAfirus</Provider>
+											<Product d:type="cDeltaString">KI Wagon Essentials</Product>
+										</iBlueprintLibrary-cBlueprintSetID>
+									</BlueprintSetID>
+									<BlueprintID d:type="cDeltaString">Audio\New\Drehgestell\3dz_Shmmns_DG_Audio.xml</BlueprintID>
+								</iBlueprintLibrary-cAbsoluteBlueprintID>
+							</BlueprintID>
+							<Matrix>
+								<cHcRMatrix4x4>
+									<Element>
+										<e d:type="sFloat32">1</e>
+										<e d:type="sFloat32">0</e>
+										<e d:type="sFloat32">0</e>
+										<e d:type="sFloat32">0</e>
+										<e d:type="sFloat32">0</e>
+										<e d:type="sFloat32">1</e>
+										<e d:type="sFloat32">0</e>
+										<e d:type="sFloat32">0</e>
+										<e d:type="sFloat32">0</e>
+										<e d:type="sFloat32">0</e>
+										<e d:type="sFloat32">1</e>
+										<e d:type="sFloat32">0</e>
+										<e d:type="sFloat32">0</e>
+										<e d:type="sFloat32">0.5</e>
+										<e d:type="sFloat32">-6.0125</e>
+										<e d:type="sFloat32">1</e>
+									</Element>
+								</cHcRMatrix4x4>
+							</Matrix>
+							<ParentNodeName d:type="cDeltaString"></ParentNodeName>
+						</cEntityContainerBlueprint-sChild>
+						<cEntityContainerBlueprint-sChild d:id="81274">
+							<ChildName d:type="cDeltaString">Wagen Ambient-Sound</ChildName>
+							<BlueprintID>
+								<iBlueprintLibrary-cAbsoluteBlueprintID>
+									<BlueprintSetID>
+										<iBlueprintLibrary-cBlueprintSetID>
+											<Provider d:type="cDeltaString">AlexAfirus</Provider>
+											<Product d:type="cDeltaString">KI Wagon Essentials</Product>
+										</iBlueprintLibrary-cBlueprintSetID>
+									</BlueprintSetID>
+									<BlueprintID d:type="cDeltaString">Audio\New\Wagen\3dz_Shmmns_Wagen_Audio.xml</BlueprintID>
+								</iBlueprintLibrary-cAbsoluteBlueprintID>
+							</BlueprintID>
+							<Matrix>
+								<cHcRMatrix4x4>
+									<Element>
+										<e d:type="sFloat32">1</e>
+										<e d:type="sFloat32">0</e>
+										<e d:type="sFloat32">0</e>
+										<e d:type="sFloat32">0</e>
+										<e d:type="sFloat32">0</e>
+										<e d:type="sFloat32">1</e>
+										<e d:type="sFloat32">0</e>
+										<e d:type="sFloat32">0</e>
+										<e d:type="sFloat32">0</e>
+										<e d:type="sFloat32">0</e>
+										<e d:type="sFloat32">1</e>
+										<e d:type="sFloat32">0</e>
+										<e d:type="sFloat32">0</e>
+										<e d:type="sFloat32">0</e>
+										<e d:type="sFloat32">0</e>
+										<e d:type="sFloat32">1</e>
+									</Element>
+								</cHcRMatrix4x4>
+							</Matrix>
+							<ParentNodeName d:type="cDeltaString"></ParentNodeName>
+						</cEntityContainerBlueprint-sChild>
+					</Children>
+				</cEntityContainerBlueprint>
+			</ContainerComponent>
+			<ScriptComponent>
+				<cScriptComponentBlueprint>
+					<Name d:type="cDeltaString">AlexAfirus\KI Wagon Essentials\Scripts\wagon_script_rnd</Name>
+				</cScriptComponentBlueprint>
+			</ScriptComponent>
+		</cWagonBlueprint>
+	</Blueprint>
 </cBlueprintLoader>

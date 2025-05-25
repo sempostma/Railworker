@@ -191,7 +191,12 @@ namespace RWLib.Packaging
                             xml.Descendants("English").First().Value = wagonName;
 
                             xml.Descendants("GeometryID").First().Value = t.GeoFileName;
-                            xml.Descendants("CollisionGeometryID").First().Value = t.GeoFileName;
+                            //xml.Descendants("CollisionGeometryID").First().Value = t.GeoFileName;
+
+                            if (!String.IsNullOrWhiteSpace(container.AutoNumber))
+                            {
+                                xml.Descendants("CsvFile").First().Value = container.AutoNumber;
+                            }
 
                             int childId = 1300;
 
@@ -208,7 +213,7 @@ namespace RWLib.Packaging
 
                                     var child = CreateChildTemplateXMl(
                                         childId++,
-                                        cargo.Name,
+                                        String.IsNullOrEmpty(cargo.ChildName) ? cargo.Name : cargo.ChildName,
                                         new RWBlueprintID(
                                             provider,
                                             product,

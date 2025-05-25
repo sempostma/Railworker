@@ -198,7 +198,7 @@ namespace Railworker.Windows
             dialog.IsFolderPicker = isFolderPicker;
             try
             {
-                dialog.DefaultDirectory = RWLib.RWUtils.GetTSPathFromSteamAppInRegistry();
+                dialog.DefaultDirectory = ((App)App.Current).RWLib.TSPath;
             }
             catch (TSPathInRegistryNotFoundException ex)
             {

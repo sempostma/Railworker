@@ -52,6 +52,8 @@
   <ItemGroup>
     <PackageReference Include="AvalonEdit" Version="6.3.0.90" />
     <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.2151.40" />
+    <PackageReference Include="SixLabors.ImageSharp" Version="3.1.8" />
+    <PackageReference Include="SixLabors.ImageSharp.Drawing" Version="2.1.6" />
     <PackageReference Include="System.Linq.Async" Version="6.0.1" />
     <PackageReference Include="WindowsAPICodePack" Version="7.0.4" />
   </ItemGroup>
@@ -59,6 +61,7 @@
   <ItemGroup>
     <ProjectReference Include="..\ComprehensiveRailworksArchiveNetwork\ComprehensiveRailworksArchiveNetwork.csproj" />
     <ProjectReference Include="..\Railworker.Language\Railworker.Language.csproj" />
+    <ProjectReference Include="..\RailworkerMegaFreightPack1\RailworkerMegaFreightPack1.csproj" />
     <ProjectReference Include="..\RWLib\RWLib.csproj" />
   </ItemGroup>
 

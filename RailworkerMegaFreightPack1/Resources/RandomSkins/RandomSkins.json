@@ -1,0 +1,223 @@
+{
+    "KI 20ft Mixed": [
+        {
+            "name": "20x2 Mix 1",
+            "autoNumber": "20ft_x2_mixed_1",
+            "cargo": [
+                {
+                    "filename": "20ft_mixed_1.bin",
+                    "name": "Cargo_A",
+                    "moveZ": -4.781067,
+                    "mass": 21700
+                },
+                {
+                    "filename": "20ft_mixed_1.bin",
+                    "name": "Cargo_B",
+                    "moveZ": 1.340678,
+                    "mass": 21700
+                }
+            ]
+        },
+        {
+            "name": "20x2 Mix 2",
+            "autoNumber": "20ft_x2_mixed_1",
+            "cargo": [
+                {
+                    "filename": "20ft_mixed_2.bin",
+                    "name": "Cargo_A",
+                    "moveZ": -4.781067,
+                    "mass": 21700
+                },
+                {
+                    "filename": "20ft_mixed_2.bin",
+                    "name": "Cargo_B",
+                    "moveZ": 1.340678,
+                    "mass": 21700
+                }
+            ]
+        },
+        {
+            "name": "20x2 Mix 3",
+            "autoNumber": "20ft_x2_mixed_1",
+            "cargo": [
+                {
+                    "filename": "20ft_mixed_3.bin",
+                    "name": "Cargo_A",
+                    "moveZ": -4.781067,
+                    "mass": 21700
+                },
+                {
+                    "filename": "20ft_mixed_3.bin",
+                    "name": "Cargo_B",
+                    "moveZ": 1.340678,
+                    "mass": 21700
+                }
+            ]
+        },
+        {
+            "name": "20x2 Mix 4",
+            "autoNumber": "20ft_x2_mixed_1",
+            "cargo": [
+                {
+                    "filename": "20ft_mixed_4.bin",
+                    "name": "Cargo_A",
+                    "moveZ": -4.781067,
+                    "mass": 21700
+                },
+                {
+                    "filename": "20ft_mixed_4.bin",
+                    "name": "Cargo_B",
+                    "moveZ": 1.340678,
+                    "mass": 21700
+                }
+            ]
+        }
+    ],
+    "KI 30ft": [
+        {
+            "name": "30 1",
+            "autoNumber": "30ft_1",
+            "filename": "30ft_1.bin",
+            "moveZ": -2.326782,
+            "mass": 23300
+        }
+    ],
+    "KI 40ft": [
+        {
+            "name": "40 1",
+            "autoNumber": "40ft_1",
+            "filename": "40ft_1.bin",
+            "moveZ": -1.735168,
+            "mass": 23200
+        },
+        {
+            "name": "40 2",
+            "autoNumber": "40ft_1",
+            "filename": "40ft_2.bin",
+            "moveZ": -1.735168,
+            "mass": 23200
+        }
+    ],
+    "KI 40ft HC": [
+        {
+            "name": "40 HC 1",
+            "autoNumber": "40ft_hc_1",
+            "filename": "40ft_hc_1.bin",
+            "moveZ": -1.735168,
+            "mass": 23100
+        },
+        {
+            "name": "40 HC 2",
+            "autoNumber": "40ft_hc_1",
+            "filename": "40ft_hc_2.bin",
+            "moveZ": -1.735168,
+            "mass": 23100
+        },
+        {
+            "name": "40 HC Reefers",
+            "autoNumber": "40ft_hc_1",
+            "filename": "40ft_hc_rf_1.bin",
+            "moveZ": -1.735168,
+            "mass": 23100
+        }
+    ],
+    "KI 40ft SILO": [
+        {
+            "name": "40 SILO",
+            "autoNumber": "40ft_silo_1",
+            "filename": "40ft_silo_1.bin",
+            "moveZ": -1.735168,
+            "mass": 29300
+        }
+    ],
+    "KI 782": [
+        {
+            "name": "782",
+            "autoNumber": "782_1",
+            "filename": "782_1.bin",
+            "moveZ": -3.865051,
+            "mass": 12300
+        }
+    ],
+    "KI 782 TT": [
+        {
+            "name": "782 TT 1",
+            "autoNumber": "782tt_mixed_1",
+            "filename": "782tt_1.bin",
+            "moveZ": -3.865051,
+            "mass": 33000
+        },
+        {
+            "name": "782 TT 2",
+            "autoNumber": "782tt_mixed_1",
+            "filename": "782tt_2.bin",
+            "moveZ": -3.865051,
+            "mass": 33000
+        }
+    ],
+    "KI 45ft HC": [
+        {
+            "autoNumber": "45ft_hc_1",
+            "filename": "45ft_hc_bechi.bin",
+            "name": "45 BECHI",
+            "mass": 26400,
+            "moveZ": -1.243652
+        },
+        {
+            "autoNumber": "45ft_hc_1",
+            "filename": "45ft_hc_dachi.bin",
+            "name": "45 DACHI",
+            "mass": 26400,
+            "moveZ": -1.243652
+
+        },
+        {
+            "autoNumber": "45ft_hc_1",
+            "filename": "45ft_hc_eu_ct.bin",
+            "name": "45 EU CT",
+            "mass": 26400,
+            "moveZ": -1.243652
+
+        },
+        {
+            "autoNumber": "45ft_hc_1",
+            "filename": "45ft_hc_eu_se.bin",
+            "name": "45 EU SE",
+            "mass": 26400,
+            "moveZ": -1.243652
+
+        },
+        {
+            "autoNumber": "45ft_hc_1",
+            "filename": "45ft_hc_ita_1.bin",
+            "name": "45 ITA 1",
+            "mass": 26400,
+            "moveZ": -1.243652
+
+        },
+        {
+            "autoNumber": "45ft_hc_1",
+            "filename": "45ft_hc_ita_2.bin",
+            "name": "45 ITA 2",
+            "mass": 26400,
+            "moveZ": -1.243652
+
+        },
+        {
+            "autoNumber": "45ft_hc_1",
+            "filename": "45ft_hc_nl.bin",
+            "name": "45 NL",
+            "mass": 26400,
+            "moveZ": -1.243652
+
+        },
+        {
+            "autoNumber": "45ft_sp",
+            "filename": "45ft_sp.bin",
+            "name": "45 Special",
+            "mass": 26400,
+            "moveZ": -1.243652,
+            "rotateY": -180 // To put the freezer units towards eachother instead of on the outside of a pair of sggmrss's
+        }
+    ]
+}

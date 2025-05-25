@@ -22,10 +22,11 @@ namespace RWLib.SerzClone
             _sUInt8,
             _sInt16,
             _sInt32,
+            _sUInt16,
             _sUInt32,
             _sUInt64,
             _sFloat32,
-            _cDeltaString
+            _cDeltaString,
         }
 
         public enum NodeType
@@ -117,6 +118,9 @@ namespace RWLib.SerzClone
                     return short.Parse(value);
                 case DataType._sInt32:
                     return int.Parse(value);
+
+                case DataType._sUInt16:
+                    return UInt16.Parse(value);
                 case DataType._sUInt32:
                     return uint.Parse(value);
                 case DataType._sUInt64:

@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cBlueprintLoader xmlns:d="http://www.kuju.com/TnT/2003/Delta" d:version="1.0">
+	<Blueprint>
+		<cReskinBlueprint>
+			<Name d:type="cDeltaString">90&apos; KI TAX 40 1 B</Name>
+			<BrowseInformation>
+				<iBrowseableBlueprint-cBrowseInformation>
+					<DisplayName>
+						<Localisation-cUserLocalisedString>
+							<English d:type="cDeltaString">90&apos; KI TAX 40 1 B</English>
+							<French d:type="cDeltaString"></French>
+							<Italian d:type="cDeltaString"></Italian>
+							<German d:type="cDeltaString"></German>
+							<Spanish d:type="cDeltaString"></Spanish>
+							<Dutch d:type="cDeltaString"></Dutch>
+							<Polish d:type="cDeltaString"></Polish>
+							<Russian d:type="cDeltaString"></Russian>
+							<Other/>
+							<Key d:type="cDeltaString"></Key>
+						</Localisation-cUserLocalisedString>
+					</DisplayName>
+					<Description>
+						<Localisation-cUserLocalisedString>
+							<English d:type="cDeltaString">A standard repaint for the Sggmrss, use rail vehicle number to change cargo. Cargo created by Alex95 and wagon by AlexAfirus.</English>
+							<French d:type="cDeltaString"></French>
+							<Italian d:type="cDeltaString"></Italian>
+							<German d:type="cDeltaString"></German>
+							<Spanish d:type="cDeltaString"></Spanish>
+							<Dutch d:type="cDeltaString"></Dutch>
+							<Polish d:type="cDeltaString"></Polish>
+							<Russian d:type="cDeltaString"></Russian>
+							<Other/>
+							<Key d:type="cDeltaString"></Key>
+						</Localisation-cUserLocalisedString>
+					</Description>
+					<Category d:type="cDeltaString">eRollingStock</Category>
+					<ValidInScenarios d:type="cDeltaString">eTrue</ValidInScenarios>
+				</iBrowseableBlueprint-cBrowseInformation>
+			</BrowseInformation>
+			<ReskinAssetBpId>
+				<iBlueprintLibrary-cAbsoluteBlueprintID>
+					<BlueprintSetID>
+						<iBlueprintLibrary-cBlueprintSetID>
+							<Provider d:type="cDeltaString">AlexAfirus</Provider>
+							<Product d:type="cDeltaString">KI Sggmrss90</Product>
+						</iBlueprintLibrary-cBlueprintSetID>
+					</BlueprintSetID>
+					<BlueprintID d:type="cDeltaString">sggmrss_40_1_b.xml</BlueprintID>
+				</iBlueprintLibrary-cAbsoluteBlueprintID>
+			</ReskinAssetBpId>
+			<TextureEntry>
+				<cReskinBlueprint-sTextureEntry d:id="976">
+					<TextureName d:type="cDeltaString">ki_wascosa</TextureName>
+					<TextureID d:type="cDeltaString">AlexAfirus\KI Sggmrss90 B-TOUAX\Textures\[00]ki_b_touax</TextureID>
+				</cReskinBlueprint-sTextureEntry>
+			</TextureEntry>
+		</cReskinBlueprint>
+	</Blueprint>
+</cBlueprintLoader>

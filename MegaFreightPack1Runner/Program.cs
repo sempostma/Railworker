@@ -14,17 +14,19 @@ namespace MegaFreightPack1Runner
         static async Task Run()
         {
             RandomContainerGenerator generator = new RandomContainerGenerator();
-             await generator.Build(new CancellationTokenSource().Token);
+            await generator.Build(new CancellationTokenSource().Token);
+
+            AfirusSggmrssGenerator afirusGen = new AfirusSggmrssGenerator();
+            //await afirusGen.CorrectGeopcdxReference();
+            await afirusGen.GenerateVariants();
+            await afirusGen.GenerateReskinBlueprints();
+            //await afirusGen.CreatePreloadBlueprint();
 
             //await Scripts.CreateRandomSkins();
             //await Scripts.ConvertToPNGsForPreview();
 
             //CTSgnsGenerator gen = new CTSgnsGenerator();
             //await gen.GenerateVariants();
-            //AfirusSggmrssGenerator afirusGen = new AfirusSggmrssGenerator();
-            //await afirusGen.CorrectGeopcdxReference();
-            //await afirusGen.GenerateVariants();
-            //await afirusGen.CreatePreloadBlueprint();
         }
     }
 }

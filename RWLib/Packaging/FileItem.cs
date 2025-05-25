@@ -25,6 +25,12 @@ namespace RWLib.Packaging
         [JsonPropertyName("cargoAsChild")]
         public bool CargoAsChild { get; set; } = false;
 
+        [JsonPropertyName("childName")]
+        public string ChildName { get; set; } = "";
+
+        [JsonPropertyName("autoNumber")]
+        public string AutoNumber { get; set; } = "";
+
         public static List<FileItem> FromJson(string jsonString)
         {
             var options = new JsonSerializerOptions

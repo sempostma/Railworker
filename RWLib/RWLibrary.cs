@@ -3,6 +3,7 @@ using RWLib.Graphics;
 using RWLib.Packaging;
 using System.IO.Compression;
 using System.Text;
+using System.Xml.Linq;
 
 namespace RWLib
 {
@@ -20,6 +21,7 @@ namespace RWLib
         public RWRailDriver RailDriver { get; }
         public RWVariantGenerator VariantGenerator { get; }
         public RWTgPcDxLoader TgPcDxLoader { get; }
+        public RWImageDecoder ImageDecoder { get; }
 
         public RWLibrary(RWLibOptions? options = null)
         {
@@ -32,6 +34,7 @@ namespace RWLib
             RailDriver = CreatRailDriver();
             VariantGenerator = CreateVariantGenerator(Serializer);
             TgPcDxLoader = CreateTgPcDxLoader(Serializer);
+            ImageDecoder = CreateImageDecoder();
         }
 
         private RWSerializer CreateSerializer(bool useCustomSerz = false)
@@ -69,6 +72,11 @@ namespace RWLib
         private RWRailDriver CreatRailDriver()
         {
             return new RWRailDriver(this);
+        }
+
+        private RWImageDecoder CreateImageDecoder()
+        {
+            return new RWImageDecoder(this);
         }
 
         public void WriteZipFile(RWPackageInfo info, string destinationFile)
@@ -257,6 +265,50 @@ namespace RWLib
                     Archive = file
                 };
             }
+        }
+
+        public XDocument CreateDCSV(string csvFileName)
+        {
+            // Create the root element with namespace
+            XElement root = new XElement("cCSVArray",
+                new XAttribute(XNamespace.Xmlns + "d", RWUtils.KujuNamspace),
+                new XAttribute(RWUtils.KujuNamspace + "version", "1.0"),
+                new XAttribute(RWUtils.KujuNamspace + "id", "1"));
+
+            // Create the CSVItem container
+            XElement csvItemContainer = new XElement("CSVItem");
+
+            string[] lines = File.ReadAllLines(csvFileName);
+
+            for (int i = 0; i < lines.Length; i++)
+            {
+                string line = lines[i];
+                string[] values = line.Split(',');
+
+                XElement csvItem = new XElement("cCSVItem",
+                    new XAttribute(RWUtils.KujuNamspace + "id", (i + 2).ToString()), // Start IDs from 2
+                    new XElement("X",
+                        new XAttribute(RWUtils.KujuNamspace + "type", "sFloat32"),
+                        values[0].Trim()),
+                    new XElement("Y",
+                        new XAttribute(RWUtils.KujuNamspace + "type", "sFloat32"),
+                        values[1].Trim()),
+                    new XElement("Name",
+                        new XAttribute(RWUtils.KujuNamspace + "type", "cDeltaString"),
+                        values[2].Trim())
+                );
+
+                csvItemContainer.Add(csvItem);
+            }
+
+            root.Add(csvItemContainer);
+
+            XDocument document = new XDocument(
+                new XDeclaration("1.0", "utf-8", null),
+                root
+            );
+
+            return document;
         }
     }
 }

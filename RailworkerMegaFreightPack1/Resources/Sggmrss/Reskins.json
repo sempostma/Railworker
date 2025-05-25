@@ -1,0 +1,79 @@
+{
+    "reskins": [
+        {
+            "texture": "KI Sggmrss90 B-TOUAX\\Textures\\ki_b_touax.png",
+            "name": "B-TOUAX",
+            "shortName": "TAX"
+        },
+        {
+            "texture": "KI Sggmrss90 CH-HUPAC\\Textures\\ki_ch_hupac1.png",
+            "name": "CH-HUPAC",
+            "shortName": "HUP 1"
+        },
+        {
+            "texture": "KI Sggmrss90 CH-HUPAC\\Textures\\ki_ch_hupac2.png",
+            "name": "CH-HUPAC",
+            "shortName": "HUP 2"
+        },
+        {
+            "texture": "KI Sggmrss90 CZ-GTSL\\Textures\\ki_gts.png",
+            "name": "CZ-GTSL",
+            "shortName": "GTS"
+        },
+        {
+            "texture": "KI Sggmrss90 D-AEC\\Textures\\ki_aaec.png",
+            "name": "D-AEC",
+            "shortName": "AEC"
+        },
+        {
+            "texture": "KI Sggmrss90 D-MFDR\\Textures\\ki_d_mfdr.png",
+            "name": "D-MFDR",
+            "shortName": "MFD"
+        },
+        {
+            "texture": "KI Sggmrss90 D-RCW\\Textures\\ki_d_rcw.png",
+            "name": "D-RCW",
+            "shortName": "RCW"
+        },
+        {
+            "texture": "KI Sggmrss90 D-VTGCH\\Textures\\ki_d_vtgch.png",
+            "name": "D-VTGCH",
+            "shortName": "VTG"
+        },
+        {
+            "texture": "KI Sggmrss90 F-ERSA\\Textures\\ki_f_ersa.png",
+            "name": "F-ERSA",
+            "shortName": "ERS"
+        },
+        {
+            "texture": "KI Sggmrss90 I-AMBR\\Textures\\ki_i_ambr.png",
+            "name": "I-AMBR",
+            "shortName": "AMB"
+        },
+        {
+            "texture": "KI Sggmrss90 NL-EUWAG\\Textures\\ki_nl_euwag.png",
+            "name": "NL-EUWAG",
+            "shortName": "EUW"
+        },
+        {
+            "texture": "KI Sggmrss90 NL-RRL\\Textures\\ki_nl_rrl.png",
+            "name": "NL-RRL",
+            "shortName": "RRL"
+        },
+        {
+            "texture": "KI Sggmrss90 PL-CLIP\\Textures\\ki_pl_clip.png",
+            "name": "PL-CLIP",
+            "shortName": "CLP"
+        },
+        {
+            "texture": "KI Sggmrss90 PL-PCC\\Textures\\ki_pl_pcc.png",
+            "name": "PL-PCC",
+            "shortName": "PCC"
+        },
+        {
+            "texture": "KI Sggmrss90 PL-PKP\\Textures\\ki_pl_pkpc.png",
+            "name": "PL-PKP",
+            "shortName": "PKP"
+        }
+    ]
+}

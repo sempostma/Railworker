@@ -236,7 +236,7 @@ class Program
 
                 var geo = "3DZUG\\3dz_KIPack\\RailVehicles\\Cargo\\[00]" + geoFile;
                 template.Descendants("GeometryID").First().Value = geo;
-                template.Descendants("CollisionGeometryID").First().Value = geo;
+                //template.Descendants("CollisionGeometryID").First().Value = geo;
 
                 var cargoChildElement = template.Descendants("cEntityContainerBlueprint-sChild").Skip(1).First(x => x.Element("ChildName")!.Value == "Cargo");
 
