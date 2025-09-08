@@ -7,7 +7,7 @@
       xmlns:lang="clr-namespace:Railworker.Language;assembly=Railworker.Language"
       mc:Ignorable="d" 
       d:DesignHeight="700" d:DesignWidth="1000"
-      Title="Compositions">
+      Title="RandomSkins">
 
     <Grid>
         <Grid.RowDefinitions>
@@ -18,34 +18,90 @@
 
         <!-- Top toolbar -->
         <ToolBar Grid.Row="0">
-            <Button x:Name="OpenFileButton" Content="Open Compositions File" Click="OpenFileButton_Click" Margin="5"/>
-            <Button x:Name="SaveFileButton" Content="Save Compositions File" Click="SaveFileButton_Click" Margin="5"/>
+            <Button x:Name="OpenCompositionsFileButton" Content="Open Compositions File" Click="OpenCompositionsFileButton_Click" Margin="5"/>
+            <Button x:Name="SaveCompositionsFileButton" Content="Save Compositions File" Click="SaveCompositionsFileButton_Click" Margin="5"/>
+            <Separator/>
+            <Button x:Name="OpenRandomSkinsFileButton" Content="Open RandomSkins File" Click="OpenRandomSkinsFileButton_Click" Margin="5"/>
+            <Button x:Name="SaveRandomSkinsFileButton" Content="Save RandomSkins File" Click="SaveRandomSkinsFileButton_Click" Margin="5"/>
             <Separator/>
             <Button x:Name="AddCompositionButton" Content="Add New Composition" Click="AddCompositionButton_Click" Margin="5"/>
             <Button x:Name="RemoveCompositionButton" Content="Remove Composition" Click="RemoveCompositionButton_Click" Margin="5"/>
+            <Separator/>
+            <Button x:Name="AddRandomSkinGroupButton" Content="Add RandomSkin Group" Click="AddRandomSkinGroupButton_Click" Margin="5"/>
+            <Button x:Name="RemoveRandomSkinGroupButton" Content="Remove RandomSkin Group" Click="RemoveRandomSkinGroupButton_Click" Margin="5"/>
         </ToolBar>
 
         <!-- Main content area -->
         <Grid Grid.Row="1">
-            <ListView x:Name="CompositionsListView" ItemsSource="{Binding Compositions}" 
-                      SelectionChanged="CompositionsListView_SelectionChanged" Margin="10">
-                <ListView.View>
-                    <GridView>
-                        <GridViewColumn Header="ID" DisplayMemberBinding="{Binding Id}" Width="150"/>
-                        <GridViewColumn Header="Name" DisplayMemberBinding="{Binding Name}" Width="250"/>
-                        <GridViewColumn Header="Full Skins Amount" DisplayMemberBinding="{Binding FullSkinsAmount}" Width="120"/>
-                        <GridViewColumn Header="Base Path" DisplayMemberBinding="{Binding BasePath}" Width="300"/>
-                        <GridViewColumn Header="Projections" DisplayMemberBinding="{Binding Projections.Count}" Width="80"/>
-                        <GridViewColumn Header="Actions" Width="100">
-                            <GridViewColumn.CellTemplate>
-                                <DataTemplate>
-                                    <Button Content="Edit" Click="EditComposition_Click" Tag="{Binding}" Margin="2"/>
-                                </DataTemplate>
-                            </GridViewColumn.CellTemplate>
-                        </GridViewColumn>
-                    </GridView>
-                </ListView.View>
-            </ListView>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="5"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <!-- Top panel - Compositions -->
+            <GroupBox Grid.Row="0" Header="Compositions" Margin="10">
+                <ListView x:Name="CompositionsListView" ItemsSource="{Binding Compositions}" 
+                          SelectionChanged="CompositionsListView_SelectionChanged">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="ID" DisplayMemberBinding="{Binding Id}" Width="150"/>
+                            <GridViewColumn Header="Name" DisplayMemberBinding="{Binding Name}" Width="200"/>
+                            <GridViewColumn Header="Full Skins Amount" DisplayMemberBinding="{Binding FullSkinsAmount}" Width="120"/>
+                            <GridViewColumn Header="Base Path" DisplayMemberBinding="{Binding BasePath}" Width="250"/>
+                            <GridViewColumn Header="Projections" DisplayMemberBinding="{Binding Projections.Count}" Width="80"/>
+                            <GridViewColumn Header="Actions" Width="100">
+                                <GridViewColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <Button Content="Edit" Click="EditComposition_Click" Tag="{Binding}" Margin="2"/>
+                                    </DataTemplate>
+                                </GridViewColumn.CellTemplate>
+                            </GridViewColumn>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+            </GroupBox>
+
+            <GridSplitter Grid.Row="1" HorizontalAlignment="Stretch" Background="LightGray"/>
+
+            <!-- Bottom panel - RandomSkins -->
+            <GroupBox Grid.Row="2" Header="RandomSkin Groups" Margin="10">
+                <ListView x:Name="RandomSkinGroupsListView" ItemsSource="{Binding RandomSkinGroups}" 
+                          SelectionChanged="RandomSkinGroupsListView_SelectionChanged">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="ID" DisplayMemberBinding="{Binding Id}" Width="200"/>
+                            <GridViewColumn Header="RandomSkins Count" DisplayMemberBinding="{Binding RandomSkins.Count}" Width="150"/>
+                            <GridViewColumn Header="Total Skins" Width="120">
+                                <GridViewColumn.DisplayMemberBinding>
+                                    <Binding>
+                                        <Binding.Converter>
+                                            <local:TotalSkinsConverter/>
+                                        </Binding.Converter>
+                                    </Binding>
+                                </GridViewColumn.DisplayMemberBinding>
+                            </GridViewColumn>
+                            <GridViewColumn Header="Missing Compositions" Width="150">
+                                <GridViewColumn.DisplayMemberBinding>
+                                    <Binding>
+                                        <Binding.Converter>
+                                            <local:MissingCompositionsConverter/>
+                                        </Binding.Converter>
+                                        <Binding.ConverterParameter>{Binding DataContext.Compositions, RelativeSource={RelativeSource AncestorType=Page}}</Binding.ConverterParameter>
+                                    </Binding>
+                                </GridViewColumn.DisplayMemberBinding>
+                            </GridViewColumn>
+                            <GridViewColumn Header="Actions" Width="100">
+                                <GridViewColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <Button Content="Edit" Click="EditRandomSkinGroup_Click" Tag="{Binding}" Margin="2"/>
+                                    </DataTemplate>
+                                </GridViewColumn.CellTemplate>
+                            </GridViewColumn>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+            </GroupBox>
         </Grid>
 
         <!-- Status bar -->

@@ -100,7 +100,9 @@ namespace RailworkerMegaFreightPack1
                 //if (randomskinGroup.Id.StartsWith("40") == false) continue;
                 //if (randomskinGroup.Id.StartsWith("40ft_hc") == false) continue;
                 //if (randomskinGroup.Id.StartsWith("20ft_mixed") == false) continue;
-                if (randomskinGroup.Id.StartsWith("782") == false) continue;
+                if (randomskinGroup.Id.StartsWith("20ft") == false) continue;
+
+                var relatedGroups = randomSkinGroups.Where(x => x.Id != randomskinGroup.Id && x.Kind == randomskinGroup.Kind && x.Kind != null).ToList();
 
                 Console.WriteLine("Creating randomskin: " + randomskinGroup.Id);
 
@@ -115,7 +117,7 @@ namespace RailworkerMegaFreightPack1
 
                 foreach (var randomSkin in randomskinGroup.RandomSkins)
                 {
-                    randomSkin.OrderSkins();
+                    randomSkin.FillAndOrderSkins(relatedGroups);
                 }
 
                 catalogGenerator.GenerateHtml(randomskinGroup, compositions);
@@ -134,6 +136,7 @@ namespace RailworkerMegaFreightPack1
                 };
 
                 //var container45NameFromTexture = new Regex(@"GW_45FT_(.+?)[\\/]Childs[\\/]textures[\\/]45_([^\.]+)");
+                Directory.CreateDirectory("thumbnails");
                 Directory.CreateDirectory(Path.Join("thumbnails", randomskinGroup.Id));
 
                 foreach (var rndExample in tasks.GroupBy(task => task.RandomSkin.Id))

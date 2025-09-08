@@ -140,7 +140,7 @@
 							</Element>
 						</cHcRMatrix4x4>
 					</RearCouplingReceivingPoint>
-					<Mass d:type="sFloat32">46.3</Mass>
+					<Mass d:type="sFloat32">13.9</Mass>
 					<EaseOfDerailment d:type="sFloat32">0.4375</EaseOfDerailment>
 					<FrontPivotX d:type="sFloat32">8.78527</FrontPivotX>
 					<FrontPivotY d:type="sFloat32">1.04762</FrontPivotY>

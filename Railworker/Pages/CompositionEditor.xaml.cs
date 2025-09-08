@@ -204,7 +204,6 @@ namespace Railworker.Pages
                             Name = System.IO.Path.GetFileNameWithoutExtension(textureFile),
                             Group = "Preview",
                             Id = $"Preview_{i}",
-                            Rarity = 1
                         };
 
                         randomSkin.Skins.Add(skinTexture);
@@ -404,7 +403,6 @@ namespace Railworker.Pages
                         Name = System.IO.Path.GetFileNameWithoutExtension(textureFile),
                         Group = "Preview",
                         Id = "Preview",
-                        Rarity = 1
                     };
 
                     // Create a dummy RandomSkin for the ComposedTextureGenerator
@@ -771,9 +769,6 @@ namespace Railworker.Pages
                 {
                     Projections.Add(projection);
                 }
-                
-                // In a real implementation, we would also load the RandomSkins that use this composition
-                // For now, we'll leave the RandomSkins collection empty
             }
 
             public Composition GetComposition()

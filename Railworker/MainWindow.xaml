@@ -32,11 +32,13 @@
                 </MenuItem>
                 <MenuItem Header="{x:Static lang:Resources.rolling_stock}">
                     <MenuItem Header="{x:Static lang:Resources.repaint_updater}" Click="MenuItem_RollingStock_RepaintUpdater" />
+                    <MenuItem Header="Train Performance Calculator" Click="MenuItem_TrainPerformanceCalculator_Click" />
                 </MenuItem>
                 <MenuItem Header="{x:Static lang:Resources.graphics}">
                     <MenuItem Header="{x:Static lang:Resources.tgpcdx_viewer}" Click="MenuItem_Graphics_TgPcDxViewer_Click" />
                     <MenuItem Header="{x:Static lang:Resources.compositions}" Click="MenuItem_Graphics_CompositionEditor_Click" />
                     <MenuItem Header="Composition Editor" Click="MenuItem_Graphics_SingleCompositionEditor_Click" />
+                    <MenuItem Header="Random Skins" Click="MenuItem_Graphics_RandomSkins_Click" />
                 </MenuItem>
                 <MenuItem Header="{x:Static lang:Resources.cran}">
                     <MenuItem Header="{x:Static lang:Resources.management}" Click="MenuItem_Management" />

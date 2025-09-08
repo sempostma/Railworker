@@ -312,7 +312,7 @@ namespace Railworker
             OpenTab(new MainWindowViewModel.Tab
             {
                 FrameContent = new Compositions(),
-                Header = Railworker.Language.Resources.compositions
+                Header = "Random Skins"
             });
         }
         
@@ -322,6 +322,24 @@ namespace Railworker
             {
                 FrameContent = new CompositionEditor(),
                 Header = "Composition Editor"
+            });
+        }
+        
+        private void MenuItem_Graphics_RandomSkins_Click(object sender, RoutedEventArgs e)
+        {
+            OpenTab(new MainWindowViewModel.Tab
+            {
+                FrameContent = new Compositions(),
+                Header = "Random Skins"
+            });
+        }
+
+        private void MenuItem_TrainPerformanceCalculator_Click(object sender, RoutedEventArgs e)
+        {
+            OpenTab(new MainWindowViewModel.Tab
+            {
+                FrameContent = new TrainPerformanceCalculator(),
+                Header = "Train Performance"
             });
         }
     }

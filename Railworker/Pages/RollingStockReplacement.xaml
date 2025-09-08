@@ -10,6 +10,10 @@
       xmlns:Converters="clr-namespace:Railworker.Converters"
         Title="{Binding Title}" Height="781" Width="1204">
     <DockPanel Margin="10">
+        <!-- Toolbar -->
+        <ToolBar DockPanel.Dock="Top" Padding="2" Height="32">
+            <Button x:Name="BrakeCalcButton" Content="Brake % Calc" Click="BrakeCalcButton_Click" ToolTip="Open brake percentage calculator for selected consist"/>
+        </ToolBar>
         <Grid DockPanel.Dock="Bottom">
             <Button Content="{x:Static lang:Resources.save}" Click="Save_Click" HorizontalAlignment="Left" Width="135" Height="26" VerticalAlignment="Center"/>
             <Grid Visibility="{Binding LoadingBarVisible, NotifyOnSourceUpdated=True, Mode=OneWay}" HorizontalAlignment="Right" Width="525">

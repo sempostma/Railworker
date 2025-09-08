@@ -15,6 +15,9 @@ using System.Linq;
 using RWLib.Interfaces;
 using Railworker.Core;
 using System.Windows.Input;
+using RWLib.RWBlueprints.Interfaces;
+using RWLib.RWBlueprints.Components;
+using RWLib.RWBlueprints.Blueprints;
 
 namespace Railworker.Pages
 {
@@ -433,6 +436,67 @@ namespace Railworker.Pages
                 {
                     RWConsistVehicle = vehicle
                 });
+            }
+        }
+
+        private async void BrakeCalcButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (ViewModel.SelectedConsist == null)
+            {
+                MessageBox.Show("Please select a consist first.", "Brake % Calculator", MessageBoxButton.OK, MessageBoxImage.Information);
+                return;
+            }
+
+            try
+            {
+                var rwLib = App.RWLib!;
+                double totalMass = 0; // tons
+                double totalBrakingWeight = 0; // tons equivalent
+                int vehicleCount = 0;
+
+                foreach (var consistVehicle in ViewModel.SelectedConsist.RWConsist.Vehicles)
+                {
+                    var blueprint = await rwLib.BlueprintLoader.FromBlueprintID(consistVehicle.BlueprintID) as IRWRailVehicleBlueprint;
+                    if (blueprint == null) continue;
+
+                    IBrakeAssembly? brakeAssembly = null;
+                    double mass = consistVehicle.Component.TotalMass; // tons already
+
+                    if (blueprint is RWEngineBlueprint engineBp)
+                    {
+                        var simId = engineBp.EngineSimulationBlueprint;
+                        var simBlueprint = await rwLib.BlueprintLoader.FromBlueprintID(simId) as IRWEngineSimulationBlueprint;
+                        if (simBlueprint != null)
+                        {
+                            brakeAssembly = simBlueprint.TrainBrakeAssembly;
+                        }
+                    }
+                    else if (blueprint is RWWagonBlueprint wagonBp)
+                    {
+                        brakeAssembly = wagonBp.RailVehicleComponent.TrainBrakeAssembly;
+                    }
+
+                    var percent = brakeAssembly is AirBrakeSimulation air ? air.MaxForcePercentOfVehicleWeight : 0.0;
+                    var brakingWeight = mass * (percent / 100.0); // tons equivalent
+
+                    totalMass += mass;
+                    totalBrakingWeight += brakingWeight;
+                    vehicleCount++;
+                }
+
+                if (vehicleCount == 0 || totalMass <= 0)
+                {
+                    MessageBox.Show("Failed to determine consist data.", "Brake % Calculator", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    return;
+                }
+
+                var brh = totalBrakingWeight / totalMass * 100.0;
+
+                MessageBox.Show($"Consist vehicles: {vehicleCount}\nTotal mass: {totalMass:F1} t\nBraking weight: {totalBrakingWeight:F1} t\nBRH: {brh:F1}%", "Brake % Calculator", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error calculating brake percentage: " + ex.Message, "Brake % Calculator", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
     }

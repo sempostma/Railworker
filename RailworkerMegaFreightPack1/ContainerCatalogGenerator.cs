@@ -31,6 +31,7 @@ namespace RailworkerMegaFreightPack1
             sb.AppendLine("    <style>");
             sb.AppendLine("        body { font-family: Arial, sans-serif; margin: 0; padding: 20px; background-color: #f5f5f5; }");
             sb.AppendLine("        h1, h2 { text-align: center; color: #333; }");
+            sb.AppendLine("        small { display:block; text-align: center; color: #333; margin: 8px; font-weight: bold; }");
             sb.AppendLine("        .group-section { margin-bottom: 40px; }");
             sb.AppendLine("        .container-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px; }");
             sb.AppendLine("        .container-card { background-color: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }");
@@ -137,17 +138,20 @@ namespace RailworkerMegaFreightPack1
 
                 sb.AppendLine($"    <div class=\"group-section\">");
                 sb.AppendLine($"        <h2>Group: {group.Id}</h2>");
-                sb.AppendLine($"        <div class=\"container-grid\">");
 
                 foreach (var randomSkin in group.RandomSkins)
                 {
                     var composition = compositions.FirstOrDefault(x => x.Id == randomSkin.Composition);
                     if (composition == null) continue;
 
-                    sb.AppendLine($"        <small class=\"container-grid\">sub gruop: {randomSkin.Name}</small>");
+                    if (group.RandomSkins.Count > 1)
+                    {
+                        sb.AppendLine($"        <small>{randomSkin.Name}</small>");
+                    }
+                    sb.AppendLine($"        <div class=\"container-grid\">");
 
                     foreach (var skin in randomSkin.Skins)
-                    {
+                        {
                         if (String.IsNullOrEmpty(skin.Texture)) continue;
                         string thumbnailPath = Path.Combine(_thumbnailsBasePath, group.Id, $"{cargoNumber}.png");
 
@@ -178,10 +182,11 @@ namespace RailworkerMegaFreightPack1
 
                         cargoNumber++;
                     }
+                    sb.AppendLine("        </div>");
+
                 }
 
-                sb.AppendLine("        </div>");
-                sb.AppendLine("    </div>");
+            sb.AppendLine("    </div>");
             }
 
         private Dictionary<string, string> LoadILUKeys()

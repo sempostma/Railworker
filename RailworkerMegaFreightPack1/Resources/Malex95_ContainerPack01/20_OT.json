@@ -97,13 +97,13 @@
       "CH-WASCO"
     ]
   },
-  {
-    "filename": "RailNetwork\\Interactive\\20_OT\\TPSU.bin",
-    "name": "TPSU 1",
-    "filterWagonType": [
-      "CH-WASCO"
-    ]
-  },
+    {
+        "filename": "RailNetwork\\Interactive\\20_OT\\TSPU.bin",
+        "name": "TSPU 1",
+        "filterWagonType": [
+            "CH-WASCO"
+        ]
+    },
   {
     "filename": "RailNetwork\\Interactive\\20_OT\\VRZU 02.bin",
     "name": "VRZU 2",

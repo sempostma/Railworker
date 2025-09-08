@@ -1,6 +1,7 @@
 [
     {
         "id": "45ft_hc_bechi",
+        "kind": "45ft_hc",
         "randomSkins": [
             {
                 "id": "45ft_hc_bechi",
@@ -230,6 +231,7 @@
     },
     {
         "id": "45ft_hc_dachi",
+        "kind": "45ft_hc",
         "randomSkins": [
             {
                 "id": "45ft_hc_dachi",
@@ -459,6 +461,7 @@
     },
     {
         "id": "45ft_hc_eu_ct",
+        "kind": "45ft_hc",
         "randomSkins": [
             {
                 "id": "45ft_hc_eu_ct",
@@ -688,6 +691,7 @@
     },
     {
         "id": "45ft_hc_eu_se",
+        "kind": "45ft_hc",
         "randomSkins": [
             {
                 "id": "45ft_hc_eu_se",
@@ -917,6 +921,7 @@
     },
     {
         "id": "45ft_hc_ita_1",
+        "kind": "45ft_hc",
         "randomSkins": [
             {
                 "id": "45ft_hc_ita_1",
@@ -1146,6 +1151,7 @@
     },
     {
         "id": "45ft_hc_ita_2",
+        "kind": "45ft_hc",
         "randomSkins": [
             {
                 "id": "45ft_hc_ita_2",
@@ -1375,6 +1381,7 @@
     },
     {
         "id": "45ft_hc_nl",
+        "kind": "45ft_hc",
         "randomSkins": [
             {
                 "id": "45ft_hc_nl",
@@ -1702,23 +1709,39 @@
                 ]
             },
             {
+                "id": "45ft_sp_c69",
+                "composition": "45ft_sp",
+                "name": "N C69",
+                "fullSkinsAmount": 1,
+                "skins": [
+                    {
+                        "id": "45_N_EKOE_2_C69",
+                        "name": "45_N_EKOE_2_C69",
+                        "group": "EKOE",
+                        "texture": "45_N_EKOE_2_C69.dds"
+                    }
+                ]
+            },
+            {
+                "id": "45ft_sp_c75",
+                "composition": "45ft_sp",
+                "name": "N C75",
+                "fullSkinsAmount": 1,
+                "skins": [
+                    {
+                        "id": "45_N_PCEU_1_C75",
+                        "name": "45_N_PCEU_1_C75",
+                        "group": "PCEU",
+                        "texture": "45_N_PCEU_1_C75.dds"
+                    }
+                ]
+            },
+            {
                 "id": "45ft_sp_c78",
                 "composition": "45ft_sp",
                 "name": "N C78",
-                "fullSkinsAmount": 4,
+                "fullSkinsAmount": 2,
                 "skins": [
-                    {
-                        "id": "45_N_EKOE_2_C78",
-                        "name": "45_N_EKOE_2_C78",
-                        "group": "EKOE",
-                        "texture": "45_N_EKOE_2_C78.dds"
-                    },
-                    {
-                        "id": "45_N_PCEU_1_C78",
-                        "name": "45_N_PCEU_1_C78",
-                        "group": "PCEU",
-                        "texture": "45_N_PCEU_1_C78.dds"
-                    },
                     {
                         "id": "45_N_SLIA_1_C78",
                         "name": "45_N_SLIA_1_C78",
@@ -1881,6 +1904,7 @@
     },
     {
         "id": "40ft_1",
+        "kind": "40ft",
         "randomSkins": [
             {
                 "id": "40ft_1",
@@ -2110,6 +2134,7 @@
     },
     {
         "id": "40ft_2",
+        "kind": "40ft",
         "randomSkins": [
             {
                 "id": "40ft_2",
@@ -2213,12 +2238,13 @@
     },
     {
         "id": "30ft_1",
+        "kind": "30ft",
         "randomSkins": [
             {
-                "id": "30ft_1",
-                "fullSkinsAmount": 22,
-                "composition": "30ft_1",
-                "name": "30ft containers",
+                "id": "30ft_c00_special",
+                "fullSkinsAmount": 2,
+                "composition": "30ft_3",
+                "name": "30ft C00 Special",
                 "skins": [
                     {
                         "id": "EUFU",
@@ -2227,40 +2253,30 @@
                         "texture": "30FT/BULK/textures/C00_EUFU.dds"
                     },
                     {
-                        "id": "KALE 2",
-                        "name": "KALE 2",
-                        "group": "KALE",
-                        "texture": "30FT/BULK/textures/C00_KALE_02.dds"
-                    },
+                        "id": "EUFU 02",
+                        "name": "EUFU 02",
+                        "group": "EUFU",
+                        "texture": "30FT/BULK/textures/C00_EUFU_02.dds"
+                    }
+                ]
+            },
+            {
+                "id": "30ft_c00_regular",
+                "fullSkinsAmount": 6,
+                "composition": "30ft_1",
+                "name": "30ft C00 Regular",
+                "skins": [
                     {
-                        "id": "KEID 2",
-                        "name": "KEID 2",
-                        "group": "KEID",
-                        "texture": "30FT/BULK/textures/C00_KEID_2.dds"
-                    },
-                    {
-                        "id": "KEID 3",
-                        "name": "KEID 3",
-                        "group": "KEID",
-                        "texture": "30FT/BULK/textures/C00_KEID_3.dds"
-                    },
-                    {
-                        "id": "KEID 5",
-                        "name": "KEID 5",
-                        "group": "KEID",
-                        "texture": "30FT/BULK/textures/C00_KEID_5.dds"
-                    },
-                    {
-                        "id": "LOEB 2",
-                        "name": "LOEB 2",
+                        "id": "LOEB",
+                        "name": "LOEB",
                         "group": "LOEB",
-                        "texture": "30FT/BULK/textures/C00_LOEB2.dds"
+                        "texture": "30FT/BULK/textures/C00_LOEB.dds"
                     },
                     {
-                        "id": "LOEB 3",
-                        "name": "LOEB 3",
+                        "id": "LOEB4",
+                        "name": "LOEB4",
                         "group": "LOEB",
-                        "texture": "30FT/BULK/textures/C00_LOEB3.dds"
+                        "texture": "30FT/BULK/textures/C00_LOEB4.dds"
                     },
                     {
                         "id": "LOEB 5",
@@ -2269,23 +2285,25 @@
                         "texture": "30FT/BULK/textures/C00_LOEB_5.dds"
                     },
                     {
-                        "id": "RSTD",
-                        "name": "RSTD",
-                        "group": "RSTD",
-                        "texture": "30FT/BULK/textures/C00_RSTD.dds"
-                    },
-                    {
-                        "id": "RSTD 2",
-                        "name": "RSTD 2",
+                        "id": "RSTD2",
+                        "name": "RSTD2",
                         "group": "RSTD",
                         "texture": "30FT/BULK/textures/C00_RSTD2.dds"
                     },
                     {
-                        "id": "TPSU",
-                        "name": "TPSU",
-                        "group": "TPSU",
-                        "texture": "30FT/BULK/textures/C00_TPSU.dds"
-                    },
+                        "id": "RSTD",
+                        "name": "RSTD",
+                        "group": "RSTD",
+                        "texture": "30FT/BULK/textures/C00_RSTD.dds"
+                    }
+                ]
+            },
+            {
+                "id": "30ft_c03",
+                "fullSkinsAmount": 2,
+                "composition": "30ft_3",
+                "name": "30ft C03",
+                "skins": [
                     {
                         "id": "SAIU",
                         "name": "SAIU",
@@ -2297,13 +2315,174 @@
                         "name": "VZRU",
                         "group": "VZRU",
                         "texture": "30FT/BULK/textures/C03_VZRU.dds"
+                    }
+                ]
+            },
+            {
+                "id": "30ft_c12_special",
+                "fullSkinsAmount": 1,
+                "composition": "30ft_3",
+                "name": "30ft C12 Special",
+                "skins": [
+                    {
+                        "id": "MISA",
+                        "name": "MISA",
+                        "group": "MISA",
+                        "texture": "30FT/BULK/textures/C12_MISA.dds"
+                    }
+                ]
+            },
+            {
+                "id": "30ft_c12_regular",
+                "fullSkinsAmount": 1,
+                "composition": "30ft_1",
+                "name": "30ft C12 Regular",
+                "skins": [
+                    {
+                        "id": "RSTD",
+                        "name": "RSTD",
+                        "group": "RSTD",
+                        "texture": "30FT/BULK/textures/C12_RSTD.dds"
+                    }
+                ]
+            },
+            {
+                "id": "30ft_c18",
+                "fullSkinsAmount": 1,
+                "composition": "30ft_1",
+                "name": "30ft C18",
+                "skins": [
+                    {
+                        "id": "KEID",
+                        "name": "KEID",
+                        "group": "KEID",
+                        "texture": "30FT/BULK/textures/C18_KEID.dds"
+                    }
+                ]
+            },
+            {
+                "id": "30ft_c20_special",
+                "fullSkinsAmount": 2,
+                "composition": "30ft_c20",
+                "name": "30ft C20 Special",
+                "stacked": 2,
+                "skins": [
+                    {
+                        "id": "BUKU",
+                        "name": "BUKU",
+                        "group": "BUKU",
+                        "texture": "30FT/BULK/textures/C20_BUKU.dds"
+                    }
+                ]
+            },
+            {
+                "id": "30ft_c20_regular",
+                "fullSkinsAmount": 2,
+                "composition": "30ft_3",
+                "name": "30ft C20 Regular",
+                "skins": [
+                    {
+                        "id": "VZRU",
+                        "name": "VZRU",
+                        "group": "VZRU",
+                        "texture": "30FT/BULK/textures/C20_VZRU.dds"
                     },
                     {
-                        "id": "VZRU 2",
-                        "name": "VZRU 2",
+                        "id": "VZRU 02",
+                        "name": "VZRU 02",
                         "group": "VZRU",
-                        "texture": "30FT/BULK/textures/C03_VZRU_02.dds"
+                        "texture": "30FT/BULK/textures/C20_VZRU_02.dds"
+                    }
+                ]
+            },
+            {
+                "id": "30ft_c22",
+                "fullSkinsAmount": 8,
+                "composition": "30ft_1",
+                "name": "30ft C22",
+                "skins": [
+                    {
+                        "id": "BOXU",
+                        "name": "BOXU",
+                        "group": "BOXU",
+                        "texture": "30FT/BULK/textures/C22_BOXU.dds"
                     },
+                    {
+                        "id": "BOXU 3",
+                        "name": "BOXU 3",
+                        "group": "BOXU",
+                        "texture": "30FT/BULK/textures/C22_BOXU_3.dds"
+                    },
+                    {
+                        "id": "GBGE",
+                        "name": "GBGE",
+                        "group": "GBGE",
+                        "texture": "30FT/BULK/textures/C22_GBGE.dds"
+                    },
+                    {
+                        "id": "GBTU",
+                        "name": "GBTU",
+                        "group": "GBTU",
+                        "texture": "30FT/BULK/textures/C22_GBTU.dds"
+                    },
+                    {
+                        "id": "KAIN",
+                        "name": "KAIN",
+                        "group": "KAIN",
+                        "texture": "30FT/BULK/textures/C22_KAIN.dds"
+                    },
+                    {
+                        "id": "LOEB",
+                        "name": "LOEB",
+                        "group": "LOEB",
+                        "texture": "30FT/BULK/textures/C22_LOEB.dds"
+                    },
+                    {
+                        "id": "SAIU",
+                        "name": "SAIU",
+                        "group": "SAIU",
+                        "texture": "30FT/BULK/textures/C22_SAIU.dds"
+                    },
+                    {
+                        "id": "UBBU",
+                        "name": "UBBU",
+                        "group": "UBBU",
+                        "texture": "30FT/BULK/textures/C22_UBBU.dds"
+                    }
+                ]
+            },
+            {
+                "id": "30ft_c27",
+                "fullSkinsAmount": 3,
+                "composition": "30ft_2",
+                "name": "30ft C27",
+                "skins": [
+                    {
+                        "id": "BUKU",
+                        "name": "BUKU",
+                        "group": "BUKU",
+                        "texture": "30FT/BULK/textures/C27_BUKU.dds"
+                    },
+                    {
+                        "id": "CPAU",
+                        "name": "CPAU",
+                        "group": "CPAU",
+                        "texture": "30FT/BULK/textures/C27_CPAU.dds"
+                    },
+                    {
+                        "id": "NWBU 2",
+                        "name": "NWBU 2",
+                        "group": "NWBU",
+                        "texture": "30FT/BULK/textures/C27_NWBU_2.dds"
+                    }
+                ]
+            },
+            {
+                "id": "30ft_c29",
+                "fullSkinsAmount": 3,
+                "composition": "30ft_1",
+                "name": "30ft C29",
+                "skins": [
                     {
                         "id": "FERE",
                         "name": "FERE",
@@ -2311,91 +2490,25 @@
                         "texture": "30FT/BULK/textures/C29_FERE.dds"
                     },
                     {
-                        "id": "FERE 2",
-                        "name": "FERE 2",
-                        "group": "FERE",
-                        "texture": "30FT/BULK/textures/C29_FERE_02.dds"
-                    },
-                    {
-                        "id": "FERE 3",
-                        "name": "FERE 3",
+                        "id": "FERE 03",
+                        "name": "FERE 03",
                         "group": "FERE",
                         "texture": "30FT/BULK/textures/C29_FERE_03.dds"
                     },
                     {
-                        "id": "GBGE 3",
-                        "name": "GBGE 3",
+                        "id": "GBGE",
+                        "name": "GBGE",
                         "group": "GBGE",
-                        "texture": "30FT/BULK/textures/C29_GBGE_3.dds"
-                    },
-                    {
-                        "id": "PRAU 1",
-                        "name": "PRAU 1",
-                        "group": "PRAU",
-                        "texture": "30FT/BULK/textures/C29_PRAU_1.dds"
-                    },
-                    {
-                        "id": "TIPES 1",
-                        "name": "TIPES 1",
-                        "group": "TIPES",
-                        "texture": "30FT/BULK/textures/C29_TIPES_1.dds"
-                    },
-                    {
-                        "id": "MOVE 1",
-                        "name": "MOVE 1",
-                        "group": "MOVE",
-                        "texture": "30FT/BULK/textures/C39_MOVE_1.dds"
-                    },
-                    {
-                        "id": "MOVE 2",
-                        "name": "MOVE 2",
-                        "group": "MOVE",
-                        "texture": "30FT/BULK/textures/C39_MOVE_2.dds"
+                        "texture": "30FT/BULK/textures/C29_GBGE.dds"
                     }
                 ]
             },
             {
-                "id": "30ft_2",
-                "fullSkinsAmount": 23,
+                "id": "30ft_c30",
+                "fullSkinsAmount": 6,
                 "composition": "30ft_2",
-                "name": "30ft variant 2",
+                "name": "30ft C30",
                 "skins": [
-                    {
-                        "id": "C27_BUKU",
-                        "name": "C27_BUKU",
-                        "group": "BUKU",
-                        "texture": "30FT/BULK/textures/C27_BUKU.dds"
-                    },
-                    {
-                        "id": "C27_CPAU",
-                        "name": "C27_CPAU",
-                        "group": "CPAU",
-                        "texture": "30FT/BULK/textures/C27_CPAU.dds"
-                    },
-                    {
-                        "id": "C27_NWBU 2",
-                        "name": "C27_NWBU 2",
-                        "group": "NWBU",
-                        "texture": "30FT/BULK/textures/C27_NWBU_2.dds"
-                    },
-                    {
-                        "id": "C27_RBEU",
-                        "name": "C27_RBEU",
-                        "group": "RBEU",
-                        "texture": "30FT/BULK/textures/C27_RBEU.dds"
-                    },
-                    {
-                        "id": "C27_SIBU",
-                        "name": "C27_SIBU",
-                        "group": "SIBU",
-                        "texture": "30FT/BULK/textures/C27_SIBU.dds"
-                    },
-                    {
-                        "id": "SHNU",
-                        "name": "SHNU",
-                        "group": "SHNU",
-                        "texture": "30FT/BULK/textures/C30_SHNU.dds"
-                    },
                     {
                         "id": "BUKU",
                         "name": "BUKU",
@@ -2403,10 +2516,10 @@
                         "texture": "30FT/BULK/textures/C30_BUKU.dds"
                     },
                     {
-                        "id": "BUKU 2",
-                        "name": "BUKU 2",
-                        "group": "BUKU",
-                        "texture": "30FT/BULK/textures/C30_BUKU_2.dds"
+                        "id": "COGE",
+                        "name": "COGE",
+                        "group": "COGE",
+                        "texture": "30FT/BULK/textures/C30_COGE.dds"
                     },
                     {
                         "id": "EWAU 1",
@@ -2415,10 +2528,10 @@
                         "texture": "30FT/BULK/textures/C30_EWAU_1.dds"
                     },
                     {
-                        "id": "EWAU 3",
-                        "name": "EWAU 3",
+                        "id": "EWAU 4",
+                        "name": "EWAU 4",
                         "group": "EWAU",
-                        "texture": "30FT/BULK/textures/C30_EWAU_3.dds"
+                        "texture": "30FT/BULK/textures/C30_EWAU_4.dds"
                     },
                     {
                         "id": "GBTU",
@@ -2431,31 +2544,57 @@
                         "name": "MOVE",
                         "group": "MOVE",
                         "texture": "30FT/BULK/textures/C30_MOVE.dds"
-                    },
+                    }
+                ]
+            },
+            {
+                "id": "30ft_c32",
+                "fullSkinsAmount": 1,
+                "composition": "30ft_3",
+                "name": "30ft C32",
+                "skins": [
                     {
-                        "id": "NOBU 1",
-                        "name": "NOBU 1",
-                        "group": "NOBU",
-                        "texture": "30FT/BULK/textures/C30_NOBU_1.dds"
-                    },
+                        "id": "PRAU",
+                        "name": "PRAU",
+                        "group": "PRAU",
+                        "texture": "30FT/BULK/textures/C32_PRAU.dds"
+                    }
+                ]
+            },
+            {
+                "id": "30ft_c39",
+                "fullSkinsAmount": 1,
+                "composition": "30ft_1",
+                "name": "30ft C39",
+                "skins": [
                     {
-                        "id": "PAGU 1",
-                        "name": "PAGU 1",
-                        "group": "PAGU",
-                        "texture": "30FT/BULK/textures/C30_PAGU_1.dds"
-                    },
+                        "id": "MOVE 1",
+                        "name": "MOVE 1",
+                        "group": "MOVE",
+                        "texture": "30FT/BULK/textures/C39_MOVE_1.dds"
+                    }
+                ]
+            },
+            {
+                "id": "30ft_c44",
+                "fullSkinsAmount": 1,
+                "composition": "30ft_2",
+                "name": "30ft C44",
+                "skins": [
                     {
                         "id": "ABEU",
                         "name": "ABEU",
                         "group": "ABEU",
                         "texture": "30FT/BULK/textures/C44_ABEU.dds"
-                    },
-                    {
-                        "id": "BWCU",
-                        "name": "BWCU",
-                        "group": "BWCU",
-                        "texture": "30FT/BULK/textures/C44_BWCU.dds"
-                    },
+                    }
+                ]
+            },
+            {
+                "id": "30ft_c45",
+                "fullSkinsAmount": 6,
+                "composition": "30ft_2",
+                "name": "30ft C45",
+                "skins": [
                     {
                         "id": "BTEU",
                         "name": "BTEU",
@@ -2463,16 +2602,397 @@
                         "texture": "30FT/BULK/textures/C45_BTEU.dds"
                     },
                     {
+                        "id": "FRIA",
+                        "name": "FRIA",
+                        "group": "FRIA",
+                        "texture": "30FT/BULK/textures/C45_FRIA.dds"
+                    },
+                    {
+                        "id": "FRIA 3",
+                        "name": "FRIA 3",
+                        "group": "FRIA",
+                        "texture": "30FT/BULK/textures/C45_FRIA_3.dds"
+                    },
+                    {
+                        "id": "VERB",
+                        "name": "VERB",
+                        "group": "VERB",
+                        "texture": "30FT/BULK/textures/C45_VERB.dds"
+                    },
+                    {
+                        "id": "VERB 2",
+                        "name": "VERB 2",
+                        "group": "VERB",
+                        "texture": "30FT/BULK/textures/C45_VERB_2.dds"
+                    },
+                    {
+                        "id": "VERB 3",
+                        "name": "VERB 3",
+                        "group": "VERB",
+                        "texture": "30FT/BULK/textures/C45_VERB_3.dds"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "kind": "30ft",
+        "id": "30ft_2",
+        "randomSkins": [
+            {
+                "id": "30ft_c00_special",
+                "fullSkinsAmount": 2,
+                "composition": "30ft_3",
+                "name": "30ft C00 Special",
+                "skins": [
+                    {
+                        "id": "PRAU",
+                        "name": "PRAU",
+                        "group": "PRAU",
+                        "texture": "30FT/BULK/textures/C00_PRAU.dds"
+                    }
+                ]
+            },
+            {
+                "id": "30ft_c00_regular",
+                "fullSkinsAmount": 6,
+                "composition": "30ft_1",
+                "name": "30ft C00 Regular",
+                "skins": [
+                    {
+                        "id": "LOEB2",
+                        "name": "LOEB2",
+                        "group": "LOEB",
+                        "texture": "30FT/BULK/textures/C00_LOEB2.dds"
+                    },
+                    {
+                        "id": "KEID",
+                        "name": "KEID",
+                        "group": "KEID",
+                        "texture": "30FT/BULK/textures/C00_KEID.dds"
+                    },
+                    {
+                        "id": "KEID 2",
+                        "name": "KEID 2",
+                        "group": "KEID",
+                        "texture": "30FT/BULK/textures/C00_KEID_2.dds"
+                    },
+                    {
+                        "id": "KEID 4",
+                        "name": "KEID 4",
+                        "group": "KEID",
+                        "texture": "30FT/BULK/textures/C00_KEID_4.dds"
+                    },
+                    {
+                        "id": "KEID 5",
+                        "name": "KEID 5",
+                        "group": "KEID",
+                        "texture": "30FT/BULK/textures/C00_KEID_5.dds"
+                    }
+                ]
+            },
+            {
+                "id": "30ft_c03",
+                "fullSkinsAmount": 2,
+                "composition": "30ft_3",
+                "name": "30ft C03",
+                "skins": [
+                    {
+                        "id": "SAIU 02",
+                        "name": "SAIU 02",
+                        "group": "SAIU",
+                        "texture": "30FT/BULK/textures/C03_SAIU_02.dds"
+                    },
+                    {
+                        "id": "VZRU 02",
+                        "name": "VZRU 02",
+                        "group": "VZRU",
+                        "texture": "30FT/BULK/textures/C03_VZRU_02.dds"
+                    }
+                ]
+            },
+            {
+                "id": "30ft_c12_special",
+                "fullSkinsAmount": 1,
+                "composition": "30ft_3",
+                "name": "30ft C12 Special",
+                "skins": [
+                    {
+                        "id": "MISA 02",
+                        "name": "MISA 02",
+                        "group": "MISA",
+                        "texture": "30FT/BULK/textures/C12_MISA_02.dds"
+                    }
+                ]
+            },
+            {
+                "id": "30ft_c12_regular",
+                "fullSkinsAmount": 1,
+                "composition": "30ft_1",
+                "name": "30ft C12 Regular",
+                "skins": [
+                ]
+            },
+            {
+                "id": "30ft_c18",
+                "fullSkinsAmount": 1,
+                "composition": "30ft_1",
+                "name": "30ft C18",
+                "skins": [
+                    {
+                        "id": "MOCD",
+                        "name": "MOCD",
+                        "group": "MOCD",
+                        "texture": "30FT/BULK/textures/C18_MOCD.dds"
+                    }
+                ]
+            },
+            {
+                "id": "30ft_c20_special",
+                "fullSkinsAmount": 2,
+                "stacked": 2,
+                "composition": "30ft_c20",
+                "name": "30ft C20 Special",
+                "skins": [
+                    {
+                        "id": "ADDU",
+                        "name": "ADDU",
+                        "group": "ADDU",
+                        "texture": "30FT/BULK/textures/C20_ADDU.dds"
+                    }
+                ]
+            },
+            {
+                "id": "30ft_c20_regular",
+                "fullSkinsAmount": 2,
+                "composition": "30ft_3",
+                "name": "30ft C20 Regular",
+                "skins": [
+                    {
+                        "id": "SAIU",
+                        "name": "SAIU",
+                        "group": "SAIU",
+                        "texture": "30FT/BULK/textures/C20_SAIU.dds"
+                    },
+                    {
+                        "id": "SAIU 02",
+                        "name": "SAIU 02",
+                        "group": "SAIU",
+                        "texture": "30FT/BULK/textures/C20_SAIU_02.dds"
+                    }
+                ]
+            },
+            {
+                "id": "30ft_c22",
+                "fullSkinsAmount": 8,
+                "composition": "30ft_1",
+                "name": "30ft C22",
+                "skins": [
+                    {
+                        "id": "BOXU 2",
+                        "name": "BOXU 2",
+                        "group": "BOXU",
+                        "texture": "30FT/BULK/textures/C22_BOXU_2.dds"
+                    },
+                    {
+                        "id": "BOXU 4",
+                        "name": "BOXU 4",
+                        "group": "BOXU",
+                        "texture": "30FT/BULK/textures/C22_BOXU_4.dds"
+                    },
+                    {
+                        "id": "GBGE 2",
+                        "name": "GBGE 2",
+                        "group": "GBGE",
+                        "texture": "30FT/BULK/textures/C22_GBGE_2.dds"
+                    },
+                    {
+                        "id": "ITDU",
+                        "name": "ITDU",
+                        "group": "ITDU",
+                        "texture": "30FT/BULK/textures/C22_ITDU.dds"
+                    },
+                    {
+                        "id": "KAIN 02",
+                        "name": "KAIN 02",
+                        "group": "KAIN",
+                        "texture": "30FT/BULK/textures/C22_KAIN_02.dds"
+                    },
+                    {
+                        "id": "LOEB 02",
+                        "name": "LOEB 02",
+                        "group": "LOEB",
+                        "texture": "30FT/BULK/textures/C22_LOEB_02.dds"
+                    },
+                    {
+                        "id": "SAIU 2",
+                        "name": "SAIU 2",
+                        "group": "SAIU",
+                        "texture": "30FT/BULK/textures/C22_SAIU_2.dds"
+                    },
+                    {
+                        "id": "UBBU 02",
+                        "name": "UBBU 02",
+                        "group": "UBBU",
+                        "texture": "30FT/BULK/textures/C22_UBBU_02.dds"
+                    }
+                ]
+            },
+            {
+                "id": "30ft_c27",
+                "fullSkinsAmount": 3,
+                "composition": "30ft_2",
+                "name": "30ft C27",
+                "skins": [
+                    {
+                        "id": "BWCU",
+                        "name": "BWCU",
+                        "group": "BWCU",
+                        "texture": "30FT/BULK/textures/C27_BWCU.dds"
+                    },
+                    {
+                        "id": "NWBU",
+                        "name": "NWBU",
+                        "group": "NWBU",
+                        "texture": "30FT/BULK/textures/C27_NWBU.dds"
+                    },
+                    {
+                        "id": "RBEU",
+                        "name": "RBEU",
+                        "group": "RBEU",
+                        "texture": "30FT/BULK/textures/C27_RBEU.dds"
+                    }
+                ]
+            },
+            {
+                "id": "30ft_c29",
+                "fullSkinsAmount": 3,
+                "composition": "30ft_1",
+                "name": "30ft C29",
+                "skins": [
+                    {
+                        "id": "FERE 02",
+                        "name": "FERE 02",
+                        "group": "FERE",
+                        "texture": "30FT/BULK/textures/C29_FERE_02.dds"
+                    },
+                    {
+                        "id": "FERE 04",
+                        "name": "FERE 04",
+                        "group": "FERE",
+                        "texture": "30FT/BULK/textures/C29_FERE_04.dds"
+                    },
+                    {
+                        "id": "GBGE 2",
+                        "name": "GBGE 2",
+                        "group": "GBGE",
+                        "texture": "30FT/BULK/textures/C29_GBGE_2.dds"
+                    }
+                ]
+            },
+            {
+                "id": "30ft_c30",
+                "fullSkinsAmount": 6,
+                "composition": "30ft_2",
+                "name": "30ft C30",
+                "skins": [
+                    {
+                        "id": "BUKU 2",
+                        "name": "BUKU 2",
+                        "group": "BUKU",
+                        "texture": "30FT/BULK/textures/C30_BUKU_2.dds"
+                    },
+                    {
+                        "id": "DHBU 1",
+                        "name": "DHBU 1",
+                        "group": "DHBU",
+                        "texture": "30FT/BULK/textures/C30_DHBU_1.dds"
+                    },
+                    {
+                        "id": "EWAU 2",
+                        "name": "EWAU 2",
+                        "group": "EWAU",
+                        "texture": "30FT/BULK/textures/C30_EWAU_2.dds"
+                    },
+                    {
+                        "id": "ITDU",
+                        "name": "ITDU",
+                        "group": "ITDU",
+                        "texture": "30FT/BULK/textures/C30_ITDU.dds"
+                    },
+                    {
+                        "id": "NOBU",
+                        "name": "NOBU",
+                        "group": "NOBU",
+                        "texture": "30FT/BULK/textures/C30_NOBU.dds"
+                    },
+                    {
+                        "id": "SHNU",
+                        "name": "SHNU",
+                        "group": "SHNU",
+                        "texture": "30FT/BULK/textures/C30_SHNU.dds"
+                    }
+                ]
+            },
+            {
+                "id": "30ft_c32",
+                "fullSkinsAmount": 1,
+                "composition": "30ft_3",
+                "name": "30ft C32",
+                "skins": [
+                    {
+                        "id": "TSPU",
+                        "name": "TSPU",
+                        "group": "TSPU",
+                        "texture": "30FT/BULK/textures/C32_TSPU.dds"
+                    }
+                ]
+            },
+            {
+                "id": "30ft_c39",
+                "fullSkinsAmount": 1,
+                "composition": "30ft_1",
+                "name": "30ft C39",
+                "skins": [
+                    {
+                        "id": "MOVE 2",
+                        "name": "MOVE 2",
+                        "group": "MOVE",
+                        "texture": "30FT/BULK/textures/C39_MOVE_2.dds"
+                    }
+                ]
+            },
+            {
+                "id": "30ft_c44",
+                "fullSkinsAmount": 1,
+                "composition": "30ft_2",
+                "name": "30ft C44",
+                "skins": [
+                    {
+                        "id": "BWCU",
+                        "name": "BWCU",
+                        "group": "BWCU",
+                        "texture": "30FT/BULK/textures/C44_BWCU.dds"
+                    }
+                ]
+            },
+            {
+                "id": "30ft_c45",
+                "fullSkinsAmount": 6,
+                "composition": "30ft_2",
+                "name": "30ft C45",
+                "skins": [
+                    {
                         "id": "EIBB 1",
                         "name": "EIBB 1",
                         "group": "EIBB",
                         "texture": "30FT/BULK/textures/C45_EIBB_1.dds"
                     },
                     {
-                        "id": "FRIA",
-                        "name": "FRIA",
+                        "id": "FRIA 2",
+                        "name": "FRIA 2",
                         "group": "FRIA",
-                        "texture": "30FT/BULK/textures/C45_FRIA.dds"
+                        "texture": "30FT/BULK/textures/C45_FRIA_2.dds"
                     },
                     {
                         "id": "INFU 1",
@@ -2487,23 +3007,350 @@
                         "texture": "30FT/BULK/textures/C45_INFU_2.dds"
                     },
                     {
+                        "id": "INFU 5",
+                        "name": "INFU 5",
+                        "group": "INFU",
+                        "texture": "30FT/BULK/textures/C45_INFU_5.dds"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "kind": "30ft",
+        "id": "30ft_3",
+        "randomSkins": [
+            {
+                "id": "30ft_c00_special",
+                "fullSkinsAmount": 2,
+                "composition": "30ft_3",
+                "name": "30ft C00 Special",
+                "skins": [
+                    {
+                        "id": "TSPU",
+                        "name": "TSPU",
+                        "group": "TSPU",
+                        "texture": "30FT/BULK/textures/C00_TSPU.dds"
+                    },
+                    {
+                        "id": "TSPU 02",
+                        "name": "TSPU 02",
+                        "group": "TSPU",
+                        "texture": "30FT/BULK/textures/C00_TSPU_02.dds"
+                    }
+                ]
+            },
+            {
+                "id": "30ft_c00_regular",
+                "fullSkinsAmount": 6,
+                "composition": "30ft_1",
+                "name": "30ft C00 Regular",
+                "skins": [
+                    {
+                        "id": "KALE",
+                        "name": "KALE",
+                        "group": "KALE",
+                        "texture": "30FT/BULK/textures/C00_KALE.dds"
+                    },
+                    {
+                        "id": "KALE 02",
+                        "name": "KALE 02",
+                        "group": "KALE",
+                        "texture": "30FT/BULK/textures/C00_KALE_02.dds"
+                    },
+                    {
+                        "id": "KALE 03",
+                        "name": "KALE 03",
+                        "group": "KALE",
+                        "texture": "30FT/BULK/textures/C00_KALE_03.dds"
+                    },
+                    {
+                        "id": "KEID 3",
+                        "name": "KEID 3",
+                        "group": "KEID",
+                        "texture": "30FT/BULK/textures/C00_KEID_3.dds"
+                    },
+                    {
+                        "id": "LOEB3",
+                        "name": "LOEB3",
+                        "group": "LOEB",
+                        "texture": "30FT/BULK/textures/C00_LOEB3.dds"
+                    }
+                ]
+            },
+            {
+                "id": "30ft_c03",
+                "fullSkinsAmount": 2,
+                "composition": "30ft_3",
+                "name": "30ft C03",
+                "skins": [
+                ]
+            },
+            {
+                "id": "30ft_c12_special",
+                "fullSkinsAmount": 1,
+                "composition": "30ft_3",
+                "name": "30ft C12 Special",
+                "skins": [
+                    {
+                        "id": "VZRU",
+                        "name": "VZRU",
+                        "group": "VZRU",
+                        "texture": "30FT/BULK/textures/C12_VZRU.dds"
+                    }
+                ]
+            },
+            {
+                "id": "30ft_c12_regular",
+                "fullSkinsAmount": 1,
+                "composition": "30ft_1",
+                "name": "30ft C12 Regular",
+                "skins": [
+                ]
+            },
+            {
+                "id": "30ft_c18",
+                "fullSkinsAmount": 1,
+                "composition": "30ft_1",
+                "name": "30ft C18",
+                "skins": [
+                ]
+            },
+            {
+                "id": "30ft_c20_special",
+                "fullSkinsAmount": 2,
+                "stacked": 2,
+                "composition": "30ft_c20",
+                "name": "30ft C20 Special",
+                "skins": [
+                ]
+            },
+            {
+                "id": "30ft_c20_regular",
+                "fullSkinsAmount": 2,
+                "composition": "30ft_3",
+                "name": "30ft C20 Regular",
+                "skins": [
+                    {
+                        "id": "VZRU 03",
+                        "name": "VZRU 03",
+                        "group": "VZRU",
+                        "texture": "30FT/BULK/textures/C20_VZRU_03.dds"
+                    },
+                    {
+                        "id": "VZRU 04",
+                        "name": "VZRU 04",
+                        "group": "VZRU",
+                        "texture": "30FT/BULK/textures/C20_VZRU_04.dds"
+                    }
+                ]
+            },
+            {
+                "id": "30ft_c22",
+                "fullSkinsAmount": 8,
+                "composition": "30ft_1",
+                "name": "30ft C22",
+                "skins": [
+                    {
+                        "id": "GBGE 3",
+                        "name": "GBGE 3",
+                        "group": "GBGE",
+                        "texture": "30FT/BULK/textures/C22_GBGE_3.dds"
+                    },
+                    {
+                        "id": "KAIN 03",
+                        "name": "KAIN 03",
+                        "group": "KAIN",
+                        "texture": "30FT/BULK/textures/C22_KAIN_03.dds"
+                    },
+                    {
+                        "id": "MOCD",
+                        "name": "MOCD",
+                        "group": "MOCD",
+                        "texture": "30FT/BULK/textures/C22_MOCD.dds"
+                    },
+                    {
+                        "id": "MOCD 2",
+                        "name": "MOCD 2",
+                        "group": "MOCD",
+                        "texture": "30FT/BULK/textures/C22_MOCD_2.dds"
+                    },
+                    {
+                        "id": "SAIU 3",
+                        "name": "SAIU 3",
+                        "group": "SAIU",
+                        "texture": "30FT/BULK/textures/C22_SAIU_3.dds"
+                    },
+                    {
+                        "id": "SAIU 4",
+                        "name": "SAIU 4",
+                        "group": "SAIU",
+                        "texture": "30FT/BULK/textures/C22_SAIU_4.dds"
+                    },
+                    {
+                        "id": "UBBU 03",
+                        "name": "UBBU 03",
+                        "group": "UBBU",
+                        "texture": "30FT/BULK/textures/C22_UBBU_03.dds"
+                    }
+                ]
+            },
+            {
+                "id": "30ft_c27",
+                "fullSkinsAmount": 3,
+                "composition": "30ft_2",
+                "name": "30ft C27",
+                "skins": [
+                    {
+                        "id": "RBEU 2",
+                        "name": "RBEU 2",
+                        "group": "RBEU",
+                        "texture": "30FT/BULK/textures/C27_RBEU_2.dds"
+                    },
+                    {
+                        "id": "SHNU",
+                        "name": "SHNU",
+                        "group": "SHNU",
+                        "texture": "30FT/BULK/textures/C27_SHNU.dds"
+                    },
+                    {
+                        "id": "SIBU",
+                        "name": "SIBU",
+                        "group": "SIBU",
+                        "texture": "30FT/BULK/textures/C27_SIBU.dds"
+                    }
+                ]
+            },
+            {
+                "id": "30ft_c29",
+                "fullSkinsAmount": 3,
+                "composition": "30ft_1",
+                "name": "30ft C29",
+                "skins": [
+                    {
+                        "id": "GBGE 3",
+                        "name": "GBGE 3",
+                        "group": "GBGE",
+                        "texture": "30FT/BULK/textures/C29_GBGE_3.dds"
+                    },
+                    {
+                        "id": "GBGE 4",
+                        "name": "GBGE 4",
+                        "group": "GBGE",
+                        "texture": "30FT/BULK/textures/C29_GBGE_4.dds"
+                    }
+                ]
+            },
+            {
+                "id": "30ft_c30",
+                "fullSkinsAmount": 6,
+                "composition": "30ft_2",
+                "name": "30ft C30",
+                "skins": [
+                    {
+                        "id": "BUKU 3",
+                        "name": "BUKU 3",
+                        "group": "BUKU",
+                        "texture": "30FT/BULK/textures/C30_BUKU_3.dds"
+                    },
+                    {
+                        "id": "EWAU 3",
+                        "name": "EWAU 3",
+                        "group": "EWAU",
+                        "texture": "30FT/BULK/textures/C30_EWAU_3.dds"
+                    },
+                    {
+                        "id": "ITDU 02",
+                        "name": "ITDU 02",
+                        "group": "ITDU",
+                        "texture": "30FT/BULK/textures/C30_ITDU_02.dds"
+                    },
+                    {
+                        "id": "PAGU",
+                        "name": "PAGU",
+                        "group": "PAGU",
+                        "texture": "30FT/BULK/textures/C30_PAGU.dds"
+                    },
+                    {
+                        "id": "SHNU 2",
+                        "name": "SHNU 2",
+                        "group": "SHNU",
+                        "texture": "30FT/BULK/textures/C30_SHNU_2.dds"
+                    },
+                    {
+                        "id": "SHNU 3",
+                        "name": "SHNU 3",
+                        "group": "SHNU",
+                        "texture": "30FT/BULK/textures/C30_SHNU_3.dds"
+                    }
+                ]
+            },
+            {
+                "id": "30ft_c32",
+                "fullSkinsAmount": 1,
+                "composition": "30ft_3",
+                "name": "30ft C32",
+                "skins": [
+                ]
+            },
+            {
+                "id": "30ft_c39",
+                "fullSkinsAmount": 1,
+                "composition": "30ft_1",
+                "name": "30ft C39",
+                "skins": [
+                ]
+            },
+            {
+                "id": "30ft_c44",
+                "fullSkinsAmount": 1,
+                "composition": "30ft_2",
+                "name": "30ft C44",
+                "skins": [
+                ]
+            },
+            {
+                "id": "30ft_c45",
+                "fullSkinsAmount": 6,
+                "composition": "30ft_2",
+                "name": "30ft C45",
+                "skins": [
+                    {
+                        "id": "EIBB 2",
+                        "name": "EIBB 2",
+                        "group": "EIBB",
+                        "texture": "30FT/BULK/textures/C45_EIBB_2.dds"
+                    },
+                    {
+                        "id": "FRIA 4",
+                        "name": "FRIA 4",
+                        "group": "FRIA",
+                        "texture": "30FT/BULK/textures/C45_FRIA_4.dds"
+                    },
+                    {
                         "id": "INFU 3",
                         "name": "INFU 3",
                         "group": "INFU",
                         "texture": "30FT/BULK/textures/C45_INFU_3.dds"
                     },
                     {
-                        "id": "VERB 2",
-                        "name": "VERB 2",
-                        "group": "VERB",
-                        "texture": "30FT/BULK/textures/C45_VERB_2.dds"
+                        "id": "INFU 4",
+                        "name": "INFU 4",
+                        "group": "INFU",
+                        "texture": "30FT/BULK/textures/C45_INFU_4.dds"
+                    },
+                    {
+                        "id": "INFU 6",
+                        "name": "INFU 6",
+                        "group": "INFU",
+                        "texture": "30FT/BULK/textures/C45_INFU_6.dds"
                     }
                 ]
             }
-
         ]
     },
     {
+        "kind": "30ft_silo",
         "id": "30ft_silo_(1)",
         "randomSkins": [
             {
@@ -2673,6 +3520,7 @@
         ]
     },
     {
+        "kind": "30ft_silo",
         "id": "30ft_silo_(2)",
         "randomSkins": [
             {
@@ -2716,13 +3564,6 @@
                         "rarity": 40,
                         "group": "WABU",
                         "texture": "30FT/GAS_SILOTANK/textures/ST_30_WABU.dds"
-                    },
-                    {
-                        "id": "",
-                        "name": "",
-                        "rarity": 40,
-                        "group": "",
-                        "texture": ""
                     }
                 ]
             }
@@ -2742,649 +3583,791 @@
                         "name": "APRU",
                         "rarity": 40,
                         "group": "APRU",
-                        "texture": "40_HC/textures/40F_HC_APRU.TgPcDx"
+                        "texture": "40_HC/textures/40_F_APRU.dds"
                     },
                     {
                         "id": "CAIU",
                         "name": "CAIU",
                         "rarity": 40,
                         "group": "CAIU",
-                        "texture": "40_HC/textures/40F_HC_CAIU.TgPcDx"
+                        "texture": "40_HC/textures/40_F_CAIU.dds"
                     },
                     {
                         "id": "CBHU",
                         "name": "CBHU",
                         "rarity": 40,
                         "group": "CBHU",
-                        "texture": "40_HC/textures/40F_HC_CBHU.TgPcDx"
-                    },
-                    {
-                        "id": "CMAU",
-                        "name": "CMAU",
-                        "rarity": 40,
-                        "group": "CMAU",
-                        "texture": "40_HC/textures/40F_HC_CMAU.TgPcDx"
-                    },
-                    {
-                        "id": "CRSU",
-                        "name": "CRSU",
-                        "rarity": 40,
-                        "group": "CRSU",
-                        "texture": "40_HC/textures/40F_HC_CRSU.TgPcDx"
-                    },
-                    {
-                        "id": "EMCU",
-                        "name": "EMCU",
-                        "rarity": 40,
-                        "group": "EMCU",
-                        "texture": "40_HC/textures/40F_HC_EMCU.TgPcDx"
-                    },
-                    {
-                        "id": "GESU",
-                        "name": "GESU",
-                        "rarity": 40,
-                        "group": "GESU",
-                        "texture": "40_HC/textures/40F_HC_GESU.TgPcDx"
-                    },
-                    {
-                        "id": "HJCU",
-                        "name": "HJCU",
-                        "rarity": 40,
-                        "group": "HJCU",
-                        "texture": "40_HC/textures/40F_HC_HJCU.TgPcDx"
-                    },
-                    {
-                        "id": "HLXU",
-                        "name": "HLXU",
-                        "rarity": 40,
-                        "group": "HLXU",
-                        "texture": "40_HC/textures/40F_HC_HLXU.TgPcDx"
-                    },
-                    {
-                        "id": "HSUD",
-                        "name": "HSUD",
-                        "rarity": 40,
-                        "group": "HSUD",
-                        "texture": "40_HC/textures/40F_HC_HSUD.TgPcDx"
-                    },
-                    {
-                        "id": "HSUD_2",
-                        "name": "HSUD",
-                        "rarity": 40,
-                        "group": "HSUD",
-                        "texture": "40_HC/textures/40F_HC_HSUD_2.TgPcDx"
-                    },
-                    {
-                        "id": "MNBU",
-                        "name": "MNBU",
-                        "rarity": 40,
-                        "group": "MNBU",
-                        "texture": "40_HC/textures/40F_HC_MNBU.TgPcDx"
-                    },
-                    {
-                        "id": "MORU",
-                        "name": "MORU",
-                        "rarity": 40,
-                        "group": "MORU",
-                        "texture": "40_HC/textures/40F_HC_MORU.TgPcDx"
-                    },
-                    {
-                        "id": "MSCU",
-                        "name": "MSCU",
-                        "rarity": 40,
-                        "group": "MSCU",
-                        "texture": "40_HC/textures/40F_HC_MSCU.TgPcDx"
-                    },
-                    {
-                        "id": "MSWU",
-                        "name": "MSWU",
-                        "rarity": 40,
-                        "group": "MSWU",
-                        "texture": "40_HC/textures/40F_HC_MSWU.TgPcDx"
-                    },
-                    {
-                        "id": "MWCU_2",
-                        "name": "MWCU_2",
-                        "rarity": 40,
-                        "group": "MWCU",
-                        "texture": "40_HC/textures/40F_HC_MWCU_2.TgPcDx"
-                    },
-                    {
-                        "id": "MWMU",
-                        "name": "MWMU",
-                        "rarity": 40,
-                        "group": "MWMU",
-                        "texture": "40_HC/textures/40F_HC_MWMU.TgPcDx"
-                    },
-                    {
-                        "id": "ONEU",
-                        "name": "ONEU",
-                        "rarity": 40,
-                        "group": "ONEU",
-                        "texture": "40_HC/textures/40F_HC_ONEU.TgPcDx"
-                    },
-                    {
-                        "id": "TRLU",
-                        "name": "TRLU",
-                        "rarity": 40,
-                        "group": "TRLU",
-                        "texture": "40_HC/textures/40F_HC_TRLU.TgPcDx"
-                    },
-                    {
-                        "id": "CICU_3",
-                        "name": "CICU_3",
-                        "rarity": 40,
-                        "group": "CICU",
-                        "texture": "40_HC/textures/40HC_CICU_3.TgPcDx"
-                    },
-                    {
-                        "id": "CICU_4",
-                        "name": "CICU_4",
-                        "rarity": 40,
-                        "group": "CICU",
-                        "texture": "40_HC/textures/40HC_CICU_4.TgPcDx"
-                    },
-                    {
-                        "id": "CICU_5",
-                        "name": "CICU_5",
-                        "rarity": 40,
-                        "group": "CICU",
-                        "texture": "40_HC/textures/40HC_CICU_5.TgPcDx"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "id": "40ft_hc_1",
-        "randomSkins": [
-            {
-                "id": "40ft_hc_1",
-                "fullSkinsAmount": 36,
-                "composition": "40ft_hc_2",
-                "name": "40ft High cube containers (first set)",
-                "skins": [
-                    {
-                        "id": "APMU",
-                        "name": "APMU",
-                        "rarity": 40,
-                        "group": "APMU",
-                        "texture": "40_HC/textures/40HC_APMU.TgPcDx"
-                    },
-                    {
-                        "id": "CAIU",
-                        "name": "CAIU",
-                        "rarity": 40,
-                        "group": "CAIU",
-                        "texture": "40_HC/textures/40HC_CAIU.TgPcDx"
-                    },
-                    {
-                        "id": "CAIU_2",
-                        "name": "CAIU_2",
-                        "rarity": 40,
-                        "group": "CAIU",
-                        "texture": "40_HC/textures/40HC_CAIU_2.TgPcDx"
-                    },
-                    {
-                        "id": "CBHU_2",
-                        "name": "CBHU_2",
-                        "rarity": 40,
-                        "group": "CBHU",
-                        "texture": "40_HC/textures/40HC_CBHU_2.TgPcDx"
-                    },
-                    {
-                        "id": "CCLU",
-                        "name": "CCLU",
-                        "rarity": 40,
-                        "group": "CCLU",
-                        "texture": "40_HC/textures/40HC_CCLU.TgPcDx"
+                        "texture": "40_HC/textures/40_F_CBHU.dds"
                     },
                     {
                         "id": "CICU",
                         "name": "CICU",
                         "rarity": 40,
                         "group": "CICU",
-                        "texture": "40_HC/textures/40HC_CICU.TgPcDx"
+                        "texture": "40_HC/textures/40_F_CICU.dds"
                     },
                     {
-                        "id": "CICU_2",
-                        "name": "CICU_2",
+                        "id": "CICU",
+                        "name": "CICU",
                         "rarity": 40,
                         "group": "CICU",
-                        "texture": "40_HC/textures/40HC_CICU_2.TgPcDx"
+                        "texture": "40_HC/textures/40_F_CICU_2.dds"
                     },
                     {
                         "id": "CMAU",
                         "name": "CMAU",
                         "rarity": 40,
                         "group": "CMAU",
-                        "texture": "40_HC/textures/40HC_CMAU.TgPcDx"
+                        "texture": "40_HC/textures/40_F_CMAU.dds"
                     },
                     {
-                        "id": "CMAU_2",
-                        "name": "CMAU_2",
+                        "id": "CRSU",
+                        "name": "CRSU",
                         "rarity": 40,
-                        "group": "CMAU",
-                        "texture": "40_HC/textures/40HC_CMAU_2.TgPcDx"
+                        "group": "CRSU",
+                        "texture": "40_HC/textures/40_F_CRSU.dds"
                     },
                     {
-                        "id": "CMAU_3",
-                        "name": "CMAU_3",
+                        "id": "EMCU",
+                        "name": "EMCU",
                         "rarity": 40,
-                        "group": "CMAU",
-                        "texture": "40_HC/textures/40HC_CMAU_3.TgPcDx"
+                        "group": "EMCU",
+                        "texture": "40_HC/textures/40_F_EMCU.dds"
                     },
                     {
-                        "id": "CMAU_4",
-                        "name": "CMAU_4",
+                        "id": "FBIU",
+                        "name": "FBIU",
                         "rarity": 40,
-                        "group": "CMAU",
-                        "texture": "40_HC/textures/40HC_CMAU_4.TgPcDx"
-                    },
-                    {
-                        "id": "CMAU_5",
-                        "name": "CMAU_5",
-                        "rarity": 40,
-                        "group": "CMAU",
-                        "texture": "40_HC/textures/40HC_CMAU_5.TgPcDx"
-                    },
-                    {
-                        "id": "CRXU",
-                        "name": "CRXU",
-                        "rarity": 40,
-                        "group": "CRXU",
-                        "texture": "40_HC/textures/40HC_CRXU.TgPcDx"
-                    },
-                    {
-                        "id": "CRXU_2",
-                        "name": "CRXU_2",
-                        "rarity": 40,
-                        "group": "CRXU",
-                        "texture": "40_HC/textures/40HC_CRXU_2.TgPcDx"
-                    },
-                    {
-                        "id": "CSNU",
-                        "name": "CSNU",
-                        "rarity": 40,
-                        "group": "CSNU",
-                        "texture": "40_HC/textures/40HC_CSNU.TgPcDx"
-                    },
-                    {
-                        "id": "EITU",
-                        "name": "EITU",
-                        "rarity": 40,
-                        "group": "EITU",
-                        "texture": "40_HC/textures/40HC_EITU.TgPcDx"
-                    },
-                    {
-                        "id": "EITU_2",
-                        "name": "EITU_2",
-                        "rarity": 40,
-                        "group": "EITU",
-                        "texture": "40_HC/textures/40HC_EITU_2.TgPcDx"
-                    },
-                    {
-                        "id": "FESU",
-                        "name": "FESU",
-                        "rarity": 40,
-                        "group": "FESU",
-                        "texture": "40_HC/textures/40HC_FESU.TgPcDx"
-                    },
-                    {
-                        "id": "FESU_2",
-                        "name": "FESU_2",
-                        "rarity": 40,
-                        "group": "FESU",
-                        "texture": "40_HC/textures/40HC_FESU_2.TgPcDx"
-                    },
-                    {
-                        "id": "FLOR",
-                        "name": "FLOR",
-                        "rarity": 40,
-                        "group": "FLOR",
-                        "texture": "40_HC/textures/40HC_FLOR.TgPcDx"
-                    },
-                    {
-                        "id": "FLOR_2",
-                        "name": "FLOR_2",
-                        "rarity": 40,
-                        "group": "FLOR",
-                        "texture": "40_HC/textures/40HC_FLOR_2.TgPcDx"
+                        "group": "FBIU",
+                        "texture": "40_HC/textures/40_F_FBIU.dds"
                     },
                     {
                         "id": "GESU",
                         "name": "GESU",
                         "rarity": 40,
                         "group": "GESU",
-                        "texture": "40_HC/textures/40HC_GESU.TgPcDx"
+                        "texture": "40_HC/textures/40_F_GESU.dds"
                     },
                     {
-                        "id": "HHMU",
-                        "name": "HHMU",
+                        "id": "HJCU",
+                        "name": "HJCU",
                         "rarity": 40,
-                        "group": "HHMU",
-                        "texture": "40_HC/textures/40HC_HHMU.TgPcDx"
+                        "group": "HJCU",
+                        "texture": "40_HC/textures/40_F_HJCU.dds"
                     },
                     {
-                        "id": "HHMU_2",
-                        "name": "HHMU_2",
+                        "id": "HLBU",
+                        "name": "HLBU",
                         "rarity": 40,
-                        "group": "HHMU",
-                        "texture": "40_HC/textures/40HC_HHMU_2.TgPcDx"
+                        "group": "HLBU",
+                        "texture": "40_HC/textures/40_F_HLBU.dds"
                     },
                     {
-                        "id": "HHMU_3",
-                        "name": "HHMU_3",
+                        "id": "MORU",
+                        "name": "MORU",
                         "rarity": 40,
-                        "group": "HHMU",
-                        "texture": "40_HC/textures/40HC_HHMU_3.TgPcDx"
+                        "group": "MORU",
+                        "texture": "40_HC/textures/40_F_MORU.dds"
                     },
                     {
-                        "id": "HHMU_5",
-                        "name": "HHMU_5",
-                        "rarity": 40,
-                        "group": "HHMU",
-                        "texture": "40_HC/textures/40HC_HHMU_5.TgPcDx"
-                    },
-                    {
-                        "id": "HLXU",
-                        "name": "HLXU",
-                        "rarity": 40,
-                        "group": "HLXU",
-                        "texture": "40_HC/textures/40HC_HLXU.TgPcDx"
-                    },
-                    {
-                        "id": "HLXU_2",
-                        "name": "HLXU_2",
-                        "rarity": 40,
-                        "group": "HLXU",
-                        "texture": "40_HC/textures/40HC_HLXU_2.TgPcDx"
-                    },
-                    {
-                        "id": "HLXU_3",
-                        "name": "HLXU_3",
-                        "rarity": 40,
-                        "group": "HLXU",
-                        "texture": "40_HC/textures/40HC_HLXU_3.TgPcDx"
-                    },
-                    {
-                        "id": "HNKU",
-                        "name": "HNKU",
-                        "rarity": 40,
-                        "group": "HNKU",
-                        "texture": "40_HC/textures/40HC_HNKU.TgPcDx"
-                    },
-                    {
-                        "id": "HNKU_2",
-                        "name": "HNKU_2",
-                        "rarity": 40,
-                        "group": "HNKU",
-                        "texture": "40_HC/textures/40HC_HNKU_2.TgPcDx"
-                    },
-                    {
-                        "id": "HNKU_3",
-                        "name": "HNKU_3",
-                        "rarity": 40,
-                        "group": "HNKU",
-                        "texture": "40_HC/textures/40HC_HNKU_3.TgPcDx"
-                    },
-                    {
-                        "id": "HNKU_5",
-                        "name": "HNKU_5",
-                        "rarity": 40,
-                        "group": "HNKU",
-                        "texture": "40_HC/textures/40HC_HNKU_5.TgPcDx"
-                    },
-                    {
-                        "id": "HSUD",
-                        "name": "HSUD",
-                        "rarity": 40,
-                        "group": "HSUD",
-                        "texture": "40_HC/textures/40HC_HSUD.TgPcDx"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "id": "40ft_hc_2",
-        "randomSkins": [
-            {
-                "id": "40ft_hc_2",
-                "fullSkinsAmount": 36,
-                "composition": "40ft_hc_2",
-                "name": "40ft High cube containers (second set)",
-                "skins": [
-                    {
-                        "id": "HSUD_3",
-                        "name": "HSUD_3",
-                        "rarity": 40,
-                        "group": "HSUD",
-                        "texture": "40_HC/textures/40HC_HSUD_3.TgPcDx"
-                    },
-                    {
-                        "id": "ICLU",
-                        "name": "ICLU",
-                        "rarity": 40,
-                        "group": "ICLU",
-                        "texture": "40_HC/textures/40HC_ICLU.TgPcDx"
-                    },
-                    {
-                        "id": "ICLU_2",
-                        "name": "ICLU_2",
-                        "rarity": 40,
-                        "group": "ICLU",
-                        "texture": "40_HC/textures/40HC_ICLU_2.TgPcDx"
-                    },
-                    {
-                        "id": "KKTU",
-                        "name": "KKTU",
-                        "rarity": 40,
-                        "group": "KKTU",
-                        "texture": "40_HC/textures/40HC_KKTU.TgPcDx"
-                    },
-                    {
-                        "id": "KOCU_2",
-                        "name": "KOCU_2",
-                        "rarity": 40,
-                        "group": "KOCU",
-                        "texture": "40_HC/textures/40HC_KOCU_2.TgPcDx"
-                    },
-                    {
-                        "id": "MEDU",
-                        "name": "MEDU",
-                        "rarity": 40,
-                        "group": "MEDU",
-                        "texture": "40_HC/textures/40HC_MEDU.TgPcDx"
-                    },
-                    {
-                        "id": "MEDU_3",
-                        "name": "MEDU_3",
-                        "rarity": 40,
-                        "group": "MEDU",
-                        "texture": "40_HC/textures/40HC_MEDU_3.TgPcDx"
-                    },
-                    {
-                        "id": "MEDU_4",
-                        "name": "MEDU_4",
-                        "rarity": 40,
-                        "group": "MEDU",
-                        "texture": "40_HC/textures/40HC_MEDU_4.TgPcDx"
-                    },
-                    {
-                        "id": "MEDU_5",
-                        "name": "MEDU_5",
-                        "rarity": 40,
-                        "group": "MEDU",
-                        "texture": "40_HC/textures/40HC_MEDU_5.TgPcDx"
-                    },
-                    {
-                        "id": "MRKU",
-                        "name": "MRKU",
-                        "rarity": 40,
-                        "group": "MRKU",
-                        "texture": "40_HC/textures/40HC_MRKU.TgPcDx"
-                    },
-                    {
-                        "id": "MRKU_2",
-                        "name": "MRKU_2",
-                        "rarity": 40,
-                        "group": "MRKU",
-                        "texture": "40_HC/textures/40HC_MRKU_2.TgPcDx"
-                    },
-                    {
-                        "id": "MSCU_4",
-                        "name": "MSCU_4",
+                        "id": "MSCU",
+                        "name": "MSCU",
                         "rarity": 40,
                         "group": "MSCU",
-                        "texture": "40_HC/textures/40HC_MSCU_4.TgPcDx"
+                        "texture": "40_HC/textures/40_F_MSCU.dds"
                     },
                     {
-                        "id": "MSKU",
-                        "name": "MSKU",
+                        "id": "MSWU",
+                        "name": "MSWU",
                         "rarity": 40,
-                        "group": "MSKU",
-                        "texture": "40_HC/textures/40HC_MSKU.TgPcDx"
+                        "group": "MSWU",
+                        "texture": "40_HC/textures/40_F_MSWU.dds"
                     },
                     {
-                        "id": "MSKU_4",
-                        "name": "MSKU_4",
+                        "id": "MWCU",
+                        "name": "MWCU",
                         "rarity": 40,
-                        "group": "MSKU",
-                        "texture": "40_HC/textures/40HC_MSKU_4.TgPcDx"
+                        "group": "MWCU",
+                        "texture": "40_HC/textures/40_F_MWCU.dds"
                     },
                     {
-                        "id": "MSMU",
-                        "name": "MSMU",
+                        "id": "MWCU_2",
+                        "name": "MWCU_2",
                         "rarity": 40,
-                        "group": "MSMU",
-                        "texture": "40_HC/textures/40HC_MSMU.TgPcDx"
+                        "group": "MWCU",
+                        "texture": "40_HC/textures/40_F_MWCU_2.dds"
                     },
                     {
-                        "id": "MSMU_3",
-                        "name": "MSMU_3",
+                        "id": "MWMU",
+                        "name": "MWMU",
                         "rarity": 40,
-                        "group": "MSMU",
-                        "texture": "40_HC/textures/40HC_MSMU_3.TgPcDx"
+                        "group": "MWMU",
+                        "texture": "40_HC/textures/40_F_MWMU.dds"
                     },
                     {
                         "id": "ONEU",
                         "name": "ONEU",
                         "rarity": 40,
                         "group": "ONEU",
-                        "texture": "40_HC/textures/40HC_ONEU.TgPcDx"
+                        "texture": "40_HC/textures/40_F_ONEU.dds"
                     },
                     {
-                        "id": "ONEU_2",
-                        "name": "ONEU_2",
+                        "id": "SUDU",
+                        "name": "SUDU",
                         "rarity": 40,
-                        "group": "ONEU",
-                        "texture": "40_HC/textures/40HC_ONEU_2.TgPcDx"
+                        "group": "SUDU",
+                        "texture": "40_HC/textures/40_F_SUDU.dds"
                     },
                     {
-                        "id": "PONU",
-                        "name": "PONU",
+                        "id": "TRLU",
+                        "name": "TRLU",
                         "rarity": 40,
-                        "group": "PONU",
-                        "texture": "40_HC/textures/40HC_PONU.TgPcDx"
-                    },
+                        "group": "TRLU",
+                        "texture": "40_HC/textures/40_F_TRLU.dds"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "kind": "40ft_hc",
+        "id": "40ft_hc_1",
+        "randomSkins": [
+            {
+                "id": "40ft_hc",
+                "fullSkinsAmount": 36,
+                "composition": "40ft_hc_2",
+                "name": "40ft High cube containers (first set)",
+                "skins": [
                     {
-                        "id": "PONU_2",
-                        "name": "PONU_2",
+                        "id": "ACLU",
+                        "name": "ACLU",
                         "rarity": 40,
-                        "group": "PONU",
-                        "texture": "40_HC/textures/40HC_PONU_2.TgPcDx"
+                        "group": "ACLU",
+                        "texture": "40_HC/textures/40_HC_ACLU_1.dds"
                     },
                     {
-                        "id": "SEGU",
-                        "name": "SEGU",
+                        "id": "APHU",
+                        "name": "APHU",
                         "rarity": 40,
-                        "group": "SEGU",
-                        "texture": "40_HC/textures/40HC_SEGU.TgPcDx"
+                        "group": "APHU",
+                        "texture": "40_HC/textures/40_HC_APHU.dds"
                     },
                     {
-                        "id": "SICU",
-                        "name": "SICU",
+                        "id": "APHU_2",
+                        "name": "APHU_2",
                         "rarity": 40,
-                        "group": "SICU",
-                        "texture": "40_HC/textures/40HC_SICU.TgPcDx"
+                        "group": "APHU",
+                        "texture": "40_HC/textures/40_HC_APHU_2.dds"
                     },
                     {
-                        "id": "TBJU_2",
-                        "name": "TBJU_2",
+                        "id": "CAIU",
+                        "name": "CAIU",
                         "rarity": 40,
-                        "group": "TBJU",
-                        "texture": "40_HC/textures/40HC_TBJU_2.TgPcDx"
+                        "group": "CAIU",
+                        "texture": "40_HC/textures/40_HC_CAIU.dds"
                     },
                     {
-                        "id": "TBJU_5",
-                        "name": "TBJU_5",
+                        "id": "CAIU_2",
+                        "name": "CAIU_2",
                         "rarity": 40,
-                        "group": "TBJU",
-                        "texture": "40_HC/textures/40HC_TBJU_5.TgPcDx"
+                        "group": "CAIU",
+                        "texture": "40_HC/textures/40_HC_CAIU_2.dds"
                     },
                     {
-                        "id": "TCNU",
-                        "name": "TCNU",
+                        "id": "CBHU",
+                        "name": "CBHU",
                         "rarity": 40,
-                        "group": "TCNU",
-                        "texture": "40_HC/textures/40HC_TCNU.TgPcDx"
+                        "group": "CBHU",
+                        "texture": "40_HC/textures/40_HC_CBHU.dds"
                     },
                     {
-                        "id": "TEMU_2",
-                        "name": "TEMU_2",
+                        "id": "CBLU",
+                        "name": "CBLU",
+                        "rarity": 40,
+                        "group": "CBLU",
+                        "texture": "40_HC/textures/40_HC_CBLU.dds"
+                    },
+                    {
+                        "id": "CCLU",
+                        "name": "CCLU",
+                        "rarity": 40,
+                        "group": "CCLU",
+                        "texture": "40_HC/textures/40_HC_CCLU.dds"
+                    },
+                    {
+                        "id": "CCLU_2",
+                        "name": "CCLU_2",
+                        "rarity": 40,
+                        "group": "CCLU",
+                        "texture": "40_HC/textures/40_HC_CCLU_2.dds"
+                    },
+                    {
+                        "id": "CICU",
+                        "name": "CICU",
+                        "rarity": 40,
+                        "group": "CICU",
+                        "texture": "40_HC/textures/40_HC_CICU.dds"
+                    },
+                    {
+                        "id": "CICU_2",
+                        "name": "CICU_2",
+                        "rarity": 40,
+                        "group": "CICU",
+                        "texture": "40_HC/textures/40_HC_CICU_2.dds"
+                    },
+                    {
+                        "id": "CICU_3",
+                        "name": "CICU_3",
+                        "rarity": 40,
+                        "group": "CICU",
+                        "texture": "40_HC/textures/40_HC_CICU_3.dds"
+                    },
+                    {
+                        "id": "CICU_4",
+                        "name": "CICU_4",
+                        "rarity": 40,
+                        "group": "CICU",
+                        "texture": "40_HC/textures/40_HC_CICU_4.dds"
+                    },
+                    {
+                        "id": "CICU_5",
+                        "name": "CICU_5",
+                        "rarity": 40,
+                        "group": "CICU",
+                        "texture": "40_HC/textures/40_HC_CICU_5.dds"
+                    },
+                    {
+                        "id": "CMAU",
+                        "name": "CMAU",
+                        "rarity": 40,
+                        "group": "CMAU",
+                        "texture": "40_HC/textures/40_HC_CMAU.dds"
+                    },
+                    {
+                        "id": "CMAU_2",
+                        "name": "CMAU_2",
+                        "rarity": 40,
+                        "group": "CMAU",
+                        "texture": "40_HC/textures/40_HC_CMAU_2.dds"
+                    },
+                    {
+                        "id": "CMAU_3",
+                        "name": "CMAU_3",
+                        "rarity": 40,
+                        "group": "CMAU",
+                        "texture": "40_HC/textures/40_HC_CMAU_3.dds"
+                    },
+                    {
+                        "id": "CMAU_4",
+                        "name": "CMAU_4",
+                        "rarity": 40,
+                        "group": "CMAU",
+                        "texture": "40_HC/textures/40_HC_CMAU_4.dds"
+                    },
+                    {
+                        "id": "CRXU",
+                        "name": "CRXU",
+                        "rarity": 40,
+                        "group": "CRXU",
+                        "texture": "40_HC/textures/40_HC_CRXU.dds"
+                    },
+                    {
+                        "id": "CRXU_2",
+                        "name": "CRXU_2",
+                        "rarity": 40,
+                        "group": "CRXU",
+                        "texture": "40_HC/textures/40_HC_CRXU_2.dds"
+                    },
+                    {
+                        "id": "CSNU",
+                        "name": "CSNU",
+                        "rarity": 40,
+                        "group": "CSNU",
+                        "texture": "40_HC/textures/40_HC_CSNU.dds"
+                    },
+                    {
+                        "id": "ECMU",
+                        "name": "ECMU",
+                        "rarity": 40,
+                        "group": "ECMU",
+                        "texture": "40_HC/textures/40_HC_ECMU.dds"
+                    },
+                    {
+                        "id": "EITU",
+                        "name": "EITU",
+                        "rarity": 40,
+                        "group": "EITU",
+                        "texture": "40_HC/textures/40_HC_EITU.dds"
+                    },
+                    {
+                        "id": "EITU_2",
+                        "name": "EITU_2",
+                        "rarity": 40,
+                        "group": "EITU",
+                        "texture": "40_HC/textures/40_HC_EITU_2.dds"
+                    },
+                    {
+                        "id": "FCIU",
+                        "name": "FCIU",
+                        "rarity": 40,
+                        "group": "FCIU",
+                        "texture": "40_HC/textures/40_HC_FCIU.dds"
+                    },
+                    {
+                        "id": "FESU",
+                        "name": "FESU",
+                        "rarity": 40,
+                        "group": "FESU",
+                        "texture": "40_HC/textures/40_HC_FESU.dds"
+                    },
+                    {
+                        "id": "FFAU",
+                        "name": "FFAU",
+                        "rarity": 40,
+                        "group": "FFAU",
+                        "texture": "40_HC/textures/40_HC_FFAU.dds"
+                    },
+                    {
+                        "id": "FSCU",
+                        "name": "FSCU",
+                        "rarity": 40,
+                        "group": "FSCU",
+                        "texture": "40_HC/textures/40_HC_FSCU.dds"
+                    },
+                    {
+                        "id": "GESU",
+                        "name": "GESU",
+                        "rarity": 40,
+                        "group": "GESU",
+                        "texture": "40_HC/textures/40_HC_GESU.dds"
+                    },
+                    {
+                        "id": "GLDU",
+                        "name": "GLDU",
+                        "rarity": 40,
+                        "group": "GLDU",
+                        "texture": "40_HC/textures/40_HC_GLDU.dds"
+                    },
+                    {
+                        "id": "GLDU_2",
+                        "name": "GLDU_2",
+                        "rarity": 40,
+                        "group": "GLDU",
+                        "texture": "40_HC/textures/40_HC_GLDU_2.dds"
+                    },
+                    {
+                        "id": "HASU",
+                        "name": "HASU",
+                        "rarity": 40,
+                        "group": "HASU",
+                        "texture": "40_HC/textures/40_HC_HASU.dds"
+                    },
+                    {
+                        "id": "HJCU",
+                        "name": "HJCU",
+                        "rarity": 40,
+                        "group": "HJCU",
+                        "texture": "40_HC/textures/40_HC_HJCU.dds"
+                    },
+                    {
+                        "id": "HLBU",
+                        "name": "HLBU",
+                        "rarity": 40,
+                        "group": "HLBU",
+                        "texture": "40_HC/textures/40_HC_HLBU.dds"
+                    },
+                    {
+                        "id": "HLXU",
+                        "name": "HLXU",
+                        "rarity": 40,
+                        "group": "HLXU",
+                        "texture": "40_HC/textures/40_HC_HLXU.dds"
+                    },
+                    {
+                        "id": "HHMU",
+                        "name": "HHMU",
+                        "rarity": 40,
+                        "group": "HHMU",
+                        "texture": "40_HC/textures/40_HC_HMMU_1.dds"
+                    }
+                ]
+            }
+        ]
+    },
+            {
+                "kind": "40ft_hc",
+                "id": "40ft_hc_2",
+                "randomSkins": [
+                    {
+                        "id": "40ft_hc",
+                        "fullSkinsAmount": 36,
+                        "composition": "40ft_hc_2",
+                        "name": "40ft High cube containers (second set)",
+                        "skins": [
+                            {
+                                "id": "HHMU_2",
+                                "name": "HHMU_2",
+                                "rarity": 40,
+                                "group": "HHMU",
+                                "texture": "40_HC/textures/40_HC_HMMU_2.dds"
+                            },
+                            {
+                                "id": "HHMU_3",
+                                "name": "HHMU_3",
+                                "rarity": 40,
+                                "group": "HHMU",
+                                "texture": "40_HC/textures/40_HC_HMMU_3.dds"
+                            },
+                            {
+                                "id": "HHMU_4",
+                                "name": "HHMU_4",
+                                "rarity": 40,
+                                "group": "HHMU",
+                                "texture": "40_HC/textures/40_HC_HMMU_4.dds"
+                            },
+                            {
+                                "id": "HNKU",
+                                "name": "HNKU",
+                                "rarity": 40,
+                                "group": "HNKU",
+                                "texture": "40_HC/textures/40_HC_HNKU.dds"
+                            },
+                            {
+                                "id": "HNKU_2",
+                                "name": "HNKU_2",
+                                "rarity": 40,
+                                "group": "HNKU",
+                                "texture": "40_HC/textures/40_HC_HNKU_2.dds"
+                            },
+                            {
+                                "id": "HNKU_3",
+                                "name": "HNKU_3",
+                                "rarity": 40,
+                                "group": "HLXU",
+                                "texture": "40_HC/textures/40_HC_HNKU_3.dds"
+                            },
+                            {
+                                "id": "ICLU",
+                                "name": "ICLU",
+                                "rarity": 40,
+                                "group": "ICLU",
+                                "texture": "40_HC/textures/40_HC_ICLU.dds"
+                            },
+                            {
+                                "id": "ICLU_2",
+                                "name": "ICLU_2",
+                                "rarity": 40,
+                                "group": "ICLU",
+                                "texture": "40_HC/textures/40_HC_ICLU_2.dds"
+                            },
+                            {
+                                "id": "KKTU_2",
+                                "name": "KKTU_2",
+                                "rarity": 40,
+                                "group": "KKTU",
+                                "texture": "40_HC/textures/40_HC_KKTU.dds"
+                            },
+                            {
+                                "id": "KOCU",
+                                "name": "KOCU",
+                                "rarity": 40,
+                                "group": "KOCU",
+                                "texture": "40_HC/textures/40_HC_KOCU_1.dds"
+                            },
+                            {
+                                "id": "MEDU",
+                                "name": "MEDU",
+                                "rarity": 40,
+                                "group": "MEDU",
+                                "texture": "40_HC/textures/40_HC_MEDU_1.dds"
+                            },
+                            {
+                                "id": "MRKU",
+                                "name": "MRKU",
+                                "rarity": 40,
+                                "group": "MRKU",
+                                "texture": "40_HC/textures/40_HC_MRKU.dds"
+                            },
+                            {
+                                "id": "MRKU_2",
+                                "name": "MRKU_2",
+                                "rarity": 40,
+                                "group": "MRKU",
+                                "texture": "40_HC/textures/40_HC_MRKU_2.dds"
+                            },
+                            {
+                                "id": "MSCU",
+                                "name": "MSCU",
+                                "rarity": 40,
+                                "group": "MSCU",
+                                "texture": "40_HC/textures/40_HC_MSCU.dds"
+                            },
+                            {
+                                "id": "MSCU_2",
+                                "name": "MSCU_2",
+                                "rarity": 40,
+                                "group": "MSCU",
+                                "texture": "40_HC/textures/40_HC_MSCU_2.dds"
+                            },
+                            {
+                                "id": "MSKU",
+                                "name": "MSKU",
+                                "rarity": 40,
+                                "group": "MSKU",
+                                "texture": "40_HC/textures/40_HC_MSKU.dds"
+                            },
+                            {
+                                "id": "MSKU_2",
+                                "name": "MSKU_2",
+                                "rarity": 40,
+                                "group": "MSKU",
+                                "texture": "40_HC/textures/40_HC_MSKU_2.dds"
+                            },
+                            {
+                                "id": "MSMU",
+                                "name": "MSMU",
+                                "rarity": 40,
+                                "group": "MSMU",
+                                "texture": "40_HC/textures/40_HC_MSMU.dds"
+                            },
+                            {
+                                "id": "MSMU_2",
+                                "name": "MSMU_2",
+                                "rarity": 40,
+                                "group": "MSMU",
+                                "texture": "40_HC/textures/40_HC_MSMU_2.dds"
+                            },
+                            {
+                                "id": "ONEU",
+                                "name": "ONEU",
+                                "rarity": 40,
+                                "group": "ONEU",
+                                "texture": "40_HC/textures/40_HC_ONEU.dds"
+                            },
+                            {
+                                "id": "ONEU_2",
+                                "name": "ONEU_2",
+                                "rarity": 40,
+                                "group": "ONEU",
+                                "texture": "40_HC/textures/40_HC_ONEU_2.dds"
+                            },
+                            {
+                                "id": "OVLU_1",
+                                "name": "OVLU_1",
+                                "rarity": 40,
+                                "group": "OVLU",
+                                "texture": "40_HC/textures/40_HC_OVLU_1.dds"
+                            },
+                            {
+                                "id": "PKEU_1",
+                                "name": "PKEU_1",
+                                "rarity": 40,
+                                "group": "PKEU",
+                                "texture": "40_HC/textures/40_HC_PKEU_1.dds"
+                            },
+                            {
+                                "id": "PKEU_2",
+                                "name": "PKEU_2",
+                                "rarity": 40,
+                                "group": "PKEU",
+                                "texture": "40_HC/textures/40_HC_PKEU_2.dds"
+                            },
+                            {
+                                "id": "PONU",
+                                "name": "PONU",
+                                "rarity": 40,
+                                "group": "PONU",
+                                "texture": "40_HC/textures/40_HC_PONU.dds"
+                            },
+                            {
+                                "id": "PONU_2",
+                                "name": "PONU_2",
+                                "rarity": 40,
+                                "group": "PONU",
+                                "texture": "40_HC/textures/40_HC_PONU_2.dds"
+                            },
+                            {
+                                "id": "SEGU",
+                                "name": "SEGU",
+                                "rarity": 40,
+                                "group": "SEGU",
+                                "texture": "40_HC/textures/40_HC_SEGU.dds"
+                            },
+                            {
+                                "id": "SICU",
+                                "name": "SICU",
+                                "rarity": 40,
+                                "group": "SICU",
+                                "texture": "40_HC/textures/40_HC_SICU.dds"
+                            },
+                            {
+                                "id": "SIPU",
+                                "name": "SIPU",
+                                "rarity": 40,
+                                "group": "SIPU",
+                                "texture": "40_HC/textures/40_HC_SIPU.dds"
+                            },
+                            {
+                                "id": "STXU",
+                                "name": "STXU",
+                                "rarity": 40,
+                                "group": "STXU",
+                                "texture": "40_HC/textures/40_HC_STXU.dds"
+                            },
+                            {
+                                "id": "SUDU",
+                                "name": "SUDU",
+                                "rarity": 40,
+                                "group": "SUDU",
+                                "texture": "40_HC/textures/40_HC_SUDU.dds"
+                            },
+                            {
+                                "id": "TAWU",
+                                "name": "TAWU",
+                                "rarity": 40,
+                                "group": "TAWU",
+                                "texture": "40_HC/textures/40_HC_TAWU.dds"
+                            },
+                            {
+                                "id": "TBJU",
+                                "name": "TBJU",
+                                "rarity": 40,
+                                "group": "TBJU",
+                                "texture": "40_HC/textures/40_HC_TBJU.dds"
+                            },
+                            {
+                                "id": "TBJU_2",
+                                "name": "TBJU_2",
+                                "rarity": 40,
+                                "group": "TBJU",
+                                "texture": "40_HC/textures/40_HC_TBJU_2.dds"
+                            },
+                            {
+                                "id": "TBJU_3",
+                                "name": "TBJU_3",
+                                "rarity": 40,
+                                "group": "TBJU",
+                                "texture": "40_HC/textures/40_HC_TBJU_3.dds"
+                            },
+                            {
+                                "id": "TCNU",
+                                "name": "TCNU",
+                                "rarity": 40,
+                                "group": "TCNU",
+                                "texture": "40_HC/textures/40_HC_TCNU.dds"
+                            }
+                        ]
+                    }
+                ]
+            },
+    {
+        "kind": "40ft_hc",
+        "id": "40ft_hc_3",
+        "randomSkins": [
+            {
+                "id": "40ft_hc",
+                "fullSkinsAmount": 36,
+                "composition": "40ft_hc_2",
+                "name": "40ft High cube containers (third set)",
+                "skins": [
+                    {
+                        "id": "TEIU_1",
+                        "name": "TEIU_1",
+                        "rarity": 40,
+                        "group": "TEIU",
+                        "texture": "40_HC/textures/40_HC_TEIU_1.dds"
+                    },
+                    {
+                        "id": "TEIU_2",
+                        "name": "TEIU_2",
+                        "rarity": 40,
+                        "group": "TEIU",
+                        "texture": "40_HC/textures/40_HC_TEIU_2.dds"
+                    },
+                    {
+                        "id": "TEIU_3",
+                        "name": "TEIU_3",
+                        "rarity": 40,
+                        "group": "TEIU",
+                        "texture": "40_HC/textures/40_HC_TEIU_3.dds"
+                    },
+                    {
+                        "id": "TEMU",
+                        "name": "TEMU",
                         "rarity": 40,
                         "group": "TEMU",
-                        "texture": "40_HC/textures/40HC_TEMU_2.TgPcDx"
+                        "texture": "40_HC/textures/40_HC_TEMU.dds"
                     },
                     {
                         "id": "TKRU",
                         "name": "TKRU",
                         "rarity": 40,
                         "group": "TKRU",
-                        "texture": "40_HC/textures/40HC_TKRU.TgPcDx"
+                        "texture": "40_HC/textures/40_HC_TKRU.dds"
+                    },
+                    {
+                        "id": "TTNU",
+                        "name": "TTNU",
+                        "rarity": 40,
+                        "group": "TTNU",
+                        "texture": "40_HC/textures/40_HC_TTNU.dds"
                     },
                     {
                         "id": "UACU",
                         "name": "UACU",
                         "rarity": 40,
                         "group": "UACU",
-                        "texture": "40_HC/textures/40HC_UACU.TgPcDx"
+                        "texture": "40_HC/textures/40_HC_UACU.dds"
                     },
                     {
                         "id": "UESU",
                         "name": "UESU",
                         "rarity": 40,
                         "group": "UESU",
-                        "texture": "40_HC/textures/40HC_UESU.TgPcDx"
+                        "texture": "40_HC/textures/40_HC_UESU.dds"
+                    },
+                    {
+                        "id": "WAEU",
+                        "name": "WAEU",
+                        "rarity": 40,
+                        "group": "WAEU",
+                        "texture": "40_HC/textures/40_HC_WAEU.dds"
                     },
                     {
                         "id": "XAGU",
                         "name": "XAGU",
                         "rarity": 40,
                         "group": "XAGU",
-                        "texture": "40_HC/textures/40HC_XAGU.TgPcDx"
+                        "texture": "40_HC/textures/40_HC_XAGU.dds"
                     },
                     {
                         "id": "XAGU_2",
                         "name": "XAGU_2",
                         "rarity": 40,
                         "group": "XAGU",
-                        "texture": "40_HC/textures/40HC_XAGU_2.TgPcDx"
+                        "texture": "40_HC/textures/40_HC_XAGU_2.dds"
                     },
                     {
-                        "id": "ZIHU",
-                        "name": "ZIHU",
+                        "id": "XSLU",
+                        "name": "XSLU",
                         "rarity": 40,
-                        "group": "ZIHU",
-                        "texture": "40_HC/textures/40HC_ZIHU.TgPcDx"
+                        "group": "XSLU",
+                        "texture": "40_HC/textures/40_HC_XSLU.dds"
                     },
                     {
-                        "id": "ZIHU_2",
-                        "name": "ZIHU_2",
+                        "id": "YXEU",
+                        "name": "YXEU",
                         "rarity": 40,
-                        "group": "ZIHU",
-                        "texture": "40_HC/textures/40HC_ZIHU_2.TgPcDx"
+                        "group": "YXEU",
+                        "texture": "40_HC/textures/40_HC_YXEU.dds"
+                    },
+                    {
+                        "id": "YXEU_2",
+                        "name": "YXEU_2",
+                        "rarity": 40,
+                        "group": "YXEU",
+                        "texture": "40_HC/textures/40_HC_YXEU_2.dds"
                     }
                 ]
             }
@@ -3574,6 +4557,7 @@
     // keep random spots avail
     //24 96 C
     {
+        "kind": "20ft_mixed",
         "id": "20ft_mixed_1",
         "randomSkins": [
             {
@@ -3963,6 +4947,7 @@
         ]
     },
     {
+        "kind": "20ft_mixed",
         "id": "20ft_mixed_2",
         "randomSkins": [
             {
@@ -4349,6 +5334,7 @@
         ]
     },
     {
+        "kind": "20ft_mixed",
         "id": "20ft_mixed_3",
         "randomSkins": [
             {
@@ -4747,6 +5733,7 @@
         ]
     },
     {
+        "kind": "20ft_mixed",
         "id": "20ft_mixed_4",
         "randomSkins": [
             {
@@ -5104,11 +6091,11 @@
                         "texture": "20FT_SNTU.dds"
                     },
                     {
-                        "id": "20FT_HLMU",
-                        "name": "20FT_HLMU",
+                        "id": "20FT_WDCU",
+                        "name": "20FT_WDCU",
 
-                        "group": "HLMU",
-                        "texture": "20FT_HLMU.dds"
+                        "group": "WDCU",
+                        "texture": "20FT_WDCU.dds"
                     },
                     {
                         "id": "20FT_SLZU_02",
@@ -5143,6 +6130,7 @@
         ]
     },
     {
+        "kind": "782",
         "id": "782_1",
         "randomSkins": [
             {
@@ -5452,6 +6440,7 @@
     {
         "name": "782tt_mixed_1",
         "id": "782tt_mixed_1",
+        "kind": "782tt",
         "randomSkins": [
             {
                 "id": "782tt_1",
@@ -5872,6 +6861,7 @@
     },
     {
         "name": "782tt_mixed_2",
+        "kind": "782tt",
         "id": "782tt_mixed_2",
         "randomSkins": [
             {

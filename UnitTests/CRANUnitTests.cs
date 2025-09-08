@@ -55,7 +55,8 @@ namespace UnitTests
                     Major = 1,
                     Minor = 0,
                     Patch = 0
-                }
+                },
+                Url = "https://example.com/download"
             };
 
             var variant = new AddonVariant

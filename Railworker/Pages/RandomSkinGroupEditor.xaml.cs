@@ -58,6 +58,25 @@ namespace Railworker.Pages
             }
         }
 
+        public RandomSkinGroupEditor(RandomSkinGroup randomSkinGroup, List<Composition> compositions)
+        {
+            InitializeComponent();
+            _rwLib = ((App)Application.Current).RWLib;
+            _viewModel = new RandomSkinGroupEditorViewModel();
+            DataContext = _viewModel;
+            
+            if (randomSkinGroup != null)
+            {
+                _viewModel.LoadRandomSkinGroup(randomSkinGroup);
+                _viewModel.LoadCompositions(compositions);
+                this.StatusText.Text = $"Editing random skin group: {_viewModel.Id}";
+            }
+            else
+            {
+                this.StatusText.Text = "Create a new random skin group or open an existing one";
+            }
+        }
+
         #region Event Handlers
 
         private void SaveButton_Click(object sender, RoutedEventArgs e)
@@ -125,7 +144,6 @@ namespace Railworker.Pages
                     Id = $"new_texture_{DateTime.Now.Ticks}",
                     Name = "New Skin Texture",
                     Group = "",
-                    Rarity = 1,
                     Texture = ""
                 };
                 
@@ -177,6 +195,132 @@ namespace Railworker.Pages
             }
         }
 
+        private void PreviewRandomSkinButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (_viewModel.SelectedRandomSkin != null)
+            {
+                // Open preview window for the selected RandomSkin
+                var previewWindow = new RandomSkinPreviewWindow(_viewModel.SelectedRandomSkin, _viewModel.AvailableCompositions, _rwLib);
+                previewWindow.Show();
+            }
+            else
+            {
+                MessageBox.Show("Please select a RandomSkin to preview.", "Information", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
+        }
+
+        private async void GenerateThumbnailsButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (_viewModel.SelectedRandomSkin != null)
+            {
+                try
+                {
+                    StatusText.Text = "Generating thumbnails...";
+                    
+                    var composition = _viewModel.AvailableCompositions.FirstOrDefault(c => c.Id == _viewModel.SelectedRandomSkin.Composition);
+                    if (composition == null)
+                    {
+                        MessageBox.Show("Composition not found for this RandomSkin.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                        return;
+                    }
+
+                    // Create thumbnails directory
+                    var thumbnailsDir = System.IO.Path.Combine(Environment.CurrentDirectory, "thumbnails", _viewModel.Id);
+                    Directory.CreateDirectory(thumbnailsDir);
+
+                    int count = 0;
+                    foreach (var skinTexture in _viewModel.SelectedRandomSkin.Skins)
+                    {
+                        if (!string.IsNullOrEmpty(skinTexture.Texture))
+                        {
+                            // Generate thumbnail using similar logic to RandomContainerGenerator
+                            await GenerateThumbnail(skinTexture, composition, thumbnailsDir, count++);
+                        }
+                    }
+
+                    StatusText.Text = $"Generated {count} thumbnails in {thumbnailsDir}";
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Error generating thumbnails: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                    StatusText.Text = "Error generating thumbnails";
+                }
+            }
+            else
+            {
+                MessageBox.Show("Please select a RandomSkin to generate thumbnails for.", "Information", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
+        }
+
+        private void SelectCompositionButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (_viewModel.SelectedRandomSkin != null && _viewModel.AvailableCompositions.Count > 0)
+            {
+                var compositionSelector = new CompositionSelectorWindow(_viewModel.AvailableCompositions);
+                if (compositionSelector.ShowDialog() == true)
+                {
+                    _viewModel.SelectedRandomSkin.Composition = compositionSelector.SelectedComposition.Id;
+                    StatusText.Text = $"Selected composition: {compositionSelector.SelectedComposition.Name}";
+                }
+            }
+            else
+            {
+                MessageBox.Show("No compositions available or no RandomSkin selected.", "Information", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
+        }
+
+        private void EditCompositionButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (_viewModel.SelectedRandomSkin != null && !string.IsNullOrEmpty(_viewModel.SelectedRandomSkin.Composition))
+            {
+                var composition = _viewModel.AvailableCompositions.FirstOrDefault(c => c.Id == _viewModel.SelectedRandomSkin.Composition);
+                if (composition != null)
+                {
+                    var mainWindow = (MainWindow)Application.Current.MainWindow;
+                    mainWindow.OpenTab(new MainWindow.MainWindowViewModel.Tab
+                    {
+                        FrameContent = new CompositionEditor(composition),
+                        Header = $"Edit: {composition.Name}"
+                    });
+                }
+                else
+                {
+                    MessageBox.Show("Composition not found.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+            }
+            else
+            {
+                MessageBox.Show("No composition selected.", "Information", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
+        }
+
+        private async Task GenerateThumbnail(RandomSkin.SkinTexture skinTexture, Composition composition, string outputDir, int index)
+        {
+            // This is a simplified version of the thumbnail generation from RandomContainerGenerator
+            // You would need to implement the full logic based on your requirements
+            try
+            {
+                var basePath = System.IO.Path.Combine(_rwLib.TSPath, "Assets\\Alex95\\ContainerPack01\\RailNetwork\\Interactive");
+                basePath = string.IsNullOrEmpty(composition.BasePath) ? basePath : System.IO.Path.Combine(_rwLib.TSPath, "Assets", composition.BasePath);
+
+                var inputFile = System.IO.Path.Combine(basePath, skinTexture.Texture);
+                if (!File.Exists(inputFile))
+                {
+                    Console.WriteLine($"Texture file not found: {inputFile}");
+                    return;
+                }
+
+                // For now, just copy the file as a placeholder
+                // In a full implementation, you would process the image according to the composition projections
+                var outputFile = System.IO.Path.Combine(outputDir, $"{index:D2}_{skinTexture.Id}.png");
+                File.Copy(inputFile, outputFile, true);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error generating thumbnail for {skinTexture.Id}: {ex.Message}");
+            }
+        }
+
         #endregion
 
         #region ViewModel
@@ -187,6 +331,7 @@ namespace Railworker.Pages
             private ObservableCollection<RandomSkin> _randomSkins;
             private RandomSkin _selectedRandomSkin;
             private RandomSkin.SkinTexture _selectedSkinTexture;
+            private List<Composition> _availableCompositions;
 
             public string Id
             {
@@ -212,11 +357,18 @@ namespace Railworker.Pages
                 set => SetProperty(ref _selectedSkinTexture, value);
             }
 
+            public List<Composition> AvailableCompositions
+            {
+                get => _availableCompositions ?? new List<Composition>();
+                set => SetProperty(ref _availableCompositions, value);
+            }
+
             public RandomSkinGroupEditorViewModel()
             {
                 // Initialize with default values
                 Id = "";
                 RandomSkins = new ObservableCollection<RandomSkin>();
+                AvailableCompositions = new List<Composition>();
             }
 
             public void LoadRandomSkinGroup(RandomSkinGroup randomSkinGroup)
@@ -228,6 +380,11 @@ namespace Railworker.Pages
                 {
                     RandomSkins.Add(randomSkin);
                 }
+            }
+
+            public void LoadCompositions(List<Composition> compositions)
+            {
+                AvailableCompositions = compositions ?? new List<Composition>();
             }
 
             public RandomSkinGroup GetRandomSkinGroup()

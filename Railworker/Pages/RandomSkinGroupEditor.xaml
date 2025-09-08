@@ -22,6 +22,9 @@
             <Separator/>
             <Button x:Name="AddRandomSkinButton" Content="Add RandomSkin" Click="AddRandomSkinButton_Click" Margin="5"/>
             <Button x:Name="RemoveRandomSkinButton" Content="Remove RandomSkin" Click="RemoveRandomSkinButton_Click" Margin="5"/>
+            <Separator/>
+            <Button x:Name="PreviewRandomSkinButton" Content="Preview RandomSkin" Click="PreviewRandomSkinButton_Click" Margin="5"/>
+            <Button x:Name="GenerateThumbnailsButton" Content="Generate Thumbnails" Click="GenerateThumbnailsButton_Click" Margin="5"/>
         </ToolBar>
 
         <!-- Main content area -->
@@ -94,7 +97,11 @@
                                 <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding SelectedRandomSkin.Name}" Margin="5"/>
 
                                 <TextBlock Grid.Row="2" Grid.Column="0" Text="Composition:" VerticalAlignment="Center" Margin="0,5"/>
-                                <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding SelectedRandomSkin.Composition}" Margin="5"/>
+                                <StackPanel Grid.Row="2" Grid.Column="1" Orientation="Horizontal" Margin="5">
+                                    <TextBox Text="{Binding SelectedRandomSkin.Composition}" Width="200" Margin="0,0,5,0"/>
+                                    <Button Content="Select" Click="SelectCompositionButton_Click" Margin="0,0,5,0"/>
+                                    <Button Content="Edit" Click="EditCompositionButton_Click"/>
+                                </StackPanel>
 
                                 <TextBlock Grid.Row="3" Grid.Column="0" Text="Full Skins Amount:" VerticalAlignment="Center" Margin="0,5"/>
                                 <TextBox Grid.Row="3" Grid.Column="1" Text="{Binding SelectedRandomSkin.FullSkinsAmount}" Margin="5"/>
@@ -122,7 +129,6 @@
                                                 <GridViewColumn Header="ID" DisplayMemberBinding="{Binding Id}" Width="100"/>
                                                 <GridViewColumn Header="Name" DisplayMemberBinding="{Binding Name}" Width="150"/>
                                                 <GridViewColumn Header="Group" DisplayMemberBinding="{Binding Group}" Width="100"/>
-                                                <GridViewColumn Header="Rarity" DisplayMemberBinding="{Binding Rarity}" Width="60"/>
                                                 <GridViewColumn Header="Texture" DisplayMemberBinding="{Binding Texture}" Width="200"/>
                                             </GridView>
                                         </ListView.View>
@@ -152,9 +158,6 @@
 
                                     <TextBlock Grid.Row="2" Grid.Column="0" Text="Group:" VerticalAlignment="Center" Margin="0,5"/>
                                     <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding SelectedSkinTexture.Group}" Margin="5"/>
-
-                                    <TextBlock Grid.Row="3" Grid.Column="0" Text="Rarity:" VerticalAlignment="Center" Margin="0,5"/>
-                                    <TextBox Grid.Row="3" Grid.Column="1" Text="{Binding SelectedSkinTexture.Rarity}" Margin="5"/>
 
                                     <TextBlock Grid.Row="4" Grid.Column="0" Text="Texture:" VerticalAlignment="Center" Margin="0,5"/>
                                     <TextBox Grid.Row="4" Grid.Column="1" Text="{Binding SelectedSkinTexture.Texture}" Margin="5"/>

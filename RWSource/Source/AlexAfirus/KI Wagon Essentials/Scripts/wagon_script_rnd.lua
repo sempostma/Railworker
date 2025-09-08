@@ -284,6 +284,8 @@ local function setCargoNodes()
 end
 
 local function setSluitsein()
+    Call("ActivateNode", "sluitsein", 0)
+
     -- Sluitsein
 
     local wagonFront = Call("SendConsistMessage", 0, 0, 0)
