@@ -60,6 +60,8 @@
                     <RowDefinition Height="Auto" />
                     <RowDefinition Height="Auto" />
                     <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
                 </Grid.RowDefinitions>
 
                 <TextBlock Grid.Row="0" Grid.Column="0" Text="{x:Static lang:Resources.file_extensions_to_ignore}" Margin="0,0,10,5" />
@@ -68,8 +70,12 @@
                 <TextBlock Grid.Row="1" Grid.Column="0" Text="{x:Static lang:Resources.author}" Margin="0,0,10,5" />
                 <TextBox Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Text="{Binding Author}" Margin="0,0,0,5" />
 
-                <TextBlock Grid.Row="2" Grid.Column="0" Text="{x:Static lang:Resources.license}" Margin="0,0,10,0" />
-                <ComboBox SelectedIndex="{Binding LicenseSelectedIndex}" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" Margin="0,0,0,5">
+                <CheckBox Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" Content="Exclude xml if a .bin file already exists" IsChecked="{Binding ExcludeXmlIfBinExists}" Margin="0,0,0,5" />
+
+                <CheckBox Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3" Content="Package as .ap assets (embed provider/product .ap archives)" IsChecked="{Binding PackageAsAPAsset}" Margin="0,0,0,5" />
+
+                <TextBlock Grid.Row="4" Grid.Column="0" Text="{x:Static lang:Resources.license}" Margin="0,0,10,0" />
+                <ComboBox SelectedIndex="{Binding LicenseSelectedIndex}" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" Margin="0,0,0,5">
                     <ComboBoxItem Content="Unlicensed" />
                     <ComboBoxItem Content="Unprotected" />
                     <ComboBoxItem Content="Protected" />

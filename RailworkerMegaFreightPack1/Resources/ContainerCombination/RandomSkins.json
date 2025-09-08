@@ -1609,299 +1609,299 @@
             }
         ]
     },
-    {
-        "id": "45ft_hc_rf_1",
-        "randomSkins": [
-            {
-                "id": "45ft_sp_c34",
-                "composition": "45ft_sp",
-                "name": "N C34",
-                "fullSkinsAmount": 4,
-                "skins": [
-                    {
-                        "id": "45_N_COME_1_C34",
-                        "name": "45_N_COME_1_C34 N_1",
-                        "group": "COME",
-                        "texture": "45_N_COME_1_C34.dds"
-                    },
-                    {
-                        "id": "45_N_MUCE_1_C34",
-                        "name": "45_N_MUCE_1_C34 N_1",
-                        "group": "MUCE",
-                        "texture": "45_N_MUCE_1_C34.dds"
-                    },
-                    {
-                        "id": "45_N_MUCE_2_C34",
-                        "name": "45_N_MUCE_2_C34 N_1",
-                        "group": "MUCE",
-                        "texture": "45_N_MUCE_2_C34.dds"
-                    },
-                    {
-                        "id": "45_N_MUCE_3_C34",
-                        "name": "45_N_MUCE_3_C34 N_1",
-                        "group": "MUCE",
-                        "texture": "45_N_MUCE_3_C34.dds"
-                    }
-                ]
-            },
-            {
-                "id": "45ft_sp_c49",
-                "composition": "45ft_sp",
-                "name": "N C49",
-                "fullSkinsAmount": 1,
-                "skins": [
-                    {
-                        "id": "45_N_SARB_1_C49",
-                        "name": "45_N_SARB_1_C49 N_1",
-                        "group": "SARB",
-                        "texture": "45_N_SARB_1_C49.dds"
-                    }
-                ]
-            },
-            {
-                "id": "45ft_sp_c63",
-                "composition": "45ft_sp",
-                "name": "N C63",
-                "fullSkinsAmount": 7,
-                "skins": [
-                    {
-                        "id": "45_N_COBA_1_C63",
-                        "name": "45_N_COBA_1_C63",
-                        "group": "COBA",
-                        "texture": "45_N_COBA_1_C63.dds"
-                    },
-                    {
-                        "id": "45_N_EKOE_1_C63",
-                        "name": "45_N_EKOE_1_C63",
-                        "group": "EKOE",
-                        "texture": "45_N_EKOE_1_C63.dds"
-                    },
-                    {
-                        "id": "45_N_GBRA_C63",
-                        "name": "45_N_GBRA_C63",
-                        "group": "GBRA",
-                        "texture": "45_N_GBRA_C63.dds"
-                    },
-                    {
-                        "id": "45_N_MARE_1_C63",
-                        "name": "45_N_MARE_1_C63",
-                        "group": "MARE",
-                        "texture": "45_N_MARE_1_C63.dds"
-                    },
-                    {
-                        "id": "45_N_REYU_1_C63",
-                        "name": "45_N_REYU_1_C63",
-                        "group": "REYU",
-                        "texture": "45_N_REYU_1_C63.dds"
-                    },
-                    {
-                        "id": "45_N_TURK_1_C63",
-                        "name": "45_N_TURK_1_C63",
-                        "group": "TURK",
-                        "texture": "45_N_TURK_1_C63.dds"
-                    },
-                    {
-                        "id": "45_N_WEBO_1_C63",
-                        "name": "45_N_WEBO_1_C63",
-                        "group": "WEBO",
-                        "texture": "45_N_WEBO_1_C63.dds"
-                    }
-                ]
-            },
-            {
-                "id": "45ft_sp_c69",
-                "composition": "45ft_sp",
-                "name": "N C69",
-                "fullSkinsAmount": 1,
-                "skins": [
-                    {
-                        "id": "45_N_EKOE_2_C69",
-                        "name": "45_N_EKOE_2_C69",
-                        "group": "EKOE",
-                        "texture": "45_N_EKOE_2_C69.dds"
-                    }
-                ]
-            },
-            {
-                "id": "45ft_sp_c75",
-                "composition": "45ft_sp",
-                "name": "N C75",
-                "fullSkinsAmount": 1,
-                "skins": [
-                    {
-                        "id": "45_N_PCEU_1_C75",
-                        "name": "45_N_PCEU_1_C75",
-                        "group": "PCEU",
-                        "texture": "45_N_PCEU_1_C75.dds"
-                    }
-                ]
-            },
-            {
-                "id": "45ft_sp_c78",
-                "composition": "45ft_sp",
-                "name": "N C78",
-                "fullSkinsAmount": 2,
-                "skins": [
-                    {
-                        "id": "45_N_SLIA_1_C78",
-                        "name": "45_N_SLIA_1_C78",
-                        "group": "SLIA",
-                        "texture": "45_N_SLIA_1_C78.dds"
-                    },
-                    {
-                        "id": "45_N_SLIA_2_C78",
-                        "name": "45_N_SLIA_2_C78",
-                        "group": "SLIA",
-                        "texture": "45_N_SLIA_2_C78.dds"
-                    }
-                ]
-            },
-            {
-                "id": "45ft_rf_1_c63",
-                "composition": "45ft_rf_1",
-                "name": "RF C63",
-                "fullSkinsAmount": 1,
-                "skins": [
-                    {
-                        "id": "45_F_JDRA_1_C63",
-                        "name": "45_F_JDRA_1_C63",
-                        "group": "JDRA",
-                        "texture": "45_F_JDRA_1_C63.dds"
-                    }
-                ]
-            },
-            {
-                "id": "45ft_rf_1",
-                "composition": "45ft_rf_1",
-                "name": "RF 1",
-                "fullSkinsAmount": 13,
-                "skins": [
-                    {
-                        "id": "45_F_BODU_1",
-                        "name": "45_F_BODU_1",
-                        "group": "BODU",
-                        "texture": "45_F_BODU_1.dds"
-                    },
-                    {
-                        "id": "45_F_BODU_2",
-                        "name": "45_F_BODU_2",
-                        "group": "BODU",
-                        "texture": "45_F_BODU_2.dds"
-                    },
-                    {
-                        "id": "45_F_CTRU_1",
-                        "name": "45_F_CTRU_1",
-                        "group": "CTRU",
-                        "texture": "45_F_CTRU_1.dds"
-                    },
-                    {
-                        "id": "45_F_CTRU_2",
-                        "name": "45_F_CTRU_2",
-                        "group": "CTRU",
-                        "texture": "45_F_CTRU_2.dds"
-                    },
-                    {
-                        "id": "45_F_ECBU_1",
-                        "name": "45_F_ECBU_1",
-                        "group": "ECBU",
-                        "texture": "45_F_ECBU_1.dds"
-                    },
-                    {
-                        "id": "45_F_GTAU_1",
-                        "name": "45_F_GTAU_1",
-                        "group": "GTAU",
-                        "texture": "45_F_GTAU_1.dds"
-                    },
-                    {
-                        "id": "45_F_GXLU_1",
-                        "name": "45_F_GXLU_1",
-                        "group": "GXLU",
-                        "texture": "45_F_GXLU_1.dds"
-                    },
-                    {
-                        "id": "45_F_HZDU_1",
-                        "name": "45_F_HZDU_1",
-                        "group": "HZDU",
-                        "texture": "45_F_HZDU_1.dds"
-                    },
-                    {
-                        "id": "45_F_HZDU_2",
-                        "name": "45_F_HZDU_2",
-                        "group": "HZDU",
-                        "texture": "45_F_HZDU_2.dds"
-                    },
-                    {
-                        "id": "45_F_NOTA_1",
-                        "name": "45_F_NOTA_1",
-                        "group": "NOTA",
-                        "texture": "45_F_NOTA_1.dds"
-                    },
-                    {
-                        "id": "45_F_PVDU_1",
-                        "name": "45_F_PVDU_1",
-                        "group": "PVDU",
-                        "texture": "45_F_PVDU_1.dds"
-                    },
-                    {
-                        "id": "45_F_PVDU_3",
-                        "name": "45_F_PVDU_3",
-                        "group": "PVDU",
-                        "texture": "45_F_PVDU_3.dds"
-                    },
-                    {
-                        "id": "45_F_PVDU_5",
-                        "name": "45_F_PVDU_5",
-                        "group": "PVDU",
-                        "texture": "45_F_PVDU_5.dds"
-                    }
-                ]
-            },
-            {
-                "id": "45ft_rf_2",
-                "composition": "45ft_sp",
-                "name": "RF 2",
-                "fullSkinsAmount": 6,
-                "skins": [
-                    {
-                        "id": "45_F_COCU_1",
-                        "name": "45_F_COCU_1",
-                        "group": "COCU",
-                        "texture": "45_F_COCU_1.dds"
-                    },
-                    {
-                        "id": "45_F_DWBU_1",
-                        "name": "45_F_DWBU_1",
-                        "group": "DWBU",
-                        "texture": "45_F_DWBU_1.dds"
-                    },
-                    {
-                        "id": "45_F_ECBU_2",
-                        "name": "45_F_ECBU_2",
-                        "group": "ECBU",
-                        "texture": "45_F_ECBU_2.dds"
-                    },
-                    {
-                        "id": "45_F_ECBU_3",
-                        "name": "45_F_ECBU_3",
-                        "group": "ECBU",
-                        "texture": "45_F_ECBU_3.dds"
-                    },
-                    {
-                        "id": "45_F_PVDU_2",
-                        "name": "45_F_PVDU_2",
-                        "group": "PVDU",
-                        "texture": "45_F_PVDU_2.dds"
-                    },
-                    {
-                        "id": "45_F_PVDU_4",
-                        "name": "45_F_PVDU_4",
-                        "group": "PVDU",
-                        "texture": "45_F_PVDU_4.dds"
-                    }
-                ]
-            }
+  {
+    "id": "45ft_sp_1",
+    "randomSkins": [
+      {
+        "id": "45ft_sp_c34",
+        "composition": "45ft_sp",
+        "name": "N C34",
+        "fullSkinsAmount": 4,
+        "skins": [
+          {
+            "id": "45_N_COME_1_C34",
+            "name": "45_N_COME_1_C34 N_1",
+            "group": "COME",
+            "texture": "45_N_COME_1_C34.dds"
+          },
+          {
+            "id": "45_N_MUCE_1_C34",
+            "name": "45_N_MUCE_1_C34 N_1",
+            "group": "MUCE",
+            "texture": "45_N_MUCE_1_C34.dds"
+          },
+          {
+            "id": "45_N_MUCE_2_C34",
+            "name": "45_N_MUCE_2_C34 N_1",
+            "group": "MUCE",
+            "texture": "45_N_MUCE_2_C34.dds"
+          },
+          {
+            "id": "45_N_MUCE_3_C34",
+            "name": "45_N_MUCE_3_C34 N_1",
+            "group": "MUCE",
+            "texture": "45_N_MUCE_3_C34.dds"
+          }
         ]
-    },
+      },
+      {
+        "id": "45ft_sp_c49",
+        "composition": "45ft_sp",
+        "name": "N C49",
+        "fullSkinsAmount": 1,
+        "skins": [
+          {
+            "id": "45_N_SARB_1_C49",
+            "name": "45_N_SARB_1_C49 N_1",
+            "group": "SARB",
+            "texture": "45_N_SARB_1_C49.dds"
+          }
+        ]
+      },
+      {
+        "id": "45ft_sp_c63",
+        "composition": "45ft_sp",
+        "name": "N C63",
+        "fullSkinsAmount": 7,
+        "skins": [
+          {
+            "id": "45_N_COBA_1_C63",
+            "name": "45_N_COBA_1_C63",
+            "group": "COBA",
+            "texture": "45_N_COBA_1_C63.dds"
+          },
+          {
+            "id": "45_N_EKOE_1_C63",
+            "name": "45_N_EKOE_1_C63",
+            "group": "EKOE",
+            "texture": "45_N_EKOE_1_C63.dds"
+          },
+          {
+            "id": "45_N_GBRA_C63",
+            "name": "45_N_GBRA_C63",
+            "group": "GBRA",
+            "texture": "45_N_GBRA_C63.dds"
+          },
+          {
+            "id": "45_N_MARE_1_C63",
+            "name": "45_N_MARE_1_C63",
+            "group": "MARE",
+            "texture": "45_N_MARE_1_C63.dds"
+          },
+          {
+            "id": "45_N_REYU_1_C63",
+            "name": "45_N_REYU_1_C63",
+            "group": "REYU",
+            "texture": "45_N_REYU_1_C63.dds"
+          },
+          {
+            "id": "45_N_TURK_1_C63",
+            "name": "45_N_TURK_1_C63",
+            "group": "TURK",
+            "texture": "45_N_TURK_1_C63.dds"
+          },
+          {
+            "id": "45_N_WEBO_1_C63",
+            "name": "45_N_WEBO_1_C63",
+            "group": "WEBO",
+            "texture": "45_N_WEBO_1_C63.dds"
+          }
+        ]
+      },
+      {
+        "id": "45ft_sp_c69",
+        "composition": "45ft_sp",
+        "name": "N C69",
+        "fullSkinsAmount": 1,
+        "skins": [
+          {
+            "id": "45_N_EKOE_2_C69",
+            "name": "45_N_EKOE_2_C69",
+            "group": "EKOE",
+            "texture": "45_N_EKOE_2_C69.dds"
+          }
+        ]
+      },
+      {
+        "id": "45ft_sp_c75",
+        "composition": "45ft_sp",
+        "name": "N C75",
+        "fullSkinsAmount": 1,
+        "skins": [
+          {
+            "id": "45_N_PCEU_1_C75",
+            "name": "45_N_PCEU_1_C75",
+            "group": "PCEU",
+            "texture": "45_N_PCEU_1_C75.dds"
+          }
+        ]
+      },
+      {
+        "id": "45ft_sp_c78",
+        "composition": "45ft_sp",
+        "name": "N C78",
+        "fullSkinsAmount": 2,
+        "skins": [
+          {
+            "id": "45_N_SLIA_1_C78",
+            "name": "45_N_SLIA_1_C78",
+            "group": "SLIA",
+            "texture": "45_N_SLIA_1_C78.dds"
+          },
+          {
+            "id": "45_N_SLIA_2_C78",
+            "name": "45_N_SLIA_2_C78",
+            "group": "SLIA",
+            "texture": "45_N_SLIA_2_C78.dds"
+          }
+        ]
+      },
+      {
+        "id": "45ft_rf_1_c63",
+        "composition": "45ft_rf_1",
+        "name": "RF C63",
+        "fullSkinsAmount": 1,
+        "skins": [
+          {
+            "id": "45_F_JDRA_1_C63",
+            "name": "45_F_JDRA_1_C63",
+            "group": "JDRA",
+            "texture": "45_F_JDRA_1_C63.dds"
+          }
+        ]
+      },
+      {
+        "id": "45ft_rf_1",
+        "composition": "45ft_rf_1",
+        "name": "RF 1",
+        "fullSkinsAmount": 13,
+        "skins": [
+          {
+            "id": "45_F_BODU_1",
+            "name": "45_F_BODU_1",
+            "group": "BODU",
+            "texture": "45_F_BODU_1.dds"
+          },
+          {
+            "id": "45_F_BODU_2",
+            "name": "45_F_BODU_2",
+            "group": "BODU",
+            "texture": "45_F_BODU_2.dds"
+          },
+          {
+            "id": "45_F_CTRU_1",
+            "name": "45_F_CTRU_1",
+            "group": "CTRU",
+            "texture": "45_F_CTRU_1.dds"
+          },
+          {
+            "id": "45_F_CTRU_2",
+            "name": "45_F_CTRU_2",
+            "group": "CTRU",
+            "texture": "45_F_CTRU_2.dds"
+          },
+          {
+            "id": "45_F_ECBU_1",
+            "name": "45_F_ECBU_1",
+            "group": "ECBU",
+            "texture": "45_F_ECBU_1.dds"
+          },
+          {
+            "id": "45_F_GTAU_1",
+            "name": "45_F_GTAU_1",
+            "group": "GTAU",
+            "texture": "45_F_GTAU_1.dds"
+          },
+          {
+            "id": "45_F_GXLU_1",
+            "name": "45_F_GXLU_1",
+            "group": "GXLU",
+            "texture": "45_F_GXLU_1.dds"
+          },
+          {
+            "id": "45_F_HZDU_1",
+            "name": "45_F_HZDU_1",
+            "group": "HZDU",
+            "texture": "45_F_HZDU_1.dds"
+          },
+          {
+            "id": "45_F_HZDU_2",
+            "name": "45_F_HZDU_2",
+            "group": "HZDU",
+            "texture": "45_F_HZDU_2.dds"
+          },
+          {
+            "id": "45_F_NOTA_1",
+            "name": "45_F_NOTA_1",
+            "group": "NOTA",
+            "texture": "45_F_NOTA_1.dds"
+          },
+          {
+            "id": "45_F_PVDU_1",
+            "name": "45_F_PVDU_1",
+            "group": "PVDU",
+            "texture": "45_F_PVDU_1.dds"
+          },
+          {
+            "id": "45_F_PVDU_3",
+            "name": "45_F_PVDU_3",
+            "group": "PVDU",
+            "texture": "45_F_PVDU_3.dds"
+          },
+          {
+            "id": "45_F_PVDU_5",
+            "name": "45_F_PVDU_5",
+            "group": "PVDU",
+            "texture": "45_F_PVDU_5.dds"
+          }
+        ]
+      },
+      {
+        "id": "45ft_rf_2",
+        "composition": "45ft_sp",
+        "name": "RF 2",
+        "fullSkinsAmount": 6,
+        "skins": [
+          {
+            "id": "45_F_COCU_1",
+            "name": "45_F_COCU_1",
+            "group": "COCU",
+            "texture": "45_F_COCU_1.dds"
+          },
+          {
+            "id": "45_F_DWBU_1",
+            "name": "45_F_DWBU_1",
+            "group": "DWBU",
+            "texture": "45_F_DWBU_1.dds"
+          },
+          {
+            "id": "45_F_ECBU_2",
+            "name": "45_F_ECBU_2",
+            "group": "ECBU",
+            "texture": "45_F_ECBU_2.dds"
+          },
+          {
+            "id": "45_F_ECBU_3",
+            "name": "45_F_ECBU_3",
+            "group": "ECBU",
+            "texture": "45_F_ECBU_3.dds"
+          },
+          {
+            "id": "45_F_PVDU_2",
+            "name": "45_F_PVDU_2",
+            "group": "PVDU",
+            "texture": "45_F_PVDU_2.dds"
+          },
+          {
+            "id": "45_F_PVDU_4",
+            "name": "45_F_PVDU_4",
+            "group": "PVDU",
+            "texture": "45_F_PVDU_4.dds"
+          }
+        ]
+      }
+    ]
+  },
     {
         "id": "40ft_1",
         "kind": "40ft",
@@ -6538,10 +6538,7 @@
 
                         "group": "FOTU",
                         "texture": "782_FOTU.dds"
-                    },
-
-                    /* 1 extra slots */
-                    {}
+                    }
                 ]
             },
             {
@@ -6669,10 +6666,7 @@
 
                         "group": "GCAU",
                         "texture": "782_GCAU.dds"
-                    },
-
-                    /* 1 extra slots */
-                    {}
+                    }
                 ]
             },
             {
@@ -6715,10 +6709,7 @@
 
                         "group": "VODU",
                         "texture": "782_VODU.dds"
-                    },
-
-                    /* 1 extra slots */
-                    {}
+                    }
                 ]
             },
             {
@@ -6754,10 +6745,7 @@
 
                         "group": "RLTU",
                         "texture": "782_RLTU.dds"
-                    },
-
-                    /* 1 extra slots */
-                    {}
+                    }
                 ]
             },
             {
@@ -6960,10 +6948,7 @@
 
                         "group": "FFLU",
                         "texture": "782_FFLU.dds"
-                    },
-
-                    /* 1 extra slots */
-                    {}
+                    }
                 ]
             },
             {
@@ -7006,15 +6991,6 @@
 
                         "group": "TWSU",
                         "texture": "782_TWSU_4.dds"
-                    },
-
-                    /* one extra uneven spot */
-                    {
-                        "id": "782_BIDU_4",
-                        "name": "782_BIDU_4",
-
-                        "group": "BIDU",
-                        "texture": "782_BIDU_4.dds"
                     }
                 ]
             },
@@ -7086,19 +7062,7 @@
 
                         "group": "WABU",
                         "texture": "782_WABU_2.dds"
-                    },
-
-                    /* one extra uneven spot */
-                    {
-                        "id": "782_ANHU_2",
-                        "name": "782_ANHU_2",
-
-                        "group": "AHNU",
-                        "texture": "782_ANHU_2.dds"
-                    },
-
-                    /* 1 extra slots */
-                    {}
+                    }
                 ]
             },
             {
@@ -7134,18 +7098,7 @@
 
                         "group": "VTGU",
                         "texture": "782_VTGU_2.dds"
-                    },
-
-                    /* one extra uneven spot */
-                    {
-                        "id": "782_ANHU",
-                        "name": "782_ANHU",
-
-                        "group": "ANHU",
-                        "texture": "782_ANHU.dds"
-                    },
-                    /* 1 extra slots */
-                    {}
+                    }
                 ]
             },
             {
@@ -7181,10 +7134,7 @@
 
                         "group": "SEGU",
                         "texture": "782_SEGU.dds"
-                    },
-
-                    /* 1 extra slots */
-                    {}
+                    }
                 ]
             },
             {
@@ -7230,15 +7180,6 @@
 
                         "group": "TICU",
                         "texture": "782_TICU.dds"
-                    },
-
-                    /* one extra uneven spot */
-                    {
-                        "id": "782_BIDU_8",
-                        "name": "782_BIDU_8",
-
-                        "group": "BIDU",
-                        "texture": "782_BIDU_8.dds"
                     }
                 ]
             },
@@ -7254,15 +7195,6 @@
 
                         "group": "BIDU",
                         "texture": "782_BIDU_6.dds"
-                    },
-
-                    /* uneven extra slot */
-                    {
-                        "id": "782_BIDU_5",
-                        "name": "782_BIDU_5",
-
-                        "group": "BIDU",
-                        "texture": "782_BIDU_5.dds"
                     }
                 ]
             },

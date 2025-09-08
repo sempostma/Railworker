@@ -33,7 +33,11 @@ namespace Railworker.Pages
         public class RWPPackagerViewModel : ViewModel
         {
             public ObservableCollection<FileSystemEntry> FileSystemEntries { get; set; } = new ObservableCollection<FileSystemEntry>();
-            public String FileExtensionsToIgnore { get; set; } = "dds,psd,bak,pak,tgt,cost,pak,cost,tgt";
+            public String FileExtensionsToIgnore { get; set; } = "dds,psd,bak,pak,tgt,cost";
+            private bool _excludeXmlIfBinExists = true;
+            public bool ExcludeXmlIfBinExists { get => _excludeXmlIfBinExists; set => SetProperty(ref _excludeXmlIfBinExists, value); }
+            private bool _packageAsAPAsset = false;
+            public bool PackageAsAPAsset { get => _packageAsAPAsset; set => SetProperty(ref _packageAsAPAsset, value); }
 
             private int _downloadingProgress = 0;
             public int DownloadingProgress
@@ -360,7 +364,7 @@ namespace Railworker.Pages
 
         private async Task Save()
         {
-            var fileExtensionsToIgnore = ViewModel.FileExtensionsToIgnore.Split(',').Select(x => x.TrimStart('.').Trim()).ToHashSet();
+            var fileExtensionsToIgnore = ViewModel.FileExtensionsToIgnore.Split(',').Select(x => x.TrimStart('.').Trim()).ToHashSet(StringComparer.OrdinalIgnoreCase);
             if (rootNode == null) return;
 
             CommonSaveFileDialog dialog = new CommonSaveFileDialog();
@@ -375,7 +379,25 @@ namespace Railworker.Pages
                 var path = dialog.FileName;
                 if (path != null)
                 {
-                    var filenames = rootNode.EnumerateFiles()
+                    var allFiles = rootNode.EnumerateFiles();
+                    if (ViewModel.ExcludeXmlIfBinExists)
+                    {
+                        var fileSet = allFiles.ToList();
+                        var binBases = new HashSet<string>(fileSet
+                            .Where(f => f.EndsWith(".bin", StringComparison.OrdinalIgnoreCase))
+                            .Select(f => System.IO.Path.ChangeExtension(f, null)), StringComparer.OrdinalIgnoreCase);
+                        allFiles = fileSet.Where(f =>
+                        {
+                            if (f.EndsWith(".xml", StringComparison.OrdinalIgnoreCase))
+                            {
+                                var baseName = System.IO.Path.ChangeExtension(f, null);
+                                if (binBases.Contains(baseName)) return false; // skip xml if bin exists
+                            }
+                            return true;
+                        });
+                    }
+
+                    var filenames = allFiles
                                 .Where(x => !fileExtensionsToIgnore.Contains(System.IO.Path.GetExtension(x).TrimStart('.')))
                                 .Select(x => System.IO.Path.GetRelativePath(App.RWLib!.TSPath, x))
                                 .ToArray();
@@ -386,6 +408,8 @@ namespace Railworker.Pages
                         License = ViewModel.License,
                         Name = System.IO.Path.GetFileNameWithoutExtension(path).Replace("_", " ")
                     };
+
+                    var writeOptions = new WriteRWPOptions { PackageAsAPAsset = ViewModel.PackageAsAPAsset };
 
                     if (System.IO.Path.GetExtension(path) == ".zip")
                     {
@@ -399,7 +423,7 @@ namespace Railworker.Pages
                         var noop = new NoOpWriteStream();
                         using (CryptoStream crypto = new CryptoStream(noop, hasher, CryptoStreamMode.Write))
                         {
-                            App.RWLib!.WriteRWPFile(packageInfo, crypto);
+                            App.RWLib!.WriteRWPFile(packageInfo, crypto, writeOptions);
                         }
                         await App.RWLib.WritePackageInfoFile(new RWPackageInfoWithMD5
                         {
@@ -412,7 +436,7 @@ namespace Railworker.Pages
                     }
                     else
                     {
-                        App.RWLib!.WriteRWPFile(packageInfo, path);
+                        App.RWLib!.WriteRWPFile(packageInfo, path, writeOptions);
                     }
 
                     string args = string.Format("/e, /select, \"{0}\"", path);

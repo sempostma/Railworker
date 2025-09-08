@@ -1,6 +1,7 @@
 ﻿using RWLib.Exceptions;
 using RWLib.Graphics;
 using RWLib.Packaging;
+using RWLib.RWBlueprints.Components;
 using System.IO.Compression;
 using System.Text;
 using System.Xml.Linq;
@@ -87,11 +88,11 @@ namespace RWLib
             }
         }
 
-        public void WriteRWPFile(RWPackageInfo info, string destinationFile)
+        public void WriteRWPFile(RWPackageInfo info, string destinationFile, WriteRWPOptions? options = null)
         {
             using (var destination = File.OpenWrite(destinationFile))
             {
-                WriteRWPFile(info, destination);
+                WriteRWPFile(info, destination, options);
             } 
         }
 
@@ -184,7 +185,7 @@ namespace RWLib
             }
         }
 
-        public void WriteRWPFile(RWPackageInfo info, Stream destination)
+        public void WriteRWPFile(RWPackageInfo info, Stream destination, WriteRWPOptions? options = null)
         {
             using (var binaryWriter = new BinaryWriter(destination))
             {
@@ -205,9 +206,31 @@ namespace RWLib
 
                 using (var archive = new ZipArchive(destination, ZipArchiveMode.Create))
                 {
-                    foreach (var file in info.FileNames)
+                    if (options?.PackageAsAPAsset == true)
                     {
-                        archive.CreateEntryFromFile(Path.Combine(TSPath, file), file);
+                        var filenamesByProduct = info.FileNames.GroupBy(x => String.Join(Path.DirectorySeparatorChar, x.Split(Path.DirectorySeparatorChar).Skip(1).Take(2)));
+                        foreach (var group in filenamesByProduct)
+                        {
+                            var productName = String.Join("", group.Key.Split(Path.DirectorySeparatorChar).Skip(1));
+                            var apFile = archive.CreateEntry(group.Key + Path.DirectorySeparatorChar + productName + "Assets.ap");
+                            using (var apEntry = apFile.Open())
+                            {
+                                using (var ap = new ZipArchive(apEntry, ZipArchiveMode.Create))
+                                {
+                                    foreach (var file in group)
+                                    {
+                                        var entryName = String.Join(Path.DirectorySeparatorChar, file.Split(Path.DirectorySeparatorChar).Skip(3));
+                                        ap.CreateEntryFromFile(Path.Combine(TSPath, file), entryName);
+                                    }
+                                }
+                            }
+                        }
+                    } else
+                    {
+                        foreach (var file in info.FileNames)
+                        {
+                            archive.CreateEntryFromFile(Path.Combine(TSPath, file), file);
+                        }
                     }
                 }
             }

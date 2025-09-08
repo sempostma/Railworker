@@ -100,7 +100,7 @@ namespace RailworkerMegaFreightPack1
                 //if (randomskinGroup.Id.StartsWith("40") == false) continue;
                 //if (randomskinGroup.Id.StartsWith("40ft_hc") == false) continue;
                 //if (randomskinGroup.Id.StartsWith("20ft_mixed") == false) continue;
-                if (randomskinGroup.Id.StartsWith("20ft") == false) continue;
+                //if (randomskinGroup.Id.StartsWith("20ft") == false) continue;
 
                 var relatedGroups = randomSkinGroups.Where(x => x.Id != randomskinGroup.Id && x.Kind == randomskinGroup.Kind && x.Kind != null).ToList();
 
