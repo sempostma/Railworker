@@ -1,0 +1,355 @@
+[
+  {
+    "cargo": [
+      {
+        "filename": "Afirus/45ft_hc_pw/45ft_hc_pw_eucon_1",
+        "name": "C-45-Eucon",
+        "moveX": 0,
+        "moveY": 0,
+        "moveZ": 5.45
+      },
+      {
+        "filename": "Afirus/20ft_iso_tt/20ft_iso_tt_den_hartogh_2",
+        "name": "TT-20-Den Hartogh",
+        "moveX": 0,
+        "moveY": 0,
+        "moveZ": -9.25
+      }
+    ],
+    "filename": "sggnss_ttc_eucon_den_hartogh",
+    "brandFilter": "CZ-MT",
+    "name": "TTC-45ft-20ft-Eucon-Den Hartogh",
+    "mass": 36232
+  },
+  {
+    "cargo": [
+      {
+        "filename": "Afirus/45ft_hc_pw/45ft_hc_pw_unit45_1",
+        "name": "C-45-Unit 45",
+        "moveX": 0,
+        "moveY": 0,
+        "moveZ": 5.45
+      },
+      {
+        "filename": "Afirus/20ft_iso_tt/20ft_iso_tt_bertschi_1",
+        "name": "TT-20-Bertschi",
+        "moveX": 0,
+        "moveY": 0,
+        "moveZ": -9.25
+      }
+    ],
+    "filename": "sggnss_ttc_unit45_bertschi",
+    "brandFilter": "CZ-MT",
+    "name": "TTC-45ft-20ft-Unit 45-Bertschi",
+    "mass": 36232
+  },
+  {
+    "cargo": [
+      {
+        "filename": "Afirus/45ft_hc_pw/45ft_hc_pw_ecs_1",
+        "name": "C-45-ECS",
+        "moveX": 0,
+        "moveY": 0,
+        "moveZ": 5.45
+      },
+      {
+        "filename": "Afirus/20ft_iso_tt/20ft_iso_tt_peacock_1",
+        "name": "TT-20-Peacock",
+        "moveX": 0,
+        "moveY": 0,
+        "moveZ": -9.25
+      }
+    ],
+    "filename": "sggnss_ttc_ecs_peacock",
+    "brandFilter": "CZ-MT",
+    "name": "TTC-45ft-20ft-ECS-Peacock",
+    "mass": 36232
+  },
+  {
+    "cargo": [
+      {
+        "filename": "Afirus/45ft_hc_pw/45ft_hc_pw_move_2",
+        "name": "C-45-MOVE (ECS)",
+        "moveX": 0,
+        "moveY": 0,
+        "moveZ": 5.45
+      },
+      {
+        "filename": "Afirus/20ft_iso_tt/20ft_iso_tt_eurotainer_1",
+        "name": "TT-20-Eurotainer",
+        "moveX": 0,
+        "moveY": 0,
+        "moveZ": -9.25
+      }
+    ],
+    "filename": "sggnss_ttc_move2_eurotainer",
+    "brandFilter": "CZ-MT",
+    "name": "TTC-45ft-20ft-MOVE-Eurotainer",
+    "mass": 36232
+  },
+  {
+    "cargo": [
+      {
+        "filename": "Afirus/45ft_hc_pw/45ft_hc_pw_p&o_2",
+        "name": "C-45-P&O (Yellow)",
+        "moveX": 0,
+        "moveY": 0,
+        "moveZ": 5.45
+      },
+      {
+        "filename": "Afirus/20ft_iso_tt/20ft_iso_tt_den_hartogh_2",
+        "name": "TT-20-Den Hartogh",
+        "moveX": 0,
+        "moveY": 0,
+        "moveZ": -9.25
+      }
+    ],
+    "filename": "sggnss_ttc_p&o_den_hartogh",
+    "brandFilter": "CZ-MT",
+    "name": "TTC-45ft-20ft-P&O-Den Hartogh",
+    "mass": 36232
+  },
+  {
+    "cargo": [
+      {
+        "filename": "Afirus/45ft_hc_pw/45ft_hc_pw_cai_1",
+        "name": "C-45-CAI",
+        "moveX": 0,
+        "moveY": 0,
+        "moveZ": 5.45
+      },
+      {
+        "filename": "Afirus/20ft_iso_tt/20ft_iso_tt_bertschi_1",
+        "name": "TT-20-Den Hartogh",
+        "moveX": 0,
+        "moveY": 0,
+        "moveZ": -9.25
+      }
+    ],
+    "filename": "sggnss_ttc_cai_bertschi",
+    "brandFilter": "CZ-MT",
+    "name": "TTC-45ft-20ft-P&O-CAI-Bertschi",
+    "mass": 36232
+  },
+  {
+    "cargo": [
+      {
+        "filename": "Afirus/45ft_hc_pw/45ft_hc_pw_samskip_1",
+        "name": "C-45-Samskip",
+        "moveX": 0,
+        "moveY": 0,
+        "moveZ": 5.45
+      },
+      {
+        "filename": "Afirus/20ft_iso_tt/20ft_iso_tt_hoyer_1",
+        "name": "TT-20-Hoyer",
+        "moveX": 0,
+        "moveY": 0,
+        "moveZ": -9.25
+      }
+    ],
+    "filename": "sggnss_ttc_samskip_hoyer",
+    "brandFilter": "CZ-MT",
+    "name": "TTC-45ft-20ft-Samskip-Hoyer",
+    "mass": 36232
+  },
+  {
+    "cargo": [
+      {
+        "filename": "Afirus/45ft_hc_pw/45ft_hc_pw_a2b_1",
+        "name": "C-45-A2B",
+        "moveX": 0,
+        "moveY": 0,
+        "moveZ": 5.45
+      },
+      {
+        "filename": "Afirus/20ft_iso_tt/20ft_iso_tt_eurotainer_1",
+        "name": "TT-20-Eurotainer",
+        "moveX": 0,
+        "moveY": 0,
+        "moveZ": -9.25
+      }
+    ],
+    "filename": "sggnss_ttc_a2b_eurotainer",
+    "brandFilter": "CZ-MT",
+    "name": "TTC-45ft-20ft-A2B-Eurotainer",
+    "mass": 36232
+  },
+  {
+    "cargo": [
+      {
+        "filename": "Afirus/45ft_hc_pw/45ft_hc_pw_move_1",
+        "name": "C-45-MOVE",
+        "moveX": 0,
+        "moveY": 0,
+        "moveZ": 5.45
+      },
+      {
+        "filename": "Afirus/20ft_iso_tt/20ft_iso_tt_katoen_natie_1",
+        "name": "TT-20-Katoen Natie",
+        "moveX": 0,
+        "moveY": 0,
+        "moveZ": -9.25
+      }
+    ],
+    "filename": "sggnss_ttc_move_katoen_natie",
+    "brandFilter": "CZ-MT",
+    "name": "TTC-45ft-20ft-MOVE-Katoen Natie",
+    "mass": 36232
+  },
+  {
+    "cargo": [
+      {
+        "filename": "Afirus/45ft_hc_pw/45ft_hc_pw_cldnc_2",
+        "name": "C-45-CLDNC",
+        "moveX": 0,
+        "moveY": 0,
+        "moveZ": 5.45
+      },
+      {
+        "filename": "Afirus/20ft_iso_tt/20ft_iso_tt_vtg_1",
+        "name": "TT-20-VTG",
+        "moveX": 0,
+        "moveY": 0,
+        "moveZ": -9.25
+      }
+    ],
+    "filename": "sggnss_ttc_cldnc_vtg",
+    "brandFilter": "CZ-MT",
+    "name": "TTC-45ft-20ft-CLDNC-VTG",
+    "mass": 36232
+  },
+  {
+    "cargo": [
+      {
+        "filename": "Afirus/20ft_iso_tt/20ft_iso_tt_gcatainer_1",
+        "name": "TT-20-GCATainer",
+        "moveX": 0,
+        "moveY": 0,
+        "moveZ": 9.25
+      },
+      {
+        "filename": "Afirus/20ft_iso_tt/20ft_iso_tt_gcatainer_1",
+        "name": "TT-20-GCATainer",
+        "moveX": 0,
+        "moveY": 0,
+        "moveZ": -9.25
+      }
+    ],
+    "filename": "sggnss_tt2x_gcatainer",
+    "brandFilter": "CZ-MT",
+    "name": "TT-20ftx2-GCATainer",
+    "mass": 36232
+  },
+
+  {
+    "cargo": [
+      {
+        "filename": "Afirus/20ft_iso_tt/20ft_iso_tt_gcatainer_1",
+        "name": "TT-20-GCATainer",
+        "moveX": 0,
+        "moveY": 0,
+        "moveZ": 9.25
+      },
+      {
+        "filename": "Afirus/20ft_iso_tt/20ft_iso_tt_eurotainer_1",
+        "name": "TT-20-Eurotainer",
+        "moveX": 0,
+        "moveY": 0,
+        "moveZ": -9.25
+      }
+    ],
+    "filename": "sggnss_tt2x_gcatainer_eurotainer",
+    "brandFilter": "CZ-MT",
+    "name": "TT-20ftx2-GCATainer-Eurotainer",
+    "mass": 36232
+  },
+  {
+    "cargo": [
+      {
+        "filename": "Afirus/20ft_iso_tt/20ft_iso_tt_gcatainer_1",
+        "name": "TT-20-GCATainer",
+        "moveX": 0,
+        "moveY": 0,
+        "moveZ": 9.25
+      },
+      {
+        "filename": "Afirus/20ft_iso_tt/20ft_iso_tt_hoyer_1",
+        "name": "TT-20-Hoyer",
+        "moveX": 0,
+        "moveY": 0,
+        "moveZ": -9.25
+      }
+    ],
+    "filename": "sggnss_tt2x_gcatainer_hoyer",
+    "brandFilter": "CZ-MT",
+    "name": "TT-20ftx2-GCATainer-Hoyer",
+    "mass": 36232
+  },
+  {
+    "cargo": [
+      {
+        "filename": "Afirus/20ft_iso_tt/20ft_iso_tt_katoen_natie_1",
+        "name": "TT-20-Katoen Natie",
+        "moveX": 0,
+        "moveY": 0,
+        "moveZ": 9.25
+      },
+      {
+        "filename": "Afirus/20ft_iso_tt/20ft_iso_tt_vtg_1",
+        "name": "TT-20-VTG",
+        "moveX": 0,
+        "moveY": 0,
+        "moveZ": -9.25
+      }
+    ],
+    "filename": "sggnss_tt2x_katoen_natie_vtg",
+    "brandFilter": "CZ-MT",
+    "name": "TT-20ftx2-Katoen Natie-VTG",
+    "mass": 36232
+  },
+  {
+    "cargo": [
+      {
+        "filename": "RailStudio/40CMACGM.bin",
+        "name": "C-40-CMA CGM (HD)",
+        "moveX": 0,
+        "moveY": 0,
+        "moveZ": 6.212
+      },
+      {
+        "filename": "Afirus/20ft_iso_tt/20ft_iso_tt_gcatainer_1",
+        "name": "TT-20-GCATainer",
+        "moveX": 0,
+        "moveY": 0,
+        "moveZ": -9.25
+      }
+    ],
+    "filename": "sggnss_ttc_cmacgm_gcatainer",
+    "brandFilter": "CZ-MT",
+    "name": "TTC-40ft-20ft-CMA CGM(HD)-GCATainer",
+    "mass": 36232
+  },
+  {
+    "cargo": [
+      {
+        "filename": "RailStudio/40Maersk.bin",
+        "name": "C-40-Maersk (HD)",
+        "moveX": 0,
+        "moveY": 0,
+        "moveZ": 6.212
+      },
+      {
+        "filename": "Afirus/20ft_iso_tt/20ft_iso_tt_vtg_1",
+        "name": "TT-20-VTG",
+        "moveX": 0,
+        "moveY": 0,
+        "moveZ": -9.25
+      }
+    ],
+    "filename": "sggnss_ttc_maersk_vtg",
+    "brandFilter": "CZ-MT",
+    "name": "TTC-40ft-20ft-Maersk-VTG",
+    "mass": 36232
+  }
+]

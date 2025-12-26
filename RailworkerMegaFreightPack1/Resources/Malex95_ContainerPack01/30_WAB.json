@@ -1,0 +1,1311 @@
+[
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C00_EUFU.bin",
+    "name": "C00 EUFU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C00_EUFU_2.bin",
+    "name": "C00 EUFU 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C00_EUFU_3.bin",
+    "name": "C00 EUFU 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C00_KALE.bin",
+    "name": "C00 KALE 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C00_KEID.bin",
+    "name": "C00 KEID 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C00_KEID_2.bin",
+    "name": "C00 KEID 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C00_LOEB.bin",
+    "name": "C00 LOEB 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C00_LOEB_2.bin",
+    "name": "C00 LOEB 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C00_LOEB_3.bin",
+    "name": "C00 LOEB 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C00_LOEB_4.bin",
+    "name": "C00 LOEB 4",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C00_RSTD.bin",
+    "name": "C00 RSTD 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C00_RSTD_2.bin",
+    "name": "C00 RSTD 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C00_RSTD_3.bin",
+    "name": "C00 RSTD 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C00_TIPES.bin",
+    "name": "C00 TIPES 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C00_TIPES_2.bin",
+    "name": "C00 TIPES 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C00_VRZU.bin",
+    "name": "C00 VRZU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C00_VRZU_2.bin",
+    "name": "C00 VRZU 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C00_VRZU_3.bin",
+    "name": "C00 VRZU 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C00_VRZU_4.bin",
+    "name": "C00 VRZU 4",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C20_ABEU.bin",
+    "name": "C20 ABEU 1",
+    "moveY": -2.02,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C20_ABEU_2.bin",
+    "name": "C20 ABEU 2",
+    "moveY": -2.02,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C20_BAMU.bin",
+    "name": "C20 BAMU 1",
+    "moveY": -2.02,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C20_BUZU.bin",
+    "name": "C20 BUZU 1",
+    "moveY": -2.02,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C20_GAVU.bin",
+    "name": "C20 GAVU 1",
+    "moveY": -2.02,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C20_GAVU_2.bin",
+    "name": "C20 GAVU 2",
+    "moveY": -2.02,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C20_PAGU.bin",
+    "name": "C20 PAGU 1",
+    "moveY": -2.02,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C20_SITRA.bin",
+    "name": "C20 SITRA 1",
+    "moveY": -2.02,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C20_SITRA_2.bin",
+    "name": "C20 SITRA 2",
+    "moveY": -2.02,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C20_SITRA_3.bin",
+    "name": "C20 SITRA 3",
+    "moveY": -2.02,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C22_BOXU.bin",
+    "name": "C22 BOXU 1",
+    "moveY": 0.11,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C22_BOXU_2.bin",
+    "name": "C22 BOXU 2",
+    "moveY": 0.11,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C22_BOXU_3.bin",
+    "name": "C22 BOXU 3",
+    "moveY": 0.11,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C22_BOXU_4.bin",
+    "name": "C22 BOXU 4",
+    "moveY": 0.11,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C22_BOXU_5.bin",
+    "name": "C22 BOXU 5",
+    "moveY": 0.11,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C22_GBGE.bin",
+    "name": "C22 GBGE 1",
+    "moveY": 0.11,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C22_LOEB.bin",
+    "name": "C22 LOEB 1",
+    "moveY": 0.11,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C22_LOEB2.bin",
+    "name": "C22 LOEB 2",
+    "moveY": 0.11,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C22_SAIU.bin",
+    "name": "C22 SAIU 1",
+    "moveY": 0.11,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C22_SAIU_2.bin",
+    "name": "C22 SAIU 2",
+    "moveY": 0.11,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C22_SAIU_3.bin",
+    "name": "C22_SAIU",
+    "moveY": 0.11,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C22_UBBU.bin",
+    "name": "C22 UBBU",
+    "moveY": 0.11,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C22_VRZU.bin",
+    "name": "C22 VRZU 1",
+    "moveY": 0.11,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C22_VRZU_2.bin",
+    "name": "C22 VRZU 2",
+    "moveY": 0.11,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C22_VRZU_3.bin",
+    "name": "C22 VRZU 3",
+    "moveY": 0.11,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C27_UNKNOWN_1.bin",
+    "name": "C27 UNKNOWN 1",
+    "moveY": -2.01,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C27_BIDU.bin",
+    "name": "C27 BIDU 1",
+    "moveY": -2.01,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C27_BUKU.bin",
+    "name": "C27 BUKU 1",
+    "moveY": -2.01,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C27_NWBU.bin",
+    "name": "C27 NWBU 1",
+    "moveY": -2.01,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C27_RBEU.bin",
+    "name": "C27 RBEU 1",
+    "moveY": -2.01,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C27_RBEU_2.bin",
+    "name": "C27 RBEU 2",
+    "moveY": -2.01,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C27_SIBU.bin",
+    "name": "C27 SIBU 1",
+    "moveY": -2.01,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C29_BAMU.bin",
+    "name": "C29 BAMU 1",
+    "moveY": 0.135,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C29_BAMU_2.bin",
+    "name": "C29 BAMU 2",
+    "moveY": 0.145,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C29_BIDU.bin",
+    "name": "C29 BIDU 1",
+    "moveY": 0.145,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C29_BOXU.bin",
+    "name": "C29 BOXU 1",
+    "moveY": 0.145,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C29_BUKU.bin",
+    "name": "C29 BUKU 1",
+    "moveY": 0.145,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C29_BUKU_2.bin",
+    "name": "C29 BUKU 2",
+    "moveY": 0.145,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C29_BUKU_3.bin",
+    "name": "C29 BUKU 3",
+    "moveY": 0.145,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C29_BUKU_4.bin",
+    "name": "C29 BUKU 4",
+    "moveY": 0.145,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C29_BUZU.bin",
+    "name": "C29 BUZU 1",
+    "moveY": 0.145,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C29_BUZU2.bin",
+    "name": "C29 BUZU 2",
+    "moveY": 0.145,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C29_BUZUBS.bin",
+    "name": "C29 BUZUBS 1",
+    "moveY": 0.145,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C29_EKCU.bin",
+    "name": "C29 EKCU 1",
+    "moveY": 0.145,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C29_GAVU.bin",
+    "name": "C29 GAVU 1",
+    "moveY": 0.145,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C29_GBGE.bin",
+    "name": "C29 GBGE 1",
+    "moveY": 0.145,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C29_GBGE_2.bin",
+    "name": "C29 GBGE 2",
+    "moveY": 0.145,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C29_GIZU.bin",
+    "name": "C29 GIZU 1",
+    "moveY": 0.145,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C29_ITABS.bin",
+    "name": "C29 ITABS 1",
+    "moveY": 0.145,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C29_ITABS_2.bin",
+    "name": "C29 ITABS 2",
+    "moveY": 0.145,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C29_ITABS_3.bin",
+    "name": "C29 ITABS 3",
+    "moveY": 0.145,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C29_ITABS_4.bin",
+    "name": "C29 ITABS 4",
+    "moveY": 0.145,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C29_ITABS_5.bin",
+    "name": "C29 ITABS 5",
+    "moveY": 0.145,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C29_ITBC.bin",
+    "name": "C29 ITBC 1",
+    "moveY": 0.145,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C29_ITBC2.bin",
+    "name": "C29 ITBC 2",
+    "moveY": 0.145,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C29_PAGBS.bin",
+    "name": "C29 PAGBS 1",
+    "moveY": 0.145,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C29_PRAU.bin",
+    "name": "C29 PRAU 1",
+    "moveY": 0.145,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C29_PRAU_2.bin",
+    "name": "C29 PRAU 2",
+    "moveY": 0.145,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C29_SALA.bin",
+    "name": "C29 SALA 1",
+    "moveY": 0.145,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C29_SITRA.bin",
+    "name": "C29 SITRA 1",
+    "moveY": 0.145,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C29_TIPES.bin",
+    "name": "C29 TIPES 1",
+    "moveY": 0.145,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C29_TIPES_2.bin",
+    "name": "C29 TIPES 2",
+    "moveY": 0.145,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C29_TIPES_3.bin",
+    "name": "C29 TIPES 3",
+    "moveY": 0.145,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C30_BTEU.bin",
+    "name": "C30 BTEU 1",
+    "moveY": -2.061,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C30_BUKU.bin",
+    "name": "C30 BUKU 1",
+    "moveY": -2.061,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C30_BUKU_2.bin",
+    "name": "C30 BUKU 1",
+    "moveY": -2.061,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C30_COGE.bin",
+    "name": "C30 COGE 1",
+    "moveY": -2.061,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C30_COGE_2.bin",
+    "name": "C30 COGE 2",
+    "moveY": -2.061,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C30_COGE_3.bin",
+    "name": "C30_COGE_3",
+    "moveY": -2.061,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C30_DHBU.bin",
+    "name": "C30 DHBU 1",
+    "moveY": -2.061,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C30_DHBU_2.bin",
+    "name": "C30 DHBU 2",
+    "moveY": -2.061,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C30_EWAU.bin",
+    "name": "C30 EWAU 1",
+    "moveY": -2.061,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C30_EWAU_2.bin",
+    "name": "C30 EWAU 2",
+    "moveY": -2.061,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C30_EWAU_3.bin",
+    "name": "C30 EWAU 3",
+    "moveY": -2.061,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C30_EWAU_4.bin",
+    "name": "C30 EWAU 4",
+    "moveY": -2.061,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C30_EWAU_5.bin",
+    "name": "C30 EWAU 5",
+    "moveY": -2.061,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C30_EWAU_6.bin",
+    "name": "C30 EWAU 6",
+    "moveY": -2.061,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C30_EWAU_7.bin",
+    "name": "C30 EWAU 7",
+    "moveY": -2.061,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C30_FERE 02.bin",
+    "name": "C30 FERE 2",
+    "moveY": -2.061,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C30_FERE 03.bin",
+    "name": "C30 FERE 3",
+    "moveY": -2.061,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C30_FERE 04.bin",
+    "name": "C30 FERE 4",
+    "moveY": -2.061,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C30_FERE.bin",
+    "name": "C30 FERE 1",
+    "moveY": -2.061,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C30_IMTI.bin",
+    "name": "C30 IMTI 1",
+    "moveY": -2.061,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C30_IMTI_2.bin",
+    "name": "C30 IMTI 2",
+    "moveY": -2.061,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C30_MOVE.bin",
+    "name": "C30 MOVE 1",
+    "moveY": -2.061,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C30_NOBU.bin",
+    "name": "C30 NOBU 1",
+    "moveY": -2.061,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C30_NOBU_2.bin",
+    "name": "C30 NOBU 2",
+    "moveY": -2.061,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C30_NOBU_3.bin",
+    "name": "C30 NOBU 3",
+    "moveY": -2.061,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C30_PAGU.bin",
+    "name": "C30 PAGU 1",
+    "moveY": -2.061,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C30_PAGU_2.bin",
+    "name": "C30 PAGU 2",
+    "moveY": -2.061,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C30_SHNU.bin",
+    "name": "C30 SHNU 1",
+    "moveY": -2.061,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C30_SHNU_2.bin",
+    "name": "C30 SHNU 2",
+    "moveY": -2.061,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C30_SHNU_3.bin",
+    "name": "C30 SHNU 3",
+    "moveY": -2.061,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C30_SHNU_4.bin",
+    "name": "C30 SHNU 4",
+    "moveY": -2.061,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C30_SHNU_5.bin",
+    "name": "C30 SHNU 5",
+    "moveY": -2.061,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C30_UIBC.bin",
+    "name": "C30 UIBC 1",
+    "moveY": -2.061,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C30_UIBF.bin",
+    "name": "C30 UIBF 2",
+    "moveY": -2.061,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C30_VDB.bin",
+    "name": "C30 VDB 1",
+    "moveY": -2.061,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C39_MOVE.bin",
+    "name": "C39 B MOVE 1",
+    "moveY":  0.201,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C39_MOVE_2.bin",
+    "name": "C39 B MOVE 2",
+    "moveY":  0.201,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C39_MOVE_3.bin",
+    "name": "C39 B MOVE 3",
+    "moveY":  0.201,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C39_MOVE_4.bin",
+    "name": "C39 B MOVE 4",
+    "moveY":  0.201,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C39_MOVE_5.bin",
+    "name": "C39 B MOVE 5",
+    "moveY":  0.201,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C39_MOVE_6.bin",
+    "name": "C39 B MOVE 6",
+    "moveY":  0.201,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C44_ABEU.bin",
+    "name": "C44 ABEU 1",
+    "moveY": -2.0633,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C44_ABEU_2.bin",
+    "name": "C44 ABEU 2",
+    "moveY": -2.0633,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C44_BWCU.bin",
+    "name": "C44 BWCU 1",
+    "moveY": -2.0633,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C44_NWBU.bin",
+    "name": "C44 NWBU 1",
+    "moveY": -2.0633,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C45_EIBB.bin",
+    "name": "C45 EIBB 1",
+    "moveY": -2.0625,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C45_EIBB_2.bin",
+    "name": "C45 EIBB 2",
+    "moveY": -2.0625,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C45_EIBB_3.bin",
+    "name": "C45 EIBB 3",
+    "moveY": -2.0625,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C45_EIBB_4.bin",
+    "name": "C45 EIBB 4",
+    "moveY": -2.0625,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C45_EIBB_5.bin",
+    "name": "C45 EIBB 5",
+    "moveY": -2.0625,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C45_FRIA.bin",
+    "name": "C45 FRIA 1",
+    "moveY": -2.0625,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C45_FRIA_2.bin",
+    "name": "C45 FRIA 2",
+    "moveY": -2.0625,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C45_FRIA_3.bin",
+    "name": "C45 FRIA 3",
+    "moveY": -2.0625,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C45_FRIA_4.bin",
+    "name": "C45 FRIA 4",
+    "moveY": -2.0625,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C45_FRIA_5.bin",
+    "name": "C45 FRIA 5",
+    "moveY": -2.0625,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C45_VERB.bin",
+    "name": "C45 MVE 1",
+    "moveY": -2.0625,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C45_VERB_2.bin",
+    "name": "C45 MVE 2",
+    "moveY": -2.0625,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C45_VERB_3.bin",
+    "name": "C45 MVE 3",
+    "moveY": -2.0625,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C45_VERB_4.bin",
+    "name": "C45 MVE 4",
+    "moveY": -2.0625,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C45_VERB_5.bin",
+    "name": "C45 MVE 5",
+    "moveY": -2.0625,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\Neuer Ordner\\C29_BIDU.bin",
+    "name": "C29 BIDU 1",
+    "moveY": 0.145,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\Neuer Ordner\\C29_BOXU.bin",
+    "name": "C29 BOXU 1",
+    "moveY": 0.145,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\Neuer Ordner\\C29_BUKU.bin",
+    "name": "C29 BUKU 1",
+    "moveY": 0.145,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\Neuer Ordner\\C29_BUKU_2.bin",
+    "name": "C29 BUKU 2",
+    "moveY": 0.145,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\Neuer Ordner\\C29_BUZU.bin",
+    "name": "C29 BUZU 1",
+    "moveY": 0.145,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\Neuer Ordner\\C29_BUZU2.bin",
+    "name": "C29 BUZU 2",
+    "moveY": 0.145,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\Neuer Ordner\\C29_BUZUBS.bin",
+    "name": "C29 BUZUBS 1",
+    "moveY": 0.145,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\Neuer Ordner\\C29_GAVU.bin",
+    "name": "C29 GAVU 1",
+    "moveY": 0.145,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\Neuer Ordner\\C29_GBGE.bin",
+    "name": "C29 GBGE 1",
+    "moveY": 0.145,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\Neuer Ordner\\C29_GBGE_2.bin",
+    "name": "C29 GBGE 2",
+    "moveY": 0.145,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\Neuer Ordner\\C29_GIZU.bin",
+    "name": "C29 GIZU 1",
+    "moveY": 0.145,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\Neuer Ordner\\C29_ITABS.bin",
+    "name": "C29 ITABS 1",
+    "moveY": 0.145,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\Neuer Ordner\\C29_ITABS_2.bin",
+    "name": "C29 ITABS 2",
+    "moveY": 0.145,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\Neuer Ordner\\C29_ITABS_3.bin",
+    "name": "C29 ITABS 3",
+    "moveY": 0.145,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\Neuer Ordner\\C29_ITABS_4.bin",
+    "name": "C29 ITABS 4",
+    "moveY": 0.145,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\Neuer Ordner\\C29_ITABS_5.bin",
+    "name": "C29 ITABS 5",
+    "moveY": 0.145,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\Neuer Ordner\\C29_ITBC.bin",
+    "name": "C29 ITBC 1",
+    "moveY": 0.145,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\Neuer Ordner\\C29_ITBC2.bin",
+    "name": "C29 ITBC 2",
+    "moveY": 0.145,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\Neuer Ordner\\C29_PAGBS.bin",
+    "name": "C29 PAGBS 1",
+    "moveY": 0.145,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\Neuer Ordner\\C29_SITRA.bin",
+    "name": "C29 SITRA 1",
+    "moveY": 0.145,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\Neuer Ordner\\C30_FERE 02.bin",
+    "name": "C30 FERE 2",
+    "moveY": 0.15,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\Neuer Ordner\\C30_FERE 03.bin",
+    "name": "C30 FERE 3",
+    "moveY": 0.15,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\Neuer Ordner\\C30_FERE 04.bin",
+    "name": "C30 FERE 4",
+    "moveY": 0.15,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\Neuer Ordner\\C30_FERE.bin",
+    "name": "C30 FERE 1",
+    "moveY": 0.15,
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  }
+]

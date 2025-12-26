@@ -1,0 +1,74 @@
+<Page x:Class="Railworker.Pages.TrainPerformanceCalculator"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      mc:Ignorable="d"
+      Title="Train Performance Calculator">
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <Grid Margin="20" MaxWidth="800">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Grid.Row="0" Grid.ColumnSpan="4" Text="Train Performance Calculator" FontSize="20" FontWeight="Bold" Margin="0 0 0 20"/>
+
+            <!-- Selection of variable to solve for -->
+            <TextBlock Grid.Row="1" Grid.Column="0" Text="Solve for:" VerticalAlignment="Center"/>
+            <ComboBox x:Name="SolveForCombo" Grid.Row="1" Grid.Column="1" Width="180" SelectionChanged="SolveForCombo_SelectionChanged">
+                <ComboBoxItem Content="Weight"/>
+                <ComboBoxItem Content="Tractive Effort"/>
+                <ComboBoxItem Content="Speed"/>
+                <ComboBoxItem Content="Grade"/>
+                <ComboBoxItem Content="Power"/>
+            </ComboBox>
+
+            <!-- Inputs -->
+            <TextBlock Grid.Row="2" Grid.Column="0" Text="Weight (t):" VerticalAlignment="Center"/>
+            <TextBox x:Name="WeightText" Grid.Row="2" Grid.Column="1" Margin="0 2"/>
+
+            <TextBlock Grid.Row="2" Grid.Column="2" Text="Tractive Effort (kN):" VerticalAlignment="Center"/>
+            <TextBox x:Name="TractiveEffortText" Grid.Row="2" Grid.Column="3" Margin="0 2"/>
+
+            <TextBlock Grid.Row="3" Grid.Column="0" Text="Speed (km/h):" VerticalAlignment="Center"/>
+            <TextBox x:Name="SpeedText" Grid.Row="3" Grid.Column="1" Margin="0 2"/>
+
+            <TextBlock Grid.Row="3" Grid.Column="2" Text="Grade (%):" VerticalAlignment="Center"/>
+            <TextBox x:Name="GradeText" Grid.Row="3" Grid.Column="3" Margin="0 2"/>
+
+            <TextBlock Grid.Row="4" Grid.Column="0" Text="Power (kW):" VerticalAlignment="Center"/>
+            <TextBox x:Name="PowerText" Grid.Row="4" Grid.Column="1" Margin="0 2"/>
+
+            <!-- Buttons -->
+            <StackPanel Grid.Row="5" Grid.ColumnSpan="4" Orientation="Horizontal" Margin="0 15 0 10" HorizontalAlignment="Left">
+                <Button Content="Calculate" Width="100" Margin="0 0 10 0" Click="CalculateButton_Click"/>
+                <Button Content="Reset" Width="100" Click="ResetButton_Click"/>
+            </StackPanel>
+
+            <!-- Result -->
+            <Border Grid.Row="6" Grid.ColumnSpan="4" Padding="10" BorderBrush="Gray" BorderThickness="1" CornerRadius="4">
+                <StackPanel>
+                    <TextBlock Text="Result:" FontWeight="Bold"/>
+                    <TextBlock x:Name="ResultValueText" Text="-" Margin="0 5 0 0" FontSize="16" FontWeight="Bold"/>
+                    <TextBlock Text="Working:" FontWeight="Bold" Margin="0 10 0 0"/>
+                    <TextBlock x:Name="WorkingText" TextWrapping="Wrap"/>
+                    <TextBlock Text="Notes:" FontWeight="Bold" Margin="0 10 0 0"/>
+                    <TextBlock Text="Uses: F = m * g * gradeFraction,  P = F * v  (g = 9.81 m/s^2). Conversions handled automatically." TextWrapping="Wrap"/>
+                    <TextBlock x:Name="WarningText" Foreground="Red" FontWeight="Bold" Margin="0 10 0 0"/>
+                </StackPanel>
+            </Border>
+        </Grid>
+    </ScrollViewer>
+</Page>

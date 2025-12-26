@@ -1,0 +1,1 @@
+Some of these Preloads (NL Freight) are corrupted because of a code change. If you open the file with TS Tools you will see that the <BlueprintID> contains forward slashes instead of backslashes. If you want to use them you'll have to use CTRL+F in TS Tools to replace the slahes.

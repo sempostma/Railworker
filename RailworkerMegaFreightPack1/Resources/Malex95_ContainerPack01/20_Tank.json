@@ -1,0 +1,135 @@
+[
+  {
+    "filename": "RailNetwork\\Interactive\\Tank\\20FT\\20ft_ADDU.bin",
+    "name": "20 ADDU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\Tank\\20FT\\20ft_ADDU_2.bin",
+    "name": "20 ADDU 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\Tank\\20FT\\20ft_BIDU.bin",
+    "name": "20 BIDU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\Tank\\20FT\\20ft_BIDU_2.bin",
+    "name": "20 BIDU 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\Tank\\20FT\\20ft_BIDU_3.bin",
+    "name": "20 BIDU 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\Tank\\20FT\\20ft_BIDU_4.bin",
+    "name": "20 BIDU 4",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\Tank\\20FT\\20ft_BLKU.bin",
+    "name": "20 BLKU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\Tank\\20FT\\20ft_DHDU.bin",
+    "name": "20 DHDU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\Tank\\20FT\\20ft_EURU.bin",
+    "name": "20 EURU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\Tank\\20FT\\20ft_EURU_2.bin",
+    "name": "20 EURU 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\Tank\\20FT\\20ft_EURU_3.bin",
+    "name": "20 EURU 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\Tank\\20FT\\20ft_GCAU.bin",
+    "name": "20 GCAU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\Tank\\20FT\\20ft_HUKU.bin",
+    "name": "20 HUKU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\Tank\\20FT\\20ft_MCMU.bin",
+    "name": "20 MCMU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\Tank\\20FT\\20ft_PAL.bin",
+    "name": "20 PAL 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\Tank\\20FT\\20ft_PVCU.bin",
+    "name": "20 PVCU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\Tank\\20FT\\20ft_RDLU.bin",
+    "name": "20 RDLU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\Tank\\20FT\\20ft_UTTU.bin",
+    "name": "20 UTTU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\Tank\\20FT\\20ft_VODU.bin",
+    "name": "20 VODU 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  }
+]

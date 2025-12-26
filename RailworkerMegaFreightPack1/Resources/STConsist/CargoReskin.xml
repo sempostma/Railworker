@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<cBlueprintLoader xmlns:d="http://www.kuju.com/TnT/2003/Delta" d:version="1.0">
+  <Blueprint>
+    <cReskinBlueprint>
+      <Name d:type="cDeltaString">[Alex95] ST Consist 45ft NL</Name>
+      <BrowseInformation>
+        <iBrowseableBlueprint-cBrowseInformation>
+          <DisplayName>
+            <Localisation-cUserLocalisedString>
+              <English d:type="cDeltaString">[Alex95] ST Consist 45ft NL</English>
+              <French d:type="cDeltaString"></French>
+              <Italian d:type="cDeltaString"></Italian>
+              <German d:type="cDeltaString"></German>
+              <Spanish d:type="cDeltaString"></Spanish>
+              <Dutch d:type="cDeltaString"></Dutch>
+              <Polish d:type="cDeltaString"></Polish>
+              <Russian d:type="cDeltaString"></Russian>
+              <Other/>
+              <Key d:type="cDeltaString"></Key>
+            </Localisation-cUserLocalisedString>
+          </DisplayName>
+          <Description>
+            <Localisation-cUserLocalisedString>
+              <English d:type="cDeltaString"></English>
+              <French d:type="cDeltaString"></French>
+              <Italian d:type="cDeltaString"></Italian>
+              <German d:type="cDeltaString"></German>
+              <Spanish d:type="cDeltaString"></Spanish>
+              <Dutch d:type="cDeltaString"></Dutch>
+              <Polish d:type="cDeltaString"></Polish>
+              <Russian d:type="cDeltaString"></Russian>
+              <Other/>
+              <Key d:type="cDeltaString"></Key>
+            </Localisation-cUserLocalisedString>
+          </Description>
+          <Category d:type="cDeltaString">eUncategorised</Category>
+          <ValidInScenarios d:type="cDeltaString">eFalse</ValidInScenarios>
+        </iBrowseableBlueprint-cBrowseInformation>
+      </BrowseInformation>
+      <ReskinAssetBpId>
+        <iBlueprintLibrary-cAbsoluteBlueprintID>
+          <BlueprintSetID>
+            <iBlueprintLibrary-cBlueprintSetID>
+              <Provider d:type="cDeltaString">AlexAfirus</Provider>
+              <Product d:type="cDeltaString">ST Sggmrss90 Consist</Product>
+            </iBlueprintLibrary-cBlueprintSetID>
+          </BlueprintSetID>
+          <BlueprintID d:type="cDeltaString">45ft_hc_bechi_st.xml</BlueprintID>
+        </iBlueprintLibrary-cAbsoluteBlueprintID>
+      </ReskinAssetBpId>
+      <TextureEntry>
+        <cReskinBlueprint-sTextureEntry d:id="430">
+          <TextureName d:type="cDeltaString">45ft_hc_bechi</TextureName>
+          <TextureID d:type="cDeltaString">AlexAfirus\KI 45ft HC\Textures\[00]45ft_hc_nl</TextureID>
+        </cReskinBlueprint-sTextureEntry>
+      </TextureEntry>
+    </cReskinBlueprint>
+  </Blueprint>
+</cBlueprintLoader>

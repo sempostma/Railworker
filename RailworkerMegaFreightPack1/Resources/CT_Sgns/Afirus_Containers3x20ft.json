@@ -1,0 +1,17 @@
+[
+  {
+    "filename": "20ft_iso_tt\\20ft_iso_tt_gcatainer_1.bin",
+    "name": "GCATainer",
+    "filterWagonType": [ "brown" ]
+  },
+  {
+    "filename": "20ft_iso_tt\\20ft_iso_tt_peacock_1.bin",
+    "name": "Peacock",
+    "filterWagonType": [ "brown" ]
+  },
+  {
+    "filename": "20ft_iso_tt\\20ft_iso_tt_den_hartogh_2.bin",
+    "name": "Den Hartogh",
+    "filterWagonType": [ "brown" ]
+  }
+]

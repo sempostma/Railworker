@@ -1,0 +1,102 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\Afirus_Containers.json" />
+    <None Remove="Resources\ContainerCombination\Compositions.json" />
+    <None Remove="Resources\ContainerCombination\RandomSkins.json" />
+    <None Remove="Resources\ILUKeys.json" />
+    <None Remove="Resources\Malex95_ContainerPack01\20_COIL.json" />
+    <None Remove="Resources\Malex95_ContainerPack01\20_FT.json" />
+    <None Remove="Resources\Malex95_ContainerPack01\20_OT.json" />
+    <None Remove="Resources\CT_Sgns\Afirus_Containers3x20ft.json" />
+    <None Remove="Resources\CT_Sgns\CT_Tanktainers3x20ft.json" />
+    <None Remove="Resources\CT_Sgns\Sgns20ftx3.xml" />
+    <None Remove="Resources\Malex95_ContainerPack01\20_Tank.json" />
+    <None Remove="Resources\Malex95_ContainerPack01\24_COIL.json" />
+    <None Remove="Resources\Malex95_ContainerPack01\24_WAB.json" />
+    <None Remove="Resources\Malex95_ContainerPack01\30_SILO.json" />
+    <None Remove="Resources\Malex95_ContainerPack01\30_WAB.json" />
+    <None Remove="Resources\Malex95_ContainerPack01\40_HC.json" />
+    <None Remove="Resources\Malex95_ContainerPack01\40_N.json" />
+    <None Remove="Resources\Malex95_ContainerPack01\40_Tank.json" />
+    <None Remove="Resources\Malex95_ContainerPack01\45_HC.json" />
+    <None Remove="Resources\Malex95_ContainerPack01\7_82_Tank.json" />
+    <None Remove="Resources\Malex95_ContainerPack01\7_X5_TANK.json" />
+    <None Remove="Resources\Malex95_ContainerPack01\WAB.json" />
+    <None Remove="Resources\Malex95_ContainerPack01\WAB_45.json" />
+    <None Remove="Resources\RandomSkins\Backgrounds\20ft_mixed.psd" />
+    <None Remove="Resources\RandomSkins\Backgrounds\40ft_silo.psd" />
+    <None Remove="Resources\RandomSkins\Backgrounds\782tt.psd" />
+    <None Remove="Resources\RandomSkins\RandomSkins.json" />
+    <None Remove="Resources\RandomSkins\README.docx" />
+    <None Remove="Resources\RandomSkins\~%24README.docx" />
+    <None Remove="Resources\Sffggmrrss_Trailers.json" />
+    <None Remove="Resources\Sggmrss\A.xml" />
+    <None Remove="Resources\Sggmrss\B.xml" />
+    <None Remove="Resources\Sggmrss\Reskins.json" />
+    <None Remove="Resources\Sggmrss_Back.xml" />
+    <None Remove="Resources\Sggmrss_Front.xml" />
+    <None Remove="Resources\STConsist\CargoReskin.xml" />
+    <None Remove="Resources\STConsist\SggmrssConsist45.xml" />
+    <None Remove="Resources\STConsist\WagonReskin.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\ContainerCombination\Compositions.json" />
+    <EmbeddedResource Include="Resources\ContainerCombination\RandomSkins.json" />
+    <EmbeddedResource Include="Resources\ILUKeys.json" />
+    <EmbeddedResource Include="Resources\Malex95_ContainerPack01\20_COIL.json" />
+    <EmbeddedResource Include="Resources\Malex95_ContainerPack01\24_WAB.json" />
+    <EmbeddedResource Include="Resources\Malex95_ContainerPack01\40_N.json" />
+    <EmbeddedResource Include="Resources\Malex95_ContainerPack01\40_Tank.json" />
+    <EmbeddedResource Include="Resources\Malex95_ContainerPack01\20_Tank.json" />
+    <EmbeddedResource Include="Resources\Malex95_ContainerPack01\45_HC.json" />
+    <EmbeddedResource Include="Resources\Malex95_ContainerPack01\40_HC.json" />
+    <EmbeddedResource Include="Resources\Malex95_ContainerPack01\30_WAB.json" />
+    <EmbeddedResource Include="Resources\Malex95_ContainerPack01\30_SILO.json" />
+    <EmbeddedResource Include="Resources\Malex95_ContainerPack01\20_OT.json" />
+    <EmbeddedResource Include="Resources\Malex95_ContainerPack01\20_FT.json" />
+    <EmbeddedResource Include="Resources\Malex95_ContainerPack01\7_X5_TANK.json" />
+    <EmbeddedResource Include="Resources\Malex95_ContainerPack01\7_82_TANK.json" />
+    <EmbeddedResource Include="Resources\Malex95_ContainerPack01\WAB_45.json" />
+    <EmbeddedResource Include="Resources\Malex95_ContainerPack01\WAB.json" />
+    <EmbeddedResource Include="Resources\Malex95_ContainerPack01\24_COIL.json" />
+    <EmbeddedResource Include="Resources\CT_Sgns\CT_Tanktainers3x20ft.json" />
+    <EmbeddedResource Include="Resources\CT_Sgns\Afirus_Containers3x20ft.json" />
+    <EmbeddedResource Include="Resources\CT_Sgns\Afirus_Containers1x45ft.json" />
+    <EmbeddedResource Include="Resources\CT_Sgns\Sgns20ftx3.xml" />
+    <EmbeddedResource Include="Resources\CT_Sgns\Sgns45ft.xml" />
+    <EmbeddedResource Include="Resources\RandomSkins\Backgrounds\40ft_silo.psd" />
+    <EmbeddedResource Include="Resources\RandomSkins\Backgrounds\782tt.psd" />
+    <EmbeddedResource Include="Resources\RandomSkins\RandomSkins.json" />
+    <EmbeddedResource Include="Resources\Sggmrss\A.xml" />
+    <EmbeddedResource Include="Resources\Sggmrss\B.xml" />
+    <EmbeddedResource Include="Resources\Sggmrss\Reskins.json" />
+    <EmbeddedResource Include="Resources\STConsist\CargoReskin.xml" />
+    <EmbeddedResource Include="Resources\STConsist\SggmrssConsist45.xml" />
+    <EmbeddedResource Include="Resources\STConsist\WagonReskin.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Emgu.CV" Version="4.9.0.5494" />
+    <PackageReference Include="Magick.NET-Q16-AnyCPU" Version="14.8.2" />
+    <PackageReference Include="PDFsharp" Version="6.2.2" />
+    <PackageReference Include="PuppeteerSharp" Version="20.2.2" />
+    <PackageReference Include="SixLabors.ImageSharp.Drawing" Version="2.1.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RWLib\RWLib.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\RandomSkins\Backgrounds\20ft_mixed.psd" />
+  </ItemGroup>
+
+</Project>

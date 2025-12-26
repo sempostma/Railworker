@@ -1,0 +1,15 @@
+﻿
+TODO
+====
+
+- Create consist generator
+- Replacement rule reverse
+- Replacement rule ONLY AI (or ONLY PLAYER)
+- Default container replacer
+- Static consist collision error: Find the wagon id quickly on a map
+
+## User feedback
+
+- Catalog uses different numbering format so a new user looking in the catalog seeing #1 doesnt understand they should use :1 for example.
+- Record video tutorial
+

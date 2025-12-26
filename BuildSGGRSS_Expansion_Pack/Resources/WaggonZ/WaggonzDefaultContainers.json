@@ -1,0 +1,17 @@
+﻿[
+  {
+    "filename": "ContainerpairPW.bin",
+    "name": "C-2X20-ONE",
+    "mass": 30000
+  },
+  {
+    "filename": "Pinkcontainer.bin",
+    "name": "C-40-ONE",
+    "mass": 30000
+  },
+  {
+    "filename": "Whitecontainer.bin",
+    "name": "C-40-ONE 2",
+    "mass": 30000
+  }
+]

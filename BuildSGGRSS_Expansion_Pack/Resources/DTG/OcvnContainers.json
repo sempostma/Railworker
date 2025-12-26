@@ -1,0 +1,125 @@
+[
+  {
+    "filename": "Container_AGA.bin",
+    "name": "Container_AGA.bin",
+    "scaleX": 0.05,
+    "moveZ": 3.055
+  },
+  {
+    "filename": "Container_bama.bin",
+    "name": "Container_bama.bin",
+    "moveZ": -3.055
+  },
+  {
+    "filename": "Container_Bring.bin",
+    "name": "Container_Bring.bin",
+    "moveZ": 3.055
+  },
+  {
+    "filename": "Container_Cargo_Partner.bin",
+    "name": "Container_Cargo_Partner.bin",
+    "moveZ": -3.055
+  },
+  {
+    "filename": "Container_Coca_Cola.bin",
+    "name": "Container_Coca_Cola.bin",
+    "scaleX": 0.05,
+    "moveZ": 3.055
+  },
+  {
+    "filename": "Container_DFDS.bin",
+    "name": "Container_DFDS.bin",
+    "scaleX": 0.05,
+    "moveZ": -3.055
+  },
+  {
+    "filename": "Container_DFDS_Tollpost.bin",
+    "name": "Container_DFDS_Tollpost.bin",
+    "scaleX": 0.05,
+    "moveZ": 3.055
+  },
+  {
+    "filename": "Container_DHL.bin",
+    "name": "Container_DHL.bin",
+    "scaleX": 0.05,
+    "moveZ": -3.055
+  },
+  {
+    "filename": "Container_DSV.bin",
+    "name": "Container_DSV.bin",
+    "scaleX": 0.05,
+    "moveZ": 3.055
+  },
+  {
+    "filename": "Container_Evergreen.bin",
+    "name": "Container_Evergreen.bin",
+    "scaleX": 0.05,
+    "moveZ": -3.055
+  },
+  {
+    "filename": "Container_Glava.bin",
+    "name": "Container_Glava.bin",
+    "scaleX": 0.05,
+    "moveZ": 3.055
+  },
+  {
+    "filename": "Container_Green_Cargo_Green.bin",
+    "name": "Container_Green_Cargo_Green.bin",
+    "scaleX": 0.05,
+    "moveZ": -3.055
+  },
+  {
+    "filename": "Container_Green_Cargo_White.bin",
+    "name": "Container_Green_Cargo_White.bin",
+    "scaleX": 0.05,
+    "moveZ": 3.055
+  },
+  {
+    "filename": "Container_Hangartner.bin",
+    "name": "Container_Hangartner.bin",
+    "scaleX": 0.05,
+    "moveZ": -3.055
+  },
+  {
+    "filename": "Container_Linjegods_Blue.bin",
+    "name": "Container_Linjegods_Blue.bin",
+    "scaleX": 0.05,
+    "moveZ": 3.055
+  },
+  {
+    "filename": "Container_Linjegods_White.bin",
+    "name": "Container_Linjegods_White.bin",
+    "scaleX": 0.05,
+    "moveZ": -3.055
+  },
+  {
+    "filename": "Container_Norcargo.bin",
+    "name": "Container_Norcargo.bin",
+    "scaleX": 0.05,
+    "moveZ": 3.055
+  },
+  {
+    "filename": "Container_Norlines.bin",
+    "name": "Container_Norlines.bin",
+    "scaleX": 0.05,
+    "moveZ": -3.055
+  },
+  {
+    "filename": "Container_Posten.bin",
+    "name": "Container_Posten.bin",
+    "scaleX": 0.05,
+    "moveZ": 3.055
+  },
+  {
+    "filename": "Container_Tollpost_New.bin",
+    "name": "Container_Tollpost_New.bin",
+    "scaleX": 0.05,
+    "moveZ": -3.055
+  },
+  {
+    "filename": "Container_Tollpost_Old.bin",
+    "name": "Container_Tollpost_Old.bin",
+    "scaleX": 0.05,
+    "moveZ": 3.055
+  }
+]

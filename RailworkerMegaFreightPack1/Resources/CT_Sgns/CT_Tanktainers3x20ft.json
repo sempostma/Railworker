@@ -1,0 +1,7 @@
+[
+  {
+    "filename": "cargo hsfoodtrans.bin",
+    "name": "HS Foodtrans",
+    "filterWagonType": [ "brown" ]
+  }
+]

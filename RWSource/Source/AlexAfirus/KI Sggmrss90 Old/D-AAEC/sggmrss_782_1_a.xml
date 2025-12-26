@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cReskinBlueprint>
+	<Element>
+		<Value>
+			<Attribute name="Name">
+				<cDeltaString>
+					<Element>
+						<Value>90' KI AEC 782 1 A</Value>
+					</Element>
+				</cDeltaString>
+			</Attribute>
+			<Attribute name="BrowseInformation">
+				<iBrowseableBlueprint-cBrowseInformation>
+					<Element>
+						<Value>
+							<Attribute name="DisplayName">
+								<Localisation-cUserLocalisedString>
+									<Element>
+										<Value>
+											<Attribute name="English">
+												<cDeltaString>
+													<Element>
+														<Value>90' KI AEC 782 1 A</Value>
+													</Element>
+												</cDeltaString>
+											</Attribute>
+											<Attribute name="French">
+												<cDeltaString>
+													<Element>
+														<Value />
+													</Element>
+												</cDeltaString>
+											</Attribute>
+											<Attribute name="Italian">
+												<cDeltaString>
+													<Element>
+														<Value />
+													</Element>
+												</cDeltaString>
+											</Attribute>
+											<Attribute name="German">
+												<cDeltaString>
+													<Element>
+														<Value />
+													</Element>
+												</cDeltaString>
+											</Attribute>
+											<Attribute name="Spanish">
+												<cDeltaString>
+													<Element>
+														<Value />
+													</Element>
+												</cDeltaString>
+											</Attribute>
+											<Attribute name="Dutch">
+												<cDeltaString>
+													<Element>
+														<Value />
+													</Element>
+												</cDeltaString>
+											</Attribute>
+											<Attribute name="Polish">
+												<cDeltaString>
+													<Element>
+														<Value />
+													</Element>
+												</cDeltaString>
+											</Attribute>
+											<Attribute name="Russian">
+												<cDeltaString>
+													<Element>
+														<Value />
+													</Element>
+												</cDeltaString>
+											</Attribute>
+											<Attribute name="Other">
+												<__Indexed__Localisation-cUserLocalisedString-cOtherStringLangPair>
+													<Element>
+														<Value />
+													</Element>
+												</__Indexed__Localisation-cUserLocalisedString-cOtherStringLangPair>
+											</Attribute>
+											<Attribute name="Key">
+												<cDeltaString>
+													<Element>
+														<Value />
+													</Element>
+												</cDeltaString>
+											</Attribute>
+										</Value>
+									</Element>
+								</Localisation-cUserLocalisedString>
+							</Attribute>
+							<Attribute name="Description">
+								<Localisation-cUserLocalisedString>
+									<Element>
+										<Value>
+											<Attribute name="English">
+												<cDeltaString>
+													<Element>
+														<Value>A standard repaint for the Sggmrss, use rail vehicle number to change cargo. Cargo created by Alex95 and wagon by AlexAfirus.</Value>
+													</Element>
+												</cDeltaString>
+											</Attribute>
+											<Attribute name="French">
+												<cDeltaString>
+													<Element>
+														<Value />
+													</Element>
+												</cDeltaString>
+											</Attribute>
+											<Attribute name="Italian">
+												<cDeltaString>
+													<Element>
+														<Value />
+													</Element>
+												</cDeltaString>
+											</Attribute>
+											<Attribute name="German">
+												<cDeltaString>
+													<Element>
+														<Value />
+													</Element>
+												</cDeltaString>
+											</Attribute>
+											<Attribute name="Spanish">
+												<cDeltaString>
+													<Element>
+														<Value />
+													</Element>
+												</cDeltaString>
+											</Attribute>
+											<Attribute name="Dutch">
+												<cDeltaString>
+													<Element>
+														<Value />
+													</Element>
+												</cDeltaString>
+											</Attribute>
+											<Attribute name="Polish">
+												<cDeltaString>
+													<Element>
+														<Value />
+													</Element>
+												</cDeltaString>
+											</Attribute>
+											<Attribute name="Russian">
+												<cDeltaString>
+													<Element>
+														<Value />
+													</Element>
+												</cDeltaString>
+											</Attribute>
+											<Attribute name="Other">
+												<__Indexed__Localisation-cUserLocalisedString-cOtherStringLangPair>
+													<Element>
+														<Value />
+													</Element>
+												</__Indexed__Localisation-cUserLocalisedString-cOtherStringLangPair>
+											</Attribute>
+											<Attribute name="Key">
+												<cDeltaString>
+													<Element>
+														<Value />
+													</Element>
+												</cDeltaString>
+											</Attribute>
+										</Value>
+									</Element>
+								</Localisation-cUserLocalisedString>
+							</Attribute>
+							<Attribute name="Category">
+								<iBrowseableBlueprint-eBrowseableCategory>
+									<Element>
+										<Value>eRollingStock</Value>
+									</Element>
+								</iBrowseableBlueprint-eBrowseableCategory>
+							</Attribute>
+							<Attribute name="ValidInScenarios">
+								<eBoolean>
+									<Element>
+										<Value>eTrue</Value>
+									</Element>
+								</eBoolean>
+							</Attribute>
+						</Value>
+					</Element>
+				</iBrowseableBlueprint-cBrowseInformation>
+			</Attribute>
+			<Attribute name="ReskinAssetBpId">
+				<iBlueprintLibrary-cAbsoluteBlueprintID>
+					<Element>
+						<Value>
+							<Attribute name="BlueprintSetID">
+								<iBlueprintLibrary-cBlueprintSetID>
+									<Element>
+										<Value>
+											<Attribute name="Provider">
+												<cDeltaString>
+													<Element>
+														<Value>AlexAfirus</Value>
+													</Element>
+												</cDeltaString>
+											</Attribute>
+											<Attribute name="Product">
+												<cDeltaString>
+													<Element>
+														<Value>KI Sggmrss90</Value>
+													</Element>
+												</cDeltaString>
+											</Attribute>
+										</Value>
+									</Element>
+								</iBlueprintLibrary-cBlueprintSetID>
+							</Attribute>
+							<Attribute name="BlueprintID">
+								<cDeltaString>
+									<Element>
+										<Value>CH-WASCO\sggmrss_782_1_a.xml</Value>
+									</Element>
+								</cDeltaString>
+							</Attribute>
+						</Value>
+					</Element>
+				</iBlueprintLibrary-cAbsoluteBlueprintID>
+			</Attribute>
+			<Attribute name="TextureEntry">
+				<__Indexed__cReskinBlueprint-sTextureEntry>
+					<Element>
+						<Value>
+							<cReskinBlueprint-sTextureEntry>
+								<Element>
+									<Value>
+										<Attribute name="TextureName">
+											<cDeltaString>
+												<Element>
+													<Value>ki_wascosa</Value>
+												</Element>
+											</cDeltaString>
+										</Attribute>
+										<Attribute name="TextureID">
+											<cDeltaString>
+												<Element>
+													<Value>D-AAEC\Textures\ki_aaec</Value>
+												</Element>
+											</cDeltaString>
+										</Attribute>
+									</Value>
+								</Element>
+							</cReskinBlueprint-sTextureEntry>
+						</Value>
+					</Element>
+				</__Indexed__cReskinBlueprint-sTextureEntry>
+			</Attribute>
+		</Value>
+	</Element>
+</cReskinBlueprint>

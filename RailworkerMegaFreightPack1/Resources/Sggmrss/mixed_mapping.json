@@ -1,0 +1,366 @@
+{
+  "mappings": [
+    {
+      "name": "20ft_x2_mixed",
+      "composition": [
+        {
+          "name": "1_1000_20ft_c_1",
+          "index": 0,
+          "side": "a"
+        },
+        {
+          "name": "1_1000_20ft_c_2",
+          "index": 1,
+          "side":  "b"
+        },
+        {
+          "name": "1_1000_20ft_c_3",
+          "index": 2,
+          "side": "a"
+        },
+        {
+          "name": "1_1000_20ft_c_4",
+          "index": 3,
+          "side": "b"
+        },
+        {
+          "name": "1_1000_20ft_c_5",
+          "index": 4,
+          "side": "a"
+        },
+        {
+          "name": "1_1000_20ft_c_6",
+          "index": 5,
+          "side": "b"
+        },
+        {
+          "name": "1_1000_20ft_c_7",
+          "index": 6,
+          "side": "a"
+        },
+        {
+          "name": "1_1000_20ft_c_8",
+          "index": 7,
+          "side": "b"
+        },
+        {
+          "name": "1_1000_20ft_c_9",
+          "index": 8,
+          "side": "a"
+        },
+        {
+          "name": "1_1000_20ft_c_10",
+          "index": 9,
+          "side": "b"
+        },
+        {
+          "name": "1_1000_20ft_c_11",
+          "index": 10,
+          "side": "a"
+        },
+        {
+          "name": "1_1000_20ft_c_12",
+          "index": 11,
+          "side": "b"
+        },
+        {
+          "name": "1_1000_20ft_c_13",
+          "index": 12,
+          "side": "a"
+        },
+        {
+          "name": "1_1000_20ft_c_14",
+          "index": 13,
+          "side": "b"
+        },
+        {
+          "name": "1_1000_20ft_c_15",
+          "index": 14,
+          "side": "a"
+        },
+        {
+          "name": "1_1000_20ft_c_16",
+          "index": 15,
+          "side": "b"
+        },
+        {
+          "name": "1_1000_20ft_c_17",
+          "index": 16,
+          "side": "a"
+        },
+        {
+          "name": "1_1000_20ft_c_18",
+          "index": 17,
+          "side": "b"
+        },
+        {
+          "name": "1_1000_20ft_c_19",
+          "index": 18,
+          "side": "a"
+        },
+        {
+          "name": "1_1000_20ft_c_20",
+          "index": 19,
+          "side": "b"
+        },
+        {
+          "name": "1_1000_20ft_c_21",
+          "index": 20,
+          "side": "a"
+        },
+        {
+          "name": "1_1000_20ft_c_22",
+          "index": 21,
+          "side": "b"
+        },
+        {
+          "name": "1_1000_20ft_c_23",
+          "index": 22,
+          "side": "a"
+        },
+        {
+          "name": "1_1000_20ft_c_24",
+          "index": 23,
+          "side": "b"
+        },
+        {
+          "name": "1_1000_20ft_ot_c1.9_1",
+          "index": 24,
+          "side": "a"
+        },
+        {
+          "name": "1_1000_20ft_ot_c12_1",
+          "index": 25,
+          "side": "a"
+        },
+        {
+          "name": "1_1000_20ft_ot_c12_2",
+          "index": 26,
+          "side": "b"
+        },
+        {
+          "name": "1_1000_20ft_ot_c12_3",
+          "index": 27,
+          "side": "a"
+        },
+        {
+          "name": "1_1000_20ft_ot_c12_4",
+          "index": 28,
+          "side": "b"
+        },
+        {
+          "name": "1_1000_20ft_ot_c12_5",
+          "index": 29,
+          "side": "a"
+        },
+        {
+          "name": "1_1000_20ft_ot_c12_6",
+          "index": 30,
+          "side": "b"
+        },
+        {
+          "name": "1_1000_20ft_ot_c20_1",
+          "index": 31,
+          "side": "a"
+        },
+        {
+          "name": "1_1000_20ft_ot_c20_2",
+          "index": 32,
+          "side": "b"
+        },
+        {
+          "name": "1_1000_20ft_ot_c20_3",
+          "index": 33,
+          "side": "a"
+        },
+        {
+          "name": "1_1000_20ft_tt_iso_1",
+          "index": 34,
+          "side": "b"
+        },
+        {
+          "name": "1_1000_20ft_tt_iso_2",
+          "index": 35,
+          "side": "a"
+        },
+        {
+          "name": "1_1000_20ft_tt_iso_3",
+          "index": 36,
+          "side": "b"
+        },
+        {
+          "name": "1_1000_20ft_tt_iso_4",
+          "index": 37,
+          "side": "a"
+        },
+        {
+          "name": "1_1000_20ft_tt_iso_5",
+          "index": 38,
+          "side": "b"
+        },
+        {
+          "name": "1_1000_20ft_tt_iso_6",
+          "index": 39,
+          "side": "a"
+        },
+        {
+          "name": "1_1000_20ft_tt_iso_7",
+          "index": 40,
+          "side": "b"
+        },
+        {
+          "name": "1_1000_20ft_tt_iso_8",
+          "index": 41,
+          "side": "a"
+        },
+        {
+          "name": "1_1000_20ft_tt_iso_9",
+          "index": 42,
+          "side": "b"
+        },
+        {
+          "name": "1_1000_20ft_tt_iso_10",
+          "index": 43,
+          "side": "a"
+        },
+        {
+          "name": "1_1000_20ft_tt_iso_11",
+          "index": 44,
+          "side": "b"
+        },
+        {
+          "name": "1_1000_20ft_tt_iso_12",
+          "index": 45,
+          "side": "a"
+        },
+        {
+          "name": "1_1000_20ft_tt_iso_13",
+          "index": 46,
+          "side": "b"
+        },
+        {
+          "name": "1_1000_20ft_tt_iso_14",
+          "index": 47,
+          "side": "b"
+        },
+        {
+          "name": "1_1000_20ft_tt_iso_15",
+          "index": 48,
+          "side": "b"
+        },
+        {
+          "name": "1_1000_20ft_tt_iso_16",
+          "index": 49,
+          "side": "a"
+        },
+        {
+          "name": "1_1000_20ft_tt_iso_17",
+          "index": 50,
+          "side": "b"
+        },
+        {
+          "name": "1_1000_20ft_tt_iso_18",
+          "index": 51,
+          "side": "a"
+        },
+        {
+          "name": "1_1000_20ft_tt_iso_19",
+          "index": 52,
+          "side": "b"
+        },
+        {
+          "name": "1_1000_20ft_tt_iso_20",
+          "index": 53,
+          "side": "a"
+        },
+        {
+          "name": "1_1000_20ft_tt_iso_21",
+          "index": 54,
+          "side": "b"
+        },
+        {
+          "name": "1_1000_20ft_tt_iso_22",
+          "index": 55,
+          "side": "a"
+        },
+        {
+          "name": "1_1000_20ft_tt_iso_23",
+          "index": 56,
+          "side": "a"
+        },
+        {
+          "name": "1_1000_20ft_tt_iso_24",
+          "index": 57,
+          "side": "a"
+        },
+        {
+          "name": "1_1000_20ft_tt_iso_25",
+          "index": 58,
+          "side": "b"
+        }
+      ],
+      "cargos": [
+        "1_1000_20ft_c_1",
+        "1_1000_20ft_c_2",
+        "1_1000_20ft_c_3",
+        "1_1000_20ft_c_4",
+        "1_1000_20ft_tt_iso_2",
+        "1_1000_20ft_tt_iso_1",
+        "1_1000_20ft_ot_c12_1",
+        "1_1000_20ft_ot_c12_2",
+        "1_1000_20ft_c_5",
+        "1_1000_20ft_c_6",
+        "1_1000_20ft_tt_iso_4",
+        "1_1000_20ft_tt_iso_3",
+        "1_1000_20ft_c_7",
+        "1_1000_20ft_c_8",
+        "1_1000_20ft_tt_iso_6",
+        "1_1000_20ft_tt_iso_5",
+        "1_1000_20ft_c_9",
+        "1_1000_20ft_c_10",
+        "1_1000_20ft_tt_iso_8",
+        "1_1000_20ft_tt_iso_7",
+        "1_1000_20ft_ot_c20_1",
+        "1_1000_20ft_ot_c20_2",
+        "1_1000_20ft_ot_c20_3",
+        "1_1000_20ft_c_12",
+        "1_1000_20ft_c_11",
+        "1_1000_20ft_ot_c12_4",
+        "1_1000_20ft_ot_c12_3",
+        "1_1000_20ft_tt_iso_11",
+        "1_1000_20ft_tt_iso_10",
+        "1_1000_20ft_c_14",
+        "1_1000_20ft_c_13",
+        "1_1000_20ft_tt_iso_11",
+        "1_1000_20ft_tt_iso_12",
+        "1_1000_20ft_c_16",
+        "1_1000_20ft_c_15",
+        "1_1000_20ft_tt_iso_13",
+        "1_1000_20ft_c_17",
+        "1_1000_20ft_tt_iso_14",
+        "1_1000_20ft_ot_c1.9_1",
+        "1_1000_20ft_ot_c12_6",
+        "1_1000_20ft_ot_c12_5",
+        "1_1000_20ft_tt_iso_15",
+        "1_1000_20ft_tt_iso_16",
+        "1_1000_20ft_tt_iso_17",
+        "1_1000_20ft_c_19",
+        "1_1000_20ft_c_18",
+        "1_1000_20ft_tt_iso_18",
+        "1_1000_20ft_tt_iso_19",
+        "1_1000_20ft_c_21",
+        "1_1000_20ft_c_20",
+        "1_1000_20ft_tt_iso_20",
+        "1_1000_20ft_tt_iso_21",
+        "1_1000_20ft_c_23",
+        "1_1000_20ft_c_22",
+        "1_1000_20ft_tt_iso_22",
+        "1_1000_20ft_c_24",
+        "1_1000_20ft_tt_iso_23",
+        "1_1000_20ft_tt_iso_25",
+        "1_1000_20ft_tt_iso_24"
+      ]
+    }
+  ],
+  "20ft_2x_mixed_raw_mapping": "20ft_2x_mixed_1"
+}

@@ -1,0 +1,60 @@
+﻿<UserControl x:Class="Railworker.UserControls.AssetExplorer"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Railworker.UserControls"
+             mc:Ignorable="d" 
+            xmlns:lang="clr-namespace:Railworker.Language;assembly=Railworker.Language"
+            xmlns:Converters="clr-namespace:Railworker.Converters" 
+             xmlns:scm="clr-namespace:System.ComponentModel;assembly=WindowsBase"
+             d:DesignHeight="450" d:DesignWidth="800">
+    <UserControl.Resources>
+        <Converters:InverseBooleanConverter x:Key="InverseBooleanConverter" />
+        <BooleanToVisibilityConverter x:Key="BoolToVis" />
+
+        <CollectionViewSource Source="{Binding AvailableBlueprints}" x:Key="AvailableBlueprintsSource" Filter="CollectionViewSource_Filter">
+            <!--<CollectionViewSource.SortDescriptions>
+                <scm:SortDescription PropertyName="XMLElementName"/>
+            </CollectionViewSource.SortDescriptions>-->
+        </CollectionViewSource>
+    </UserControl.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50*"></RowDefinition>
+            <RowDefinition Height="5"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="5"></RowDefinition>
+            <RowDefinition Height="50*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <local:FilesTreeView Grid.Row="0" x:Name="FilesTreeView" />
+
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Button Grid.Column="0" x:Name="ScanButton" IsEnabled="{Binding AssetLoadingInProgress, Converter={StaticResource InverseBooleanConverter}}" Content="{x:Static lang:Resources.look_up}" Click="ScanButton_Click" Height="26" Width="114"/>
+            <Button Grid.Column="1" x:Name="ClearButton" Visibility="{Binding ClearButtonVisibility}" Content="{x:Static lang:Resources.clear_assets}" Click="AvailableVehiclesClearButton_Click" Height="26" Width="93"/>
+            <Button Grid.Column="4" Visibility="{Binding AssetLoadingInProgress, Converter={StaticResource BoolToVis}}" x:Name="CancelScanningButton" Content="{x:Static lang:Resources.cancel}" Height="26" Click="CancelScanningButton_Click" Width="75"/>
+        </Grid>
+        <Grid Grid.Row="4">
+            <Image x:Name="Search_Icon" HorizontalAlignment="Left" Height="20" VerticalAlignment="Top" Width="20">
+                <Image.Source>
+                    <BitmapImage UriSource="/Railworker;component/Resources/Search.png" />
+                </Image.Source>
+            </Image>
+            <TextBox x:Name="AvailableBlueprintsSearch" Text="{x:Static lang:Resources.search}"  TextChanged="TextBox_TextChanged" BorderThickness="1,1,1,1" Height="20" VerticalAlignment="Top" Margin="20,0,0,0"/>
+            <ListBox SelectionMode="{Binding SelectionMode}" x:Name="AvailableBlueprints" ItemsSource="{Binding Source={StaticResource AvailableBlueprintsSource}}" Margin="0,25,0,0" >
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding Name}" Margin="0,0,0,0" />
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </Grid>
+    </Grid>
+</UserControl>

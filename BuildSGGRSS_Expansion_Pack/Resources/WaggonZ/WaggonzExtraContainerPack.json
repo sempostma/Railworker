@@ -1,0 +1,65 @@
+[
+  {
+    "filename": "Ambrogio_40_1.bin",
+    "name": "T-40-Ambrogio 1",
+    "mass": 15000,
+    "moveX": -0.135,
+    "moveZ": 2.158
+  },
+  {
+    "filename": "Ambrogio_40_2.bin",
+    "name": "T-40-Ambrogio 2",
+    "mass": 15000,
+    "moveX": -0.135,
+    "moveZ": 2.158
+  },
+  {
+    "filename": "Crossrail_40.bin",
+    "name": "T-40-Crossrail",
+    "mass": 15000,
+    "moveX": -0.135,
+    "moveZ": 2.158
+  },
+  {
+    "filename": "Ewals_20x2.bin",
+    "name": "C-2X20-Ewals",
+    "mass": 15000,
+    "moveX": -0.135,
+    "moveZ": 2.158
+  },
+  {
+    "filename": "Ewals_40.bin",
+    "name": "T-40-Ewals",
+    "mass": 15000,
+    "moveX": -0.135,
+    "moveZ": 2.158
+  },
+  {
+    "filename": "Ewals_Intermodal_40.bin",
+    "name": "T-40-Ewals Intermodal",
+    "mass": 15000,
+    "moveX": -0.135,
+    "moveZ": 2.158
+  },
+  {
+    "filename": "LKW_Walter_40.bin",
+    "name": "T-40-LKW Walter",
+    "mass": 20000,
+    "moveX": -0.135,
+    "moveZ": 2.158
+  },
+  {
+    "filename": "Samskip_40.bin",
+    "name": "C-40-Samskip",
+    "mass": 30480,
+    "moveX": -0.135,
+    "moveZ": 2.158
+  },
+  {
+    "filename": "TTS_40.bin",
+    "name": "T-40-TTS",
+    "mass": 15000,
+    "moveX": -0.135,
+    "moveZ": 2.158
+  }
+]

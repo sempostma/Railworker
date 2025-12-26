@@ -1,0 +1,81 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\leaflet\images\layers-2x.png" />
+    <None Remove="Resources\leaflet\images\layers.png" />
+    <None Remove="Resources\leaflet\images\marker-icon-2x.png" />
+    <None Remove="Resources\leaflet\images\marker-icon.png" />
+    <None Remove="Resources\leaflet\images\marker-shadow.png" />
+    <None Remove="Resources\leaflet\leaflet.css" />
+    <None Remove="Resources\leaflet\leaflet.js" />
+    <None Remove="Resources\RouteVisualizerLefalet.html" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\leaflet\images\layers-2x.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\leaflet\images\layers.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\leaflet\images\marker-icon-2x.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\leaflet\images\marker-icon.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\leaflet\images\marker-shadow.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\leaflet\leaflet.css">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\leaflet\leaflet.js">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\RouteVisualizerLefalet.html">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.2151.40" />
+    <PackageReference Include="System.Text.Json" Version="8.0.0" />
+    <PackageReference Include="WindowsAPICodePack" Version="7.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Railworker.Language\Railworker.Language.csproj" />
+    <ProjectReference Include="..\RWLib\RWLib.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Update="RouteTracksBinVisualizer.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="RoutesAndScenarios.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+      <CustomToolNamespace></CustomToolNamespace>
+    </None>
+  </ItemGroup>
+
+</Project>

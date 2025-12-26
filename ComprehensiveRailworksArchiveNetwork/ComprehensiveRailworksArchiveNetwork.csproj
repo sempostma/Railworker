@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EditorConfigFiles Remove="E:\Apps\Railworker\ComprehensiveRailworksArchiveNetwork\Drivers\.editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="E:\Apps\Railworker\ComprehensiveRailworksArchiveNetwork\Drivers\.editorconfig" />
+  </ItemGroup>
+
+</Project>

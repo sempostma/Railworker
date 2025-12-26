@@ -1,0 +1,47 @@
+[
+  {
+    "filename": "40ChinaShipping.bin",
+    "name": "C-40-China Shipping",
+    "mass": 30000
+  },
+  {
+    "filename": "40CMACGM.bin",
+    "name": "C-40-CMACGM",
+    "mass": 30000
+  },
+  {
+    "filename": "40KLine.bin",
+    "name": "C-40-K-Line",
+    "mass": 30000
+  },
+  {
+    "filename": "40Maersk.bin",
+    "name": "C-40-Maersk",
+    "mass": 30000
+  },
+  {
+    "filename": "40CAI.bin",
+    "name": "C-40-Cai",
+    "mass": 30000
+  },
+  {
+    "filename": "40Arkas.bin",
+    "name": "C-40-Arkas",
+    "mass": 30000
+  },
+  {
+    "filename": "40Hapag.bin",
+    "name": "C-40-Hapag",
+    "mass": 30000
+  },
+  {
+    "filename": "40Msc.bin",
+    "name": "C-40-MSC",
+    "mass": 30000
+  },
+  {
+    "filename": "40Uasc.bin",
+    "name": "C-40-Uasc",
+    "mass": 30000
+  }
+]

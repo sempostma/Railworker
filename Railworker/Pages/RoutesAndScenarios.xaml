@@ -1,0 +1,109 @@
+﻿<Page x:Class="Railworker.Pages.RoutesAndScenariosWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Railworker.Pages"
+        xmlns:lang="clr-namespace:Railworker.Language;assembly=Railworker.Language"
+        mc:Ignorable="d"
+        xmlns:converters="clr-namespace:Railworker.Converters"
+        xmlns:scm="clr-namespace:System.ComponentModel;assembly=WindowsBase"
+        Title="{x:Static lang:Resources.routes_and_scenarios}" Height="450" Width="800">
+
+    <Page.Resources>
+        <CollectionViewSource Source="{Binding Routes}" x:Key="RoutesSource" IsLiveSortingRequested="True">
+            <CollectionViewSource.SortDescriptions>
+                <scm:SortDescription PropertyName="IsFavorite" Direction="Descending" />
+                <scm:SortDescription PropertyName="Name"/>
+            </CollectionViewSource.SortDescriptions>
+        </CollectionViewSource>
+        <CollectionViewSource Source="{Binding Scenarios}" x:Key="ScenariosSource">
+            <CollectionViewSource.SortDescriptions>
+                <scm:SortDescription PropertyName="Name"/>
+            </CollectionViewSource.SortDescriptions>
+        </CollectionViewSource>
+    </Page.Resources>
+
+    <DockPanel Margin="10">
+        <Grid DockPanel.Dock="Bottom">
+            <Button Content="{x:Static lang:Resources.edit_scenario}" Click="EditScenarioButton_Click" HorizontalAlignment="Left" Width="97" Height="26" VerticalAlignment="Center"/>
+            <Button Content="{x:Static lang:Resources.open_scenario_directory}" Click="OpenScenarioDirectory_Click" HorizontalAlignment="Left" Width="148" Height="26" VerticalAlignment="Center" Margin="102,0,0,0"/>
+            <Grid Visibility="{Binding LoadingBarVisible, NotifyOnSourceUpdated=True, Mode=OneWay}" HorizontalAlignment="Right" Width="525">
+                <ProgressBar Value="{Binding CombinedLoadingProgress, Mode=OneWay}" x:Name="ProgressBar" HorizontalAlignment="Right" Width="200" Margin="311,0,0,0" Height="26" VerticalAlignment="Center"/>
+                <Label HorizontalContentAlignment="Right" VerticalContentAlignment="Center" Content="{Binding LoadingInformation}" HorizontalAlignment="Right" Margin="0,0,205,0" Height="26" VerticalAlignment="Center" Width="227"/>
+            </Grid>
+        </Grid>
+        <Grid Margin="0,0,0,5">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="50*"></ColumnDefinition>
+                <ColumnDefinition Width="5"></ColumnDefinition>
+                <ColumnDefinition Width="60*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <GridSplitter Grid.Column="0" Width="Auto" VerticalAlignment="Stretch" />
+            <GridSplitter Grid.Column="1" ResizeBehavior="PreviousAndNext" Width="5" VerticalAlignment="Stretch" />
+            <GridSplitter Grid.Column="2" Width="Auto" VerticalAlignment="Stretch" />
+
+            <ListView 
+        x:Name="RoutesListView"
+        Grid.Column="0" 
+        ItemsSource="{Binding Source={StaticResource RoutesSource}}"
+        SelectionChanged="RoutesListView_SelectionChanged"
+>
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="">
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Grid>
+                                        <!--<ToggleButton IsChecked="{Binding IsFavorite}">
+                                    <ToggleButton.Style>
+                                        <Style TargetType="ToggleButton">
+                                            <Setter Property="Template">
+                                                <Setter.Value>
+                                                    <ControlTemplate TargetType="ToggleButton">
+                                                        <Image
+                                                Width="16"
+                                                Height="16"
+                                                x:Name="ToggleButtonImage"
+                                                />
+                                                        <ControlTemplate.Triggers>
+                                                            <Trigger Property="IsChecked" Value="true">
+                                                                <Setter TargetName="ToggleButtonImage" Property="Source" Value="/Railworker;component/Resources/StarActive.png"/>
+                                                            </Trigger>
+                                                            <Trigger Property="IsChecked" Value="false">
+                                                                <Setter TargetName="ToggleButtonImage" Property="Source" Value="/Railworker;component/Resources/Star.png"/>
+                                                            </Trigger>
+                                                        </ControlTemplate.Triggers>
+                                                    </ControlTemplate>
+                                                </Setter.Value>
+                                            </Setter>
+                                        </Style>
+                                    </ToggleButton.Style>
+                                </ToggleButton>-->
+                                    </Grid>
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                        <GridViewColumn Header="{x:Static lang:Resources.name}" Width="400" DisplayMemberBinding="{Binding Name}" />
+                        <GridViewColumn Header="{x:Static lang:Resources.guid}" Width="300" DisplayMemberBinding="{Binding Guid}" />
+                    </GridView>
+                </ListView.View>
+            </ListView>
+            <ListView Grid.Column="2"
+                 x:Name="ScenariosListView"
+                ItemsSource="{Binding Source={StaticResource ScenariosSource}}">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="{x:Static lang:Resources.name}" Width="400" DisplayMemberBinding="{Binding Name}" />
+                        <GridViewColumn Header="{x:Static lang:Resources.guid}" Width="300" DisplayMemberBinding="{Binding Guid}" />
+                    </GridView>
+                </ListView.View>
+            </ListView>
+
+        </Grid>
+        <Label Content="Label" Width="0"/>
+        <Label Content="Label" Width="0"/>
+
+    </DockPanel>
+</Page>

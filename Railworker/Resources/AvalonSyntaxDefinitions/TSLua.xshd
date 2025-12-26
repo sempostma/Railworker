@@ -1,0 +1,148 @@
+﻿<SyntaxDefinition name="TSLua" extensions=".rlua;.lua" xmlns="http://icsharpcode.net/sharpdevelop/syntaxdefinition/2008">
+	<RuleSet ignoreCase="false">
+		<Keywords foreground="#FF000000" fontWeight="normal" fontStyle="normal">
+			<Word>?</Word>
+			<Word>,</Word>
+			<Word>.</Word>
+			<Word>;</Word>
+			<Word>(</Word>
+			<Word>)</Word>
+			<Word>[</Word>
+			<Word>]</Word>
+			<Word>{</Word>
+			<Word>}</Word>
+			<Word>+</Word>
+			<Word>-</Word>
+			<Word>/</Word>
+			<Word>%</Word>
+			<Word>*</Word>
+			<Word>&lt;</Word>
+			<Word>&gt;</Word>
+			<Word>^</Word>
+			<Word>=</Word>
+			<Word>~</Word>
+			<Word>!</Word>
+			<Word>|</Word>
+			<Word>&amp;</Word>
+			<Word>@</Word>
+			<Word>$</Word>
+		</Keywords>
+		<Keywords foreground="#FF0000FF" fontWeight="bold" fontStyle="normal">
+			<Word>and</Word>
+			<Word>_G</Word>
+			<Word>_VERSION</Word>
+			<Word>gcinfo</Word>
+			<Word>setfenv</Word>
+			<Word>getfenv</Word>
+			<Word>debug</Word>
+			<Word>unpack</Word>
+			<Word>break</Word>
+			<Word>do</Word>
+			<Word>else</Word>
+			<Word>elseif</Word>
+			<Word>end</Word>
+			<Word>false</Word>
+			<Word>for</Word>
+			<Word>function</Word>
+			<Word>if</Word>
+			<Word>in</Word>
+			<Word>local</Word>
+			<Word>nil</Word>
+			<Word>not</Word>
+			<Word>or</Word>
+			<Word>repeat</Word>
+			<Word>return</Word>
+			<Word>then</Word>
+			<Word>true</Word>
+			<Word>until</Word>
+			<Word>while</Word>
+			<Word>print</Word>
+			<Word>collectgarbage</Word>
+			<Word>type</Word>
+			<Word>tostring</Word>
+			<Word>tonumber</Word>
+			<Word>print</Word>
+			<Word>pairs</Word>
+			<Word>ipairs</Word>
+			<Word>next</Word>
+			<Word>assert</Word>
+			<Word>pcall</Word>
+			<Word>xpcall</Word>
+			<Word>error</Word>
+			<Word>select</Word>
+			<Word>dofile</Word>
+			<Word>require</Word>
+			<Word>openfile</Word>
+			<Word>loadstring</Word>
+			<Word>set</Word>
+			<Word>loadfile</Word>
+			<Word>wait</Word>
+			<Word>warn</Word>
+			<Word>rawset</Word>
+			<Word>rawget</Word>
+			<Word>rawequal</Word>
+			<Word>getmetatable</Word>
+			<Word>setmetatable</Word>
+			<Word>Print</Word>
+			<Word>Call</Word>
+			<Word>SysCall</Word>
+			<Word>OnEvent</Word>
+			<Word>TestCondition</Word>
+			<Word>TestCondition</Word>
+		</Keywords>
+		<Keywords foreground="#FF0000FF" fontWeight="normal" fontStyle="normal">
+			<Word>io</Word>
+			<Word>os</Word>
+			<Word>class</Word>
+			<Word>table</Word>
+			<Word>script</Word>
+			<Word>file</Word>
+			<Word>math</Word>
+			<Word>console</Word>
+			<Word>coroutine</Word>
+			<Word>package</Word>
+			<Word>string</Word>
+		</Keywords>
+		<Span foreground="#FF008000" fontWeight="normal" fontStyle="normal" ruleSet="CommentMarkerSet">
+			<Begin>--</Begin>
+		</Span>
+		<Span foreground="#FF800080" fontWeight="normal" fontStyle="normal">
+			<Begin>'</Begin>
+			<End>'</End>
+			<RuleSet>
+				<Span begin="\\" end="." />
+			</RuleSet>
+		</Span>
+		<Span foreground="#FF008000" fontWeight="normal" fontStyle="normal" ruleSet="CommentMarkerSet" multiline="true">
+			<Begin>--\[\[</Begin>
+			<End>]]</End>
+		</Span>
+		<Span foreground="#FF800080" fontWeight="normal" fontStyle="normal" multiline="true">
+			<Begin>"</Begin>
+			<End>"</End>
+			<RuleSet>
+				<Span begin="\\" end="." />
+			</RuleSet>
+		</Span>
+		<Span foreground="#FF800080" fontWeight="normal" fontStyle="normal" multiline="true">
+			<Begin>\[\[</Begin>
+			<End>]]</End>
+			<RuleSet>
+				<Span begin="&quot;" end="." />
+			</RuleSet>
+		</Span>
+		<Rule foreground="#FF191970" fontWeight="bold" fontStyle="normal">[\d\w_]+(?=(\s*))</Rule>
+		<Rule foreground="#FFADD8E6" fontWeight="normal" fontStyle="normal">\b0[xX][0-9a-fA-F]+|(\b\d+(\.[0-9]+)?|\.[0-9]+)([eE][+-]?[0-9]+)?</Rule>
+	</RuleSet>
+	<RuleSet name="CommentMarkerSet" ignoreCase="false">
+		<Keywords foreground="#FFFF0000" fontWeight="bold" fontStyle="normal">
+			<Word>TODO</Word>
+			<Word>FIXME</Word>
+		</Keywords>
+		<Keywords foreground="#EEE0E000" fontWeight="bold" fontStyle="normal">
+			<Word>HACK</Word>
+			<Word>UNDONE</Word>
+		</Keywords>
+		<Rule foreground="#FFADD8E6" fontWeight="normal" fontStyle="normal">\b0[xX][0-9a-fA-F]+|(\b\d+(\.[0-9]+)?|\.[0-9]+)([eE][+-]?[0-9]+)?</Rule>
+	</RuleSet>
+</SyntaxDefinition>

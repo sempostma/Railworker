@@ -1,0 +1,82 @@
+[
+  {
+    "filename": "45ft_hc_pw\\45ft_hc_pw_unit45_1.bin",
+    "name": "Unit 45",
+    "filterWagonType": [ "brown" ]
+  },
+  {
+    "filename": "45ft_hc_pw\\45ft_hc_pw_ecs_1.bin",
+    "name": "ECS (Old)",
+    "filterWagonType": [ "grey" ]
+  },
+  {
+    "filename": "45ft_hc_pw\\45ft_hc_pw_ecs_2.bin",
+    "name": "ECS (New)",
+    "filterWagonType": [ "brown" ]
+  },
+  {
+    "filename": "45ft_hc_pw\\45ft_hc_pw_gts_1.bin",
+    "name": "GTS (New)",
+    "filterWagonType": [ "grey" ]
+  },
+  {
+    "filename": "45ft_hc_pw\\45ft_hc_pw_gts_2.bin",
+    "name": "GTS (Old)",
+    "filterWagonType": [ "brown" ]
+  },
+  {
+    "filename": "45ft_hc_pw\\45ft_hc_pw_cldnc_1.bin",
+    "name": "CLdN Cargo",
+    "filterWagonType": [ "grey" ]
+  },
+  {
+    "filename": "45ft_hc_pw\\45ft_hc_pw_cldnc_2.bin",
+    "name": "CLdN Cargo (Big Logo)",
+    "filterWagonType": [ "brown" ]
+  },
+  {
+    "filename": "45ft_hc_pw\\45ft_hc_pw_cldnc_cobelfret_1.bin",
+    "name": "CLdN Cobelfret",
+    "filterWagonType": [ "grey" ]
+  },
+  {
+    "filename": "45ft_hc_pw\\45ft_hc_pw_p&o_1.bin",
+    "name": "P&O",
+    "filterWagonType": [ "brown" ]
+  },
+  {
+    "filename": "45ft_hc_pw\\45ft_hc_pw_a2b_1.bin",
+    "name": "A2B",
+    "filterWagonType": [ "brown" ]
+  },
+  {
+    "filename": "45ft_hc_pw\\45ft_hc_pw_move_1.bin",
+    "name": "MOVE",
+    "filterWagonType": [ "brown" ]
+  },
+  {
+    "filename": "45ft_hc_pw\\45ft_hc_pw_move_2.bin",
+    "name": "MOVE (ECS)",
+    "filterWagonType": [ "grey" ]
+  },
+  {
+    "filename": "45ft_hc_pw\\45ft_hc_pw_p&o_2.bin",
+    "name": "P&O (Yellow)",
+    "filterWagonType": [ "grey" ]
+  },
+  {
+    "filename": "45ft_hc_pw\\45ft_hc_pw_cai_1.bin",
+    "name": "CAI",
+    "filterWagonType": [ "grey" ]
+  },
+  {
+    "filename": "45ft_hc_pw\\45ft_hc_pw_eucon_1.bin",
+    "name": "Eucon",
+    "filterWagonType": [ "grey" ]
+  },
+  {
+    "filename": "45ft_hc_pw\\45ft_hc_pw_samskip_1.bin",
+    "name": "Samskip",
+    "filterWagonType": [ "grey" ]
+  }
+]

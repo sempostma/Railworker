@@ -1,0 +1,58 @@
+[
+  {
+    "filename": "RailNetwork\\Interactive\\2X_WAB\\Childs\\45FT\\GW_45FT_WEWE\\Childs\\45FT_2.bin",
+    "name": "45 S WEWE 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_WAB\\Childs\\45FT\\GW_45FT_WEWE\\Childs\\45FT_3.bin",
+    "name": "45 S WEWE 3",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_WAB\\Childs\\45FT\\GW_45FT_WEWE\\Childs\\45FT_4.bin",
+    "name": "45 S WEWE 4",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_WAB\\Childs\\45FT\\GW_45FT_WEWE\\Childs\\45FT_5.bin",
+    "name": "45 S WEWE 5",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_WAB\\Childs\\45FT\\GW_45FT_WEWE\\Childs\\45FT_6.bin",
+    "name": "45 S WEWE 6",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_WAB\\Childs\\45FT\\GW_45FT_WEWE\\Childs\\45FT_7.bin",
+    "name": "45 S WEWE 7",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_WAB\\Childs\\45FT\\GW_45FT_WEWE\\Childs\\45FT_8.bin",
+    "name": "45 S WEWE 8",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\2X_WAB\\Childs\\45FT\\GW_45FT_WEWE\\Childs\\WEWE_C70.bin",
+    "name": "45 C70 WEWE 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  }
+]

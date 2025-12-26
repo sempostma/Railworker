@@ -1,0 +1,30 @@
+[
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C11_REID.bin",
+    "name": "C11 REID 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C11_REID2.bin",
+    "name": "C11 REID 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C11_SCHD.bin",
+    "name": "C11 SCHD 1",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  },
+  {
+    "filename": "RailNetwork\\Interactive\\30_WAB\\Childs\\C11_SCHD2.bin",
+    "name": "C11 SCHD 2",
+    "filterWagonType": [
+      "CH-WASCO"
+    ]
+  }
+]
