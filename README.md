@@ -1,7 +1,7 @@
 Railworker
 ===
 
-A program/library for Train Simulator (RailWorks)
+A program/library for Train Simulator (RailWorks). And lots of extra side-projects, including the Intermodal Freight Pack from me and Alex95
 
 This project is not being actively worked on, it will probably never reach production and should be for personal use only. Feel free to copy any code from my project to your own project.
 
